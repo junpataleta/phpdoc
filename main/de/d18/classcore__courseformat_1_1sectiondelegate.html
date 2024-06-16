@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240606) (d3ae1391abe)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240614) (2bf886f9dda)</div>
   </td>
  </tr>
  </tbody>
@@ -80,12 +80,24 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">core_courseformat\sectiondelegate Class Reference<div class="ingroups"><a class="el" href="../../db/d92/group__core__courseformat.html">core_courseformat</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for core_courseformat\sectiondelegate:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../de/d18/classcore__courseformat_1_1sectiondelegate.png" usemap="#core_5Fcourseformat_5Csectiondelegate_map" alt=""/>
+  <map id="core_5Fcourseformat_5Csectiondelegate_map" name="core_5Fcourseformat_5Csectiondelegate_map">
+<area href="../../da/d92/classcore__courseformat_1_1sectiondelegatemodule.html" alt="core_courseformat\sectiondelegatemodule" shape="rect" coords="0,56,251,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:accbf655c73016004346573fa05857696" id="r_accbf655c73016004346573fa05857696"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accbf655c73016004346573fa05857696">__construct</a> (protected <a class="el" href="../../d1/db5/classsection__info.html">section_info</a> $sectioninfo)</td></tr>
 <tr class="memdesc:accbf655c73016004346573fa05857696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:accbf655c73016004346573fa05857696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8704c04c8ac8ad28f86e8623055c76c0" id="r_a8704c04c8ac8ad28f86e8623055c76c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8704c04c8ac8ad28f86e8623055c76c0">get_parent_section</a> ()</td></tr>
+<tr class="memdesc:a8704c04c8ac8ad28f86e8623055c76c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the parent section of the current delegated section if any.  <br /></td></tr>
+<tr class="separator:a8704c04c8ac8ad28f86e8623055c76c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7ecce4002fc3a52c0e365bcc116b052" id="r_aa7ecce4002fc3a52c0e365bcc116b052"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7ecce4002fc3a52c0e365bcc116b052">get_section_action_menu</a> (course_format $format, <a class="el" href="../../dc/df1/classcore__courseformat_1_1output_1_1local_1_1content_1_1section_1_1controlmenu.html">controlmenu</a> $<a class="el" href="../../dc/df1/classcore__courseformat_1_1output_1_1local_1_1content_1_1section_1_1controlmenu.html">controlmenu</a>, <a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a> $output,)</td></tr>
 <tr class="memdesc:aa7ecce4002fc3a52c0e365bcc116b052"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow delegate plugin to modify the available section menu.  <br /></td></tr>
 <tr class="separator:aa7ecce4002fc3a52c0e365bcc116b052"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,6 +147,8 @@ Static Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Reimplemented in <a class="el" href="../../da/d92/classcore__courseformat_1_1sectiondelegatemodule.html#a7df8b31cbd1f07ae9e9b355e961b5826">core_courseformat\sectiondelegatemodule</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -174,6 +188,33 @@ Static Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a8704c04c8ac8ad28f86e8623055c76c0" name="a8704c04c8ac8ad28f86e8623055c76c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8704c04c8ac8ad28f86e8623055c76c0">&#9670;&#160;</a></span>get_parent_section()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\sectiondelegate::get_parent_section </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the parent section of the current delegated section if any. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">section_info|null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../da/d92/classcore__courseformat_1_1sectiondelegatemodule.html#a332f0d7ce7e7b7e3364efba71340e168">core_courseformat\sectiondelegatemodule</a>.</p>
 
 </div>
 </div>
@@ -371,7 +412,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 9 2024 02:38:51 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 16 2024 02:39:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

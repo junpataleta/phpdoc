@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240606) (d3ae1391abe)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240614) (2bf886f9dda)</div>
   </td>
  </tr>
  </tbody>
@@ -110,7 +110,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a412f9a67b31700269020303c6413a8ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Take a cron field definition and return an array of valid numbers with the range min-max.  <br /></td></tr>
 <tr class="separator:a412f9a67b31700269020303c6413a8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f78a7adfe28da7612546b43ec098cc6" id="r_a5f78a7adfe28da7612546b43ec098cc6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f78a7adfe28da7612546b43ec098cc6">execute</a> ()</td></tr>
-<tr class="memdesc:a5f78a7adfe28da7612546b43ec098cc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute sending notification for manual graded attempts.  <br /></td></tr>
+<tr class="memdesc:a5f78a7adfe28da7612546b43ec098cc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do the job.  <br /></td></tr>
 <tr class="separator:a5f78a7adfe28da7612546b43ec098cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a239d98c229628eb668725f5983ce7f9e" id="r_a239d98c229628eb668725f5983ce7f9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfa/classcore_1_1task_1_1task__base.html#a239d98c229628eb668725f5983ce7f9e">get_component</a> ()</td></tr>
 <tr class="memdesc:a239d98c229628eb668725f5983ce7f9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for $component.  <br /></td></tr>
@@ -152,7 +152,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:adc43b9256a0def02a4758d97c90cbb06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for $month.  <br /></td></tr>
 <tr class="separator:adc43b9256a0def02a4758d97c90cbb06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b982eac7dbb7bddc7470662b83630c0" id="r_a9b982eac7dbb7bddc7470662b83630c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b982eac7dbb7bddc7470662b83630c0">get_name</a> ()</td></tr>
-<tr class="memdesc:a9b982eac7dbb7bddc7470662b83630c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get name of schedule task.  <br /></td></tr>
+<tr class="memdesc:a9b982eac7dbb7bddc7470662b83630c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a descriptive name for the task (shown to admins)  <br /></td></tr>
 <tr class="separator:a9b982eac7dbb7bddc7470662b83630c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fc4fd30df52680661d371ed094d1161" id="r_a3fc4fd30df52680661d371ed094d1161"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfa/classcore_1_1task_1_1task__base.html#a3fc4fd30df52680661d371ed094d1161">get_next_run_time</a> ()</td></tr>
 <tr class="memdesc:a3fc4fd30df52680661d371ed094d1161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next run time for this task.  <br /></td></tr>
@@ -458,7 +458,8 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Execute sending notification for manual graded attempts. </p>
+<p>Do the job. </p>
+<p>Throw exceptions on errors (the job will be retried). </p>
 
 <p>Reimplemented from <a class="el" href="../../db/dfa/classcore_1_1task_1_1task__base.html#a5c5ea521fb1baa489783be5c79b4f1fc">core\task\task_base</a>.</p>
 
@@ -939,7 +940,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get name of schedule task. </p>
+<p>Get a descriptive name for the task (shown to admins) </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td></td></tr>
@@ -2153,7 +2154,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Setter for $blocking. </p>
 <p>Please note that task blocking is no longer supported. If you are using it in older versions of <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> you are strongly advised to rewrite your code as has a detrimental impact upon performance.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000254">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 See <a href="https://tracker.moodle.org/browse/MDL-67667" class="el">MDL-67667</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000255">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 See <a href="https://tracker.moodle.org/browse/MDL-67667" class="el">MDL-67667</a> </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000099">Todo</a></b></dt><dd>Remove in <a href="https://tracker.moodle.org/browse/MDL-81509" class="el">MDL-81509</a> </dd></dl>
 
 </div>
@@ -2185,7 +2186,7 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000255">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 See <a href="https://tracker.moodle.org/browse/MDL-67667" class="el">MDL-67667</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000256">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 See <a href="https://tracker.moodle.org/browse/MDL-67667" class="el">MDL-67667</a> </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000100">Todo</a></b></dt><dd>Remove in <a href="https://tracker.moodle.org/browse/MDL-81509" class="el">MDL-81509</a> </dd></dl>
 
 </div>
@@ -2221,7 +2222,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 9 2024 02:39:25 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 16 2024 02:40:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

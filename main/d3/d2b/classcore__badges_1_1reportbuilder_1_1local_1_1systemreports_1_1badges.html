@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240606) (d3ae1391abe)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240614) (2bf886f9dda)</div>
   </td>
  </tr>
  </tbody>
@@ -110,9 +110,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a398cd3d5d6c779b7c0511fbb51abbe26" id="r_a398cd3d5d6c779b7c0511fbb51abbe26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/classcore__reportbuilder_1_1local_1_1report_1_1base.html#a398cd3d5d6c779b7c0511fbb51abbe26">add_base_condition_sql</a> (string $where, array $params=[])</td></tr>
 <tr class="memdesc:a398cd3d5d6c779b7c0511fbb51abbe26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define more complex/non-empty clause to apply to the report query.  <br /></td></tr>
 <tr class="separator:a398cd3d5d6c779b7c0511fbb51abbe26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac99276def5aef8649c390050b2e8296" id="r_aac99276def5aef8649c390050b2e8296"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac99276def5aef8649c390050b2e8296">add_columns</a> (<a class="el" href="../../db/d93/classcore__badges_1_1reportbuilder_1_1local_1_1entities_1_1badge.html">badge</a> $badgeentity)</td></tr>
-<tr class="memdesc:aac99276def5aef8649c390050b2e8296"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the columns we want to display in the report.  <br /></td></tr>
-<tr class="separator:aac99276def5aef8649c390050b2e8296"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cf03daba7d7d687fcf562fa4a07b986" id="r_a5cf03daba7d7d687fcf562fa4a07b986"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da7/classcore__reportbuilder_1_1system__report.html#a5cf03daba7d7d687fcf562fa4a07b986">can_be_downloaded</a> ()</td></tr>
 <tr class="memdesc:a5cf03daba7d7d687fcf562fa4a07b986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates access to download this report.  <br /></td></tr>
 <tr class="separator:a5cf03daba7d7d687fcf562fa4a07b986"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -311,6 +308,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a67c56477ed810aac81cf34a678cac72d" id="r_a67c56477ed810aac81cf34a678cac72d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/classcore__reportbuilder_1_1local_1_1report_1_1base.html#a67c56477ed810aac81cf34a678cac72d">add_column_from_entity</a> (string $uniqueidentifier)</td></tr>
 <tr class="memdesc:a67c56477ed810aac81cf34a678cac72d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add given column to the report from an entity.  <br /></td></tr>
 <tr class="separator:a67c56477ed810aac81cf34a678cac72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f6116bffaa8eef12718f501cf17c457" id="r_a3f6116bffaa8eef12718f501cf17c457"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f6116bffaa8eef12718f501cf17c457">add_columns</a> ()</td></tr>
+<tr class="memdesc:a3f6116bffaa8eef12718f501cf17c457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the columns we want to display in the report.  <br /></td></tr>
+<tr class="separator:a3f6116bffaa8eef12718f501cf17c457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae62453760864580ee831a0cc76cca185" id="r_ae62453760864580ee831a0cc76cca185"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/classcore__reportbuilder_1_1local_1_1report_1_1base.html#ae62453760864580ee831a0cc76cca185">add_columns_from_entities</a> (array $columns)</td></tr>
 <tr class="memdesc:ae62453760864580ee831a0cc76cca185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add given columns to the report from one or more entities.  <br /></td></tr>
 <tr class="separator:ae62453760864580ee831a0cc76cca185"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -566,7 +566,6 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add list of fields that have to be always included in SQL query for actions and row classes. </p>
-<p><a class="el" href="../../d9/da0/interface_base.html" title="Base for cache objects.">Base</a> fields are only available in system reports because they are not compatible with aggregation</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$sql</td><td>SQL clause for the list of fields that only uses main table or base joins </td></tr>
@@ -614,7 +613,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
+    <tr><td class="paramname">coding_exception</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -661,29 +660,31 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aac99276def5aef8649c390050b2e8296" name="aac99276def5aef8649c390050b2e8296"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac99276def5aef8649c390050b2e8296">&#9670;&#160;</a></span>add_columns()</h2>
+<a id="a3f6116bffaa8eef12718f501cf17c457" name="a3f6116bffaa8eef12718f501cf17c457"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f6116bffaa8eef12718f501cf17c457">&#9670;&#160;</a></span>add_columns()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">core_badges\reportbuilder\local\systemreports\badges::add_columns </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../db/d93/classcore__badges_1_1reportbuilder_1_1local_1_1entities_1_1badge.html">badge</a></td>          <td class="paramname"><span class="paramname"><em>$badgeentity</em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Adds the columns we want to display in the report. </p>
-<p>They are provided by the entities we previously added in the {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d9/d9e/group__mnet.html#gadd9ac7773eb89aae31cd23749e15d817" title="Set default element handlers and initialise properties to empty.">initialise</a>} method, referencing each by their unique identifier. If custom columns are needed just for this <a class="el" href="../../d1/dc3/group__report.html">report</a>, they can be defined here.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">badge</td><td class="paramname">$badgeentity</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>They are provided by the entities we previously added in the {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d9/d9e/group__mnet.html#gadd9ac7773eb89aae31cd23749e15d817" title="Set default element handlers and initialise properties to empty.">initialise</a>} method, referencing each by their unique identifier. If custom columns are needed just for this <a class="el" href="../../d1/dc3/group__report.html">report</a>, they can be defined here. </dd></dl>
 
 </div>
 </div>
@@ -759,7 +760,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
+    <tr><td class="paramname">coding_exception</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -911,7 +912,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
+    <tr><td class="paramname">coding_exception</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1101,7 +1102,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
+    <tr><td class="paramname">coding_exception</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1938,7 +1939,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
+    <tr><td class="paramname">coding_exception</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1983,7 +1984,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
+    <tr><td class="paramname">coding_exception</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -3102,7 +3103,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
+    <tr><td class="paramname">coding_exception</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -3246,7 +3247,7 @@ Protected Member Functions</h2></td></tr>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">report_access_exception</td><td>If user cannot access the report </td></tr>
-    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td>If no default column are specified </td></tr>
+    <tr><td class="paramname">coding_exception</td><td>If no default column are specified </td></tr>
   </table>
   </dd>
 </dl>
@@ -3261,7 +3262,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 9 2024 02:38:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 16 2024 02:39:37 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

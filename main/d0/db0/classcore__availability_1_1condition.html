@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240606) (d3ae1391abe)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240614) (2bf886f9dda)</div>
   </td>
  </tr>
  </tbody>
@@ -189,7 +189,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniquesqlparam
 <p>The structure of a condition in JSON input data is:</p>
 <p>{ type:'date', ... }</p>
 <p>where 'date' is the name of the plugin (<a class="el" href="../../dd/d27/namespaceavailability__date.html" title="&#160;">availability_date</a> in this case) and ... is arbitrary extra data to be used by the plugin.</p>
-<p>Conditions require a constructor with one parameter: $structure. This will contain all the JSON data for the condition. If the structure of the data is incorrect (e.g. missing fields) then the constructor may throw a <a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a>. However, the constructor should cope with all data that was previously valid (e.g. if the format changes, old data may still be present in a restore, so there should be a default value for any new fields and old ones should be handled correctly).</p>
+<p>Conditions require a constructor with one parameter: $structure. This will contain all the JSON data for the condition. If the structure of the data is incorrect (e.g. missing fields) then the constructor may throw a coding_exception. However, the constructor should cope with all data that was previously valid (e.g. if the format changes, old data may still be present in a restore, so there should be a default value for any new fields and old ones should be handled correctly).</p>
 <dl class="section copyright"><dt>Copyright</dt><dd>2014 The Open University </dd></dl>
 <dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU GPL v3 or later </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -503,7 +503,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniquesqlparam
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td>If called on a condition that doesn't apply to user lists </td></tr>
+    <tr><td class="paramname">coding_exception</td><td>If called on a condition that doesn't apply to user lists </td></tr>
   </table>
   </dd>
 </dl>
@@ -741,7 +741,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniquesqlparam
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td>If called on a condition that doesn't apply to user lists </td></tr>
+    <tr><td class="paramname">coding_exception</td><td>If called on a condition that doesn't apply to user lists </td></tr>
   </table>
   </dd>
 </dl>
@@ -1140,7 +1140,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniquesqlparam
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 9 2024 02:38:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 16 2024 02:39:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240606) (d3ae1391abe)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240614) (2bf886f9dda)</div>
   </td>
  </tr>
  </tbody>
@@ -182,8 +182,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aabfca9f0fbe8bd713f7a1eb808c14f3d" id="r_aabfca9f0fbe8bd713f7a1eb808c14f3d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d46/classcore__availability_1_1info.html#aabfca9f0fbe8bd713f7a1eb808c14f3d">update_dependency_id</a> ($table, $oldid, $newid)</td></tr>
 <tr class="memdesc:aabfca9f0fbe8bd713f7a1eb808c14f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called on a single item.  <br /></td></tr>
 <tr class="separator:aabfca9f0fbe8bd713f7a1eb808c14f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83f74ac813d130b2b0f346456bccb3a5" id="r_a83f74ac813d130b2b0f346456bccb3a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d46/classcore__availability_1_1info.html#a83f74ac813d130b2b0f346456bccb3a5">warn_about_invalid_availability</a> (\<a class="el" href="../../da/d34/classcoding__exception.html">coding_exception</a> $e)</td></tr>
-<tr class="memdesc:a83f74ac813d130b2b0f346456bccb3a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">In some places we catch <a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a> because if a bug happens, it would be fatal for the course page GUI; instead we just show a developer debug message.  <br /></td></tr>
+<tr class="memitem:a83f74ac813d130b2b0f346456bccb3a5" id="r_a83f74ac813d130b2b0f346456bccb3a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d46/classcore__availability_1_1info.html#a83f74ac813d130b2b0f346456bccb3a5">warn_about_invalid_availability</a> (\coding_exception $e)</td></tr>
+<tr class="memdesc:a83f74ac813d130b2b0f346456bccb3a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">In some places we catch coding_exception because if a bug happens, it would be fatal for the course page GUI; instead we just show a developer debug message.  <br /></td></tr>
 <tr class="separator:a83f74ac813d130b2b0f346456bccb3a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
@@ -542,8 +542,8 @@ static array null&#160;</td><td class="memItemRight" valign="bottom"><b>$restore
 
 <p>Decodes availability data from JSON format. </p>
 <p>This function also validates the retrieved data as follows:</p><ol type="1">
-<li>Data that does not meet the API-defined structure causes a <a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a> (this should be impossible unless there is a system bug or somebody manually hacks the database).</li>
-<li>Data that meets the structure but cannot be implemented (e.g. reference to missing plugin or to module that doesn't exist) is either silently discarded (if $lax is true) or causes a <a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a> (if $lax is false).</li>
+<li>Data that does not meet the API-defined structure causes a coding_exception (this should be impossible unless there is a system bug or somebody manually hacks the database).</li>
+<li>Data that meets the structure but cannot be implemented (e.g. reference to missing plugin or to module that doesn't exist) is either silently discarded (if $lax is true) or causes a coding_exception (if $lax is false).</li>
 </ol>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -560,7 +560,7 @@ static array null&#160;</td><td class="memItemRight" valign="bottom"><b>$restore
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td>If data is not valid JSON format </td></tr>
+    <tr><td class="paramname">coding_exception</td><td>If data is not valid JSON format </td></tr>
   </table>
   </dd>
 </dl>
@@ -871,7 +871,7 @@ static array null&#160;</td><td class="memItemRight" valign="bottom"><b>$restore
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td>If called at incorrect times </td></tr>
+    <tr><td class="paramname">coding_exception</td><td>If called at incorrect times </td></tr>
   </table>
   </dd>
 </dl>
@@ -916,7 +916,7 @@ static array null&#160;</td><td class="memItemRight" valign="bottom"><b>$restore
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td>If not in a restore (or not in that restore) </td></tr>
+    <tr><td class="paramname">coding_exception</td><td>If not in a restore (or not in that restore) </td></tr>
   </table>
   </dd>
 </dl>
@@ -961,7 +961,7 @@ static array null&#160;</td><td class="memItemRight" valign="bottom"><b>$restore
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td>If not in a restore (or not in that restore) </td></tr>
+    <tr><td class="paramname">coding_exception</td><td>If not in a restore (or not in that restore) </td></tr>
   </table>
   </dd>
 </dl>
@@ -1418,7 +1418,7 @@ static array null&#160;</td><td class="memItemRight" valign="bottom"><b>$restore
         <tr>
           <td class="memname">core_availability\info::warn_about_invalid_availability </td>
           <td>(</td>
-          <td class="paramtype">\<a class="el" href="../../da/d34/classcoding__exception.html">coding_exception</a></td>          <td class="paramname"><span class="paramname"><em>$e</em></span></td><td>)</td>
+          <td class="paramtype">\coding_exception</td>          <td class="paramname"><span class="paramname"><em>$e</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1429,10 +1429,10 @@ static array null&#160;</td><td class="memItemRight" valign="bottom"><b>$restore
 </table>
 </div><div class="memdoc">
 
-<p>In some places we catch <a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a> because if a bug happens, it would be fatal for the course page GUI; instead we just show a developer debug message. </p>
+<p>In some places we catch coding_exception because if a bug happens, it would be fatal for the course page GUI; instead we just show a developer debug message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td class="paramname">$e</td><td><a class="el" href="../../df/d70/class_exception.html" title="General SimplePie exception class.">Exception</a> that occurred </td></tr>
+    <tr><td class="paramtype">coding_exception</td><td class="paramname">$e</td><td><a class="el" href="../../df/d70/class_exception.html" title="General SimplePie exception class.">Exception</a> that occurred </td></tr>
   </table>
   </dd>
 </dl>
@@ -1445,7 +1445,7 @@ static array null&#160;</td><td class="memItemRight" valign="bottom"><b>$restore
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 9 2024 02:38:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 16 2024 02:39:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

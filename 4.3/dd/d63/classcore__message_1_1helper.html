@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3.5 (Build: 20240610) (7dcfaa79f78)</div>
+   <div id="projectbrief">Moodle 4.3.5+ (Build: 20240614) (a585bda18fe)</div>
   </td>
  </tr>
  </tbody>
@@ -135,9 +135,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ff1b91780280fdfae3f6d290987cc4e" id="r_a4ff1b91780280fdfae3f6d290987cc4e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ff1b91780280fdfae3f6d290987cc4e">show_online_status</a> ($user)</td></tr>
 <tr class="memdesc:a4ff1b91780280fdfae3f6d290987cc4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for checking if we should show the user's online status.  <br /></td></tr>
 <tr class="separator:a4ff1b91780280fdfae3f6d290987cc4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac53470819ea655fbe4654ba3d99f3de4" id="r_ac53470819ea655fbe4654ba3d99f3de4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac53470819ea655fbe4654ba3d99f3de4">togglecontact_link_params</a> ($user, $iscontact=false, bool $displaytextlabel=true)</td></tr>
-<tr class="memdesc:ac53470819ea655fbe4654ba3d99f3de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the attributes to place on a contact button.  <br /></td></tr>
-<tr class="separator:ac53470819ea655fbe4654ba3d99f3de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69c29c51162c3a9e2a0f58795d6acf61" id="r_a69c29c51162c3a9e2a0f58795d6acf61"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69c29c51162c3a9e2a0f58795d6acf61">togglecontact_link_params</a> ( $user, $iscontact=false, bool $displaytextlabel=true, bool $isrequested=false,)</td></tr>
+<tr class="memdesc:a69c29c51162c3a9e2a0f58795d6acf61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the attributes to place on a contact button.  <br /></td></tr>
+<tr class="separator:a69c29c51162c3a9e2a0f58795d6acf61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a978f6647106a78a5914863932b20b0a3" id="r_a978f6647106a78a5914863932b20b0a3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a978f6647106a78a5914863932b20b0a3">togglecontact_requirejs</a> ()</td></tr>
 <tr class="memdesc:a978f6647106a78a5914863932b20b0a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requires the JS libraries for the toggle contact button.  <br /></td></tr>
 <tr class="separator:a978f6647106a78a5914863932b20b0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -924,8 +924,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac53470819ea655fbe4654ba3d99f3de4" name="ac53470819ea655fbe4654ba3d99f3de4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac53470819ea655fbe4654ba3d99f3de4">&#9670;&#160;</a></span>togglecontact_link_params()</h2>
+<a id="a69c29c51162c3a9e2a0f58795d6acf61" name="a69c29c51162c3a9e2a0f58795d6acf61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69c29c51162c3a9e2a0f58795d6acf61">&#9670;&#160;</a></span>togglecontact_link_params()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -946,7 +946,12 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$displaytextlabel</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$displaytextlabel</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$isrequested</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -962,6 +967,7 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramtype">object</td><td class="paramname">$user</td><td>User object. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$iscontact</td><td></td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$displaytextlabel</td><td>Instructs whether to display a text label. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$isrequested</td><td>Whether the contact request is sent or not. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1013,7 +1019,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 9 2024 02:35:03 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 16 2024 02:35:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

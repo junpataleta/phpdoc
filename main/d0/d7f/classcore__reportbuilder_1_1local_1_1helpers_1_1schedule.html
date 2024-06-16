@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240606) (d3ae1391abe)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240614) (2bf886f9dda)</div>
   </td>
  </tr>
  </tbody>
@@ -111,7 +111,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7af396979bd4187ad43911b3bba8a8fb" id="r_a7af396979bd4187ad43911b3bba8a8fb"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7af396979bd4187ad43911b3bba8a8fb">get_viewas_options</a> ()</td></tr>
 <tr class="memdesc:a7af396979bd4187ad43911b3bba8a8fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return list of available view as user options.  <br /></td></tr>
 <tr class="separator:a7af396979bd4187ad43911b3bba8a8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad49a8403e9586886a7840b4f64b8df1c" id="r_ad49a8403e9586886a7840b4f64b8df1c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad49a8403e9586886a7840b4f64b8df1c">send_schedule_message</a> (model $<a class="el" href="../../d0/d7f/classcore__reportbuilder_1_1local_1_1helpers_1_1schedule.html">schedule</a>, stdClass $user, <a class="el" href="../../d0/d00/classstored__file.html">stored_file</a> $attachment)</td></tr>
+<tr class="memitem:ad49a8403e9586886a7840b4f64b8df1c" id="r_ad49a8403e9586886a7840b4f64b8df1c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad49a8403e9586886a7840b4f64b8df1c">send_schedule_message</a> (model $<a class="el" href="../../d0/d7f/classcore__reportbuilder_1_1local_1_1helpers_1_1schedule.html">schedule</a>, stdClass $<a class="el" href="../../d0/dba/classcore_1_1context_1_1user.html">user</a>, <a class="el" href="../../d0/d00/classstored__file.html">stored_file</a> $attachment)</td></tr>
 <tr class="memdesc:ad49a8403e9586886a7840b4f64b8df1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send schedule message to user.  <br /></td></tr>
 <tr class="separator:ad49a8403e9586886a7840b4f64b8df1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c739b07a92ee588ef01a01ff4c60313" id="r_a3c739b07a92ee588ef01a01ff4c60313"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c739b07a92ee588ef01a01ff4c60313">should_send_schedule</a> (model $<a class="el" href="../../d0/d7f/classcore__reportbuilder_1_1local_1_1helpers_1_1schedule.html">schedule</a>)</td></tr>
@@ -157,10 +157,11 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">model</td><td class="paramname">$schedule</td><td></td></tr>
-    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$timenow</td><td>Time to use as comparison against current date (defaults to current time) </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$timenow</td><td>Deprecated since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 - please use {</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd>clock} dependency injection </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int</td><td></td></tr>
@@ -201,10 +202,11 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$data</td><td></td></tr>
-    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$timenow</td><td>Time to use as comparison against current date (defaults to current time) </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$timenow</td><td>Deprecated since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 - please use {</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd>clock} dependency injection </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">model</td><td></td></tr>
@@ -257,7 +259,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../d5/def/classinvalid__parameter__exception.html" title="Exception indicating malformed parameter problem.">invalid_parameter_exception</a></td><td></td></tr>
+    <tr><td class="paramname">invalid_parameter_exception</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -651,7 +653,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../d5/def/classinvalid__parameter__exception.html" title="Exception indicating malformed parameter problem.">invalid_parameter_exception</a></td><td></td></tr>
+    <tr><td class="paramname">invalid_parameter_exception</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -696,7 +698,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../d5/def/classinvalid__parameter__exception.html" title="Exception indicating malformed parameter problem.">invalid_parameter_exception</a></td><td></td></tr>
+    <tr><td class="paramname">invalid_parameter_exception</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -709,7 +711,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 9 2024 02:39:00 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 16 2024 02:39:51 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>
