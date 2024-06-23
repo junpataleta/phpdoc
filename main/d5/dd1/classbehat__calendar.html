@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240614) (2bf886f9dda)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240620) (ad7fc69c251)</div>
   </td>
  </tr>
  </tbody>
@@ -101,6 +101,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af9302a47b512df2b33330473df0d4cfd" id="r_af9302a47b512df2b33330473df0d4cfd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9302a47b512df2b33330473df0d4cfd">i_am_viewing_site_calendar</a> ()</td></tr>
 <tr class="memdesc:af9302a47b512df2b33330473df0d4cfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Navigate to site calendar.  <br /></td></tr>
 <tr class="separator:af9302a47b512df2b33330473df0d4cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea31eb4cdf7931b96fe332a34261dc14" id="r_aea31eb4cdf7931b96fe332a34261dc14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea31eb4cdf7931b96fe332a34261dc14">i_click_on_day_of_this_month_in_mini_calendar_block</a> (int $day, string $responsive='')</td></tr>
+<tr class="memdesc:aea31eb4cdf7931b96fe332a34261dc14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Click on a specific day in the mini-calendar.  <br /></td></tr>
+<tr class="separator:aea31eb4cdf7931b96fe332a34261dc14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c9f0b5b8d505937c2a8bc6811af2e98" id="r_a6c9f0b5b8d505937c2a8bc6811af2e98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c9f0b5b8d505937c2a8bc6811af2e98">i_click_on_today_in_mini_calendar_block</a> (string $responsive='')</td></tr>
+<tr class="memdesc:a6c9f0b5b8d505937c2a8bc6811af2e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Click on today in the mini-calendar.  <br /></td></tr>
+<tr class="separator:a6c9f0b5b8d505937c2a8bc6811af2e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31476c3edbc625e0c9b6086f560de816" id="r_a31476c3edbc625e0c9b6086f560de816"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31476c3edbc625e0c9b6086f560de816">i_create_a_calendar_event</a> ($data)</td></tr>
 <tr class="memdesc:a31476c3edbc625e0c9b6086f560de816"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create event.  <br /></td></tr>
 <tr class="separator:a31476c3edbc625e0c9b6086f560de816"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -272,6 +278,63 @@ Public Attributes</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aea31eb4cdf7931b96fe332a34261dc14" name="aea31eb4cdf7931b96fe332a34261dc14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea31eb4cdf7931b96fe332a34261dc14">&#9670;&#160;</a></span>i_click_on_day_of_this_month_in_mini_calendar_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_calendar::i_click_on_day_of_this_month_in_mini_calendar_block </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$day</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$responsive</em></span><span class="paramdefsep"> = </span><span class="paramdefval">''</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Click on a specific day in the mini-calendar. </p>
+<p>@Given /^I click on day "(?P&lt;dayofmonth&gt;::d+)" of this month in the mini-calendar block(?P&lt;responsive&gt; responsive view|)$/</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$day</td><td>The day of the current month. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$responsive</td><td>If not null, find the responsive version of the link. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6c9f0b5b8d505937c2a8bc6811af2e98" name="a6c9f0b5b8d505937c2a8bc6811af2e98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c9f0b5b8d505937c2a8bc6811af2e98">&#9670;&#160;</a></span>i_click_on_today_in_mini_calendar_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_calendar::i_click_on_today_in_mini_calendar_block </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$responsive</em></span><span class="paramdefsep"> = </span><span class="paramdefval">''</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Click on today in the mini-calendar. </p>
+<p>@Given /^I click on today in the mini-calendar block( responsive view|)$/</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$responsive</td><td>If not empty, use the responsive calendar link. </td></tr>
   </table>
   </dd>
 </dl>
@@ -515,7 +578,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 16 2024 02:38:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 23 2024 02:36:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

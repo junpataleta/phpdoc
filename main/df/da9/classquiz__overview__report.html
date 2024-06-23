@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240614) (2bf886f9dda)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240620) (ad7fc69c251)</div>
   </td>
  </tr>
  </tbody>
@@ -170,12 +170,15 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a962ab3e8d4915a594eb3b6744f481361" id="r_a962ab3e8d4915a594eb3b6744f481361"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfd/classmod__quiz_1_1local_1_1reports_1_1attempts__report.html#a962ab3e8d4915a594eb3b6744f481361">configure_user_columns</a> ($table)</td></tr>
 <tr class="memdesc:a962ab3e8d4915a594eb3b6744f481361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the display options for the user-related columns in the table.  <br /></td></tr>
 <tr class="separator:a962ab3e8d4915a594eb3b6744f481361"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ddf5c1c60560ef8b14c4310bd059f89" id="r_a1ddf5c1c60560ef8b14c4310bd059f89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ddf5c1c60560ef8b14c4310bd059f89">count_question_attempts_needing_regrade</a> ($quiz, <a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html">core\dml\sql_join</a> $groupstudentsjoins)</td></tr>
-<tr class="memdesc:a1ddf5c1c60560ef8b14c4310bd059f89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of attempts in need of a regrade.  <br /></td></tr>
-<tr class="separator:a1ddf5c1c60560ef8b14c4310bd059f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85f0eb13214e4eefd0d38273c5945bb9" id="r_a85f0eb13214e4eefd0d38273c5945bb9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85f0eb13214e4eefd0d38273c5945bb9">count_attempts_and_questions_needing_regrade</a> ($quiz, <a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html">core\dml\sql_join</a> $groupstudentsjoins)</td></tr>
+<tr class="memdesc:a85f0eb13214e4eefd0d38273c5945bb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of attempts and questions in need of regrading after the last dry run.  <br /></td></tr>
+<tr class="separator:a85f0eb13214e4eefd0d38273c5945bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad51a7221bbc88df1c972e3d034056b56" id="r_ad51a7221bbc88df1c972e3d034056b56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfd/classmod__quiz_1_1local_1_1reports_1_1attempts__report.html#ad51a7221bbc88df1c972e3d034056b56">delete_selected_attempts</a> ($quiz, $cm, $attemptids, <a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html">core\dml\sql_join</a> $allowedjoins)</td></tr>
 <tr class="memdesc:ad51a7221bbc88df1c972e3d034056b56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the quiz attempts.  <br /></td></tr>
 <tr class="separator:ad51a7221bbc88df1c972e3d034056b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b0b010a738cff3cdb182cef14b94cf8" id="r_a6b0b010a738cff3cdb182cef14b94cf8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b0b010a738cff3cdb182cef14b94cf8">display_commit_regrade_if_required</a> (stdClass $quiz, <a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html">core\dml\sql_join</a> $groupstudentsjoins, <a class="el" href="../../db/d7e/classquiz__overview__options.html">quiz_overview_options</a> $options,)</td></tr>
+<tr class="memdesc:a6b0b010a738cff3cdb182cef14b94cf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a previous dry run regrade had been done, display a message to commit the changes.  <br /></td></tr>
+<tr class="separator:a6b0b010a738cff3cdb182cef14b94cf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6809f087a1736cf8081a86880a61440b" id="r_a6809f087a1736cf8081a86880a61440b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6809f087a1736cf8081a86880a61440b">finish_regrade</a> ($nexturl)</td></tr>
 <tr class="memdesc:a6809f087a1736cf8081a86880a61440b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finish displaying the regrade progress page.  <br /></td></tr>
 <tr class="separator:a6809f087a1736cf8081a86880a61440b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,16 +195,19 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a2311f1c7a6d1793d353cec8e80973220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the things you commonly want at the top of a quiz report.  <br /></td></tr>
 <tr class="separator:a2311f1c7a6d1793d353cec8e80973220"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a460de784c8a9d177a7c55fc47142ebda" id="r_a460de784c8a9d177a7c55fc47142ebda"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a460de784c8a9d177a7c55fc47142ebda">process_actions</a> ($quiz, $cm, $currentgroup, <a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html">core\dml\sql_join</a> $groupstudentsjoins, <a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html">core\dml\sql_join</a> $allowedjoins, $redirecturl)</td></tr>
-<tr class="memdesc:a460de784c8a9d177a7c55fc47142ebda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extends parent function processing any submitted actions.  <br /></td></tr>
+<tr class="memdesc:a460de784c8a9d177a7c55fc47142ebda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process any submitted actions.  <br /></td></tr>
 <tr class="separator:a460de784c8a9d177a7c55fc47142ebda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad174eee73716514c12eed1782509c2da" id="r_ad174eee73716514c12eed1782509c2da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad174eee73716514c12eed1782509c2da">regrade_attempts</a> ($quiz, $dryrun=false, <a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html">core\dml\sql_join</a> $groupstudentsjoins=null, $attemptids=[])</td></tr>
-<tr class="memdesc:ad174eee73716514c12eed1782509c2da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regrade attempts for this quiz, exactly which attempts are regraded is controlled by the parameters.  <br /></td></tr>
-<tr class="separator:ad174eee73716514c12eed1782509c2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a608c0545a842901b4805212e3adb5fa5" id="r_a608c0545a842901b4805212e3adb5fa5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a608c0545a842901b4805212e3adb5fa5">process_regrade_actions</a> ($quiz, $cm, $currentgroup, <a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html">core\dml\sql_join</a> $groupstudentsjoins, <a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $redirecturl)</td></tr>
+<tr class="memdesc:a608c0545a842901b4805212e3adb5fa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extends parent function processing any submitted actions.  <br /></td></tr>
+<tr class="separator:a608c0545a842901b4805212e3adb5fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2762b0c8efb9ff26e520ffba2d692f6" id="r_ad2762b0c8efb9ff26e520ffba2d692f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2762b0c8efb9ff26e520ffba2d692f6">regrade_attempts</a> ($quiz, $dryrun=false, ?\<a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html">core\dml\sql_join</a> $groupstudentsjoins=null, $attemptids=[], ?array $slots=null)</td></tr>
+<tr class="memdesc:ad2762b0c8efb9ff26e520ffba2d692f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regrade attempts for this quiz, exactly which attempts are regraded is controlled by the parameters.  <br /></td></tr>
+<tr class="separator:ad2762b0c8efb9ff26e520ffba2d692f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a700e1373976396ff2e6d8d587e3be0e5" id="r_a700e1373976396ff2e6d8d587e3be0e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a700e1373976396ff2e6d8d587e3be0e5">regrade_attempts_needing_it</a> ($quiz, <a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html">core\dml\sql_join</a> $groupstudentsjoins)</td></tr>
-<tr class="memdesc:a700e1373976396ff2e6d8d587e3be0e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regrade those questions in those attempts that are marked as needing regrading in the quiz_overview_regrades table.  <br /></td></tr>
+<tr class="memdesc:a700e1373976396ff2e6d8d587e3be0e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regrade the questions in the attempts that are marked as needing it in quiz_overview_regrades.  <br /></td></tr>
 <tr class="separator:a700e1373976396ff2e6d8d587e3be0e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cd042f36e80cd5349384fc076320a23" id="r_a9cd042f36e80cd5349384fc076320a23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cd042f36e80cd5349384fc076320a23">regrade_batch_of_attempts</a> ($quiz, array $attempts, bool $dryrun, <a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html">core\dml\sql_join</a> $groupstudentsjoins)</td></tr>
-<tr class="memdesc:a9cd042f36e80cd5349384fc076320a23"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a helper used by <a class="el" href="#ad174eee73716514c12eed1782509c2da">regrade_attempts()</a> and <a class="el" href="#a700e1373976396ff2e6d8d587e3be0e5">regrade_attempts_needing_it()</a>.  <br /></td></tr>
+<tr class="memdesc:a9cd042f36e80cd5349384fc076320a23"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a helper used by <a class="el" href="#ad2762b0c8efb9ff26e520ffba2d692f6">regrade_attempts()</a> and <a class="el" href="#a700e1373976396ff2e6d8d587e3be0e5">regrade_attempts_needing_it()</a>.  <br /></td></tr>
 <tr class="separator:a9cd042f36e80cd5349384fc076320a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87f42cea111bf1da89bcdab369e7958b" id="r_a87f42cea111bf1da89bcdab369e7958b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfd/classmod__quiz_1_1local_1_1reports_1_1attempts__report.html#a87f42cea111bf1da89bcdab369e7958b">set_up_table_columns</a> ($table, $columns, $headers, $reporturl, attempts_report_options $options, $collapsible)</td></tr>
 <tr class="memdesc:a87f42cea111bf1da89bcdab369e7958b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up the table.  <br /></td></tr>
@@ -244,7 +250,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$mode</b></td></tr>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></td></tr>
 <tr class="memdesc:ac8beabb1e3c9042788a471a9263b80f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">SQL fragment for selecting the attempt that gave the final grade, if applicable. <br /></td></tr>
 <tr class="separator:ac8beabb1e3c9042788a471a9263b80f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23c94f377155a77744c801a44757ea1a" id="r_a23c94f377155a77744c801a44757ea1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d84/classmod__quiz_1_1quiz__settings.html">quiz_settings</a> null&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfd/classmod__quiz_1_1local_1_1reports_1_1attempts__report.html#a23c94f377155a77744c801a44757ea1a">$quizobj</a> = null</td></tr>
+<tr class="memitem:a23c94f377155a77744c801a44757ea1a" id="r_a23c94f377155a77744c801a44757ea1a"><td class="memItemLeft" align="right" valign="top">quiz_settings null&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfd/classmod__quiz_1_1local_1_1reports_1_1attempts__report.html#a23c94f377155a77744c801a44757ea1a">$quizobj</a> = null</td></tr>
 <tr class="memdesc:a23c94f377155a77744c801a44757ea1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">quiz settings object.  <br /></td></tr>
 <tr class="separator:a23c94f377155a77744c801a44757ea1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1bd01400347e30f6983a207c52d3127" id="r_ae1bd01400347e30f6983a207c52d3127"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfd/classmod__quiz_1_1local_1_1reports_1_1attempts__report.html#ae1bd01400347e30f6983a207c52d3127">$showgrades</a> = null</td></tr>
@@ -547,8 +553,8 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
 
 </div>
 </div>
-<a id="a1ddf5c1c60560ef8b14c4310bd059f89" name="a1ddf5c1c60560ef8b14c4310bd059f89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ddf5c1c60560ef8b14c4310bd059f89">&#9670;&#160;</a></span>count_question_attempts_needing_regrade()</h2>
+<a id="a85f0eb13214e4eefd0d38273c5945bb9" name="a85f0eb13214e4eefd0d38273c5945bb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85f0eb13214e4eefd0d38273c5945bb9">&#9670;&#160;</a></span>count_attempts_and_questions_needing_regrade()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -557,7 +563,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">quiz_overview_report::count_question_attempts_needing_regrade </td>
+          <td class="memname">quiz_overview_report::count_attempts_and_questions_needing_regrade </td>
           <td>(</td>
           <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$quiz</em></span>, </td>
         </tr>
@@ -574,17 +580,17 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
 </table>
 </div><div class="memdoc">
 
-<p>Count the number of attempts in need of a regrade. </p>
+<p>Count the number of attempts and questions in need of regrading after the last dry run. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html" title="An object that contains sql join fragments.">core\dml\sql_join</a></td><td class="paramname">$groupstudentsjoins</td><td>(joins, wheres, params) If this is given, only data relating to these users is cleared. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html" title="An object that contains sql join fragments.">core\dml\sql_join</a></td><td class="paramname">$groupstudentsjoins</td><td>which users' attempts should be considered. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">int</td><td>the number of attempts. </td></tr>
+    <tr><td class="paramname">array</td><td>of two elements: the number of different attempts and questions needed to be regraded. </td></tr>
   </table>
   </dd>
 </dl>
@@ -678,6 +684,50 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
 </dl>
 
 <p>Reimplemented from <a class="el" href="../../d3/d86/classmod__quiz_1_1local_1_1reports_1_1report__base.html#a93936fac518bb1d97d736bf2a7d75dcc">mod_quiz\local\reports\report_base</a>.</p>
+
+</div>
+</div>
+<a id="a6b0b010a738cff3cdb182cef14b94cf8" name="a6b0b010a738cff3cdb182cef14b94cf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b0b010a738cff3cdb182cef14b94cf8">&#9670;&#160;</a></span>display_commit_regrade_if_required()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">quiz_overview_report::display_commit_regrade_if_required </td>
+          <td>(</td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$quiz</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html">core\dml\sql_join</a></td>          <td class="paramname"><span class="paramname"><em>$groupstudentsjoins</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d7e/classquiz__overview__options.html">quiz_overview_options</a></td>          <td class="paramname"><span class="paramname"><em>$options</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If a previous dry run regrade had been done, display a message to commit the changes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>quiz settings. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html" title="An object that contains sql join fragments.">core\dml\sql_join</a></td><td class="paramname">$groupstudentsjoins</td><td>which users' attempts should be considered. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../db/d7e/classquiz__overview__options.html">quiz_overview_options</a></td><td class="paramname">$options</td><td>report options. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1255,6 +1305,65 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
 </table>
 </div><div class="memdoc">
 
+<p>Process any submitted actions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$cm</td><td>the cm object for the quiz. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$currentgroup</td><td>the currently selected group. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html" title="An object that contains sql join fragments.">core\dml\sql_join</a></td><td class="paramname">$groupstudentsjoins</td><td>(joins, wheres, params) the students in the current group. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html" title="An object that contains sql join fragments.">core\dml\sql_join</a></td><td class="paramname">$allowedjoins</td><td>(joins, wheres, params) the users whose attempt this user is allowed to modify. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$redirecturl</td><td>where to redircet to after a successful action. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="../../df/dfd/classmod__quiz_1_1local_1_1reports_1_1attempts__report.html#ae1620d4bb4ff02ad2461873667633f23">mod_quiz\local\reports\attempts_report</a>.</p>
+
+</div>
+</div>
+<a id="a608c0545a842901b4805212e3adb5fa5" name="a608c0545a842901b4805212e3adb5fa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a608c0545a842901b4805212e3adb5fa5">&#9670;&#160;</a></span>process_regrade_actions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">quiz_overview_report::process_regrade_actions </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$quiz</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$cm</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$currentgroup</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html">core\dml\sql_join</a></td>          <td class="paramname"><span class="paramname"><em>$groupstudentsjoins</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a></td>          <td class="paramname"><span class="paramname"><em>$redirecturl</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 <p>Extends parent function processing any submitted actions. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1262,13 +1371,10 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
     <tr><td class="paramtype">stdClass</td><td class="paramname">$cm</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$currentgroup</td><td></td></tr>
     <tr><td class="paramtype"><a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html" title="An object that contains sql join fragments.">core\dml\sql_join</a></td><td class="paramname">$groupstudentsjoins</td><td>(joins, wheres, params) </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html" title="An object that contains sql join fragments.">core\dml\sql_join</a></td><td class="paramname">$allowedjoins</td><td>(joins, wheres, params) </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$redirecturl</td><td></td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Reimplemented from <a class="el" href="../../df/dfd/classmod__quiz_1_1local_1_1reports_1_1attempts__report.html#ae1620d4bb4ff02ad2461873667633f23">mod_quiz\local\reports\attempts_report</a>.</p>
 
 </div>
 </div>
@@ -1303,7 +1409,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$attempt</td><td>the quiz attempt to regrade. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$dryrun</td><td>if true, do a pretend regrade, otherwise do it for real. </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$slots</td><td>if null, regrade all questions, otherwise, just regrade the questions with those slots. </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$slots</td><td>if null, regrade all questions, otherwise, just regrade the questions with those slots. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1316,8 +1422,8 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
 
 </div>
 </div>
-<a id="ad174eee73716514c12eed1782509c2da" name="ad174eee73716514c12eed1782509c2da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad174eee73716514c12eed1782509c2da">&#9670;&#160;</a></span>regrade_attempts()</h2>
+<a id="ad2762b0c8efb9ff26e520ffba2d692f6" name="ad2762b0c8efb9ff26e520ffba2d692f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2762b0c8efb9ff26e520ffba2d692f6">&#9670;&#160;</a></span>regrade_attempts()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1338,12 +1444,17 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html">core\dml\sql_join</a></td>          <td class="paramname"><span class="paramname"><em>$groupstudentsjoins</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+          <td class="paramtype">?\<a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html">core\dml\sql_join</a></td>          <td class="paramname"><span class="paramname"><em>$groupstudentsjoins</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$attemptids</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[]</span>&#160;)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$attemptids</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?array</td>          <td class="paramname"><span class="paramname"><em>$slots</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -1360,6 +1471,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
     <tr><td class="paramtype">bool</td><td class="paramname">$dryrun</td><td>if true, do a pretend regrade, otherwise do it for real. </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html" title="An object that contains sql join fragments.">core\dml\sql_join</a>&#160;|&#160;null</td><td class="paramname">$groupstudentsjoins</td><td>empty for all attempts, otherwise regrade attempts for these users. </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$attemptids</td><td>blank for all attempts, otherwise only regrade attempts whose id is in this list. </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$slots</td><td>if null, regrade all questions, otherwise, just regrade the questions with those slots. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1393,7 +1505,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
 </table>
 </div><div class="memdoc">
 
-<p>Regrade those questions in those attempts that are marked as needing regrading in the quiz_overview_regrades table. </p>
+<p>Regrade the questions in the attempts that are marked as needing it in quiz_overview_regrades. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
@@ -1441,7 +1553,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
 </table>
 </div><div class="memdoc">
 
-<p>This is a helper used by <a class="el" href="#ad174eee73716514c12eed1782509c2da">regrade_attempts()</a> and <a class="el" href="#a700e1373976396ff2e6d8d587e3be0e5">regrade_attempts_needing_it()</a>. </p>
+<p>This is a helper used by <a class="el" href="#ad2762b0c8efb9ff26e520ffba2d692f6">regrade_attempts()</a> and <a class="el" href="#a700e1373976396ff2e6d8d587e3be0e5">regrade_attempts_needing_it()</a>. </p>
 <p>Given an array of attempts, it regrades them all, or does a dry run. Each object in the attempts array must be a row from the quiz_attempts table, with the <a class="el" href="../../df/d37/classcore__user_1_1fields.html#ad7a0ef3a5ba5818c57d77b7b7463dfc0" title="Constructs a user fields object to get information required for displaying a user full name.">core_user\fields\for_name()</a> fields from the user table joined in. In addition, if $attempt-&gt;regradeonlyslots is set, then only those slots are regraded, otherwise all slots are regraded.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1600,7 +1712,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../db/d84/classmod__quiz_1_1quiz__settings.html">quiz_settings</a> null mod_quiz\local\reports\attempts_report::$quizobj = null</td>
+          <td class="memname">quiz_settings null mod_quiz\local\reports\attempts_report::$quizobj = null</td>
         </tr>
       </table>
   </td>
@@ -1646,7 +1758,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 16 2024 02:39:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 23 2024 02:37:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>
