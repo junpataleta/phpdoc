@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240620) (ad7fc69c251)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
   </td>
  </tr>
  </tbody>
@@ -86,7 +86,6 @@ Inheritance diagram for MoodleQuickForm_filetypes:</div>
   <img src="../../de/d03/class_moodle_quick_form__filetypes.png" usemap="#MoodleQuickForm_5Ffiletypes_map" alt=""/>
   <map id="MoodleQuickForm_5Ffiletypes_map" name="MoodleQuickForm_5Ffiletypes_map">
 <area href="../../dd/d80/class_moodle_quick_form__group.html" title="HTML class for a form element group." alt="MoodleQuickForm_group" shape="rect" coords="90,56,260,80"/>
-<area href="../../d8/d34/interfacetemplatable.html" title="Interface marking other classes having the ability to export their data for use by templates." alt="templatable" shape="rect" coords="180,0,350,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -106,8 +105,7 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>createFormElement</b> ()</td></tr>
 <tr class="memdesc:ae58e223dd0b00553897a50d1cc02575e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an element to add to the group Expects the same arguments as MoodleQuickForm\createElement() <br /></td></tr>
 <tr class="separator:ae58e223dd0b00553897a50d1cc02575e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6b6954dc8b102342b0e0abb086a2865" id="r_ad6b6954dc8b102342b0e0abb086a2865"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d80/class_moodle_quick_form__group.html#ad6b6954dc8b102342b0e0abb086a2865">export_for_template</a> (<a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a> $output)</td></tr>
-<tr class="memdesc:ad6b6954dc8b102342b0e0abb086a2865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to export the renderer data in a format that is suitable for a mustache template.  <br /></td></tr>
+<tr class="memitem:ad6b6954dc8b102342b0e0abb086a2865" id="r_ad6b6954dc8b102342b0e0abb086a2865"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d80/class_moodle_quick_form__group.html#ad6b6954dc8b102342b0e0abb086a2865">export_for_template</a> (renderer_base $output)</td></tr>
 <tr class="separator:ad6b6954dc8b102342b0e0abb086a2865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5173a877bbd4ddc45612db16d4012115" id="r_a5173a877bbd4ddc45612db16d4012115"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5173a877bbd4ddc45612db16d4012115">exportValue</a> (&amp;$submitted, $assoc=false)</td></tr>
 <tr class="memdesc:a5173a877bbd4ddc45612db16d4012115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the selected file types.  <br /></td></tr>
@@ -274,7 +272,7 @@ core_form <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.ht
         <tr>
           <td class="memname">MoodleQuickForm_group::export_for_template </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a></td>          <td class="paramname"><span class="paramname"><em>$output</em></span></td><td>)</td>
+          <td class="paramtype">renderer_base</td>          <td class="paramname"><span class="paramname"><em>$output</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -284,26 +282,6 @@ core_form <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.ht
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Function to export the renderer data in a format that is suitable for a mustache template. </p>
-<p>This means:</p><ol type="1">
-<li>No complex types - only stdClass, array, int, string, float, bool</li>
-<li>Any additional info that is required for the template is pre-calculated (e.g. capability checks).</li>
-</ol>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../de/d60/classrenderer__base.html" title="Simple base class for Moodle renderers.">renderer_base</a></td><td class="paramname">$output</td><td>Used to do a final render of any components that need to be rendered for export. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">stdClass|array</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="../../d8/d34/interfacetemplatable.html#a569151cf997eb2bb240cdd79d7475219">templatable</a>.</p>
 
 <p>Reimplemented in <a class="el" href="../../d3/d7b/class_moodle_quick_form__date__selector.html#a0c9342c62185f64ae7ddb255d235ae6a">MoodleQuickForm_date_selector</a>, and <a class="el" href="../../dc/d5e/class_moodle_quick_form__date__time__selector.html#a343beb58de23264c698b02f26e9028ee">MoodleQuickForm_date_time_selector</a>.</p>
 
@@ -484,7 +462,7 @@ core_form <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.ht
 
 <p>Old syntax of class constructor. </p>
 <p>Deprecated in PHP7.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000685">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000708">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -671,7 +649,7 @@ core_form <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.ht
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 23 2024 02:37:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 30 2024 02:40:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

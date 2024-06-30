@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240620) (ad7fc69c251)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
   </td>
  </tr>
  </tbody>
@@ -339,14 +339,14 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$qubaid</td><td>the id of the question usage for this preview </td></tr>
     <tr><td class="paramtype">question_preview_options</td><td class="paramname">$options</td><td>the options in use </td></tr>
     <tr><td class="paramtype">context</td><td class="paramname">$context</td><td>context for the question preview </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$returnurl</td><td>url of the page to return to </td></tr>
+    <tr><td class="paramtype">moodle_url</td><td class="paramname">$returnurl</td><td>url of the page to return to </td></tr>
     <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$restartversion</td><td>version of the question to use when next restarting the preview. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td></td></tr>
+    <tr><td class="paramname">moodle_url</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -396,13 +396,13 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$questionid</td><td>the question being previewed </td></tr>
     <tr><td class="paramtype">context</td><td class="paramname">$context</td><td>the current moodle context </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$previewid</td><td>optional previewid to sign post saved previewed answers </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$returnurl</td><td>url of the page to return to </td></tr>
+    <tr><td class="paramtype">moodle_url</td><td class="paramname">$returnurl</td><td>url of the page to return to </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td></td></tr>
+    <tr><td class="paramname">moodle_url</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -439,7 +439,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dd5/classpopup__action.html" title="Component action for a popup window.">popup_action</a>} constructor. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>popup_action} constructor. </dd></dl>
 
 </div>
 </div>
@@ -595,14 +595,14 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramtype"><a class="el" href="../../d8/d05/classquestion__display__options.html" title="This class contains all the options that controls how a question is displayed.">question_display_options</a></td><td class="paramname">$displayoptions</td><td>the display options to use </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$variant</td><td>the variant of the question to preview. If null, one will be picked randomly </td></tr>
     <tr><td class="paramtype">object</td><td class="paramname">$context</td><td>context to run the preview in (affects things like filter settings, theme, lang, etc.) Defaults to $PAGE-&gt;context </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$returnurl</td><td>url of the page to return to </td></tr>
+    <tr><td class="paramtype">moodle_url</td><td class="paramname">$returnurl</td><td>url of the page to return to </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$restartversion</td><td>The version of the question to use when restarting the preview. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td>the URL </td></tr>
+    <tr><td class="paramname">moodle_url</td><td>the URL </td></tr>
   </table>
   </dd>
 </dl>
@@ -663,7 +663,7 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$questionid</td><td>id of the question in preview </td></tr>
     <tr><td class="paramtype">object</td><td class="paramname">$displayoptions</td><td>display options for the question in preview </td></tr>
     <tr><td class="paramtype">object</td><td class="paramname">$context</td><td>context of the question for preview </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$returnurl</td><td>url of the page to return to </td></tr>
+    <tr><td class="paramtype">moodle_url</td><td class="paramname">$returnurl</td><td>url of the page to return to </td></tr>
     <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$restartversion</td><td>version of the question to use when next restarting the preview. </td></tr>
   </table>
   </dd>
@@ -683,7 +683,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 23 2024 02:38:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 30 2024 02:41:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

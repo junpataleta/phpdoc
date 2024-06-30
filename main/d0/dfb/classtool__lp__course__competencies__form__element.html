@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240620) (ad7fc69c251)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
   </td>
  </tr>
  </tbody>
@@ -87,7 +87,6 @@ Inheritance diagram for tool_lp_course_competencies_form_element:</div>
   <map id="tool_5Flp_5Fcourse_5Fcompetencies_5Fform_5Felement_map" name="tool_5Flp_5Fcourse_5Fcompetencies_5Fform_5Felement_map">
 <area href="../../df/dfc/class_moodle_quick_form__autocomplete.html" title="Autocomplete as you type form element." alt="MoodleQuickForm_autocomplete" shape="rect" coords="135,112,396,136"/>
 <area href="../../d0/d26/class_moodle_quick_form__select.html" title="select type form element" alt="MoodleQuickForm_select" shape="rect" coords="135,56,396,80"/>
-<area href="../../d8/d34/interfacetemplatable.html" title="Interface marking other classes having the ability to export their data for use by templates." alt="templatable" shape="rect" coords="271,0,532,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -96,8 +95,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ade5b20f07a7b3a709601638cfbb81342" id="r_ade5b20f07a7b3a709601638cfbb81342"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade5b20f07a7b3a709601638cfbb81342">__construct</a> ($elementName=null, $elementLabel=null, $options=array(), $attributes=null)</td></tr>
 <tr class="memdesc:ade5b20f07a7b3a709601638cfbb81342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:ade5b20f07a7b3a709601638cfbb81342"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00258defdafd0fbc52abfdcea17e7dfb" id="r_a00258defdafd0fbc52abfdcea17e7dfb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfc/class_moodle_quick_form__autocomplete.html#a00258defdafd0fbc52abfdcea17e7dfb">export_for_template</a> (<a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a> $output)</td></tr>
-<tr class="memdesc:a00258defdafd0fbc52abfdcea17e7dfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to export the renderer data in a format that is suitable for a mustache template.  <br /></td></tr>
+<tr class="memitem:a00258defdafd0fbc52abfdcea17e7dfb" id="r_a00258defdafd0fbc52abfdcea17e7dfb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfc/class_moodle_quick_form__autocomplete.html#a00258defdafd0fbc52abfdcea17e7dfb">export_for_template</a> (renderer_base $output)</td></tr>
 <tr class="separator:a00258defdafd0fbc52abfdcea17e7dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f5531309bc0cb8bbaf1d3729a009c04" id="r_a1f5531309bc0cb8bbaf1d3729a009c04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfc/class_moodle_quick_form__autocomplete.html#a1f5531309bc0cb8bbaf1d3729a009c04">exportValue</a> (&amp;$submitValues, $assoc=false)</td></tr>
 <tr class="memdesc:a1f5531309bc0cb8bbaf1d3729a009c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a 'safe' element's value.  <br /></td></tr>
@@ -241,7 +239,7 @@ callable null&#160;</td><td class="memItemRight" valign="bottom"><b>$valuehtmlca
         <tr>
           <td class="memname">MoodleQuickForm_autocomplete::export_for_template </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a></td>          <td class="paramname"><span class="paramname"><em>$output</em></span></td><td>)</td>
+          <td class="paramtype">renderer_base</td>          <td class="paramname"><span class="paramname"><em>$output</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -252,27 +250,7 @@ callable null&#160;</td><td class="memItemRight" valign="bottom"><b>$valuehtmlca
 </table>
 </div><div class="memdoc">
 
-<p>Function to export the renderer data in a format that is suitable for a mustache template. </p>
-<p>This means:</p><ol type="1">
-<li>No complex types - only stdClass, array, int, string, float, bool</li>
-<li>Any additional info that is required for the template is pre-calculated (e.g. capability checks).</li>
-</ol>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../de/d60/classrenderer__base.html" title="Simple base class for Moodle renderers.">renderer_base</a></td><td class="paramname">$output</td><td>Used to do a final render of any components that need to be rendered for export. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">stdClass|array</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Reimplemented from <a class="el" href="../../d0/d26/class_moodle_quick_form__select.html#a48c9711bf40f7c4e73c073c4f8a4bf28">MoodleQuickForm_select</a>.</p>
-
-<p>Reimplemented in <a class="el" href="../../db/d1c/class_moodle_quick_form__tags.html#a0fd6ffc0d797070f44ac5d1b393f3d43">MoodleQuickForm_tags</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d0/d26/class_moodle_quick_form__select.html">MoodleQuickForm_select</a>.</p>
 
 </div>
 </div>
@@ -430,7 +408,7 @@ callable null&#160;</td><td class="memItemRight" valign="bottom"><b>$valuehtmlca
 
 <p>Old syntax of class constructor. </p>
 <p>Deprecated in PHP7.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000671">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000694">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -473,7 +451,7 @@ callable null&#160;</td><td class="memItemRight" valign="bottom"><b>$valuehtmlca
 
 <p>Old syntax of class constructor. </p>
 <p>Deprecated in PHP7.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000698">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000721">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -724,7 +702,7 @@ callable null&#160;</td><td class="memItemRight" valign="bottom"><b>$valuehtmlca
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 23 2024 02:37:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 30 2024 02:40:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

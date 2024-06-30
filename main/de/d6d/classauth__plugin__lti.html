@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240620) (ad7fc69c251)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
   </td>
  </tr>
  </tbody>
@@ -115,7 +115,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a35518ee2fa3510b2361235c04fc40d24" id="r_a35518ee2fa3510b2361235c04fc40d24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7a/classauth__plugin__base.html#a35518ee2fa3510b2361235c04fc40d24">change_password_url</a> ()</td></tr>
 <tr class="memdesc:a35518ee2fa3510b2361235c04fc40d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the URL for changing the users' passwords, or empty if the default URL can be used.  <br /></td></tr>
 <tr class="separator:a35518ee2fa3510b2361235c04fc40d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07377a81db32dfaae4128e69ca215c88" id="r_a07377a81db32dfaae4128e69ca215c88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07377a81db32dfaae4128e69ca215c88">complete_login</a> (array $launchdata, <a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $returnurl, int $provisioningmode, array $legacyconsumersecrets=[])</td></tr>
+<tr class="memitem:a07377a81db32dfaae4128e69ca215c88" id="r_a07377a81db32dfaae4128e69ca215c88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07377a81db32dfaae4128e69ca215c88">complete_login</a> (array $launchdata, moodle_url $returnurl, int $provisioningmode, array $legacyconsumersecrets=[])</td></tr>
 <tr class="memdesc:a07377a81db32dfaae4128e69ca215c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Authenticate the user based on the unique {iss, sub} tuple present in the OIDC <a class="el" href="../../d8/d39/class_j_w_t.html">JWT</a>.  <br /></td></tr>
 <tr class="separator:a07377a81db32dfaae4128e69ca215c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63c4d919a83ab4be998397c1d2cc88b4" id="r_a63c4d919a83ab4be998397c1d2cc88b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7a/classauth__plugin__base.html#a63c4d919a83ab4be998397c1d2cc88b4">config_form</a> ($config, $err, $user_fields)</td></tr>
@@ -256,7 +256,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a2d217ae9107559898dfa8b5b151a700c" id="r_a2d217ae9107559898dfa8b5b151a700c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7a/classauth__plugin__base.html#a2d217ae9107559898dfa8b5b151a700c">login_cli_admin_user</a> ()</td></tr>
 <tr class="memdesc:a2d217ae9107559898dfa8b5b151a700c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find and login as an OS level admin <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> user account.  <br /></td></tr>
 <tr class="separator:a2d217ae9107559898dfa8b5b151a700c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a924e24173d42049499bef18dc4ec9898" id="r_a924e24173d42049499bef18dc4ec9898"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7a/classauth__plugin__base.html#a924e24173d42049499bef18dc4ec9898">prepare_identity_providers_for_output</a> ($identityproviders, <a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a> $output)</td></tr>
+<tr class="memitem:a924e24173d42049499bef18dc4ec9898" id="r_a924e24173d42049499bef18dc4ec9898"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7a/classauth__plugin__base.html#a924e24173d42049499bef18dc4ec9898">prepare_identity_providers_for_output</a> ($identityproviders, renderer_base $output)</td></tr>
 <tr class="memdesc:a924e24173d42049499bef18dc4ec9898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare a list of identity providers for output.  <br /></td></tr>
 <tr class="separator:a924e24173d42049499bef18dc4ec9898"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -573,7 +573,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$extrauserinfo</b> =
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a></td>          <td class="paramname"><span class="paramname"><em>$returnurl</em></span>, </td>
+          <td class="paramtype">moodle_url</td>          <td class="paramname"><span class="paramname"><em>$returnurl</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -601,7 +601,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$extrauserinfo</b> =
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$launchdata</td><td>the <a class="el" href="../../d8/d39/class_j_w_t.html">JWT</a> data provided in the link launch. </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$returnurl</td><td>the local URL to return to if authentication workflows are required. </td></tr>
+    <tr><td class="paramtype">moodle_url</td><td class="paramname">$returnurl</td><td>the local URL to return to if authentication workflows are required. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$provisioningmode</td><td>the desired account provisioning mode, which controls the auth flow for unbound users. </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$legacyconsumersecrets</td><td>an array of secrets used by the legacy consumer if a migration claim exists. </td></tr>
   </table>
@@ -1607,7 +1607,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$extrauserinfo</b> =
 </ul>
 <p>For legacy reasons, pre-3.3 plugins can provide the icon via the key:</p>
 <ul>
-<li>icon =&gt; (<a class="el" href="../../d0/d6e/classpix__icon.html" title="Data structure representing an icon.">pix_icon</a>) Icon representing the IdP</li>
+<li>icon =&gt; (pix_icon) Icon representing the IdP</li>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1845,7 +1845,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$extrauserinfo</b> =
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a></td>          <td class="paramname"><span class="paramname"><em>$output</em></span>&#160;)</td>
+          <td class="paramtype">renderer_base</td>          <td class="paramname"><span class="paramname"><em>$output</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -1859,7 +1859,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$extrauserinfo</b> =
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$identityproviders</td><td>as returned by <a class="el" href="">self::get_identity_providers()</a> </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../de/d60/classrenderer__base.html" title="Simple base class for Moodle renderers.">renderer_base</a></td><td class="paramname">$output</td><td></td></tr>
+    <tr><td class="paramtype">renderer_base</td><td class="paramname">$output</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2621,7 +2621,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$extrauserinfo</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 23 2024 02:36:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 30 2024 02:39:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

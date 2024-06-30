@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240620) (ad7fc69c251)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
   </td>
  </tr>
  </tbody>
@@ -748,7 +748,7 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
 
 <p>Course-specific information to be output on any course page (usually above navigation bar) </p>
 <p>Example of usage: define class format_FORMATNAME_XXX implements renderable {}</p>
-<p>create format renderer in course/format/FORMATNAME/renderer.php, define rendering function: class format_FORMATNAME_renderer extends <a class="el" href="../../d9/d94/classplugin__renderer__base.html" title="Basis for all plugin renderers.">plugin_renderer_base</a> { protected function render_format_FORMATNAME_XXX(format_FORMATNAME_XXX $xxx) { return html_writer\tag('div', 'This is my header/footer'); } }</p>
+<p>create format renderer in course/format/FORMATNAME/renderer.php, define rendering function: class format_FORMATNAME_renderer extends plugin_renderer_base { protected function render_format_FORMATNAME_XXX(format_FORMATNAME_XXX $xxx) { return html_writer\tag('div', 'This is my header/footer'); } }</p>
 <p>Return instance of format_FORMATNAME_XXX in this function, the appropriate method from plugin renderer will be called</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -990,7 +990,7 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
 <p>Format plugins may extend <a class="el" href="../../d5/d07/classeditsection__form.html">editsection_form</a> if they want to have custom edit section form.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">mixed</td><td class="paramname">$action</td><td>the action attribute for the form. If empty defaults to auto detect the current url. If a <a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a> object then outputs params as hidden variables. </td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$action</td><td>the action attribute for the form. If empty defaults to auto detect the current url. If a moodle_url object then outputs params as hidden variables. </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$customdata</td><td>the array with custom data to be passed to the form /course/editsection.php passes <a class="el" href="../../d1/db5/classsection__info.html">section_info</a> object in 'cs' field for filling availability fields </td></tr>
   </table>
   </dd>
@@ -1456,7 +1456,7 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
 <p>Returns the localised name of this course format plugin. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d1/d21/classlang__string.html" title="The lang_string class.">lang_string</a></td><td></td></tr>
+    <tr><td class="paramname">lang_string</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1679,7 +1679,7 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td></td></tr>
+    <tr><td class="paramname">moodle_url</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1747,7 +1747,7 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../de/d60/classrenderer__base.html" title="Simple base class for Moodle renderers.">renderer_base</a></td><td></td></tr>
+    <tr><td class="paramname">renderer_base</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2205,14 +2205,14 @@ course_modinfo\get_section_info_all()</dd></dl>
     <tr><td class="paramtype"><a class="el" href="../../d1/db5/classsection__info.html">section_info</a>&#160;|&#160;stdClass</td><td class="paramname">$section</td><td></td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$linkifneeded</td><td></td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$editable</td><td></td></tr>
-    <tr><td class="paramtype">null&#160;|&#160;<a class="el" href="../../d1/d21/classlang__string.html" title="The lang_string class.">lang_string</a>&#160;|&#160;string</td><td class="paramname">$edithint</td><td></td></tr>
-    <tr><td class="paramtype">null&#160;|&#160;<a class="el" href="../../d1/d21/classlang__string.html" title="The lang_string class.">lang_string</a>&#160;|&#160;string</td><td class="paramname">$editlabel</td><td></td></tr>
+    <tr><td class="paramtype">null&#160;|&#160;lang_string&#160;|&#160;string</td><td class="paramname">$edithint</td><td></td></tr>
+    <tr><td class="paramtype">null&#160;|&#160;lang_string&#160;|&#160;string</td><td class="paramname">$editlabel</td><td></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d4/d65/classcore_1_1output_1_1inplace__editable.html" title="Class allowing to quick edit a title inline.">core\output\inplace_editable</a></td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="../../d4/d65/classcore_1_1output_1_1inplace__editable.html">core\output\inplace_editable</a></td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -3349,7 +3349,7 @@ course_modinfo\get_section_info_all()</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 23 2024 02:37:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 30 2024 02:41:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

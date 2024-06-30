@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240620) (ad7fc69c251)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
   </td>
  </tr>
  </tbody>
@@ -2366,7 +2366,7 @@ Options are the same that in <a class="el" href="../../d0/de1/group__core.html#g
 <div class="line">            <span class="stringliteral">&#39;valuehtmlcallback&#39;</span> =&gt; <span class="keyword">function</span>($userid) {</div>
 <div class="line">                global $DB, $OUTPUT;</div>
 <div class="line"> </div>
-<div class="line">                $context = context_system::instance();</div>
+<div class="line">                $context = <a class="code hl_function" href="../../d9/ded/classcore_1_1context_1_1system.html#aa0354a4534db8bc1f708feb03f4fbd96">context_system::instance</a>();</div>
 <div class="line">                $fields = core_user\fields::for_name()-&gt;with_identity($context, <span class="keyword">false</span>);</div>
 <div class="line">                $record = core_user::get_user($userid, <span class="stringliteral">&#39;id&#39;</span> . $fields-&gt;get_sql()-&gt;selects, <a class="code hl_variable" href="../../d0/de1/group__core.html#ga95a5600deb278b693b6c3ffed667df6f">MUST_EXIST</a>);</div>
 <div class="line"> </div>
@@ -2386,6 +2386,7 @@ Options are the same that in <a class="el" href="../../d0/de1/group__core.html#g
 <div class="line">                <span class="keywordflow">return</span> $OUTPUT-&gt;render_from_template(<span class="stringliteral">&#39;core_user/form_user_selector_suggestion&#39;</span>, <a class="code hl_variable" href="../../d0/dda/group__quizaccess__seb.html#gaca1b6ba3119ebb2259e86db5e0adc31c">$user</a>);</div>
 <div class="line">            },</div>
 <div class="line">        ]</div>
+<div class="ttc" id="aclasscore_1_1context_1_1system_html_aa0354a4534db8bc1f708feb03f4fbd96"><div class="ttname"><a href="../../d9/ded/classcore_1_1context_1_1system.html#aa0354a4534db8bc1f708feb03f4fbd96">core\context\system\instance</a></div><div class="ttdeci">static instance($instanceid=0, $strictness=MUST_EXIST, $cache=true)</div><div class="ttdoc">Returns system context instance.</div><div class="ttdef"><b>Definition</b> system.php:138</div></div>
 <div class="ttc" id="aclasss_html"><div class="ttname"><a href="../../d0/d4a/classs.html">s</a></div><div class="ttdef"><b>Definition</b> Compiler.php:208</div></div>
 <div class="ttc" id="agroup__core__access_html_gaed509a355b214abfd75cd23db71bd5ad"><div class="ttname"><a href="../../da/d16/group__core__access.html#gaed509a355b214abfd75cd23db71bd5ad">has_capability</a></div><div class="ttdeci">has_capability($capability, context $context, $user=null, $doanything=true)</div><div class="ttdoc">Check whether a user has a particular capability in a given context.</div><div class="ttdef"><b>Definition</b> accesslib.php:432</div></div>
 <div class="ttc" id="agroup__core_html_ga22ae943f55a27f3b9cca15f8ddd05db7"><div class="ttname"><a href="../../d0/de1/group__core.html#ga22ae943f55a27f3b9cca15f8ddd05db7">fullname</a></div><div class="ttdeci">fullname($user, $override=false)</div><div class="ttdoc">Returns a persons full name.</div><div class="ttdef"><b>Definition</b> moodlelib.php:3135</div></div>
@@ -2497,7 +2498,7 @@ Options are the same that in <a class="el" href="../../d0/de1/group__core.html#g
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 23 2024 02:36:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 30 2024 02:39:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

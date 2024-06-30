@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240620) (ad7fc69c251)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
   </td>
  </tr>
  </tbody>
@@ -594,7 +594,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$visibleblockcontent
 <p>Add something that looks like a block, but which isn't an actual block_instance, to this page. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../db/dce/classblock__contents.html" title="This class represents how a block appears on a page.">block_contents</a></td><td class="paramname">$bc</td><td>the content of the block-like thing. </td></tr>
+    <tr><td class="paramtype">block_contents</td><td class="paramname">$bc</td><td>the content of the block-like thing. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$region</td><td>a block region that exists on this page. </td></tr>
   </table>
   </dd>
@@ -895,14 +895,14 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$visibleblockcontent
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$instances</td><td>An array of block instances </td></tr>
-    <tr><td class="paramtype"></td><td class="paramname"><a class="el" href="../../de/d60/classrenderer__base.html" title="Simple base class for Moodle renderers.">renderer_base</a></td><td>The renderer to use. </td></tr>
+    <tr><td class="paramtype"></td><td class="paramname">renderer_base</td><td>The renderer to use. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$region</td><td>the region name. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td>An array of block_content (and possibly <a class="el" href="../../d0/dd3/classblock__move__target.html" title="This class represents a target for where a block can go when it is being moved.">block_move_target</a>) objects. </td></tr>
+    <tr><td class="paramname">array</td><td>An array of block_content (and possibly block_move_target) objects. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1234,13 +1234,13 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$visibleblockcontent
 <p>Returns an array of block content objects for all the existings regions. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../de/d60/classrenderer__base.html" title="Simple base class for Moodle renderers.">renderer_base</a></td><td class="paramname">$output</td><td>the rendered to use </td></tr>
+    <tr><td class="paramtype">renderer_base</td><td class="paramname">$output</td><td>the rendered to use </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td>of block <a class="el" href="../../db/dce/classblock__contents.html" title="This class represents how a block appears on a page.">block_contents</a> objects for all the blocks in all regions. </td></tr>
+    <tr><td class="paramname">array</td><td>of block block_contents objects for all the blocks in all regions. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1284,7 +1284,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$visibleblockcontent
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td>of block <a class="el" href="../../db/dce/classblock__contents.html" title="This class represents how a block appears on a page.">block_contents</a> objects for all the blocks in a region. </td></tr>
+    <tr><td class="paramname">array</td><td>of block block_contents objects for all the blocks in a region. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1394,7 +1394,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$visibleblockcontent
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td>URL for moving block $this-&gt;movingblock to this position. </td></tr>
+    <tr><td class="paramname">moodle_url</td><td>URL for moving block $this-&gt;movingblock to this position. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2059,7 +2059,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$visibleblockcontent
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$region</td><td>a block region that exists on this page. </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../d4/d7b/classcore__renderer.html" title="The standard implementation of the core_renderer interface.">core_renderer</a></td><td class="paramname">$output</td><td>a <a class="el" href="../../d4/d7b/classcore__renderer.html" title="The standard implementation of the core_renderer interface.">core_renderer</a>. normally the global $OUTPUT. </td></tr>
+    <tr><td class="paramtype">core_renderer</td><td class="paramname">$output</td><td>a core_renderer. normally the global $OUTPUT. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2464,7 +2464,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$visibleblockcontent
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 23 2024 02:37:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 30 2024 02:40:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

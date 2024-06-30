@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240620) (ad7fc69c251)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
   </td>
  </tr>
  </tbody>
@@ -334,7 +334,7 @@ Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>lesson_check_updates_since</b> (<a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $cm, $from, $filter=array())</td></tr>
 <tr class="separator:gae6c7d9a8aa74ebdae03757d18571cfe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf025fc2b413977ce606f9376bf02558d" id="r_gaf025fc2b413977ce606f9376bf02558d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf025fc2b413977ce606f9376bf02558d">lesson_clock_block_contents</a> ($cmid, $<a class="el" href="../../de/db3/classlesson.html">lesson</a>, $timer, $page)</td></tr>
-<tr class="memdesc:gaf025fc2b413977ce606f9376bf02558d"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a timed lesson and not a teacher, then return a <a class="el" href="../../db/dce/classblock__contents.html" title="This class represents how a block appears on a page.">block_contents</a> containing the clock.  <br /></td></tr>
+<tr class="memdesc:gaf025fc2b413977ce606f9376bf02558d"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a timed lesson and not a teacher, then return a block_contents containing the clock.  <br /></td></tr>
 <tr class="separator:gaf025fc2b413977ce606f9376bf02558d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac797bcbf7698d12ab03e95a954f4805d" id="r_gac797bcbf7698d12ab03e95a954f4805d"><td class="memItemLeft" align="right" valign="top">stdClass&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac797bcbf7698d12ab03e95a954f4805d">lesson_cron</a> ()</td></tr>
 <tr class="memdesc:gac797bcbf7698d12ab03e95a954f4805d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be run periodically according to the moodle cron This function searches for things that need to be done, such as sending out mail, toggling flags etc ...  <br /></td></tr>
@@ -399,7 +399,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gaf54e833d324ffea09ef72c38f2417296"><td class="mdescLeft">&#160;</td><td class="mdescRight">Import files embedded into answer or response.  <br /></td></tr>
 <tr class="separator:gaf54e833d324ffea09ef72c38f2417296"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3d662908efc52185dda5cb9ae26059f0" id="r_ga3d662908efc52185dda5cb9ae26059f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3d662908efc52185dda5cb9ae26059f0">lesson_mediafile_block_contents</a> ($cmid, $<a class="el" href="../../de/db3/classlesson.html">lesson</a>)</td></tr>
-<tr class="memdesc:ga3d662908efc52185dda5cb9ae26059f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">If there is a media file associated with this lesson, return a <a class="el" href="../../db/dce/classblock__contents.html" title="This class represents how a block appears on a page.">block_contents</a> that displays it.  <br /></td></tr>
+<tr class="memdesc:ga3d662908efc52185dda5cb9ae26059f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">If there is a media file associated with this lesson, return a block_contents that displays it.  <br /></td></tr>
 <tr class="separator:ga3d662908efc52185dda5cb9ae26059f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1f9bd661ae6fa7768ad57f38cbe0533d" id="r_ga1f9bd661ae6fa7768ad57f38cbe0533d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1f9bd661ae6fa7768ad57f38cbe0533d">lesson_menu_block_contents</a> ($cmid, $<a class="el" href="../../de/db3/classlesson.html">lesson</a>)</td></tr>
 <tr class="memdesc:ga1f9bd661ae6fa7768ad57f38cbe0533d"><td class="mdescLeft">&#160;</td><td class="mdescRight">If left menu is turned on, then this will print the menu in a block.  <br /></td></tr>
@@ -523,7 +523,7 @@ global&#160;</td><td class="memItemRight" valign="bottom"><b>$DB</b></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$plugin</b> = 2024041600</td></tr>
 <tr class="separator:gada8a7130088351710bb02ed622d6bf65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7eaf3fae157907fc016a863347039117" id="r_ga7eaf3fae157907fc016a863347039117"><td class="memItemLeft" align="right" valign="top"><a id="ga7eaf3fae157907fc016a863347039117" name="ga7eaf3fae157907fc016a863347039117"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$row</b> [] = new <a class="el" href="../../d3/dc5/classtabobject.html">tabobject</a>('view', &quot;$CFG-&gt;wwwroot/mod/<a class="el" href="../../de/db3/classlesson.html">lesson</a>/view.php?id=$cm-&gt;id&quot;, get_string('preview', '<a class="el" href="../../de/db3/classlesson.html">lesson</a>'), get_string('previewlesson', '<a class="el" href="../../de/db3/classlesson.html">lesson</a>', <a class="el" href="../../d0/de1/group__core.html#ga5d853ba52ad6e416838c5dcc3680aa80">format_string</a>($<a class="el" href="../../de/db3/classlesson.html">lesson</a>-&gt;name)))</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$row</b> [] = new tabobject('view', &quot;$CFG-&gt;wwwroot/mod/<a class="el" href="../../de/db3/classlesson.html">lesson</a>/view.php?id=$cm-&gt;id&quot;, get_string('preview', '<a class="el" href="../../de/db3/classlesson.html">lesson</a>'), get_string('previewlesson', '<a class="el" href="../../de/db3/classlesson.html">lesson</a>', <a class="el" href="../../d0/de1/group__core.html#ga5d853ba52ad6e416838c5dcc3680aa80">format_string</a>($<a class="el" href="../../de/db3/classlesson.html">lesson</a>-&gt;name)))</td></tr>
 <tr class="separator:ga7eaf3fae157907fc016a863347039117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaab7fe66bcd3f02cfe0b7f531f1289ebd" id="r_gaab7fe66bcd3f02cfe0b7f531f1289ebd"><td class="memItemLeft" align="right" valign="top"><a id="gaab7fe66bcd3f02cfe0b7f531f1289ebd" name="gaab7fe66bcd3f02cfe0b7f531f1289ebd"></a>
 if(empty( $<a class="el" href="../../de/db3/classlesson.html">lesson</a>)) if(!isset($currenttab)) if(!isset( $cm)) if(!isset($course))&#160;</td><td class="memItemRight" valign="bottom"><b>$tabs</b> = $row = $inactive = $activated = array()</td></tr>
@@ -771,7 +771,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
       </table>
 </div><div class="memdoc">
 
-<p>If a timed lesson and not a teacher, then return a <a class="el" href="../../db/dce/classblock__contents.html" title="This class represents how a block appears on a page.">block_contents</a> containing the clock. </p>
+<p>If a timed lesson and not a teacher, then return a block_contents containing the clock. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$cmid</td><td>Course Module ID for this lesson </td></tr>
@@ -782,7 +782,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../db/dce/classblock__contents.html" title="This class represents how a block appears on a page.">block_contents</a></td><td></td></tr>
+    <tr><td class="paramname">block_contents</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1222,7 +1222,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">mixed</td><td>false if there is no information otherwise <a class="el" href="../../dd/d51/classhtml__table.html" title="Holds all the information required to render a.">html_table</a> and stdClass with the table and data </td></tr>
+    <tr><td class="paramname">mixed</td><td>false if there is no information otherwise html_table and stdClass with the table and data </td></tr>
   </table>
   </dd>
 </dl>
@@ -1533,7 +1533,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
       </table>
 </div><div class="memdoc">
 
-<p>If there is a media file associated with this lesson, return a <a class="el" href="../../db/dce/classblock__contents.html" title="This class represents how a block appears on a page.">block_contents</a> that displays it. </p>
+<p>If there is a media file associated with this lesson, return a block_contents that displays it. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$cmid</td><td>Course Module ID for this lesson </td></tr>
@@ -1543,7 +1543,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../db/dce/classblock__contents.html" title="This class represents how a block appears on a page.">block_contents</a></td><td></td></tr>
+    <tr><td class="paramname">block_contents</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2483,7 +2483,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d1/d21/classlang__string.html" title="The lang_string class.">lang_string</a></td><td>The event type lang string. </td></tr>
+    <tr><td class="paramname">lang_string</td><td>The event type lang string. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2750,7 +2750,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 23 2024 02:36:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 30 2024 02:39:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240620) (ad7fc69c251)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
   </td>
  </tr>
  </tbody>
@@ -166,6 +166,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a57acc412838eeb2db110fdb966d7a101" id="r_a57acc412838eeb2db110fdb966d7a101"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57acc412838eeb2db110fdb966d7a101">filter_cms_with_section_delegate</a> (array $cms)</td></tr>
+<tr class="memdesc:a57acc412838eeb2db110fdb966d7a101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove course modules with section delegate from a list.  <br /></td></tr>
+<tr class="separator:a57acc412838eeb2db110fdb966d7a101"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51bcb2440d063a5273b5ac6482901d61" id="r_a51bcb2440d063a5273b5ac6482901d61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51bcb2440d063a5273b5ac6482901d61">get_cm_info</a> (<a class="el" href="../../d5/d26/classcourse__modinfo.html">course_modinfo</a> $modinfo, array $ids)</td></tr>
 <tr class="memdesc:a51bcb2440d063a5273b5ac6482901d61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract several <a class="el" href="../../df/db9/classcm__info.html">cm_info</a> from the <a class="el" href="../../d5/d26/classcourse__modinfo.html">course_modinfo</a>.  <br /></td></tr>
 <tr class="separator:a51bcb2440d063a5273b5ac6482901d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -820,6 +823,45 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>the list of affected course module ids (not used) </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$targetsectionid</td><td>optional target section id (not used) </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$targetcmid</td><td>optional target cm id (not used) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a57acc412838eeb2db110fdb966d7a101" name="a57acc412838eeb2db110fdb966d7a101"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57acc412838eeb2db110fdb966d7a101">&#9670;&#160;</a></span>filter_cms_with_section_delegate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\stateactions::filter_cms_with_section_delegate </td>
+          <td>(</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$cms</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove course modules with section delegate from a list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a>[]</td><td class="paramname">$cms</td><td>the list of course modules to filter. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">cm_info[]</td><td>the filtered list of course modules indexed by id. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1867,7 +1909,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 23 2024 02:37:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 30 2024 02:41:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

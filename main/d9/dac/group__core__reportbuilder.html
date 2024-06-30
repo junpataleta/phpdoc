@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240620) (ad7fc69c251)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
   </td>
  </tr>
  </tbody>
@@ -445,6 +445,12 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:gacf37c05b127eb0dade1a5a3201f24cd7" id="r_gacf37c05b127eb0dade1a5a3201f24cd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gacf37c05b127eb0dade1a5a3201f24cd7">core_reportbuilder\local\helpers::add_join</a> (string $join)</td></tr>
+<tr class="memdesc:gacf37c05b127eb0dade1a5a3201f24cd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add single SQL table join.  <br /></td></tr>
+<tr class="separator:gacf37c05b127eb0dade1a5a3201f24cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2db496ec02877f7730898bc4717ed85" id="r_gae2db496ec02877f7730898bc4717ed85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae2db496ec02877f7730898bc4717ed85">core_reportbuilder\local\helpers::add_joins</a> (array $joins)</td></tr>
+<tr class="memdesc:gae2db496ec02877f7730898bc4717ed85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add multiple SQL table joins.  <br /></td></tr>
+<tr class="separator:gae2db496ec02877f7730898bc4717ed85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga40b98903eddea1331f5026b9987a0a55" id="r_ga40b98903eddea1331f5026b9987a0a55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga40b98903eddea1331f5026b9987a0a55">core_reportbuilder_get_tagged_reports</a> (<a class="el" href="../../df/d9f/classcore__tag__tag.html">core_tag_tag</a> $<a class="el" href="../../d6/dc1/classcore__tag_1_1output_1_1tag.html">tag</a>, bool $exclusivemode=false, ?int $fromcontextid=0, ?int $contextid=0, bool $recurse=true, int $page=0,)</td></tr>
 <tr class="memdesc:ga40b98903eddea1331f5026b9987a0a55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to return tagged reports.  <br /></td></tr>
 <tr class="separator:ga40b98903eddea1331f5026b9987a0a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -457,6 +463,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga897ccff4f660e1271d6bbfe80e498d61" id="r_ga897ccff4f660e1271d6bbfe80e498d61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga897ccff4f660e1271d6bbfe80e498d61">core_reportbuilder_output_fragment_filters_form</a> (array $params)</td></tr>
 <tr class="memdesc:ga897ccff4f660e1271d6bbfe80e498d61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the filters form fragment.  <br /></td></tr>
 <tr class="separator:ga897ccff4f660e1271d6bbfe80e498d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa6019a13bcd39b7a5de172bd82989269" id="r_gaa6019a13bcd39b7a5de172bd82989269"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa6019a13bcd39b7a5de172bd82989269">core_reportbuilder\local\helpers::get_joins</a> ()</td></tr>
+<tr class="memdesc:gaa6019a13bcd39b7a5de172bd82989269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return SQL table joins.  <br /></td></tr>
+<tr class="separator:gaa6019a13bcd39b7a5de172bd82989269"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -471,9 +480,89 @@ global&#160;</td><td class="memItemRight" valign="bottom"><b>core_reportbuilder\
 <tr class="separator:ga462f608976a6559364df5bec34282902"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac7c3353107070daa85f641882931b358" id="r_gac7c3353107070daa85f641882931b358"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac7c3353107070daa85f641882931b358">$settings</a></td></tr>
 <tr class="separator:gac7c3353107070daa85f641882931b358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa160de07c2203ce12bee3021f34e3b9b" id="r_gaa160de07c2203ce12bee3021f34e3b9b"><td class="memItemLeft" align="right" valign="top">trait&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa160de07c2203ce12bee3021f34e3b9b">core_reportbuilder\local\helpers::join_trait</a></td></tr>
+<tr class="separator:gaa160de07c2203ce12bee3021f34e3b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gacf37c05b127eb0dade1a5a3201f24cd7" name="gacf37c05b127eb0dade1a5a3201f24cd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacf37c05b127eb0dade1a5a3201f24cd7">&#9670;&#160;</a></span>add_join()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_reportbuilder\local\helpers\add_join </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$join</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add single SQL table join. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$join</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">static</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gae2db496ec02877f7730898bc4717ed85" name="gae2db496ec02877f7730898bc4717ed85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae2db496ec02877f7730898bc4717ed85">&#9670;&#160;</a></span>add_joins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_reportbuilder\local\helpers\add_joins </td>
+          <td>(</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$joins</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add multiple SQL table joins. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string[]</td><td class="paramname">$joins</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">static</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga40b98903eddea1331f5026b9987a0a55" name="ga40b98903eddea1331f5026b9987a0a55"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga40b98903eddea1331f5026b9987a0a55">&#9670;&#160;</a></span>core_reportbuilder_get_tagged_reports()</h2>
 
@@ -638,6 +727,39 @@ global&#160;</td><td class="memItemRight" valign="bottom"><b>core_reportbuilder\
 
 </div>
 </div>
+<a id="gaa6019a13bcd39b7a5de172bd82989269" name="gaa6019a13bcd39b7a5de172bd82989269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa6019a13bcd39b7a5de172bd82989269">&#9670;&#160;</a></span>get_joins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_reportbuilder\local\helpers\get_joins </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return SQL table joins. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string[]</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="gac7c3353107070daa85f641882931b358" name="gac7c3353107070daa85f641882931b358"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac7c3353107070daa85f641882931b358">&#9670;&#160;</a></span>$settings</h2>
@@ -656,10 +778,28 @@ global&#160;</td><td class="memItemRight" valign="bottom"><b>core_reportbuilder\
 </div><!-- fragment -->
 </div>
 </div>
+<a id="gaa160de07c2203ce12bee3021f34e3b9b" name="gaa160de07c2203ce12bee3021f34e3b9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa160de07c2203ce12bee3021f34e3b9b">&#9670;&#160;</a></span>join_trait</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">trait core_reportbuilder::local::helpers\join_trait</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line"> </div>
+<div class="line">    </div>
+<div class="line">    <span class="keyword">private</span> <span class="keywordtype">string</span>[] array $joins = []</div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 23 2024 02:36:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 30 2024 02:39:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

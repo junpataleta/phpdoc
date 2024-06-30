@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240620) (ad7fc69c251)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
   </td>
  </tr>
  </tbody>
@@ -492,7 +492,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga52af14a73c0687fc70674c0fefe27ce4" id="r_ga52af14a73c0687fc70674c0fefe27ce4"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga52af14a73c0687fc70674c0fefe27ce4">data_print_ratings</a> ($data, $record, bool $print=true)</td></tr>
 <tr class="memdesc:ga52af14a73c0687fc70674c0fefe27ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">@global object  <br /></td></tr>
 <tr class="separator:ga52af14a73c0687fc70674c0fefe27ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9048775a2cd512b81683a5c139fe4a5f" id="r_ga9048775a2cd512b81683a5c139fe4a5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9048775a2cd512b81683a5c139fe4a5f">data_print_template</a> ($templatename, $records, $data, $search='', $page=0, $return=false, <a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $jumpurl=null)</td></tr>
+<tr class="memitem:ga9048775a2cd512b81683a5c139fe4a5f" id="r_ga9048775a2cd512b81683a5c139fe4a5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9048775a2cd512b81683a5c139fe4a5f">data_print_template</a> ($templatename, $records, $data, $search='', $page=0, $return=false, moodle_url $jumpurl=null)</td></tr>
 <tr class="memdesc:ga9048775a2cd512b81683a5c139fe4a5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">takes a list of records, the current data, a search string, and mode to display prints the translated template  <br /></td></tr>
 <tr class="separator:ga9048775a2cd512b81683a5c139fe4a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2427c932cd5b0818f1787a3a27aafca1" id="r_ga2427c932cd5b0818f1787a3a27aafca1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2427c932cd5b0818f1787a3a27aafca1">data_process_submission</a> (stdClass $mod, $fields, stdClass $datarecord)</td></tr>
@@ -3356,7 +3356,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a></td>          <td class="paramname"><span class="paramname"><em>$jumpurl</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">moodle_url</td>          <td class="paramname"><span class="paramname"><em>$jumpurl</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3372,7 +3372,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
     <tr><td class="paramtype">string</td><td class="paramname">$search</td><td>the current search term </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$page</td><td>page number for pagination </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$return</td><td>if the result should be returned (true) or printed (false) </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a>&#160;|&#160;null</td><td class="paramname">$jumpurl</td><td>a <a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a> by which to jump back to the record list (can be null) </td></tr>
+    <tr><td class="paramtype">moodle_url&#160;|&#160;null</td><td class="paramname">$jumpurl</td><td>a moodle_url by which to jump back to the record list (can be null) </td></tr>
   </table>
   </dd>
 </dl>
@@ -4620,7 +4620,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d1/d21/classlang__string.html" title="The lang_string class.">lang_string</a></td><td>The event type lang string. </td></tr>
+    <tr><td class="paramname">lang_string</td><td>The event type lang string. </td></tr>
   </table>
   </dd>
 </dl>
@@ -4906,7 +4906,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 23 2024 02:36:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 30 2024 02:39:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

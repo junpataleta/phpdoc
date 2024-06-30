@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240620) (ad7fc69c251)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
   </td>
  </tr>
  </tbody>
@@ -172,7 +172,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a726232865adb6c709d7a9a6d75df0fa6" id="r_a726232865adb6c709d7a9a6d75df0fa6"><td class="memItemLeft" align="right" valign="top"><a id="a726232865adb6c709d7a9a6d75df0fa6" name="a726232865adb6c709d7a9a6d75df0fa6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>load_settings</b> (<a class="el" href="../../d6/d23/interfacepart__of__admin__tree.html">part_of_admin_tree</a> $adminroot, $parentnodename, $hassiteconfig)</td></tr>
 <tr class="separator:a726232865adb6c709d7a9a6d75df0fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8401c67d704ed729d9e0d92b67831f4" id="r_ad8401c67d704ed729d9e0d92b67831f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7d/classcore_1_1plugininfo_1_1base.html#ad8401c67d704ed729d9e0d92b67831f4">uninstall</a> (\<a class="el" href="../../dd/d5e/classprogress__trace.html">progress_trace</a> $progress)</td></tr>
+<tr class="memitem:ad8401c67d704ed729d9e0d92b67831f4" id="r_ad8401c67d704ed729d9e0d92b67831f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7d/classcore_1_1plugininfo_1_1base.html#ad8401c67d704ed729d9e0d92b67831f4">uninstall</a> (\progress_trace $progress)</td></tr>
 <tr class="memdesc:ad8401c67d704ed729d9e0d92b67831f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hook method to implement certain steps when uninstalling the plugin.  <br /></td></tr>
 <tr class="separator:ad8401c67d704ed729d9e0d92b67831f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18f77fe5ff44558d392ae844dce3ff40" id="r_a18f77fe5ff44558d392ae844dce3ff40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18f77fe5ff44558d392ae844dce3ff40">uninstall_cleanup</a> ()</td></tr>
@@ -557,7 +557,7 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td></td></tr>
+    <tr><td class="paramname">moodle_url</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -699,7 +699,7 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
 <p>Return URL used for management of plugins of this type. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td></td></tr>
+    <tr><td class="paramname">moodle_url</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -865,7 +865,7 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td></td></tr>
+    <tr><td class="paramname">moodle_url</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1586,7 +1586,7 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
         <tr>
           <td class="memname">core\plugininfo\base::uninstall </td>
           <td>(</td>
-          <td class="paramtype">\<a class="el" href="../../dd/d5e/classprogress__trace.html">progress_trace</a></td>          <td class="paramname"><span class="paramname"><em>$progress</em></span></td><td>)</td>
+          <td class="paramtype">\progress_trace</td>          <td class="paramname"><span class="paramname"><em>$progress</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1601,7 +1601,7 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
 <p>This hook is called by <a class="el" href="">core_plugin_manager::uninstall_plugin()</a> so it is basically usable only for those plugin types that use the default uninstall tool provided by <a class="el" href="">self::get_default_uninstall_url()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../dd/d5e/classprogress__trace.html" title="Progress trace class.">progress_trace</a></td><td class="paramname">$progress</td><td>traces the process </td></tr>
+    <tr><td class="paramtype">progress_trace</td><td class="paramname">$progress</td><td>traces the process </td></tr>
   </table>
   </dd>
 </dl>
@@ -1694,7 +1694,7 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 23 2024 02:38:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 30 2024 02:42:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

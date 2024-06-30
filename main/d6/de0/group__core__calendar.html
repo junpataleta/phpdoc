@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240620) (ad7fc69c251)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
   </td>
  </tr>
  </tbody>
@@ -445,7 +445,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gae411a510550e2820c714cf168ba400f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get legacy calendar events.  <br /></td></tr>
 <tr class="separator:gae411a510550e2820c714cf168ba400f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf895291206270176cef7afcec7769519" id="r_gaf895291206270176cef7afcec7769519"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf895291206270176cef7afcec7769519">calendar_get_link_href</a> ($linkbase, $d, $m, $y, $time=0)</td></tr>
-<tr class="memdesc:gaf895291206270176cef7afcec7769519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds day, month, year arguments to a URL and returns a <a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a> object.  <br /></td></tr>
+<tr class="memdesc:gaf895291206270176cef7afcec7769519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds day, month, year arguments to a URL and returns a moodle_url object.  <br /></td></tr>
 <tr class="separator:gaf895291206270176cef7afcec7769519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa1fea95d39ccb732a54ac64b46f9f24d" id="r_gaa1fea95d39ccb732a54ac64b46f9f24d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa1fea95d39ccb732a54ac64b46f9f24d">calendar_get_link_next</a> ($text, $linkbase, $d, $m, $y, $accesshide=false, $time=0)</td></tr>
 <tr class="memdesc:gaa1fea95d39ccb732a54ac64b46f9f24d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and return a next month HTML link, with an arrow.  <br /></td></tr>
@@ -1908,10 +1908,10 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>CALENDAR_URL</b> $CF
       </table>
 </div><div class="memdoc">
 
-<p>Adds day, month, year arguments to a URL and returns a <a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a> object. </p>
+<p>Adds day, month, year arguments to a URL and returns a moodle_url object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string&#160;|&#160;<a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$linkbase</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;moodle_url</td><td class="paramname">$linkbase</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$d</td><td>The number of the day. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$m</td><td>The number of the month. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$y</td><td>The number of the year. </td></tr>
@@ -1977,7 +1977,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>CALENDAR_URL</b> $CF
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$text</td><td>The text label. </td></tr>
-    <tr><td class="paramtype">string&#160;|&#160;<a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$linkbase</td><td>The URL stub. </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;moodle_url</td><td class="paramname">$linkbase</td><td>The URL stub. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$d</td><td>the number of the Day </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$m</td><td>The number of the month. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$y</td><td>The number of the year. </td></tr>
@@ -2044,7 +2044,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>CALENDAR_URL</b> $CF
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$text</td><td>The text label. </td></tr>
-    <tr><td class="paramtype">string&#160;|&#160;<a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$linkbase</td><td>The URL stub. </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;moodle_url</td><td class="paramname">$linkbase</td><td>The URL stub. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$d</td><td>The number of the date. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$m</td><td>The number of the month. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$y</td><td>year The number of the year. </td></tr>
@@ -2367,7 +2367,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>CALENDAR_URL</b> $CF
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d4/d65/classcore_1_1output_1_1inplace__editable.html" title="Class allowing to quick edit a title inline.">core\output\inplace_editable</a></td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="../../d4/d65/classcore_1_1output_1_1inplace__editable.html">core\output\inplace_editable</a></td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -3054,7 +3054,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>CALENDAR_URL</b> $CF
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 23 2024 02:36:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 30 2024 02:39:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

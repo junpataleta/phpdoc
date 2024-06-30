@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240620) (ad7fc69c251)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
   </td>
  </tr>
  </tbody>
@@ -76,7 +76,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../dd/dff/classcore_1_1output_1_1comboboxsearch-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">core\output\comboboxsearch Class Reference<div class="ingroups"><a class="el" href="../../d4/dbd/group__core__output.html">core_output</a></div></div></div>
+  <div class="headertitle"><div class="title">core\output\comboboxsearch Class Reference<div class="ingroups"><a class="el" href="../../d0/de1/group__core.html">core</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
@@ -85,8 +85,8 @@ Inheritance diagram for core\output\comboboxsearch:</div>
  <div class="center">
   <img src="../../dd/d93/classcore_1_1output_1_1comboboxsearch.png" usemap="#core_5Coutput_5Ccomboboxsearch_map" alt=""/>
   <map id="core_5Coutput_5Ccomboboxsearch_map" name="core_5Coutput_5Ccomboboxsearch_map">
-<area href="../../da/d17/interfacerenderable.html" title="Interface marking other classes as suitable for renderer_base\render()" alt="renderable" shape="rect" coords="0,0,176,24"/>
-<area href="../../d8/d34/interfacetemplatable.html" title="Interface marking other classes having the ability to export their data for use by templates." alt="templatable" shape="rect" coords="186,0,362,24"/>
+<area href="../../d7/d5a/interfacecore_1_1output_1_1renderable.html" alt="core\output\renderable" shape="rect" coords="0,0,176,24"/>
+<area href="../../d3/dc7/interfacecore_1_1output_1_1templatable.html" alt="core\output\templatable" shape="rect" coords="186,0,362,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -95,7 +95,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a08012b91eb504524ad905d7b403af244" id="r_a08012b91eb504524ad905d7b403af244"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08012b91eb504524ad905d7b403af244">__construct</a> (bool $renderlater, string $buttoncontent, ?string $dropdowncontent=null, ?string $parentclasses=null, ?string $buttonclasses=null, ?string $dropdownclasses=null, ?string $buttonheader=null, ?bool $usebutton=true, ?string $label=null, ?string $name=null, ?string $value=null)</td></tr>
 <tr class="memdesc:a08012b91eb504524ad905d7b403af244"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class constructor.  <br /></td></tr>
 <tr class="separator:a08012b91eb504524ad905d7b403af244"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a932045f52a0c9f598fbcbe550b711fe3" id="r_a932045f52a0c9f598fbcbe550b711fe3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a932045f52a0c9f598fbcbe550b711fe3">export_for_template</a> (<a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a> $output)</td></tr>
+<tr class="memitem:a932045f52a0c9f598fbcbe550b711fe3" id="r_a932045f52a0c9f598fbcbe550b711fe3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a932045f52a0c9f598fbcbe550b711fe3">export_for_template</a> (<a class="el" href="../../dd/d9d/classcore_1_1output_1_1renderer__base.html">renderer_base</a> $output)</td></tr>
 <tr class="memdesc:a932045f52a0c9f598fbcbe550b711fe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the data for the mustache template.  <br /></td></tr>
 <tr class="separator:a932045f52a0c9f598fbcbe550b711fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a74197985cfbc0b9841251df2cfb4fc" id="r_a7a74197985cfbc0b9841251df2cfb4fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a74197985cfbc0b9841251df2cfb4fc">get_template</a> ()</td></tr>
@@ -139,10 +139,10 @@ null string&#160;</td><td class="memItemRight" valign="bottom"><b>$parentclasses
 <tr class="memitem:a8a6ff2c85cbca4993602a1e4c92b0c73" id="r_a8a6ff2c85cbca4993602a1e4c92b0c73"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a6ff2c85cbca4993602a1e4c92b0c73">$renderlater</a></td></tr>
 <tr class="memdesc:a8a6ff2c85cbca4993602a1e4c92b0c73"><td class="mdescLeft">&#160;</td><td class="mdescRight">$renderlater Should the dropdown render straightaway? We sometimes need to output the component without all of the data and leave the rendering of any defaults and actual data to the caller.  <br /></td></tr>
 <tr class="separator:a8a6ff2c85cbca4993602a1e4c92b0c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a975628cc533cfa68396bbfcbdc4ea00f" id="r_a975628cc533cfa68396bbfcbdc4ea00f"><td class="memItemLeft" align="right" valign="top"><a id="a975628cc533cfa68396bbfcbdc4ea00f" name="a975628cc533cfa68396bbfcbdc4ea00f"></a>
-boolean&#160;</td><td class="memItemRight" valign="bottom"><b>$usesbutton</b></td></tr>
-<tr class="memdesc:a975628cc533cfa68396bbfcbdc4ea00f"><td class="mdescLeft">&#160;</td><td class="mdescRight">$usesbutton Whether to provide a A11y button. <br /></td></tr>
-<tr class="separator:a975628cc533cfa68396bbfcbdc4ea00f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ceb6d5d8a58f462f11392bb204f3acd" id="r_a0ceb6d5d8a58f462f11392bb204f3acd"><td class="memItemLeft" align="right" valign="top"><a id="a0ceb6d5d8a58f462f11392bb204f3acd" name="a0ceb6d5d8a58f462f11392bb204f3acd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>$usesbutton</b></td></tr>
+<tr class="memdesc:a0ceb6d5d8a58f462f11392bb204f3acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">$usesbutton Whether to provide a A11y button. <br /></td></tr>
+<tr class="separator:a0ceb6d5d8a58f462f11392bb204f3acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7f5bca3c4541e83d6b67076c6d7b9ef" id="r_ae7f5bca3c4541e83d6b67076c6d7b9ef"><td class="memItemLeft" align="right" valign="top"><a id="ae7f5bca3c4541e83d6b67076c6d7b9ef" name="ae7f5bca3c4541e83d6b67076c6d7b9ef"></a>
 null string&#160;</td><td class="memItemRight" valign="bottom"><b>$value</b></td></tr>
 <tr class="memdesc:ae7f5bca3c4541e83d6b67076c6d7b9ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">$value The value of the input element representing the combobox. <br /></td></tr>
@@ -249,7 +249,7 @@ null string&#160;</td><td class="memItemRight" valign="bottom"><b>$value</b></td
         <tr>
           <td class="memname">core\output\comboboxsearch::export_for_template </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a></td>          <td class="paramname"><span class="paramname"><em>$output</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../dd/d9d/classcore_1_1output_1_1renderer__base.html">renderer_base</a></td>          <td class="paramname"><span class="paramname"><em>$output</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -258,7 +258,7 @@ null string&#160;</td><td class="memItemRight" valign="bottom"><b>$value</b></td
 <p>Export the data for the mustache template. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../de/d60/classrenderer__base.html" title="Simple base class for Moodle renderers.">renderer_base</a></td><td class="paramname">$output</td><td>renderer to be used to render the action bar elements. </td></tr>
+    <tr><td class="paramtype">renderer_base</td><td class="paramname">$output</td><td>renderer to be used to render the action bar elements. </td></tr>
   </table>
   </dd>
 </dl>
@@ -269,7 +269,7 @@ null string&#160;</td><td class="memItemRight" valign="bottom"><b>$value</b></td
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="../../d8/d34/interfacetemplatable.html#a569151cf997eb2bb240cdd79d7475219">templatable</a>.</p>
+<p>Implements <a class="el" href="../../d3/dc7/interfacecore_1_1output_1_1templatable.html#a3cf6e8a9b1f2e80e8cace2e4c6c8df0c">core\output\templatable</a>.</p>
 
 </div>
 </div>
@@ -330,7 +330,7 @@ null string&#160;</td><td class="memItemRight" valign="bottom"><b>$value</b></td
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 23 2024 02:37:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 30 2024 02:41:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

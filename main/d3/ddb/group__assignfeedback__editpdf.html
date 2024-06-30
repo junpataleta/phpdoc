@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240620) (ad7fc69c251)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
   </td>
  </tr>
  </tbody>
@@ -133,10 +133,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up orphaned feedback pdf files and table entries.  <a href="../../d0/d7c/classassignfeedback__editpdf_1_1task_1_1remove__orphaned__editpdf__files.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dfc/classassignfeedback__editpdf__renderer.html">assignfeedback_editpdf_renderer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A custom renderer class that extends the <a class="el" href="../../d9/d94/classplugin__renderer__base.html" title="Basis for all plugin renderers.">plugin_renderer_base</a> and is used by the editpdf feedback plugin.  <a href="../../dc/dfc/classassignfeedback__editpdf__renderer.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A custom renderer class that extends the plugin_renderer_base and is used by the editpdf feedback plugin.  <a href="../../dc/dfc/classassignfeedback__editpdf__renderer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/da2/classassignfeedback__editpdf__widget.html">assignfeedback_editpdf_widget</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A custom renderer class that extends the <a class="el" href="../../d9/d94/classplugin__renderer__base.html" title="Basis for all plugin renderers.">plugin_renderer_base</a> and is used by the editpdf feedback plugin.  <a href="../../dd/da2/classassignfeedback__editpdf__widget.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A custom renderer class that extends the plugin_renderer_base and is used by the editpdf feedback plugin.  <a href="../../dd/da2/classassignfeedback__editpdf__widget.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d49/classbackup__assignfeedback__editpdf__subplugin.html">backup_assignfeedback_editpdf_subplugin</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the information to backup feedback pdf annotations.  <a href="../../d1/d49/classbackup__assignfeedback__editpdf__subplugin.html#details">More...</a><br /></td></tr>
@@ -192,13 +192,13 @@ global&#160;</td><td class="memItemRight" valign="bottom"><b>assignfeedback_edit
 &#160;</td><td class="memItemRight" valign="bottom"><b>$systempathlink</b> = <a class="el" href="../../d6/db1/group__mod__wiki.html#ga18b3d5253ddc6145e9bc81e2337889f6">html_writer::link</a>($systempathslink, get_string('systempaths', 'admin'))</td></tr>
 <tr class="separator:ga2232f9385db5dbe6842d7a2233db254d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga401c50f7b5f1086ef431bd50d4b6006a" id="r_ga401c50f7b5f1086ef431bd50d4b6006a"><td class="memItemLeft" align="right" valign="top"><a id="ga401c50f7b5f1086ef431bd50d4b6006a" name="ga401c50f7b5f1086ef431bd50d4b6006a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$systempathslink</b> = new <a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a>('/admin/settings.php', array('section' =&gt; 'systempaths'))</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$systempathslink</b> = new moodle_url('/admin/settings.php', array('section' =&gt; 'systempaths'))</td></tr>
 <tr class="separator:ga401c50f7b5f1086ef431bd50d4b6006a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gada57e7bb7c152edad18fe2f166188691" id="r_gada57e7bb7c152edad18fe2f166188691"><td class="memItemLeft" align="right" valign="top"><a id="gada57e7bb7c152edad18fe2f166188691" name="gada57e7bb7c152edad18fe2f166188691"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$title</b> = get_string('stamps','assignfeedback_editpdf')</td></tr>
 <tr class="separator:gada57e7bb7c152edad18fe2f166188691"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacf215f34a917d014776ce684a9ee8909" id="r_gacf215f34a917d014776ce684a9ee8909"><td class="memItemLeft" align="right" valign="top"><a id="gacf215f34a917d014776ce684a9ee8909" name="gacf215f34a917d014776ce684a9ee8909"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$url</b> = new <a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a>('/mod/<a class="el" href="../../db/d8f/classassign.html">assign</a>/feedback/editpdf/testgs.php')</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$url</b> = new moodle_url('/mod/<a class="el" href="../../db/d8f/classassign.html">assign</a>/feedback/editpdf/testgs.php')</td></tr>
 <tr class="separator:gacf215f34a917d014776ce684a9ee8909"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga27dc7e2c13f48a05e56e0d3138fe3c82" id="r_ga27dc7e2c13f48a05e56e0d3138fe3c82"><td class="memItemLeft" align="right" valign="top"><a id="ga27dc7e2c13f48a05e56e0d3138fe3c82" name="ga27dc7e2c13f48a05e56e0d3138fe3c82"></a>
 $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>component</b> = 'assignfeedback_editpdf'</td></tr>
@@ -385,7 +385,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 23 2024 02:36:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 30 2024 02:39:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

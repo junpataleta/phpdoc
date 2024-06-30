@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240620) (ad7fc69c251)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
   </td>
  </tr>
  </tbody>
@@ -955,7 +955,7 @@ Static Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d1/d21/classlang__string.html" title="The lang_string class.">lang_string</a></td><td></td></tr>
+    <tr><td class="paramname">lang_string</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1786,8 +1786,8 @@ Static Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Validates the data. </p>
-<p>Developers can implement addition validation by defining a method as follows. Note that the method MUST return a <a class="el" href="../../d1/d21/classlang__string.html" title="The lang_string class.">lang_string()</a> when there is an error, and true when the data is valid.</p>
-<p>protected function validate_propertyname($value) { if ($value !== 'My expected value') { return new <a class="el" href="../../d1/d21/classlang__string.html" title="The lang_string class.">lang_string</a>('invaliddata', 'error'); } return true }</p>
+<p>Developers can implement addition validation by defining a method as follows. Note that the method MUST return a lang_string() when there is an error, and true when the data is valid.</p>
+<p>protected function validate_propertyname($value) { if ($value !== 'My expected value') { return new lang_string('invaliddata', 'error'); } return true }</p>
 <p>It is OK to use other properties in your custom validation methods when you need to, however note they might not have been validated yet, so try not to rely on them too much.</p>
 <p>Note that the validation methods should be protected. Validating just one field is not recommended because of the possible dependencies between one field and another,also the field ID can be used to check whether the object is being updated or created.</p>
 <p>When validating foreign keys the persistent should only check that the associated model exists. The validation methods should not be used to check for a change in that relationship. The API method setting the attributes on the model should be responsible for that. E.g. On a course model, the method validate_categoryid will check that the category exists. However, if a course can never be moved outside of its category it would be up to the calling code to ensure that the category ID will not be altered.</p>
@@ -1834,7 +1834,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 23 2024 02:38:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 30 2024 02:42:00 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240620) (ad7fc69c251)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
   </td>
  </tr>
  </tbody>
@@ -77,12 +77,9 @@ $(function(){ initResizable(false); });
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d3/dd3/classcore_1_1update_1_1code__manager-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">core\update\code_manager Class Reference<div class="ingroups"><a class="el" href="../../d6/d36/group__core__plugin.html">core_plugin</a></div></div></div>
+  <div class="headertitle"><div class="title">core\update\code_manager Class Reference<div class="ingroups"><a class="el" href="../../d0/de1/group__core.html">core</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>General purpose class managing the plugins source code files deployment.  
- <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -98,7 +95,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae038987befe73644ae5c8a20dabff9c6" id="r_ae038987befe73644ae5c8a20dabff9c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae038987befe73644ae5c8a20dabff9c6">get_plugin_zip_root_dir</a> ($zipfilepath)</td></tr>
 <tr class="memdesc:ae038987befe73644ae5c8a20dabff9c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detects the plugin's name from its ZIP file.  <br /></td></tr>
 <tr class="separator:ae038987befe73644ae5c8a20dabff9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a449f5caa3cb67c2053054866748ad6d9" id="r_a449f5caa3cb67c2053054866748ad6d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a449f5caa3cb67c2053054866748ad6d9">get_remote_plugin_zip</a> ($url, $md5)</td></tr>
+<tr class="memitem:a449f5caa3cb67c2053054866748ad6d9" id="r_a449f5caa3cb67c2053054866748ad6d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a449f5caa3cb67c2053054866748ad6d9">get_remote_plugin_zip</a> ($<a class="el" href="../../de/d0a/classcore_1_1url.html">url</a>, $md5)</td></tr>
 <tr class="memdesc:a449f5caa3cb67c2053054866748ad6d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the plugin ZIP file from the given URL.  <br /></td></tr>
 <tr class="separator:a449f5caa3cb67c2053054866748ad6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a971d56dfd28d5ec06a63a61f1b714ea8" id="r_a971d56dfd28d5ec06a63a61f1b714ea8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a971d56dfd28d5ec06a63a61f1b714ea8">list_plugin_folder_files</a> ($folderpath)</td></tr>
@@ -116,10 +113,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a921c5a33050780b8ea3b12e19ad2cfeb" id="r_a921c5a33050780b8ea3b12e19ad2cfeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a921c5a33050780b8ea3b12e19ad2cfeb">debug</a> ($msg)</td></tr>
 <tr class="memdesc:a921c5a33050780b8ea3b12e19ad2cfeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raise developer debugging level message.  <br /></td></tr>
 <tr class="separator:a921c5a33050780b8ea3b12e19ad2cfeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa0ced4a0d422a7b7958ba1b0f5ff2ad" id="r_aaa0ced4a0d422a7b7958ba1b0f5ff2ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa0ced4a0d422a7b7958ba1b0f5ff2ad">download_file_content</a> ($url, $tofile)</td></tr>
+<tr class="memitem:aaa0ced4a0d422a7b7958ba1b0f5ff2ad" id="r_aaa0ced4a0d422a7b7958ba1b0f5ff2ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa0ced4a0d422a7b7958ba1b0f5ff2ad">download_file_content</a> ($<a class="el" href="../../de/d0a/classcore_1_1url.html">url</a>, $tofile)</td></tr>
 <tr class="memdesc:aaa0ced4a0d422a7b7958ba1b0f5ff2ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thin wrapper for the core's <a class="el" href="../../d5/d09/group__core__files.html#gaa2a61814cfc45a7903e00bf746acbd0e" title="Fetches content of file from Internet (using proxy if defined).">download_file_content()</a> function.  <br /></td></tr>
 <tr class="separator:aaa0ced4a0d422a7b7958ba1b0f5ff2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdebc21856b0668a56a8267994ae4b7e" id="r_abdebc21856b0668a56a8267994ae4b7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abdebc21856b0668a56a8267994ae4b7e">download_plugin_zip_file</a> ($url, $tofile)</td></tr>
+<tr class="memitem:abdebc21856b0668a56a8267994ae4b7e" id="r_abdebc21856b0668a56a8267994ae4b7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abdebc21856b0668a56a8267994ae4b7e">download_plugin_zip_file</a> ($<a class="el" href="../../de/d0a/classcore_1_1url.html">url</a>, $tofile)</td></tr>
 <tr class="memdesc:abdebc21856b0668a56a8267994ae4b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Download the ZIP file with the plugin package from the given location.  <br /></td></tr>
 <tr class="separator:abdebc21856b0668a56a8267994ae4b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7258d55114b17f76281f9748db78a5e8" id="r_a7258d55114b17f76281f9748db78a5e8"><td class="memItemLeft" align="right" valign="top"><a id="a7258d55114b17f76281f9748db78a5e8" name="a7258d55114b17f76281f9748db78a5e8"></a>
@@ -147,17 +144,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$temproot</b></td><
 <tr class="memdesc:aeac7c783bf7fd21834d86544450fa916"><td class="mdescLeft">&#160;</td><td class="mdescRight">full path to the temp directory root <br /></td></tr>
 <tr class="separator:aeac7c783bf7fd21834d86544450fa916"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>General purpose class managing the plugins source code files deployment. </p>
-<p>The class is able and supposed to</p><ul>
-<li>fetch and cache ZIP files distributed via the <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> Plugins directory</li>
-<li>unpack the ZIP files in a temporary storage</li>
-<li>archive existing version of the plugin source code</li>
-<li>move (deploy) the plugin source code into the $CFG-&gt;dirroot</li>
-</ul>
-<dl class="section copyright"><dt>Copyright</dt><dd>2015 David Mudrak <a href="#" onclick="location.href='mai'+'lto:'+'dav'+'id'+'@mo'+'od'+'le.'+'co'+'m'; return false;">david<span class="obfuscator">.nosp@m.</span>@moo<span class="obfuscator">.nosp@m.</span>dle.c<span class="obfuscator">.nosp@m.</span>om</a> </dd></dl>
-<dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU GPL v3 or later </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acdaef3927bdbb78854c2f768c088be50" name="acdaef3927bdbb78854c2f768c088be50"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acdaef3927bdbb78854c2f768c088be50">&#9670;&#160;</a></span>__construct()</h2>
 
@@ -718,7 +705,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$temproot</b></td><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 23 2024 02:37:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 30 2024 02:41:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

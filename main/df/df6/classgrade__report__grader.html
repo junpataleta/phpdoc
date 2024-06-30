@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240620) (ad7fc69c251)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
   </td>
  </tr>
  </tbody>
@@ -97,7 +97,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4df6aa59369f0fc3c08cb4e1d4a01ba6" id="r_a4df6aa59369f0fc3c08cb4e1d4a01ba6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4df6aa59369f0fc3c08cb4e1d4a01ba6">__construct</a> ($courseid, $gpr, $context, $page=null, $sortitemid=null, string $sort='')</td></tr>
 <tr class="memdesc:a4df6aa59369f0fc3c08cb4e1d4a01ba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:a4df6aa59369f0fc3c08cb4e1d4a01ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dbdceb829d29920749fe790498174b5" id="r_a0dbdceb829d29920749fe790498174b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dbdceb829d29920749fe790498174b5">get_category_view_mode_link</a> (<a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $url, string $title, string $action, bool $active=false)</td></tr>
+<tr class="memitem:a0dbdceb829d29920749fe790498174b5" id="r_a0dbdceb829d29920749fe790498174b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dbdceb829d29920749fe790498174b5">get_category_view_mode_link</a> (moodle_url $url, string $title, string $action, bool $active=false)</td></tr>
 <tr class="memdesc:a0dbdceb829d29920749fe790498174b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns link to change category view mode.  <br /></td></tr>
 <tr class="separator:a0dbdceb829d29920749fe790498174b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa91ed658280598927432290bc21e7441" id="r_aa91ed658280598927432290bc21e7441"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa91ed658280598927432290bc21e7441">get_cell_display_class</a> (<a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a> $item)</td></tr>
@@ -323,7 +323,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aef911d31d1c22d91b842462602475a45" id="r_aef911d31d1c22d91b842462602475a45"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef911d31d1c22d91b842462602475a45">get_icons</a> ($element)</td></tr>
 <tr class="memdesc:aef911d31d1c22d91b842462602475a45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a <a class="el" href="../../d9/d8f/classgrade__category.html" title="grade_category is an object mapped to DB table {prefix}grade_categories">grade_category</a>, <a class="el" href="../../d0/d8b/classgrade__item.html" title="Class representing a grade item.">grade_item</a> or <a class="el" href="../../dc/df3/classgrade__grade.html" title="grade_grades is an object mapped to DB table {prefix}grade_grades">grade_grade</a>, this function figures out the state of the object and builds then returns a div with the icons needed for the grader report.  <br /></td></tr>
 <tr class="separator:aef911d31d1c22d91b842462602475a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0daca4b505f04f84730f9fa769264a2" id="r_aa0daca4b505f04f84730f9fa769264a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#aa0daca4b505f04f84730f9fa769264a2">get_sort_arrow</a> (string $direction='down', ?<a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $sortlink=null)</td></tr>
+<tr class="memitem:aa0daca4b505f04f84730f9fa769264a2" id="r_aa0daca4b505f04f84730f9fa769264a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#aa0daca4b505f04f84730f9fa769264a2">get_sort_arrow</a> (string $direction='down', ?moodle_url $sortlink=null)</td></tr>
 <tr class="memdesc:aa0daca4b505f04f84730f9fa769264a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an arrow icon inside an  tag, for the purpose of sorting a column.  <br /></td></tr>
 <tr class="separator:aa0daca4b505f04f84730f9fa769264a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06c40ab59316b8acdf92e4071e5c49c0" id="r_a06c40ab59316b8acdf92e4071e5c49c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#a06c40ab59316b8acdf92e4071e5c49c0">get_users_search_sql</a> (array $mappings, array $userfields)</td></tr>
@@ -726,7 +726,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d6/d94/classhtml__table__cell.html" title="Component representing a table cell.">html_table_cell</a></td><td>Formatted average cell. </td></tr>
+    <tr><td class="paramname">html_table_cell</td><td>Formatted average cell. </td></tr>
   </table>
   </dd>
 </dl>
@@ -767,7 +767,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d6/ddb/classhtml__table__row.html" title="Component representing a table row.">html_table_row</a></td><td>Row with averages </td></tr>
+    <tr><td class="paramname">html_table_row</td><td>Row with averages </td></tr>
   </table>
   </dd>
 </dl>
@@ -857,7 +857,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
         <tr>
           <td class="memname">grade_report_grader::get_category_view_mode_link </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a></td>          <td class="paramname"><span class="paramname"><em>$url</em></span>, </td>
+          <td class="paramtype">moodle_url</td>          <td class="paramname"><span class="paramname"><em>$url</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -880,7 +880,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 <p>Returns link to change category view mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$url</td><td>Url to grader report page </td></tr>
+    <tr><td class="paramtype">moodle_url</td><td class="paramname">$url</td><td>Url to grader report page </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$title</td><td>Menu item title </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>View mode to change to </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$active</td><td>Whether link is active in dropdown</td></tr>
@@ -1399,7 +1399,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td>Array of <a class="el" href="../../d6/ddb/classhtml__table__row.html" title="Component representing a table row.">html_table_row</a> objects </td></tr>
+    <tr><td class="paramname">array</td><td>Array of html_table_row objects </td></tr>
   </table>
   </dd>
 </dl>
@@ -1617,7 +1617,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td>Array of <a class="el" href="../../d6/ddb/classhtml__table__row.html" title="Component representing a table row.">html_table_row</a> objects </td></tr>
+    <tr><td class="paramname">array</td><td>Array of html_table_row objects </td></tr>
   </table>
   </dd>
 </dl>
@@ -1641,7 +1641,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">?<a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a></td>          <td class="paramname"><span class="paramname"><em>$sortlink</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">?moodle_url</td>          <td class="paramname"><span class="paramname"><em>$sortlink</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -1655,7 +1655,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$direction</td><td></td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a>&#160;|&#160;null</td><td class="paramname">$sortlink</td><td></td></tr>
+    <tr><td class="paramtype">moodle_url&#160;|&#160;null</td><td class="paramname">$sortlink</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2729,7 +2729,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 23 2024 02:37:09 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 30 2024 02:40:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

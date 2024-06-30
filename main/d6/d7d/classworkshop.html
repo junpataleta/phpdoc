@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240620) (ad7fc69c251)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
   </td>
  </tr>
  </tbody>
@@ -265,7 +265,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af1807c1f626d4dce2f87a13206c5e563" id="r_af1807c1f626d4dce2f87a13206c5e563"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1807c1f626d4dce2f87a13206c5e563">is_participant</a> ($userid=null)</td></tr>
 <tr class="memdesc:af1807c1f626d4dce2f87a13206c5e563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given user is an actively enrolled participant in the workshop.  <br /></td></tr>
 <tr class="separator:af1807c1f626d4dce2f87a13206c5e563"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a300cd9b7e29a9366318e728008b6be90" id="r_a300cd9b7e29a9366318e728008b6be90"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a300cd9b7e29a9366318e728008b6be90">log</a> ($action, <a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $url=null, $info=null, $return=false)</td></tr>
+<tr class="memitem:a300cd9b7e29a9366318e728008b6be90" id="r_a300cd9b7e29a9366318e728008b6be90"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a300cd9b7e29a9366318e728008b6be90">log</a> ($action, moodle_url $url=null, $info=null, $return=false)</td></tr>
 <tr class="memdesc:a300cd9b7e29a9366318e728008b6be90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Workshop wrapper around {.  <br /></td></tr>
 <tr class="separator:a300cd9b7e29a9366318e728008b6be90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a978326a3383631b796c4dce038663c3c" id="r_a978326a3383631b796c4dce038663c3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a978326a3383631b796c4dce038663c3c">modifying_submission_allowed</a> ($userid)</td></tr>
@@ -616,7 +616,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa40c68f356bb72cef195c68c8fee60d4" id="r_aa40c68f356bb72cef195c68c8fee60d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa40c68f356bb72cef195c68c8fee60d4">get_users_with_initial_filtering_sql_where</a> ()</td></tr>
 <tr class="memdesc:aa40c68f356bb72cef195c68c8fee60d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns SQL to fetch all enrolled users with the first name or last name.  <br /></td></tr>
 <tr class="separator:aa40c68f356bb72cef195c68c8fee60d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91021dcfc32cba6537a8d41ee97ce81f" id="r_a91021dcfc32cba6537a8d41ee97ce81f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91021dcfc32cba6537a8d41ee97ce81f">log_convert_url</a> (<a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $fullurl)</td></tr>
+<tr class="memitem:a91021dcfc32cba6537a8d41ee97ce81f" id="r_a91021dcfc32cba6537a8d41ee97ce81f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91021dcfc32cba6537a8d41ee97ce81f">log_convert_url</a> (moodle_url $fullurl)</td></tr>
 <tr class="memdesc:a91021dcfc32cba6537a8d41ee97ce81f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts absolute URL to relative URL needed by {.  <br /></td></tr>
 <tr class="separator:a91021dcfc32cba6537a8d41ee97ce81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3237b50eb1c08831f616a1023c51b09" id="r_af3237b50eb1c08831f616a1023c51b09"><td class="memItemLeft" align="right" valign="top"><a id="af3237b50eb1c08831f616a1023c51b09" name="af3237b50eb1c08831f616a1023c51b09"></a>
@@ -906,7 +906,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$initialbarprefs</b>
 </div><div class="memdoc">
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td>to the aggregation page </td></tr>
+    <tr><td class="paramname">moodle_url</td><td>to the aggregation page </td></tr>
   </table>
   </dd>
 </dl>
@@ -935,7 +935,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$initialbarprefs</b>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td>to the allocation page </td></tr>
+    <tr><td class="paramname">moodle_url</td><td>to the allocation page </td></tr>
   </table>
   </dd>
 </dl>
@@ -995,7 +995,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$initialbarprefs</b>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td>of the assessment page </td></tr>
+    <tr><td class="paramname">moodle_url</td><td>of the assessment page </td></tr>
   </table>
   </dd>
 </dl>
@@ -1653,7 +1653,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$initialbarprefs</b>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td>of the page to compare assessments of the given submission </td></tr>
+    <tr><td class="paramname">moodle_url</td><td>of the page to compare assessments of the given submission </td></tr>
   </table>
   </dd>
 </dl>
@@ -1996,7 +1996,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$initialbarprefs</b>
 </div><div class="memdoc">
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td>of the page for editing this workshop's grading form </td></tr>
+    <tr><td class="paramname">moodle_url</td><td>of the page for editing this workshop's grading form </td></tr>
   </table>
   </dd>
 </dl>
@@ -2123,7 +2123,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$initialbarprefs</b>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td>of the example assessment page </td></tr>
+    <tr><td class="paramname">moodle_url</td><td>of the example assessment page </td></tr>
   </table>
   </dd>
 </dl>
@@ -2157,7 +2157,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$initialbarprefs</b>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td>of the page to compare the reference assessments of the given example submission </td></tr>
+    <tr><td class="paramname">moodle_url</td><td>of the page to compare the reference assessments of the given example submission </td></tr>
   </table>
   </dd>
 </dl>
@@ -2186,7 +2186,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$initialbarprefs</b>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td>of the page to view an example submission </td></tr>
+    <tr><td class="paramname">moodle_url</td><td>of the page to view an example submission </td></tr>
   </table>
   </dd>
 </dl>
@@ -2735,7 +2735,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$initialbarprefs</b>
 </div><div class="memdoc">
 
 <p>Fetches all enrolled users that are authors or reviewers (or both) in the current workshop. </p>
-<p>The returned objects contain properties required by <a class="el" href="../../d0/d4e/classuser__picture.html" title="Data structure representing a user picture.">user_picture</a> and are ordered by lastname, firstname. Only users with the active enrolment are returned.</p>
+<p>The returned objects contain properties required by user_picture and are ordered by lastname, firstname. Only users with the active enrolment are returned.</p>
 <dl class="section see"><dt>See also</dt><dd>self\get_potential_authors() </dd>
 <dd>
 self\get_potential_reviewers() </dd></dl>
@@ -2868,7 +2868,7 @@ self\get_potential_reviewers() </dd></dl>
 </div><div class="memdoc">
 
 <p>Fetches all enrolled users with the capability mod/workshop:submit in the current workshop. </p>
-<p>The returned objects contain properties required by <a class="el" href="../../d0/d4e/classuser__picture.html" title="Data structure representing a user picture.">user_picture</a> and are ordered by lastname, firstname. Only users with the active enrolment are returned.</p>
+<p>The returned objects contain properties required by user_picture and are ordered by lastname, firstname. Only users with the active enrolment are returned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$musthavesubmission</td><td>if true, return only users who have already submitted </td></tr>
@@ -2917,7 +2917,7 @@ self\get_potential_reviewers() </dd></dl>
 </div><div class="memdoc">
 
 <p>Fetches all enrolled users with the capability mod/workshop:peerassess in the current workshop. </p>
-<p>The returned objects contain properties required by <a class="el" href="../../d0/d4e/classuser__picture.html" title="Data structure representing a user picture.">user_picture</a> and are ordered by lastname, firstname. Only users with the active enrolment are returned.</p>
+<p>The returned objects contain properties required by user_picture and are ordered by lastname, firstname. Only users with the active enrolment are returned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$musthavesubmission</td><td>if true, return only users who have already submitted </td></tr>
@@ -3535,7 +3535,7 @@ self\get_potential_reviewers() </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a></td>          <td class="paramname"><span class="paramname"><em>$url</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+          <td class="paramtype">moodle_url</td>          <td class="paramname"><span class="paramname"><em>$url</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3556,7 +3556,7 @@ self\get_potential_reviewers() </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>to be logged </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$url</td><td>absolute url as returned by {</td></tr>
+    <tr><td class="paramtype">moodle_url</td><td class="paramname">$url</td><td>absolute url as returned by {</td></tr>
   </table>
   </dd>
 </dl>
@@ -3589,7 +3589,7 @@ self\get_potential_reviewers() </dd></dl>
         <tr>
           <td class="memname">workshop::log_convert_url </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a></td>          <td class="paramname"><span class="paramname"><em>$fullurl</em></span></td><td>)</td>
+          <td class="paramtype">moodle_url</td>          <td class="paramname"><span class="paramname"><em>$fullurl</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -3604,7 +3604,7 @@ self\get_potential_reviewers() </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/de1/group__core.html#gad98490c571dc40b4ba2801777d422796">add_to_log()</a>}</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$url</td><td>absolute URL </td></tr>
+    <tr><td class="paramtype">moodle_url</td><td class="paramname">$url</td><td>absolute URL </td></tr>
   </table>
   </dd>
 </dl>
@@ -4136,7 +4136,7 @@ self\get_potential_reviewers() </dd></dl>
 </div><div class="memdoc">
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td>of the page for previewing this workshop's grading form </td></tr>
+    <tr><td class="paramname">moodle_url</td><td>of the page for previewing this workshop's grading form </td></tr>
   </table>
   </dd>
 </dl>
@@ -4572,7 +4572,7 @@ self\get_potential_reviewers() </dd></dl>
 </div><div class="memdoc">
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td>of the page to view a submission, defaults to the own one </td></tr>
+    <tr><td class="paramname">moodle_url</td><td>of the page to view a submission, defaults to the own one </td></tr>
   </table>
   </dd>
 </dl>
@@ -4633,7 +4633,7 @@ self\get_potential_reviewers() </dd></dl>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td>of the script to change the current phase to $phasecode </td></tr>
+    <tr><td class="paramname">moodle_url</td><td>of the script to change the current phase to $phasecode </td></tr>
   </table>
   </dd>
 </dl>
@@ -4696,7 +4696,7 @@ self\get_potential_reviewers() </dd></dl>
 </div><div class="memdoc">
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td>of this workshop's toolbox page </td></tr>
+    <tr><td class="paramname">moodle_url</td><td>of this workshop's toolbox page </td></tr>
   </table>
   </dd>
 </dl>
@@ -4719,7 +4719,7 @@ self\get_potential_reviewers() </dd></dl>
 </div><div class="memdoc">
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td>of the mod_edit form </td></tr>
+    <tr><td class="paramname">moodle_url</td><td>of the mod_edit form </td></tr>
   </table>
   </dd>
 </dl>
@@ -4774,7 +4774,7 @@ self\get_potential_reviewers() </dd></dl>
 </div><div class="memdoc">
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td>of this workshop's view page </td></tr>
+    <tr><td class="paramname">moodle_url</td><td>of this workshop's view page </td></tr>
   </table>
   </dd>
 </dl>
@@ -4787,7 +4787,7 @@ self\get_potential_reviewers() </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 23 2024 02:37:27 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 30 2024 02:40:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>
