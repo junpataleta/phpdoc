@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240705) (7d7a871eddf)</div>
   </td>
  </tr>
  </tbody>
@@ -96,6 +96,7 @@ Inheritance diagram for backup_setting:</div>
 <area href="../../dc/d4d/classbackup__activity__included__setting.html" title="activity backup setting to control if activity will be included or no, depends of @backup_activities_..." alt="backup_activity_included_setting" shape="rect" coords="209,224,408,248"/>
 <area href="../../de/d83/classbackup__activity__userinfo__setting.html" title="activity backup setting to control if activity will include user information or no,..." alt="backup_activity_userinfo_setting" shape="rect" coords="209,280,408,304"/>
 <area href="../../dc/dbe/classrestore__activity__generic__setting.html" title="generic activity setting to pass various settings between tasks and steps" alt="restore_activity_generic_setting" shape="rect" coords="209,336,408,360"/>
+<area href="../../da/d20/classsubactivity__backup__setting.html" title="Subactivity base class (activity inside a delegated section)." alt="subactivity_backup_setting" shape="rect" coords="209,392,408,416"/>
 <area href="../../dd/d80/classrestore__course__generic__setting.html" title="generic course setting to pass various settings between tasks and steps" alt="restore_course_generic_setting" shape="rect" coords="418,168,617,192"/>
 <area href="../../dd/d41/classbackup__anonymize__setting.html" title="root setting to control if backup will generate anonymized user info or no, depends of @backup_users_..." alt="backup_anonymize_setting" shape="rect" coords="836,168,1035,192"/>
 <area href="../../d8/da2/classbackup__generic__setting.html" title="root generic setting to store different things without dependencies" alt="backup_generic_setting" shape="rect" coords="836,224,1035,248"/>
@@ -105,6 +106,7 @@ Inheritance diagram for backup_setting:</div>
 <area href="../../de/d2c/classbackup__section__included__setting.html" title="Setting to define if one section is included or no." alt="backup_section_included_setting" shape="rect" coords="1254,224,1453,248"/>
 <area href="../../d4/de5/classbackup__section__userinfo__setting.html" title="section backup setting to control if section will include user information or no, depends of @backup_..." alt="backup_section_userinfo_setting" shape="rect" coords="1254,280,1453,304"/>
 <area href="../../d1/dbb/classrestore__section__generic__setting.html" title="generic section setting to pass various settings between tasks and steps" alt="restore_section_generic_setting" shape="rect" coords="1254,336,1453,360"/>
+<area href="../../d3/dde/classsubsection__backup__setting.html" title="Subsection base class (section delegated to a course module)." alt="subsection_backup_setting" shape="rect" coords="1254,392,1453,416"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -257,6 +259,14 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>ROOT_LEVEL</b> = 1</
 <tr class="memitem:a7639477bb59b3bae028b70c23cea8e79" id="r_a7639477bb59b3bae028b70c23cea8e79"><td class="memItemLeft" align="right" valign="top"><a id="a7639477bb59b3bae028b70c23cea8e79" name="a7639477bb59b3bae028b70c23cea8e79"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>SECTION_LEVEL</b> = 9</td></tr>
 <tr class="separator:a7639477bb59b3bae028b70c23cea8e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1635ca77751306ba6bd4ea60367fc63" id="r_ab1635ca77751306ba6bd4ea60367fc63"><td class="memItemLeft" align="right" valign="top"><a id="ab1635ca77751306ba6bd4ea60367fc63" name="ab1635ca77751306ba6bd4ea60367fc63"></a>
+int const&#160;</td><td class="memItemRight" valign="bottom"><b>SUBACTIVITY_LEVEL</b> = 21</td></tr>
+<tr class="memdesc:ab1635ca77751306ba6bd4ea60367fc63"><td class="mdescLeft">&#160;</td><td class="mdescRight">the activity inside a subsection level. <br /></td></tr>
+<tr class="separator:ab1635ca77751306ba6bd4ea60367fc63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0ed72f264f21f307ebd2f2849b6c691" id="r_ae0ed72f264f21f307ebd2f2849b6c691"><td class="memItemLeft" align="right" valign="top"><a id="ae0ed72f264f21f307ebd2f2849b6c691" name="ae0ed72f264f21f307ebd2f2849b6c691"></a>
+int const&#160;</td><td class="memItemRight" valign="bottom"><b>SUBSECTION_LEVEL</b> = 17</td></tr>
+<tr class="memdesc:ae0ed72f264f21f307ebd2f2849b6c691"><td class="mdescLeft">&#160;</td><td class="mdescRight">the subsection level. <br /></td></tr>
+<tr class="separator:ae0ed72f264f21f307ebd2f2849b6c691"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c9a84972d26b80daeeea26bb28bb692" id="r_a4c9a84972d26b80daeeea26bb28bb692"><td class="memItemLeft" align="right" valign="top"><a id="a4c9a84972d26b80daeeea26bb28bb692" name="a4c9a84972d26b80daeeea26bb28bb692"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>UI_HTML_CHECKBOX</b> = 10</td></tr>
 <tr class="separator:a4c9a84972d26b80daeeea26bb28bb692"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -386,7 +396,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$level</b></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d9/d2e/classbase__setting.html#a41a288201ff24db8519245a19119be8b">base_setting</a>.</p>
 
-<p>Reimplemented in <a class="el" href="../../d7/ddd/classactivity__backup__setting.html#aec65f0016077f7de0918d540d701ab2b">activity_backup_setting</a>, <a class="el" href="../../d4/d4a/classbackup__filename__setting.html#a0efb4cb02de883e8e8422927dffaab38">backup_filename_setting</a>, <a class="el" href="../../df/de8/classcourse__backup__setting.html#a7c4e974c6f9cff70a71ffcd0095de962">course_backup_setting</a>, <a class="el" href="../../dc/d98/classrestore__course__generic__text__setting.html#a9a82508e165f8d8b9f92944890f20ed8">restore_course_generic_text_setting</a>, <a class="el" href="../../dc/de7/classroot__backup__setting.html#a9be7afd2b6da2b15e9cefde0a568a29f">root_backup_setting</a>, and <a class="el" href="../../d4/d46/classsection__backup__setting.html#a12c0acf9d18ede213d061672ac696bd8">section_backup_setting</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d7/ddd/classactivity__backup__setting.html#aec65f0016077f7de0918d540d701ab2b">activity_backup_setting</a>, <a class="el" href="../../d4/d4a/classbackup__filename__setting.html#a0efb4cb02de883e8e8422927dffaab38">backup_filename_setting</a>, <a class="el" href="../../df/de8/classcourse__backup__setting.html#a7c4e974c6f9cff70a71ffcd0095de962">course_backup_setting</a>, <a class="el" href="../../dc/d98/classrestore__course__generic__text__setting.html#a9a82508e165f8d8b9f92944890f20ed8">restore_course_generic_text_setting</a>, <a class="el" href="../../d1/d57/classrestore__subactivity__generic__setting.html#acac4eb016496c72a8bf9bbf077eee638">restore_subactivity_generic_setting</a>, <a class="el" href="../../d4/dce/classrestore__subsection__generic__setting.html#a4bc8d14921822a9e0fe9f611d081b2d1">restore_subsection_generic_setting</a>, <a class="el" href="../../dc/de7/classroot__backup__setting.html#a9be7afd2b6da2b15e9cefde0a568a29f">root_backup_setting</a>, <a class="el" href="../../d4/d46/classsection__backup__setting.html#a12c0acf9d18ede213d061672ac696bd8">section_backup_setting</a>, <a class="el" href="../../da/d20/classsubactivity__backup__setting.html#a8826ac4efdac66cf6b0ae0cbb0ea0a16">subactivity_backup_setting</a>, and <a class="el" href="../../d3/dde/classsubsection__backup__setting.html#a5a0762c8ecf2682f3ffa5000a9907543">subsection_backup_setting</a>.</p>
 
 </div>
 </div>
@@ -1014,7 +1024,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$level</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 30 2024 02:39:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jul 7 2024 02:40:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

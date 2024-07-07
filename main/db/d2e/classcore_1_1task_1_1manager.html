@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240705) (7d7a871eddf)</div>
   </td>
  </tr>
  </tbody>
@@ -117,9 +117,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>cleanup_metadata</b
 <tr class="memitem:ae297ee49d5f78767864fa8f844ffa9df" id="r_ae297ee49d5f78767864fa8f844ffa9df"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae297ee49d5f78767864fa8f844ffa9df">configure_scheduled_task</a> (<a class="el" href="../../de/d87/classcore_1_1task_1_1scheduled__task.html">scheduled_task</a> $task)</td></tr>
 <tr class="memdesc:ae297ee49d5f78767864fa8f844ffa9df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the default configuration for a scheduled task.  <br /></td></tr>
 <tr class="separator:ae297ee49d5f78767864fa8f844ffa9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2d4f07b103416e32fcb0d799153c34b" id="r_af2d4f07b103416e32fcb0d799153c34b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2d4f07b103416e32fcb0d799153c34b">ensure_adhoc_task_qos</a> (array $records)</td></tr>
-<tr class="memdesc:af2d4f07b103416e32fcb0d799153c34b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure quality of service for the ad hoc task queue.  <br /></td></tr>
-<tr class="separator:af2d4f07b103416e32fcb0d799153c34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a060183d76f2a2e441cfcb229cc08ac5d" id="r_a060183d76f2a2e441cfcb229cc08ac5d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a060183d76f2a2e441cfcb229cc08ac5d">ensure_adhoc_task_qos</a> ()</td></tr>
+<tr class="separator:a060183d76f2a2e441cfcb229cc08ac5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcca449f1ee3b9f370fdc8587913797e" id="r_abcca449f1ee3b9f370fdc8587913797e"><td class="memItemLeft" align="right" valign="top"><a id="abcca449f1ee3b9f370fdc8587913797e" name="abcca449f1ee3b9f370fdc8587913797e"></a>
 static&#160;</td><td class="memItemRight" valign="bottom"><b>fail_running_task</b> ()</td></tr>
 <tr class="memdesc:abcca449f1ee3b9f370fdc8587913797e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will fail the currently running task, if there is one. <br /></td></tr>
@@ -548,8 +547,8 @@ static int int&#160;</td><td class="memItemRight" valign="bottom"><b>$numtasks</
 
 </div>
 </div>
-<a id="af2d4f07b103416e32fcb0d799153c34b" name="af2d4f07b103416e32fcb0d799153c34b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2d4f07b103416e32fcb0d799153c34b">&#9670;&#160;</a></span>ensure_adhoc_task_qos()</h2>
+<a id="a060183d76f2a2e441cfcb229cc08ac5d" name="a060183d76f2a2e441cfcb229cc08ac5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a060183d76f2a2e441cfcb229cc08ac5d">&#9670;&#160;</a></span>ensure_adhoc_task_qos()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -560,7 +559,7 @@ static int int&#160;</td><td class="memItemRight" valign="bottom"><b>$numtasks</
         <tr>
           <td class="memname">static core\task\manager::ensure_adhoc_task_qos </td>
           <td>(</td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$records</em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -570,19 +569,7 @@ static int int&#160;</td><td class="memItemRight" valign="bottom"><b>$numtasks</
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Ensure quality of service for the ad hoc task queue. </p>
-<p>This reshuffles the adhoc tasks queue to balance by type to ensure a level of quality of service per type, while still maintaining the relative order of tasks queued by timestamp.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$records</td><td>array of task records </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$records</td><td>array of same task records shuffled </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000278">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-67648" class="el">MDL-67648</a> - please do not use this method anymore. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000101">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-74843" class="el">MDL-74843</a> This method will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="#aa1a794a1517e071a4d0621a60c99b2cd" title="This function will dispatch the next adhoc task in the queue.">core\task\manager\get_next_adhoc_task</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000274">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-67648" class="el">MDL-67648</a> </dd></dl>
 
 </div>
 </div>
@@ -2082,7 +2069,7 @@ adhoc_task_complete} to release the lock and reschedule the task.</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 30 2024 02:41:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jul 7 2024 02:41:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240705) (7d7a871eddf)</div>
   </td>
  </tr>
  </tbody>
@@ -155,6 +155,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a118e1f77a3ea1cb379e3e366980ccad1" id="r_a118e1f77a3ea1cb379e3e366980ccad1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db3/classbackup__activity__structure__step.html#a118e1f77a3ea1cb379e3e366980ccad1">prepare_activity_structure</a> ($activitystructure)</td></tr>
 <tr class="memdesc:a118e1f77a3ea1cb379e3e366980ccad1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps any activity backup structure within the common 'activity' element that will include common to all activities information like id, context...  <br /></td></tr>
 <tr class="separator:a118e1f77a3ea1cb379e3e366980ccad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4b90fd6e82a5ff629cadf89874777a3" id="r_af4b90fd6e82a5ff629cadf89874777a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db3/classbackup__activity__structure__step.html#af4b90fd6e82a5ff629cadf89874777a3">set_delegated_section_mapping</a> (string $pluginname, int $itemid)</td></tr>
+<tr class="memdesc:af4b90fd6e82a5ff629cadf89874777a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a delegate section itemid mapping.  <br /></td></tr>
+<tr class="separator:af4b90fd6e82a5ff629cadf89874777a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f068bdd7dcbb018561fa52ae72d23ff" id="r_a0f068bdd7dcbb018561fa52ae72d23ff"><td class="memItemLeft" align="right" valign="top"><a id="a0f068bdd7dcbb018561fa52ae72d23ff" name="a0f068bdd7dcbb018561fa52ae72d23ff"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>setting_exists</b> ($name)</td></tr>
 <tr class="separator:a0f068bdd7dcbb018561fa52ae72d23ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -496,13 +499,51 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$name</b></td></tr>
 
 </div>
 </div>
+<a id="af4b90fd6e82a5ff629cadf89874777a3" name="af4b90fd6e82a5ff629cadf89874777a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4b90fd6e82a5ff629cadf89874777a3">&#9670;&#160;</a></span>set_delegated_section_mapping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">backup_activity_structure_step::set_delegated_section_mapping </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$pluginname</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$itemid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set a delegate section itemid mapping. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$pluginname</td><td>the name of the plugin that is delegating the section. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$itemid</td><td>the itemid of the section being delegated. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>mod/resource/backup/moodle2/<b>backup_resource_stepslib.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 30 2024 02:39:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jul 7 2024 02:40:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

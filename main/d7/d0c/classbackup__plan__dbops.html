@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240705) (7d7a871eddf)</div>
   </td>
  </tr>
  </tbody>
@@ -112,6 +112,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>get_mnet_localhost_
 static&#160;</td><td class="memItemRight" valign="bottom"><b>get_modules_from_sectionid</b> ($sectionid)</td></tr>
 <tr class="memdesc:a760a8053250eb87ea5ada64af01105e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given one section id, return one array with all the course modules that belong to it. <br /></td></tr>
 <tr class="separator:a760a8053250eb87ea5ada64af01105e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92826c3bd996334bdf389066b6c9f4a7" id="r_a92826c3bd996334bdf389066b6c9f4a7"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92826c3bd996334bdf389066b6c9f4a7">get_section_from_id</a> ($sectionid)</td></tr>
+<tr class="memdesc:a92826c3bd996334bdf389066b6c9f4a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given one section id, returns the full section record.  <br /></td></tr>
+<tr class="separator:a92826c3bd996334bdf389066b6c9f4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a227f5f096fe0b28fcdc1e52256ee7100" id="r_a227f5f096fe0b28fcdc1e52256ee7100"><td class="memItemLeft" align="right" valign="top"><a id="a227f5f096fe0b28fcdc1e52256ee7100" name="a227f5f096fe0b28fcdc1e52256ee7100"></a>
 static&#160;</td><td class="memItemRight" valign="bottom"><b>get_sections_from_courseid</b> ($courseid)</td></tr>
 <tr class="memdesc:a227f5f096fe0b28fcdc1e52256ee7100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given one course id, return one array with all the course_sections belonging to it. <br /></td></tr>
@@ -203,6 +206,45 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>require_gradebook_b
 
 </div>
 </div>
+<a id="a92826c3bd996334bdf389066b6c9f4a7" name="a92826c3bd996334bdf389066b6c9f4a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92826c3bd996334bdf389066b6c9f4a7">&#9670;&#160;</a></span>get_section_from_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static backup_plan_dbops::get_section_from_id </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$sectionid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Given one section id, returns the full section record. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$sectionid</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a44197cf5252b4ceceaaf09a145b57409" name="a44197cf5252b4ceceaaf09a145b57409"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44197cf5252b4ceceaaf09a145b57409">&#9670;&#160;</a></span>get_theme_from_courseid()</h2>
 
@@ -250,7 +292,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>require_gradebook_b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 30 2024 02:39:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jul 7 2024 02:40:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

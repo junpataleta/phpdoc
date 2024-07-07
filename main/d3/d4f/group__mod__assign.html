@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240705) (7d7a871eddf)</div>
   </td>
  </tr>
  </tbody>
@@ -284,6 +284,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d98/classmod__assign_1_1navigation_1_1views_1_1secondary.html">mod_assign\navigation\views\secondary</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da0/classmod__assign_1_1notification__helper.html">mod_assign\notification_helper</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d6e/classmod__assign_1_1output_1_1actionmenu.html">mod_assign\output\actionmenu</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output the actionbar for this activity.  <a href="../../da/d6e/classmod__assign_1_1output_1_1actionmenu.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -336,6 +338,12 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search area for <a class="el" href="../../d9/dda/namespacemod__assign.html" title="&#160;">mod_assign</a> activities.  <a href="../../da/d9d/classmod__assign_1_1search_1_1activity.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da3/classmod__assign_1_1task_1_1cron__task.html">mod_assign\task\cron_task</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dfa/classmod__assign_1_1task_1_1queue__all__assignment__due__soon__notification__tasks.html">mod_assign\task\queue_all_assignment_due_soon_notification_tasks</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5d/classmod__assign_1_1task_1_1queue__assignment__due__soon__notification__tasks__for__users.html">mod_assign\task\queue_assignment_due_soon_notification_tasks_for_users</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/db0/classmod__assign_1_1task_1_1send__assignment__due__soon__notification__to__user.html">mod_assign\task\send_assignment_due_soon_notification_to_user</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d4e/classmod__assign__batch__set__allocatedmarker__form.html">mod_assign_batch_set_allocatedmarker_form</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set allocated marker form.  <a href="../../dc/d4e/classmod__assign__batch__set__allocatedmarker__form.html#details">More...</a><br /></td></tr>
@@ -678,7 +686,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>ASSIGN_UNLIMITED_ATT
 $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>component</b> = 'mod_assign'</td></tr>
 <tr class="separator:ga27dc7e2c13f48a05e56e0d3138fe3c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92a3fd99b37c9cbd65c4aead816b3a83" id="r_ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memItemLeft" align="right" valign="top"><a id="ga92a3fd99b37c9cbd65c4aead816b3a83" name="ga92a3fd99b37c9cbd65c4aead816b3a83"></a>
-$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024053100</td></tr>
+$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024070201</td></tr>
 <tr class="separator:ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -843,7 +851,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000989">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000985">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
 
 </div>
 </div>
@@ -1038,7 +1046,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000992">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3, when the block_course_overview block was removed. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000988">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3, when the block_course_overview block was removed. </dd></dl>
 
 </div>
 </div>
@@ -1081,7 +1089,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000991">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3, when the block_course_overview block was removed. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000987">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3, when the block_course_overview block was removed. </dd></dl>
 
 </div>
 </div>
@@ -1429,7 +1437,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000990">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3, when the block_course_overview block was removed. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000986">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3, when the block_course_overview block was removed. </dd></dl>
 
 </div>
 </div>
@@ -1782,7 +1790,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000993">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000989">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8 </dd></dl>
 
 </div>
 </div>
@@ -2588,7 +2596,14 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 <div class="line">            <span class="stringliteral">&#39;email&#39;</span> =&gt; MESSAGE_PERMITTED + MESSAGE_DEFAULT_ENABLED,</div>
 <div class="line">        ],</div>
 <div class="line">    ],</div>
-<div class="line"> </div>
+<div class="line">    </div>
+<div class="line">    <span class="stringliteral">&#39;assign_due_soon&#39;</span> =&gt; [</div>
+<div class="line">        <span class="stringliteral">&#39;defaults&#39;</span> =&gt; [</div>
+<div class="line">            <span class="stringliteral">&#39;popup&#39;</span> =&gt; MESSAGE_PERMITTED + MESSAGE_DEFAULT_ENABLED,</div>
+<div class="line">            <span class="stringliteral">&#39;email&#39;</span> =&gt; MESSAGE_PERMITTED + MESSAGE_DEFAULT_ENABLED,</div>
+<div class="line">            <span class="stringliteral">&#39;airnotifier&#39;</span> =&gt; MESSAGE_PERMITTED + MESSAGE_DEFAULT_ENABLED,</div>
+<div class="line">        ],</div>
+<div class="line">    ],</div>
 <div class="line">)</div>
 </div><!-- fragment -->
 </div>
@@ -2660,7 +2675,16 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 <div class="line">        <span class="stringliteral">&#39;day&#39;</span> =&gt; <span class="charliteral">&#39;*&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;month&#39;</span> =&gt; <span class="charliteral">&#39;*&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;dayofweek&#39;</span> =&gt; <span class="charliteral">&#39;*&#39;</span></div>
-<div class="line">    )</div>
+<div class="line">    ),</div>
+<div class="line">    [</div>
+<div class="line">        <span class="stringliteral">&#39;classname&#39;</span> =&gt; <span class="stringliteral">&#39;\mod_assign\task\queue_all_assignment_due_soon_notification_tasks&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;blocking&#39;</span> =&gt; 0,</div>
+<div class="line">        <span class="stringliteral">&#39;minute&#39;</span> =&gt; <span class="charliteral">&#39;R&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;hour&#39;</span> =&gt; <span class="stringliteral">&#39;*/2&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;day&#39;</span> =&gt; <span class="charliteral">&#39;*&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;month&#39;</span> =&gt; <span class="charliteral">&#39;*&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;dayofweek&#39;</span> =&gt; <span class="charliteral">&#39;*&#39;</span>,</div>
+<div class="line">    ],</div>
 <div class="line">)</div>
 </div><!-- fragment -->
 </div>
@@ -2678,15 +2702,15 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 </div><div class="memdoc">
 
 <p>ASSIGN_ATTEMPT_REOPEN_METHOD_NONE - Reopening attempts is not allowed. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000995">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000247">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-81977" class="el">MDL-81977</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000991">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000243">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-81977" class="el">MDL-81977</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8. </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 30 2024 02:39:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jul 7 2024 02:40:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

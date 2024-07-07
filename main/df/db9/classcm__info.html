@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240705) (7d7a871eddf)</div>
   </td>
  </tr>
  </tbody>
@@ -115,6 +115,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af1f575c3dcd4229f7a1edfd9a72fffbd" id="r_af1f575c3dcd4229f7a1edfd9a72fffbd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1f575c3dcd4229f7a1edfd9a72fffbd">get_custom_data</a> ()</td></tr>
 <tr class="memdesc:af1f575c3dcd4229f7a1edfd9a72fffbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter method for property $customdata, ensures that dynamic data is retrieved.  <br /></td></tr>
 <tr class="separator:af1f575c3dcd4229f7a1edfd9a72fffbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04c90329c3dc23b43f9ab1f014bc4159" id="r_a04c90329c3dc23b43f9ab1f014bc4159"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04c90329c3dc23b43f9ab1f014bc4159">get_delegated_section_info</a> ()</td></tr>
+<tr class="memdesc:a04c90329c3dc23b43f9ab1f014bc4159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the section delegated by this module, if any.  <br /></td></tr>
+<tr class="separator:a04c90329c3dc23b43f9ab1f014bc4159"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad69984c3377683ca4b3137b1b02a1547" id="r_ad69984c3377683ca4b3137b1b02a1547"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad69984c3377683ca4b3137b1b02a1547">get_formatted_content</a> ($options=array())</td></tr>
 <tr class="memdesc:ad69984c3377683ca4b3137b1b02a1547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the content to display on course/overview page, formatted and passed through filters.  <br /></td></tr>
 <tr class="separator:ad69984c3377683ca4b3137b1b02a1547"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -605,6 +608,31 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_VIEW</b> = 4</
 
 </div>
 </div>
+<a id="a04c90329c3dc23b43f9ab1f014bc4159" name="a04c90329c3dc23b43f9ab1f014bc4159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04c90329c3dc23b43f9ab1f014bc4159">&#9670;&#160;</a></span>get_delegated_section_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cm_info::get_delegated_section_info </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the section delegated by this module, if any. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">?section_info</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad69984c3377683ca4b3137b1b02a1547" name="ad69984c3377683ca4b3137b1b02a1547"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad69984c3377683ca4b3137b1b02a1547">&#9670;&#160;</a></span>get_formatted_content()</h2>
 
@@ -1028,7 +1056,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_VIEW</b> = 4</
 </div><div class="memdoc">
 
 <p>Checks whether the module's conditional access settings mean that the user cannot see the activity at all. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000776">Deprecated</a></b></dt><dd>since 2.7 <a href="https://tracker.moodle.org/browse/MDL-44070" class="el">MDL-44070</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000772">Deprecated</a></b></dt><dd>since 2.7 <a href="https://tracker.moodle.org/browse/MDL-44070" class="el">MDL-44070</a> </dd></dl>
 
 </div>
 </div>
@@ -1049,7 +1077,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_VIEW</b> = 4</
 
 <p>This method has been deprecated and should not be used. </p>
 <dl class="section see"><dt>See also</dt><dd>$uservisible </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000775">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000771">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 </dd></dl>
 
 </div>
 </div>
@@ -1465,7 +1493,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_VIEW</b> = 4</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 30 2024 02:39:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jul 7 2024 02:40:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

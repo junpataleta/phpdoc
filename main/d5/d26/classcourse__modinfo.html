@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240627) (5aef789ac61)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240705) (7d7a871eddf)</div>
   </td>
  </tr>
  </tbody>
@@ -133,6 +133,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a501651d437cdef7536b8db472b8b205b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec007e89022d0371cbcf345e726fe8aa" id="r_aec007e89022d0371cbcf345e726fe8aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec007e89022d0371cbcf345e726fe8aa">get_sections</a> ()</td></tr>
 <tr class="separator:aec007e89022d0371cbcf345e726fe8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a983cde96bbcf73d12cf546e5aeceb189" id="r_a983cde96bbcf73d12cf546e5aeceb189"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a983cde96bbcf73d12cf546e5aeceb189">get_sections_delegated_by_cm</a> ()</td></tr>
+<tr class="memdesc:a983cde96bbcf73d12cf546e5aeceb189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets data about section delegated by course modules.  <br /></td></tr>
+<tr class="separator:a983cde96bbcf73d12cf546e5aeceb189"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a031d322929fb04b6873b0bfea50f96ff" id="r_a031d322929fb04b6873b0bfea50f96ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a031d322929fb04b6873b0bfea50f96ff">get_used_module_names</a> ($plural=false)</td></tr>
 <tr class="memdesc:a031d322929fb04b6873b0bfea50f96ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns array of localised human-readable module names used in this course.  <br /></td></tr>
 <tr class="separator:a031d322929fb04b6873b0bfea50f96ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -498,7 +501,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>This method can not be used anymore. </p>
 <dl class="section see"><dt>See also</dt><dd>course_modinfo\build_course_cache() </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000771">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000767">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
 
 </div>
 </div>
@@ -965,6 +968,31 @@ Static Protected Attributes</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>Array from section number (e.g. 0) to array of course-module IDs in that section; this only includes sections that contain at least one course-module </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a983cde96bbcf73d12cf546e5aeceb189" name="a983cde96bbcf73d12cf546e5aeceb189"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a983cde96bbcf73d12cf546e5aeceb189">&#9670;&#160;</a></span>get_sections_delegated_by_cm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">course_modinfo::get_sections_delegated_by_cm </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets data about section delegated by course modules. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">section_info[]</td><td>sections array indexed by course module ID </td></tr>
   </table>
   </dd>
 </dl>
@@ -1474,7 +1502,7 @@ course_modinfo\clear_instance_cache() </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 30 2024 02:40:00 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jul 7 2024 02:40:24 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>
