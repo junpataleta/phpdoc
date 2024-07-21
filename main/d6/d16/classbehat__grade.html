@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240712) (fd487cd3f20)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240719) (554a790bf0a)</div>
   </td>
  </tr>
  </tbody>
@@ -96,15 +96,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a301e40bfcfca320b260cf03b37bba010" id="r_a301e40bfcfca320b260cf03b37bba010"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a301e40bfcfca320b260cf03b37bba010">gradebook_calculations_for_the_course_are_frozen_at_version</a> ($coursename, $version)</td></tr>
 <tr class="memdesc:a301e40bfcfca320b260cf03b37bba010"><td class="mdescLeft">&#160;</td><td class="mdescRight">Step allowing to test before-the-fix behaviour of the gradebook.  <br /></td></tr>
 <tr class="separator:a301e40bfcfca320b260cf03b37bba010"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6a2367634d7622d220bb71275b0f6fc" id="r_ac6a2367634d7622d220bb71275b0f6fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6a2367634d7622d220bb71275b0f6fc">i_click_on_in_search_widget</a> (string $needle, string $haystack)</td></tr>
-<tr class="memdesc:ac6a2367634d7622d220bb71275b0f6fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clicks on an option from the specified search widget in the current gradebook page.  <br /></td></tr>
-<tr class="separator:ac6a2367634d7622d220bb71275b0f6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbaf256c23237a93b4b5dee7ad4abcc9" id="r_adbaf256c23237a93b4b5dee7ad4abcc9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbaf256c23237a93b4b5dee7ad4abcc9">i_confirm_in_search_within_the_gradebook_widget_does_not_exist</a> ($needle, $haystack)</td></tr>
-<tr class="memdesc:adbaf256c23237a93b4b5dee7ad4abcc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Confirm if a value is not within the search widget within the gradebook.  <br /></td></tr>
-<tr class="separator:adbaf256c23237a93b4b5dee7ad4abcc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a380ec09a16b0c4a89d738f5f87cefebb" id="r_a380ec09a16b0c4a89d738f5f87cefebb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a380ec09a16b0c4a89d738f5f87cefebb">i_confirm_in_search_within_the_gradebook_widget_exists</a> ($needle, $haystack)</td></tr>
-<tr class="memdesc:a380ec09a16b0c4a89d738f5f87cefebb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Confirm if a value is within the search widget within the gradebook.  <br /></td></tr>
-<tr class="separator:a380ec09a16b0c4a89d738f5f87cefebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac99e5862514bcbdf83746070ab0fe7ab" id="r_ac99e5862514bcbdf83746070ab0fe7ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac99e5862514bcbdf83746070ab0fe7ab">i_duplicate_the_grade_item</a> (string $gradeitem)</td></tr>
 <tr class="memdesc:ac99e5862514bcbdf83746070ab0fe7ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duplicates a grade item or category.  <br /></td></tr>
 <tr class="separator:ac99e5862514bcbdf83746070ab0fe7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,111 +209,6 @@ Protected Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$coursename</td><td></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$version</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ac6a2367634d7622d220bb71275b0f6fc" name="ac6a2367634d7622d220bb71275b0f6fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6a2367634d7622d220bb71275b0f6fc">&#9670;&#160;</a></span>i_click_on_in_search_widget()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">behat_grade::i_click_on_in_search_widget </td>
-          <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$needle</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$haystack</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Clicks on an option from the specified search widget in the current gradebook page. </p>
-<p>Examples:</p><ul>
-<li>I click on "Student" in the "user" search widget</li>
-<li>I click on "Group" in the "group" search widget</li>
-<li>I click on "Grade item" in the "grade" search widget</li>
-</ul>
-<p>@Given /^I click on "(?P&lt;needle&gt;(?:[^"]|::")*)" in the "(?P&lt;haystack&gt;(?:[^"]|")*)" search widget$/ </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$needle</td><td>The value to search for. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$haystack</td><td>The type of the search widget. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="adbaf256c23237a93b4b5dee7ad4abcc9" name="adbaf256c23237a93b4b5dee7ad4abcc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbaf256c23237a93b4b5dee7ad4abcc9">&#9670;&#160;</a></span>i_confirm_in_search_within_the_gradebook_widget_does_not_exist()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">behat_grade::i_confirm_in_search_within_the_gradebook_widget_does_not_exist </td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$needle</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$haystack</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Confirm if a value is not within the search widget within the gradebook. </p>
-<p>Examples:</p><ul>
-<li>I confirm "User" in "user" search within the gradebook widget does not exist</li>
-<li>I confirm "Group" in "group" search within the gradebook widget does not exist</li>
-<li>I confirm "Grade item" in "grade" search within the gradebook widget does not exist</li>
-</ul>
-<p>@Given /^I confirm "(?P&lt;needle&gt;(?:[^"]|::")*)" in "(?P&lt;haystack&gt;(?:[^"]|")*)" search within the gradebook widget does not exist$/ </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$needle</td><td>The value to search for. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$haystack</td><td>The type of the search widget. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a380ec09a16b0c4a89d738f5f87cefebb" name="a380ec09a16b0c4a89d738f5f87cefebb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a380ec09a16b0c4a89d738f5f87cefebb">&#9670;&#160;</a></span>i_confirm_in_search_within_the_gradebook_widget_exists()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">behat_grade::i_confirm_in_search_within_the_gradebook_widget_exists </td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$needle</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$haystack</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Confirm if a value is within the search widget within the gradebook. </p>
-<p>Examples:</p><ul>
-<li>I confirm "User" in "user" search within the gradebook widget exists</li>
-<li>I confirm "Group" in "group" search within the gradebook widget exists</li>
-<li>I confirm "Grade item" in "grade" search within the gradebook widget exists</li>
-</ul>
-<p>@Given /^I confirm "(?P&lt;needle&gt;(?:[^"]|::")*)" in "(?P&lt;haystack&gt;(?:[^"]|")*)" search within the gradebook widget exists$/ </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$needle</td><td>The value to search for. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$haystack</td><td>The type of the search widget. </td></tr>
   </table>
   </dd>
 </dl>
@@ -681,7 +567,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000188">Deprecated</a></b></dt><dd>since 4.1 - use behat_forms\i_set_the_field_to() instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000189">Deprecated</a></b></dt><dd>since 4.1 - use behat_forms\i_set_the_field_to() instead. </dd></dl>
 
 </div>
 </div>
@@ -707,7 +593,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000187">Deprecated</a></b></dt><dd>since 4.0 - use behat_forms\i_set_the_field_to() instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000188">Deprecated</a></b></dt><dd>since 4.0 - use behat_forms\i_set_the_field_to() instead. </dd></dl>
 
 </div>
 </div>
@@ -746,7 +632,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 14 2024 02:46:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jul 21 2024 02:41:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

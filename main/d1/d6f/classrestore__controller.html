@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240712) (fd487cd3f20)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240719) (554a790bf0a)</div>
   </td>
  </tr>
  </tbody>
@@ -212,9 +212,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae34b2329054fc097089f5a1e9147bba7" id="r_ae34b2329054fc097089f5a1e9147bba7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae34b2329054fc097089f5a1e9147bba7">save_controller</a> ($includeobj=true, $cleanobj=false)</td></tr>
 <tr class="memdesc:ae34b2329054fc097089f5a1e9147bba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save controller information.  <br /></td></tr>
 <tr class="separator:ae34b2329054fc097089f5a1e9147bba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad17752db335dbf3a8cc96a302956bfd" id="r_aad17752db335dbf3a8cc96a302956bfd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dcd/classbase__controller.html#aad17752db335dbf3a8cc96a302956bfd">set_copy</a> (\stdClass $data)</td></tr>
-<tr class="memdesc:aad17752db335dbf3a8cc96a302956bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store extra data for course copy operations.  <br /></td></tr>
-<tr class="separator:aad17752db335dbf3a8cc96a302956bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9706b56b690a5d15650bd8595bf34c41" id="r_a9706b56b690a5d15650bd8595bf34c41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dcd/classbase__controller.html#a9706b56b690a5d15650bd8595bf34c41">set_copy</a> ()</td></tr>
+<tr class="separator:a9706b56b690a5d15650bd8595bf34c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace54f1a10c558756b752197a27154490" id="r_ace54f1a10c558756b752197a27154490"><td class="memItemLeft" align="right" valign="top"><a id="ace54f1a10c558756b752197a27154490" name="ace54f1a10c558756b752197a27154490"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>set_execution</b> ($execution, $executiontime=0)</td></tr>
 <tr class="separator:ace54f1a10c558756b752197a27154490"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1100,8 +1099,8 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$executing</b> 
 
 </div>
 </div>
-<a id="aad17752db335dbf3a8cc96a302956bfd" name="aad17752db335dbf3a8cc96a302956bfd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad17752db335dbf3a8cc96a302956bfd">&#9670;&#160;</a></span>set_copy()</h2>
+<a id="a9706b56b690a5d15650bd8595bf34c41" name="a9706b56b690a5d15650bd8595bf34c41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9706b56b690a5d15650bd8595bf34c41">&#9670;&#160;</a></span>set_copy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1112,7 +1111,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$executing</b> 
         <tr>
           <td class="memname">base_controller::set_copy </td>
           <td>(</td>
-          <td class="paramtype">\stdClass</td>          <td class="paramname"><span class="paramname"><em>$data</em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1122,24 +1121,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$executing</b> 
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Store extra data for course copy operations. </p>
-<p>For a course copying these is data required to be passed to the restore step. We store this data in its own section of the backup controller</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$data</td><td>The course copy data. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../d4/d87/classbackup__controller__exception.html" title="Exception class used by all the @backup_controller stuff.">backup_controller_exception</a></td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000024">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-74548" class="el">MDL-74548</a> - please do not use this method anymore. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000005">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75025" class="el">MDL-75025</a> This method will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a14fc4b814b3367227a76476011fb7e78" title="Constructor.">restore_controller\__construct()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000024">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-74548" class="el">MDL-74548</a> </dd></dl>
 
 </div>
 </div>
@@ -1310,7 +1292,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$executing</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 14 2024 02:47:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jul 21 2024 02:42:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

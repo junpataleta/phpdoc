@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240712) (fd487cd3f20)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240719) (554a790bf0a)</div>
   </td>
  </tr>
  </tbody>
@@ -233,9 +233,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa0daca4b505f04f84730f9fa769264a2" id="r_aa0daca4b505f04f84730f9fa769264a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#aa0daca4b505f04f84730f9fa769264a2">get_sort_arrow</a> (string $direction='down', ?moodle_url $sortlink=null)</td></tr>
 <tr class="memdesc:aa0daca4b505f04f84730f9fa769264a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an arrow icon inside an  tag, for the purpose of sorting a column.  <br /></td></tr>
 <tr class="separator:aa0daca4b505f04f84730f9fa769264a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06c40ab59316b8acdf92e4071e5c49c0" id="r_a06c40ab59316b8acdf92e4071e5c49c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#a06c40ab59316b8acdf92e4071e5c49c0">get_users_search_sql</a> (array $mappings, array $userfields)</td></tr>
-<tr class="memdesc:a06c40ab59316b8acdf92e4071e5c49c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare SQL where clause and associated parameters for any user searching being performed.  <br /></td></tr>
-<tr class="separator:a06c40ab59316b8acdf92e4071e5c49c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2d3e610fc938d727a99d3ccc85b5d9b" id="r_aa2d3e610fc938d727a99d3ccc85b5d9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2d3e610fc938d727a99d3ccc85b5d9b">setup_groups</a> ()</td></tr>
 <tr class="memdesc:aa2d3e610fc938d727a99d3ccc85b5d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up this object's group variables, mainly to restrict the selection of users to display.  <br /></td></tr>
 <tr class="separator:aa2d3e610fc938d727a99d3ccc85b5d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -369,7 +366,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><div class="memdoc">
 
 <p>Optionally blank out course/category totals if they contain any hidden items. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000177">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 - Call blank_hidden_total_and_adjust_bounds instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000178">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 - Call blank_hidden_total_and_adjust_bounds instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$courseid</td><td>the course id </td></tr>
@@ -750,8 +747,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><div class="memdoc">
 
 <p>First checks the cached language strings, then returns match if found, or uses get_string() to get it from the <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>, caches it then returns it. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000176">Deprecated</a></b></dt><dd>since 4.2 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000075">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-77307" class="el">MDL-77307</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000177">Deprecated</a></b></dt><dd>since 4.2 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000073">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-77307" class="el">MDL-77307</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$strcode</td><td></td></tr>
@@ -888,51 +885,6 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$direction</td><td></td></tr>
     <tr><td class="paramtype">moodle_url&#160;|&#160;null</td><td class="paramname">$sortlink</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a06c40ab59316b8acdf92e4071e5c49c0" name="a06c40ab59316b8acdf92e4071e5c49c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06c40ab59316b8acdf92e4071e5c49c0">&#9670;&#160;</a></span>get_users_search_sql()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">grade_report::get_users_search_sql </td>
-          <td>(</td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$mappings</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$userfields</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Prepare SQL where clause and associated parameters for any user searching being performed. </p>
-<p>This mostly came from <a class="el" href="../../df/d2e/classcore__user_1_1table_1_1participants__search.html" title="Class used to fetch participants based on a filterset.">core_user\table\participants_search</a> with some slight modifications four our use case.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$mappings</td><td>Array of field mappings (fieldname =&gt; SQL code for the value) </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$userfields</td><td>An array that we cast from user profile fields to search within. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">array</td><td>SQL query data in the format ['where' =&gt; '', 'params' =&gt; []]. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1823,7 +1775,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 14 2024 02:48:17 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jul 21 2024 02:43:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

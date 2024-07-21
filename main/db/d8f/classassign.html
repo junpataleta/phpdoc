@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240712) (fd487cd3f20)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240719) (554a790bf0a)</div>
   </td>
  </tr>
  </tbody>
@@ -74,6 +74,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d9/df2/classassign-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">assign Class Reference<div class="ingroups"><a class="el" href="../../d3/d4f/group__mod__assign.html">mod_assign</a></div></div></div>
 </div><!--header-->
@@ -427,6 +428,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a577c693fb31864dce70f090b1cfd142f" id="r_a577c693fb31864dce70f090b1cfd142f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a577c693fb31864dce70f090b1cfd142f">set_most_recent_team_submission</a> ($submission)</td></tr>
 <tr class="memdesc:a577c693fb31864dce70f090b1cfd142f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the most recent submission for the team.  <br /></td></tr>
 <tr class="separator:a577c693fb31864dce70f090b1cfd142f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0fff3e51de4c4d3673a58f5ccb303b5" id="r_ad0fff3e51de4c4d3673a58f5ccb303b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0fff3e51de4c4d3673a58f5ccb303b5">set_usersearch</a> (?int $userid, ?int $groupid, string $usersearch='')</td></tr>
+<tr class="memdesc:ad0fff3e51de4c4d3673a58f5ccb303b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set usersearch to limit results when getting list of participants.  <br /></td></tr>
+<tr class="separator:ad0fff3e51de4c4d3673a58f5ccb303b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0bcd38bb6c9a792876e19977f56c0d1" id="r_ad0bcd38bb6c9a792876e19977f56c0d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0bcd38bb6c9a792876e19977f56c0d1">should_provide_intro_attachments</a> (int $userid)</td></tr>
 <tr class="memdesc:ad0bcd38bb6c9a792876e19977f56c0d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the intro attachments should be provided to the user.  <br /></td></tr>
 <tr class="separator:ad0bcd38bb6c9a792876e19977f56c0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -758,6 +762,13 @@ Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:aedb6405e0d71b9513fd4de63a74473a4" id="r_aedb6405e0d71b9513fd4de63a74473a4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedb6405e0d71b9513fd4de63a74473a4">format_notification_message_text</a> ($messagetype, $info, $course, $context, $modulename, $assignmentname)</td></tr>
 <tr class="memdesc:aedb6405e0d71b9513fd4de63a74473a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a notification for plain text.  <br /></td></tr>
 <tr class="separator:aedb6405e0d71b9513fd4de63a74473a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:aa5e15eafc31b1da3ad34da41ec9b65f8" id="r_aa5e15eafc31b1da3ad34da41ec9b65f8"><td class="memItemLeft" align="right" valign="top"><a id="aa5e15eafc31b1da3ad34da41ec9b65f8" name="aa5e15eafc31b1da3ad34da41ec9b65f8"></a>
+array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b> = []</td></tr>
+<tr class="memdesc:aa5e15eafc31b1da3ad34da41ec9b65f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">$usersearch The content that the current user is looking for. <br /></td></tr>
+<tr class="separator:aa5e15eafc31b1da3ad34da41ec9b65f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Standard base class for <a class="el" href="../../d9/dda/namespacemod__assign.html" title="&#160;">mod_assign</a> (assignment types). </p>
@@ -1196,7 +1207,7 @@ Static Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000990">Deprecated</a></b></dt><dd>since 2.7 - Use new events system instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000660">Deprecated</a></b></dt><dd>since 2.7 - Use new events system instead. </dd></dl>
 
 </div>
 </div>
@@ -2287,7 +2298,7 @@ Static Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000991">Deprecated</a></b></dt><dd>since 2.7 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000661">Deprecated</a></b></dt><dd>since 2.7 </dd></dl>
 
 </div>
 </div>
@@ -2435,7 +2446,7 @@ Static Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000992">Deprecated</a></b></dt><dd>since 2.7 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000662">Deprecated</a></b></dt><dd>since 2.7 </dd></dl>
 
 </div>
 </div>
@@ -6973,6 +6984,42 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad0fff3e51de4c4d3673a58f5ccb303b5" name="ad0fff3e51de4c4d3673a58f5ccb303b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0fff3e51de4c4d3673a58f5ccb303b5">&#9670;&#160;</a></span>set_usersearch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">assign::set_usersearch </td>
+          <td>(</td>
+          <td class="paramtype">?int</td>          <td class="paramname"><span class="paramname"><em>$userid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int</td>          <td class="paramname"><span class="paramname"><em>$groupid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$usersearch</em></span><span class="paramdefsep"> = </span><span class="paramdefval">''</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set usersearch to limit results when getting list of participants. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$userid</td><td>User id to search for. </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$groupid</td><td>Group id to limit resuts to specific group. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$usersearch</td><td>Search string to limit results. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad0bcd38bb6c9a792876e19977f56c0d1" name="ad0bcd38bb6c9a792876e19977f56c0d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad0bcd38bb6c9a792876e19977f56c0d1">&#9670;&#160;</a></span>should_provide_intro_attachments()</h2>
 
@@ -8546,7 +8593,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 14 2024 02:46:25 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jul 21 2024 02:41:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

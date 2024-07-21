@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240712) (fd487cd3f20)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240719) (554a790bf0a)</div>
   </td>
  </tr>
  </tbody>
@@ -92,9 +92,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa043c3d4040c5d3c6589a72f1ffbe2db" id="r_aa043c3d4040c5d3c6589a72f1ffbe2db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa043c3d4040c5d3c6589a72f1ffbe2db">user_navigation</a> (<a class="el" href="../../d6/dd3/classgraded__users__iterator.html">graded_users_iterator</a> $gui, int $userid, int $courseid)</td></tr>
 <tr class="memdesc:aa043c3d4040c5d3c6589a72f1ffbe2db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and renders previous/next user navigation.  <br /></td></tr>
 <tr class="separator:aa043c3d4040c5d3c6589a72f1ffbe2db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa257e9e8dd0f378ba479d26e8252dcf0" id="r_aa257e9e8dd0f378ba479d26e8252dcf0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa257e9e8dd0f378ba479d26e8252dcf0">users_selector</a> (object $course, ?int $userid=null, ?int $groupid=null)</td></tr>
-<tr class="memdesc:aa257e9e8dd0f378ba479d26e8252dcf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the user selector trigger element.  <br /></td></tr>
-<tr class="separator:aa257e9e8dd0f378ba479d26e8252dcf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a174f700b635e38ec3506e6d1beb81380" id="r_a174f700b635e38ec3506e6d1beb81380"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a174f700b635e38ec3506e6d1beb81380">users_selector</a> (object $course, ?int $userid=null, ?int $groupid=null, string $usersearch='')</td></tr>
+<tr class="memdesc:a174f700b635e38ec3506e6d1beb81380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the user selector trigger element.  <br /></td></tr>
+<tr class="separator:a174f700b635e38ec3506e6d1beb81380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf7ef02fd271a881e7013b2cbcf09d0b" id="r_adf7ef02fd271a881e7013b2cbcf09d0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf7ef02fd271a881e7013b2cbcf09d0b">view_mode_selector</a> (int $userid, int $userview, int $courseid)</td></tr>
 <tr class="memdesc:adf7ef02fd271a881e7013b2cbcf09d0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and renders 'view report as' selector element.  <br /></td></tr>
 <tr class="separator:adf7ef02fd271a881e7013b2cbcf09d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,8 +210,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa257e9e8dd0f378ba479d26e8252dcf0" name="aa257e9e8dd0f378ba479d26e8252dcf0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa257e9e8dd0f378ba479d26e8252dcf0">&#9670;&#160;</a></span>users_selector()</h2>
+<a id="a174f700b635e38ec3506e6d1beb81380" name="a174f700b635e38ec3506e6d1beb81380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a174f700b635e38ec3506e6d1beb81380">&#9670;&#160;</a></span>users_selector()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -229,7 +229,12 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">?int</td>          <td class="paramname"><span class="paramname"><em>$groupid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">?int</td>          <td class="paramname"><span class="paramname"><em>$groupid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$usersearch</em></span><span class="paramdefsep"> = </span><span class="paramdefval">''</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -240,6 +245,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramtype">object</td><td class="paramname">$course</td><td>The course object. </td></tr>
     <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$userid</td><td>The user ID. </td></tr>
     <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$groupid</td><td>The group ID. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$usersearch</td><td>Search string. </td></tr>
   </table>
   </dd>
 </dl>
@@ -342,7 +348,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 14 2024 02:47:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jul 21 2024 02:42:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

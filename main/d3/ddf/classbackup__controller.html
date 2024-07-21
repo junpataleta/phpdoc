@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240712) (fd487cd3f20)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240719) (554a790bf0a)</div>
   </td>
  </tr>
  </tbody>
@@ -121,7 +121,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:abf3fe629f97e10a931c75fbd251f4ee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the unique identifier for this backup controller.  <br /></td></tr>
 <tr class="separator:abf3fe629f97e10a931c75fbd251f4ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d5bb82f4c4421c1ecc7f0d0e7104835" id="r_a5d5bb82f4c4421c1ecc7f0d0e7104835"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dcd/classbase__controller.html#a5d5bb82f4c4421c1ecc7f0d0e7104835">get_copy</a> ()</td></tr>
-<tr class="memdesc:a5d5bb82f4c4421c1ecc7f0d0e7104835"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the course copy data.  <br /></td></tr>
 <tr class="separator:a5d5bb82f4c4421c1ecc7f0d0e7104835"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ff83d5e6fb016577c97aa87cb0e64b2" id="r_a6ff83d5e6fb016577c97aa87cb0e64b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ff83d5e6fb016577c97aa87cb0e64b2">get_courseid</a> ()</td></tr>
 <tr class="memdesc:a6ff83d5e6fb016577c97aa87cb0e64b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the course that the item being backed up is in.  <br /></td></tr>
@@ -186,9 +185,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7a156fc98b52f678568ec7350b9f027b" id="r_a7a156fc98b52f678568ec7350b9f027b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a156fc98b52f678568ec7350b9f027b">save_controller</a> ($includeobj=true, $cleanobj=false)</td></tr>
 <tr class="memdesc:a7a156fc98b52f678568ec7350b9f027b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save controller information.  <br /></td></tr>
 <tr class="separator:a7a156fc98b52f678568ec7350b9f027b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad17752db335dbf3a8cc96a302956bfd" id="r_aad17752db335dbf3a8cc96a302956bfd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dcd/classbase__controller.html#aad17752db335dbf3a8cc96a302956bfd">set_copy</a> (\stdClass $data)</td></tr>
-<tr class="memdesc:aad17752db335dbf3a8cc96a302956bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store extra data for course copy operations.  <br /></td></tr>
-<tr class="separator:aad17752db335dbf3a8cc96a302956bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9706b56b690a5d15650bd8595bf34c41" id="r_a9706b56b690a5d15650bd8595bf34c41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dcd/classbase__controller.html#a9706b56b690a5d15650bd8595bf34c41">set_copy</a> ()</td></tr>
+<tr class="separator:a9706b56b690a5d15650bd8595bf34c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a576534f2139eca3ec91b360a95637be9" id="r_a576534f2139eca3ec91b360a95637be9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a576534f2139eca3ec91b360a95637be9">set_execution</a> ($execution, $executiontime=0)</td></tr>
 <tr class="memdesc:a576534f2139eca3ec91b360a95637be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if the backup will be processed immediately, or later.  <br /></td></tr>
 <tr class="separator:a576534f2139eca3ec91b360a95637be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -764,17 +762,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$userid</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Get the course copy data. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">stdClass</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000025">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-74548" class="el">MDL-74548</a> - please do not use this method anymore. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000006">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75026" class="el">MDL-75026</a> This method will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d1/d6f/classrestore__controller.html#a70858fb3e4014a0f276ed4207ebcfb84" title="Get the course copy data.">restore_controller\get_copy()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000025">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-74548" class="el">MDL-74548</a> </dd></dl>
 
 <p>Reimplemented in <a class="el" href="../../d1/d6f/classrestore__controller.html#a70858fb3e4014a0f276ed4207ebcfb84">restore_controller</a>.</p>
 
@@ -1431,8 +1419,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$userid</b></td></tr>
 
 </div>
 </div>
-<a id="aad17752db335dbf3a8cc96a302956bfd" name="aad17752db335dbf3a8cc96a302956bfd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad17752db335dbf3a8cc96a302956bfd">&#9670;&#160;</a></span>set_copy()</h2>
+<a id="a9706b56b690a5d15650bd8595bf34c41" name="a9706b56b690a5d15650bd8595bf34c41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9706b56b690a5d15650bd8595bf34c41">&#9670;&#160;</a></span>set_copy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1443,7 +1431,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$userid</b></td></tr>
         <tr>
           <td class="memname">base_controller::set_copy </td>
           <td>(</td>
-          <td class="paramtype">\stdClass</td>          <td class="paramname"><span class="paramname"><em>$data</em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1453,24 +1441,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$userid</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Store extra data for course copy operations. </p>
-<p>For a course copying these is data required to be passed to the restore step. We store this data in its own section of the backup controller</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$data</td><td>The course copy data. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../d4/d87/classbackup__controller__exception.html" title="Exception class used by all the @backup_controller stuff.">backup_controller_exception</a></td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000024">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-74548" class="el">MDL-74548</a> - please do not use this method anymore. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000005">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75025" class="el">MDL-75025</a> This method will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d1/d6f/classrestore__controller.html#a14fc4b814b3367227a76476011fb7e78" title="Constructor.">restore_controller\__construct()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000024">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-74548" class="el">MDL-74548</a> </dd></dl>
 
 </div>
 </div>
@@ -1938,7 +1909,7 @@ backup_controller\is_checksum_correct()} uses. </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 14 2024 02:46:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jul 21 2024 02:41:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

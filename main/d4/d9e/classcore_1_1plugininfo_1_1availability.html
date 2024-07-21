@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240712) (fd487cd3f20)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240719) (554a790bf0a)</div>
   </td>
  </tr>
  </tbody>
@@ -205,6 +205,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae093f93b1d307bbe2a27114efe00f418" id="r_ae093f93b1d307bbe2a27114efe00f418"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7d/classcore_1_1plugininfo_1_1base.html#ae093f93b1d307bbe2a27114efe00f418">plugintype_supports_ordering</a> ()</td></tr>
 <tr class="memdesc:ae093f93b1d307bbe2a27114efe00f418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this plugintype supports ordering of plugins using native functionality.  <br /></td></tr>
 <tr class="separator:ae093f93b1d307bbe2a27114efe00f418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab56438c6531137e59265b98fff966157" id="r_ab56438c6531137e59265b98fff966157"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab56438c6531137e59265b98fff966157">update_display_mode</a> (string $pluginname, bool $displaymode)</td></tr>
+<tr class="memdesc:ab56438c6531137e59265b98fff966157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the display mode for a specific plugin based on <code>$displaymode</code> parameter.  <br /></td></tr>
+<tr class="separator:ab56438c6531137e59265b98fff966157"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -1642,6 +1645,50 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
 
 </div>
 </div>
+<a id="ab56438c6531137e59265b98fff966157" name="ab56438c6531137e59265b98fff966157"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab56438c6531137e59265b98fff966157">&#9670;&#160;</a></span>update_display_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core\plugininfo\availability::update_display_mode </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$pluginname</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$displaymode</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update the display mode for a specific plugin based on <code>$displaymode</code> parameter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$pluginname</td><td>The plugin name. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$displaymode</td><td>whether the eye icon of display mode is enabled or disabled. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>Returns true if the configuration has been changed, false otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a2505d3c71cf2cc52df5e880840a90ba5" name="a2505d3c71cf2cc52df5e880840a90ba5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2505d3c71cf2cc52df5e880840a90ba5">&#9670;&#160;</a></span>$name</h2>
@@ -1699,7 +1746,7 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 14 2024 02:47:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jul 21 2024 02:43:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>
