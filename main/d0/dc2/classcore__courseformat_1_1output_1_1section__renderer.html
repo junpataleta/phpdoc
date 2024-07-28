@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240719) (554a790bf0a)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240726) (1a33da66378)</div>
   </td>
  </tr>
  </tbody>
@@ -110,9 +110,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6f2be8f5b3cd7808c2a5c58233fc05f3" id="r_a6f2be8f5b3cd7808c2a5c58233fc05f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f2be8f5b3cd7808c2a5c58233fc05f3">bulk_editing_button</a> (course_format $format)</td></tr>
 <tr class="memdesc:a6f2be8f5b3cd7808c2a5c58233fc05f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the enable bulk editing button.  <br /></td></tr>
 <tr class="separator:a6f2be8f5b3cd7808c2a5c58233fc05f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19b71c1f49c999b3aa5345bfc6136a90" id="r_a19b71c1f49c999b3aa5345bfc6136a90"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db2/classcore__course__renderer.html#a19b71c1f49c999b3aa5345bfc6136a90">course_activitychooser</a> ($courseid, ?int $sectionnum=null)</td></tr>
-<tr class="memdesc:a19b71c1f49c999b3aa5345bfc6136a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build the HTML for the module chooser javascript popup.  <br /></td></tr>
-<tr class="separator:a19b71c1f49c999b3aa5345bfc6136a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bbf795efe74cd2086c020908e389929" id="r_a5bbf795efe74cd2086c020908e389929"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db2/classcore__course__renderer.html#a5bbf795efe74cd2086c020908e389929">course_activitychooser</a> ($courseid)</td></tr>
+<tr class="memdesc:a5bbf795efe74cd2086c020908e389929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build the HTML for the module chooser javascript popup.  <br /></td></tr>
+<tr class="separator:a5bbf795efe74cd2086c020908e389929"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9114a3c3d7b9bb8ab576bcabc71591e5" id="r_a9114a3c3d7b9bb8ab576bcabc71591e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db2/classcore__course__renderer.html#a9114a3c3d7b9bb8ab576bcabc71591e5">course_category</a> ($category)</td></tr>
 <tr class="memdesc:a9114a3c3d7b9bb8ab576bcabc71591e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders HTML to display particular course category - list of it's subcategories and courses.  <br /></td></tr>
 <tr class="separator:a9114a3c3d7b9bb8ab576bcabc71591e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -595,8 +595,8 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$strings</b></td>
 
 </div>
 </div>
-<a id="a19b71c1f49c999b3aa5345bfc6136a90" name="a19b71c1f49c999b3aa5345bfc6136a90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19b71c1f49c999b3aa5345bfc6136a90">&#9670;&#160;</a></span>course_activitychooser()</h2>
+<a id="a5bbf795efe74cd2086c020908e389929" name="a5bbf795efe74cd2086c020908e389929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bbf795efe74cd2086c020908e389929">&#9670;&#160;</a></span>course_activitychooser()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -607,12 +607,8 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$strings</b></td>
         <tr>
           <td class="memname">core_course_renderer::course_activitychooser </td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$courseid</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$courseid</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">?int</td>          <td class="paramname"><span class="paramname"><em>$sectionnum</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -626,7 +622,6 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$strings</b></td>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td>The course id to fetch modules for. </td></tr>
-    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$sectionnum</td><td>The section number to fetch modules for. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3767,7 +3762,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$strings</b></td>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 21 2024 02:43:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jul 28 2024 02:46:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

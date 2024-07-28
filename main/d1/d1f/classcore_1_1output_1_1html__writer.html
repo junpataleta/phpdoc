@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240719) (554a790bf0a)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240726) (1a33da66378)</div>
   </td>
  </tr>
  </tbody>
@@ -129,9 +129,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a5f3a19eebb3ca4643f4d32f2b9ed0a38" id="r_a5f3a19eebb3ca4643f4d32f2b9ed0a38"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f3a19eebb3ca4643f4d32f2b9ed0a38">script</a> ($jscode, $<a class="el" href="../../de/d0a/classcore_1_1url.html">url</a>=null)</td></tr>
 <tr class="memdesc:a5f3a19eebb3ca4643f4d32f2b9ed0a38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a script tag containing the the specified code.  <br /></td></tr>
 <tr class="separator:a5f3a19eebb3ca4643f4d32f2b9ed0a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4542247c48fb94dc2f42534ed6975765" id="r_a4542247c48fb94dc2f42534ed6975765"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4542247c48fb94dc2f42534ed6975765">select</a> (array $options, $name, $selected='', $nothing=[''=&gt; 'choosedots'], ?array $<a class="el" href="#ad7eb03a2db5998d13e599dae52babdd6">attributes</a>=null,)</td></tr>
-<tr class="memdesc:a4542247c48fb94dc2f42534ed6975765"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a simple select form field.  <br /></td></tr>
-<tr class="separator:a4542247c48fb94dc2f42534ed6975765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a270a206cd61ad97e8fc439445baa1c05" id="r_a270a206cd61ad97e8fc439445baa1c05"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a270a206cd61ad97e8fc439445baa1c05">select</a> (array $options, $name, $selected='', $nothing=[''=&gt; 'choosedots'], ?array $<a class="el" href="#ad7eb03a2db5998d13e599dae52babdd6">attributes</a>=null, array $disabled=[],)</td></tr>
+<tr class="memdesc:a270a206cd61ad97e8fc439445baa1c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a simple select form field.  <br /></td></tr>
+<tr class="separator:a270a206cd61ad97e8fc439445baa1c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5b3afbcc22946da1e7e4f84a657ca58" id="r_ab5b3afbcc22946da1e7e4f84a657ca58"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5b3afbcc22946da1e7e4f84a657ca58">select_time</a> ($type, $name, $currenttime=0, $step=5, ?array $<a class="el" href="#ad7eb03a2db5998d13e599dae52babdd6">attributes</a>=null, $timezone=99)</td></tr>
 <tr class="memdesc:ab5b3afbcc22946da1e7e4f84a657ca58"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a shortcut for making an hour selector menu.  <br /></td></tr>
 <tr class="separator:ab5b3afbcc22946da1e7e4f84a657ca58"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -897,8 +897,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4542247c48fb94dc2f42534ed6975765" name="a4542247c48fb94dc2f42534ed6975765"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4542247c48fb94dc2f42534ed6975765">&#9670;&#160;</a></span>select()</h2>
+<a id="a270a206cd61ad97e8fc439445baa1c05" name="a270a206cd61ad97e8fc439445baa1c05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a270a206cd61ad97e8fc439445baa1c05">&#9670;&#160;</a></span>select()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -929,7 +929,12 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">?array</td>          <td class="paramname"><span class="paramname"><em>$attributes</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">?array</td>          <td class="paramname"><span class="paramname"><em>$attributes</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$disabled</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[]</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -948,6 +953,7 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$selected</td><td>value or array of values depending on multiple attribute </td></tr>
     <tr><td class="paramtype">array&#160;|&#160;bool&#160;|&#160;null</td><td class="paramname">$nothing</td><td>add nothing selected option, or false of not added </td></tr>
     <tr><td class="paramtype">null&#160;|&#160;array</td><td class="paramname">$attributes</td><td>html select element attributes </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$disabled</td><td>An array of disabled options. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1358,7 +1364,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 21 2024 02:42:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jul 28 2024 02:46:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

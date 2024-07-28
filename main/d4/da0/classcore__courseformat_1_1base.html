@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240719) (554a790bf0a)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240726) (1a33da66378)</div>
   </td>
  </tr>
  </tbody>
@@ -297,6 +297,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a703a2bd49193d997d328b03ca113fbee" id="r_a703a2bd49193d997d328b03ca113fbee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a703a2bd49193d997d328b03ca113fbee">set_sections_preference</a> (string $preferencename, array $sectionids)</td></tr>
 <tr class="memdesc:a703a2bd49193d997d328b03ca113fbee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the format section preferences.  <br /></td></tr>
 <tr class="separator:a703a2bd49193d997d328b03ca113fbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72bc606d49bc080f0869741bb477158d" id="r_a72bc606d49bc080f0869741bb477158d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72bc606d49bc080f0869741bb477158d">show_activity_editor_options</a> (<a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $cm)</td></tr>
+<tr class="memdesc:a72bc606d49bc080f0869741bb477158d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the course module should display the activity editor options.  <br /></td></tr>
+<tr class="separator:a72bc606d49bc080f0869741bb477158d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66c61e0a265c36b541bcfb428cf715bc" id="r_a66c61e0a265c36b541bcfb428cf715bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66c61e0a265c36b541bcfb428cf715bc">show_editor</a> (?array $capabilities=['moodle/course:manageactivities'])</td></tr>
 <tr class="memdesc:a66c61e0a265c36b541bcfb428cf715bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">return true if the course editor must be displayed.  <br /></td></tr>
 <tr class="separator:a66c61e0a265c36b541bcfb428cf715bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2895,6 +2898,37 @@ course_modinfo\get_section_info_all()</dd></dl>
 
 </div>
 </div>
+<a id="a72bc606d49bc080f0869741bb477158d" name="a72bc606d49bc080f0869741bb477158d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72bc606d49bc080f0869741bb477158d">&#9670;&#160;</a></span>show_activity_editor_options()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\base::show_activity_editor_options </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td>          <td class="paramname"><span class="paramname"><em>$cm</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determines whether the course module should display the activity editor options. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td><td class="paramname">$cm</td><td>The activity module. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>True if the activity editor options are displayed, false otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a66c61e0a265c36b541bcfb428cf715bc" name="a66c61e0a265c36b541bcfb428cf715bc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a66c61e0a265c36b541bcfb428cf715bc">&#9670;&#160;</a></span>show_editor()</h2>
 
@@ -3349,7 +3383,7 @@ course_modinfo\get_section_info_all()</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 21 2024 02:43:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jul 28 2024 02:46:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

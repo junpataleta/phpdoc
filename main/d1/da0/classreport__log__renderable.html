@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240719) (554a790bf0a)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240726) (1a33da66378)</div>
   </td>
  </tr>
  </tbody>
@@ -71,6 +71,7 @@ $(function(){ initResizable(false); });
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d4/d6c/classreport__log__renderable-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">report_log_renderable Class Reference<div class="ingroups"><a class="el" href="../../d7/d45/group__report__log.html">report_log</a></div></div></div>
@@ -214,6 +215,12 @@ moodle_url&#160;</td><td class="memItemRight" valign="bottom"><b>$url</b></td></
 int&#160;</td><td class="memItemRight" valign="bottom"><b>$userid</b></td></tr>
 <tr class="memdesc:aaa1ba05bcad2c7d29c0c533e15ac6990"><td class="mdescLeft">&#160;</td><td class="mdescRight">selected user id for which logs are displayed <br /></td></tr>
 <tr class="separator:aaa1ba05bcad2c7d29c0c533e15ac6990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a7e6bcfdef20cf9b2031e517fc8438cf4" id="r_a7e6bcfdef20cf9b2031e517fc8438cf4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e6bcfdef20cf9b2031e517fc8438cf4">get_delegated_section_activities</a> (<a class="el" href="../../d5/d26/classcourse__modinfo.html">course_modinfo</a> $modinfo, array $cmids)</td></tr>
+<tr class="memdesc:a7e6bcfdef20cf9b2031e517fc8438cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to return list of activities in a delegated section.  <br /></td></tr>
+<tr class="separator:a7e6bcfdef20cf9b2031e517fc8438cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -369,7 +376,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return list of actions for log reader. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000350">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-44528" class="el">MDL-44528</a> Get list from log_store. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000351">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-44528" class="el">MDL-44528</a> Get list from log_store. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>list of action options. </td></tr>
@@ -454,6 +461,50 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a7e6bcfdef20cf9b2031e517fc8438cf4" name="a7e6bcfdef20cf9b2031e517fc8438cf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e6bcfdef20cf9b2031e517fc8438cf4">&#9670;&#160;</a></span>get_delegated_section_activities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">report_log_renderable::get_delegated_section_activities </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d26/classcourse__modinfo.html">course_modinfo</a></td>          <td class="paramname"><span class="paramname"><em>$modinfo</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$cmids</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper function to return list of activities in a delegated section. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d5/d26/classcourse__modinfo.html">course_modinfo</a></td><td class="paramname">$modinfo</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$cms</td><td>List of cm ids in the section. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>list of activities. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad3526f5d47b48afadaf54899e22bf060" name="ad3526f5d47b48afadaf54899e22bf060"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad3526f5d47b48afadaf54899e22bf060">&#9670;&#160;</a></span>get_edulevel_options()</h2>
 
@@ -470,7 +521,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return list of edulevel. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000351">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-44528" class="el">MDL-44528</a> Get list from log_store. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000352">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-44528" class="el">MDL-44528</a> Get list from log_store. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>list of edulevels. </td></tr>
@@ -651,8 +702,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>group ids </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000969">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 - please do not use this public property </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000349">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-81155" class="el">MDL-81155</a> remove this property as it is not used anymore. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000971">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 - please do not use this public property </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000350">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-81155" class="el">MDL-81155</a> remove this property as it is not used anymore. </dd></dl>
 
 </div>
 </div>
@@ -662,7 +713,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 21 2024 02:42:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jul 28 2024 02:45:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

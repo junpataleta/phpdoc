@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240719) (554a790bf0a)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240726) (1a33da66378)</div>
   </td>
  </tr>
  </tbody>
@@ -96,6 +96,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
 <tr class="memdesc:a9763a6ad99f7bea339137f1252a13342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initi all composer, behat libraries and load the valid steps. <br /></td></tr>
 <tr class="separator:a9763a6ad99f7bea339137f1252a13342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7c137b2499993e34a17e2d36e713838" id="r_ac7c137b2499993e34a17e2d36e713838"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7c137b2499993e34a17e2d36e713838">parse_cleanup</a> (string $content)</td></tr>
+<tr class="memdesc:ac7c137b2499993e34a17e2d36e713838"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a feature file using only the scenarios with cleanup tag.  <br /></td></tr>
+<tr class="separator:ac7c137b2499993e34a17e2d36e713838"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd24f6e1c79191ae1e3424b6c5768058" id="r_acd24f6e1c79191ae1e3424b6c5768058"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd24f6e1c79191ae1e3424b6c5768058">parse_feature</a> (string $content)</td></tr>
 <tr class="memdesc:acd24f6e1c79191ae1e3424b6c5768058"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a feature file.  <br /></td></tr>
 <tr class="separator:acd24f6e1c79191ae1e3424b6c5768058"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,6 +129,37 @@ Public Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td>true if all steps were executed successfully. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac7c137b2499993e34a17e2d36e713838" name="ac7c137b2499993e34a17e2d36e713838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7c137b2499993e34a17e2d36e713838">&#9670;&#160;</a></span>parse_cleanup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tool_generator\local\testscenario\runner::parse_cleanup </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$content</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parse a feature file using only the scenarios with cleanup tag. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$content</td><td>the feature file content. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">parsedfeature</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -169,7 +203,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 21 2024 02:44:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jul 28 2024 02:47:25 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>
