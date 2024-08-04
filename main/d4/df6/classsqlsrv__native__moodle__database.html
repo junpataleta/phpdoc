@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240726) (1a33da66378)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240802) (8a6e8563fdc)</div>
   </td>
  </tr>
  </tbody>
@@ -165,6 +165,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a58c5bbf6e20fc45b50018c37a6e52874" id="r_a58c5bbf6e20fc45b50018c37a6e52874"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a58c5bbf6e20fc45b50018c37a6e52874">get_configuration_hints</a> ()</td></tr>
 <tr class="memdesc:a58c5bbf6e20fc45b50018c37a6e52874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the localised database description Note: can be used before <a class="el" href="../../d0/de1/group__core.html#ga7079456508a63408f9c01a83fca8fc7a" title="Connect to db The connection parameters processor that sets up stage for master write and slave reado...">connect()</a>  <br /></td></tr>
 <tr class="separator:a58c5bbf6e20fc45b50018c37a6e52874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01d209c23d2000949014b76966db19b9" id="r_a01d209c23d2000949014b76966db19b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a01d209c23d2000949014b76966db19b9">get_counted_records_sql</a> (string $sql, string $fullcountcolumn, string $sort='', ?array $params=null, int $limitfrom=0, int $limitnum=0,)</td></tr>
+<tr class="memdesc:a01d209c23d2000949014b76966db19b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve records with a select query and count the total number of records.  <br /></td></tr>
+<tr class="separator:a01d209c23d2000949014b76966db19b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d164cc184a79209b75aaea639bd32d5" id="r_a0d164cc184a79209b75aaea639bd32d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a0d164cc184a79209b75aaea639bd32d5">get_counted_recordset_sql</a> (string $sql, string $fullcountcolumn, string $sort='', ?array $params=null, int $limitfrom=0, int $limitnum=0,)</td></tr>
+<tr class="memdesc:a0d164cc184a79209b75aaea639bd32d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a recordset with a select query and count the total number of records.  <br /></td></tr>
+<tr class="separator:a0d164cc184a79209b75aaea639bd32d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8a53c4fd660d334a33bc60ac54bf135" id="r_aa8a53c4fd660d334a33bc60ac54bf135"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8a53c4fd660d334a33bc60ac54bf135">get_dbfamily</a> ()</td></tr>
 <tr class="memdesc:aa8a53c4fd660d334a33bc60ac54bf135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns database family type - describes SQL dialect Note: can be used before <a class="el" href="#a571bbaf9b002121b70d60536444645a5" title="Connect to db Must be called before most other methods.">connect()</a>  <br /></td></tr>
 <tr class="separator:aa8a53c4fd660d334a33bc60ac54bf135"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -276,6 +282,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9f0b239e223e372b5a5327420321ccb4" id="r_a9f0b239e223e372b5a5327420321ccb4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a9f0b239e223e372b5a5327420321ccb4">insert_records</a> ($table, $dataobjects)</td></tr>
 <tr class="memdesc:a9f0b239e223e372b5a5327420321ccb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert multiple records into database as fast as possible.  <br /></td></tr>
 <tr class="separator:a9f0b239e223e372b5a5327420321ccb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9057378f157727f54a9d3777279ccec8" id="r_a9057378f157727f54a9d3777279ccec8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a9057378f157727f54a9d3777279ccec8">is_count_window_function_supported</a> ()</td></tr>
+<tr class="memdesc:a9057378f157727f54a9d3777279ccec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the database is able to support the COUNT() window function and provides a performance improvement.  <br /></td></tr>
+<tr class="separator:a9057378f157727f54a9d3777279ccec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae25ab6e51d91334ffdefcf688229ae88" id="r_ae25ab6e51d91334ffdefcf688229ae88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae25ab6e51d91334ffdefcf688229ae88">is_fulltext_search_supported</a> ()</td></tr>
 <tr class="memdesc:ae25ab6e51d91334ffdefcf688229ae88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is fulltext search enabled?.  <br /></td></tr>
 <tr class="separator:ae25ab6e51d91334ffdefcf688229ae88"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2146,10 +2155,166 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Returns the localised database description Note: can be used before <a class="el" href="#a571bbaf9b002121b70d60536444645a5" title="Connect to db Must be called before most other methods.">connect()</a> </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000338">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000339">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a01d209c23d2000949014b76966db19b9" name="a01d209c23d2000949014b76966db19b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01d209c23d2000949014b76966db19b9">&#9670;&#160;</a></span>get_counted_records_sql()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moodle_database::get_counted_records_sql </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$sql</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$fullcountcolumn</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$sort</em></span><span class="paramdefsep"> = </span><span class="paramdefval">''</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?array</td>          <td class="paramname"><span class="paramname"><em>$params</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$limitfrom</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$limitnum</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieve records with a select query and count the total number of records. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$sql</td><td>The query string. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$fullcountcolumn</td><td>The column name used for counting total records. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$sort</td><td>(Optional) Sorting criteria for the records. The reason to separate $sort from $sql are:<ol type="1">
+<li>The $sort needs to be placed outside the full count subquery in order to function properly in MariaDB.</li>
+<li>For unsupported databases, it is not allowed to run a query to get the total with the $sort. Please refer to the {</li>
+</ol>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>generate_fullcount_sql()} for details. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$params</td><td>(Optional) Parameters to bind with the query. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$limitfrom</td><td>(Optional) Offset for pagination. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$limitnum</td><td>(Optional) Limit for pagination. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>Fetched records. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0d164cc184a79209b75aaea639bd32d5" name="a0d164cc184a79209b75aaea639bd32d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d164cc184a79209b75aaea639bd32d5">&#9670;&#160;</a></span>get_counted_recordset_sql()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moodle_database::get_counted_recordset_sql </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$sql</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$fullcountcolumn</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$sort</em></span><span class="paramdefsep"> = </span><span class="paramdefval">''</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?array</td>          <td class="paramname"><span class="paramname"><em>$params</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$limitfrom</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$limitnum</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieve a recordset with a select query and count the total number of records. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$sql</td><td>The query string. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$fullcountcolumn</td><td>The column name used for counting total records. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$sort</td><td>(Optional) Sorting criteria for the records. The reason to separate $sort from $sql are:<ol type="1">
+<li>The $sort needs to be placed outside the full count subquery in order to function properly in MariaDB.</li>
+<li>For unsupported databases, it is not allowed to run a query to get the total with the $sort. Please refer to the {</li>
+</ol>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>generate_fullcount_sql()} for details. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$params</td><td>(Optional) Parameters to bind with the query. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$limitfrom</td><td>(Optional) Offset for pagination. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$limitnum</td><td>(Optional) Limit for pagination. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../d6/d34/classmoodle__recordset.html" title="Abstract class for resultsets returned from database functions.">moodle_recordset</a></td><td>A <a class="el" href="../../d6/d34/classmoodle__recordset.html" title="Abstract class for resultsets returned from database functions.">moodle_recordset</a> instance.. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3025,7 +3190,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000109">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-30407" class="el">MDL-30407</a> MUST_EXIST option should not throw a <a class="el" href="../../d5/d5c/classdml__exception.html" title="DML exception class, use instead of throw new moodle_exception() in dml code.">dml_exception</a>, it should throw a different exception as it's a requested check. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000110">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-30407" class="el">MDL-30407</a> MUST_EXIST option should not throw a <a class="el" href="../../d5/d5c/classdml__exception.html" title="DML exception class, use instead of throw new moodle_exception() in dml code.">dml_exception</a>, it should throw a different exception as it's a requested check. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">mixed</td><td>a fieldset object containing the first matching record, false or exception if error not found depending on mode </td></tr>
@@ -4440,6 +4605,41 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 
 </div>
 </div>
+<a id="a9057378f157727f54a9d3777279ccec8" name="a9057378f157727f54a9d3777279ccec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9057378f157727f54a9d3777279ccec8">&#9670;&#160;</a></span>is_count_window_function_supported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moodle_database::is_count_window_function_supported </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether the database is able to support the COUNT() window function and provides a performance improvement. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d9/d22/classmariadb__native__moodle__database.html#a84e551beba47b1c0f94d1fe1e6c5de97">mariadb_native_moodle_database</a>, <a class="el" href="../../db/df4/classoci__native__moodle__database.html#a3e060b0732b423c228737dff10d6571a">oci_native_moodle_database</a>, and <a class="el" href="../../d2/db6/classpgsql__native__moodle__database.html#ad9e12bbc0ee891c569c949cf18f3bb8c">pgsql_native_moodle_database</a>.</p>
+
+</div>
+</div>
 <a id="ae25ab6e51d91334ffdefcf688229ae88" name="ae25ab6e51d91334ffdefcf688229ae88"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae25ab6e51d91334ffdefcf688229ae88">&#9670;&#160;</a></span>is_fulltext_search_supported()</h2>
 
@@ -5618,7 +5818,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Enable/disable detailed sql logging. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000339">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.9 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000340">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.9 </dd></dl>
 
 </div>
 </div>
@@ -5864,7 +6064,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 
 <p>Returns the SQL to be used in order to an UNSIGNED INTEGER column to SIGNED. </p>
 <p>(Only <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> needs this. <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> things that 1 * -1 = 18446744073709551615 if the 1 comes from an unsigned column).</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000340">Deprecated</a></b></dt><dd>since 2.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000341">Deprecated</a></b></dt><dd>since 2.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$fieldname</td><td>The name of the field to be cast </td></tr>
@@ -6167,7 +6367,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>This used to return empty string replacement character. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000341">Deprecated</a></b></dt><dd>use bound parameter with empty string instead</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000342">Deprecated</a></b></dt><dd>use bound parameter with empty string instead</dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>An empty string. </td></tr>
@@ -6263,7 +6463,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Returns the proper SQL (for the dbms in use) to concatenate $firstname and $lastname. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000110">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-31233" class="el">MDL-31233</a> This may not be needed here.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000111">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-31233" class="el">MDL-31233</a> This may not be needed here.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$first</td><td>User's first name (default:'firstname'). </td></tr>
@@ -7560,7 +7760,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 28 2024 02:46:04 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Aug 4 2024 02:44:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

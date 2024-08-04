@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240726) (1a33da66378)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240802) (8a6e8563fdc)</div>
   </td>
  </tr>
  </tbody>
@@ -74,6 +74,7 @@ $(function(){ initResizable(false); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../dc/de6/classcore__user_1_1table_1_1participants__search-members.html">List of all members</a>  </div>
@@ -92,9 +93,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2f4a8661e60567e74a9e21a939ab6aaf" id="r_a2f4a8661e60567e74a9e21a939ab6aaf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f4a8661e60567e74a9e21a939ab6aaf">get_participants</a> (string $additionalwhere='', array $additionalparams=[], string $sort='', int $limitfrom=0, int $limitnum=0)</td></tr>
 <tr class="memdesc:a2f4a8661e60567e74a9e21a939ab6aaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch participants matching the filterset.  <br /></td></tr>
 <tr class="separator:a2f4a8661e60567e74a9e21a939ab6aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa334103750d83d738f9541d51fb5d84" id="r_aaa334103750d83d738f9541d51fb5d84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa334103750d83d738f9541d51fb5d84">get_total_participants_count</a> (string $additionalwhere='', array $additionalparams=[])</td></tr>
-<tr class="memdesc:aaa334103750d83d738f9541d51fb5d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of participants for a given course.  <br /></td></tr>
-<tr class="separator:aaa334103750d83d738f9541d51fb5d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e676e5a6da7243880f4ef59975abeb0" id="r_a5e676e5a6da7243880f4ef59975abeb0"><td class="memItemLeft" align="right" valign="top"><a id="a5e676e5a6da7243880f4ef59975abeb0" name="a5e676e5a6da7243880f4ef59975abeb0"></a>
+since&#160;</td><td class="memItemRight" valign="bottom"><b>get_total_participants_count</b> (string $additionalwhere='', array $additionalparams=[])</td></tr>
+<tr class="separator:a5e676e5a6da7243880f4ef59975abeb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a7cf3f0f016dce6c8e1f628d3a8b41d4b" id="r_a7cf3f0f016dce6c8e1f628d3a8b41d4b"><td class="memItemLeft" align="right" valign="top"><a id="a7cf3f0f016dce6c8e1f628d3a8b41d4b" name="a7cf3f0f016dce6c8e1f628d3a8b41d4b"></a>
+since&#160;</td><td class="memItemRight" valign="bottom">: '4.5'</td></tr>
+<tr class="separator:a7cf3f0f016dce6c8e1f628d3a8b41d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec0792d580f29c7e02fc4f4138c8c99" id="r_a3ec0792d580f29c7e02fc4f4138c8c99"><td class="memItemLeft" align="right" valign="top"><a id="a3ec0792d580f29c7e02fc4f4138c8c99" name="a3ec0792d580f29c7e02fc4f4138c8c99"></a>
+since&#160;</td><td class="memItemRight" valign="bottom"><b>mdl</b>: '&lt;a class=&quot;el&quot; href=&quot;https: reason: 'No longer used since the total count can be obtained from {@see <a class="el" href="#a2f4a8661e60567e74a9e21a939ab6aaf">::get_participants</a>()}'</td></tr>
+<tr class="separator:a3ec0792d580f29c7e02fc4f4138c8c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -550,49 +560,13 @@ string[]&#160;</td><td class="memItemRight" valign="bottom"><b>$userfields</b></
 
 </div>
 </div>
-<a id="aaa334103750d83d738f9541d51fb5d84" name="aaa334103750d83d738f9541d51fb5d84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa334103750d83d738f9541d51fb5d84">&#9670;&#160;</a></span>get_total_participants_count()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">core_user\table\participants_search::get_total_participants_count </td>
-          <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$additionalwhere</em></span><span class="paramdefsep"> = </span><span class="paramdefval">''</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$additionalparams</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[]</span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the total number of participants for a given course. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$additionalwhere</td><td>Any additional SQL to add to where. </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$additionalparams</td><td>The additional params used by $additionalwhere. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">int</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>user/classes/table/<b>participants_search.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 28 2024 02:46:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Aug 4 2024 02:45:37 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

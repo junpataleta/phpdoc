@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240726) (1a33da66378)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240802) (8a6e8563fdc)</div>
   </td>
  </tr>
  </tbody>
@@ -105,6 +105,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aea7f188c07035084b6d4d2e5a752c546" id="r_aea7f188c07035084b6d4d2e5a752c546"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea7f188c07035084b6d4d2e5a752c546">get_initials</a> (stdClass $user)</td></tr>
 <tr class="memdesc:aea7f188c07035084b6d4d2e5a752c546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get initials for users.  <br /></td></tr>
 <tr class="separator:aea7f188c07035084b6d4d2e5a752c546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a08a6a3dc008e06c0ed35ec917de6a3" id="r_a3a08a6a3dc008e06c0ed35ec917de6a3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a08a6a3dc008e06c0ed35ec917de6a3">get_name_placeholders</a> (stdClass $user)</td></tr>
+<tr class="memdesc:a3a08a6a3dc008e06c0ed35ec917de6a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates an array of name placeholders for a given user.  <br /></td></tr>
+<tr class="separator:a3a08a6a3dc008e06c0ed35ec917de6a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1aaccc0c80dcc345002bb95e82824fd" id="r_aa1aaccc0c80dcc345002bb95e82824fd"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1aaccc0c80dcc345002bb95e82824fd">get_noreply_user</a> ()</td></tr>
 <tr class="memdesc:aa1aaccc0c80dcc345002bb95e82824fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return noreply user record, this is currently used in messaging system only for sending messages from noreply email.  <br /></td></tr>
 <tr class="separator:aa1aaccc0c80dcc345002bb95e82824fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -740,6 +743,45 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$propertiesca
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3a08a6a3dc008e06c0ed35ec917de6a3" name="a3a08a6a3dc008e06c0ed35ec917de6a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a08a6a3dc008e06c0ed35ec917de6a3">&#9670;&#160;</a></span>get_name_placeholders()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_user::get_name_placeholders </td>
+          <td>(</td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$user</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generates an array of name placeholders for a given user. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$user</td><td>The user object containing name fields. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>An associative array of name placeholders. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1825,7 +1867,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$propertiesca
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 28 2024 02:45:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Aug 4 2024 02:43:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>
