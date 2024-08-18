@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240810) (a75365f2e47)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240816) (6cd55074c72)</div>
   </td>
  </tr>
  </tbody>
@@ -193,9 +193,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a64e550f327bf2a3c055856d0377fd008" id="r_a64e550f327bf2a3c055856d0377fd008"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64e550f327bf2a3c055856d0377fd008">sort_section_ids_by_section_number</a> (stdClass $course, array $sectionids, bool $descending=false)</td></tr>
 <tr class="memdesc:a64e550f327bf2a3c055856d0377fd008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort the sections ids depending on the section number.  <br /></td></tr>
 <tr class="separator:a64e550f327bf2a3c055856d0377fd008"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39e972f690bfdf51c6756acbab5fd800" id="r_a39e972f690bfdf51c6756acbab5fd800"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39e972f690bfdf51c6756acbab5fd800">validate_cms</a> (stdClass $course, array $cmids, ?string $info=null, array $capabilities=[])</td></tr>
-<tr class="memdesc:a39e972f690bfdf51c6756acbab5fd800"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks related to course modules: all given cm exist and the user has the required capabilities.  <br /></td></tr>
-<tr class="separator:a39e972f690bfdf51c6756acbab5fd800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac51e8ee5b7ed78b79763cf0f7f257542" id="r_ac51e8ee5b7ed78b79763cf0f7f257542"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac51e8ee5b7ed78b79763cf0f7f257542">validate_cms</a> (stdClass $course, array $cmids, ?string $info=null, array $capabilities=[], bool $usemodcontext=true,)</td></tr>
+<tr class="memdesc:ac51e8ee5b7ed78b79763cf0f7f257542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks related to course modules: all given cm exist and the user has the required capabilities.  <br /></td></tr>
+<tr class="separator:ac51e8ee5b7ed78b79763cf0f7f257542"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc348c57b205d50b8edb770122369905" id="r_abc348c57b205d50b8edb770122369905"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc348c57b205d50b8edb770122369905">validate_sections</a> (stdClass $course, array $sectionids, ?string $info=null)</td></tr>
 <tr class="memdesc:abc348c57b205d50b8edb770122369905"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks related to sections: course format support them, all given sections exist and topic 0 is not included.  <br /></td></tr>
 <tr class="separator:abc348c57b205d50b8edb770122369905"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1797,8 +1797,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a39e972f690bfdf51c6756acbab5fd800" name="a39e972f690bfdf51c6756acbab5fd800"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39e972f690bfdf51c6756acbab5fd800">&#9670;&#160;</a></span>validate_cms()</h2>
+<a id="ac51e8ee5b7ed78b79763cf0f7f257542" name="ac51e8ee5b7ed78b79763cf0f7f257542"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac51e8ee5b7ed78b79763cf0f7f257542">&#9670;&#160;</a></span>validate_cms()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1824,7 +1824,12 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$capabilities</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[]</span>&#160;)</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$capabilities</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$usemodcontext</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -1840,7 +1845,8 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>The course where given $cmids belong. </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$cmids</td><td>List of course module ids to validate. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$info</td><td>additional information in case of error. </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$capabilities</td><td>optional capabilities checks per each cm context. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$capabilities</td><td>optional capabilities checks to require. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$usemodcontext</td><td>whether to use each module context, or the course context </td></tr>
   </table>
   </dd>
 </dl>
@@ -1909,7 +1915,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 11 2024 02:48:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Aug 18 2024 02:46:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

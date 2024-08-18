@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3.6 (Build: 20240812) (fcf23db6be0)</div>
+   <div id="projectbrief">Moodle 4.3.6+ (Build: 20240816) (07c3ab9006c)</div>
   </td>
  </tr>
  </tbody>
@@ -88,6 +88,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac2cd0f4eca9baad5a345ea4545782317" id="r_ac2cd0f4eca9baad5a345ea4545782317"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2cd0f4eca9baad5a345ea4545782317">get_cache_content</a> ()</td></tr>
 <tr class="memdesc:ac2cd0f4eca9baad5a345ea4545782317"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create cache file content.  <br /></td></tr>
 <tr class="separator:ac2cd0f4eca9baad5a345ea4545782317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb4e931942dc503f9dafcd1be0a66d8" id="r_abfb4e931942dc503f9dafcd1be0a66d8"><td class="memItemLeft" align="right" valign="top"><a id="abfb4e931942dc503f9dafcd1be0a66d8" name="abfb4e931942dc503f9dafcd1be0a66d8"></a>
+static&#160;</td><td class="memItemRight" valign="bottom"><b>register_autoloader</b> ()</td></tr>
+<tr class="memdesc:abfb4e931942dc503f9dafcd1be0a66d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> class autoloader. <br /></td></tr>
+<tr class="separator:abfb4e931942dc503f9dafcd1be0a66d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b5454ec6525bafdfdcfc5298fddc297" id="r_a6b5454ec6525bafdfdcfc5298fddc297"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b5454ec6525bafdfdcfc5298fddc297">reset</a> ()</td></tr>
 <tr class="memdesc:a6b5454ec6525bafdfdcfc5298fddc297"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the initialisation of the component utility.  <br /></td></tr>
 <tr class="separator:a6b5454ec6525bafdfdcfc5298fddc297"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,6 +165,9 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$classmaprena
 static object&#160;</td><td class="memItemRight" valign="bottom"><b>$componentsource</b> = null</td></tr>
 <tr class="memdesc:af83a8ef404c4cc641be6b526e561aae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON source of the component data. <br /></td></tr>
 <tr class="separator:af83a8ef404c4cc641be6b526e561aae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2d4903f963a609de3916435c1f12791" id="r_af2d4903f963a609de3916435c1f12791"><td class="memItemLeft" align="right" valign="top">static array&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2d4903f963a609de3916435c1f12791">$composerautoloadfiles</a></td></tr>
+<tr class="memdesc:af2d4903f963a609de3916435c1f12791"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array containing files which are normally in a package's composer/autoload.files section.  <br /></td></tr>
+<tr class="separator:af2d4903f963a609de3916435c1f12791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd5a281b7926c4722de49972b994fdc4" id="r_afd5a281b7926c4722de49972b994fdc4"><td class="memItemLeft" align="right" valign="top"><a id="afd5a281b7926c4722de49972b994fdc4" name="afd5a281b7926c4722de49972b994fdc4"></a>
 static array&#160;</td><td class="memItemRight" valign="bottom"><b>$filemap</b> = null</td></tr>
 <tr class="memdesc:afd5a281b7926c4722de49972b994fdc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">list of some known files that can be included. <br /></td></tr>
@@ -768,6 +775,40 @@ static int float&#160;</td><td class="memItemRight" valign="bottom"><b>$version<
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="af2d4903f963a609de3916435c1f12791" name="af2d4903f963a609de3916435c1f12791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2d4903f963a609de3916435c1f12791">&#9670;&#160;</a></span>$composerautoloadfiles</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">array&lt;string&gt; core_component::$composerautoloadfiles</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= [</div>
+<div class="line">        <span class="stringliteral">&#39;lib/guzzlehttp/guzzle/src/functions_include.php&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;lib/guzzlehttp/promises/src/functions_include.php&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;lib/jmespath/src/JmesPath.php&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;lib/php-di/php-di/src/functions.php&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;lib/ralouphi/getallheaders/src/getallheaders.php&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;lib/symfony/deprecation-contracts/function.php&#39;</span>,</div>
+<div class="line">    ]</div>
+</div><!-- fragment -->
+<p>An array containing files which are normally in a package's composer/autoload.files section. </p>
+<p>PHP does not provide a mechanism for automatically including the files that methods are in.</p>
+<p>The Composer autoloader includes all files in this section of the composer.json file during the instantiation of the loader. </p>
+
+</div>
+</div>
 <a id="a7a43943c2aab19b0fa84a5979ad80f97" name="a7a43943c2aab19b0fa84a5979ad80f97"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a43943c2aab19b0fa84a5979ad80f97">&#9670;&#160;</a></span>$ignoreddirs</h2>
 
@@ -894,7 +935,7 @@ static int float&#160;</td><td class="memItemRight" valign="bottom"><b>$version<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 11 2024 02:42:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Aug 18 2024 02:40:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240810) (a75365f2e47)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240816) (6cd55074c72)</div>
   </td>
  </tr>
  </tbody>
@@ -102,6 +102,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7c0d5a970e20e44630d3485de282ce47" id="r_a7c0d5a970e20e44630d3485de282ce47"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c0d5a970e20e44630d3485de282ce47">get_site_info</a> ($defaults=[])</td></tr>
 <tr class="memdesc:a7c0d5a970e20e44630d3485de282ce47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates and prepares site information to send to the sites directory as a part of registration.  <br /></td></tr>
 <tr class="separator:a7c0d5a970e20e44630d3485de282ce47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee9967634af62ec4042281d44bde5e13" id="r_aee9967634af62ec4042281d44bde5e13"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee9967634af62ec4042281d44bde5e13">get_site_organisation_type_options</a> ()</td></tr>
+<tr class="memdesc:aee9967634af62ec4042281d44bde5e13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the options for organisation type form element to use in registration form.  <br /></td></tr>
+<tr class="separator:aee9967634af62ec4042281d44bde5e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01476c8068434c6e0cbe22957b38527f" id="r_a01476c8068434c6e0cbe22957b38527f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01476c8068434c6e0cbe22957b38527f">get_stats_summary</a> ($siteinfo)</td></tr>
 <tr class="memdesc:a01476c8068434c6e0cbe22957b38527f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Human-readable summary of data that will be sent to the sites directory.  <br /></td></tr>
 <tr class="separator:a01476c8068434c6e0cbe22957b38527f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -408,6 +411,40 @@ static stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$registrat
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>site info </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aee9967634af62ec4042281d44bde5e13" name="aee9967634af62ec4042281d44bde5e13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee9967634af62ec4042281d44bde5e13">&#9670;&#160;</a></span>get_site_organisation_type_options()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core\hub\registration::get_site_organisation_type_options </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the options for organisation type form element to use in registration form. </p>
+<p>Indexes reference <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> internal ids and should not be changed.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -940,7 +977,8 @@ static stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$registrat
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= [<span class="stringliteral">&#39;policyagreed&#39;</span>, <span class="stringliteral">&#39;language&#39;</span>, <span class="stringliteral">&#39;countrycode&#39;</span>, <span class="stringliteral">&#39;privacy&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;contactemail&#39;</span>, <span class="stringliteral">&#39;emailalert&#39;</span>, <span class="stringliteral">&#39;emailalertemail&#39;</span>, <span class="stringliteral">&#39;commnews&#39;</span>, <span class="stringliteral">&#39;commnewsemail&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;contactname&#39;</span>, <span class="stringliteral">&#39;name&#39;</span>, <span class="stringliteral">&#39;description&#39;</span>, <span class="stringliteral">&#39;imageurl&#39;</span>, <span class="stringliteral">&#39;contactphone&#39;</span>, <span class="stringliteral">&#39;regioncode&#39;</span>, <span class="stringliteral">&#39;geolocation&#39;</span>, <span class="stringliteral">&#39;street&#39;</span>]</div>
+<div class="line">        <span class="stringliteral">&#39;contactname&#39;</span>, <span class="stringliteral">&#39;name&#39;</span>, <span class="stringliteral">&#39;description&#39;</span>, <span class="stringliteral">&#39;imageurl&#39;</span>, <span class="stringliteral">&#39;contactphone&#39;</span>, <span class="stringliteral">&#39;regioncode&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;geolocation&#39;</span>, <span class="stringliteral">&#39;street&#39;</span>, <span class="stringliteral">&#39;organisationtype&#39;</span>]</div>
 </div><!-- fragment -->
 <p>Fields used in a site registration form. </p>
 <p>IMPORTANT: any new fields with non-empty defaults have to be added to CONFIRM_NEW_FIELDS </p>
@@ -953,7 +991,7 @@ static stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$registrat
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 11 2024 02:48:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Aug 18 2024 02:46:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>
