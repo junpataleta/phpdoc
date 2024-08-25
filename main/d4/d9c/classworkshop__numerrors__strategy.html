@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240816) (6cd55074c72)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
   </td>
  </tr>
  </tbody>
@@ -99,9 +99,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a78b41dfa7c783108c4bf0ef14fcadf44" id="r_a78b41dfa7c783108c4bf0ef14fcadf44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78b41dfa7c783108c4bf0ef14fcadf44">form_ready</a> ()</td></tr>
 <tr class="memdesc:a78b41dfa7c783108c4bf0ef14fcadf44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has the assessment form been defined and is ready to be used by the reviewers?  <br /></td></tr>
 <tr class="separator:a78b41dfa7c783108c4bf0ef14fcadf44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a529c1b99d0d3c7b63b5a63ed3ee3e02c" id="r_a529c1b99d0d3c7b63b5a63ed3ee3e02c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a529c1b99d0d3c7b63b5a63ed3ee3e02c">get_assessment_form</a> (moodle_url $actionurl=null, $mode='preview', stdclass $assessment=null, $editable=true, $options=array())</td></tr>
-<tr class="memdesc:a529c1b99d0d3c7b63b5a63ed3ee3e02c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory method returning an instance of an assessment form.  <br /></td></tr>
-<tr class="separator:a529c1b99d0d3c7b63b5a63ed3ee3e02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14a90bda70fc4138171de0c94149a17c" id="r_a14a90bda70fc4138171de0c94149a17c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14a90bda70fc4138171de0c94149a17c">get_assessment_form</a> (?moodle_url $actionurl=null, $mode='preview', ?stdclass $assessment=null, $editable=true, $options=array())</td></tr>
+<tr class="memdesc:a14a90bda70fc4138171de0c94149a17c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory method returning an instance of an assessment form.  <br /></td></tr>
+<tr class="separator:a14a90bda70fc4138171de0c94149a17c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c959bd1b10110016896037bf7c29cd4" id="r_a1c959bd1b10110016896037bf7c29cd4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c959bd1b10110016896037bf7c29cd4">get_assessments_recordset</a> ($restrict=null)</td></tr>
 <tr class="separator:a1c959bd1b10110016896037bf7c29cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a949ebeceaa46b88405ec06061ad6b5f8" id="r_a949ebeceaa46b88405ec06061ad6b5f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a949ebeceaa46b88405ec06061ad6b5f8">get_dimensions_info</a> ()</td></tr>
@@ -408,8 +408,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$mappings</b> = null
 
 </div>
 </div>
-<a id="a529c1b99d0d3c7b63b5a63ed3ee3e02c" name="a529c1b99d0d3c7b63b5a63ed3ee3e02c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a529c1b99d0d3c7b63b5a63ed3ee3e02c">&#9670;&#160;</a></span>get_assessment_form()</h2>
+<a id="a14a90bda70fc4138171de0c94149a17c" name="a14a90bda70fc4138171de0c94149a17c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14a90bda70fc4138171de0c94149a17c">&#9670;&#160;</a></span>get_assessment_form()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -417,7 +417,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$mappings</b> = null
         <tr>
           <td class="memname">workshop_numerrors_strategy::get_assessment_form </td>
           <td>(</td>
-          <td class="paramtype">moodle_url</td>          <td class="paramname"><span class="paramname"><em>$actionurl</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+          <td class="paramtype">?moodle_url</td>          <td class="paramname"><span class="paramname"><em>$actionurl</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -427,7 +427,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$mappings</b> = null
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">stdclass</td>          <td class="paramname"><span class="paramname"><em>$assessment</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+          <td class="paramtype">?stdclass</td>          <td class="paramname"><span class="paramname"><em>$assessment</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -454,7 +454,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$mappings</b> = null
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="../../de/dde/interfaceworkshop__strategy.html#add82bcdb08e4fc763cd163f8210342eb">workshop_strategy</a>.</p>
+<p>Implements <a class="el" href="../../de/dde/interfaceworkshop__strategy.html#a306f7c454f201971b483d8a504c701a4">workshop_strategy</a>.</p>
 
 </div>
 </div>
@@ -734,7 +734,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$mappings</b> = null
 </div><div class="memdoc">
 
 <p>Saves the filled assessment. </p>
-<p>This method processes data submitted using the form returned by <a class="el" href="#a529c1b99d0d3c7b63b5a63ed3ee3e02c">get_assessment_form()</a></p>
+<p>This method processes data submitted using the form returned by <a class="el" href="#a14a90bda70fc4138171de0c94149a17c">get_assessment_form()</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$assessment</td><td>Assessment being filled </td></tr>
@@ -879,7 +879,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$mappings</b> = null
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 18 2024 02:46:24 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Aug 25 2024 02:49:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240816) (6cd55074c72)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
   </td>
  </tr>
  </tbody>
@@ -97,9 +97,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a78d04acccdf16284129969dabcc1a040" id="r_a78d04acccdf16284129969dabcc1a040"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78d04acccdf16284129969dabcc1a040">add_default_instance</a> ($course)</td></tr>
 <tr class="memdesc:a78d04acccdf16284129969dabcc1a040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add new instance of enrol plugin with default settings.  <br /></td></tr>
 <tr class="separator:a78d04acccdf16284129969dabcc1a040"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7fb89e9b2fb9358d44dbbfb20db63b3" id="r_aa7fb89e9b2fb9358d44dbbfb20db63b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7fb89e9b2fb9358d44dbbfb20db63b3">add_instance</a> ($course, array $fields=NULL)</td></tr>
-<tr class="memdesc:aa7fb89e9b2fb9358d44dbbfb20db63b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add new instance of enrol plugin.  <br /></td></tr>
-<tr class="separator:aa7fb89e9b2fb9358d44dbbfb20db63b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a412a3a025ebba4068ef4d67ac5e3476e" id="r_a412a3a025ebba4068ef4d67ac5e3476e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a412a3a025ebba4068ef4d67ac5e3476e">add_instance</a> ($course, ?array $fields=NULL)</td></tr>
+<tr class="memdesc:a412a3a025ebba4068ef4d67ac5e3476e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add new instance of enrol plugin.  <br /></td></tr>
+<tr class="separator:a412a3a025ebba4068ef4d67ac5e3476e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00057b0d130ad91b2db357a1bf20d930" id="r_a00057b0d130ad91b2db357a1bf20d930"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00057b0d130ad91b2db357a1bf20d930">allow_enrol</a> (stdClass $instance)</td></tr>
 <tr class="memdesc:a00057b0d130ad91b2db357a1bf20d930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does this plugin allow manual enrolments?  <br /></td></tr>
 <tr class="separator:a00057b0d130ad91b2db357a1bf20d930"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -473,8 +473,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aa7fb89e9b2fb9358d44dbbfb20db63b3" name="aa7fb89e9b2fb9358d44dbbfb20db63b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7fb89e9b2fb9358d44dbbfb20db63b3">&#9670;&#160;</a></span>add_instance()</h2>
+<a id="a412a3a025ebba4068ef4d67ac5e3476e" name="a412a3a025ebba4068ef4d67ac5e3476e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a412a3a025ebba4068ef4d67ac5e3476e">&#9670;&#160;</a></span>add_instance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -487,7 +487,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$fields</em></span><span class="paramdefsep"> = </span><span class="paramdefval">NULL</span>&#160;)</td>
+          <td class="paramtype">?array</td>          <td class="paramname"><span class="paramname"><em>$fields</em></span><span class="paramdefsep"> = </span><span class="paramdefval">NULL</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -507,7 +507,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="../../d6/d0e/classenrol__plugin.html#a400602b5ac7e1a419da139b10ec61b51">enrol_plugin</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d6/d0e/classenrol__plugin.html#af3b8dcbda421c67d7879559287c712c8">enrol_plugin</a>.</p>
 
 </div>
 </div>
@@ -2374,7 +2374,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000360">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 <a href="https://tracker.moodle.org/browse/MDL-35864" class="el">MDL-35864</a> - please use <a class="el" href="#abe934d58355f117648009495e82fc6f7" title="Is it possible to delete enrol instance via standard UI?">can_delete_instance()</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000361">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 <a href="https://tracker.moodle.org/browse/MDL-35864" class="el">MDL-35864</a> - please use <a class="el" href="#abe934d58355f117648009495e82fc6f7" title="Is it possible to delete enrol instance via standard UI?">can_delete_instance()</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -3310,9 +3310,9 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000361">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000362">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4.0. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d42/classcore__communication_1_1hook__listener.html#ad6d543a7f1ddb71d47e0a3571b2d9c39" title="Update the communication memberships for enrol status change.">core_communication\hook_listener\update_communication_memberships_for_enrol_status_change()</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000127">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80491" class="el">MDL-80491</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000126">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80491" class="el">MDL-80491</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8.</dd></dl>
 
 </div>
 </div>
@@ -3726,7 +3726,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 18 2024 02:45:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Aug 25 2024 02:48:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240816) (6cd55074c72)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
   </td>
  </tr>
  </tbody>
@@ -360,9 +360,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a6659ff038d7ce8b42ae65553d16bd65e" id="r_a6659ff038d7ce8b42ae65553d16bd65e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a6659ff038d7ce8b42ae65553d16bd65e">update_format_options</a> ($data, $sectionid=null)</td></tr>
 <tr class="memdesc:a6659ff038d7ce8b42ae65553d16bd65e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates format options for a course or section.  <br /></td></tr>
 <tr class="separator:a6659ff038d7ce8b42ae65553d16bd65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63f99d3b153beb85369b6ac30b4a19ff" id="r_a63f99d3b153beb85369b6ac30b4a19ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a63f99d3b153beb85369b6ac30b4a19ff">validate_format_options</a> (array $rawdata, int $sectionid=null)</td></tr>
-<tr class="memdesc:a63f99d3b153beb85369b6ac30b4a19ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares values of course or section format options before storing them in <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>.  <br /></td></tr>
-<tr class="separator:a63f99d3b153beb85369b6ac30b4a19ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad43e5d343619bbf97c5092adacdec986" id="r_ad43e5d343619bbf97c5092adacdec986"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#ad43e5d343619bbf97c5092adacdec986">validate_format_options</a> (array $rawdata, ?int $sectionid=null)</td></tr>
+<tr class="memdesc:ad43e5d343619bbf97c5092adacdec986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares values of course or section format options before storing them in <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>.  <br /></td></tr>
+<tr class="separator:ad43e5d343619bbf97c5092adacdec986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
@@ -2120,7 +2120,7 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000069">Deprecated</a></b></dt><dd>Since 4.4. Use get_sectionnum instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000070">Deprecated</a></b></dt><dd>Since 4.4. Use get_sectionnum instead. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000032">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80116" class="el">MDL-80116</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8. </dd></dl>
 
 </div>
@@ -3095,7 +3095,7 @@ course_modinfo::get_section_info_all()</dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000068">Deprecated</a></b></dt><dd>Since 4.4. Use set_sectionnum instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000069">Deprecated</a></b></dt><dd>Since 4.4. Use set_sectionnum instead. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000031">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80116" class="el">MDL-80116</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8. </dd></dl>
 
 </div>
@@ -3686,8 +3686,8 @@ course_modinfo::get_section_info_all()</dd></dl>
 
 </div>
 </div>
-<a id="a63f99d3b153beb85369b6ac30b4a19ff" name="a63f99d3b153beb85369b6ac30b4a19ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63f99d3b153beb85369b6ac30b4a19ff">&#9670;&#160;</a></span>validate_format_options()</h2>
+<a id="ad43e5d343619bbf97c5092adacdec986" name="ad43e5d343619bbf97c5092adacdec986"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad43e5d343619bbf97c5092adacdec986">&#9670;&#160;</a></span>validate_format_options()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3703,7 +3703,7 @@ course_modinfo::get_section_info_all()</dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$sectionid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">?int</td>          <td class="paramname"><span class="paramname"><em>$sectionid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -3763,7 +3763,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 18 2024 02:45:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Aug 25 2024 02:48:22 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

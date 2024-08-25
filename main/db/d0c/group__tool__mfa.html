@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240816) (6cd55074c72)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
   </td>
  </tr>
  </tbody>
@@ -126,6 +126,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de4/classtool__mfa_1_1hook_1_1after__user__passed__mfa.html">tool_mfa\hook\after_user_passed_mfa</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0f/classtool__mfa_1_1hook__callbacks.html">tool_mfa\hook_callbacks</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d27/classtool__mfa_1_1local_1_1admin__setting__managemfa.html">tool_mfa\local\admin_setting_managemfa</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/da6/classtool__mfa_1_1local_1_1factor_1_1fallback.html">tool_mfa\local\factor\fallback</a></td></tr>
@@ -170,6 +172,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1d6d33723188468cb326a48098e15f38" id="r_ga1d6d33723188468cb326a48098e15f38"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1d6d33723188468cb326a48098e15f38">tool_mfa_after_require_login</a> ($courseorid=null, $autologinguest=null, $cm=null, $setwantsurltome=null, $preventredirect=null)</td></tr>
 <tr class="memdesc:ga1d6d33723188468cb326a48098e15f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main hook.  <br /></td></tr>
 <tr class="separator:ga1d6d33723188468cb326a48098e15f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga71f2585995034085c48c9aa9143986b4" id="r_ga71f2585995034085c48c9aa9143986b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga71f2585995034085c48c9aa9143986b4">tool_mfa_bulk_user_actions</a> ()</td></tr>
+<tr class="memdesc:ga71f2585995034085c48c9aa9143986b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Any plugin typically an admin tool can add new bulk user actions.  <br /></td></tr>
+<tr class="separator:ga71f2585995034085c48c9aa9143986b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga760653c628634cf86374c5ff7522ef63" id="r_ga760653c628634cf86374c5ff7522ef63"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga760653c628634cf86374c5ff7522ef63">tool_mfa_extend_navigation_user_settings</a> (<a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a> $navigation, stdClass $<a class="el" href="../../d0/dba/classcore_1_1context_1_1user.html">user</a>, $usercontext, stdClass $<a class="el" href="../../de/d1c/classcore_1_1context_1_1course.html">course</a>, $coursecontext)</td></tr>
 <tr class="memdesc:ga760653c628634cf86374c5ff7522ef63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extends navigation bar and injects MFA Preferences menu to user preferences.  <br /></td></tr>
 <tr class="separator:ga760653c628634cf86374c5ff7522ef63"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -293,6 +298,31 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">moodle_exception</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga71f2585995034085c48c9aa9143986b4" name="ga71f2585995034085c48c9aa9143986b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga71f2585995034085c48c9aa9143986b4">&#9670;&#160;</a></span>tool_mfa_bulk_user_actions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tool_mfa_bulk_user_actions </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Any plugin typically an admin tool can add new bulk user actions. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -471,8 +501,12 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 <b>Initial value:</b><div class="fragment"><div class="line">= [</div>
 <div class="line">    [</div>
 <div class="line">        <span class="stringliteral">&#39;hook&#39;</span> =&gt; core_user\hook\extend_bulk_user_actions::class,</div>
-<div class="line">        <span class="stringliteral">&#39;callback&#39;</span> =&gt; <span class="stringliteral">&#39;tool_mfa\local\hooks\extend_bulk_user_actions::callback&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;callback&#39;</span> =&gt; [\tool_mfa\local\hooks\extend_bulk_user_actions::class, <span class="stringliteral">&#39;callback&#39;</span>],</div>
 <div class="line">        <span class="stringliteral">&#39;priority&#39;</span> =&gt; 0,</div>
+<div class="line">    ],</div>
+<div class="line">    [</div>
+<div class="line">        <span class="stringliteral">&#39;hook&#39;</span> =&gt; core\hook\after_config::class,</div>
+<div class="line">        <span class="stringliteral">&#39;callback&#39;</span> =&gt; [\tool_mfa\hook_callbacks::class, <span class="stringliteral">&#39;after_config&#39;</span>],</div>
 <div class="line">    ],</div>
 <div class="line">]</div>
 </div><!-- fragment -->
@@ -522,7 +556,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 18 2024 02:45:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Aug 25 2024 02:48:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240816) (6cd55074c72)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
   </td>
  </tr>
  </tbody>
@@ -145,9 +145,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5437d76f9046bdf759eff405317f7727" id="r_a5437d76f9046bdf759eff405317f7727"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5437d76f9046bdf759eff405317f7727">col_timesubmitted</a> (stdClass $row)</td></tr>
 <tr class="memdesc:a5437d76f9046bdf759eff405317f7727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a column of data for display.  <br /></td></tr>
 <tr class="separator:a5437d76f9046bdf759eff405317f7727"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ddeb679eaf1dd6cd1d91b5c784aba88" id="r_a4ddeb679eaf1dd6cd1d91b5c784aba88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ddeb679eaf1dd6cd1d91b5c784aba88">col_userid</a> (stdClass $row)</td></tr>
-<tr class="memdesc:a4ddeb679eaf1dd6cd1d91b5c784aba88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a column of data for display.  <br /></td></tr>
-<tr class="separator:a4ddeb679eaf1dd6cd1d91b5c784aba88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fc7dd463a3f16ff15f3728066776fbf" id="r_a2fc7dd463a3f16ff15f3728066776fbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fc7dd463a3f16ff15f3728066776fbf">col_workflowstate</a> ($row)</td></tr>
 <tr class="memdesc:a2fc7dd463a3f16ff15f3728066776fbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">For download only - list current marking workflow state.  <br /></td></tr>
 <tr class="separator:a2fc7dd463a3f16ff15f3728066776fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,16 +194,72 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a9f1ec1eed4864033046ab0f7b407087b" id="r_a9f1ec1eed4864033046ab0f7b407087b"><td class="memItemLeft" align="right" valign="top"><a id="a9f1ec1eed4864033046ab0f7b407087b" name="a9f1ec1eed4864033046ab0f7b407087b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$actions</b> = array()</td></tr>
+<tr class="separator:a9f1ec1eed4864033046ab0f7b407087b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab878cf63e1c2c971d811ff0916810d1" id="r_aab878cf63e1c2c971d811ff0916810d1"><td class="memItemLeft" align="right" valign="top"><a id="aab878cf63e1c2c971d811ff0916810d1" name="aab878cf63e1c2c971d811ff0916810d1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$caneditsubmission</b> = $this-&gt;assignment-&gt;can_edit_submission($row-&gt;id, $USER-&gt;id)</td></tr>
+<tr class="separator:aab878cf63e1c2c971d811ff0916810d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fdb160e221128ff55aece2440cbf6f1" id="r_a9fdb160e221128ff55aece2440cbf6f1"><td class="memItemLeft" align="right" valign="top"><a id="a9fdb160e221128ff55aece2440cbf6f1" name="a9fdb160e221128ff55aece2440cbf6f1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$edit</b> = ''</td></tr>
+<tr class="separator:a9fdb160e221128ff55aece2440cbf6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a800f3162424899e37f91670237160809" id="r_a800f3162424899e37f91670237160809"><td class="memItemLeft" align="right" valign="top"><a id="a800f3162424899e37f91670237160809" name="a800f3162424899e37f91670237160809"></a>
+return&#160;</td><td class="memItemRight" valign="bottom"><b>$edit</b></td></tr>
+<tr class="separator:a800f3162424899e37f91670237160809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae22c7362d9c2d7cc431cf72b7dfc0d6f" id="r_ae22c7362d9c2d7cc431cf72b7dfc0d6f"><td class="memItemLeft" align="right" valign="top"><a id="ae22c7362d9c2d7cc431cf72b7dfc0d6f" name="ae22c7362d9c2d7cc431cf72b7dfc0d6f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$flags</b> = $row</td></tr>
+<tr class="separator:ae22c7362d9c2d7cc431cf72b7dfc0d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a773a729ec39d2fe576c9126e39547fe9" id="r_a773a729ec39d2fe576c9126e39547fe9"><td class="memItemLeft" align="right" valign="top"><a id="a773a729ec39d2fe576c9126e39547fe9" name="a773a729ec39d2fe576c9126e39547fe9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$hasattempts</b> = $isunlimited || $row-&gt;attemptnumber &lt; $this-&gt;assignment-&gt;get_instance()-&gt;maxattempts - 1</td></tr>
+<tr class="separator:a773a729ec39d2fe576c9126e39547fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af40efa3bd27552f76c57e8152d100f71" id="r_af40efa3bd27552f76c57e8152d100f71"><td class="memItemLeft" align="right" valign="top"><a id="af40efa3bd27552f76c57e8152d100f71" name="af40efa3bd27552f76c57e8152d100f71"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$hassubmission</b> = !empty($row-&gt;status)</td></tr>
+<tr class="separator:af40efa3bd27552f76c57e8152d100f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2aed228f455f6936ca5ffc575d5c569" id="r_af2aed228f455f6936ca5ffc575d5c569"><td class="memItemLeft" align="right" valign="top"><a id="af2aed228f455f6936ca5ffc575d5c569" name="af2aed228f455f6936ca5ffc575d5c569"></a>
+if( $this-&gt;assignment-&gt;is_any_submission_plugin_enabled()) if(($this-&gt;assignment-&gt;get_instance() -&gt;duedate||$this-&gt;assignment-&gt;get_instance() -&gt;cutoffdate) &amp;&amp; $this-&gt;hasgrantextension) if( $row-&gt;status==ASSIGN_SUBMISSION_STATUS_SUBMITTED &amp;&amp;$this-&gt;assignment-&gt;get_instance() -&gt;submissiondrafts) if($row-&gt;status==ASSIGN_SUBMISSION_STATUS_DRAFT &amp;&amp; $this-&gt;assignment-&gt;get_instance() -&gt;submissiondrafts &amp;&amp; $caneditsubmission &amp;&amp; $submissionsopen &amp;&amp; $row-&gt;id !=$USER-&gt;id&#160;</td><td class="memItemRight" valign="bottom"><b>$ismanual</b> ) = $this-&gt;assignment-&gt;get_instance()-&gt;attemptreopenmethod == ASSIGN_ATTEMPT_REOPEN_METHOD_MANUAL</td></tr>
+<tr class="separator:af2aed228f455f6936ca5ffc575d5c569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0575a9bc694d147681ae05de4bf4ae4" id="r_ac0575a9bc694d147681ae05de4bf4ae4"><td class="memItemLeft" align="right" valign="top"><a id="ac0575a9bc694d147681ae05de4bf4ae4" name="ac0575a9bc694d147681ae05de4bf4ae4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$isunlimited</b> = $this-&gt;assignment-&gt;get_instance()-&gt;maxattempts == ASSIGN_UNLIMITED_ATTEMPTS</td></tr>
+<tr class="separator:ac0575a9bc694d147681ae05de4bf4ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5e14145a17eb17f87cb89f9badfa24d" id="r_ae5e14145a17eb17f87cb89f9badfa24d"><td class="memItemLeft" align="right" valign="top"><a id="ae5e14145a17eb17f87cb89f9badfa24d" name="ae5e14145a17eb17f87cb89f9badfa24d"></a>
+if($ismanual &amp;&amp; $hassubmission &amp;&amp; $notreopened &amp;&amp; $hasattempts&#160;</td><td class="memItemRight" valign="bottom"><b>$menu</b> ) = new action_menu()</td></tr>
+<tr class="separator:ae5e14145a17eb17f87cb89f9badfa24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cca8cd7c56d902e01eb731a1090a4ed" id="r_a9cca8cd7c56d902e01eb731a1090a4ed"><td class="memItemLeft" align="right" valign="top"><a id="a9cca8cd7c56d902e01eb731a1090a4ed" name="a9cca8cd7c56d902e01eb731a1090a4ed"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$noimage</b> = null</td></tr>
+<tr class="separator:a9cca8cd7c56d902e01eb731a1090a4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a247f3d20392e21278a65e591345b2ebb" id="r_a247f3d20392e21278a65e591345b2ebb"><td class="memItemLeft" align="right" valign="top"><a id="a247f3d20392e21278a65e591345b2ebb" name="a247f3d20392e21278a65e591345b2ebb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$notreopened</b> = $hassubmission &amp;&amp; $row-&gt;status != ASSIGN_SUBMISSION_STATUS_REOPENED</td></tr>
+<tr class="separator:a247f3d20392e21278a65e591345b2ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe261ecdc907f6e5d5f792ea64fe2fae" id="r_abe261ecdc907f6e5d5f792ea64fe2fae"><td class="memItemLeft" align="right" valign="top"><a id="abe261ecdc907f6e5d5f792ea64fe2fae" name="abe261ecdc907f6e5d5f792ea64fe2fae"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$plugingradingbatchoperations</b> = array()</td></tr>
 <tr class="memdesc:abe261ecdc907f6e5d5f792ea64fe2fae"><td class="mdescLeft">&#160;</td><td class="mdescRight">$plugingradingbatchoperations - List of plugin supported batch operations <br /></td></tr>
 <tr class="separator:abe261ecdc907f6e5d5f792ea64fe2fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7646f3b6dbd70e6454e2e962e24f9e1b" id="r_a7646f3b6dbd70e6454e2e962e24f9e1b"><td class="memItemLeft" align="right" valign="top"><a id="a7646f3b6dbd70e6454e2e962e24f9e1b" name="a7646f3b6dbd70e6454e2e962e24f9e1b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$submission</b> = $row</td></tr>
+<tr class="separator:a7646f3b6dbd70e6454e2e962e24f9e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1e80f8d38069295437abc562165d528" id="r_ab1e80f8d38069295437abc562165d528"><td class="memItemLeft" align="right" valign="top">if($this-&gt;assignment-&gt;get_instance() -&gt;teamsubmission)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1e80f8d38069295437abc562165d528">$submissionsopen</a></td></tr>
+<tr class="separator:ab1e80f8d38069295437abc562165d528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6c5003d40ae2230ffea61b88695e686" id="r_ac6c5003d40ae2230ffea61b88695e686"><td class="memItemLeft" align="right" valign="top"><a id="ac6c5003d40ae2230ffea61b88695e686" name="ac6c5003d40ae2230ffea61b88695e686"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$url</b> = new moodle_url('/mod/<a class="el" href="../../db/d8f/classassign.html">assign</a>/view.php', $urlparams)</td></tr>
+<tr class="separator:ac6c5003d40ae2230ffea61b88695e686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae28cf86bcaf7487ae1f14a00b979a2bc" id="r_ae28cf86bcaf7487ae1f14a00b979a2bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae28cf86bcaf7487ae1f14a00b979a2bc">$urlparams</a></td></tr>
+<tr class="separator:ae28cf86bcaf7487ae1f14a00b979a2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfc94db27afcc1e8d254c4401a010a56" id="r_adfc94db27afcc1e8d254c4401a010a56"><td class="memItemLeft" align="right" valign="top"><a id="adfc94db27afcc1e8d254c4401a010a56" name="adfc94db27afcc1e8d254c4401a010a56"></a>
 replacement&#160;</td><td class="memItemRight" valign="bottom"><b>__FUNCTION__</b></td></tr>
 <tr class="separator:adfc94db27afcc1e8d254c4401a010a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a233efb7951160491431272ab81fd7f85" id="r_a233efb7951160491431272ab81fd7f85"><td class="memItemLeft" align="right" valign="top">replacement&#160;</td><td class="memItemRight" valign="bottom">: null</td></tr>
 <tr class="memdesc:a233efb7951160491431272ab81fd7f85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a user picture for display.  <br /></td></tr>
 <tr class="separator:a233efb7951160491431272ab81fd7f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adec74c5618e59624ca97ee31b1540e21" id="r_adec74c5618e59624ca97ee31b1540e21"><td class="memItemLeft" align="right" valign="top">replacement&#160;</td><td class="memItemRight" valign="bottom">: null</td></tr>
+<tr class="memdesc:adec74c5618e59624ca97ee31b1540e21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a column of data for display.  <br /></td></tr>
+<tr class="separator:adec74c5618e59624ca97ee31b1540e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa57024652a673b588e8d09c9a0b3d800" id="r_aa57024652a673b588e8d09c9a0b3d800"><td class="memItemLeft" align="right" valign="top">if($this-&gt;assignment-&gt;is_blind_marking())&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa57024652a673b588e8d09c9a0b3d800">else</a></td></tr>
+<tr class="separator:aa57024652a673b588e8d09c9a0b3d800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a5dac047d3a3b7826fc37767bcce21d" id="r_a2a5dac047d3a3b7826fc37767bcce21d"><td class="memItemLeft" align="right" valign="top">if(! $row-&gt;grade)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a5dac047d3a3b7826fc37767bcce21d">else</a></td></tr>
+<tr class="separator:a2a5dac047d3a3b7826fc37767bcce21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a5db256fe372057b4f8f3d8046667e9" id="r_a7a5db256fe372057b4f8f3d8046667e9"><td class="memItemLeft" align="right" valign="top"><a id="a7a5db256fe372057b4f8f3d8046667e9" name="a7a5db256fe372057b4f8f3d8046667e9"></a>
+<a class="el" href="../../d0/de1/group__core.html#ga13a74e59a81139e77c9593ab40cec354">foreach</a>($actions as $action) $menu&#160;</td><td class="memItemRight" valign="bottom"><b>prioritise</b> = true</td></tr>
+<tr class="separator:a7a5db256fe372057b4f8f3d8046667e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aaabfe09ad64becd3565a922df4e1a2" id="r_a6aaabfe09ad64becd3565a922df4e1a2"><td class="memItemLeft" align="right" valign="top"><a id="a6aaabfe09ad64becd3565a922df4e1a2" name="a6aaabfe09ad64becd3565a922df4e1a2"></a>
 replacement&#160;</td><td class="memItemRight" valign="bottom"><b>reason</b>: 'Picture column is merged with <a class="el" href="../../d0/de1/group__core.html#ga22ae943f55a27f3b9cca15f8ddd05db7">fullname</a> column' )] public function col_picture(stdClass $row) { <a class="el" href="../../dd/ddd/classcore_1_1deprecation.html#aa6a2a0314495a710cd681ca96146679d">core\deprecation::emit_deprecation_if_present</a>([$this</td></tr>
 <tr class="separator:a6aaabfe09ad64becd3565a922df4e1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -835,37 +888,6 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4ddeb679eaf1dd6cd1d91b5c784aba88" name="a4ddeb679eaf1dd6cd1d91b5c784aba88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ddeb679eaf1dd6cd1d91b5c784aba88">&#9670;&#160;</a></span>col_userid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">assign_grading_table::col_userid </td>
-          <td>(</td>
-          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$row</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Format a column of data for display. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$row</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a2fc7dd463a3f16ff15f3728066776fbf" name="a2fc7dd463a3f16ff15f3728066776fbf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2fc7dd463a3f16ff15f3728066776fbf">&#9670;&#160;</a></span>col_workflowstate()</h2>
 
@@ -1375,6 +1397,42 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab1e80f8d38069295437abc562165d528" name="ab1e80f8d38069295437abc562165d528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1e80f8d38069295437abc562165d528">&#9670;&#160;</a></span>$submissionsopen</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if ( $this-&gt;assignment-&gt;get_instance() -&gt;teamsubmission) assign_grading_table::$submissionsopen</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= $this-&gt;assignment-&gt;submissions_open($row-&gt;id,</div>
+<div class="line">            <span class="keyword">true</span>,</div>
+<div class="line">            $submission,</div>
+<div class="line">            $flags,</div>
+<div class="line">            $this-&gt;gradinginfo)</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae28cf86bcaf7487ae1f14a00b979a2bc" name="ae28cf86bcaf7487ae1f14a00b979a2bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae28cf86bcaf7487ae1f14a00b979a2bc">&#9670;&#160;</a></span>$urlparams</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">assign_grading_table::$urlparams</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= array(<span class="stringliteral">&#39;id&#39;</span> =&gt; $this-&gt;assignment-&gt;get_course_module()-&gt;id,</div>
+<div class="line">                               <span class="stringliteral">&#39;rownum&#39;</span> =&gt; 0,</div>
+<div class="line">                               <span class="stringliteral">&#39;action&#39;</span> =&gt; <span class="stringliteral">&#39;grader&#39;</span>)</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a233efb7951160491431272ab81fd7f85" name="a233efb7951160491431272ab81fd7f85"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a233efb7951160491431272ab81fd7f85">&#9670;&#160;</a></span>__pad0__</h2>
 
@@ -1400,9 +1458,72 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001106">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000249">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-82336" class="el">MDL-82336</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001135">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000276">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-82336" class="el">MDL-82336</a>. </dd></dl>
 
+</div>
+</div>
+<a id="adec74c5618e59624ca97ee31b1540e21" name="adec74c5618e59624ca97ee31b1540e21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adec74c5618e59624ca97ee31b1540e21">&#9670;&#160;</a></span>__pad1__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">replacement assign_grading_table::__pad1__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Format a column of data for display. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$row</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001136">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000277">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-82336" class="el">MDL-82336</a>. </dd></dl>
+
+</div>
+</div>
+<a id="aa57024652a673b588e8d09c9a0b3d800" name="aa57024652a673b588e8d09c9a0b3d800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa57024652a673b588e8d09c9a0b3d800">&#9670;&#160;</a></span>else <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if ( $this-&gt;assignment-&gt;is_blind_marking()) assign_grading_table::else</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">            $urlparams[<span class="stringliteral">&#39;userid&#39;</span>] = $row-&gt;userid</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2a5dac047d3a3b7826fc37767bcce21d" name="a2a5dac047d3a3b7826fc37767bcce21d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a5dac047d3a3b7826fc37767bcce21d">&#9670;&#160;</a></span>else <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if (! $row-&gt;grade) assign_grading_table::else</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">            $description = <a class="code hl_function" href="../../d0/de1/group__core.html#gabd79f144c9c887be385a16958a23e618">get_string</a>(<span class="stringliteral">&#39;updategrade&#39;</span>, <span class="stringliteral">&#39;assign&#39;</span>)</div>
+<div class="ttc" id="agroup__core_html_gabd79f144c9c887be385a16958a23e618"><div class="ttname"><a href="../../d0/de1/group__core.html#gabd79f144c9c887be385a16958a23e618">get_string</a></div><div class="ttdeci">get_string($identifier, $component='', $a=null, $lazyload=false)</div><div class="ttdoc">Returns a localized string.</div><div class="ttdef"><b>Definition</b> moodlelib.php:6958</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -1411,7 +1532,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 18 2024 02:45:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Aug 25 2024 02:48:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

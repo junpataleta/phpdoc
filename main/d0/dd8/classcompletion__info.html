@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240816) (6cd55074c72)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
   </td>
  </tr>
  </tbody>
@@ -139,12 +139,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab4167024a9a10437cdea44ab04ecf89b" id="r_ab4167024a9a10437cdea44ab04ecf89b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4167024a9a10437cdea44ab04ecf89b">get_num_tracked_users</a> ($where='', $whereparams=array(), $groupid=0)</td></tr>
 <tr class="memdesc:ab4167024a9a10437cdea44ab04ecf89b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of users whose progress is tracked in this course.  <br /></td></tr>
 <tr class="separator:ab4167024a9a10437cdea44ab04ecf89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e237dd430c7517fffd29cd4e2e9d2cb" id="r_a4e237dd430c7517fffd29cd4e2e9d2cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e237dd430c7517fffd29cd4e2e9d2cb">get_progress_all</a> ($where='', $where_params=array(), $groupid=0, $sort='', $pagesize='', $start='', context $extracontext=null)</td></tr>
-<tr class="memdesc:a4e237dd430c7517fffd29cd4e2e9d2cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains progress information across a course for all users on that course, or for all users in a specific group.  <br /></td></tr>
-<tr class="separator:a4e237dd430c7517fffd29cd4e2e9d2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78ae1c75c8395da2420a98670c5c2fdf" id="r_a78ae1c75c8395da2420a98670c5c2fdf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78ae1c75c8395da2420a98670c5c2fdf">get_tracked_users</a> ($where='', $whereparams=array(), $groupid=0, $sort='', $limitfrom='', $limitnum='', context $extracontext=null)</td></tr>
-<tr class="memdesc:a78ae1c75c8395da2420a98670c5c2fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return array of users whose progress is tracked in this course.  <br /></td></tr>
-<tr class="separator:a78ae1c75c8395da2420a98670c5c2fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5826a8ab888001d60a6bbd2ec59a641" id="r_ab5826a8ab888001d60a6bbd2ec59a641"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5826a8ab888001d60a6bbd2ec59a641">get_progress_all</a> ($where='', $where_params=array(), $groupid=0, $sort='', $pagesize='', $start='', ?context $extracontext=null)</td></tr>
+<tr class="memdesc:ab5826a8ab888001d60a6bbd2ec59a641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains progress information across a course for all users on that course, or for all users in a specific group.  <br /></td></tr>
+<tr class="separator:ab5826a8ab888001d60a6bbd2ec59a641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa77f9679dfecb784fa244bee559f0a68" id="r_aa77f9679dfecb784fa244bee559f0a68"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa77f9679dfecb784fa244bee559f0a68">get_tracked_users</a> ($where='', $whereparams=array(), $groupid=0, $sort='', $limitfrom='', $limitnum='', ?context $extracontext=null)</td></tr>
+<tr class="memdesc:aa77f9679dfecb784fa244bee559f0a68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return array of users whose progress is tracked in this course.  <br /></td></tr>
+<tr class="separator:aa77f9679dfecb784fa244bee559f0a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55bbc5d27ca03f3efea3ad89f0ffec03" id="r_a55bbc5d27ca03f3efea3ad89f0ffec03"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55bbc5d27ca03f3efea3ad89f0ffec03">get_user_completion</a> ($user_id, $criteria)</td></tr>
 <tr class="memdesc:a55bbc5d27ca03f3efea3ad89f0ffec03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get completion object for a user and a criteria.  <br /></td></tr>
 <tr class="separator:a55bbc5d27ca03f3efea3ad89f0ffec03"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -447,7 +447,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000301">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 - The 'Your progress' info isn't displayed any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000302">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 - The 'Your progress' info isn't displayed any more. </dd></dl>
 
 </div>
 </div>
@@ -818,7 +818,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000302">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 <a href="https://tracker.moodle.org/browse/MDL-46290" class="el">MDL-46290</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000303">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 <a href="https://tracker.moodle.org/browse/MDL-46290" class="el">MDL-46290</a>. </dd></dl>
 
 </div>
 </div>
@@ -909,8 +909,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4e237dd430c7517fffd29cd4e2e9d2cb" name="a4e237dd430c7517fffd29cd4e2e9d2cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e237dd430c7517fffd29cd4e2e9d2cb">&#9670;&#160;</a></span>get_progress_all()</h2>
+<a id="ab5826a8ab888001d60a6bbd2ec59a641" name="ab5826a8ab888001d60a6bbd2ec59a641"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5826a8ab888001d60a6bbd2ec59a641">&#9670;&#160;</a></span>get_progress_all()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -948,7 +948,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">context</td>          <td class="paramname"><span class="paramname"><em>$extracontext</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">?context</td>          <td class="paramname"><span class="paramname"><em>$extracontext</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -978,8 +978,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a78ae1c75c8395da2420a98670c5c2fdf" name="a78ae1c75c8395da2420a98670c5c2fdf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78ae1c75c8395da2420a98670c5c2fdf">&#9670;&#160;</a></span>get_tracked_users()</h2>
+<a id="aa77f9679dfecb784fa244bee559f0a68" name="aa77f9679dfecb784fa244bee559f0a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa77f9679dfecb784fa244bee559f0a68">&#9670;&#160;</a></span>get_tracked_users()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1017,7 +1017,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">context</td>          <td class="paramname"><span class="paramname"><em>$extracontext</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">?context</td>          <td class="paramname"><span class="paramname"><em>$extracontext</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1507,7 +1507,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000300">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.0 - Use display_help_icon instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000301">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.0 - Use display_help_icon instead. </dd></dl>
 
 </div>
 </div>
@@ -1675,7 +1675,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 18 2024 02:45:25 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Aug 25 2024 02:48:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240816) (6cd55074c72)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
   </td>
  </tr>
  </tbody>
@@ -98,9 +98,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac0e89386e9c668b3106d32b54626caae" id="r_ac0e89386e9c668b3106d32b54626caae"><td class="memItemLeft" align="right" valign="top"><a id="ac0e89386e9c668b3106d32b54626caae" name="ac0e89386e9c668b3106d32b54626caae"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>create_first_page</b> ($wiki, $record=array())</td></tr>
 <tr class="separator:ac0e89386e9c668b3106d32b54626caae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17575793585ee499824cdade8948f870" id="r_a17575793585ee499824cdade8948f870"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17575793585ee499824cdade8948f870">create_instance</a> ($record=null, array $options=null)</td></tr>
-<tr class="memdesc:a17575793585ee499824cdade8948f870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of the module for testing purposes.  <br /></td></tr>
-<tr class="separator:a17575793585ee499824cdade8948f870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2794dd9a6a9920e433436db07d34bda" id="r_ae2794dd9a6a9920e433436db07d34bda"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2794dd9a6a9920e433436db07d34bda">create_instance</a> ($record=null, ?array $options=null)</td></tr>
+<tr class="memdesc:ae2794dd9a6a9920e433436db07d34bda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of the module for testing purposes.  <br /></td></tr>
+<tr class="separator:ae2794dd9a6a9920e433436db07d34bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5168a4d61eb00258f83b0bb1cd08ad8" id="r_ac5168a4d61eb00258f83b0bb1cd08ad8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5168a4d61eb00258f83b0bb1cd08ad8">create_page</a> ($wiki, $record=array())</td></tr>
 <tr class="memdesc:ac5168a4d61eb00258f83b0bb1cd08ad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a page in wiki.  <br /></td></tr>
 <tr class="separator:ac5168a4d61eb00258f83b0bb1cd08ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,7 +173,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$pagecount</b> = 0</td
 <p>Generates a piece of content for the module. </p>
 <p>User is usually taken from global $USER variable. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$instance</td><td>object returned from <a class="el" href="#a17575793585ee499824cdade8948f870" title="Creates an instance of the module for testing purposes.">create_instance()</a> call </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$instance</td><td>object returned from <a class="el" href="#ae2794dd9a6a9920e433436db07d34bda" title="Creates an instance of the module for testing purposes.">create_instance()</a> call </td></tr>
     <tr><td class="paramtype">stdClass&#160;|&#160;array</td><td class="paramname">$record</td><td></td></tr>
   </table>
   </dd>
@@ -195,8 +195,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$pagecount</b> = 0</td
 
 </div>
 </div>
-<a id="a17575793585ee499824cdade8948f870" name="a17575793585ee499824cdade8948f870"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17575793585ee499824cdade8948f870">&#9670;&#160;</a></span>create_instance()</h2>
+<a id="ae2794dd9a6a9920e433436db07d34bda" name="ae2794dd9a6a9920e433436db07d34bda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2794dd9a6a9920e433436db07d34bda">&#9670;&#160;</a></span>create_instance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,7 +209,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$pagecount</b> = 0</td
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$options</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">?array</td>          <td class="paramname"><span class="paramname"><em>$options</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -230,7 +230,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$pagecount</b> = 0</td
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="../../d6/dce/classtesting__module__generator.html#af03f05947257f952aadb86c3fc1ecf51">testing_module_generator</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d6/dce/classtesting__module__generator.html#a6139aa0e05cdfa694f4b62fef0ec010f">testing_module_generator</a>.</p>
 
 </div>
 </div>
@@ -466,8 +466,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$pagecount</b> = 0</td
 
 <p>Called after *_add_instance() </p>
 <p>Since 2.6 it is recommended to use function <a class="el" href="../../d5/dd0/group__core__course.html#ga05990b276289bacc307abb991fcced73" title="Add course module.">add_moduleinfo()</a> to create a module.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001082">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d6/dce/classtesting__module__generator.html#af03f05947257f952aadb86c3fc1ecf51" title="Creates an instance of the module for testing purposes.">testing_module_generator\create_instance()</a></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001110">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d6/dce/classtesting__module__generator.html#a6139aa0e05cdfa694f4b62fef0ec010f" title="Creates an instance of the module for testing purposes.">testing_module_generator\create_instance()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$id</td><td></td></tr>
@@ -513,8 +513,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$pagecount</b> = 0</td
 
 <p>Create course module and link it to course. </p>
 <p>Since 2.6 it is recommended to use function <a class="el" href="../../d5/dd0/group__core__course.html#ga05990b276289bacc307abb991fcced73" title="Add course module.">add_moduleinfo()</a> to create a module.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001081">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d6/dce/classtesting__module__generator.html#af03f05947257f952aadb86c3fc1ecf51" title="Creates an instance of the module for testing purposes.">testing_module_generator\create_instance()</a></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001109">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d6/dce/classtesting__module__generator.html#a6139aa0e05cdfa694f4b62fef0ec010f" title="Creates an instance of the module for testing purposes.">testing_module_generator\create_instance()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">integer</td><td class="paramname">$courseid</td><td></td></tr>
@@ -642,7 +642,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$pagecount</b> = 0</td
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 18 2024 02:46:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Aug 25 2024 02:49:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

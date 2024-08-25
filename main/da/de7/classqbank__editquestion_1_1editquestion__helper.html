@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240816) (6cd55074c72)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
   </td>
  </tr>
  </tbody>
@@ -93,9 +93,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0e218f0db39b1f8d09bebacad48446df" id="r_a0e218f0db39b1f8d09bebacad48446df"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e218f0db39b1f8d09bebacad48446df">get_question_status_string</a> ($status)</td></tr>
 <tr class="memdesc:a0e218f0db39b1f8d09bebacad48446df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the string for the status of the question.  <br /></td></tr>
 <tr class="separator:a0e218f0db39b1f8d09bebacad48446df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa528aaaaa780708e8edab3cb6bb2693e" id="r_aa528aaaaa780708e8edab3cb6bb2693e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa528aaaaa780708e8edab3cb6bb2693e">print_choose_qtype_to_add_form</a> (array $hiddenparams, array $allowedqtypes=null, $enablejs=true)</td></tr>
-<tr class="memdesc:aa528aaaaa780708e8edab3cb6bb2693e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a form to let the user choose which question type to add.  <br /></td></tr>
-<tr class="separator:aa528aaaaa780708e8edab3cb6bb2693e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae06359b3f9841d62bad258fcf7eb4ef" id="r_aae06359b3f9841d62bad258fcf7eb4ef"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae06359b3f9841d62bad258fcf7eb4ef">print_choose_qtype_to_add_form</a> (array $hiddenparams, ?array $allowedqtypes=null, $enablejs=true)</td></tr>
+<tr class="memdesc:aae06359b3f9841d62bad258fcf7eb4ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a form to let the user choose which question type to add.  <br /></td></tr>
+<tr class="separator:aae06359b3f9841d62bad258fcf7eb4ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class editquestion_helper for methods related to add/edit/copy. </p>
@@ -156,9 +156,9 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001339">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3. Use {</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001369">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3. Use {</dd></dl>
 <dl class="section see"><dt>See also</dt><dd>add_new_question} renderable instead </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000318">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.7 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000346">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.7 </dd></dl>
 
 </div>
 </div>
@@ -234,8 +234,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa528aaaaa780708e8edab3cb6bb2693e" name="aa528aaaaa780708e8edab3cb6bb2693e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa528aaaaa780708e8edab3cb6bb2693e">&#9670;&#160;</a></span>print_choose_qtype_to_add_form()</h2>
+<a id="aae06359b3f9841d62bad258fcf7eb4ef" name="aae06359b3f9841d62bad258fcf7eb4ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae06359b3f9841d62bad258fcf7eb4ef">&#9670;&#160;</a></span>print_choose_qtype_to_add_form()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -251,7 +251,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$allowedqtypes</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+          <td class="paramtype">?array</td>          <td class="paramname"><span class="paramname"><em>$allowedqtypes</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -291,7 +291,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 18 2024 02:47:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Aug 25 2024 02:50:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

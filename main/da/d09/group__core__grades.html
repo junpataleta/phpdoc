@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240816) (6cd55074c72)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
   </td>
  </tr>
  </tbody>
@@ -386,9 +386,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6292122f477a0172357b10ed643318c1" id="r_ga6292122f477a0172357b10ed643318c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6292122f477a0172357b10ed643318c1">grade_regrade_final_grades</a> ($courseid, $userid=null, $updated_item=null, $progress=null)</td></tr>
 <tr class="memdesc:ga6292122f477a0172357b10ed643318c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates all final grades in course.  <br /></td></tr>
 <tr class="separator:ga6292122f477a0172357b10ed643318c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab55774f068f967b5b72818980ba8258f" id="r_gab55774f068f967b5b72818980ba8258f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab55774f068f967b5b72818980ba8258f">grade_regrade_final_grades_if_required</a> ($course, callable $callback=null)</td></tr>
-<tr class="memdesc:gab55774f068f967b5b72818980ba8258f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether regarding of final grades is required and, if so, perform the regrade.  <br /></td></tr>
-<tr class="separator:gab55774f068f967b5b72818980ba8258f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43d92f50aeaad2d8287f45e8e792d398" id="r_ga43d92f50aeaad2d8287f45e8e792d398"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga43d92f50aeaad2d8287f45e8e792d398">grade_regrade_final_grades_if_required</a> ($course, ?callable $callback=null)</td></tr>
+<tr class="memdesc:ga43d92f50aeaad2d8287f45e8e792d398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether regarding of final grades is required and, if so, perform the regrade.  <br /></td></tr>
+<tr class="separator:ga43d92f50aeaad2d8287f45e8e792d398"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae284f9a0957bd29026bdc946cad7c67e" id="r_gae284f9a0957bd29026bdc946cad7c67e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae284f9a0957bd29026bdc946cad7c67e">grade_set_setting</a> ($courseid, $name, $value)</td></tr>
 <tr class="memdesc:gae284f9a0957bd29026bdc946cad7c67e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add, update or delete a course gradebook setting.  <br /></td></tr>
 <tr class="separator:gae284f9a0957bd29026bdc946cad7c67e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1902,8 +1902,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>GRADE_UPDATE_OK</b> 
 
 </div>
 </div>
-<a id="gab55774f068f967b5b72818980ba8258f" name="gab55774f068f967b5b72818980ba8258f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab55774f068f967b5b72818980ba8258f">&#9670;&#160;</a></span>grade_regrade_final_grades_if_required()</h2>
+<a id="ga43d92f50aeaad2d8287f45e8e792d398" name="ga43d92f50aeaad2d8287f45e8e792d398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga43d92f50aeaad2d8287f45e8e792d398">&#9670;&#160;</a></span>grade_regrade_final_grades_if_required()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1916,7 +1916,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>GRADE_UPDATE_OK</b> 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">callable</td>          <td class="paramname"><span class="paramname"><em>$callback</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">?callable</td>          <td class="paramname"><span class="paramname"><em>$callback</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2553,7 +2553,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>GRADE_UPDATE_OK</b> 
 </div><div class="memdoc">
 
 <p>Print a selection popup form of the graded users in a course. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000156">Deprecated</a></b></dt><dd>since 2.0</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000157">Deprecated</a></b></dt><dd>since 2.0</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$course</td><td>id of the course </td></tr>
@@ -2772,7 +2772,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>GRADE_UPDATE_OK</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 18 2024 02:45:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Aug 25 2024 02:48:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

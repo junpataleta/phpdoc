@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240816) (6cd55074c72)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
   </td>
  </tr>
  </tbody>
@@ -93,9 +93,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9f28a3777e06537731bab8c8c9c78488" id="r_a9f28a3777e06537731bab8c8c9c78488"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f28a3777e06537731bab8c8c9c78488">get_action_events_by_timesort</a> ( $timesortfrom=null, $timesortto=null, $aftereventid=null, $limitnum=20, $limittononsuspendedevents=false, ?\stdClass $user=null, ?string $searchvalue=null)</td></tr>
 <tr class="memdesc:a9f28a3777e06537731bab8c8c9c78488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of action events for the logged in user by the given timesort values.  <br /></td></tr>
 <tr class="separator:a9f28a3777e06537731bab8c8c9c78488"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fee13441c8f146dbbc8568d81ca3ab4" id="r_a9fee13441c8f146dbbc8568d81ca3ab4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fee13441c8f146dbbc8568d81ca3ab4">get_events</a> ( $timestartfrom=null, $timestartto=null, $timesortfrom=null, $timesortto=null, $timestartaftereventid=null, $timesortaftereventid=null, $limitnum=20, $type=null, array $usersfilter=null, array $groupsfilter=null, array $coursesfilter=null, array $categoriesfilter=null, $withduration=true, $ignorehidden=true, callable $filter=null)</td></tr>
-<tr class="memdesc:a9fee13441c8f146dbbc8568d81ca3ab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all events restricted by various parameters, taking in to account user and group overrides.  <br /></td></tr>
-<tr class="separator:a9fee13441c8f146dbbc8568d81ca3ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77829aaf9f7e5866cc72d5d087caed75" id="r_a77829aaf9f7e5866cc72d5d087caed75"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77829aaf9f7e5866cc72d5d087caed75">get_events</a> ( $timestartfrom=null, $timestartto=null, $timesortfrom=null, $timesortto=null, $timestartaftereventid=null, $timesortaftereventid=null, $limitnum=20, $type=null, ?array $usersfilter=null, ?array $groupsfilter=null, ?array $coursesfilter=null, ?array $categoriesfilter=null, $withduration=true, $ignorehidden=true, ?callable $filter=null)</td></tr>
+<tr class="memdesc:a77829aaf9f7e5866cc72d5d087caed75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all events restricted by various parameters, taking in to account user and group overrides.  <br /></td></tr>
+<tr class="separator:a77829aaf9f7e5866cc72d5d087caed75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79ebeae67b3f014bf30cd578fb76c64d" id="r_a79ebeae67b3f014bf30cd578fb76c64d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79ebeae67b3f014bf30cd578fb76c64d">update_event_start_day</a> (<a class="el" href="../../d9/d9a/interfacecore__calendar_1_1local_1_1event_1_1entities_1_1event__interface.html">event_interface</a> $event, DateTimeInterface $startdate)</td></tr>
 <tr class="memdesc:a79ebeae67b3f014bf30cd578fb76c64d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the start day for an event.  <br /></td></tr>
 <tr class="separator:a79ebeae67b3f014bf30cd578fb76c64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -323,8 +323,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9fee13441c8f146dbbc8568d81ca3ab4" name="a9fee13441c8f146dbbc8568d81ca3ab4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fee13441c8f146dbbc8568d81ca3ab4">&#9670;&#160;</a></span>get_events()</h2>
+<a id="a77829aaf9f7e5866cc72d5d087caed75" name="a77829aaf9f7e5866cc72d5d087caed75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77829aaf9f7e5866cc72d5d087caed75">&#9670;&#160;</a></span>get_events()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -375,22 +375,22 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$usersfilter</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+          <td class="paramtype">?array</td>          <td class="paramname"><span class="paramname"><em>$usersfilter</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$groupsfilter</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+          <td class="paramtype">?array</td>          <td class="paramname"><span class="paramname"><em>$groupsfilter</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$coursesfilter</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+          <td class="paramtype">?array</td>          <td class="paramname"><span class="paramname"><em>$coursesfilter</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$categoriesfilter</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+          <td class="paramtype">?array</td>          <td class="paramname"><span class="paramname"><em>$categoriesfilter</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -405,7 +405,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">callable</td>          <td class="paramname"><span class="paramname"><em>$filter</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">?callable</td>          <td class="paramname"><span class="paramname"><em>$filter</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -494,7 +494,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 18 2024 02:46:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Aug 25 2024 02:49:44 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

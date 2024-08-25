@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240816) (6cd55074c72)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
   </td>
  </tr>
  </tbody>
@@ -99,6 +99,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a02aa65be4f76a8b5e6426f01b96723c0" id="r_a02aa65be4f76a8b5e6426f01b96723c0"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02aa65be4f76a8b5e6426f01b96723c0">get_new_registration_fields</a> ()</td></tr>
 <tr class="memdesc:a02aa65be4f76a8b5e6426f01b96723c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the list of the fields in the registration form that were added since registration or last manual update.  <br /></td></tr>
 <tr class="separator:a02aa65be4f76a8b5e6426f01b96723c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72c30028eb91568e6e43a4679244a9ab" id="r_a72c30028eb91568e6e43a4679244a9ab"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72c30028eb91568e6e43a4679244a9ab">get_plugin_usage_data</a> ()</td></tr>
+<tr class="memdesc:a72c30028eb91568e6e43a4679244a9ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of plugins.  <br /></td></tr>
+<tr class="separator:a72c30028eb91568e6e43a4679244a9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c0d5a970e20e44630d3485de282ce47" id="r_a7c0d5a970e20e44630d3485de282ce47"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c0d5a970e20e44630d3485de282ce47">get_site_info</a> ($defaults=[])</td></tr>
 <tr class="memdesc:a7c0d5a970e20e44630d3485de282ce47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates and prepares site information to send to the sites directory as a part of registration.  <br /></td></tr>
 <tr class="separator:a7c0d5a970e20e44630d3485de282ce47"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -330,6 +333,40 @@ static stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$registrat
 
 <p>Returns the list of the fields in the registration form that were added since registration or last manual update. </p>
 <p>If this list is not empty the scheduled task will be paused and admin will be reminded to update registration manually.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a72c30028eb91568e6e43a4679244a9ab" name="a72c30028eb91568e6e43a4679244a9ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72c30028eb91568e6e43a4679244a9ab">&#9670;&#160;</a></span>get_plugin_usage_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core\hub\registration::get_plugin_usage_data </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return a list of plugins. </p>
+<p>Only blocks and activities will include instance counts.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td></td></tr>
@@ -957,6 +994,8 @@ static stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$registrat
 <div class="line">        2020022600 =&gt; [<span class="stringliteral">&#39;activeusers&#39;</span>, <span class="stringliteral">&#39;activeparticipantnumberaverage&#39;</span>],</div>
 <div class="line">        </div>
 <div class="line">        2023021700 =&gt; [<span class="stringliteral">&#39;dbtype&#39;</span>, <span class="stringliteral">&#39;coursesnodates&#39;</span>, <span class="stringliteral">&#39;sitetheme&#39;</span>, <span class="stringliteral">&#39;primaryauthtype&#39;</span>],</div>
+<div class="line">        </div>
+<div class="line">        2023072300 =&gt; [<span class="stringliteral">&#39;pluginusage&#39;</span>],</div>
 <div class="line">    ]</div>
 </div><!-- fragment -->
 <p>List of new FORM_FIELDS or siteinfo fields added indexed by the version when they were added. </p>
@@ -991,7 +1030,7 @@ static stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$registrat
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 18 2024 02:46:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Aug 25 2024 02:49:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

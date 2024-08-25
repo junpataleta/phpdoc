@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240816) (6cd55074c72)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
   </td>
  </tr>
  </tbody>
@@ -101,6 +101,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aea20a711b7ccb6d5a6d58dce10239893" id="r_aea20a711b7ccb6d5a6d58dce10239893"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea20a711b7ccb6d5a6d58dce10239893">allow_view</a> (int $imageuserid)</td></tr>
+<tr class="memdesc:aea20a711b7ccb6d5a6d58dce10239893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the current user is permitted to view user profile images.  <br /></td></tr>
+<tr class="separator:aea20a711b7ccb6d5a6d58dce10239893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f022b0061cb30ddb5c70c1265278b94" id="r_a0f022b0061cb30ddb5c70c1265278b94"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f022b0061cb30ddb5c70c1265278b94">fields</a> ( $tableprefix='', ?array $extrafields=null, $idalias='id', $fieldprefix='',)</td></tr>
 <tr class="memdesc:a0f022b0061cb30ddb5c70c1265278b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of required user fields, useful when fetching required user info from db.  <br /></td></tr>
 <tr class="separator:a0f022b0061cb30ddb5c70c1265278b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,6 +177,47 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$visibletoscreenreade
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aea20a711b7ccb6d5a6d58dce10239893" name="aea20a711b7ccb6d5a6d58dce10239893"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea20a711b7ccb6d5a6d58dce10239893">&#9670;&#160;</a></span>allow_view()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core\output\user_picture::allow_view </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$imageuserid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the current user is permitted to view user profile images. </p>
+<p>This is based on the forcelogin and forceloginforprofileimage config settings, and the moodle/user:viewprofilepictures capability.</p>
+<p>Logged-in users are allowed to view their own profile image regardless of capability.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$imageuserid</td><td>User id of profile image being viewed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>True if current user can view profile images </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a0f022b0061cb30ddb5c70c1265278b94" name="a0f022b0061cb30ddb5c70c1265278b94"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f022b0061cb30ddb5c70c1265278b94">&#9670;&#160;</a></span>fields()</h2>
 
@@ -228,7 +272,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$visibletoscreenreade
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000284">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 <a href="https://tracker.moodle.org/browse/MDL-45242" class="el">MDL-45242</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000285">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 <a href="https://tracker.moodle.org/browse/MDL-45242" class="el">MDL-45242</a> </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../df/d37/classcore__user_1_1fields.html">core_user\fields</a> </dd></dl>
 
 </div>
@@ -402,7 +446,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$visibletoscreenreade
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 18 2024 02:46:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Aug 25 2024 02:49:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

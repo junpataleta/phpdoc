@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240816) (6cd55074c72)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
   </td>
  </tr>
  </tbody>
@@ -87,12 +87,12 @@ $(function(){ initResizable(false); });
   <tr class="even"><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html#a7c73955832528e27618244f864bbe254">create_file_from_reference</a>($filerecord, $repositoryid, $reference, $options=array())</td><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html">file_storage</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html#a9275f276950e9820d34b1a7cd2235708">create_file_from_storedfile</a>($filerecord, $fileorid)</td><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html">file_storage</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html#a49a9328770527260ab28a683b15d007a">create_file_from_string</a>($filerecord, $content)</td><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html">file_storage</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html#af9cd50a05d0314e19156504575d7878b">create_file_from_url</a>($filerecord, $url, array $options=null, $usetempfile=false)</td><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html">file_storage</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html#a42ea8af00fd76b6bab3b4e1e47d849db">create_file_from_url</a>($filerecord, $url, ?array $options=null, $usetempfile=false)</td><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html">file_storage</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html#a79caf47d8d513f0640948d7a95278cd8">create_file_preview</a>(stored_file $file, $mode)</td><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html">file_storage</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html#ae18cc16f5ed23792152e034cca752cc6">create_imagefile_preview</a>(stored_file $file, $mode)</td><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html">file_storage</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html#a325281aaf52edf825c382656462c9197">cron</a>()</td><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html">file_storage</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html#a6f2e8702ddbba81e134e5e328c927e41">delete_area_files</a>($contextid, $component=false, $filearea=false, $itemid=false)</td><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html">file_storage</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html#a6eed3316c1a8f2e7ef6537a176d83a39">delete_area_files_select</a>($contextid, $component, $filearea, $itemidstest, array $params=null)</td><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html">file_storage</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html#a367a7728310428bfe74264d3ddb7d4ac">delete_area_files_select</a>($contextid, $component, $filearea, $itemidstest, ?array $params=null)</td><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html">file_storage</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html#a4725ec33fb4f420e0207c140406ca028">delete_component_files</a>($component)</td><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html">file_storage</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html#a5ef2e0a68700490d799397e085cf60d2">file_exists</a>($contextid, $component, $filearea, $itemid, $filepath, $filename)</td><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html">file_storage</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html#ad693fe9f5fc095a8f7f6991d45c6279e">file_exists_by_hash</a>($pathnamehash)</td><td class="entry"><a class="el" href="../../d3/ddd/classfile__storage.html">file_storage</a></td><td class="entry"></td></tr>
@@ -141,7 +141,7 @@ $(function(){ initResizable(false); });
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 18 2024 02:45:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Aug 25 2024 02:48:22 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

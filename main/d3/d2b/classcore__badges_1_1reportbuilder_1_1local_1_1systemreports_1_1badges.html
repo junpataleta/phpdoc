@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240816) (6cd55074c72)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
   </td>
  </tr>
  </tbody>
@@ -155,9 +155,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2ca8c9f3fe855ad3cf98420d54d1cab5" id="r_a2ca8c9f3fe855ad3cf98420d54d1cab5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da7/classcore__reportbuilder_1_1system__report.html#a2ca8c9f3fe855ad3cf98420d54d1cab5">require_can_view</a> ()</td></tr>
 <tr class="memdesc:a2ca8c9f3fe855ad3cf98420d54d1cab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate access to the report.  <br /></td></tr>
 <tr class="separator:a2ca8c9f3fe855ad3cf98420d54d1cab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad0cb87ee70716f86b74c64d9f6edb18" id="r_aad0cb87ee70716f86b74c64d9f6edb18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da7/classcore__reportbuilder_1_1system__report.html#aad0cb87ee70716f86b74c64d9f6edb18">row_callback</a> (stdClass $row)</td></tr>
-<tr class="memdesc:aad0cb87ee70716f86b74c64d9f6edb18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called before rendering each row.  <br /></td></tr>
-<tr class="separator:aad0cb87ee70716f86b74c64d9f6edb18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eb0d901986249be59191cab591b42ce" id="r_a4eb0d901986249be59191cab591b42ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4eb0d901986249be59191cab591b42ce">row_callback</a> (stdClass $row)</td></tr>
+<tr class="memdesc:a4eb0d901986249be59191cab591b42ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store the ID of the badge within each row.  <br /></td></tr>
+<tr class="separator:a4eb0d901986249be59191cab591b42ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e7814a7733649243fa316325cb074fd" id="r_a2e7814a7733649243fa316325cb074fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d72/classcore_1_1dataformat_1_1base.html#a2e7814a7733649243fa316325cb074fd">send_http_headers</a> ()</td></tr>
 <tr class="memdesc:a2e7814a7733649243fa316325cb074fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output file headers to initialise the download of the file.  <br /></td></tr>
 <tr class="separator:a2e7814a7733649243fa316325cb074fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1223,37 +1223,30 @@ $mimetype&#160;</td><td class="memItemRight" valign="bottom"><b>$mimetype</b> = 
 
 </div>
 </div>
-<a id="aad0cb87ee70716f86b74c64d9f6edb18" name="aad0cb87ee70716f86b74c64d9f6edb18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad0cb87ee70716f86b74c64d9f6edb18">&#9670;&#160;</a></span>row_callback()</h2>
+<a id="a4eb0d901986249be59191cab591b42ce" name="a4eb0d901986249be59191cab591b42ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eb0d901986249be59191cab591b42ce">&#9670;&#160;</a></span>row_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">core_reportbuilder\system_report::row_callback </td>
+          <td class="memname">core_badges\reportbuilder\local\systemreports\badges::row_callback </td>
           <td>(</td>
           <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$row</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Called before rendering each row. </p>
-<p>Can be overridden to pre-fetch/create objects and store them in the class, which can later be used in column and action callbacks</p>
+<p>Store the ID of the badge within each row. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$row</td><td></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Reimplemented from <a class="el" href="../../d0/da7/classcore__reportbuilder_1_1system__report.html#aad0cb87ee70716f86b74c64d9f6edb18">core_reportbuilder\system_report</a>.</p>
 
 </div>
 </div>
@@ -1747,7 +1740,7 @@ $mimetype&#160;</td><td class="memItemRight" valign="bottom"><b>$mimetype</b> = 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 18 2024 02:46:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Aug 25 2024 02:49:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

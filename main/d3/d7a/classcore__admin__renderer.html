@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240816) (6cd55074c72)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
   </td>
  </tr>
  </tbody>
@@ -141,9 +141,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab6b31f7fd1eed2149bd02fb2f285898f" id="r_ab6b31f7fd1eed2149bd02fb2f285898f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6b31f7fd1eed2149bd02fb2f285898f">plugins_control_panel</a> (core_plugin_manager $pluginman, array $options=array())</td></tr>
 <tr class="memdesc:ab6b31f7fd1eed2149bd02fb2f285898f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays all known plugins and links to manage them.  <br /></td></tr>
 <tr class="separator:ab6b31f7fd1eed2149bd02fb2f285898f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38374ef6f5789523646cfb81a4eb80dd" id="r_a38374ef6f5789523646cfb81a4eb80dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38374ef6f5789523646cfb81a4eb80dd">plugins_management_confirm_buttons</a> (moodle_url $continue=null, moodle_url $cancel=null)</td></tr>
-<tr class="memdesc:a38374ef6f5789523646cfb81a4eb80dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the continue / cancel widgets for the plugins management pages.  <br /></td></tr>
-<tr class="separator:a38374ef6f5789523646cfb81a4eb80dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a837522d8833ceedc4cfde668184fb691" id="r_a837522d8833ceedc4cfde668184fb691"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a837522d8833ceedc4cfde668184fb691">plugins_management_confirm_buttons</a> (?moodle_url $continue=null, ?moodle_url $cancel=null)</td></tr>
+<tr class="memdesc:a837522d8833ceedc4cfde668184fb691"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the continue / cancel widgets for the plugins management pages.  <br /></td></tr>
+<tr class="separator:a837522d8833ceedc4cfde668184fb691"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f7e875c280c9349b8775e64cbf3e8c6" id="r_a3f7e875c280c9349b8775e64cbf3e8c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f7e875c280c9349b8775e64cbf3e8c6">plugins_overview_panel</a> (core_plugin_manager $pluginman, array $options=array())</td></tr>
 <tr class="memdesc:a3f7e875c280c9349b8775e64cbf3e8c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints an overview about the plugins - number of installed, number of extensions etc.  <br /></td></tr>
 <tr class="separator:a3f7e875c280c9349b8775e64cbf3e8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1780,8 +1780,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a38374ef6f5789523646cfb81a4eb80dd" name="a38374ef6f5789523646cfb81a4eb80dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38374ef6f5789523646cfb81a4eb80dd">&#9670;&#160;</a></span>plugins_management_confirm_buttons()</h2>
+<a id="a837522d8833ceedc4cfde668184fb691" name="a837522d8833ceedc4cfde668184fb691"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a837522d8833ceedc4cfde668184fb691">&#9670;&#160;</a></span>plugins_management_confirm_buttons()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1789,12 +1789,12 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">core_admin_renderer::plugins_management_confirm_buttons </td>
           <td>(</td>
-          <td class="paramtype">moodle_url</td>          <td class="paramname"><span class="paramname"><em>$continue</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+          <td class="paramtype">?moodle_url</td>          <td class="paramname"><span class="paramname"><em>$continue</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">moodle_url</td>          <td class="paramname"><span class="paramname"><em>$cancel</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">?moodle_url</td>          <td class="paramname"><span class="paramname"><em>$cancel</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2506,7 +2506,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 18 2024 02:45:25 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Aug 25 2024 02:48:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240816) (6cd55074c72)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
   </td>
  </tr>
  </tbody>
@@ -85,12 +85,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a267c5bf72a04646445694f6576888eba" id="r_a267c5bf72a04646445694f6576888eba"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a267c5bf72a04646445694f6576888eba">initialize</a> ()</td></tr>
 <tr class="memdesc:a267c5bf72a04646445694f6576888eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register self as main shutdown handler.  <br /></td></tr>
 <tr class="separator:a267c5bf72a04646445694f6576888eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91bde3d086752d03e1434171f39e4168" id="r_a91bde3d086752d03e1434171f39e4168"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91bde3d086752d03e1434171f39e4168">register_function</a> ($callback, array $params=null)</td></tr>
-<tr class="memdesc:a91bde3d086752d03e1434171f39e4168"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register custom shutdown function.  <br /></td></tr>
-<tr class="separator:a91bde3d086752d03e1434171f39e4168"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9f99e9d80f36a2fcfa004916fd82be7" id="r_ad9f99e9d80f36a2fcfa004916fd82be7"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9f99e9d80f36a2fcfa004916fd82be7">register_signal_handler</a> ($callback, array $params=null)</td></tr>
-<tr class="memdesc:ad9f99e9d80f36a2fcfa004916fd82be7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register custom signal handler function.  <br /></td></tr>
-<tr class="separator:ad9f99e9d80f36a2fcfa004916fd82be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97915bfdbd529a3f06c25ec9feae20b5" id="r_a97915bfdbd529a3f06c25ec9feae20b5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97915bfdbd529a3f06c25ec9feae20b5">register_function</a> ($callback, ?array $params=null)</td></tr>
+<tr class="memdesc:a97915bfdbd529a3f06c25ec9feae20b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register custom shutdown function.  <br /></td></tr>
+<tr class="separator:a97915bfdbd529a3f06c25ec9feae20b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab80c0af086b35fd228d0c6ecaa401150" id="r_ab80c0af086b35fd228d0c6ecaa401150"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab80c0af086b35fd228d0c6ecaa401150">register_signal_handler</a> ($callback, ?array $params=null)</td></tr>
+<tr class="memdesc:ab80c0af086b35fd228d0c6ecaa401150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register custom signal handler function.  <br /></td></tr>
+<tr class="separator:ab80c0af086b35fd228d0c6ecaa401150"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d1b9b16288f2b95270bfada94ee2d11" id="r_a8d1b9b16288f2b95270bfada94ee2d11"><td class="memItemLeft" align="right" valign="top"><a id="a8d1b9b16288f2b95270bfada94ee2d11" name="a8d1b9b16288f2b95270bfada94ee2d11"></a>
 static&#160;</td><td class="memItemRight" valign="bottom"><b>shutdown_handler</b> ()</td></tr>
 <tr class="memdesc:a8d1b9b16288f2b95270bfada94ee2d11"><td class="mdescLeft">&#160;</td><td class="mdescRight"><ul>
@@ -157,8 +157,8 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$signalcallba
 
 </div>
 </div>
-<a id="a91bde3d086752d03e1434171f39e4168" name="a91bde3d086752d03e1434171f39e4168"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91bde3d086752d03e1434171f39e4168">&#9670;&#160;</a></span>register_function()</h2>
+<a id="a97915bfdbd529a3f06c25ec9feae20b5" name="a97915bfdbd529a3f06c25ec9feae20b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97915bfdbd529a3f06c25ec9feae20b5">&#9670;&#160;</a></span>register_function()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,7 +174,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$signalcallba
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$params</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">?array</td>          <td class="paramname"><span class="paramname"><em>$params</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -201,8 +201,8 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$signalcallba
 
 </div>
 </div>
-<a id="ad9f99e9d80f36a2fcfa004916fd82be7" name="ad9f99e9d80f36a2fcfa004916fd82be7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9f99e9d80f36a2fcfa004916fd82be7">&#9670;&#160;</a></span>register_signal_handler()</h2>
+<a id="ab80c0af086b35fd228d0c6ecaa401150" name="ab80c0af086b35fd228d0c6ecaa401150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab80c0af086b35fd228d0c6ecaa401150">&#9670;&#160;</a></span>register_signal_handler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,7 +218,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$signalcallba
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$params</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">?array</td>          <td class="paramname"><span class="paramname"><em>$params</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -285,7 +285,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$signalcallba
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 18 2024 02:45:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Aug 25 2024 02:48:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

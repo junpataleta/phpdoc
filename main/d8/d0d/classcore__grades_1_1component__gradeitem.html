@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240816) (6cd55074c72)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
   </td>
  </tr>
  </tbody>
@@ -102,9 +102,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a08e4ae34aa715dc6144c7c27f3eacf3c" id="r_a08e4ae34aa715dc6144c7c27f3eacf3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08e4ae34aa715dc6144c7c27f3eacf3c">create_empty_grade</a> (stdClass $gradeduser, stdClass $grader)</td></tr>
 <tr class="memdesc:a08e4ae34aa715dc6144c7c27f3eacf3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an empty row in the grade for the specified user and grader.  <br /></td></tr>
 <tr class="separator:a08e4ae34aa715dc6144c7c27f3eacf3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee0b0ead40ace6b058f4d6bb0f00331c" id="r_aee0b0ead40ace6b058f4d6bb0f00331c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee0b0ead40ace6b058f4d6bb0f00331c">get_advanced_grading_instance</a> (stdClass $grader, stdClass $grade, int $instanceid=null)</td></tr>
-<tr class="memdesc:aee0b0ead40ace6b058f4d6bb0f00331c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the advanced grading instance for the specified grade entry.  <br /></td></tr>
-<tr class="separator:aee0b0ead40ace6b058f4d6bb0f00331c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeaf9a0653a33756f1f00b9b5f0538be" id="r_adeaf9a0653a33756f1f00b9b5f0538be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adeaf9a0653a33756f1f00b9b5f0538be">get_advanced_grading_instance</a> (stdClass $grader, stdClass $grade, ?int $instanceid=null)</td></tr>
+<tr class="memdesc:adeaf9a0653a33756f1f00b9b5f0538be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the advanced grading instance for the specified grade entry.  <br /></td></tr>
+<tr class="separator:adeaf9a0653a33756f1f00b9b5f0538be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0832cb24cd0e920ce050f4c0f9f0e181" id="r_a0832cb24cd0e920ce050f4c0f9f0e181"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0832cb24cd0e920ce050f4c0f9f0e181">get_advanced_grading_method</a> ()</td></tr>
 <tr class="memdesc:a0832cb24cd0e920ce050f4c0f9f0e181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the advanced grading method.  <br /></td></tr>
 <tr class="separator:a0832cb24cd0e920ce050f4c0f9f0e181"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -430,8 +430,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$scale</b></td></tr>
 
 </div>
 </div>
-<a id="aee0b0ead40ace6b058f4d6bb0f00331c" name="aee0b0ead40ace6b058f4d6bb0f00331c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee0b0ead40ace6b058f4d6bb0f00331c">&#9670;&#160;</a></span>get_advanced_grading_instance()</h2>
+<a id="adeaf9a0653a33756f1f00b9b5f0538be" name="adeaf9a0653a33756f1f00b9b5f0538be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeaf9a0653a33756f1f00b9b5f0538be">&#9670;&#160;</a></span>get_advanced_grading_instance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -449,7 +449,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$scale</b></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$instanceid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">?int</td>          <td class="paramname"><span class="paramname"><em>$instanceid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -647,8 +647,6 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$scale</b></td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Reimplemented in <a class="el" href="../../d8/d37/classmod__forum_1_1grades_1_1forum__gradeitem.html#a2b49cc8b7d41060eac8ef3f6f52a9904">mod_forum\grades\forum_gradeitem</a>.</p>
 
 </div>
 </div>
@@ -1405,7 +1403,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$scale</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 18 2024 02:47:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Aug 25 2024 02:49:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

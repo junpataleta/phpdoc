@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240816) (6cd55074c72)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
   </td>
  </tr>
  </tbody>
@@ -85,7 +85,8 @@ Inheritance diagram for core_report\output\coursestructure:</div>
  <div class="center">
   <img src="../../d4/d19/classcore__report_1_1output_1_1coursestructure.png" usemap="#core_5Freport_5Coutput_5Ccoursestructure_map" alt=""/>
   <map id="core_5Freport_5Coutput_5Ccoursestructure_map" name="core_5Freport_5Coutput_5Ccoursestructure_map">
-<area href="../../df/d39/classreport__outline_1_1output_1_1activitieslist.html" alt="report_outline\output\activitieslist" shape="rect" coords="110,112,320,136"/>
+<area href="../../df/d39/classreport__outline_1_1output_1_1activitieslist.html" alt="report_outline\output\activitieslist" shape="rect" coords="0,112,249,136"/>
+<area href="../../de/dc9/classreport__outline_1_1output_1_1hierarchicalactivities.html" alt="report_outline\output\hierarchicalactivities" shape="rect" coords="259,112,508,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -103,6 +104,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa13ff27bbaf3d0a89d9c465cb1a7bf5c" id="r_aa13ff27bbaf3d0a89d9c465cb1a7bf5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa13ff27bbaf3d0a89d9c465cb1a7bf5c">export_for_template</a> (\renderer_base $output)</td></tr>
 <tr class="memdesc:aa13ff27bbaf3d0a89d9c465cb1a7bf5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports the data.  <br /></td></tr>
 <tr class="separator:aa13ff27bbaf3d0a89d9c465cb1a7bf5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfaa71845d8c59907a37117054c0bd6b" id="r_acfaa71845d8c59907a37117054c0bd6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfaa71845d8c59907a37117054c0bd6b">export_hierarchy</a> (\renderer_base $output)</td></tr>
+<tr class="memdesc:acfaa71845d8c59907a37117054c0bd6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports course sections, sections delegated by modules and modules data in a hierarchical format.  <br /></td></tr>
+<tr class="separator:acfaa71845d8c59907a37117054c0bd6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e73a6f3bc8b460b45cbdab9161b0020" id="r_a9e73a6f3bc8b460b45cbdab9161b0020"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e73a6f3bc8b460b45cbdab9161b0020">export_section_data</a> (\renderer_base $output, <a class="el" href="../../d1/db5/classsection__info.html">section_info</a> $sectioninfo, bool $isdelegated=false)</td></tr>
 <tr class="memdesc:a9e73a6f3bc8b460b45cbdab9161b0020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports the data for a single section.  <br /></td></tr>
 <tr class="separator:a9e73a6f3bc8b460b45cbdab9161b0020"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,7 +221,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../df/d39/classreport__outline_1_1output_1_1activitieslist.html#a75d1d6b0b86a1c554938e96f86f24c76">report_outline\output\activitieslist</a>.</p>
+<p>Reimplemented in <a class="el" href="../../df/d39/classreport__outline_1_1output_1_1activitieslist.html#a75d1d6b0b86a1c554938e96f86f24c76">report_outline\output\activitieslist</a>, and <a class="el" href="../../de/dc9/classreport__outline_1_1output_1_1hierarchicalactivities.html#a19870b7f36e91acbfc522f3365cbf6ae">report_outline\output\hierarchicalactivities</a>.</p>
 
 </div>
 </div>
@@ -295,6 +299,37 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="acfaa71845d8c59907a37117054c0bd6b" name="acfaa71845d8c59907a37117054c0bd6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfaa71845d8c59907a37117054c0bd6b">&#9670;&#160;</a></span>export_hierarchy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_report\output\coursestructure::export_hierarchy </td>
+          <td>(</td>
+          <td class="paramtype">\renderer_base</td>          <td class="paramname"><span class="paramname"><em>$output</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exports course sections, sections delegated by modules and modules data in a hierarchical format. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">renderer_base</td><td class="paramname">$output</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array|stdClass</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a9e73a6f3bc8b460b45cbdab9161b0020" name="a9e73a6f3bc8b460b45cbdab9161b0020"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e73a6f3bc8b460b45cbdab9161b0020">&#9670;&#160;</a></span>export_section_data()</h2>
 
@@ -343,7 +378,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 18 2024 02:47:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Aug 25 2024 02:49:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240816) (6cd55074c72)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
   </td>
  </tr>
  </tbody>
@@ -94,9 +94,9 @@ Inheritance diagram for gradereport_user\report\user:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af6577ed88ba4cf7bbaa9faa230024d66" id="r_af6577ed88ba4cf7bbaa9faa230024d66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6577ed88ba4cf7bbaa9faa230024d66">__construct</a> (int $courseid, ?object $gpr, object $context, int $userid, bool $viewasuser=null)</td></tr>
-<tr class="memdesc:af6577ed88ba4cf7bbaa9faa230024d66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
-<tr class="separator:af6577ed88ba4cf7bbaa9faa230024d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af48a081d4b44c21de5b23fc02a27f24c" id="r_af48a081d4b44c21de5b23fc02a27f24c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af48a081d4b44c21de5b23fc02a27f24c">__construct</a> (int $courseid, ?object $gpr, object $context, int $userid, ?bool $viewasuser=null)</td></tr>
+<tr class="memdesc:af48a081d4b44c21de5b23fc02a27f24c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:af48a081d4b44c21de5b23fc02a27f24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7c50637929af06878a3525bf024da2b" id="r_ae7c50637929af06878a3525bf024da2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7c50637929af06878a3525bf024da2b">fill_contributions_column</a> (array $element)</td></tr>
 <tr class="memdesc:ae7c50637929af06878a3525bf024da2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called after the table has been built and the aggregationhints have been collected.  <br /></td></tr>
 <tr class="separator:ae7c50637929af06878a3525bf024da2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -370,8 +370,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 <tr class="separator:afa16a924e1dd82c39dedae31679c53fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af6577ed88ba4cf7bbaa9faa230024d66" name="af6577ed88ba4cf7bbaa9faa230024d66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6577ed88ba4cf7bbaa9faa230024d66">&#9670;&#160;</a></span>__construct()</h2>
+<a id="af48a081d4b44c21de5b23fc02a27f24c" name="af48a081d4b44c21de5b23fc02a27f24c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af48a081d4b44c21de5b23fc02a27f24c">&#9670;&#160;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -399,7 +399,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$viewasuser</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">?bool</td>          <td class="paramname"><span class="paramname"><em>$viewasuser</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -452,7 +452,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><div class="memdoc">
 
 <p>Optionally blank out course/category totals if they contain any hidden items. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000192">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 - Call blank_hidden_total_and_adjust_bounds instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000193">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 - Call blank_hidden_total_and_adjust_bounds instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$courseid</td><td>the course id </td></tr>
@@ -852,7 +852,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><div class="memdoc">
 
 <p>First checks the cached language strings, then returns match if found, or uses get_string() to get it from the <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>, caches it then returns it. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000191">Deprecated</a></b></dt><dd>since 4.2 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000192">Deprecated</a></b></dt><dd>since 4.2 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000087">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-77307" class="el">MDL-77307</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1849,7 +1849,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 18 2024 02:47:16 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Aug 25 2024 02:50:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

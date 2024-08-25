@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240816) (6cd55074c72)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
   </td>
  </tr>
  </tbody>
@@ -344,9 +344,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7a9dc88bc02b66373e158aa6e217f349" id="r_ga7a9dc88bc02b66373e158aa6e217f349"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7a9dc88bc02b66373e158aa6e217f349">workshop_extend_navigation</a> (<a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a> $navref, stdclass $course, stdclass $module, <a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $cm)</td></tr>
 <tr class="memdesc:ga7a9dc88bc02b66373e158aa6e217f349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extends the global navigation tree by adding workshop nodes if there is a relevant content.  <br /></td></tr>
 <tr class="separator:ga7a9dc88bc02b66373e158aa6e217f349"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga64f9ab8462c9501b884fbb20096c8480" id="r_ga64f9ab8462c9501b884fbb20096c8480"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga64f9ab8462c9501b884fbb20096c8480">workshop_extend_settings_navigation</a> (<a class="el" href="../../d8/dca/classsettings__navigation.html">settings_navigation</a> $settingsnav, <a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a> $workshopnode=null)</td></tr>
-<tr class="memdesc:ga64f9ab8462c9501b884fbb20096c8480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extends the settings navigation with the Workshop settings.  <br /></td></tr>
-<tr class="separator:ga64f9ab8462c9501b884fbb20096c8480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7df5601c1fc94e06300e5a7f830893c1" id="r_ga7df5601c1fc94e06300e5a7f830893c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7df5601c1fc94e06300e5a7f830893c1">workshop_extend_settings_navigation</a> (<a class="el" href="../../d8/dca/classsettings__navigation.html">settings_navigation</a> $settingsnav, ?<a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a> $workshopnode=null)</td></tr>
+<tr class="memdesc:ga7df5601c1fc94e06300e5a7f830893c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extends the settings navigation with the Workshop settings.  <br /></td></tr>
+<tr class="separator:ga7df5601c1fc94e06300e5a7f830893c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa31058b1c6e1ad4aed404f087127d816" id="r_gaa31058b1c6e1ad4aed404f087127d816"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa31058b1c6e1ad4aed404f087127d816">workshop_get_coursemodule_info</a> ($coursemodule)</td></tr>
 <tr class="memdesc:gaa31058b1c6e1ad4aed404f087127d816"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a get_coursemodule_info function in case any feedback type wants to add 'extra' information for the course (see resource).  <br /></td></tr>
 <tr class="separator:gaa31058b1c6e1ad4aed404f087127d816"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -879,8 +879,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>WORKSHOP_SUBMISSION_
 
 </div>
 </div>
-<a id="ga64f9ab8462c9501b884fbb20096c8480" name="ga64f9ab8462c9501b884fbb20096c8480"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga64f9ab8462c9501b884fbb20096c8480">&#9670;&#160;</a></span>workshop_extend_settings_navigation()</h2>
+<a id="ga7df5601c1fc94e06300e5a7f830893c1" name="ga7df5601c1fc94e06300e5a7f830893c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7df5601c1fc94e06300e5a7f830893c1">&#9670;&#160;</a></span>workshop_extend_settings_navigation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -893,7 +893,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>WORKSHOP_SUBMISSION_
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a></td>          <td class="paramname"><span class="paramname"><em>$workshopnode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">?<a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a></td>          <td class="paramname"><span class="paramname"><em>$workshopnode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1575,7 +1575,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>WORKSHOP_SUBMISSION_
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001330">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001360">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8 </dd></dl>
 
 </div>
 </div>
@@ -1943,7 +1943,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>WORKSHOP_SUBMISSION_
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 18 2024 02:45:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Aug 25 2024 02:48:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>
