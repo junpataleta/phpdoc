@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240829) (072fb90384d)</div>
   </td>
  </tr>
  </tbody>
@@ -89,7 +89,6 @@ Inheritance diagram for repository_url:</div>
   <img src="../../d8/d84/classrepository__url.png" usemap="#repository_5Furl_map" alt=""/>
   <map id="repository_5Furl_map" name="repository_5Furl_map">
 <area href="../../dc/d1a/classrepository.html" title="This is the base class of the repository class." alt="repository" shape="rect" coords="0,56,112,80"/>
-<area href="../../d3/db0/interfacecacheable__object.html" title="Cacheable object." alt="cacheable_object" shape="rect" coords="0,0,112,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -517,7 +516,7 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_CSS_IMPORTS<
 
 <p>Scan file, throws exception in case of infected file. </p>
 <p>Please note that the scanning engine must be able to access the file, permissions of the file are not modified here!</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001482">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001478">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.0 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$thefile</td><td></td></tr>
@@ -565,7 +564,7 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_CSS_IMPORTS<
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001481">Deprecated</a></b></dt><dd>since 2.5 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001477">Deprecated</a></b></dt><dd>since 2.5 </dd></dl>
 
 </div>
 </div>
@@ -647,7 +646,7 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_CSS_IMPORTS<
 </div><div class="memdoc">
 
 <p>Builds a tree of files This function is then called recursively. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000419">Todo</a></b></dt><dd>take $search into account, and respect a threshold for dynamic loading </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000412">Todo</a></b></dt><dd>take $search into account, and respect a threshold for dynamic loading </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../de/dff/classfile__info.html" title="Base class for things in the tree navigated by file_browser.">file_info</a></td><td class="paramname">$fileinfo</td><td>an object returned by <a class="el" href="../../d3/d38/classfile__browser.html#a697178efb2ba61c157da8987b6607922" title="Looks up file_info instance.">file_browser\get_file_info()</a> </td></tr>
@@ -1570,7 +1569,7 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_CSS_IMPORTS<
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001483">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001479">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
 
 </div>
 </div>
@@ -2706,7 +2705,7 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_CSS_IMPORTS<
 </div><div class="memdoc">
 
 <p>Move file from download folder to file pool using FILE API. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000418">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-28637" class="el">MDL-28637</a></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000411">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-28637" class="el">MDL-28637</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$thefile</td><td>file path in download folder </td></tr>
@@ -3053,15 +3052,13 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_CSS_IMPORTS<
 </div><div class="memdoc">
 
 <p>Prepares the repository to be cached. </p>
-<p>Implements method from <a class="el" href="../../d3/db0/interfacecacheable__object.html" title="Cacheable object.">cacheable_object</a> interface.</p>
+<p>Implements method from cacheable_object interface.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td></td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Implements <a class="el" href="../../d3/db0/interfacecacheable__object.html#aa1819bfb33722e7f9a3672bd4aba6e2a">cacheable_object</a>.</p>
 
 </div>
 </div>
@@ -3219,7 +3216,7 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_CSS_IMPORTS<
 </div><div class="memdoc">
 
 <p>Function <a class="el" href="../../dc/d1a/classrepository.html#a81e575cb60d16aee1ef4dbb892f400e4" title="Function repository\reset_caches() is deprecated, cache is handled by MUC now.">repository\reset_caches()</a> is deprecated, cache is handled by MUC now. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001484">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.6 <a href="https://tracker.moodle.org/browse/MDL-42016" class="el">MDL-42016</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001480">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.6 <a href="https://tracker.moodle.org/browse/MDL-42016" class="el">MDL-42016</a> - please do not use this function any more. </dd></dl>
 
 </div>
 </div>
@@ -3575,7 +3572,7 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_CSS_IMPORTS<
 
 <p>Function <a class="el" href="../../dc/d1a/classrepository.html#a91ddea19dc0e264c77258280dbab29b7" title="Function repository\sync_external_file() is deprecated.">repository\sync_external_file()</a> is deprecated. </p>
 <p>Use <a class="el" href="../../dc/d1a/classrepository.html#a176c4c95cbd9c2b362fb90ea14f4ce13" title="Performs synchronisation of an external file if the previous one has expired.">repository\sync_reference</a> instead</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001485">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.6 <a href="https://tracker.moodle.org/browse/MDL-42016" class="el">MDL-42016</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001481">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.6 <a href="https://tracker.moodle.org/browse/MDL-42016" class="el">MDL-42016</a> - please do not use this function any more. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dc/d1a/classrepository.html#a176c4c95cbd9c2b362fb90ea14f4ce13" title="Performs synchronisation of an external file if the previous one has expired.">repository\sync_reference()</a> </dd></dl>
 
 </div>
@@ -3797,7 +3794,7 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_CSS_IMPORTS<
 </div><div class="memdoc">
 
 <p>Helper function to indicate if this repository uses post requests for uploading files. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001486">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.2, 3.1.1, 3.0.5 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001482">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.2, 3.1.1, 3.0.5 </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td></td></tr>
@@ -3831,15 +3828,13 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_CSS_IMPORTS<
 </div><div class="memdoc">
 
 <p>Restores the repository from cache. </p>
-<p>Implements method from <a class="el" href="../../d3/db0/interfacecacheable__object.html" title="Cacheable object.">cacheable_object</a> interface.</p>
+<p>Implements method from cacheable_object interface.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td></td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Implements <a class="el" href="../../d3/db0/interfacecacheable__object.html#ae85a357bab41da508d1818447379a5d7">cacheable_object</a>.</p>
 
 </div>
 </div>
@@ -3890,7 +3885,7 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_CSS_IMPORTS<
 </div><div class="memdoc">
 
 <p>Timeout in seconds for downloading the external file into moodle. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001478">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.7, please use $CFG-&gt;repositorygetfiletimeout instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001474">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.7, please use $CFG-&gt;repositorygetfiletimeout instead </dd></dl>
 
 </div>
 </div>
@@ -3915,7 +3910,7 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_CSS_IMPORTS<
 </div><div class="memdoc">
 
 <p>Timeout in seconds for syncronising the external file size. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001479">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.7, please use $CFG-&gt;repositorysyncfiletimeout instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001475">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.7, please use $CFG-&gt;repositorysyncfiletimeout instead </dd></dl>
 
 </div>
 </div>
@@ -3940,7 +3935,7 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_CSS_IMPORTS<
 </div><div class="memdoc">
 
 <p>Timeout in seconds for downloading an image file from external repository during syncronisation. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001480">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.7, please use $CFG-&gt;repositorysyncimagetimeout instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001476">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.7, please use $CFG-&gt;repositorysyncimagetimeout instead </dd></dl>
 
 </div>
 </div>
@@ -3950,7 +3945,7 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_CSS_IMPORTS<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 25 2024 02:49:09 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 1 2024 03:00:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

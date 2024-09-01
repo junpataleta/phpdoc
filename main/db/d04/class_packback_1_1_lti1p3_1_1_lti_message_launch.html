@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240829) (072fb90384d)</div>
   </td>
  </tr>
  </tbody>
@@ -85,7 +85,7 @@ $(function(){ initResizable(false); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af0db34657e5ce93036d6f6fb7eee4ad1" id="r_af0db34657e5ce93036d6f6fb7eee4ad1"><td class="memItemLeft" align="right" valign="top"><a id="af0db34657e5ce93036d6f6fb7eee4ad1" name="af0db34657e5ce93036d6f6fb7eee4ad1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>__construct</b> (private <a class="el" href="../../d6/d74/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_database.html">IDatabase</a> $db, private <a class="el" href="../../de/df3/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_cache.html">ICache</a> $<a class="el" href="../../d3/d3d/classcache.html">cache</a>, private <a class="el" href="../../db/d88/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_cookie.html">ICookie</a> $cookie, private <a class="el" href="../../df/d0f/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_lti_service_connector.html">ILtiServiceConnector</a> $serviceConnector)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>__construct</b> (private <a class="el" href="../../d6/d74/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_database.html">IDatabase</a> $db, private <a class="el" href="../../de/df3/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_cache.html">ICache</a> $cache, private <a class="el" href="../../db/d88/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_cookie.html">ICookie</a> $cookie, private <a class="el" href="../../df/d0f/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_lti_service_connector.html">ILtiServiceConnector</a> $serviceConnector)</td></tr>
 <tr class="separator:af0db34657e5ce93036d6f6fb7eee4ad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afca6eafedf6035e661fb4c722a4964f6" id="r_afca6eafedf6035e661fb4c722a4964f6"><td class="memItemLeft" align="right" valign="top"><a id="afca6eafedf6035e661fb4c722a4964f6" name="afca6eafedf6035e661fb4c722a4964f6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>cacheLaunchData</b> ()</td></tr>
@@ -156,14 +156,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac1028bfa506493faaad3e8dc37bcd846" id="r_ac1028bfa506493faaad3e8dc37bcd846"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1028bfa506493faaad3e8dc37bcd846">fromCache</a> (string $launch_id, <a class="el" href="../../d6/d74/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_database.html">IDatabase</a> $db, <a class="el" href="../../de/df3/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_cache.html">ICache</a> $<a class="el" href="../../d3/d3d/classcache.html">cache</a>, <a class="el" href="../../db/d88/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_cookie.html">ICookie</a> $cookie, <a class="el" href="../../df/d0f/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_lti_service_connector.html">ILtiServiceConnector</a> $serviceConnector)</td></tr>
+<tr class="memitem:ac1028bfa506493faaad3e8dc37bcd846" id="r_ac1028bfa506493faaad3e8dc37bcd846"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1028bfa506493faaad3e8dc37bcd846">fromCache</a> (string $launch_id, <a class="el" href="../../d6/d74/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_database.html">IDatabase</a> $db, <a class="el" href="../../de/df3/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_cache.html">ICache</a> $cache, <a class="el" href="../../db/d88/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_cookie.html">ICookie</a> $cookie, <a class="el" href="../../df/d0f/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_lti_service_connector.html">ILtiServiceConnector</a> $serviceConnector)</td></tr>
 <tr class="memdesc:ac1028bfa506493faaad3e8dc37bcd846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an LtiMessageLaunch from a <a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> using a launch id.  <br /></td></tr>
 <tr class="separator:ac1028bfa506493faaad3e8dc37bcd846"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addaaa0db57e3bda189c7e4c2d0855a6e" id="r_addaaa0db57e3bda189c7e4c2d0855a6e"><td class="memItemLeft" align="right" valign="top"><a id="addaaa0db57e3bda189c7e4c2d0855a6e" name="addaaa0db57e3bda189c7e4c2d0855a6e"></a>
 static&#160;</td><td class="memItemRight" valign="bottom"><b>getMissingRegistrationErrorMsg</b> (string $issuerUrl, ?string $clientId=null)</td></tr>
 <tr class="separator:addaaa0db57e3bda189c7e4c2d0855a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62506ea91e4c5e8d3dc1541d38fa558d" id="r_a62506ea91e4c5e8d3dc1541d38fa558d"><td class="memItemLeft" align="right" valign="top"><a id="a62506ea91e4c5e8d3dc1541d38fa558d" name="a62506ea91e4c5e8d3dc1541d38fa558d"></a>
-static&#160;</td><td class="memItemRight" valign="bottom"><b>new</b> (<a class="el" href="../../d6/d74/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_database.html">IDatabase</a> $db, <a class="el" href="../../de/df3/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_cache.html">ICache</a> $<a class="el" href="../../d3/d3d/classcache.html">cache</a>, <a class="el" href="../../db/d88/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_cookie.html">ICookie</a> $cookie, <a class="el" href="../../df/d0f/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_lti_service_connector.html">ILtiServiceConnector</a> $serviceConnector)</td></tr>
+static&#160;</td><td class="memItemRight" valign="bottom"><b>new</b> (<a class="el" href="../../d6/d74/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_database.html">IDatabase</a> $db, <a class="el" href="../../de/df3/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_cache.html">ICache</a> $cache, <a class="el" href="../../db/d88/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_cookie.html">ICookie</a> $cookie, <a class="el" href="../../df/d0f/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_lti_service_connector.html">ILtiServiceConnector</a> $serviceConnector)</td></tr>
 <tr class="memdesc:a62506ea91e4c5e8d3dc1541d38fa558d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static function to allow for method chaining without having to assign to a variable first. <br /></td></tr>
 <tr class="separator:a62506ea91e4c5e8d3dc1541d38fa558d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -353,7 +353,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 25 2024 02:50:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 1 2024 03:01:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

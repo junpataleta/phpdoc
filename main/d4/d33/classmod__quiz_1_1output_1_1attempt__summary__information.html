@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240829) (072fb90384d)</div>
   </td>
  </tr>
  </tbody>
@@ -75,6 +75,7 @@ $(function(){ initResizable(false); });
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d6/d04/classmod__quiz_1_1output_1_1attempt__summary__information-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">mod_quiz\output\attempt_summary_information Class Reference<div class="ingroups"><a class="el" href="../../dd/df0/group__mod__quiz.html">mod_quiz</a></div></div></div>
@@ -99,6 +100,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a38c687aae4dddb8cf0ea45b5432a90d3" id="r_a38c687aae4dddb8cf0ea45b5432a90d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38c687aae4dddb8cf0ea45b5432a90d3">add_item</a> (string $shortname, string|renderable $title, string|renderable $content)</td></tr>
 <tr class="memdesc:a38c687aae4dddb8cf0ea45b5432a90d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an item to the summary.  <br /></td></tr>
 <tr class="separator:a38c687aae4dddb8cf0ea45b5432a90d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05866b35f53506dd7b958b3e6e4ba21e" id="r_a05866b35f53506dd7b958b3e6e4ba21e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05866b35f53506dd7b958b3e6e4ba21e">add_item_after</a> (string $shortname, string|renderable $title, string|renderable $content, string $addafter,)</td></tr>
+<tr class="memdesc:a05866b35f53506dd7b958b3e6e4ba21e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an item to the summary just after the given item.  <br /></td></tr>
+<tr class="separator:a05866b35f53506dd7b958b3e6e4ba21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bf38a4f1350eef0bcf8e82deb3a2b84" id="r_a1bf38a4f1350eef0bcf8e82deb3a2b84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1bf38a4f1350eef0bcf8e82deb3a2b84">add_item_before</a> (string $shortname, string|renderable $title, string|renderable $content, string $addbefore,)</td></tr>
+<tr class="memdesc:a1bf38a4f1350eef0bcf8e82deb3a2b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an item to the summary just before the given item.  <br /></td></tr>
+<tr class="separator:a1bf38a4f1350eef0bcf8e82deb3a2b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cf6e8a9b1f2e80e8cace2e4c6c8df0c" id="r_a3cf6e8a9b1f2e80e8cace2e4c6c8df0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc7/interfacecore_1_1output_1_1templatable.html#a3cf6e8a9b1f2e80e8cace2e4c6c8df0c">export_for_template</a> (renderer_base $output)</td></tr>
 <tr class="memdesc:a3cf6e8a9b1f2e80e8cace2e4c6c8df0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to export the renderer data in a format that is suitable for a mustache template.  <br /></td></tr>
 <tr class="separator:a3cf6e8a9b1f2e80e8cace2e4c6c8df0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,6 +121,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a648271ba885de567b2f750397592fe0d" id="r_a648271ba885de567b2f750397592fe0d"><td class="memItemLeft" align="right" valign="top"><a id="a648271ba885de567b2f750397592fe0d" name="a648271ba885de567b2f750397592fe0d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>get_template_name</b> (renderer_base $<a class="el" href="../../d0/d9d/classmod__quiz_1_1output_1_1renderer.html">renderer</a>)</td></tr>
 <tr class="separator:a648271ba885de567b2f750397592fe0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b51628d9106475aa1082d75b71d2d76" id="r_a4b51628d9106475aa1082d75b71d2d76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b51628d9106475aa1082d75b71d2d76">remove_item</a> (string $shortname)</td></tr>
+<tr class="memdesc:a4b51628d9106475aa1082d75b71d2d76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an item, if present.  <br /></td></tr>
+<tr class="separator:a4b51628d9106475aa1082d75b71d2d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -123,6 +133,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a882db81e9882b7526a98a709691cc845" id="r_a882db81e9882b7526a98a709691cc845"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a882db81e9882b7526a98a709691cc845">create_from_legacy_array</a> (array $items)</td></tr>
 <tr class="memdesc:a882db81e9882b7526a98a709691cc845"><td class="mdescLeft">&#160;</td><td class="mdescRight">To aid conversion of old code.  <br /></td></tr>
 <tr class="separator:a882db81e9882b7526a98a709691cc845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a212d992f4f3cc380fabfd23a79381ea6" id="r_a212d992f4f3cc380fabfd23a79381ea6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a212d992f4f3cc380fabfd23a79381ea6">insert_new_item_at_position</a> (string $shortname, string|renderable $title, string|renderable $content, int $position,)</td></tr>
+<tr class="memdesc:a212d992f4f3cc380fabfd23a79381ea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an item to the summary just before the given position.  <br /></td></tr>
+<tr class="separator:a212d992f4f3cc380fabfd23a79381ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -198,6 +214,92 @@ Protected Attributes</h2></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$shortname</td><td>unique identifier of this item (not displayed). </td></tr>
     <tr><td class="paramtype">string&#160;|&#160;renderable</td><td class="paramname">$title</td><td>the title of this item. </td></tr>
     <tr><td class="paramtype">string&#160;|&#160;renderable</td><td class="paramname">$content</td><td>the content of this item. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a05866b35f53506dd7b958b3e6e4ba21e" name="a05866b35f53506dd7b958b3e6e4ba21e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05866b35f53506dd7b958b3e6e4ba21e">&#9670;&#160;</a></span>add_item_after()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\output\attempt_summary_information::add_item_after </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$shortname</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string|renderable</td>          <td class="paramname"><span class="paramname"><em>$title</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string|renderable</td>          <td class="paramname"><span class="paramname"><em>$content</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$addafter</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add an item to the summary just after the given item. </p>
+<p>If that item is not present, then just add at the end.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$shortname</td><td>unique identifier of this item (not displayed). </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;renderable</td><td class="paramname">$title</td><td>the title of this item. </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;renderable</td><td class="paramname">$content</td><td>the content of this item. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$addafter</td><td>identifier of the other item to add this before. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1bf38a4f1350eef0bcf8e82deb3a2b84" name="a1bf38a4f1350eef0bcf8e82deb3a2b84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bf38a4f1350eef0bcf8e82deb3a2b84">&#9670;&#160;</a></span>add_item_before()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\output\attempt_summary_information::add_item_before </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$shortname</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string|renderable</td>          <td class="paramname"><span class="paramname"><em>$title</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string|renderable</td>          <td class="paramname"><span class="paramname"><em>$content</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$addbefore</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add an item to the summary just before the given item. </p>
+<p>If that item is not present, then add as the first item.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$shortname</td><td>unique identifier of this item (not displayed). </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;renderable</td><td class="paramname">$title</td><td>the title of this item. </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;renderable</td><td class="paramname">$content</td><td>the content of this item. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$addbefore</td><td>identifier of the other item to add this before. </td></tr>
   </table>
   </dd>
 </dl>
@@ -411,6 +513,81 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a212d992f4f3cc380fabfd23a79381ea6" name="a212d992f4f3cc380fabfd23a79381ea6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a212d992f4f3cc380fabfd23a79381ea6">&#9670;&#160;</a></span>insert_new_item_at_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\output\attempt_summary_information::insert_new_item_at_position </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$shortname</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string|renderable</td>          <td class="paramname"><span class="paramname"><em>$title</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string|renderable</td>          <td class="paramname"><span class="paramname"><em>$content</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$position</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add an item to the summary just before the given position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$shortname</td><td>unique identifier of this item (not displayed). </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;renderable</td><td class="paramname">$title</td><td>the title of this item. </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;renderable</td><td class="paramname">$content</td><td>the content of this item. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$position</td><td>Numerical position to insert the item at. 0 means first. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4b51628d9106475aa1082d75b71d2d76" name="a4b51628d9106475aa1082d75b71d2d76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b51628d9106475aa1082d75b71d2d76">&#9670;&#160;</a></span>remove_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\output\attempt_summary_information::remove_item </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$shortname</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove an item, if present. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$shortname</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a186a98b4fc8b6078c7e3f23a7eae85fd" name="a186a98b4fc8b6078c7e3f23a7eae85fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a186a98b4fc8b6078c7e3f23a7eae85fd">&#9670;&#160;</a></span>$summarydata</h2>
@@ -443,7 +620,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 25 2024 02:50:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 1 2024 03:01:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

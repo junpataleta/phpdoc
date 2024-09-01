@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240829) (072fb90384d)</div>
   </td>
  </tr>
  </tbody>
@@ -110,6 +110,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1ee229de6db3740ea454f23248a41779" id="r_a1ee229de6db3740ea454f23248a41779"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ee229de6db3740ea454f23248a41779">guess_base_url</a> ()</td></tr>
 <tr class="memdesc:a1ee229de6db3740ea454f23248a41779"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide a default implementation for guessing the base URL from the action URL.  <br /></td></tr>
 <tr class="separator:a1ee229de6db3740ea454f23248a41779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a843ae1d396ece76e14650b44060d442b" id="r_a843ae1d396ece76e14650b44060d442b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a843ae1d396ece76e14650b44060d442b">has_capability</a> ()</td></tr>
+<tr class="memdesc:a843ae1d396ece76e14650b44060d442b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the user has the capability to access this table.  <br /></td></tr>
+<tr class="separator:a843ae1d396ece76e14650b44060d442b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a051f7cea73477e6a2879d0865819ad37" id="r_a051f7cea73477e6a2879d0865819ad37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a051f7cea73477e6a2879d0865819ad37">is_downloadable</a> ($downloadable=null)</td></tr>
 <tr class="memdesc:a051f7cea73477e6a2879d0865819ad37"><td class="mdescLeft">&#160;</td><td class="mdescRight">This table is not downloadable.  <br /></td></tr>
 <tr class="separator:a051f7cea73477e6a2879d0865819ad37"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -768,6 +771,34 @@ core plugininfo base[] array&#160;</td><td class="memItemRight" valign="bottom">
 
 </div>
 </div>
+<a id="a843ae1d396ece76e14650b44060d442b" name="a843ae1d396ece76e14650b44060d442b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a843ae1d396ece76e14650b44060d442b">&#9670;&#160;</a></span>has_capability()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_admin\table\plugin_management_table::has_capability </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if the user has the capability to access this table. </p>
+<p>Default implementation for plugin management tables is to require 'moodle/site:config' capability</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>Return true if capability check passed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../d5/d15/interfacecore__table_1_1dynamic.html#ae50dc9f4d99c2824feec8233d85311ea">core_table\dynamic</a>.</p>
+
+</div>
+</div>
 <a id="a051f7cea73477e6a2879d0865819ad37" name="a051f7cea73477e6a2879d0865819ad37"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a051f7cea73477e6a2879d0865819ad37">&#9670;&#160;</a></span>is_downloadable()</h2>
 
@@ -952,7 +983,7 @@ core plugininfo base[] array&#160;</td><td class="memItemRight" valign="bottom">
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 25 2024 02:49:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 1 2024 03:00:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

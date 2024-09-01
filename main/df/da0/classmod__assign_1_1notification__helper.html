@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240829) (072fb90384d)</div>
   </td>
  </tr>
  </tbody>
@@ -83,6 +83,12 @@ $(function(){ initResizable(false); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a5ccd268524b2823bfdeccdb99f0db860" id="r_a5ccd268524b2823bfdeccdb99f0db860"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ccd268524b2823bfdeccdb99f0db860">get_due_digest_assignments</a> ()</td></tr>
+<tr class="memdesc:a5ccd268524b2823bfdeccdb99f0db860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all assignments that are due in 7 days (includes users and groups with due date overrides).  <br /></td></tr>
+<tr class="separator:a5ccd268524b2823bfdeccdb99f0db860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6b6d772afe811d3c623b2d5baa4e2a0" id="r_ad6b6d772afe811d3c623b2d5baa4e2a0"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6b6d772afe811d3c623b2d5baa4e2a0">get_due_digest_assignments_for_user</a> (int $userid)</td></tr>
+<tr class="memdesc:ad6b6d772afe811d3c623b2d5baa4e2a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all assignments for a user that are due in 7 days (includes users and groups with due date overrides).  <br /></td></tr>
+<tr class="separator:ad6b6d772afe811d3c623b2d5baa4e2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e42db91410cb8e4ab4739195c42bc1c" id="r_a4e42db91410cb8e4ab4739195c42bc1c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e42db91410cb8e4ab4739195c42bc1c">get_due_soon_assignments</a> ()</td></tr>
 <tr class="memdesc:a4e42db91410cb8e4ab4739195c42bc1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all assignments that have an approaching due date (includes users and groups with due date overrides).  <br /></td></tr>
 <tr class="separator:a4e42db91410cb8e4ab4739195c42bc1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -92,6 +98,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a63458a9c487a77c27ed702459fc4db0c" id="r_a63458a9c487a77c27ed702459fc4db0c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63458a9c487a77c27ed702459fc4db0c">get_users_within_assignment</a> (int $assignmentid, string $type)</td></tr>
 <tr class="memdesc:a63458a9c487a77c27ed702459fc4db0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all assignment users that we should send the notification to.  <br /></td></tr>
 <tr class="separator:a63458a9c487a77c27ed702459fc4db0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8488d5f8d0fe2e8750da4f4c3d79e953" id="r_a8488d5f8d0fe2e8750da4f4c3d79e953"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8488d5f8d0fe2e8750da4f4c3d79e953">send_due_digest_notification_to_user</a> (int $userid)</td></tr>
+<tr class="memdesc:a8488d5f8d0fe2e8750da4f4c3d79e953"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the assignments and send the due digest notification to the user.  <br /></td></tr>
+<tr class="separator:a8488d5f8d0fe2e8750da4f4c3d79e953"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bd01a5484993c556cd399d5906637a8" id="r_a1bd01a5484993c556cd399d5906637a8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1bd01a5484993c556cd399d5906637a8">send_due_soon_notification_to_user</a> (int $assignmentid, int $userid)</td></tr>
 <tr class="memdesc:a1bd01a5484993c556cd399d5906637a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the due soon notification to the user.  <br /></td></tr>
 <tr class="separator:a1bd01a5484993c556cd399d5906637a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -101,6 +110,10 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a07b831762eaea376aa19fec57d7e5f85" id="r_a07b831762eaea376aa19fec57d7e5f85"><td class="memItemLeft" align="right" valign="top"><a id="a07b831762eaea376aa19fec57d7e5f85" name="a07b831762eaea376aa19fec57d7e5f85"></a>
+string const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_DUE_DIGEST</b> = 'assign_due_digest'</td></tr>
+<tr class="memdesc:a07b831762eaea376aa19fec57d7e5f85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Due digest notification type. <br /></td></tr>
+<tr class="separator:a07b831762eaea376aa19fec57d7e5f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a169dc51d0785966db29341a0cab9a0df" id="r_a169dc51d0785966db29341a0cab9a0df"><td class="memItemLeft" align="right" valign="top"><a id="a169dc51d0785966db29341a0cab9a0df" name="a169dc51d0785966db29341a0cab9a0df"></a>
 string const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_DUE_SOON</b> = 'assign_due_soon'</td></tr>
 <tr class="memdesc:a169dc51d0785966db29341a0cab9a0df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Due soon notification type. <br /></td></tr>
@@ -115,6 +128,9 @@ Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:a112ad7d8c91cb445be616461c4b2e273" id="r_a112ad7d8c91cb445be616461c4b2e273"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a112ad7d8c91cb445be616461c4b2e273">get_assignment_data</a> (int $assignmentid)</td></tr>
 <tr class="memdesc:a112ad7d8c91cb445be616461c4b2e273"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the assignment object, including the course and course module.  <br /></td></tr>
 <tr class="separator:a112ad7d8c91cb445be616461c4b2e273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50227585126159a984d9690edf1ac736" id="r_a50227585126159a984d9690edf1ac736"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50227585126159a984d9690edf1ac736">get_day_start_and_end</a> (int $timestamp)</td></tr>
+<tr class="memdesc:a50227585126159a984d9690edf1ac736"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the timestamps for the start (00:00:00) and end (23:59:59) of the provided day.  <br /></td></tr>
+<tr class="separator:a50227585126159a984d9690edf1ac736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53e849b56df72c45ca6762f60075e785" id="r_a53e849b56df72c45ca6762f60075e785"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53e849b56df72c45ca6762f60075e785">get_future_time</a> (int $interval)</td></tr>
 <tr class="memdesc:a53e849b56df72c45ca6762f60075e785"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a future time.  <br /></td></tr>
 <tr class="separator:a53e849b56df72c45ca6762f60075e785"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,7 +141,7 @@ Static Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a67355e3898ed8c9e77f9c16fcbdc905a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a user has been sent a notification already.  <br /></td></tr>
 <tr class="separator:a67355e3898ed8c9e77f9c16fcbdc905a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a020239605fe2108bc64b73a4c1bfbb14" id="r_a020239605fe2108bc64b73a4c1bfbb14"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a020239605fe2108bc64b73a4c1bfbb14">is_time_within_range</a> (int $time, array $range)</td></tr>
-<tr class="memdesc:a020239605fe2108bc64b73a4c1bfbb14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a time is within the current time now and the future time values.  <br /></td></tr>
+<tr class="memdesc:a020239605fe2108bc64b73a4c1bfbb14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a time is within the current time now and the future time values (inclusive).  <br /></td></tr>
 <tr class="separator:a020239605fe2108bc64b73a4c1bfbb14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -162,6 +178,117 @@ Static Protected Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">assign</td><td>Returns the assign object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a50227585126159a984d9690edf1ac736" name="a50227585126159a984d9690edf1ac736"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50227585126159a984d9690edf1ac736">&#9670;&#160;</a></span>get_day_start_and_end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static mod_assign\notification_helper::get_day_start_and_end </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$timestamp</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the timestamps for the start (00:00:00) and end (23:59:59) of the provided day. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$timestamp</td><td>The timestamp to base the calculation on. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>Day start and end timestamps. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5ccd268524b2823bfdeccdb99f0db860" name="a5ccd268524b2823bfdeccdb99f0db860"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ccd268524b2823bfdeccdb99f0db860">&#9670;&#160;</a></span>get_due_digest_assignments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static mod_assign\notification_helper::get_due_digest_assignments </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get all assignments that are due in 7 days (includes users and groups with due date overrides). </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../d6/d34/classmoodle__recordset.html" title="Abstract class for resultsets returned from database functions.">moodle_recordset</a></td><td>Returns the matching assignment records. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad6b6d772afe811d3c623b2d5baa4e2a0" name="ad6b6d772afe811d3c623b2d5baa4e2a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6b6d772afe811d3c623b2d5baa4e2a0">&#9670;&#160;</a></span>get_due_digest_assignments_for_user()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static mod_assign\notification_helper::get_due_digest_assignments_for_user </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$userid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get all assignments for a user that are due in 7 days (includes users and groups with due date overrides). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>The user id. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../d6/d34/classmoodle__recordset.html" title="Abstract class for resultsets returned from database functions.">moodle_recordset</a></td><td>Returns the matching assignment records. </td></tr>
   </table>
   </dd>
 </dl>
@@ -428,7 +555,7 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Check if a time is within the current time now and the future time values. </p>
+<p>Check if a time is within the current time now and the future time values (inclusive). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$time</td><td>The timestamp to check. </td></tr>
@@ -439,6 +566,39 @@ Static Protected Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">boolean</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8488d5f8d0fe2e8750da4f4c3d79e953" name="a8488d5f8d0fe2e8750da4f4c3d79e953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8488d5f8d0fe2e8750da4f4c3d79e953">&#9670;&#160;</a></span>send_due_digest_notification_to_user()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static mod_assign\notification_helper::send_due_digest_notification_to_user </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$userid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get all the assignments and send the due digest notification to the user. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>The user id. </td></tr>
   </table>
   </dd>
 </dl>
@@ -527,7 +687,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 25 2024 02:50:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 1 2024 03:01:16 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240829) (072fb90384d)</div>
   </td>
  </tr>
  </tbody>
@@ -1028,7 +1028,7 @@ array&lt; int, $importPaths=[];protected array&lt; string, $importCache=[];prote
 <tr class="memdesc:aedbdc30eea8252e8e1525fd016ce460d"><td class="mdescLeft">&#160;</td><td class="mdescRight">string|callable&gt; <br /></td></tr>
 <tr class="separator:aedbdc30eea8252e8e1525fd016ce460d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9a5227e5e5174533cc5e9f44e627199" id="r_ae9a5227e5e5174533cc5e9f44e627199"><td class="memItemLeft" align="right" valign="top"><a id="ae9a5227e5e5174533cc5e9f44e627199" name="ae9a5227e5e5174533cc5e9f44e627199"></a>
-array&lt; int, $sourceNames;protected <a class="el" href="../../db/dac/class_scss_php_1_1_scss_php_1_1_cache.html">Cache</a>|null $<a class="el" href="../../d3/d3d/classcache.html">cache</a>;protected bool $cacheCheckImportResolutions=false;protected int $indentLevel;protected array[] $extends;protected array&lt; string, $extendsMap;protected array&lt; string, $parsedFiles=[];protected <a class="el" href="../../dc/db7/class_parser.html">Parser</a>|null $parser;protected int|null $sourceIndex;protected int|null $sourceLine;protected int|null $sourceColumn;protected bool|null $shouldEvaluate;protected null $ignoreErrors;protected bool $ignoreCallStackMessage=false;protected array[] $callStack=[];private array $resolvedImports=[];private string|null $currentDirectory;private string $rootDirectory;private bool $legacyCwdImportPath=true;private <a class="el" href="../../d0/d48/interface_scss_php_1_1_scss_php_1_1_logger_1_1_logger_interface.html">LoggerInterface</a> $logger;private array&lt; string, $warnedChildFunctions=[];public function __construct( $cacheOptions=null) { $this-&gt;sourceNames=[];if( $cacheOptions) { $this-&gt;<a class="el" href="../../d3/d3d/classcache.html">cache</a>=new <a class="el" href="../../db/dac/class_scss_php_1_1_scss_php_1_1_cache.html">Cache</a>( $cacheOptions);if(!empty( $cacheOptions[ 'checkImportResolutions'])) { $this-&gt;cacheCheckImportResolutions=true;} } $this-&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>logger</b> = new <a class="el" href="../../d9/de2/class_scss_php_1_1_scss_php_1_1_logger_1_1_stream_logger.html">StreamLogger</a>(fopen('php://stderr', 'w'), true)</td></tr>
+array&lt; int, $sourceNames;protected <a class="el" href="../../db/dac/class_scss_php_1_1_scss_php_1_1_cache.html">Cache</a>|null $cache;protected bool $cacheCheckImportResolutions=false;protected int $indentLevel;protected array[] $extends;protected array&lt; string, $extendsMap;protected array&lt; string, $parsedFiles=[];protected <a class="el" href="../../dc/db7/class_parser.html">Parser</a>|null $parser;protected int|null $sourceIndex;protected int|null $sourceLine;protected int|null $sourceColumn;protected bool|null $shouldEvaluate;protected null $ignoreErrors;protected bool $ignoreCallStackMessage=false;protected array[] $callStack=[];private array $resolvedImports=[];private string|null $currentDirectory;private string $rootDirectory;private bool $legacyCwdImportPath=true;private <a class="el" href="../../d0/d48/interface_scss_php_1_1_scss_php_1_1_logger_1_1_logger_interface.html">LoggerInterface</a> $logger;private array&lt; string, $warnedChildFunctions=[];public function __construct( $cacheOptions=null) { $this-&gt;sourceNames=[];if( $cacheOptions) { $this-&gt;cache=new <a class="el" href="../../db/dac/class_scss_php_1_1_scss_php_1_1_cache.html">Cache</a>( $cacheOptions);if(!empty( $cacheOptions[ 'checkImportResolutions'])) { $this-&gt;cacheCheckImportResolutions=true;} } $this-&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>logger</b> = new <a class="el" href="../../d9/de2/class_scss_php_1_1_scss_php_1_1_logger_1_1_stream_logger.html">StreamLogger</a>(fopen('php://stderr', 'w'), true)</td></tr>
 <tr class="memdesc:ae9a5227e5e5174533cc5e9f44e627199"><td class="mdescLeft">&#160;</td><td class="mdescRight">string|null&gt; <br /></td></tr>
 <tr class="separator:ae9a5227e5e5174533cc5e9f44e627199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -1326,7 +1326,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000997">Deprecated</a></b></dt><dd>Registering additional features is deprecated. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000996">Deprecated</a></b></dt><dd>Registering additional features is deprecated. </dd></dl>
 
 </div>
 </div>
@@ -2393,7 +2393,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001003">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001002">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -2637,7 +2637,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000990">Deprecated</a></b></dt><dd>Use {</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000989">Deprecated</a></b></dt><dd>Use {</dd></dl>
 <dl class="section see"><dt>See also</dt><dd>compileString} instead. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="../../dc/d81/classcore__scss.html#a3512eae452af72669e27619a2d3cf8ce">core_scss</a>.</p>
@@ -3942,7 +3942,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001002">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001001">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -4625,7 +4625,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000991">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000990">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -4951,7 +4951,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
 </div><div class="memdoc">
 
 <p>Returns list of parsed files. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000993">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000992">Deprecated</a></b></dt><dd></dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array&lt;string,int&gt;</td><td></td></tr>
@@ -5034,7 +5034,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001000">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000999">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -6043,7 +6043,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001004">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001003">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -8098,7 +8098,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000998">Deprecated</a></b></dt><dd>Non-compliant support for other encodings than UTF-8 is deprecated. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000997">Deprecated</a></b></dt><dd>Non-compliant support for other encodings than UTF-8 is deprecated. </dd></dl>
 
 </div>
 </div>
@@ -8130,7 +8130,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000989">Deprecated</a></b></dt><dd>Use {</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000988">Deprecated</a></b></dt><dd>Use {</dd></dl>
 <dl class="section see"><dt>See also</dt><dd>setLogger} instead </dd></dl>
 
 </div>
@@ -8220,7 +8220,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000995">Deprecated</a></b></dt><dd>Use {</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000994">Deprecated</a></b></dt><dd>Use {</dd></dl>
 <dl class="section see"><dt>See also</dt><dd>setOutputStyle} instead.</dd></dl>
 <p>@phpstan-param class-string&lt;Formatter&gt; $formatterName </p>
 
@@ -8255,7 +8255,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000999">Deprecated</a></b></dt><dd>Ignoring Sass errors is not longer supported. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000998">Deprecated</a></b></dt><dd>Ignoring Sass errors is not longer supported. </dd></dl>
 
 </div>
 </div>
@@ -8320,7 +8320,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000996">Deprecated</a></b></dt><dd>The line number output is not supported anymore. Use source maps instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000995">Deprecated</a></b></dt><dd>The line number output is not supported anymore. Use source maps instead. </dd></dl>
 
 </div>
 </div>
@@ -8385,7 +8385,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000994">Deprecated</a></b></dt><dd>The number precision is not configurable anymore. The default is enough for all browsers. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000993">Deprecated</a></b></dt><dd>The number precision is not configurable anymore. The default is enough for all browsers. </dd></dl>
 
 </div>
 </div>
@@ -8573,7 +8573,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000992">Deprecated</a></b></dt><dd>Use "addVariables" or "replaceVariables" instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000991">Deprecated</a></b></dt><dd>Use "addVariables" or "replaceVariables" instead. </dd></dl>
 
 </div>
 </div>
@@ -8834,7 +8834,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001001">Deprecated</a></b></dt><dd>use "error" and throw the exception in the caller instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001000">Deprecated</a></b></dt><dd>use "error" and throw the exception in the caller instead. </dd></dl>
 
 </div>
 </div>
@@ -8998,7 +8998,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000988">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000987">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -9021,7 +9021,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000986">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000985">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -9363,7 +9363,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000987">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000986">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -9386,7 +9386,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000985">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000984">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -9438,7 +9438,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000980">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000979">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -9453,7 +9453,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000979">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000978">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -9468,7 +9468,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000984">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000983">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -9483,7 +9483,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000982">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000981">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -9498,7 +9498,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000981">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000980">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -9513,7 +9513,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000983">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000982">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -9523,7 +9523,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 25 2024 02:50:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 1 2024 03:01:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

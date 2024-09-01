@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240829) (072fb90384d)</div>
   </td>
  </tr>
  </tbody>
@@ -294,7 +294,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>ACCRINT. </p>
 <p>Returns the accrued interest for a security that pays periodic interest.</p>
 <p>Excel Function: ACCRINT(issue,firstinterest,settlement,rate,par,frequency[,basis][,calc_method])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000624">Deprecated</a></b></dt><dd>1.18.0 Use the periodic() method in the Financial::Securities::AccruedInterest class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000625">Deprecated</a></b></dt><dd>1.18.0 Use the periodic() method in the Financial::Securities::AccruedInterest class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Securities::AccruedInterest::periodic()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -363,7 +363,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>ACCRINTM. </p>
 <p>Returns the accrued interest for a security that pays interest at maturity.</p>
 <p>Excel Function: ACCRINTM(issue,settlement,rate[,par[,basis]])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000625">Deprecated</a></b></dt><dd>1.18.0 Use the atMaturity() method in the Financial::Securities::AccruedInterest class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000626">Deprecated</a></b></dt><dd>1.18.0 Use the atMaturity() method in the Financial::Securities::AccruedInterest class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::Securities::AccruedInterest::atMaturity()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -439,7 +439,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>AMORDEGRC. </p>
 <p>Returns the depreciation for each accounting period. This function is provided for the French accounting system. If an asset is purchased in the middle of the accounting period, the prorated depreciation is taken into account. The function is similar to AMORLINC, except that a depreciation coefficient is applied in the calculation depending on the life of the assets. This function will return the depreciation until the last period of the life of the assets or until the cumulated value of depreciation is greater than the cost of the assets minus the salvage value.</p>
 <p>Excel Function: AMORDEGRC(cost,purchased,firstPeriod,salvage,period,rate[,basis])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000626">Deprecated</a></b></dt><dd>1.18.0 Use the AMORDEGRC() method in the Financial::Amortization class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000627">Deprecated</a></b></dt><dd>1.18.0 Use the AMORDEGRC() method in the Financial::Amortization class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::Amortization::AMORDEGRC()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -517,7 +517,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>AMORLINC. </p>
 <p>Returns the depreciation for each accounting period. This function is provided for the French accounting system. If an asset is purchased in the middle of the accounting period, the prorated depreciation is taken into account.</p>
 <p>Excel Function: AMORLINC(cost,purchased,firstPeriod,salvage,period,rate[,basis])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000627">Deprecated</a></b></dt><dd>1.18.0 Use the AMORLINC() method in the Financial::Amortization class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000628">Deprecated</a></b></dt><dd>1.18.0 Use the AMORLINC() method in the Financial::Amortization class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::Amortization::AMORLINC()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -580,7 +580,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>COUPDAYBS. </p>
 <p>Returns the number of days from the beginning of the coupon period to the settlement date.</p>
 <p>Excel Function: COUPDAYBS(settlement,maturity,frequency[,basis])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000628">Deprecated</a></b></dt><dd>1.18.0 Use the COUPDAYBS() method in the Financial::Coupons class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000629">Deprecated</a></b></dt><dd>1.18.0 Use the COUPDAYBS() method in the Financial::Coupons class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::Coupons::COUPDAYBS()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -640,7 +640,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>COUPDAYS. </p>
 <p>Returns the number of days in the coupon period that contains the settlement date.</p>
 <p>Excel Function: COUPDAYS(settlement,maturity,frequency[,basis])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000629">Deprecated</a></b></dt><dd>1.18.0 Use the COUPDAYS() method in the Financial::Coupons class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000630">Deprecated</a></b></dt><dd>1.18.0 Use the COUPDAYS() method in the Financial::Coupons class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::Coupons::COUPDAYS()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -700,7 +700,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>COUPDAYSNC. </p>
 <p>Returns the number of days from the settlement date to the next coupon date.</p>
 <p>Excel Function: COUPDAYSNC(settlement,maturity,frequency[,basis])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000630">Deprecated</a></b></dt><dd>1.18.0 Use the COUPDAYSNC() method in the Financial::Coupons class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000631">Deprecated</a></b></dt><dd>1.18.0 Use the COUPDAYSNC() method in the Financial::Coupons class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::Coupons::COUPDAYSNC()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -760,7 +760,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>COUPNCD. </p>
 <p>Returns the next coupon date after the settlement date.</p>
 <p>Excel Function: COUPNCD(settlement,maturity,frequency[,basis])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000631">Deprecated</a></b></dt><dd>1.18.0 Use the COUPNCD() method in the Financial::Coupons class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000632">Deprecated</a></b></dt><dd>1.18.0 Use the COUPNCD() method in the Financial::Coupons class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::Coupons::COUPNCD()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -820,7 +820,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>COUPNUM. </p>
 <p>Returns the number of coupons payable between the settlement date and maturity date, rounded up to the nearest whole coupon.</p>
 <p>Excel Function: COUPNUM(settlement,maturity,frequency[,basis])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000632">Deprecated</a></b></dt><dd>1.18.0 Use the COUPNUM() method in the Financial::Coupons class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000633">Deprecated</a></b></dt><dd>1.18.0 Use the COUPNUM() method in the Financial::Coupons class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::Coupons::COUPNUM()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -880,7 +880,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>COUPPCD. </p>
 <p>Returns the previous coupon date before the settlement date.</p>
 <p>Excel Function: COUPPCD(settlement,maturity,frequency[,basis])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000633">Deprecated</a></b></dt><dd>1.18.0 Use the COUPPCD() method in the Financial::Coupons class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000634">Deprecated</a></b></dt><dd>1.18.0 Use the COUPPCD() method in the Financial::Coupons class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::Coupons::COUPPCD()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -950,7 +950,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>CUMIPMT. </p>
 <p>Returns the cumulative interest paid on a loan between the start and end periods.</p>
 <p>Excel Function: CUMIPMT(rate,nper,pv,start,end[,type])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000634">Deprecated</a></b></dt><dd>1.18.0 Use the interest() method in the Financial::CashFlow::Constant::Periodic::Cumulative class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000635">Deprecated</a></b></dt><dd>1.18.0 Use the interest() method in the Financial::CashFlow::Constant::Periodic::Cumulative class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::CashFlow::Constant::Periodic::Cumulative::interest()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1022,7 +1022,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>CUMPRINC. </p>
 <p>Returns the cumulative principal paid on a loan between the start and end periods.</p>
 <p>Excel Function: CUMPRINC(rate,nper,pv,start,end[,type])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000635">Deprecated</a></b></dt><dd>1.18.0 Use the principal() method in the Financial::CashFlow::Constant::Periodic::Cumulative class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000636">Deprecated</a></b></dt><dd>1.18.0 Use the principal() method in the Financial::CashFlow::Constant::Periodic::Cumulative class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::CashFlow::Constant::Periodic::Cumulative::principal()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1089,7 +1089,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p><a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>. </p>
 <p>Returns the depreciation of an asset for a specified period using the fixed-declining balance method. This form of depreciation is used if you want to get a higher depreciation value at the beginning of the depreciation (as opposed to linear depreciation). The depreciation value is reduced with every depreciation period by the depreciation already deducted from the initial cost.</p>
 <p>Excel Function: <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB(cost,salvage,life,period[,month])</a></p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000636">Deprecated</a></b></dt><dd>1.18.0 Use the <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB()</a> method in the Financial::Depreciation class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000637">Deprecated</a></b></dt><dd>1.18.0 Use the <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB()</a> method in the Financial::Depreciation class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::Depreciation::DB()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1155,7 +1155,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>DDB. </p>
 <p>Returns the depreciation of an asset for a specified period using the double-declining balance method or some other method you specify.</p>
 <p>Excel Function: DDB(cost,salvage,life,period[,factor])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000637">Deprecated</a></b></dt><dd>1.18.0 Use the DDB() method in the Financial::Depreciation class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000638">Deprecated</a></b></dt><dd>1.18.0 Use the DDB() method in the Financial::Depreciation class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::Depreciation::DDB()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1221,7 +1221,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>DISC. </p>
 <p>Returns the discount rate for a security.</p>
 <p>Excel Function: DISC(settlement,maturity,price,redemption[,basis])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000638">Deprecated</a></b></dt><dd>1.18.0 Use the discount() method in the Financial::Securities::Rates class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000639">Deprecated</a></b></dt><dd>1.18.0 Use the discount() method in the Financial::Securities::Rates class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::Securities::Rates::discount()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1272,7 +1272,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>DOLLARDE. </p>
 <p>Converts a dollar price expressed as an integer part and a fraction part into a dollar price expressed as a decimal number. Fractional dollar numbers are sometimes used for security prices.</p>
 <p>Excel Function: DOLLARDE(fractional_dollar,fraction)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000639">Deprecated</a></b></dt><dd>1.18.0 Use the decimal() method in the Financial::Dollar class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000640">Deprecated</a></b></dt><dd>1.18.0 Use the decimal() method in the Financial::Dollar class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::Dollar::decimal()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1320,7 +1320,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>DOLLARFR. </p>
 <p>Converts a dollar price expressed as a decimal number into a dollar price expressed as a fraction. Fractional dollar numbers are sometimes used for security prices.</p>
 <p>Excel Function: DOLLARFR(decimal_dollar,fraction)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000640">Deprecated</a></b></dt><dd>1.18.0 Use the fractional() method in the Financial::Dollar class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000641">Deprecated</a></b></dt><dd>1.18.0 Use the fractional() method in the Financial::Dollar class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::Dollar::fractional()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1368,7 +1368,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>EFFECT. </p>
 <p>Returns the effective interest rate given the nominal rate and the number of compounding payments per year.</p>
 <p>Excel Function: EFFECT(nominal_rate,npery)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000641">Deprecated</a></b></dt><dd>1.18.0 Use the effective() method in the Financial::InterestRate class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000642">Deprecated</a></b></dt><dd>1.18.0 Use the effective() method in the Financial::InterestRate class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::InterestRate::effective()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1431,7 +1431,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>FV. </p>
 <p>Returns the Future Value of a cash flow with constant payments and interest rate (annuities).</p>
 <p>Excel Function: FV(rate,nper,pmt[,pv[,type]])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000642">Deprecated</a></b></dt><dd>1.18.0 Use the futureValue() method in the Financial::CashFlow::Constant::Periodic class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000643">Deprecated</a></b></dt><dd>1.18.0 Use the futureValue() method in the Financial::CashFlow::Constant::Periodic class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::CashFlow::Constant::Periodic::futureValue()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1482,7 +1482,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>FVSCHEDULE. </p>
 <p>Returns the future value of an initial principal after applying a series of compound interest rates. Use FVSCHEDULE to calculate the future value of an investment with a variable or adjustable rate.</p>
 <p>Excel Function: FVSCHEDULE(principal,schedule)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000643">Deprecated</a></b></dt><dd>1.18.0 Use the futureValue() method in the Financial::CashFlow::Single class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000644">Deprecated</a></b></dt><dd>1.18.0 Use the futureValue() method in the Financial::CashFlow::Single class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::CashFlow::Single::futureValue()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1545,7 +1545,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>INTRATE. </p>
 <p>Returns the interest rate for a fully invested security.</p>
 <p>Excel Function: INTRATE(settlement,maturity,investment,redemption[,basis])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000644">Deprecated</a></b></dt><dd>1.18.0 Use the interest() method in the Financial::Securities::Rates class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000645">Deprecated</a></b></dt><dd>1.18.0 Use the interest() method in the Financial::Securities::Rates class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::Securities::Rates::interest()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1616,7 +1616,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>IPMT. </p>
 <p>Returns the interest payment for a given period for an investment based on periodic, constant payments and a constant interest rate.</p>
 <p>Excel Function: IPMT(rate,per,nper,pv[,fv][,type])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000645">Deprecated</a></b></dt><dd>1.18.0 Use the payment() method in the Financial::CashFlow::Constant::Periodic::Interest class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000646">Deprecated</a></b></dt><dd>1.18.0 Use the payment() method in the Financial::CashFlow::Constant::Periodic::Interest class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::CashFlow::Constant::Periodic::Interest::payment()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1668,7 +1668,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>IRR. </p>
 <p>Returns the internal rate of return for a series of cash flows represented by the numbers in values. These cash flows do not have to be even, as they would be for an annuity. However, the cash flows must occur at regular intervals, such as monthly or annually. The internal rate of return is the interest rate received for an investment consisting of payments (negative values) and income (positive values) that occur at regular periods.</p>
 <p>Excel Function: IRR(values[,guess])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000646">Deprecated</a></b></dt><dd>1.18.0 Use the rate() method in the Financial::CashFlow::Variable::Periodic class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000647">Deprecated</a></b></dt><dd>1.18.0 Use the rate() method in the Financial::CashFlow::Variable::Periodic class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::CashFlow::Variable::Periodic::rate()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1712,7 +1712,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>ISPMT. </p>
 <p>Returns the interest payment for an investment based on an interest rate and a constant payment schedule.</p>
 <p>Excel Function: =ISPMT(interest_rate, period, number_payments, pv)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000647">Deprecated</a></b></dt><dd>1.18.0 Use the schedulePayment() method in the Financial::CashFlow::Constant::Periodic::Interest class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000648">Deprecated</a></b></dt><dd>1.18.0 Use the schedulePayment() method in the Financial::CashFlow::Constant::Periodic::Interest class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::CashFlow::Constant::Periodic::Interest::schedulePayment()</dd></dl>
 <p>interest_rate is the interest rate for the investment</p>
 <p>period is the period to calculate the interest rate. It must be betweeen 1 and number_payments.</p>
@@ -1768,7 +1768,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>MIRR. </p>
 <p>Returns the modified internal rate of return for a series of periodic cash flows. MIRR considers both the cost of the investment and the interest received on reinvestment of cash.</p>
 <p>Excel Function: MIRR(values,finance_rate, reinvestment_rate)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000648">Deprecated</a></b></dt><dd>1.18.0 Use the modifiedRate() method in the Financial::CashFlow::Variable::Periodic class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000649">Deprecated</a></b></dt><dd>1.18.0 Use the modifiedRate() method in the Financial::CashFlow::Variable::Periodic class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::CashFlow::Variable::Periodic::modifiedRate()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1817,7 +1817,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>NOMINAL. </p>
 <p>Returns the nominal interest rate given the effective rate and the number of compounding payments per year.</p>
 <p>Excel Function: NOMINAL(effect_rate, npery)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000649">Deprecated</a></b></dt><dd>1.18.0 Use the nominal() method in the Financial::InterestRate class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000650">Deprecated</a></b></dt><dd>1.18.0 Use the nominal() method in the Financial::InterestRate class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::InterestRate::nominal()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1879,7 +1879,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 
 <p>NPER. </p>
 <p>Returns the number of periods for a cash flow with constant periodic payments (annuities), and interest rate.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000650">Deprecated</a></b></dt><dd>1.18.0 Use the periods() method in the Financial::CashFlow::Constant::Periodic class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000651">Deprecated</a></b></dt><dd>1.18.0 Use the periods() method in the Financial::CashFlow::Constant::Periodic class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::CashFlow::Constant::Periodic::periods()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1925,7 +1925,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 
 <p>NPV. </p>
 <p>Returns the Net Present Value of a cash flow series given a discount rate.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000651">Deprecated</a></b></dt><dd>1.18.0 Use the presentValue() method in the Financial::CashFlow::Variable::Periodic class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000652">Deprecated</a></b></dt><dd>1.18.0 Use the presentValue() method in the Financial::CashFlow::Variable::Periodic class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::CashFlow::Variable::Periodic::presentValue()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1976,7 +1976,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 
 <p>PDURATION. </p>
 <p>Calculates the number of periods required for an investment to reach a specified value.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000652">Deprecated</a></b></dt><dd>1.18.0 Use the periods() method in the Financial::CashFlow::Single class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000653">Deprecated</a></b></dt><dd>1.18.0 Use the periods() method in the Financial::CashFlow::Single class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::CashFlow::Single::periods()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2039,7 +2039,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 
 <p>PMT. </p>
 <p>Returns the constant payment (annuity) for a cash flow with a constant interest rate.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000653">Deprecated</a></b></dt><dd>1.18.0 Use the annuity() method in the Financial::CashFlow::Constant::Periodic::Payments class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000654">Deprecated</a></b></dt><dd>1.18.0 Use the annuity() method in the Financial::CashFlow::Constant::Periodic::Payments class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::CashFlow::Constant::Periodic::Payments::annuity()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2109,7 +2109,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 
 <p>PPMT. </p>
 <p>Returns the interest payment for a given period for an investment based on periodic, constant payments and a constant interest rate.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000654">Deprecated</a></b></dt><dd>1.18.0 Use the interestPayment() method in the Financial::CashFlow::Constant::Periodic::Payments class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000655">Deprecated</a></b></dt><dd>1.18.0 Use the interestPayment() method in the Financial::CashFlow::Constant::Periodic::Payments class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::CashFlow::Constant::Periodic::Payments::interestPayment()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2185,7 +2185,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 
 <p>PRICE. </p>
 <p>Returns the price per $100 face value of a security that pays periodic interest.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000655">Deprecated</a></b></dt><dd>1.18.0 Use the price() method in the Financial::Securities::Price class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000656">Deprecated</a></b></dt><dd>1.18.0 Use the price() method in the Financial::Securities::Price class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::Securities::Price::price()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2252,7 +2252,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 
 <p>PRICEDISC. </p>
 <p>Returns the price per $100 face value of a discounted security.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000656">Deprecated</a></b></dt><dd>1.18.0 Use the priceDiscounted() method in the Financial::Securities::Price class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000657">Deprecated</a></b></dt><dd>1.18.0 Use the priceDiscounted() method in the Financial::Securities::Price class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::Securities::Price::priceDiscounted()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2322,7 +2322,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 
 <p>PRICEMAT. </p>
 <p>Returns the price per $100 face value of a security that pays interest at maturity.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000657">Deprecated</a></b></dt><dd>1.18.0 Use the priceAtMaturity() method in the Financial::Securities::Price class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000658">Deprecated</a></b></dt><dd>1.18.0 Use the priceAtMaturity() method in the Financial::Securities::Price class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::Securities::Price::priceAtMaturity()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2388,7 +2388,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 
 <p>PV. </p>
 <p>Returns the Present Value of a cash flow with constant payments and interest rate (annuities).</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000658">Deprecated</a></b></dt><dd>1.18.0 Use the presentValue() method in the Financial::CashFlow::Constant::Periodic class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000659">Deprecated</a></b></dt><dd>1.18.0 Use the presentValue() method in the Financial::CashFlow::Constant::Periodic class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::CashFlow::Constant::Periodic::presentValue()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2459,7 +2459,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>RATE. </p>
 <p>Returns the interest rate per period of an annuity. RATE is calculated by iteration and can have zero or more solutions. If the successive results of RATE do not converge to within 0.0000001 after 20 iterations, RATE returns the #NUM! error value.</p>
 <p>Excel Function: RATE(nper,pmt,pv[,fv[,type[,guess]]])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000659">Deprecated</a></b></dt><dd>1.18.0 Use the rate() method in the Financial::CashFlow::Constant::Periodic::Interest class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000660">Deprecated</a></b></dt><dd>1.18.0 Use the rate() method in the Financial::CashFlow::Constant::Periodic::Interest class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::CashFlow::Constant::Periodic::Interest::rate()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2525,7 +2525,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 
 <p>RECEIVED. </p>
 <p>Returns the amount received at maturity for a fully invested Security.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000660">Deprecated</a></b></dt><dd>1.18.0 Use the received() method in the Financial::Securities::Price class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000661">Deprecated</a></b></dt><dd>1.18.0 Use the received() method in the Financial::Securities::Price class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::Securities::Price::received()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2580,7 +2580,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 
 <p>RRI. </p>
 <p>Calculates the interest rate required for an investment to grow to a specified future value .</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000661">Deprecated</a></b></dt><dd>1.18.0 Use the interestRate() method in the Financial::CashFlow::Single class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000662">Deprecated</a></b></dt><dd>1.18.0 Use the interestRate() method in the Financial::CashFlow::Single class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::CashFlow::Single::interestRate()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2633,7 +2633,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 
 <p>SLN. </p>
 <p>Returns the straight-line depreciation of an asset for one period</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000662">Deprecated</a></b></dt><dd>1.18.0 Use the SLN() method in the Financial::Depreciation class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000663">Deprecated</a></b></dt><dd>1.18.0 Use the SLN() method in the Financial::Depreciation class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::Depreciation::SLN()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2691,7 +2691,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 
 <p>SYD. </p>
 <p>Returns the sum-of-years' digits depreciation of an asset for a specified period.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000663">Deprecated</a></b></dt><dd>1.18.0 Use the SYD() method in the Financial::Depreciation class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000664">Deprecated</a></b></dt><dd>1.18.0 Use the SYD() method in the Financial::Depreciation class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::Depreciation::SYD()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2745,7 +2745,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 
 <p>TBILLEQ. </p>
 <p>Returns the bond-equivalent yield for a Treasury bill.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000664">Deprecated</a></b></dt><dd>1.18.0 Use the bondEquivalentYield() method in the Financial::TreasuryBill class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000665">Deprecated</a></b></dt><dd>1.18.0 Use the bondEquivalentYield() method in the Financial::TreasuryBill class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::TreasuryBill::bondEquivalentYield()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2798,7 +2798,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 
 <p>TBILLPRICE. </p>
 <p>Returns the price per $100 face value for a Treasury bill.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000665">Deprecated</a></b></dt><dd>1.18.0 Use the price() method in the Financial::TreasuryBill class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000666">Deprecated</a></b></dt><dd>1.18.0 Use the price() method in the Financial::TreasuryBill class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::TreasuryBill::price()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2851,7 +2851,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 
 <p>TBILLYIELD. </p>
 <p>Returns the yield for a Treasury bill.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000666">Deprecated</a></b></dt><dd>1.18.0 Use the yield() method in the Financial::TreasuryBill class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000667">Deprecated</a></b></dt><dd>1.18.0 Use the yield() method in the Financial::TreasuryBill class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::TreasuryBill::yield()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2905,7 +2905,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>XIRR. </p>
 <p>Returns the internal rate of return for a schedule of cash flows that is not necessarily periodic.</p>
 <p>Excel Function: =XIRR(values,dates,guess)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000667">Deprecated</a></b></dt><dd>1.18.0 Use the rate() method in the Financial::CashFlow::Variable::NonPeriodic class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000668">Deprecated</a></b></dt><dd>1.18.0 Use the rate() method in the Financial::CashFlow::Variable::NonPeriodic class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::CashFlow::Variable::NonPeriodic::rate()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2959,7 +2959,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 <p>XNPV. </p>
 <p>Returns the net present value for a schedule of cash flows that is not necessarily periodic. To calculate the net present value for a series of cash flows that is periodic, use the NPV function.</p>
 <p>Excel Function: =XNPV(rate,values,dates)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000668">Deprecated</a></b></dt><dd>1.18.0 Use the presentValue() method in the Financial::CashFlow::Variable::NonPeriodic class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000669">Deprecated</a></b></dt><dd>1.18.0 Use the presentValue() method in the Financial::CashFlow::Variable::NonPeriodic class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::CashFlow::Variable::NonPeriodic::presentValue()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3022,7 +3022,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 
 <p>YIELDDISC. </p>
 <p>Returns the annual yield of a security that pays interest at maturity.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000669">Deprecated</a></b></dt><dd>1.18.0 Use the yieldDiscounted() method in the Financial::Securities::Yields class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000670">Deprecated</a></b></dt><dd>1.18.0 Use the yieldDiscounted() method in the Financial::Securities::Yields class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::Securities::Yields::yieldDiscounted()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3092,7 +3092,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 
 <p>YIELDMAT. </p>
 <p>Returns the annual yield of a security that pays interest at maturity.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000670">Deprecated</a></b></dt><dd>1.18.0 Use the yieldAtMaturity() method in the Financial::Securities::Yields class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000671">Deprecated</a></b></dt><dd>1.18.0 Use the yieldAtMaturity() method in the Financial::Securities::Yields class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Financial::Securities::Yields::yieldAtMaturity()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3120,7 +3120,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FINANCIAL_PRECISION<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 25 2024 02:50:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 1 2024 03:01:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

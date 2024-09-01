@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240829) (072fb90384d)</div>
   </td>
  </tr>
  </tbody>
@@ -198,7 +198,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gafff060bb9de114db97c0c2b232b660c0" id="r_gafff060bb9de114db97c0c2b232b660c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gafff060bb9de114db97c0c2b232b660c0">groups_assign_grouping</a> ($groupingid, $groupid, $timeadded=null, $invalidatecache=true)</td></tr>
 <tr class="memdesc:gafff060bb9de114db97c0c2b232b660c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns group into grouping.  <br /></td></tr>
 <tr class="separator:gafff060bb9de114db97c0c2b232b660c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga295082feae2ab90c1699c1f01851e117" id="r_ga295082feae2ab90c1699c1f01851e117"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga295082feae2ab90c1699c1f01851e117">groups_cache_groupdata</a> ($courseid, ?<a class="el" href="../../d3/d3d/classcache.html">cache</a> $<a class="el" href="../../d3/d3d/classcache.html">cache</a>=null)</td></tr>
+<tr class="memitem:ga295082feae2ab90c1699c1f01851e117" id="r_ga295082feae2ab90c1699c1f01851e117"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga295082feae2ab90c1699c1f01851e117">groups_cache_groupdata</a> ($courseid, ?cache $cache=null)</td></tr>
 <tr class="memdesc:ga295082feae2ab90c1699c1f01851e117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Caches group data for a particular course to speed up subsequent requests.  <br /></td></tr>
 <tr class="separator:ga295082feae2ab90c1699c1f01851e117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaf3cc0504194309d2e2ce49ec47d5325" id="r_gaaf3cc0504194309d2e2ce49ec47d5325"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaaf3cc0504194309d2e2ce49ec47d5325">groups_calculate_role_people</a> ($rs, $context)</td></tr>
@@ -246,7 +246,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga00e61af66f6befd27cd614c30e321925" id="r_ga00e61af66f6befd27cd614c30e321925"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga00e61af66f6befd27cd614c30e321925">groups_get_all_groups</a> ($courseid, $userid=0, $groupingid=0, $fields='g.*', $withmembers=false, $participationonly=false)</td></tr>
 <tr class="memdesc:ga00e61af66f6befd27cd614c30e321925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets array of all groups in a specified course (subject to the conditions imposed by the other arguments).  <br /></td></tr>
 <tr class="separator:ga00e61af66f6befd27cd614c30e321925"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5ff57ae7387ec602abafdd240e7b7a59" id="r_ga5ff57ae7387ec602abafdd240e7b7a59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5ff57ae7387ec602abafdd240e7b7a59">groups_get_course_data</a> ($courseid, ?<a class="el" href="../../d3/d3d/classcache.html">cache</a> $<a class="el" href="../../d3/d3d/classcache.html">cache</a>=null)</td></tr>
+<tr class="memitem:ga5ff57ae7387ec602abafdd240e7b7a59" id="r_ga5ff57ae7387ec602abafdd240e7b7a59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5ff57ae7387ec602abafdd240e7b7a59">groups_get_course_data</a> ($courseid, ?cache $cache=null)</td></tr>
 <tr class="memdesc:ga5ff57ae7387ec602abafdd240e7b7a59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets group data for a course.  <br /></td></tr>
 <tr class="separator:ga5ff57ae7387ec602abafdd240e7b7a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0eb7cb9b22a9cb1050ec44f2b4da71ff" id="r_ga0eb7cb9b22a9cb1050ec44f2b4da71ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0eb7cb9b22a9cb1050ec44f2b4da71ff">groups_get_course_group</a> ($course, $update=false, $allowedgroups=null)</td></tr>
@@ -737,7 +737,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>VISIBLEGROUPS</b> 2<
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">?<a class="el" href="../../d3/d3d/classcache.html">cache</a></td>          <td class="paramname"><span class="paramname"><em>$cache</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">?cache</td>          <td class="paramname"><span class="paramname"><em>$cache</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1357,7 +1357,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>VISIBLEGROUPS</b> 2<
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">?<a class="el" href="../../d3/d3d/classcache.html">cache</a></td>          <td class="paramname"><span class="paramname"><em>$cache</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">?cache</td>          <td class="paramname"><span class="paramname"><em>$cache</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3010,7 +3010,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>VISIBLEGROUPS</b> 2<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 25 2024 02:48:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 1 2024 02:59:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

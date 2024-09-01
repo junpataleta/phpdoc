@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240829) (072fb90384d)</div>
   </td>
  </tr>
  </tbody>
@@ -688,11 +688,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$last_type</b></td></t
 <tr class="memdesc:a98b3aaf27e355265db1838e10b49d49b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag indicating logging of query in progress.  <br /></td></tr>
 <tr class="separator:a98b3aaf27e355265db1838e10b49d49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca7072a30d714c852b07ee839f2c7521" id="r_aca7072a30d714c852b07ee839f2c7521"><td class="memItemLeft" align="right" valign="top"><a id="aca7072a30d714c852b07ee839f2c7521" name="aca7072a30d714c852b07ee839f2c7521"></a>
-<a class="el" href="../../da/dc9/classcache__application.html">cache_application</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$metacache</b></td></tr>
+cache_application&#160;</td><td class="memItemRight" valign="bottom"><b>$metacache</b></td></tr>
 <tr class="memdesc:aca7072a30d714c852b07ee839f2c7521"><td class="mdescLeft">&#160;</td><td class="mdescRight">for column info <br /></td></tr>
 <tr class="separator:aca7072a30d714c852b07ee839f2c7521"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a367eaf5cad8acda505530eccaa0703d8" id="r_a367eaf5cad8acda505530eccaa0703d8"><td class="memItemLeft" align="right" valign="top"><a id="a367eaf5cad8acda505530eccaa0703d8" name="a367eaf5cad8acda505530eccaa0703d8"></a>
-<a class="el" href="../../da/dc9/classcache__application.html">cache_application</a> <a class="el" href="../../de/dcd/classcache__session.html">cache_session</a> <a class="el" href="../../d0/d4b/classcache__store.html">cache_store</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$metacachetemp</b></td></tr>
+cache_application cache_session cache_store&#160;</td><td class="memItemRight" valign="bottom"><b>$metacachetemp</b></td></tr>
 <tr class="memdesc:a367eaf5cad8acda505530eccaa0703d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">for column info on temp tables <br /></td></tr>
 <tr class="separator:a367eaf5cad8acda505530eccaa0703d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1be57f4f91356801ae104e73b73d6ca0" id="r_a1be57f4f91356801ae104e73b73d6ca0"><td class="memItemLeft" align="right" valign="top"><a id="a1be57f4f91356801ae104e73b73d6ca0" name="a1be57f4f91356801ae104e73b73d6ca0"></a>
@@ -2209,7 +2209,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Returns the localised database description Note: can be used before <a class="el" href="../../d3/d6e/classmoodle__database.html#a76f184b06a2c39fa93a89926d9777a54" title="Connects to the database.">connect()</a> </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000354">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000355">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td></td></tr>
@@ -3255,7 +3255,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 <p>Handle the creation and caching of the databasemeta information for all databases. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../da/dc9/classcache__application.html" title="An application cache.">cache_application</a></td><td>The databasemeta cachestore to complete operations on. </td></tr>
+    <tr><td class="paramname">cache_application</td><td>The databasemeta cachestore to complete operations on. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3403,7 +3403,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000123">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-30407" class="el">MDL-30407</a> MUST_EXIST option should not throw a <a class="el" href="../../d5/d5c/classdml__exception.html" title="DML exception class, use instead of throw new moodle_exception() in dml code.">dml_exception</a>, it should throw a different exception as it's a requested check. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000121">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-30407" class="el">MDL-30407</a> MUST_EXIST option should not throw a <a class="el" href="../../d5/d5c/classdml__exception.html" title="DML exception class, use instead of throw new moodle_exception() in dml code.">dml_exception</a>, it should throw a different exception as it's a requested check. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">mixed</td><td>a fieldset object containing the first matching record, false or exception if error not found depending on mode </td></tr>
@@ -4651,7 +4651,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 <p>Handle the creation and caching of the temporary tables. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../da/dc9/classcache__application.html" title="An application cache.">cache_application</a></td><td>The temp_tables cachestore to complete operations on. </td></tr>
+    <tr><td class="paramname">cache_application</td><td>The temp_tables cachestore to complete operations on. </td></tr>
   </table>
   </dd>
 </dl>
@@ -6575,7 +6575,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Enable/disable detailed sql logging. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000355">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.9 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000356">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.9 </dd></dl>
 
 </div>
 </div>
@@ -6853,7 +6853,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Returns the SQL to be used in order to an UNSIGNED INTEGER column to SIGNED. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000358">Deprecated</a></b></dt><dd>since 2.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000359">Deprecated</a></b></dt><dd>since 2.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$fieldname</td><td>The name of the field to be cast </td></tr>
@@ -7204,7 +7204,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>This used to return empty string replacement character. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000357">Deprecated</a></b></dt><dd>use bound parameter with empty string instead</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000358">Deprecated</a></b></dt><dd>use bound parameter with empty string instead</dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>An empty string. </td></tr>
@@ -7308,7 +7308,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Returns the proper SQL (for the dbms in use) to concatenate $firstname and $lastname. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000124">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-31233" class="el">MDL-31233</a> This may not be needed here.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000122">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-31233" class="el">MDL-31233</a> This may not be needed here.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$first</td><td>User's first name (default:'firstname'). </td></tr>
@@ -8644,7 +8644,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 25 2024 02:49:00 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 1 2024 03:00:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

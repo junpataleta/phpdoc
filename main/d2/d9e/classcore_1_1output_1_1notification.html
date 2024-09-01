@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240823) (056f473a6ea)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240829) (072fb90384d)</div>
   </td>
  </tr>
  </tbody>
@@ -96,9 +96,9 @@ Inheritance diagram for core\output\notification:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a84af5215377d2bf387d9785f1613d35a" id="r_a84af5215377d2bf387d9785f1613d35a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84af5215377d2bf387d9785f1613d35a">__construct</a> ($message, $messagetype=null, $closebutton=true)</td></tr>
-<tr class="memdesc:a84af5215377d2bf387d9785f1613d35a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notification constructor.  <br /></td></tr>
-<tr class="separator:a84af5215377d2bf387d9785f1613d35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00b9032b7402f27d25a7ea666dee31d4" id="r_a00b9032b7402f27d25a7ea666dee31d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00b9032b7402f27d25a7ea666dee31d4">__construct</a> ( $message, $messagetype=null, $closebutton=true, ?string $title=null, ?string $titleicon=null)</td></tr>
+<tr class="memdesc:a00b9032b7402f27d25a7ea666dee31d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notification constructor.  <br /></td></tr>
+<tr class="separator:a00b9032b7402f27d25a7ea666dee31d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66c901b59b9c1f4e4c1e58f91db5d9fa" id="r_a66c901b59b9c1f4e4c1e58f91db5d9fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66c901b59b9c1f4e4c1e58f91db5d9fa">export_for_template</a> (\<a class="el" href="../../dd/d9d/classcore_1_1output_1_1renderer__base.html">renderer_base</a> $output)</td></tr>
 <tr class="memdesc:a66c901b59b9c1f4e4c1e58f91db5d9fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export this data so it can be used as the context for a mustache template.  <br /></td></tr>
 <tr class="separator:a66c901b59b9c1f4e4c1e58f91db5d9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,6 +165,14 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$message</b> = ''</
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$messagetype</b> = self::NOTIFY_WARNING</td></tr>
 <tr class="memdesc:a39834b777c4470eb5ffce105651358ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message type. <br /></td></tr>
 <tr class="separator:a39834b777c4470eb5ffce105651358ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac991d3106398304d206e55a3f41562f4" id="r_ac991d3106398304d206e55a3f41562f4"><td class="memItemLeft" align="right" valign="top"><a id="ac991d3106398304d206e55a3f41562f4" name="ac991d3106398304d206e55a3f41562f4"></a>
+string string&#160;</td><td class="memItemRight" valign="bottom"><b>$title</b> = null</td></tr>
+<tr class="memdesc:ac991d3106398304d206e55a3f41562f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Title payload. <br /></td></tr>
+<tr class="separator:ac991d3106398304d206e55a3f41562f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a510b2da2e3b9e510495d2d3dd0970218" id="r_a510b2da2e3b9e510495d2d3dd0970218"><td class="memItemLeft" align="right" valign="top"><a id="a510b2da2e3b9e510495d2d3dd0970218" name="a510b2da2e3b9e510495d2d3dd0970218"></a>
+string string&#160;</td><td class="memItemRight" valign="bottom"><b>$titleicon</b> = null</td></tr>
+<tr class="memdesc:a510b2da2e3b9e510495d2d3dd0970218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Title icon name. <br /></td></tr>
+<tr class="separator:a510b2da2e3b9e510495d2d3dd0970218"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Data structure representing a notification. </p>
@@ -172,8 +180,8 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$messagetype</b> = 
 <dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU GPL v3 or later </dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.9 </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a84af5215377d2bf387d9785f1613d35a" name="a84af5215377d2bf387d9785f1613d35a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84af5215377d2bf387d9785f1613d35a">&#9670;&#160;</a></span>__construct()</h2>
+<a id="a00b9032b7402f27d25a7ea666dee31d4" name="a00b9032b7402f27d25a7ea666dee31d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00b9032b7402f27d25a7ea666dee31d4">&#9670;&#160;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -191,7 +199,17 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$messagetype</b> = 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$closebutton</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$closebutton</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?string</td>          <td class="paramname"><span class="paramname"><em>$title</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?string</td>          <td class="paramname"><span class="paramname"><em>$titleicon</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -202,6 +220,8 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$messagetype</b> = 
     <tr><td class="paramtype">string</td><td class="paramname">$message</td><td>the message to print out </td></tr>
     <tr><td class="paramtype">?string</td><td class="paramname">$messagetype</td><td>one of the NOTIFY_* constants.. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$closebutton</td><td>Whether to show a close icon to remove the notification (default true). </td></tr>
+    <tr><td class="paramtype">?string</td><td class="paramname">$title</td><td>the title of the notification </td></tr>
+    <tr><td class="paramtype">?string</td><td class="paramname">$titleicon</td><td>if the title should have an icon you can give the icon name with the component (e.g. 'i/circleinfo, core' or 'i/circleinfo' if the icon is from core </td></tr>
   </table>
   </dd>
 </dl>
@@ -459,7 +479,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$messagetype</b> = 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 25 2024 02:49:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 1 2024 03:00:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>
