@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240829) (072fb90384d)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240907) (1938c438ea1)</div>
   </td>
  </tr>
  </tbody>
@@ -101,6 +101,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>add_action_divider</b> ()</td></tr>
 <tr class="memdesc:ac9c1622305226737017892400257ea4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds action divider to the report. <br /></td></tr>
 <tr class="separator:ac9c1622305226737017892400257ea4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7786c70dbaf7dc2bfe327ee6abf909a" id="r_ac7786c70dbaf7dc2bfe327ee6abf909a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7786c70dbaf7dc2bfe327ee6abf909a">add_columns</a> (string $badgeissuedalias)</td></tr>
+<tr class="memdesc:ac7786c70dbaf7dc2bfe327ee6abf909a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the columns we want to display in the report.  <br /></td></tr>
+<tr class="separator:ac7786c70dbaf7dc2bfe327ee6abf909a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cf03daba7d7d687fcf562fa4a07b986" id="r_a5cf03daba7d7d687fcf562fa4a07b986"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da7/classcore__reportbuilder_1_1system__report.html#a5cf03daba7d7d687fcf562fa4a07b986">can_be_downloaded</a> ()</td></tr>
 <tr class="memdesc:a5cf03daba7d7d687fcf562fa4a07b986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates access to download this report.  <br /></td></tr>
 <tr class="separator:a5cf03daba7d7d687fcf562fa4a07b986"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,9 +212,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a9ca1739857ac2271b41dbbdbc854f866" id="r_a9ca1739857ac2271b41dbbdbc854f866"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da7/classcore__reportbuilder_1_1system__report.html#a9ca1739857ac2271b41dbbdbc854f866">add_base_fields</a> (string $sql)</td></tr>
 <tr class="memdesc:a9ca1739857ac2271b41dbbdbc854f866"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add list of fields that have to be always included in SQL query for actions and row classes.  <br /></td></tr>
 <tr class="separator:a9ca1739857ac2271b41dbbdbc854f866"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f6116bffaa8eef12718f501cf17c457" id="r_a3f6116bffaa8eef12718f501cf17c457"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f6116bffaa8eef12718f501cf17c457">add_columns</a> ()</td></tr>
-<tr class="memdesc:a3f6116bffaa8eef12718f501cf17c457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the columns we want to display in the report.  <br /></td></tr>
-<tr class="separator:a3f6116bffaa8eef12718f501cf17c457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c07b4e358fda13cabd67ed3036e66a4" id="r_a5c07b4e358fda13cabd67ed3036e66a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c07b4e358fda13cabd67ed3036e66a4">add_filters</a> ()</td></tr>
 <tr class="memdesc:a5c07b4e358fda13cabd67ed3036e66a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the filters we want to display in the report.  <br /></td></tr>
 <tr class="separator:a5c07b4e358fda13cabd67ed3036e66a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -350,31 +350,29 @@ $mimetype&#160;</td><td class="memItemRight" valign="bottom"><b>$mimetype</b> = 
 
 </div>
 </div>
-<a id="a3f6116bffaa8eef12718f501cf17c457" name="a3f6116bffaa8eef12718f501cf17c457"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f6116bffaa8eef12718f501cf17c457">&#9670;&#160;</a></span>add_columns()</h2>
+<a id="ac7786c70dbaf7dc2bfe327ee6abf909a" name="ac7786c70dbaf7dc2bfe327ee6abf909a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7786c70dbaf7dc2bfe327ee6abf909a">&#9670;&#160;</a></span>add_columns()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">core_badges\reportbuilder\local\systemreports\badges::add_columns </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$badgeissuedalias</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Adds the columns we want to display in the report. </p>
-<p>They are provided by the entities we previously added in the {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d9/d9e/group__mnet.html#gadd9ac7773eb89aae31cd23749e15d817" title="Set default element handlers and initialise properties to empty.">initialise</a>} method, referencing each by their unique identifier. If custom columns are needed just for this <a class="el" href="../../d1/dc3/group__report.html">report</a>, they can be defined here. </dd></dl>
+<p>They are provided by the entities we previously added in the {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d9/d9e/group__mnet.html#gadd9ac7773eb89aae31cd23749e15d817" title="Set default element handlers and initialise properties to empty.">initialise</a>} method, referencing each by their unique identifier. If custom columns are needed just for this <a class="el" href="../../d1/dc3/group__report.html">report</a>, they can be defined here.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$badgeissuedalias</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1740,7 +1738,7 @@ $mimetype&#160;</td><td class="memItemRight" valign="bottom"><b>$mimetype</b> = 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 1 2024 03:00:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 8 2024 02:56:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

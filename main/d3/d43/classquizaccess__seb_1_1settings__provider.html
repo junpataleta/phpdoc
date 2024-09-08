@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240829) (072fb90384d)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240907) (1938c438ea1)</div>
   </td>
  </tr>
  </tbody>
@@ -113,6 +113,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a587f74d43b3f0c848416f77e7c9f1ba9" id="r_a587f74d43b3f0c848416f77e7c9f1ba9"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a587f74d43b3f0c848416f77e7c9f1ba9">can_upload_seb_file</a> (\context $context)</td></tr>
 <tr class="memdesc:a587f74d43b3f0c848416f77e7c9f1ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the current user can upload own SEB config file.  <br /></td></tr>
 <tr class="separator:a587f74d43b3f0c848416f77e7c9f1ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6552eef99984841ed6eddc31de716134" id="r_a6552eef99984841ed6eddc31de716134"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6552eef99984841ed6eddc31de716134">can_use_seb_client_config</a> (\context $context)</td></tr>
+<tr class="memdesc:a6552eef99984841ed6eddc31de716134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the current user can select to use the SEB client configuration.  <br /></td></tr>
+<tr class="separator:a6552eef99984841ed6eddc31de716134"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b4abda597409535030470a52fd765a6" id="r_a1b4abda597409535030470a52fd765a6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b4abda597409535030470a52fd765a6">can_use_seb_template</a> (\context $context)</td></tr>
 <tr class="memdesc:a1b4abda597409535030470a52fd765a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the current user can use preconfigured templates.  <br /></td></tr>
 <tr class="separator:a1b4abda597409535030470a52fd765a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,7 +153,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8d4d695ca54f513c654adb68ee9c2430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper method to return a map of all settings.  <br /></td></tr>
 <tr class="separator:a8d4d695ca54f513c654adb68ee9c2430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e3fb96eb0a173b84d19ce6092070809" id="r_a8e3fb96eb0a173b84d19ce6092070809"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e3fb96eb0a173b84d19ce6092070809">is_conflicting_permissions</a> (\context $context)</td></tr>
-<tr class="memdesc:a8e3fb96eb0a173b84d19ce6092070809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that we have conflicting permissions.  <br /></td></tr>
+<tr class="memdesc:a8e3fb96eb0a173b84d19ce6092070809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that we have conflicting permissions with the current SEB settings.  <br /></td></tr>
 <tr class="separator:a8e3fb96eb0a173b84d19ce6092070809"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a2233471974cd8e4083f48538301ca6" id="r_a0a2233471974cd8e4083f48538301ca6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a2233471974cd8e4083f48538301ca6">is_seb_settings_locked</a> ($quizid)</td></tr>
 <tr class="memdesc:a0a2233471974cd8e4083f48538301ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if settings is locked.  <br /></td></tr>
@@ -216,9 +219,9 @@ Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:a6b965fe96b4c04032359c49226443727" id="r_a6b965fe96b4c04032359c49226443727"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b965fe96b4c04032359c49226443727">freeze_element</a> (\<a class="el" href="../../d4/de5/classmod__quiz__mod__form.html">mod_quiz_mod_form</a> $quizform, <a class="el" href="../../d5/d8e/class_moodle_quick_form.html">MoodleQuickForm</a> $mform, string $elementname)</td></tr>
 <tr class="memdesc:a6b965fe96b4c04032359c49226443727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Freeze form element.  <br /></td></tr>
 <tr class="separator:a6b965fe96b4c04032359c49226443727"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec687418f7bcf3685f939fec3bc66edf" id="r_aec687418f7bcf3685f939fec3bc66edf"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec687418f7bcf3685f939fec3bc66edf">get_template_options</a> ()</td></tr>
-<tr class="memdesc:aec687418f7bcf3685f939fec3bc66edf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of templates.  <br /></td></tr>
-<tr class="separator:aec687418f7bcf3685f939fec3bc66edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c5cdc6f0479f8140cbb1a8b14adf19" id="r_a48c5cdc6f0479f8140cbb1a8b14adf19"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48c5cdc6f0479f8140cbb1a8b14adf19">get_template_options</a> ($cmid)</td></tr>
+<tr class="memdesc:a48c5cdc6f0479f8140cbb1a8b14adf19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of templates.  <br /></td></tr>
+<tr class="separator:a48c5cdc6f0479f8140cbb1a8b14adf19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9e07cbf0fad4e40187f37d7a9d8bb8b" id="r_af9e07cbf0fad4e40187f37d7a9d8bb8b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9e07cbf0fad4e40187f37d7a9d8bb8b">get_uploaded_seb_file_download_link</a> (\<a class="el" href="../../d4/de5/classmod__quiz__mod__form.html">mod_quiz_mod_form</a> $quizform, <a class="el" href="../../d5/d8e/class_moodle_quick_form.html">MoodleQuickForm</a> $mform)</td></tr>
 <tr class="memdesc:af9e07cbf0fad4e40187f37d7a9d8bb8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return uploaded SEB config file link.  <br /></td></tr>
 <tr class="separator:af9e07cbf0fad4e40187f37d7a9d8bb8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -955,6 +958,45 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6552eef99984841ed6eddc31de716134" name="a6552eef99984841ed6eddc31de716134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6552eef99984841ed6eddc31de716134">&#9670;&#160;</a></span>can_use_seb_client_config()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static quizaccess_seb\settings_provider::can_use_seb_client_config </td>
+          <td>(</td>
+          <td class="paramtype">\context</td>          <td class="paramname"><span class="paramname"><em>$context</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the current user can select to use the SEB client configuration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">context</td><td class="paramname">$context</td><td>Context to check access in. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a1b4abda597409535030470a52fd765a6" name="a1b4abda597409535030470a52fd765a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1b4abda597409535030470a52fd765a6">&#9670;&#160;</a></span>can_use_seb_template()</h2>
 
@@ -1436,8 +1478,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aec687418f7bcf3685f939fec3bc66edf" name="aec687418f7bcf3685f939fec3bc66edf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec687418f7bcf3685f939fec3bc66edf">&#9670;&#160;</a></span>get_template_options()</h2>
+<a id="a48c5cdc6f0479f8140cbb1a8b14adf19" name="a48c5cdc6f0479f8140cbb1a8b14adf19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48c5cdc6f0479f8140cbb1a8b14adf19">&#9670;&#160;</a></span>get_template_options()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1448,7 +1490,7 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static quizaccess_seb\settings_provider::get_template_options </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$cmid</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1624,8 +1666,9 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Check that we have conflicting permissions. </p>
-<p>In Some point we can have settings save by the person who use specific type of SEB usage (e.g. use templates). But then another person who can't use template (but still can update other settings) edit the same quiz. This is conflict of permissions and we'd like to build the settings form having this in mind.</p>
+<p>Check that we have conflicting permissions with the current SEB settings. </p>
+<p>Check if the existing settings of the quiz (if any) are conflicting with the capabilities of the managing user.</p>
+<p>E.g. a quiz is using an SEB template and a site admin is able to select this option while a course manager cannot. Therefore it will return true for a course manager and return false for a site admin.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">context</td><td class="paramname">$context</td><td>Context used with capability checking.</td></tr>
@@ -1970,7 +2013,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 1 2024 03:01:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 8 2024 02:57:27 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

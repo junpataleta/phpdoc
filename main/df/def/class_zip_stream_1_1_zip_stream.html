@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240829) (072fb90384d)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240907) (1938c438ea1)</div>
   </td>
  </tr>
  </tbody>
@@ -192,7 +192,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a new <a class="el" href="../../d7/d48/namespace_zip_stream.html" title="&#160;">ZipStream</a> object. </p>
-<h5><a class="anchor" id="autotoc_md31"></a>
+<h5><a class="anchor" id="autotoc_md33"></a>
 Examples</h5>
 <div class="fragment"><div class="line"><span class="comment">// create a new zip file named &#39;foo.zip&#39;</span></div>
 <div class="line">$zip = <span class="keyword">new</span> <a class="code hl_namespace" href="../../d7/d48/namespace_zip_stream.html">ZipStream</a>(outputName: <span class="stringliteral">&#39;foo.zip&#39;</span>);</div>
@@ -300,10 +300,10 @@ Examples</h5>
 </div><div class="memdoc">
 
 <p>Add a directory to the archive. </p>
-<h5><a class="anchor" id="autotoc_md39"></a>
+<h5><a class="anchor" id="autotoc_md41"></a>
 File Options</h5>
 <p>See {</p><dl class="section see"><dt>See also</dt><dd>addFileFromPsr7Stream()}</dd></dl>
-<h5><a class="anchor" id="autotoc_md40"></a>
+<h5><a class="anchor" id="autotoc_md42"></a>
 Examples</h5>
 <div class="fragment"><div class="line"><span class="comment">// add a directory named &#39;world/&#39;</span></div>
 <div class="line">$zip-&gt;addFile(fileName: <span class="stringliteral">&#39;world/&#39;</span>);</div>
@@ -365,10 +365,10 @@ Examples</h5>
 </div><div class="memdoc">
 
 <p>Add a file to the archive. </p>
-<h5><a class="anchor" id="autotoc_md32"></a>
+<h5><a class="anchor" id="autotoc_md34"></a>
 File Options</h5>
 <p>See {</p><dl class="section see"><dt>See also</dt><dd>addFileFromPsr7Stream()}</dd></dl>
-<h5><a class="anchor" id="autotoc_md33"></a>
+<h5><a class="anchor" id="autotoc_md35"></a>
 Examples</h5>
 <div class="fragment"><div class="line"><span class="comment">// add a file named &#39;world.txt&#39;</span></div>
 <div class="line">$zip-&gt;addFile(fileName: <span class="stringliteral">&#39;world.txt&#39;</span>, data: <span class="stringliteral">&#39;Hello World!&#39;</span>);</div>
@@ -447,7 +447,7 @@ Examples</h5>
 
 <p>Add a file based on a callback. </p>
 <p>This is useful when you want to simulate a lot of files without keeping all of the file handles open at the same time.</p>
-<h5><a class="anchor" id="autotoc_md38"></a>
+<h5><a class="anchor" id="autotoc_md40"></a>
 Examples</h5>
 <div class="fragment"><div class="line"><span class="keywordflow">foreach</span>($files as $name =&gt; $size) {</div>
 <div class="line">  $archive-&gt;addFileFromPsr7Stream(</div>
@@ -557,7 +557,7 @@ Examples</h5>
 </div><div class="memdoc">
 
 <p>Add a file at path to the archive. </p>
-<h5><a class="anchor" id="autotoc_md34"></a>
+<h5><a class="anchor" id="autotoc_md36"></a>
 File Options</h5>
 <p>See {</p><dl class="section see"><dt>See also</dt><dd>addFileFromPsr7Stream()}</dd></dl>
 <h6>Examples</h6>
@@ -648,7 +648,7 @@ File Options</h5>
 </div><div class="memdoc">
 
 <p>Add an open stream to the archive. </p>
-<h5><a class="anchor" id="autotoc_md37"></a>
+<h5><a class="anchor" id="autotoc_md39"></a>
 Examples</h5>
 <div class="fragment"><div class="line">$stream = $response-&gt;getBody();</div>
 <div class="line"><span class="comment">// add a file named &#39;streamfile.txt&#39; from the content of the stream</span></div>
@@ -753,10 +753,10 @@ Examples</h5>
 </div><div class="memdoc">
 
 <p>Add an open stream (resource) to the archive. </p>
-<h5><a class="anchor" id="autotoc_md35"></a>
+<h5><a class="anchor" id="autotoc_md37"></a>
 File Options</h5>
 <p>See {</p><dl class="section see"><dt>See also</dt><dd>addFileFromPsr7Stream()}</dd></dl>
-<h5><a class="anchor" id="autotoc_md36"></a>
+<h5><a class="anchor" id="autotoc_md38"></a>
 Examples</h5>
 <div class="fragment"><div class="line"><span class="comment">// create a temporary file stream and write text to it</span></div>
 <div class="line">$filePointer = tmpfile();</div>
@@ -792,7 +792,7 @@ Examples</h5>
 </div><div class="memdoc">
 
 <p>Executes a previously calculated simulation. </p>
-<h5><a class="anchor" id="autotoc_md41"></a>
+<h5><a class="anchor" id="autotoc_md43"></a>
 Example</h5>
 <div class="fragment"><div class="line">$zip = <span class="keyword">new</span> <a class="code hl_namespace" href="../../d7/d48/namespace_zip_stream.html">ZipStream</a>(</div>
 <div class="line">  outputName: <span class="stringliteral">&#39;foo.zip&#39;</span>,</div>
@@ -826,7 +826,7 @@ Example</h5>
 
 <p>Write zip footer to stream. </p>
 <p>The clase is left in an unusable state after <code>finish</code>.</p>
-<h5><a class="anchor" id="autotoc_md42"></a>
+<h5><a class="anchor" id="autotoc_md44"></a>
 Example</h5>
 <div class="fragment"><div class="line"><span class="comment">// write footer to stream</span></div>
 <div class="line">$zip-&gt;finish();</div>
@@ -859,7 +859,7 @@ Example</h5>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 1 2024 03:01:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 8 2024 02:57:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

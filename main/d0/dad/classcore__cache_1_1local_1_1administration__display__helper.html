@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240829) (072fb90384d)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240907) (1938c438ea1)</div>
   </td>
  </tr>
  </tbody>
@@ -159,9 +159,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4f69156798d019ce0d50a250f09ccbcb" id="r_a4f69156798d019ce0d50a250f09ccbcb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f69156798d019ce0d50a250f09ccbcb">get_lock_configuration_from_data</a> (string $plugin, stdClass $data)</td></tr>
 <tr class="memdesc:a4f69156798d019ce0d50a250f09ccbcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets configuration data from a new lock instance form.  <br /></td></tr>
 <tr class="separator:a4f69156798d019ce0d50a250f09ccbcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac989590c1441fbc169ba52f12557d666" id="r_ac989590c1441fbc169ba52f12557d666"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac989590c1441fbc169ba52f12557d666">get_store_configuration_from_data</a> (stClass $data)</td></tr>
-<tr class="memdesc:ac989590c1441fbc169ba52f12557d666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes the results of the add/edit instance form data for a plugin returning an array of config information suitable to store in configuration.  <br /></td></tr>
-<tr class="separator:ac989590c1441fbc169ba52f12557d666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1381f4997fbe3f9ad471fd612d51322a" id="r_a1381f4997fbe3f9ad471fd612d51322a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1381f4997fbe3f9ad471fd612d51322a">get_store_configuration_from_data</a> (stdClass $data)</td></tr>
+<tr class="memdesc:a1381f4997fbe3f9ad471fd612d51322a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes the results of the add/edit instance form data for a plugin returning an array of config information suitable to store in configuration.  <br /></td></tr>
+<tr class="separator:a1381f4997fbe3f9ad471fd612d51322a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58da9f49c44927452ae7255b7707669b" id="r_a58da9f49c44927452ae7255b7707669b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58da9f49c44927452ae7255b7707669b">get_store_instance_actions</a> (string $name, array $storedetails)</td></tr>
 <tr class="memdesc:a58da9f49c44927452ae7255b7707669b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all of the actions that can be performed on a store.  <br /></td></tr>
 <tr class="separator:a58da9f49c44927452ae7255b7707669b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1602,8 +1602,8 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$stats</b> = 
 
 </div>
 </div>
-<a id="ac989590c1441fbc169ba52f12557d666" name="ac989590c1441fbc169ba52f12557d666"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac989590c1441fbc169ba52f12557d666">&#9670;&#160;</a></span>get_store_configuration_from_data()</h2>
+<a id="a1381f4997fbe3f9ad471fd612d51322a" name="a1381f4997fbe3f9ad471fd612d51322a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1381f4997fbe3f9ad471fd612d51322a">&#9670;&#160;</a></span>get_store_configuration_from_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1611,7 +1611,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$stats</b> = 
         <tr>
           <td class="memname">core_cache\local\administration_display_helper::get_store_configuration_from_data </td>
           <td>(</td>
-          <td class="paramtype">stClass</td>          <td class="paramname"><span class="paramname"><em>$data</em></span></td><td>)</td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$data</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2059,7 +2059,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$stats</b> = 
 </div><div class="memdoc">
 
 <p>Invalidates a given set of keys from a given definition. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000022">Todo</a></b></dt><dd>Invalidating by definition should also add to the event cache so that sessions can be invalidated (when required).</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000023">Todo</a></b></dt><dd>Invalidating by definition should also add to the event cache so that sessions can be invalidated (when required).</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$component</td><td></td></tr>
@@ -2737,7 +2737,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$stats</b> = 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 1 2024 03:00:51 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 8 2024 02:56:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

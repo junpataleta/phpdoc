@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240829) (072fb90384d)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240907) (1938c438ea1)</div>
   </td>
  </tr>
  </tbody>
@@ -108,6 +108,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acaf95a7c9891887cc487a79afa5d3f9a" id="r_acaf95a7c9891887cc487a79afa5d3f9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acaf95a7c9891887cc487a79afa5d3f9a">set_old_help_icon</a> ($helppage, $title, $<a class="el" href="../../db/d60/classcore_1_1component.html">component</a>='moodle')</td></tr>
 <tr class="memdesc:acaf95a7c9891887cc487a79afa5d3f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds help icon.  <br /></td></tr>
 <tr class="separator:acaf95a7c9891887cc487a79afa5d3f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d15badc77daeab0b6b1233adad25a5a" id="r_a1d15badc77daeab0b6b1233adad25a5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d15badc77daeab0b6b1233adad25a5a">set_option_disabled</a> (string $urlkey, bool $disabled=true)</td></tr>
+<tr class="memdesc:a1d15badc77daeab0b6b1233adad25a5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the option(url).  <br /></td></tr>
+<tr class="separator:a1d15badc77daeab0b6b1233adad25a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -123,6 +126,10 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$class</b> = 'urlse
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>$disabled</b> = false</td></tr>
 <tr class="memdesc:a83c35eee50d0c05bdd0274d9c9809e4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if button disabled, false if normal. <br /></td></tr>
 <tr class="separator:a83c35eee50d0c05bdd0274d9c9809e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26992ba77b3ff8bf7a714b12bf8bfd85" id="r_a26992ba77b3ff8bf7a714b12bf8bfd85"><td class="memItemLeft" align="right" valign="top"><a id="a26992ba77b3ff8bf7a714b12bf8bfd85" name="a26992ba77b3ff8bf7a714b12bf8bfd85"></a>
+array&#160;</td><td class="memItemRight" valign="bottom"><b>$disabledoptions</b> = []</td></tr>
+<tr class="memdesc:a26992ba77b3ff8bf7a714b12bf8bfd85"><td class="mdescLeft">&#160;</td><td class="mdescRight">$disabledoptions array of disabled options <br /></td></tr>
+<tr class="separator:a26992ba77b3ff8bf7a714b12bf8bfd85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13f3aa0884774a406e594ca9b795aa63" id="r_a13f3aa0884774a406e594ca9b795aa63"><td class="memItemLeft" align="right" valign="top"><a id="a13f3aa0884774a406e594ca9b795aa63" name="a13f3aa0884774a406e594ca9b795aa63"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$formid</b> = null</td></tr>
 <tr class="memdesc:a13f3aa0884774a406e594ca9b795aa63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Form id. <br /></td></tr>
@@ -421,7 +428,37 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Adds help icon. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000282">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000287">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.0 </dd></dl>
+
+</div>
+</div>
+<a id="a1d15badc77daeab0b6b1233adad25a5a" name="a1d15badc77daeab0b6b1233adad25a5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d15badc77daeab0b6b1233adad25a5a">&#9670;&#160;</a></span>set_option_disabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core\output\url_select::set_option_disabled </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$urlkey</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$disabled</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable the option(url). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$urlkey</td><td></td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$disabled</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -431,7 +468,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 1 2024 03:00:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 8 2024 02:56:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>
