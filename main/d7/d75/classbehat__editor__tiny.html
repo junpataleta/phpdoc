@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240907) (1938c438ea1)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240913) (09e56f2d1a4)</div>
   </td>
  </tr>
  </tbody>
@@ -92,6 +92,12 @@ Inheritance diagram for behat_editor_tiny:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a7eeb8a12921dcd6bfce91d3f96dda85d" id="r_a7eeb8a12921dcd6bfce91d3f96dda85d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7eeb8a12921dcd6bfce91d3f96dda85d">button_should_exist</a> (string $button, string $locator)</td></tr>
+<tr class="memdesc:a7eeb8a12921dcd6bfce91d3f96dda85d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that a button exists in specified TinyMCE editor.  <br /></td></tr>
+<tr class="separator:a7eeb8a12921dcd6bfce91d3f96dda85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18dfbbda39de6fe0095ffb108a8aed52" id="r_a18dfbbda39de6fe0095ffb108a8aed52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18dfbbda39de6fe0095ffb108a8aed52">button_should_not_exist</a> (string $button, string $locator)</td></tr>
+<tr class="memdesc:a18dfbbda39de6fe0095ffb108a8aed52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that a button does not exist in specified TinyMCE editor.  <br /></td></tr>
+<tr class="separator:a18dfbbda39de6fe0095ffb108a8aed52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae89593cd155e88617504832c6025520f" id="r_ae89593cd155e88617504832c6025520f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae89593cd155e88617504832c6025520f">button_state_is</a> (string $button, string $locator, string $state)</td></tr>
 <tr class="memdesc:ae89593cd155e88617504832c6025520f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Confirm that the button state of the specified button/editor combination matches the expectation.  <br /></td></tr>
 <tr class="separator:ae89593cd155e88617504832c6025520f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,6 +130,68 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>TinyMCE custom behat step definitions. </p>
 <dl class="section copyright"><dt>Copyright</dt><dd>2022 Andrew Lyons <a href="#" onclick="location.href='mai'+'lto:'+'and'+'re'+'w@n'+'ic'+'ols'+'.c'+'o.u'+'k'; return false;">andre<span class="obfuscator">.nosp@m.</span>w@ni<span class="obfuscator">.nosp@m.</span>cols.<span class="obfuscator">.nosp@m.</span>co.u<span class="obfuscator">.nosp@m.</span>k</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7eeb8a12921dcd6bfce91d3f96dda85d" name="a7eeb8a12921dcd6bfce91d3f96dda85d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eeb8a12921dcd6bfce91d3f96dda85d">&#9670;&#160;</a></span>button_should_exist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_editor_tiny::button_should_exist </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$button</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$locator</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks that a button exists in specified TinyMCE editor. </p>
+<p>@When /^"(?P&lt;button_string&gt;(?:[^"]|::")*)" button should exist in the "(?P&lt;locator_string&gt;(?:[^"]|")*)" TinyMCE editor$/</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$button</td><td>The label of the button </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$locator</td><td>The locator for the editor </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a18dfbbda39de6fe0095ffb108a8aed52" name="a18dfbbda39de6fe0095ffb108a8aed52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18dfbbda39de6fe0095ffb108a8aed52">&#9670;&#160;</a></span>button_should_not_exist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_editor_tiny::button_should_not_exist </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$button</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$locator</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks that a button does not exist in specified TinyMCE editor. </p>
+<p>@When /^"(?P&lt;button_string&gt;(?:[^"]|::")*)" button should not exist in the "(?P&lt;locator_string&gt;(?:[^"]|")*)" TinyMCE editor$/</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$button</td><td>The label of the button </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$locator</td><td>The locator for the editor </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ae89593cd155e88617504832c6025520f" name="ae89593cd155e88617504832c6025520f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae89593cd155e88617504832c6025520f">&#9670;&#160;</a></span>button_state_is()</h2>
 
@@ -408,7 +476,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 8 2024 02:54:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 15 2024 02:59:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

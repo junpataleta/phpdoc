@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240907) (1938c438ea1)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240913) (09e56f2d1a4)</div>
   </td>
  </tr>
  </tbody>
@@ -141,6 +141,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga0ad4164be534d8e3b97ba7015029be8f" id="r_ga0ad4164be534d8e3b97ba7015029be8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0ad4164be534d8e3b97ba7015029be8f">mod_subsection_get_course_content_items</a> (<a class="el" href="../../da/da1/classcore__course_1_1local_1_1entity_1_1content__item.html">core_course\local\entity\content_item</a> $contentitem, stdClass $user, stdClass $course)</td></tr>
+<tr class="memdesc:ga0ad4164be534d8e3b97ba7015029be8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the course content items for the subsection module.  <br /></td></tr>
+<tr class="separator:ga0ad4164be534d8e3b97ba7015029be8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad072ad652665fa4a6e39c290660bb4b6" id="r_gad072ad652665fa4a6e39c290660bb4b6"><td class="memItemLeft" align="right" valign="top"><a id="gad072ad652665fa4a6e39c290660bb4b6" name="gad072ad652665fa4a6e39c290660bb4b6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>mod_subsection_get_fontawesome_icon_map</b> ()</td></tr>
 <tr class="memdesc:gad072ad652665fa4a6e39c290660bb4b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get icon mapping for font-awesome. <br /></td></tr>
@@ -217,6 +220,49 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga0ad4164be534d8e3b97ba7015029be8f" name="ga0ad4164be534d8e3b97ba7015029be8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ad4164be534d8e3b97ba7015029be8f">&#9670;&#160;</a></span>mod_subsection_get_course_content_items()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_subsection_get_course_content_items </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/da1/classcore__course_1_1local_1_1entity_1_1content__item.html">core_course\local\entity\content_item</a></td>          <td class="paramname"><span class="paramname"><em>$contentitem</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$user</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$course</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the course content items for the subsection module. </p>
+<p>This function is called when the course content is being generated for the activity chooser. However, here this module is never shown in the activity chooser so we return an empty array.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../da/da1/classcore__course_1_1local_1_1entity_1_1content__item.html" title="The content_item class.">core_course\local\entity\content_item</a></td><td class="paramname">$contentitem</td><td></td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$user</td><td></td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="gaae8151a0f4025a1341d0921453d44f67" name="gaae8151a0f4025a1341d0921453d44f67"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaae8151a0f4025a1341d0921453d44f67">&#9670;&#160;</a></span>subsection_add_instance()</h2>
 
@@ -861,7 +907,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 8 2024 02:54:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 15 2024 02:59:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

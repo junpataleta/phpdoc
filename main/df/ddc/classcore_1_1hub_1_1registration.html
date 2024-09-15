@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240907) (1938c438ea1)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240913) (09e56f2d1a4)</div>
   </td>
  </tr>
  </tbody>
@@ -90,6 +90,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aad76de4a406b8c02d9dbda6a37314290" id="r_aad76de4a406b8c02d9dbda6a37314290"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad76de4a406b8c02d9dbda6a37314290">confirm_registration</a> ($token, $newtoken, $hubname)</td></tr>
 <tr class="memdesc:aad76de4a406b8c02d9dbda6a37314290"><td class="mdescLeft">&#160;</td><td class="mdescRight">Confirms registration by the sites directory.  <br /></td></tr>
 <tr class="separator:aad76de4a406b8c02d9dbda6a37314290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9658829ffe336e875f3563275cfa5d08" id="r_a9658829ffe336e875f3563275cfa5d08"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9658829ffe336e875f3563275cfa5d08">get_ai_usage_data</a> ()</td></tr>
+<tr class="memdesc:a9658829ffe336e875f3563275cfa5d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get AI usage data.  <br /></td></tr>
+<tr class="separator:a9658829ffe336e875f3563275cfa5d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a360154053b71ba49a890e53e6f9d8a71" id="r_a360154053b71ba49a890e53e6f9d8a71"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a360154053b71ba49a890e53e6f9d8a71">get_last_updated</a> ()</td></tr>
 <tr class="memdesc:a360154053b71ba49a890e53e6f9d8a71"><td class="mdescLeft">&#160;</td><td class="mdescRight">When was the registration last updated.  <br /></td></tr>
 <tr class="separator:a360154053b71ba49a890e53e6f9d8a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,6 +238,39 @@ static stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$registrat
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">moodle_exception</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9658829ffe336e875f3563275cfa5d08" name="a9658829ffe336e875f3563275cfa5d08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9658829ffe336e875f3563275cfa5d08">&#9670;&#160;</a></span>get_ai_usage_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core\hub\registration::get_ai_usage_data </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get AI usage data. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -996,6 +1032,8 @@ static stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$registrat
 <div class="line">        2023021700 =&gt; [<span class="stringliteral">&#39;dbtype&#39;</span>, <span class="stringliteral">&#39;coursesnodates&#39;</span>, <span class="stringliteral">&#39;sitetheme&#39;</span>, <span class="stringliteral">&#39;primaryauthtype&#39;</span>],</div>
 <div class="line">        </div>
 <div class="line">        2023072300 =&gt; [<span class="stringliteral">&#39;pluginusage&#39;</span>],</div>
+<div class="line">        </div>
+<div class="line">        2023081200 =&gt; [<span class="stringliteral">&#39;aiusage&#39;</span>],</div>
 <div class="line">    ]</div>
 </div><!-- fragment -->
 <p>List of new FORM_FIELDS or siteinfo fields added indexed by the version when they were added. </p>
@@ -1030,7 +1068,7 @@ static stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$registrat
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 8 2024 02:56:16 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 15 2024 03:01:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

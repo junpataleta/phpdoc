@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240907) (1938c438ea1)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240913) (09e56f2d1a4)</div>
   </td>
  </tr>
  </tbody>
@@ -127,6 +127,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acbcecd2e86296805902ba9f3963f0661" id="r_acbcecd2e86296805902ba9f3963f0661"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbcecd2e86296805902ba9f3963f0661">get_left_rows</a> ($displayaverages)</td></tr>
 <tr class="memdesc:acbcecd2e86296805902ba9f3963f0661"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds and returns the rows that will make up the left part of the grader report This consists of student names and icons, links to user reports and id numbers, as well as header cells for these columns.  <br /></td></tr>
 <tr class="separator:acbcecd2e86296805902ba9f3963f0661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295c5cb324f16dee5c338293d8f6cd47" id="r_a295c5cb324f16dee5c338293d8f6cd47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a295c5cb324f16dee5c338293d8f6cd47">get_max_students_per_page</a> ()</td></tr>
+<tr class="memdesc:a295c5cb324f16dee5c338293d8f6cd47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the maximum number of students we can display per page.  <br /></td></tr>
+<tr class="separator:a295c5cb324f16dee5c338293d8f6cd47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6442894441e636572bc80f11fad74efd" id="r_a6442894441e636572bc80f11fad74efd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#a6442894441e636572bc80f11fad74efd">get_numusers</a> ($groups=true, $users=false)</td></tr>
 <tr class="memdesc:a6442894441e636572bc80f11fad74efd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches and returns a count of all the users that will be shown on this page.  <br /></td></tr>
 <tr class="separator:a6442894441e636572bc80f11fad74efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -287,9 +290,11 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$user</b></td></t
 array&#160;</td><td class="memItemRight" valign="bottom"><b>$userselectparams</b> = array()</td></tr>
 <tr class="memdesc:a3516d2f85e0468ec0ea15a21eb7a5d95"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bound params for $userselect $userselectparams. <br /></td></tr>
 <tr class="separator:a3516d2f85e0468ec0ea15a21eb7a5d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a556b9641e40a803334252a7cc353f7ea" id="r_a556b9641e40a803334252a7cc353f7ea"><td class="memItemLeft" align="right" valign="top"><a id="a556b9641e40a803334252a7cc353f7ea" name="a556b9641e40a803334252a7cc353f7ea"></a>
-int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_STUDENTS_PER_PAGE</b> = 5000</td></tr>
-<tr class="memdesc:a556b9641e40a803334252a7cc353f7ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of students that can be shown on one page. <br /></td></tr>
+<tr class="memitem:a209cf7e6411d8f9a30d2e05e4900a9bb" id="r_a209cf7e6411d8f9a30d2e05e4900a9bb"><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a209cf7e6411d8f9a30d2e05e4900a9bb">MAX_GRADES_PER_PAGE</a> = 200000</td></tr>
+<tr class="memdesc:a209cf7e6411d8f9a30d2e05e4900a9bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of grades that can be shown on one page.  <br /></td></tr>
+<tr class="separator:a209cf7e6411d8f9a30d2e05e4900a9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a556b9641e40a803334252a7cc353f7ea" id="r_a556b9641e40a803334252a7cc353f7ea"><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a556b9641e40a803334252a7cc353f7ea">MAX_STUDENTS_PER_PAGE</a> = 5000</td></tr>
+<tr class="memdesc:a556b9641e40a803334252a7cc353f7ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of students that can be shown on one page.  <br /></td></tr>
 <tr class="separator:a556b9641e40a803334252a7cc353f7ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63b803ccaeef02a6e7e423322987666f" id="r_a63b803ccaeef02a6e7e423322987666f"><td class="memItemLeft" align="right" valign="top"><a id="a63b803ccaeef02a6e7e423322987666f" name="a63b803ccaeef02a6e7e423322987666f"></a>
 int[] const&#160;</td><td class="memItemRight" valign="bottom"><b>PAGINATION_OPTIONS</b> = [20, 100]</td></tr>
@@ -473,7 +478,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><div class="memdoc">
 
 <p>Optionally blank out course/category totals if they contain any hidden items. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000196">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 - Call blank_hidden_total_and_adjust_bounds instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000197">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 - Call blank_hidden_total_and_adjust_bounds instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$courseid</td><td>the course id </td></tr>
@@ -988,7 +993,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><div class="memdoc">
 
 <p>Given a category element returns collapsing +/- icon if available. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000182">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.9 <a href="https://tracker.moodle.org/browse/MDL-46662" class="el">MDL-46662</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000183">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.9 <a href="https://tracker.moodle.org/browse/MDL-46662" class="el">MDL-46662</a> - please do not use this function any more. </dd></dl>
 
 </div>
 </div>
@@ -1205,7 +1210,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000181">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2 - The row is not shown anymore - we have actions menu. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000182">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2 - The row is not shown anymore - we have actions menu. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000073">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-77307" class="el">MDL-77307</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6. </dd></dl>
 
 </div>
@@ -1238,7 +1243,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><div class="memdoc">
 
 <p>First checks the cached language strings, then returns match if found, or uses get_string() to get it from the <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>, caches it then returns it. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000195">Deprecated</a></b></dt><dd>since 4.2 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000196">Deprecated</a></b></dt><dd>since 4.2 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000086">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-77307" class="el">MDL-77307</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1331,7 +1336,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000178">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2 - The row is not shown anymore - we have actions menu. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000179">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2 - The row is not shown anymore - we have actions menu. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000071">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-77307" class="el">MDL-77307</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6. </dd></dl>
 
 </div>
@@ -1397,6 +1402,32 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>Array of html_table_row objects </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a295c5cb324f16dee5c338293d8f6cd47" name="a295c5cb324f16dee5c338293d8f6cd47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a295c5cb324f16dee5c338293d8f6cd47">&#9670;&#160;</a></span>get_max_students_per_page()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">grade_report_grader::get_max_students_per_page </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the maximum number of students we can display per page. </p>
+<p>This is based on the number of grade items on the course, to limit the overall number of grades displayed on a single page. Trying to display too many grades causes browser issues.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1509,7 +1540,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000180">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 - Call calculate_average instead. Builds and return the row of averages for the right part of the grader report. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000181">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 - Call calculate_average instead. Builds and return the row of averages for the right part of the grader report. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$rows</td><td>Whether to return only group averages or all averages. </td></tr>
@@ -1554,7 +1585,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000179">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2 - The row is not shown anymore - we have actions menu. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000180">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2 - The row is not shown anymore - we have actions menu. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000072">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-77307" class="el">MDL-77307</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6. </dd></dl>
 
 </div>
@@ -1731,7 +1762,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><div class="memdoc">
 
 <p>Gets html toggle. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000176">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.4 as it appears not to be used any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000177">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.4 as it appears not to be used any more. </dd></dl>
 
 </div>
 </div>
@@ -1809,7 +1840,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><div class="memdoc">
 
 <p>Prints html toggle. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000177">Deprecated</a></b></dt><dd>since 2.4 as it appears not to be used any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000178">Deprecated</a></b></dt><dd>since 2.4 as it appears not to be used any more. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">unknown</td><td class="paramname">$type</td><td></td></tr>
@@ -2675,13 +2706,47 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 
 </div>
 </div>
+<a id="a209cf7e6411d8f9a30d2e05e4900a9bb" name="a209cf7e6411d8f9a30d2e05e4900a9bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a209cf7e6411d8f9a30d2e05e4900a9bb">&#9670;&#160;</a></span>MAX_GRADES_PER_PAGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int const grade_report_grader::MAX_GRADES_PER_PAGE = 200000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The maximum number of grades that can be shown on one page. </p>
+<p>More than this causes issues for the browser due to the size of the page. </p>
+
+</div>
+</div>
+<a id="a556b9641e40a803334252a7cc353f7ea" name="a556b9641e40a803334252a7cc353f7ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a556b9641e40a803334252a7cc353f7ea">&#9670;&#160;</a></span>MAX_STUDENTS_PER_PAGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int const grade_report_grader::MAX_STUDENTS_PER_PAGE = 5000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum number of students that can be shown on one page. </p>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000176">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 <a href="https://tracker.moodle.org/browse/MDL-84245" class="el">MDL-84245</a>. Use grade_report_grader::get_max_students_per_page() instead. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>grade/report/grader/<b>lib.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 8 2024 02:55:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 15 2024 03:00:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>
