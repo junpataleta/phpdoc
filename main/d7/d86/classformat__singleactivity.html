@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240913) (09e56f2d1a4)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240920) (525fc81cf6e)</div>
   </td>
  </tr>
  </tbody>
@@ -2487,7 +2487,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 </div><div class="memdoc">
 
 <p>Get the activities supported by the format. </p>
-<p>Here we ignore the modules that do not have a page of their own, like the label.</p>
+<p>Here we ignore the modules that do not have a page of their own or need sections, like the label or subsection.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>array($module =&gt; $name of the module). </td></tr>
@@ -2869,7 +2869,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 </div><div class="memdoc">
 
 <p>Adds a course module to the navigation node. </p>
-<p>This is basically copied from function <a class="el" href="../../d9/de0/classglobal__navigation.html#ad7f8853fba2a59aef892fbea1449cc2f" title="Loads all of the activities for a section into the navigation structure.">global_navigation\load_section_activities()</a> because it is not accessible from outside.</p>
+<p>This is basically copied from function global_navigation\load_section_activities() because it is not accessible from outside.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../dd/de3/classnavigation__node.html" title="This class is used to represent a node in a navigation tree.">navigation_node</a></td><td class="paramname">$node</td><td></td></tr>
@@ -4060,7 +4060,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 15 2024 03:00:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 22 2024 03:00:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

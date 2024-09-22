@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240913) (09e56f2d1a4)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240920) (525fc81cf6e)</div>
   </td>
  </tr>
  </tbody>
@@ -98,12 +98,15 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d52d8e445ecc4870c09f1a343908286" id="r_a0d52d8e445ecc4870c09f1a343908286"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d52d8e445ecc4870c09f1a343908286">get_user_policy_status</a> (int $userid)</td></tr>
 <tr class="memdesc:a0d52d8e445ecc4870c09f1a343908286"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the user policy.  <br /></td></tr>
 <tr class="separator:a0d52d8e445ecc4870c09f1a343908286"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d61ce85550f5d9d35159536a5f44ad9" id="r_a4d61ce85550f5d9d35159536a5f44ad9"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d61ce85550f5d9d35159536a5f44ad9">is_action_enabled</a> (string $plugin, string $action)</td></tr>
-<tr class="memdesc:a4d61ce85550f5d9d35159536a5f44ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an action is enabled for a given plugin.  <br /></td></tr>
-<tr class="separator:a4d61ce85550f5d9d35159536a5f44ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd581bb1a365f9aa6a5523cd5a26c4e3" id="r_abd581bb1a365f9aa6a5523cd5a26c4e3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd581bb1a365f9aa6a5523cd5a26c4e3">set_action_state</a> (string $plugin, string $action, int $enabled)</td></tr>
-<tr class="memdesc:abd581bb1a365f9aa6a5523cd5a26c4e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the action state for a given plugin.  <br /></td></tr>
-<tr class="separator:abd581bb1a365f9aa6a5523cd5a26c4e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7aa0da57e07dbe1aa0c0e931f6d37d6" id="r_ac7aa0da57e07dbe1aa0c0e931f6d37d6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7aa0da57e07dbe1aa0c0e931f6d37d6">is_action_available</a> (string $actionclass)</td></tr>
+<tr class="memdesc:ac7aa0da57e07dbe1aa0c0e931f6d37d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an action is available.  <br /></td></tr>
+<tr class="separator:ac7aa0da57e07dbe1aa0c0e931f6d37d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a9073365db9fe7709190f64223fd2d2" id="r_a9a9073365db9fe7709190f64223fd2d2"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a9073365db9fe7709190f64223fd2d2">is_action_enabled</a> (string $plugin, string $actionclass)</td></tr>
+<tr class="memdesc:a9a9073365db9fe7709190f64223fd2d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an action is enabled for a given plugin.  <br /></td></tr>
+<tr class="separator:a9a9073365db9fe7709190f64223fd2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47eb27243b3093e0aa14bb3add227a70" id="r_a47eb27243b3093e0aa14bb3add227a70"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47eb27243b3093e0aa14bb3add227a70">set_action_state</a> (string $plugin, string $actionbasename, int $enabled)</td></tr>
+<tr class="memdesc:a47eb27243b3093e0aa14bb3add227a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the action state for a given plugin.  <br /></td></tr>
+<tr class="separator:a47eb27243b3093e0aa14bb3add227a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a461f907ff7c2d94e3f1ab01448925761" id="r_a461f907ff7c2d94e3f1ab01448925761"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a461f907ff7c2d94e3f1ab01448925761">user_policy_accepted</a> (int $userid, int $contextid)</td></tr>
 <tr class="memdesc:a461f907ff7c2d94e3f1ab01448925761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the policy acceptance for a given user.  <br /></td></tr>
 <tr class="separator:a461f907ff7c2d94e3f1ab01448925761"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,7 +194,7 @@ Protected Member Functions</h2></td></tr>
 <p>Will return an array of arrays, indexed by action name.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$actions</td><td>An array of action class names. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$actions</td><td>An array of fully qualified action class names. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$enabledonly</td><td>If true, only return enabled providers. </td></tr>
   </table>
   </dd>
@@ -283,8 +286,48 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4d61ce85550f5d9d35159536a5f44ad9" name="a4d61ce85550f5d9d35159536a5f44ad9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d61ce85550f5d9d35159536a5f44ad9">&#9670;&#160;</a></span>is_action_enabled()</h2>
+<a id="ac7aa0da57e07dbe1aa0c0e931f6d37d6" name="ac7aa0da57e07dbe1aa0c0e931f6d37d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7aa0da57e07dbe1aa0c0e931f6d37d6">&#9670;&#160;</a></span>is_action_available()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_ai\manager::is_action_available </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$actionclass</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if an action is available. </p>
+<p>Action is available if it is enabled for at least one enabled provider.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$actionclass</td><td>The fully qualified action class name to be checked. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9a9073365db9fe7709190f64223fd2d2" name="a9a9073365db9fe7709190f64223fd2d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a9073365db9fe7709190f64223fd2d2">&#9670;&#160;</a></span>is_action_enabled()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -300,7 +343,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$action</em></span>&#160;)</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$actionclass</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -314,7 +357,7 @@ Protected Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$plugin</td><td>The name of the plugin. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>The action to be checked. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$actionclass</td><td>The fully qualified action class name to be checked. </td></tr>
   </table>
   </dd>
 </dl>
@@ -359,8 +402,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abd581bb1a365f9aa6a5523cd5a26c4e3" name="abd581bb1a365f9aa6a5523cd5a26c4e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd581bb1a365f9aa6a5523cd5a26c4e3">&#9670;&#160;</a></span>set_action_state()</h2>
+<a id="a47eb27243b3093e0aa14bb3add227a70" name="a47eb27243b3093e0aa14bb3add227a70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47eb27243b3093e0aa14bb3add227a70">&#9670;&#160;</a></span>set_action_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -376,7 +419,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$action</em></span>, </td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$actionbasename</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -395,7 +438,7 @@ Protected Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$plugin</td><td>The name of the plugin. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>The action to be set. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$actionbasename</td><td>The action to be set. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$enabled</td><td>The state to be set (e.g., enabled or disabled). </td></tr>
   </table>
   </dd>
@@ -459,7 +502,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 15 2024 03:01:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 22 2024 03:02:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

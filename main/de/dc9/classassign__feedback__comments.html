@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240913) (09e56f2d1a4)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240920) (525fc81cf6e)</div>
   </td>
  </tr>
  </tbody>
@@ -161,6 +161,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a82fb63320090e51b848d486ed6b175a2" id="r_a82fb63320090e51b848d486ed6b175a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd4/classassign__feedback__plugin.html#a82fb63320090e51b848d486ed6b175a2">get_grading_actions</a> ()</td></tr>
 <tr class="memdesc:a82fb63320090e51b848d486ed6b175a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of the grading actions supported by this plugin.  <br /></td></tr>
 <tr class="separator:a82fb63320090e51b848d486ed6b175a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab3be49de945b5bccaac55d8c585e7e6" id="r_aab3be49de945b5bccaac55d8c585e7e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd4/classassign__feedback__plugin.html#aab3be49de945b5bccaac55d8c585e7e6">get_grading_batch_operation_details</a> ()</td></tr>
+<tr class="memdesc:aab3be49de945b5bccaac55d8c585e7e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of detailed batch grading operations supported by this plugin.  <br /></td></tr>
+<tr class="separator:aab3be49de945b5bccaac55d8c585e7e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a131068ae546498a16f17647aa16a7803" id="r_a131068ae546498a16f17647aa16a7803"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd4/classassign__feedback__plugin.html#a131068ae546498a16f17647aa16a7803">get_grading_batch_operations</a> ()</td></tr>
 <tr class="memdesc:a131068ae546498a16f17647aa16a7803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of the batch grading operations supported by this plugin.  <br /></td></tr>
 <tr class="separator:a131068ae546498a16f17647aa16a7803"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1182,6 +1185,48 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aab3be49de945b5bccaac55d8c585e7e6" name="aab3be49de945b5bccaac55d8c585e7e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab3be49de945b5bccaac55d8c585e7e6">&#9670;&#160;</a></span>get_grading_batch_operation_details()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">assign_feedback_plugin::get_grading_batch_operation_details </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return a list of detailed batch grading operations supported by this plugin. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>- An array of objects containing batch operation details. Each object should contain:<ul>
+<li>'key': the action identifier (string)</li>
+<li>'label': the button label (string)</li>
+<li>'icon': the button icon (string)</li>
+<li>'confirmationtitle': the title for the confirmation modal (string)</li>
+<li>'confirmationquestion': the question for the confirmation modal (string) </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d9/d6c/classassign__feedback__file.html#afb8e890fc2b7ce2c4256b51ab18a7938">assign_feedback_file</a>.</p>
+
+</div>
+</div>
 <a id="a131068ae546498a16f17647aa16a7803" name="a131068ae546498a16f17647aa16a7803"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a131068ae546498a16f17647aa16a7803">&#9670;&#160;</a></span>get_grading_batch_operations()</h2>
 
@@ -1212,8 +1257,8 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Reimplemented in <a class="el" href="../../d9/d6c/classassign__feedback__file.html#aca2917d128400b572c7b6a5defb70169">assign_feedback_file</a>.</p>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001145">Deprecated</a></b></dt><dd>since 4.5, use <a class="el" href="../../d7/dd4/classassign__feedback__plugin.html#aab3be49de945b5bccaac55d8c585e7e6" title="Return a list of detailed batch grading operations supported by this plugin.">get_grading_batch_operation_details()</a> instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000277">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-82856" class="el">MDL-82856</a>. </dd></dl>
 
 </div>
 </div>
@@ -2541,7 +2586,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 15 2024 02:59:51 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 22 2024 03:00:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

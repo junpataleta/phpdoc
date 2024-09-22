@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240913) (09e56f2d1a4)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240920) (525fc81cf6e)</div>
   </td>
  </tr>
  </tbody>
@@ -2122,7 +2122,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 <p>Please note that course view page /course/view.php?id=COURSEID is hardcoded in many places in core and contributed modules. If course format wants to change the location of the view script, it is not enough to change just this function. Do not forget to add proper redirection.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">int&#160;|&#160;stdClass</td><td class="paramname">$section</td><td>Section object from database or just field course_sections.section if null the course view page is returned </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;stdClass&#160;|&#160;<a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td><td class="paramname">$section</td><td>Section object from database or just field course_sections.section if null the course view page is returned </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$options</td><td>options for view URL. At the moment core uses: 'navigation' (bool) if true and section not empty, the function returns section page; otherwise, it returns course page. 'sr' (int) used by course formats to specify to which section to return 'expanded' (bool) if true the section will be shown expanded, true by default </td></tr>
   </table>
   </dd>
@@ -3383,7 +3383,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 15 2024 03:01:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 22 2024 03:02:22 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

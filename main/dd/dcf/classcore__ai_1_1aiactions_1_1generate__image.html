@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240913) (09e56f2d1a4)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240920) (525fc81cf6e)</div>
   </td>
  </tr>
  </tbody>
@@ -99,9 +99,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adf7df02408f854ec865c5fec8174ef2b" id="r_adf7df02408f854ec865c5fec8174ef2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db5/classcore__ai_1_1aiactions_1_1base.html#adf7df02408f854ec865c5fec8174ef2b">get_configuration</a> (string $name)</td></tr>
 <tr class="memdesc:adf7df02408f854ec865c5fec8174ef2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a configuration option.  <br /></td></tr>
 <tr class="separator:adf7df02408f854ec865c5fec8174ef2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a051f91ff8f70cc1de3917973b139e7c2" id="r_a051f91ff8f70cc1de3917973b139e7c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db5/classcore__ai_1_1aiactions_1_1base.html#a051f91ff8f70cc1de3917973b139e7c2">get_system_instruction</a> ()</td></tr>
-<tr class="memdesc:a051f91ff8f70cc1de3917973b139e7c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the system instruction for the action.  <br /></td></tr>
-<tr class="separator:a051f91ff8f70cc1de3917973b139e7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0d0fbc79cd3fa885a2d40e616ed594f" id="r_af0d0fbc79cd3fa885a2d40e616ed594f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0d0fbc79cd3fa885a2d40e616ed594f">store</a> (<a class="el" href="../../da/d73/classcore__ai_1_1aiactions_1_1responses_1_1response__base.html">response_base</a> $response)</td></tr>
 <tr class="memdesc:af0d0fbc79cd3fa885a2d40e616ed594f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Responsible for storing any action specific data in the database.  <br /></td></tr>
 <tr class="separator:af0d0fbc79cd3fa885a2d40e616ed594f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,6 +117,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7c5abd9aae391a420ded8bc319dbd4c7" id="r_a7c5abd9aae391a420ded8bc319dbd4c7"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db5/classcore__ai_1_1aiactions_1_1base.html#a7c5abd9aae391a420ded8bc319dbd4c7">get_response_classname</a> ()</td></tr>
 <tr class="memdesc:a7c5abd9aae391a420ded8bc319dbd4c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the class name of the response object.  <br /></td></tr>
 <tr class="separator:a7c5abd9aae391a420ded8bc319dbd4c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae60b51811470951ce29f6b16ab0af940" id="r_ae60b51811470951ce29f6b16ab0af940"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db5/classcore__ai_1_1aiactions_1_1base.html#ae60b51811470951ce29f6b16ab0af940">get_system_instruction</a> ()</td></tr>
+<tr class="memdesc:ae60b51811470951ce29f6b16ab0af940"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the system instruction for the action.  <br /></td></tr>
+<tr class="separator:ae60b51811470951ce29f6b16ab0af940"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -382,8 +382,8 @@ int readonly int&#160;</td><td class="memItemRight" valign="bottom"><b>$timecrea
 
 </div>
 </div>
-<a id="a051f91ff8f70cc1de3917973b139e7c2" name="a051f91ff8f70cc1de3917973b139e7c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a051f91ff8f70cc1de3917973b139e7c2">&#9670;&#160;</a></span>get_system_instruction()</h2>
+<a id="ae60b51811470951ce29f6b16ab0af940" name="ae60b51811470951ce29f6b16ab0af940"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae60b51811470951ce29f6b16ab0af940">&#9670;&#160;</a></span>get_system_instruction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -392,7 +392,7 @@ int readonly int&#160;</td><td class="memItemRight" valign="bottom"><b>$timecrea
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">core_ai\aiactions\base::get_system_instruction </td>
+          <td class="memname">static core_ai\aiactions\base::get_system_instruction </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -400,7 +400,7 @@ int readonly int&#160;</td><td class="memItemRight" valign="bottom"><b>$timecrea
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -487,7 +487,7 @@ int readonly int&#160;</td><td class="memItemRight" valign="bottom"><b>$timecrea
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 15 2024 03:01:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 22 2024 03:02:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3.7+ (Build: 20240913) (4a5d428cd39)</div>
+   <div id="projectbrief">Moodle 4.3.7+ (Build: 20240920) (da802580da9)</div>
   </td>
  </tr>
  </tbody>
@@ -435,9 +435,15 @@ Functions</h2></td></tr>
 <tr class="memitem:gabb9181fb09e932ac540164e51b456a7a" id="r_gabb9181fb09e932ac540164e51b456a7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabb9181fb09e932ac540164e51b456a7a">create_test_quiz</a> (\stdClass $course)</td></tr>
 <tr class="memdesc:gabb9181fb09e932ac540164e51b456a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a test quiz for the specified course.  <br /></td></tr>
 <tr class="separator:gabb9181fb09e932ac540164e51b456a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f3284850a488aa2c0a36809fd577c29" id="r_ga9f3284850a488aa2c0a36809fd577c29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9f3284850a488aa2c0a36809fd577c29">mod_quiz::describe_random_slot</a> (int $slotid)</td></tr>
+<tr class="memdesc:ga9f3284850a488aa2c0a36809fd577c29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a human-readable description of a random slot.  <br /></td></tr>
+<tr class="separator:ga9f3284850a488aa2c0a36809fd577c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga695fd1bcd04638147ec95187e2e93d2e" id="r_ga695fd1bcd04638147ec95187e2e93d2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga695fd1bcd04638147ec95187e2e93d2e">duplicate_quiz</a> ($course, $quiz)</td></tr>
 <tr class="memdesc:ga695fd1bcd04638147ec95187e2e93d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper method to emulate duplication of the quiz.  <br /></td></tr>
 <tr class="separator:ga695fd1bcd04638147ec95187e2e93d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab59e3e6dce935b2e92d26b6b4fdaf85f" id="r_gab59e3e6dce935b2e92d26b6b4fdaf85f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab59e3e6dce935b2e92d26b6b4fdaf85f">mod_quiz::ensure_random_slot_info_loaded</a> ()</td></tr>
+<tr class="memdesc:gab59e3e6dce935b2e92d26b6b4fdaf85f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure that {.  <br /></td></tr>
+<tr class="separator:gab59e3e6dce935b2e92d26b6b4fdaf85f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0591910251b7da864339d847bccd0282" id="r_ga0591910251b7da864339d847bccd0282"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0591910251b7da864339d847bccd0282">mod_quiz::formatted_question_grade</a> ($slotnumber)</td></tr>
 <tr class="memdesc:ga0591910251b7da864339d847bccd0282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum mark for a question, formatted for display.  <br /></td></tr>
 <tr class="separator:ga0591910251b7da864339d847bccd0282"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -474,6 +480,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1c0c5edf31ae5090422ada2b98ad08cc" id="r_ga1c0c5edf31ae5090422ada2b98ad08cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1c0c5edf31ae5090422ada2b98ad08cc">mod_quiz::get_version_choices_for_slot</a> (int $slotnumber)</td></tr>
 <tr class="memdesc:ga1c0c5edf31ae5090422ada2b98ad08cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the version options to show on the 'Questions' page for a particular question.  <br /></td></tr>
 <tr class="separator:ga1c0c5edf31ae5090422ada2b98ad08cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e8e587694be7be3327e34ad7271f36c" id="r_ga9e8e587694be7be3327e34ad7271f36c"><td class="memItemLeft" align="right" valign="top"><a id="ga9e8e587694be7be3327e34ad7271f36c" name="ga9e8e587694be7be3327e34ad7271f36c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>mod_quiz::load_random_slot_info</b> ()</td></tr>
+<tr class="memdesc:ga9e8e587694be7be3327e34ad7271f36c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load information about the question categories and tags for all random slots,. <br /></td></tr>
+<tr class="separator:ga9e8e587694be7be3327e34ad7271f36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae72e44861b65a463cf772279c3ca32fd" id="r_gae72e44861b65a463cf772279c3ca32fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae72e44861b65a463cf772279c3ca32fd">mod_quiz_calculate_question_stats</a> (context $context)</td></tr>
 <tr class="memdesc:gae72e44861b65a463cf772279c3ca32fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement the calculate_question_stats callback.  <br /></td></tr>
 <tr class="separator:gae72e44861b65a463cf772279c3ca32fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1487,6 +1497,37 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 
 </div>
 </div>
+<a id="ga9f3284850a488aa2c0a36809fd577c29" name="ga9f3284850a488aa2c0a36809fd577c29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9f3284850a488aa2c0a36809fd577c29">&#9670;&#160;</a></span>describe_random_slot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\describe_random_slot </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$slotid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a human-readable description of a random slot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$slotid</td><td>id of slot. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>that can be used to display the random slot. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga695fd1bcd04638147ec95187e2e93d2e" name="ga695fd1bcd04638147ec95187e2e93d2e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga695fd1bcd04638147ec95187e2e93d2e">&#9670;&#160;</a></span>duplicate_quiz()</h2>
 
@@ -1528,6 +1569,34 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="gab59e3e6dce935b2e92d26b6b4fdaf85f" name="gab59e3e6dce935b2e92d26b6b4fdaf85f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab59e3e6dce935b2e92d26b6b4fdaf85f">&#9670;&#160;</a></span>ensure_random_slot_info_loaded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\ensure_random_slot_info_loaded </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ensure that {. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#ga9e8e587694be7be3327e34ad7271f36c" title="Load information about the question categories and tags for all random slots,.">load_random_slot_info()</a>} has been called, so the data is available. </dd></dl>
 
 </div>
 </div>
@@ -7316,7 +7385,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 15 2024 02:55:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 22 2024 02:56:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

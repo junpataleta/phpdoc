@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240913) (09e56f2d1a4)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240920) (525fc81cf6e)</div>
   </td>
  </tr>
  </tbody>
@@ -221,6 +221,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa2218660416fcc1964c12124b4fad268" id="r_aa2218660416fcc1964c12124b4fad268"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/classglobal__navigation.html#aa2218660416fcc1964c12124b4fad268">load_generic_course_sections</a> (stdClass $course, <a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a> $coursenode)</td></tr>
 <tr class="memdesc:aa2218660416fcc1964c12124b4fad268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generically loads the course sections into the course's navigation.  <br /></td></tr>
 <tr class="separator:aa2218660416fcc1964c12124b4fad268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18892d41c30856192341a7002cbdfe83" id="r_a18892d41c30856192341a7002cbdfe83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/classglobal__navigation.html#a18892d41c30856192341a7002cbdfe83">load_section_navigation</a> ($parentnode, $section, $activitiesdata)</td></tr>
+<tr class="memdesc:a18892d41c30856192341a7002cbdfe83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a section into the navigation structure.  <br /></td></tr>
+<tr class="separator:a18892d41c30856192341a7002cbdfe83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2de31b995961c4b8fb7f1ca277b21cc" id="r_ab2de31b995961c4b8fb7f1ca277b21cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de3/classnavigation__node.html#ab2de31b995961c4b8fb7f1ca277b21cc">make_active</a> ()</td></tr>
 <tr class="memdesc:ab2de31b995961c4b8fb7f1ca277b21cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks this node as active and forces it open.  <br /></td></tr>
 <tr class="separator:ab2de31b995961c4b8fb7f1ca277b21cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -409,6 +412,9 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$title</b> = null</
 int&#160;</td><td class="memItemRight" valign="bottom"><b>$type</b> = self::TYPE_UNKNOWN</td></tr>
 <tr class="memdesc:aa72d1129551b76f7e5322993bda7d6d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">See TYPE_* constants defined for this class. <br /></td></tr>
 <tr class="separator:aa72d1129551b76f7e5322993bda7d6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a330a9a246e44d62b79ccfed9d39d7cbb" id="r_a330a9a246e44d62b79ccfed9d39d7cbb"><td class="memItemLeft" align="right" valign="top">replacement&#160;</td><td class="memItemRight" valign="bottom">: '<a class="el" href="../../d9/de0/classglobal__navigation.html#a06cb1b8a31db85c71a1eb93418891981">load_section_activities_navigation</a>'</td></tr>
+<tr class="memdesc:a330a9a246e44d62b79ccfed9d39d7cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads all of the activities for a section into the navigation structure.  <br /></td></tr>
+<tr class="separator:a330a9a246e44d62b79ccfed9d39d7cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeac613143f28ec6a184bbdf8ff6df5fa" id="r_aeac613143f28ec6a184bbdf8ff6df5fa"><td class="memItemLeft" align="right" valign="top"><a id="aeac613143f28ec6a184bbdf8ff6df5fa" name="aeac613143f28ec6a184bbdf8ff6df5fa"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>COURSE_CURRENT</b> = 2</td></tr>
 <tr class="memdesc:aeac613143f28ec6a184bbdf8ff6df5fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">var int Course the current user is currently viewing <br /></td></tr>
@@ -433,6 +439,9 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>LOAD_ALL_CATEGORIES<
 const&#160;</td><td class="memItemRight" valign="bottom"><b>LOAD_ROOT_CATEGORIES</b> = 0</td></tr>
 <tr class="memdesc:ad63b081c0b52bfbb4a835f6a56f7c760"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used when loading categories to load all top level categories [parent = 0]. <br /></td></tr>
 <tr class="separator:ad63b081c0b52bfbb4a835f6a56f7c760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d1d3a3c477e636de477548aa1e83db" id="r_a21d1d3a3c477e636de477548aa1e83db"><td class="memItemLeft" align="right" valign="top"><a id="a21d1d3a3c477e636de477548aa1e83db" name="a21d1d3a3c477e636de477548aa1e83db"></a>
+replacement&#160;</td><td class="memItemRight" valign="bottom"><b>mdl</b>: '&lt;a class=&quot;el&quot; href=&quot;https: final: true</td></tr>
+<tr class="separator:a21d1d3a3c477e636de477548aa1e83db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51e738b4d072cda318a9dee0279a62c9" id="r_a51e738b4d072cda318a9dee0279a62c9"><td class="memItemLeft" align="right" valign="top"><a id="a51e738b4d072cda318a9dee0279a62c9" name="a51e738b4d072cda318a9dee0279a62c9"></a>
 int const&#160;</td><td class="memItemRight" valign="bottom"><b>NODETYPE_BRANCH</b> = 1</td></tr>
 <tr class="memdesc:a51e738b4d072cda318a9dee0279a62c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to identify this node a branch, happens with children 1. <br /></td></tr>
@@ -441,6 +450,9 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>NODETYPE_BRANCH<
 int const&#160;</td><td class="memItemRight" valign="bottom"><b>NODETYPE_LEAF</b> = 0</td></tr>
 <tr class="memdesc:a11469cf9845e5b11175e4a0106158721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to identify this node a leaf (default) 0. <br /></td></tr>
 <tr class="separator:a11469cf9845e5b11175e4a0106158721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a069a95776e13d2db3753c8ab8676020d" id="r_a069a95776e13d2db3753c8ab8676020d"><td class="memItemLeft" align="right" valign="top"><a id="a069a95776e13d2db3753c8ab8676020d" name="a069a95776e13d2db3753c8ab8676020d"></a>
+replacement&#160;</td><td class="memItemRight" valign="bottom"><b>since</b>: '4.5'</td></tr>
+<tr class="separator:a069a95776e13d2db3753c8ab8676020d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5518b968638b1df8dfed6bdc483d9143" id="r_a5518b968638b1df8dfed6bdc483d9143"><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de3/classnavigation__node.html#a5518b968638b1df8dfed6bdc483d9143">TYPE_ACTIVITY</a> = 40</td></tr>
 <tr class="memdesc:a5518b968638b1df8dfed6bdc483d9143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activity node type, e.g.  <br /></td></tr>
 <tr class="separator:a5518b968638b1df8dfed6bdc483d9143"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -523,15 +535,24 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a1f6ada396813b7d447db6bedecf84822" id="r_a1f6ada396813b7d447db6bedecf84822"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/classglobal__navigation.html#a1f6ada396813b7d447db6bedecf84822">generate_sections_and_activities</a> (stdClass $course)</td></tr>
 <tr class="memdesc:a1f6ada396813b7d447db6bedecf84822"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates an array of sections and an array of activities for the given course.  <br /></td></tr>
 <tr class="separator:a1f6ada396813b7d447db6bedecf84822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa14f059b9bd4c2d44baf071d3c9b24" id="r_aaaa14f059b9bd4c2d44baf071d3c9b24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/classglobal__navigation.html#aaaa14f059b9bd4c2d44baf071d3c9b24">get_activity_action</a> (stdClass $activitydata, string $activityname)</td></tr>
+<tr class="memdesc:aaaa14f059b9bd4c2d44baf071d3c9b24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the action for the activity.  <br /></td></tr>
+<tr class="separator:aaaa14f059b9bd4c2d44baf071d3c9b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b679c3c4f325c4af907bd53c1cdd963" id="r_a8b679c3c4f325c4af907bd53c1cdd963"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/classglobal__navigation.html#a8b679c3c4f325c4af907bd53c1cdd963">get_expand_course_cache</a> ()</td></tr>
 <tr class="memdesc:a8b679c3c4f325c4af907bd53c1cdd963"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a cache instance to use for the expand course cache.  <br /></td></tr>
 <tr class="separator:a8b679c3c4f325c4af907bd53c1cdd963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94ccc8fc9514b6c3df40a78ad307cc61" id="r_a94ccc8fc9514b6c3df40a78ad307cc61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/classglobal__navigation.html#a94ccc8fc9514b6c3df40a78ad307cc61">is_category_fully_loaded</a> ($categoryid)</td></tr>
 <tr class="memdesc:a94ccc8fc9514b6c3df40a78ad307cc61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the category has already been loaded as have any child categories.  <br /></td></tr>
 <tr class="separator:a94ccc8fc9514b6c3df40a78ad307cc61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9231d4e6ea2c551b3602061a5e5c742e" id="r_a9231d4e6ea2c551b3602061a5e5c742e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/classglobal__navigation.html#a9231d4e6ea2c551b3602061a5e5c742e">is_section_in_breadcrumb</a> (<a class="el" href="../../d1/db5/classsection__info.html">section_info</a> $section, ?moodle_url $sectionurl)</td></tr>
+<tr class="memdesc:a9231d4e6ea2c551b3602061a5e5c742e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the section is included in the breadcrumb.  <br /></td></tr>
+<tr class="separator:a9231d4e6ea2c551b3602061a5e5c742e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad19839f66fa47cdbdef42e59f5efc43d" id="r_ad19839f66fa47cdbdef42e59f5efc43d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/classglobal__navigation.html#ad19839f66fa47cdbdef42e59f5efc43d">load_activity</a> ($cm, stdClass $course, <a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a> $activity)</td></tr>
 <tr class="memdesc:ad19839f66fa47cdbdef42e59f5efc43d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the navigation structure for the given activity into the activities node.  <br /></td></tr>
 <tr class="separator:ad19839f66fa47cdbdef42e59f5efc43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e7b327a4674d83a22df69add1ad76b1" id="r_a7e7b327a4674d83a22df69add1ad76b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/classglobal__navigation.html#a7e7b327a4674d83a22df69add1ad76b1">load_activity_navigation</a> (<a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a> $sectionnode, stdClass $activitydata,)</td></tr>
+<tr class="memdesc:a7e7b327a4674d83a22df69add1ad76b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads an activity into the navigation structure.  <br /></td></tr>
+<tr class="separator:a7e7b327a4674d83a22df69add1ad76b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f81143e2efeb5020efcb18f50e46eca" id="r_a6f81143e2efeb5020efcb18f50e46eca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/classglobal__navigation.html#a6f81143e2efeb5020efcb18f50e46eca">load_all_categories</a> ($categoryid=self::LOAD_ROOT_CATEGORIES, $showbasecategories=false)</td></tr>
 <tr class="memdesc:a6f81143e2efeb5020efcb18f50e46eca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads all categories (top level or if an id is specified for that category)  <br /></td></tr>
 <tr class="separator:a6f81143e2efeb5020efcb18f50e46eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -562,9 +583,12 @@ Protected Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>load_local_plugin_navigation</b> ()</td></tr>
 <tr class="memdesc:aa2ad106c2320d38142484ee0e54b3c37"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function gives local plugins an opportunity to modify navigation. <br /></td></tr>
 <tr class="separator:aa2ad106c2320d38142484ee0e54b3c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7f8853fba2a59aef892fbea1449cc2f" id="r_ad7f8853fba2a59aef892fbea1449cc2f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/classglobal__navigation.html#ad7f8853fba2a59aef892fbea1449cc2f">load_section_activities</a> (<a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a> $sectionnode, $sectionnumber, array $activities, $course=null)</td></tr>
-<tr class="memdesc:ad7f8853fba2a59aef892fbea1449cc2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads all of the activities for a section into the navigation structure.  <br /></td></tr>
-<tr class="separator:ad7f8853fba2a59aef892fbea1449cc2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a196567275a3b1ffad781c8df159d56a6" id="r_a196567275a3b1ffad781c8df159d56a6"><td class="memItemLeft" align="right" valign="top"><a id="a196567275a3b1ffad781c8df159d56a6" name="a196567275a3b1ffad781c8df159d56a6"></a>
+replacement&#160;</td><td class="memItemRight" valign="bottom"><b>load_section_activities</b> (<a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a> $sectionnode, $sectionnumber, array $activities, $course=null)</td></tr>
+<tr class="separator:a196567275a3b1ffad781c8df159d56a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06cb1b8a31db85c71a1eb93418891981" id="r_a06cb1b8a31db85c71a1eb93418891981"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/classglobal__navigation.html#a06cb1b8a31db85c71a1eb93418891981">load_section_activities_navigation</a> (<a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a> $sectionnode, <a class="el" href="../../d1/db5/classsection__info.html">section_info</a> $section, array $activitiesdata)</td></tr>
+<tr class="memdesc:a06cb1b8a31db85c71a1eb93418891981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the activities for a section into the navigation structure.  <br /></td></tr>
+<tr class="separator:a06cb1b8a31db85c71a1eb93418891981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad79d037afa262d01feddb453d14bc926" id="r_ad79d037afa262d01feddb453d14bc926"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/classglobal__navigation.html#ad79d037afa262d01feddb453d14bc926">load_stealth_activity</a> (<a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a> $coursenode, $modinfo)</td></tr>
 <tr class="memdesc:ad79d037afa262d01feddb453d14bc926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a stealth module from unavailable section.  <br /></td></tr>
 <tr class="separator:ad79d037afa262d01feddb453d14bc926"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1828,6 +1852,50 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>$loadadmintree
 
 </div>
 </div>
+<a id="aaaa14f059b9bd4c2d44baf071d3c9b24" name="aaaa14f059b9bd4c2d44baf071d3c9b24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaa14f059b9bd4c2d44baf071d3c9b24">&#9670;&#160;</a></span>get_activity_action()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">global_navigation::get_activity_action </td>
+          <td>(</td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$activitydata</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$activityname</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the action for the activity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$activitydata</td><td>The acitivy navigation data generated from generate_sections_and_activities </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$activityname</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">moodle_url|action_link</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a368f247ecc20d448f0ef49b04c44552f" name="a368f247ecc20d448f0ef49b04c44552f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a368f247ecc20d448f0ef49b04c44552f">&#9670;&#160;</a></span>get_children_key_list()</h2>
 
@@ -2433,6 +2501,50 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>$loadadmintree
 
 </div>
 </div>
+<a id="a9231d4e6ea2c551b3602061a5e5c742e" name="a9231d4e6ea2c551b3602061a5e5c742e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9231d4e6ea2c551b3602061a5e5c742e">&#9670;&#160;</a></span>is_section_in_breadcrumb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">global_navigation::is_section_in_breadcrumb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td>          <td class="paramname"><span class="paramname"><em>$section</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?moodle_url</td>          <td class="paramname"><span class="paramname"><em>$sectionurl</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the section is included in the breadcrumb. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td><td class="paramname">$section</td><td></td></tr>
+    <tr><td class="paramtype">moodle_url&#160;|&#160;null</td><td class="paramname">$sectionurl</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a3da9bbddba5e30d508ceb9dbb022b2ce" name="a3da9bbddba5e30d508ceb9dbb022b2ce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3da9bbddba5e30d508ceb9dbb022b2ce">&#9670;&#160;</a></span>is_short_branch()</h2>
 
@@ -2516,6 +2628,51 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>$loadadmintree
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7e7b327a4674d83a22df69add1ad76b1" name="a7e7b327a4674d83a22df69add1ad76b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e7b327a4674d83a22df69add1ad76b1">&#9670;&#160;</a></span>load_activity_navigation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">global_navigation::load_activity_navigation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a></td>          <td class="paramname"><span class="paramname"><em>$sectionnode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$activitydata</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads an activity into the navigation structure. </p>
+<p>This method is called from <a class="el" href="../../d9/de0/classglobal__navigation.html#a06cb1b8a31db85c71a1eb93418891981" title="Loads the activities for a section into the navigation structure.">global_navigation\load_section_activities_navigation()</a>, It is not intended to be called directly.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../dd/de3/classnavigation__node.html" title="This class is used to represent a node in a navigation tree.">navigation_node</a></td><td class="paramname">$sectionnode</td><td></td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$activitydata</td><td>The acitivy navigation data generated from generate_sections_and_activities </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../dd/de3/classnavigation__node.html" title="This class is used to represent a node in a navigation tree.">navigation_node</a></td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2830,8 +2987,8 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>$loadadmintree
 
 </div>
 </div>
-<a id="ad7f8853fba2a59aef892fbea1449cc2f" name="ad7f8853fba2a59aef892fbea1449cc2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7f8853fba2a59aef892fbea1449cc2f">&#9670;&#160;</a></span>load_section_activities()</h2>
+<a id="a06cb1b8a31db85c71a1eb93418891981" name="a06cb1b8a31db85c71a1eb93418891981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06cb1b8a31db85c71a1eb93418891981">&#9670;&#160;</a></span>load_section_activities_navigation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2840,24 +2997,19 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>$loadadmintree
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">global_navigation::load_section_activities </td>
+          <td class="memname">global_navigation::load_section_activities_navigation </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a></td>          <td class="paramname"><span class="paramname"><em>$sectionnode</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$sectionnumber</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td>          <td class="paramname"><span class="paramname"><em>$section</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$activities</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$course</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$activitiesdata</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -2867,19 +3019,63 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>$loadadmintree
 </table>
 </div><div class="memdoc">
 
-<p>Loads all of the activities for a section into the navigation structure. </p>
+<p>Loads the activities for a section into the navigation structure. </p>
+<p>This method is called from <a class="el" href="../../d9/de0/classglobal__navigation.html#a18892d41c30856192341a7002cbdfe83" title="Loads a section into the navigation structure.">global_navigation\load_section_navigation()</a>, It is not intended to be called directly.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../dd/de3/classnavigation__node.html" title="This class is used to represent a node in a navigation tree.">navigation_node</a></td><td class="paramname">$sectionnode</td><td></td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$sectionnumber</td><td></td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$activities</td><td>An array of activites as returned by <a class="el" href="../../d9/de0/classglobal__navigation.html#a1f6ada396813b7d447db6bedecf84822">global_navigation::generate_sections_and_activities()</a> </td></tr>
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>The course object the section and activities relate to. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td><td class="paramname">$section</td><td></td></tr>
+    <tr><td class="paramtype">stdClass[]</td><td class="paramname">$activitiesdata</td><td>Array of objects containing activities data indexed by cmid. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a18892d41c30856192341a7002cbdfe83" name="a18892d41c30856192341a7002cbdfe83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18892d41c30856192341a7002cbdfe83">&#9670;&#160;</a></span>load_section_navigation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">global_navigation::load_section_navigation </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$parentnode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$section</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$activitiesdata</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads a section into the navigation structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../dd/de3/classnavigation__node.html" title="This class is used to represent a node in a navigation tree.">navigation_node</a></td><td class="paramname">$parentnode</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td><td class="paramname">$section</td><td></td></tr>
+    <tr><td class="paramtype">stdClass[]</td><td class="paramname">$activitiesdata</td><td>Array of objects containing activities data indexed by cmid. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td>Array of activity nodes </td></tr>
+    <tr><td class="paramname"><a class="el" href="../../dd/de3/classnavigation__node.html" title="This class is used to represent a node in a navigation tree.">navigation_node</a></td><td>the section navigaiton node </td></tr>
   </table>
   </dd>
 </dl>
@@ -3486,6 +3682,45 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>$loadadmintree
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a330a9a246e44d62b79ccfed9d39d7cbb" name="a330a9a246e44d62b79ccfed9d39d7cbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a330a9a246e44d62b79ccfed9d39d7cbb">&#9670;&#160;</a></span>__pad0__</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">replacement global_navigation::__pad0__</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads all of the activities for a section into the navigation structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../dd/de3/classnavigation__node.html" title="This class is used to represent a node in a navigation tree.">navigation_node</a></td><td class="paramname">$sectionnode</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$sectionnumber</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$activities</td><td>An array of activites as returned by <a class="el" href="../../d9/de0/classglobal__navigation.html#a1f6ada396813b7d447db6bedecf84822">global_navigation::generate_sections_and_activities()</a> </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>The course object the section and activities relate to. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>Array of activity nodes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a5518b968638b1df8dfed6bdc483d9143" name="a5518b968638b1df8dfed6bdc483d9143"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5518b968638b1df8dfed6bdc483d9143">&#9670;&#160;</a></span>TYPE_ACTIVITY</h2>
 
@@ -3542,7 +3777,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>$loadadmintree
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 15 2024 03:00:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 22 2024 03:00:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

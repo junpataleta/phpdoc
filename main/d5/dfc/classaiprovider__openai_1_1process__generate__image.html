@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240913) (09e56f2d1a4)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240920) (525fc81cf6e)</div>
   </td>
  </tr>
  </tbody>
@@ -110,6 +110,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a7468d0c518d36ed19eac0a398c77b3a0" id="r_a7468d0c518d36ed19eac0a398c77b3a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d73/classcore__ai_1_1process__base.html#a7468d0c518d36ed19eac0a398c77b3a0">get_response</a> (... $args)</td></tr>
 <tr class="memdesc:a7468d0c518d36ed19eac0a398c77b3a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the instantiated Response Class for the action described by this processor.  <br /></td></tr>
 <tr class="separator:a7468d0c518d36ed19eac0a398c77b3a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a439c86fd40441b400056557f61dd331c" id="r_a439c86fd40441b400056557f61dd331c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d99/classaiprovider__openai_1_1abstract__processor.html#a439c86fd40441b400056557f61dd331c">get_system_instruction</a> ()</td></tr>
+<tr class="memdesc:a439c86fd40441b400056557f61dd331c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the system instructions.  <br /></td></tr>
+<tr class="separator:a439c86fd40441b400056557f61dd331c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3c0fcecffd17e2eda928dbe6664b7d6" id="r_aa3c0fcecffd17e2eda928dbe6664b7d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d99/classaiprovider__openai_1_1abstract__processor.html#aa3c0fcecffd17e2eda928dbe6664b7d6">handle_api_error</a> (<a class="el" href="../../df/d72/interface_psr_1_1_http_1_1_message_1_1_response_interface.html">ResponseInterface</a> $response)</td></tr>
 <tr class="memdesc:aa3c0fcecffd17e2eda928dbe6664b7d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle an error from the external AI api.  <br /></td></tr>
 <tr class="separator:aa3c0fcecffd17e2eda928dbe6664b7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -272,6 +275,41 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a439c86fd40441b400056557f61dd331c" name="a439c86fd40441b400056557f61dd331c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a439c86fd40441b400056557f61dd331c">&#9670;&#160;</a></span>get_system_instruction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">aiprovider_openai\abstract_processor::get_system_instruction </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the system instructions. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d4/d3d/classaiprovider__openai_1_1process__generate__text.html#accab3c485df53af90eba0e2fd564cb95">aiprovider_openai\process_generate_text</a>, and <a class="el" href="../../dc/df9/classaiprovider__openai_1_1process__summarise__text.html#a4a053dd3108e3d3a1664b9cf839c2b59">aiprovider_openai\process_summarise_text</a>.</p>
+
+</div>
+</div>
 <a id="aa3c0fcecffd17e2eda928dbe6664b7d6" name="aa3c0fcecffd17e2eda928dbe6664b7d6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3c0fcecffd17e2eda928dbe6664b7d6">&#9670;&#160;</a></span>handle_api_error()</h2>
 
@@ -426,7 +464,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 15 2024 03:00:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 22 2024 03:01:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

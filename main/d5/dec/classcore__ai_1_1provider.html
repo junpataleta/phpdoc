@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240913) (09e56f2d1a4)</div>
+   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240920) (525fc81cf6e)</div>
   </td>
  </tr>
  </tbody>
@@ -84,7 +84,8 @@ Inheritance diagram for core_ai\provider:</div>
  <div class="center">
   <img src="../../d5/dec/classcore__ai_1_1provider.png" usemap="#core_5Fai_5Cprovider_map" alt=""/>
   <map id="core_5Fai_5Cprovider_map" name="core_5Fai_5Cprovider_map">
-<area href="../../d1/d25/classaiprovider__openai_1_1provider.html" alt="aiprovider_openai\provider" shape="rect" coords="0,56,167,80"/>
+<area href="../../d1/d7d/classaiprovider__azureai_1_1provider.html" alt="aiprovider_azureai\provider" shape="rect" coords="0,56,171,80"/>
+<area href="../../d1/d25/classaiprovider__openai_1_1provider.html" alt="aiprovider_openai\provider" shape="rect" coords="181,56,352,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -93,6 +94,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab3bd78e7c33058c352b8affead2bce95" id="r_ab3bd78e7c33058c352b8affead2bce95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3bd78e7c33058c352b8affead2bce95">get_action_list</a> ()</td></tr>
 <tr class="memdesc:ab3bd78e7c33058c352b8affead2bce95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the actions that this provider supports.  <br /></td></tr>
 <tr class="separator:ab3bd78e7c33058c352b8affead2bce95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0987383c3b963209b7e2b62691d8e447" id="r_a0987383c3b963209b7e2b62691d8e447"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0987383c3b963209b7e2b62691d8e447">get_action_settings</a> (string $action, <a class="el" href="../../db/d2d/classadmin__root.html">admin_root</a> $ADMIN, string $section, bool $hassiteconfig)</td></tr>
+<tr class="memdesc:a0987383c3b963209b7e2b62691d8e447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get any action settings for this provider.  <br /></td></tr>
+<tr class="separator:a0987383c3b963209b7e2b62691d8e447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a117c980cb19513cab04f7f3291ed456c" id="r_a117c980cb19513cab04f7f3291ed456c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a117c980cb19513cab04f7f3291ed456c">get_name</a> ()</td></tr>
 <tr class="memdesc:a117c980cb19513cab04f7f3291ed456c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the provider.  <br /></td></tr>
 <tr class="separator:a117c980cb19513cab04f7f3291ed456c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,7 +137,57 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d1/d25/classaiprovider__openai_1_1provider.html#a96f72ea0384d8ccb495a5fc92e388aca">aiprovider_openai\provider</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d1/d7d/classaiprovider__azureai_1_1provider.html#ad6aba86e31dc351dd7793d82df12907a">aiprovider_azureai\provider</a>, and <a class="el" href="../../d1/d25/classaiprovider__openai_1_1provider.html#a96f72ea0384d8ccb495a5fc92e388aca">aiprovider_openai\provider</a>.</p>
+
+</div>
+</div>
+<a id="a0987383c3b963209b7e2b62691d8e447" name="a0987383c3b963209b7e2b62691d8e447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0987383c3b963209b7e2b62691d8e447">&#9670;&#160;</a></span>get_action_settings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_ai\provider::get_action_settings </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$action</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d2d/classadmin__root.html">admin_root</a></td>          <td class="paramname"><span class="paramname"><em>$ADMIN</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$section</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$hassiteconfig</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get any action settings for this provider. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>The action class name. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../db/d2d/classadmin__root.html" title="Root of admin settings tree, does not have any parent.">admin_root</a></td><td class="paramname">$ADMIN</td><td>The admin root object. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$section</td><td>The section name. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$hassiteconfig</td><td>Whether the current user has moodle/site:config capability. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>An array of settings. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d1/d7d/classaiprovider__azureai_1_1provider.html#a4cedf5904b31be01a9db5b900b2343c1">aiprovider_azureai\provider</a>, and <a class="el" href="../../d1/d25/classaiprovider__openai_1_1provider.html#a41831ef7487befdf217d3176113b8c48">aiprovider_openai\provider</a>.</p>
 
 </div>
 </div>
@@ -199,7 +253,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 15 2024 03:01:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 22 2024 03:02:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>
