@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev+ (Build: 20240920) (525fc81cf6e)</div>
+   <div id="projectbrief">Moodle 4.5beta (Build: 20240927) (30692df8495)</div>
   </td>
  </tr>
  </tbody>
@@ -92,6 +92,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac24b50272bf19b9c092ab7da82444e06" id="r_ac24b50272bf19b9c092ab7da82444e06"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dce/classtesting__module__generator.html#ac24b50272bf19b9c092ab7da82444e06">create_content</a> ($instance, $record=array())</td></tr>
 <tr class="memdesc:ac24b50272bf19b9c092ab7da82444e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a piece of content for the module.  <br /></td></tr>
 <tr class="separator:ac24b50272bf19b9c092ab7da82444e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e5b979c3872ec63369c2785733bbd98" id="r_a5e5b979c3872ec63369c2785733bbd98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e5b979c3872ec63369c2785733bbd98">create_extension</a> (array $data)</td></tr>
+<tr class="memdesc:a5e5b979c3872ec63369c2785733bbd98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an assignment extension.  <br /></td></tr>
+<tr class="separator:a5e5b979c3872ec63369c2785733bbd98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e1e7f8e9c9d67243360474b235ae4ff" id="r_a3e1e7f8e9c9d67243360474b235ae4ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e1e7f8e9c9d67243360474b235ae4ff">create_instance</a> ($record=null, ?array $options=null)</td></tr>
 <tr class="memdesc:a3e1e7f8e9c9d67243360474b235ae4ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new instance of the assignment activity.  <br /></td></tr>
 <tr class="separator:a3e1e7f8e9c9d67243360474b235ae4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,6 +198,31 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$instancecount</b> = 0
 
 </div>
 </div>
+<a id="a5e5b979c3872ec63369c2785733bbd98" name="a5e5b979c3872ec63369c2785733bbd98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e5b979c3872ec63369c2785733bbd98">&#9670;&#160;</a></span>create_extension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_assign_generator::create_extension </td>
+          <td>(</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create an assignment extension. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>must have keys cmid, userid, extensionduedate. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a3e1e7f8e9c9d67243360474b235ae4ff" name="a3e1e7f8e9c9d67243360474b235ae4ff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e1e7f8e9c9d67243360474b235ae4ff">&#9670;&#160;</a></span>create_instance()</h2>
 
@@ -282,7 +310,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$instancecount</b> = 0
 <p>Create an assignment submission. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>with keys userid, cmid and then data for each assignsubmission plugin used. For backwards compatibility, you can pass cmid as 'assignid' but that generates a warning. </td></tr>
   </table>
   </dd>
 </dl>
@@ -476,7 +504,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$instancecount</b> = 0
 
 <p>Called after *_add_instance() </p>
 <p>Since 2.6 it is recommended to use function <a class="el" href="../../d5/dd0/group__core__course.html#ga05990b276289bacc307abb991fcced73" title="Add course module.">add_moduleinfo()</a> to create a module.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001121">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001137">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d6/dce/classtesting__module__generator.html#a6139aa0e05cdfa694f4b62fef0ec010f" title="Creates an instance of the module for testing purposes.">testing_module_generator\create_instance()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -523,7 +551,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$instancecount</b> = 0
 
 <p>Create course module and link it to course. </p>
 <p>Since 2.6 it is recommended to use function <a class="el" href="../../d5/dd0/group__core__course.html#ga05990b276289bacc307abb991fcced73" title="Add course module.">add_moduleinfo()</a> to create a module.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001120">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001136">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d6/dce/classtesting__module__generator.html#a6139aa0e05cdfa694f4b62fef0ec010f" title="Creates an instance of the module for testing purposes.">testing_module_generator\create_instance()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -662,7 +690,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$instancecount</b> = 0
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 22 2024 03:01:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 29 2024 03:02:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

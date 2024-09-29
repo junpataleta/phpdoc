@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3.7+ (Build: 20240920) (da802580da9)</div>
+   <div id="projectbrief">Moodle 4.3.7+ (Build: 20240927) (ab291aa8edd)</div>
   </td>
  </tr>
  </tbody>
@@ -183,9 +183,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a438addf1cba5b8e323e5016756586bd0" id="r_a438addf1cba5b8e323e5016756586bd0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5b/classbehat__navigation.html#a438addf1cba5b8e323e5016756586bd0">i_turn_editing_mode_on</a> ()</td></tr>
 <tr class="memdesc:a438addf1cba5b8e323e5016756586bd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns editing mode on.  <br /></td></tr>
 <tr class="separator:a438addf1cba5b8e323e5016756586bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a60eb861f996b87ab29ecfcac9f5e0e" id="r_a5a60eb861f996b87ab29ecfcac9f5e0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5b/classbehat__navigation.html#a5a60eb861f996b87ab29ecfcac9f5e0e">i_update_the_link_to_go_nowhere</a> (string $locator, string $selector, string $href,)</td></tr>
+<tr class="memdesc:a5a60eb861f996b87ab29ecfcac9f5e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a link to no longer navigate when selected.  <br /></td></tr>
+<tr class="separator:a5a60eb861f996b87ab29ecfcac9f5e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9315d64bf7d57a931ed9f73005a620c4" id="r_a9315d64bf7d57a931ed9f73005a620c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9315d64bf7d57a931ed9f73005a620c4">lang_menu_should_exist</a> ($not=null)</td></tr>
 <tr class="memdesc:a9315d64bf7d57a931ed9f73005a620c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the language selector menu is present in the navbar.  <br /></td></tr>
 <tr class="separator:a9315d64bf7d57a931ed9f73005a620c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2b562f376ba40f4b0b08c2c5beaf61a" id="r_ac2b562f376ba40f4b0b08c2c5beaf61a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5b/classbehat__navigation.html#ac2b562f376ba40f4b0b08c2c5beaf61a">menu_item_should_be_active</a> (string $navigationmenuitem)</td></tr>
+<tr class="memdesc:ac2b562f376ba40f4b0b08c2c5beaf61a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a navigation menu item is active.  <br /></td></tr>
+<tr class="separator:ac2b562f376ba40f4b0b08c2c5beaf61a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e6eea26ae427ac95225959b9ac84854" id="r_a1e6eea26ae427ac95225959b9ac84854"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5b/classbehat__navigation.html#a1e6eea26ae427ac95225959b9ac84854">menu_item_should_not_be_active</a> (string $navigationmenuitem)</td></tr>
+<tr class="memdesc:a1e6eea26ae427ac95225959b9ac84854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a navigation menu item is not active.  <br /></td></tr>
+<tr class="separator:a1e6eea26ae427ac95225959b9ac84854"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f3fde4fe7e90bb314615fe20c50d418" id="r_a7f3fde4fe7e90bb314615fe20c50d418"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5b/classbehat__navigation.html#a7f3fde4fe7e90bb314615fe20c50d418">navigation_node_should_be_expandable</a> ($nodetext)</td></tr>
 <tr class="memdesc:a7f3fde4fe7e90bb314615fe20c50d418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the navigation node with the given text is expandable.  <br /></td></tr>
 <tr class="separator:a7f3fde4fe7e90bb314615fe20c50d418"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1945,6 +1954,50 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a5a60eb861f996b87ab29ecfcac9f5e0e" name="a5a60eb861f996b87ab29ecfcac9f5e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a60eb861f996b87ab29ecfcac9f5e0e">&#9670;&#160;</a></span>i_update_the_link_to_go_nowhere()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_navigation::i_update_the_link_to_go_nowhere </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$locator</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$selector</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$href</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets a link to no longer navigate when selected. </p>
+<p>@When /^I update the href of the "(?P&lt;locator_string&gt;[^"]*)" "(?P&lt;selector_string&gt;[^"]*)" link to "(?P&lt;href_string&gt;[^"]*)"$/ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$locator</td><td>The locator to use </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$selector</td><td>selector type </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$href</td><td>The value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a13c689ff00c6182613c8ddb77c8651c8" name="a13c689ff00c6182613c8ddb77c8651c8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a13c689ff00c6182613c8ddb77c8651c8">&#9670;&#160;</a></span>is_editing_on()</h2>
 
@@ -2010,6 +2063,72 @@ Protected Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac2b562f376ba40f4b0b08c2c5beaf61a" name="ac2b562f376ba40f4b0b08c2c5beaf61a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2b562f376ba40f4b0b08c2c5beaf61a">&#9670;&#160;</a></span>menu_item_should_be_active()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_navigation::menu_item_should_be_active </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$navigationmenuitem</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if a navigation menu item is active. </p>
+<p>@Then menu item :navigationmenuitem should be active </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$navigationmenuitem</td><td>The navigation menu item name. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1e6eea26ae427ac95225959b9ac84854" name="a1e6eea26ae427ac95225959b9ac84854"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e6eea26ae427ac95225959b9ac84854">&#9670;&#160;</a></span>menu_item_should_not_be_active()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_navigation::menu_item_should_not_be_active </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$navigationmenuitem</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if a navigation menu item is not active. </p>
+<p>@Then menu item :navigationmenuitem should not be active </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$navigationmenuitem</td><td>The navigation menu item name. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2923,7 +3042,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 22 2024 02:56:17 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Sep 29 2024 02:56:32 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>
