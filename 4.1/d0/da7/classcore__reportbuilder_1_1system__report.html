@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1.13+ (Build: 20240927) (75bffe9d962)</div>
+   <div id="projectbrief">Moodle 4.1.14 (Build: 20241007) (d56aa41e9e8)</div>
   </td>
  </tr>
  </tbody>
@@ -1062,6 +1062,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Validates access to view this report. </p>
 <p>This is necessary to implement independently of the page that would typically embed the report because subsequent pages are requested via AJAX requests, and access should be validated each time</p>
+<p>Report parameters should also be considered when implementing this method</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td></td></tr>
@@ -2155,6 +2156,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return specific report parameter. </p>
+<p>Capability/permission checks relating to parameters retrieved here should also be considered in your {</p><dl class="section see"><dt>See also</dt><dd>can_view} method</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$param</td><td></td></tr>
@@ -2915,7 +2917,7 @@ To add content to the report use:</li>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 29 2024 02:49:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Oct 6 2024 02:49:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

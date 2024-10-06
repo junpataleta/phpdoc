@@ -27,9 +27,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../Moodle-Logo-ReversedWhite_RGB.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
+   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.5beta (Build: 20240927) (30692df8495)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241007) (67f5ee3cec6)</div>
   </td>
  </tr>
  </tbody>
@@ -103,6 +103,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a84eef79147910afb15cfbd575196e8cf" id="r_a84eef79147910afb15cfbd575196e8cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84eef79147910afb15cfbd575196e8cf">get_sub_actions</a> (string $classname)</td></tr>
 <tr class="memdesc:a84eef79147910afb15cfbd575196e8cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an action class name, return an array of sub actions that this provider supports.  <br /></td></tr>
 <tr class="separator:a84eef79147910afb15cfbd575196e8cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21f61b37c2805ad69a0c61192c2f65a8" id="r_a21f61b37c2805ad69a0c61192c2f65a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21f61b37c2805ad69a0c61192c2f65a8">is_provider_configured</a> ()</td></tr>
+<tr class="memdesc:a21f61b37c2805ad69a0c61192c2f65a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a provider has the minimal configuration to work.  <br /></td></tr>
+<tr class="separator:a21f61b37c2805ad69a0c61192c2f65a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab3bd78e7c33058c352b8affead2bce95" name="ab3bd78e7c33058c352b8affead2bce95"></a>
@@ -247,13 +250,40 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a21f61b37c2805ad69a0c61192c2f65a8" name="a21f61b37c2805ad69a0c61192c2f65a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21f61b37c2805ad69a0c61192c2f65a8">&#9670;&#160;</a></span>is_provider_configured()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_ai\provider::is_provider_configured </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if a provider has the minimal configuration to work. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>Return true if configured. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d1/d7d/classaiprovider__azureai_1_1provider.html#a84c00d01717e34c0cad053203c7c83b6">aiprovider_azureai\provider</a>, and <a class="el" href="../../d1/d25/classaiprovider__openai_1_1provider.html#a7b1b04d112caa9c5160361fd8824da5a">aiprovider_openai\provider</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>ai/provider/openai/classes/<b>provider.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 29 2024 03:02:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Oct 6 2024 03:02:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

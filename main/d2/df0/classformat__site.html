@@ -27,9 +27,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../Moodle-Logo-ReversedWhite_RGB.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
+   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.5beta (Build: 20240927) (30692df8495)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241007) (67f5ee3cec6)</div>
   </td>
  </tr>
  </tbody>
@@ -1095,7 +1095,7 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
 <p>By default the method <a class="el" href="../../d9/de0/classglobal__navigation.html#aa2218660416fcc1964c12124b4fad268" title="Generically loads the course sections into the course&#39;s navigation.">global_navigation\load_generic_course_sections()</a> is called</p>
 <p>When overwriting please note that navigationlib relies on using the correct values for arguments $type and $key in navigation_node::add()</p>
 <p>Example of code creating a section node: $sectionnode = $node-&gt;add($sectionname, $url, navigation_node::TYPE_SECTION, null, $section-&gt;id); $sectionnode-&gt;nodetype = navigation_node::NODETYPE_BRANCH;</p>
-<p>Example of code creating an activity node: $activitynode = $sectionnode-&gt;add($activityname, $action, navigation_node::TYPE_ACTIVITY, null, $activity-&gt;id, $icon); if (<a class="el" href="../../d9/de0/classglobal__navigation.html#af8c34a47553c2ea512d484c7fa71550c" title="This method simply checks to see if a given module can extend the navigation.">global_navigation\module_extends_navigation</a>($activity-&gt;modname)) { $activitynode-&gt;nodetype = navigation_node::NODETYPE_BRANCH; } else { $activitynode-&gt;nodetype = navigation_node::NODETYPE_LEAF; }</p>
+<p>Example of code creating an activity node: $activitynode = $sectionnode-&gt;add($activityname, $action, navigation_node::TYPE_ACTIVITY, null, $activity-&gt;id, $icon); if (global_navigation::module_extends_navigation($activity-&gt;modname)) { $activitynode-&gt;nodetype = navigation_node::NODETYPE_BRANCH; } else { $activitynode-&gt;nodetype = navigation_node::NODETYPE_LEAF; }</p>
 <p>Also note that if $navigation-&gt;includesectionnum is not null, the section with this relative number needs is expected to be loaded</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3827,7 +3827,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 29 2024 03:01:27 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Oct 6 2024 03:01:24 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

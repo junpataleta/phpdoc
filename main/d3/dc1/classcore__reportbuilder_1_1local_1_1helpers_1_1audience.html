@@ -27,9 +27,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../Moodle-Logo-ReversedWhite_RGB.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
+   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.5beta (Build: 20240927) (30692df8495)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241007) (67f5ee3cec6)</div>
   </td>
  </tr>
  </tbody>
@@ -81,6 +81,9 @@ $(function(){ initResizable(false); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ab4ff63c5449bc7dac253dc176711a4aa" id="r_ab4ff63c5449bc7dac253dc176711a4aa"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4ff63c5449bc7dac253dc176711a4aa">delete_report_audience</a> (int $reportid, int $audienceid)</td></tr>
+<tr class="memdesc:ab4ff63c5449bc7dac253dc176711a4aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete given audience from report.  <br /></td></tr>
+<tr class="separator:ab4ff63c5449bc7dac253dc176711a4aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0082157da111afc594698b4a32df8d9" id="r_ae0082157da111afc594698b4a32df8d9"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0082157da111afc594698b4a32df8d9">get_all_audiences_menu_types</a> ()</td></tr>
 <tr class="separator:ae0082157da111afc594698b4a32df8d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecd5d5b1f5e78424ea8d07191551fe4d" id="r_aecd5d5b1f5e78424ea8d07191551fe4d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecd5d5b1f5e78424ea8d07191551fe4d">get_allowed_reports</a> (?int $userid=null)</td></tr>
@@ -110,6 +113,56 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>purge_caches</b> ()
 <tr class="separator:ae8fc8a953a5dbe4e5577bbd339d78321"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab4ff63c5449bc7dac253dc176711a4aa" name="ab4ff63c5449bc7dac253dc176711a4aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4ff63c5449bc7dac253dc176711a4aa">&#9670;&#160;</a></span>delete_report_audience()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_reportbuilder\local\helpers\audience::delete_report_audience </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$reportid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$audienceid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Delete given audience from report. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$reportid</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$audienceid</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">invalid_parameter_exception</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ae0082157da111afc594698b4a32df8d9" name="ae0082157da111afc594698b4a32df8d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae0082157da111afc594698b4a32df8d9">&#9670;&#160;</a></span>get_all_audiences_menu_types()</h2>
 
@@ -132,7 +185,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>purge_caches</b> ()
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001503">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 - please do not use this function any more, {</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001502">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 - please do not use this function any more, {</dd></dl>
 <dl class="section see"><dt>See also</dt><dd>custom_report_audience_cards_exporter} </dd></dl>
 
 </div>
@@ -451,7 +504,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>purge_caches</b> ()
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 29 2024 03:03:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Oct 6 2024 03:03:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>
