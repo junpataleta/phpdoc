@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241018) (ecfcf00d92d)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241025) (ec7711b9a60)</div>
   </td>
  </tr>
  </tbody>
@@ -261,6 +261,9 @@ Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:a4c77edc810bd3f192b3e16435996a8b5" id="r_a4c77edc810bd3f192b3e16435996a8b5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d4e/classbase__testcase.html#a4c77edc810bd3f192b3e16435996a8b5">getElementsByCaseInsensitiveTagName</a> (DOMDocument $dom, $tag)</td></tr>
 <tr class="memdesc:a4c77edc810bd3f192b3e16435996a8b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets elements by case insensitive tagname.  <br /></td></tr>
 <tr class="separator:a4c77edc810bd3f192b3e16435996a8b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a902cb01f69643099ab6144de0a10960a" id="r_a902cb01f69643099ab6144de0a10960a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d4e/classbase__testcase.html#a902cb01f69643099ab6144de0a10960a">getInvocationCount</a> (InvocationOrder $counter)</td></tr>
+<tr class="memdesc:a902cb01f69643099ab6144de0a10960a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to get the count of invocation.  <br /></td></tr>
+<tr class="separator:a902cb01f69643099ab6144de0a10960a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34ca749ca14167ddd8200455a3fc5f8b" id="r_a34ca749ca14167ddd8200455a3fc5f8b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d4e/classbase__testcase.html#a34ca749ca14167ddd8200455a3fc5f8b">getNodeText</a> (DOMNode $node)</td></tr>
 <tr class="memdesc:a34ca749ca14167ddd8200455a3fc5f8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the text value of this node's child text node.  <br /></td></tr>
 <tr class="separator:a34ca749ca14167ddd8200455a3fc5f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1594,6 +1597,46 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a902cb01f69643099ab6144de0a10960a" name="a902cb01f69643099ab6144de0a10960a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a902cb01f69643099ab6144de0a10960a">&#9670;&#160;</a></span>getInvocationCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static base_testcase::getInvocationCount </td>
+          <td>(</td>
+          <td class="paramtype">InvocationOrder</td>          <td class="paramname"><span class="paramname"><em>$counter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper to get the count of invocation. </p>
+<p>This is required because the method to use changed names in PHPUnit 10.0 in a breaking change.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">PHPUnit::Framework::MockObject::Rule::InvocationOrder</td><td class="paramname">$counter</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a34ca749ca14167ddd8200455a3fc5f8b" name="a34ca749ca14167ddd8200455a3fc5f8b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a34ca749ca14167ddd8200455a3fc5f8b">&#9670;&#160;</a></span>getNodeText()</h2>
 
@@ -2439,7 +2482,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 20 2024 03:04:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Oct 27 2024 03:03:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

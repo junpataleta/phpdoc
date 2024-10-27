@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241018) (ecfcf00d92d)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241025) (ec7711b9a60)</div>
   </td>
  </tr>
  </tbody>
@@ -106,6 +106,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a21f61b37c2805ad69a0c61192c2f65a8" id="r_a21f61b37c2805ad69a0c61192c2f65a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21f61b37c2805ad69a0c61192c2f65a8">is_provider_configured</a> ()</td></tr>
 <tr class="memdesc:a21f61b37c2805ad69a0c61192c2f65a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a provider has the minimal configuration to work.  <br /></td></tr>
 <tr class="separator:a21f61b37c2805ad69a0c61192c2f65a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeab40920ab0bfa78c553434613e1757" id="r_abeab40920ab0bfa78c553434613e1757"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abeab40920ab0bfa78c553434613e1757">is_request_allowed</a> (<a class="el" href="../../db/db5/classcore__ai_1_1aiactions_1_1base.html">aiactions\base</a> $action)</td></tr>
+<tr class="memdesc:abeab40920ab0bfa78c553434613e1757"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the request is allowed by the rate limiter.  <br /></td></tr>
+<tr class="separator:abeab40920ab0bfa78c553434613e1757"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab3bd78e7c33058c352b8affead2bce95" name="ab3bd78e7c33058c352b8affead2bce95"></a>
@@ -277,13 +280,54 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="abeab40920ab0bfa78c553434613e1757" name="abeab40920ab0bfa78c553434613e1757"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeab40920ab0bfa78c553434613e1757">&#9670;&#160;</a></span>is_request_allowed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_ai\provider::is_request_allowed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/db5/classcore__ai_1_1aiactions_1_1base.html">aiactions\base</a></td>          <td class="paramname"><span class="paramname"><em>$action</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the request is allowed by the rate limiter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">aiactions::base</td><td class="paramname">$action</td><td>The action to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array|bool</td><td>True on success, array of error details on failure. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d1/d7d/classaiprovider__azureai_1_1provider.html#aedf8f76e4bb1128da4c574f1d562807a">aiprovider_azureai\provider</a>, and <a class="el" href="../../d1/d25/classaiprovider__openai_1_1provider.html#a932fdb447bf3076dfddedb783a41ba89">aiprovider_openai\provider</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>ai/provider/openai/classes/<b>provider.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 20 2024 03:05:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Oct 27 2024 03:04:24 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

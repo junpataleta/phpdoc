@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241018) (ecfcf00d92d)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241025) (ec7711b9a60)</div>
   </td>
  </tr>
  </tbody>
@@ -246,9 +246,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaf9185e2fc2289000b4749b3025d1332" id="r_aaf9185e2fc2289000b4749b3025d1332"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#aaf9185e2fc2289000b4749b3025d1332">roles_protected</a> ()</td></tr>
 <tr class="memdesc:aaf9185e2fc2289000b4749b3025d1332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does this plugin assign protected roles are can they be manually removed?  <br /></td></tr>
 <tr class="separator:aaf9185e2fc2289000b4749b3025d1332"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2056d4b79bc520448aabbc291d571c04" id="r_a2056d4b79bc520448aabbc291d571c04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#a2056d4b79bc520448aabbc291d571c04">send_course_welcome_message_to_user</a> (stdClass $instance, int $userid, int $sendoption, ?string $message='',)</td></tr>
-<tr class="memdesc:a2056d4b79bc520448aabbc291d571c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send course welcome message to user.  <br /></td></tr>
-<tr class="separator:a2056d4b79bc520448aabbc291d571c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85be24b54914a643c2b173d1627a8584" id="r_a85be24b54914a643c2b173d1627a8584"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#a85be24b54914a643c2b173d1627a8584">send_course_welcome_message_to_user</a> (stdClass $instance, int $userid, int $sendoption, ?string $message='', ?int $roleid=null,)</td></tr>
+<tr class="memdesc:a85be24b54914a643c2b173d1627a8584"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send course welcome message to user.  <br /></td></tr>
+<tr class="separator:a85be24b54914a643c2b173d1627a8584"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1f15a538d447a6be584a14fa2145b54" id="r_ad1f15a538d447a6be584a14fa2145b54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#ad1f15a538d447a6be584a14fa2145b54">send_expiry_notifications</a> ($trace)</td></tr>
 <tr class="memdesc:ad1f15a538d447a6be584a14fa2145b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send expiry notifications.  <br /></td></tr>
 <tr class="separator:ad1f15a538d447a6be584a14fa2145b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2847,8 +2847,8 @@ self::validate_plugin_data_context()}</dd></dl>
 
 </div>
 </div>
-<a id="a2056d4b79bc520448aabbc291d571c04" name="a2056d4b79bc520448aabbc291d571c04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2056d4b79bc520448aabbc291d571c04">&#9670;&#160;</a></span>send_course_welcome_message_to_user()</h2>
+<a id="a85be24b54914a643c2b173d1627a8584" name="a85be24b54914a643c2b173d1627a8584"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85be24b54914a643c2b173d1627a8584">&#9670;&#160;</a></span>send_course_welcome_message_to_user()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2874,7 +2874,12 @@ self::validate_plugin_data_context()}</dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">?string</td>          <td class="paramname"><span class="paramname"><em>$message</em></span><span class="paramdefsep"> = </span><span class="paramdefval">''</span>&#160;)</td>
+          <td class="paramtype">?string</td>          <td class="paramname"><span class="paramname"><em>$message</em></span><span class="paramdefsep"> = </span><span class="paramdefval">''</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int</td>          <td class="paramname"><span class="paramname"><em>$roleid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -2891,6 +2896,7 @@ self::validate_plugin_data_context()}</dd></dl>
     <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>User ID. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$sendoption</td><td>Send email from constant ENROL_SEND_EMAIL_FROM_* </td></tr>
     <tr><td class="paramtype">null&#160;|&#160;string</td><td class="paramname">$message</td><td>Message to send to the user. </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$roleid</td><td>The assigned role ID </td></tr>
   </table>
   </dd>
 </dl>
@@ -3669,7 +3675,7 @@ self::validate_plugin_data_context()}</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 20 2024 03:03:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Oct 27 2024 03:03:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

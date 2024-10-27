@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241018) (ecfcf00d92d)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241025) (ec7711b9a60)</div>
   </td>
  </tr>
  </tbody>
@@ -107,7 +107,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a7770f13ddb28d23dc16c4b5cc87b084f"><td class="mdescLeft">&#160;</td><td class="mdescRight">If provide is available for the current field.  <br /></td></tr>
 <tr class="separator:a7770f13ddb28d23dc16c4b5cc87b084f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23a67a10bd103223ea9a0a3ffb256678" id="r_a23a67a10bd103223ea9a0a3ffb256678"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d50/classcustomfield__number_1_1provider__base.html#a23a67a10bd103223ea9a0a3ffb256678">prepare_export_value</a> (mixed $value, ?\context $context=null)</td></tr>
-<tr class="memdesc:a23a67a10bd103223ea9a0a3ffb256678"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provider specific value preparation for export.  <br /></td></tr>
+<tr class="memdesc:a23a67a10bd103223ea9a0a3ffb256678"><td class="mdescLeft">&#160;</td><td class="mdescRight">How the field should be displayed.  <br /></td></tr>
 <tr class="separator:a23a67a10bd103223ea9a0a3ffb256678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9df9622ebecc62d9430ab244587f6fd" id="r_ac9df9622ebecc62d9430ab244587f6fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d50/classcustomfield__number_1_1provider__base.html#ac9df9622ebecc62d9430ab244587f6fd">recalculate</a> (?int $instanceid=null)</td></tr>
 <tr class="memdesc:ac9df9622ebecc62d9430ab244587f6fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recalculate field value.  <br /></td></tr>
@@ -380,7 +380,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Provider specific value preparation for export. </p>
+<p>How the field should be displayed. </p>
+<p>Called from {</p><dl class="section see"><dt>See also</dt><dd>field_controller::prepare_field_for_display()} The return value may contain safe HTML but all user input must be passed through format_string/format_text functions</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">mixed</td><td class="paramname">$value</td><td>String or float </td></tr>
@@ -390,7 +391,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">?string</td><td></td></tr>
+    <tr><td class="paramname">?string</td><td>null if the field should not be displayed or string representation of the field </td></tr>
   </table>
   </dd>
 </dl>
@@ -440,7 +441,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 20 2024 03:05:37 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Oct 27 2024 03:04:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>
