@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241025) (ec7711b9a60)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241101) (d015c4c2133)</div>
   </td>
  </tr>
  </tbody>
@@ -111,17 +111,23 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df5/classcustomfield__number_1_1missing__provider.html">customfield_number\missing_provider</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d53/classcustomfield__number_1_1observer.html">customfield_number\observer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d12/classcustomfield__number_1_1privacy_1_1provider.html">customfield_number\privacy\provider</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d50/classcustomfield__number_1_1provider__base.html">customfield_number\provider_base</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dd9/classcustomfield__number_1_1task_1_1cron.html">customfield_number\task\cron</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de1/classcustomfield__number_1_1task_1_1recalculate.html">customfield_number\task\recalculate</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:gaa75daea491817f3b64daa2f51128bcdf" id="r_gaa75daea491817f3b64daa2f51128bcdf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa75daea491817f3b64daa2f51128bcdf">$functions</a></td></tr>
 <tr class="separator:gaa75daea491817f3b64daa2f51128bcdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ed57b12acd2e13b148c558ea8cf9262" id="r_ga0ed57b12acd2e13b148c558ea8cf9262"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0ed57b12acd2e13b148c558ea8cf9262">$observers</a></td></tr>
+<tr class="separator:ga0ed57b12acd2e13b148c558ea8cf9262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gada8a7130088351710bb02ed622d6bf65" id="r_gada8a7130088351710bb02ed622d6bf65"><td class="memItemLeft" align="right" valign="top"><a id="gada8a7130088351710bb02ed622d6bf65" name="gada8a7130088351710bb02ed622d6bf65"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$plugin</b> = 2024100100</td></tr>
 <tr class="separator:gada8a7130088351710bb02ed622d6bf65"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,7 +140,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>component</b> = 'c
 $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>maturity</b> = MATURITY_STABLE</td></tr>
 <tr class="separator:ga32ceacc498b265853073aba2281015e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92a3fd99b37c9cbd65c4aead816b3a83" id="r_ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memItemLeft" align="right" valign="top"><a id="ga92a3fd99b37c9cbd65c4aead816b3a83" name="ga92a3fd99b37c9cbd65c4aead816b3a83"></a>
-$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024100700</td></tr>
+$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024100703</td></tr>
 <tr class="separator:ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -156,6 +162,42 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 <div class="line">        <span class="stringliteral">&#39;description&#39;</span> =&gt; <span class="stringliteral">&#39;This web service is used to recalculate the value of automatically populated number custom field.&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;type&#39;</span> =&gt; <span class="stringliteral">&#39;write&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;ajax&#39;</span> =&gt; <span class="keyword">true</span>,</div>
+<div class="line">    ],</div>
+<div class="line">]</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ga0ed57b12acd2e13b148c558ea8cf9262" name="ga0ed57b12acd2e13b148c558ea8cf9262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ed57b12acd2e13b148c558ea8cf9262">&#9670;&#160;</a></span>$observers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$observers</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= [</div>
+<div class="line">    [</div>
+<div class="line">        <span class="stringliteral">&#39;eventname&#39;</span> =&gt; core_customfield\event\field_created::class,</div>
+<div class="line">        <span class="stringliteral">&#39;callback&#39;</span> =&gt; <span class="stringliteral">&#39;customfield_number\observer::field_created&#39;</span>,</div>
+<div class="line">    ],</div>
+<div class="line">    [</div>
+<div class="line">        <span class="stringliteral">&#39;eventname&#39;</span> =&gt; core_customfield\event\field_updated::class,</div>
+<div class="line">        <span class="stringliteral">&#39;callback&#39;</span> =&gt; <span class="stringliteral">&#39;customfield_number\observer::field_updated&#39;</span>,</div>
+<div class="line">    ],</div>
+<div class="line">    [</div>
+<div class="line">        <span class="stringliteral">&#39;eventname&#39;</span> =&gt; core\event\course_module_created::class,</div>
+<div class="line">        <span class="stringliteral">&#39;callback&#39;</span> =&gt; <span class="stringliteral">&#39;customfield_number\observer::course_module_created&#39;</span>,</div>
+<div class="line">    ],</div>
+<div class="line">    [</div>
+<div class="line">        <span class="stringliteral">&#39;eventname&#39;</span> =&gt; core\event\course_module_deleted::class,</div>
+<div class="line">        <span class="stringliteral">&#39;callback&#39;</span> =&gt; <span class="stringliteral">&#39;customfield_number\observer::course_module_deleted&#39;</span>,</div>
+<div class="line">    ],</div>
+<div class="line">    [</div>
+<div class="line">        <span class="stringliteral">&#39;eventname&#39;</span> =&gt; core\event\course_module_updated::class,</div>
+<div class="line">        <span class="stringliteral">&#39;callback&#39;</span> =&gt; <span class="stringliteral">&#39;customfield_number\observer::course_module_updated&#39;</span>,</div>
 <div class="line">    ],</div>
 <div class="line">]</div>
 </div><!-- fragment -->
@@ -188,7 +230,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 27 2024 03:02:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Nov 3 2024 03:02:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

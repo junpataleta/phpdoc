@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241025) (ec7711b9a60)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241101) (d015c4c2133)</div>
   </td>
  </tr>
  </tbody>
@@ -102,9 +102,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0da65eeb749b19ed92607c2a08385d14" id="r_a0da65eeb749b19ed92607c2a08385d14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0da65eeb749b19ed92607c2a08385d14">get_active_columns_by_alias</a> ()</td></tr>
 <tr class="memdesc:a0da65eeb749b19ed92607c2a08385d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all active report columns, keyed by their alias (only active columns in a report would have a valid alias/index)  <br /></td></tr>
 <tr class="separator:a0da65eeb749b19ed92607c2a08385d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23b6895f8c9b1d742c7436bbd616a33d" id="r_a23b6895f8c9b1d742c7436bbd616a33d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23b6895f8c9b1d742c7436bbd616a33d">get_active_conditions</a> ()</td></tr>
-<tr class="memdesc:a23b6895f8c9b1d742c7436bbd616a33d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all active report conditions (by default, all available conditions)  <br /></td></tr>
-<tr class="separator:a23b6895f8c9b1d742c7436bbd616a33d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0cdf67909ff8057be4dd6eb1c4d2893" id="r_ab0cdf67909ff8057be4dd6eb1c4d2893"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0cdf67909ff8057be4dd6eb1c4d2893">get_active_conditions</a> (bool $checkavailable=true)</td></tr>
+<tr class="memdesc:ab0cdf67909ff8057be4dd6eb1c4d2893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all active report conditions (by default, all available conditions)  <br /></td></tr>
+<tr class="separator:ab0cdf67909ff8057be4dd6eb1c4d2893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70ae38c3889837a9574c6f51e968fa02" id="r_a70ae38c3889837a9574c6f51e968fa02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70ae38c3889837a9574c6f51e968fa02">get_active_filters</a> ()</td></tr>
 <tr class="memdesc:a70ae38c3889837a9574c6f51e968fa02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all active report filters (by default, all available filters)  <br /></td></tr>
 <tr class="separator:a70ae38c3889837a9574c6f51e968fa02"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1059,8 +1059,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a23b6895f8c9b1d742c7436bbd616a33d" name="a23b6895f8c9b1d742c7436bbd616a33d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23b6895f8c9b1d742c7436bbd616a33d">&#9670;&#160;</a></span>get_active_conditions()</h2>
+<a id="ab0cdf67909ff8057be4dd6eb1c4d2893" name="ab0cdf67909ff8057be4dd6eb1c4d2893"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0cdf67909ff8057be4dd6eb1c4d2893">&#9670;&#160;</a></span>get_active_conditions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1068,13 +1068,19 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">core_reportbuilder\local\report\base::get_active_conditions </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$checkavailable</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Return all active report conditions (by default, all available conditions) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">bool</td><td class="paramname">$checkavailable</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">filter[]</td><td></td></tr>
@@ -2409,7 +2415,7 @@ To add content to the report use:</li>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 27 2024 03:04:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Nov 3 2024 03:04:51 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

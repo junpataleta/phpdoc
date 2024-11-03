@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241025) (ec7711b9a60)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241101) (d015c4c2133)</div>
   </td>
  </tr>
  </tbody>
@@ -252,7 +252,7 @@ Public Attributes</h2></td></tr>
 <p>The DATE function returns a value that represents a particular date.</p>
 <p>NOTE: When used in a Cell Formula, MS Excel changes the cell format so that it matches the date format of your regional settings. PhpSpreadsheet does not change cell formatting in this way.</p>
 <p>Excel Function: DATE(year,month,day)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000550">Deprecated</a></b></dt><dd>1.18.0 Use the fromYMD method in the DateTimeExcel::Date class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000536">Deprecated</a></b></dt><dd>1.18.0 Use the fromYMD method in the DateTimeExcel::Date class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Date::fromYMD()</dd></dl>
 <p>PhpSpreadsheet is a lot more forgiving than MS Excel when passing non numeric values to this function. A Month name or abbreviation (English only at this point) such as 'January' or 'Jan' will still be accepted, as will a day value with a suffix (e.g. '21st' rather than simply 21); again only English language.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -306,7 +306,7 @@ Public Attributes</h2></td></tr>
 
 <p>DATEDIF. </p>
 <p>Excel Function: DATEDIF(startdate, enddate, unit)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000554">Deprecated</a></b></dt><dd>1.18.0 Use the interval method in the DateTimeExcel::Difference class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000540">Deprecated</a></b></dt><dd>1.18.0 Use the interval method in the DateTimeExcel::Difference class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Difference::interval()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -352,7 +352,7 @@ Public Attributes</h2></td></tr>
 <p>Returns the current date. The NOW function is useful when you need to display the current date and time on a worksheet or calculate a value based on the current date and time, and have that value updated each time you open the worksheet.</p>
 <p>NOTE: When used in a Cell Formula, MS Excel changes the cell format so that it matches the date and time format of your regional settings. PhpSpreadsheet does not change cell formatting in this way.</p>
 <p>Excel Function: TODAY()</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000549">Deprecated</a></b></dt><dd>1.18.0 Use the today method in the DateTimeExcel::Current class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000535">Deprecated</a></b></dt><dd>1.18.0 Use the today method in the DateTimeExcel::Current class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Current::today()</dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -390,7 +390,7 @@ Public Attributes</h2></td></tr>
 <p>Returns the current date and time. The NOW function is useful when you need to display the current date and time on a worksheet or calculate a value based on the current date and time, and have that value updated each time you open the worksheet.</p>
 <p>NOTE: When used in a Cell Formula, MS Excel changes the cell format so that it matches the date and time format of your regional settings. PhpSpreadsheet does not change cell formatting in this way.</p>
 <p>Excel Function: NOW()</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000548">Deprecated</a></b></dt><dd>1.18.0 Use the now method in the DateTimeExcel::Current class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000534">Deprecated</a></b></dt><dd>1.18.0 Use the now method in the DateTimeExcel::Current class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Current::now()</dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -428,7 +428,7 @@ Public Attributes</h2></td></tr>
 <p>Returns a value that represents a particular date. Use DATEVALUE to convert a date represented by a text string to an Excel or PHP date/time stamp value.</p>
 <p>NOTE: When used in a Cell Formula, MS Excel changes the cell format so that it matches the date format of your regional settings. PhpSpreadsheet does not change cell formatting in this way.</p>
 <p>Excel Function: DATEVALUE(dateValue)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000552">Deprecated</a></b></dt><dd>1.18.0 Use the fromString method in the DateTimeExcel::DateValue class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000538">Deprecated</a></b></dt><dd>1.18.0 Use the fromString method in the DateTimeExcel::DateValue class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::DateValue::fromString()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -471,7 +471,7 @@ Public Attributes</h2></td></tr>
 <p>DAYOFMONTH. </p>
 <p>Returns the day of the month, for a specified date. The day is given as an integer ranging from 1 to 31.</p>
 <p>Excel Function: DAY(dateValue)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000560">Deprecated</a></b></dt><dd>1.18.0 Use the day method in the DateTimeExcel::DateParts class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000546">Deprecated</a></b></dt><dd>1.18.0 Use the day method in the DateTimeExcel::DateParts class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::DateParts::day()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -518,7 +518,7 @@ Public Attributes</h2></td></tr>
 <p>DAYS. </p>
 <p>Returns the number of days between two dates</p>
 <p>Excel Function: DAYS(endDate, startDate)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000555">Deprecated</a></b></dt><dd>1.18.0 Use the between method in the DateTimeExcel::Days class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000541">Deprecated</a></b></dt><dd>1.18.0 Use the between method in the DateTimeExcel::Days class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Days::between()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -571,7 +571,7 @@ Public Attributes</h2></td></tr>
 <p>DAYS360. </p>
 <p>Returns the number of days between two dates based on a 360-day year (twelve 30-day months), which is used in some accounting calculations. Use this function to help compute payments if your accounting system is based on twelve 30-day months.</p>
 <p>Excel Function: DAYS360(startDate,endDate[,method])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000556">Deprecated</a></b></dt><dd>1.18.0 Use the between method in the DateTimeExcel::Days360 class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000542">Deprecated</a></b></dt><dd>1.18.0 Use the between method in the DateTimeExcel::Days360 class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Days360::between()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -620,7 +620,7 @@ Public Attributes</h2></td></tr>
 <p>EDATE. </p>
 <p>Returns the serial number that represents the date that is the indicated number of months before or after a specified date (the start_date). Use EDATE to calculate maturity dates or due dates that fall on the same day of the month as the date of issue.</p>
 <p>Excel Function: EDATE(dateValue,adjustmentMonths)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000587">Deprecated</a></b></dt><dd>1.18.0 Use the adjust method in the DateTimeExcel::Edate class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000573">Deprecated</a></b></dt><dd>1.18.0 Use the adjust method in the DateTimeExcel::Edate class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Month::adjust()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -668,7 +668,7 @@ Public Attributes</h2></td></tr>
 <p>EOMONTH. </p>
 <p>Returns the date value for the last day of the month that is the indicated number of months before or after start_date. Use EOMONTH to calculate maturity dates or due dates that fall on the last day of the month.</p>
 <p>Excel Function: EOMONTH(dateValue,adjustmentMonths)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000588">Deprecated</a></b></dt><dd>1.18.0 Use the lastDay method in the DateTimeExcel::EoMonth class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000574">Deprecated</a></b></dt><dd>1.18.0 Use the lastDay method in the DateTimeExcel::EoMonth class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Month::lastDay()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -710,7 +710,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>getDateValue. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000547">Deprecated</a></b></dt><dd>1.18.0 Use the getDateValue method in the DateTimeExcel::Helpers class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000533">Deprecated</a></b></dt><dd>1.18.0 Use the getDateValue method in the DateTimeExcel::Helpers class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Helpers::getDateValue()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -753,7 +753,7 @@ Public Attributes</h2></td></tr>
 <p>HOUROFDAY. </p>
 <p>Returns the hour of a time value. The hour is given as an integer, ranging from 0 (12:00 A.M.) to 23 (11:00 P.M.).</p>
 <p>Excel Function: HOUR(timeValue)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000584">Deprecated</a></b></dt><dd>1.18.0 Use the hour method in the DateTimeExcel::TimeParts class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000570">Deprecated</a></b></dt><dd>1.18.0 Use the hour method in the DateTimeExcel::TimeParts class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::TimeParts::hour()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -794,7 +794,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Identify if a year is a leap year or not. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000546">Deprecated</a></b></dt><dd>1.18.0 Use the isLeapYear method in the DateTimeExcel::Helpers class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000532">Deprecated</a></b></dt><dd>1.18.0 Use the isLeapYear method in the DateTimeExcel::Helpers class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Helpers::isLeapYear()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -837,7 +837,7 @@ Public Attributes</h2></td></tr>
 <p>ISOWEEKNUM. </p>
 <p>Returns the ISO 8601 week number of the year for a specified date.</p>
 <p>Excel Function: ISOWEEKNUM(dateValue)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000581">Deprecated</a></b></dt><dd>1.18.0 Use the isoWeekNumber method in the DateTimeExcel::Week class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000567">Deprecated</a></b></dt><dd>1.18.0 Use the isoWeekNumber method in the DateTimeExcel::Week class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Week::isoWeekNumber()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -880,7 +880,7 @@ Public Attributes</h2></td></tr>
 <p>MINUTE. </p>
 <p>Returns the minutes of a time value. The minute is given as an integer, ranging from 0 to 59.</p>
 <p>Excel Function: MINUTE(timeValue)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000585">Deprecated</a></b></dt><dd>1.18.0 Use the minute method in the DateTimeExcel::TimeParts class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000571">Deprecated</a></b></dt><dd>1.18.0 Use the minute method in the DateTimeExcel::TimeParts class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::TimeParts::minute()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -923,7 +923,7 @@ Public Attributes</h2></td></tr>
 <p>MONTHOFYEAR. </p>
 <p>Returns the month of a date represented by a serial number. The month is given as an integer, ranging from 1 (January) to 12 (December).</p>
 <p>Excel Function: MONTH(dateValue)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000582">Deprecated</a></b></dt><dd>1.18.0 Use the month method in the DateTimeExcel::DateParts class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000568">Deprecated</a></b></dt><dd>1.18.0 Use the month method in the DateTimeExcel::DateParts class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::DateParts::month()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -975,7 +975,7 @@ Public Attributes</h2></td></tr>
 <p>NETWORKDAYS. </p>
 <p>Returns the number of whole working days between start_date and end_date. Working days exclude weekends and any dates identified in holidays. Use NETWORKDAYS to calculate employee benefits that accrue based on the number of days worked during a specific term.</p>
 <p>Excel Function: NETWORKDAYS(startDate,endDate[,holidays[,holiday[,...]]])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000558">Deprecated</a></b></dt><dd>1.18.0 Use the count method in the DateTimeExcel::NetworkDays class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000544">Deprecated</a></b></dt><dd>1.18.0 Use the count method in the DateTimeExcel::NetworkDays class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::NetworkDays::count()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1020,7 +1020,7 @@ Public Attributes</h2></td></tr>
 <p>SECOND. </p>
 <p>Returns the seconds of a time value. The second is given as an integer in the range 0 (zero) to 59.</p>
 <p>Excel Function: SECOND(timeValue)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000586">Deprecated</a></b></dt><dd>1.18.0 Use the second method in the DateTimeExcel::TimeParts class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000572">Deprecated</a></b></dt><dd>1.18.0 Use the second method in the DateTimeExcel::TimeParts class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::TimeParts::second()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1073,7 +1073,7 @@ Public Attributes</h2></td></tr>
 <p>The TIME function returns a value that represents a particular time.</p>
 <p>NOTE: When used in a Cell Formula, MS Excel changes the cell format so that it matches the time format of your regional settings. PhpSpreadsheet does not change cell formatting in this way.</p>
 <p>Excel Function: TIME(hour,minute,second)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000551">Deprecated</a></b></dt><dd>1.18.0 Use the fromHMS method in the DateTimeExcel::Time class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000537">Deprecated</a></b></dt><dd>1.18.0 Use the fromHMS method in the DateTimeExcel::Time class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Time::fromHMS()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1119,7 +1119,7 @@ Public Attributes</h2></td></tr>
 <p>Returns a value that represents a particular time. Use TIMEVALUE to convert a time represented by a text string to an Excel or PHP date/time stamp value.</p>
 <p>NOTE: When used in a Cell Formula, MS Excel changes the cell format so that it matches the time format of your regional settings. PhpSpreadsheet does not change cell formatting in this way.</p>
 <p>Excel Function: TIMEVALUE(timeValue)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000553">Deprecated</a></b></dt><dd>1.18.0 Use the fromString method in the DateTimeExcel::TimeValue class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000539">Deprecated</a></b></dt><dd>1.18.0 Use the fromString method in the DateTimeExcel::TimeValue class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::TimeValue::fromString()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1166,7 +1166,7 @@ Public Attributes</h2></td></tr>
 <p>WEEKDAY. </p>
 <p>Returns the day of the week for a specified date. The day is given as an integer ranging from 0 to 7 (dependent on the requested style).</p>
 <p>Excel Function: WEEKDAY(dateValue[,style])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000561">Deprecated</a></b></dt><dd>1.18.0 Use the day method in the DateTimeExcel::Week class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000547">Deprecated</a></b></dt><dd>1.18.0 Use the day method in the DateTimeExcel::Week class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Week::day()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1214,7 +1214,7 @@ Public Attributes</h2></td></tr>
 <p>WEEKNUM. </p>
 <p>Returns the week of the year for a specified date. The WEEKNUM function considers the week containing January 1 to be the first week of the year. However, there is a European standard that defines the first week as the one with the majority of days (four or more) falling in the new year. This means that for years in which there are three days or less in the first week of January, the WEEKNUM function returns week numbers that are incorrect according to the European standard.</p>
 <p>Excel Function: WEEKNUM(dateValue[,style])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000580">Deprecated</a></b></dt><dd>1.18.0 Use the number method in the DateTimeExcel::Week class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000566">Deprecated</a></b></dt><dd>1.18.0 Use the number method in the DateTimeExcel::Week class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Week::number()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1273,7 +1273,7 @@ Public Attributes</h2></td></tr>
 <p>WORKDAY. </p>
 <p>Returns the date that is the indicated number of working days before or after a date (the starting date). Working days exclude weekends and any dates identified as holidays. Use WORKDAY to exclude weekends or holidays when you calculate invoice due dates, expected delivery times, or the number of days of work performed.</p>
 <p>Excel Function: WORKDAY(startDate,endDays[,holidays[,holiday[,...]]])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000559">Deprecated</a></b></dt><dd>1.18.0 Use the date method in the DateTimeExcel::WorkDay class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000545">Deprecated</a></b></dt><dd>1.18.0 Use the date method in the DateTimeExcel::WorkDay class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::WorkDay::date()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1318,7 +1318,7 @@ Public Attributes</h2></td></tr>
 <p>YEAR. </p>
 <p>Returns the year corresponding to a date. The year is returned as an integer in the range 1900-9999.</p>
 <p>Excel Function: YEAR(dateValue)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000583">Deprecated</a></b></dt><dd>1.18.0 Use the ear method in the DateTimeExcel::DateParts class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000569">Deprecated</a></b></dt><dd>1.18.0 Use the ear method in the DateTimeExcel::DateParts class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::DateParts::year()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1370,7 +1370,7 @@ Public Attributes</h2></td></tr>
 <p>YEARFRAC. </p>
 <p>Calculates the fraction of the year represented by the number of whole days between two dates (the start_date and the end_date). Use the YEARFRAC worksheet function to identify the proportion of a whole year's benefits or obligations to assign to a specific term.</p>
 <p>Excel Function: YEARFRAC(startDate,endDate[,method])</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000557">Deprecated</a></b></dt><dd>1.18.0 Use the fraction method in the DateTimeExcel::YearFrac class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000543">Deprecated</a></b></dt><dd>1.18.0 Use the fraction method in the DateTimeExcel::YearFrac class instead </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::YearFrac::fraction()</dd></dl>
 <p>See <a href="https://lists.oasis-open.org/archives/office-formula/200806/msg00039.html">https://lists.oasis-open.org/archives/office-formula/200806/msg00039.html</a> for description of algorithm used in Excel</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1404,7 +1404,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>DOW_FRIDAY. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000576">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::DOW_FRIDAY </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000562">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::DOW_FRIDAY </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Constants::DOW_FRIDAY </dd></dl>
 
 </div>
@@ -1422,7 +1422,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>DOW_MONDAY. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000572">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::DOW_MONDAY </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000558">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::DOW_MONDAY </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Constants::DOW_MONDAY </dd></dl>
 
 </div>
@@ -1440,7 +1440,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>DOW_SATURDAY. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000577">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::DOW_SATURDAY </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000563">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::DOW_SATURDAY </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Constants::DOW_SATURDAY </dd></dl>
 
 </div>
@@ -1458,7 +1458,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>DOW_SUNDAY. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000571">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::DOW_SUNDAY </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000557">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::DOW_SUNDAY </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Constants::DOW_SUNDAY </dd></dl>
 
 </div>
@@ -1476,7 +1476,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>DOW_THURSDAY. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000575">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::DOW_THURSDAY </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000561">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::DOW_THURSDAY </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Constants::DOW_THURSDAY </dd></dl>
 
 </div>
@@ -1494,7 +1494,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>DOW_TUESDAY. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000573">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::DOW_TUESDAY </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000559">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::DOW_TUESDAY </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Constants::DOW_TUESDAY </dd></dl>
 
 </div>
@@ -1512,7 +1512,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>DOW_WEDNESDAY. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000574">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::DOW_WEDNESDAY </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000560">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::DOW_WEDNESDAY </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Constants::DOW_WEDNESDAY </dd></dl>
 
 </div>
@@ -1542,7 +1542,7 @@ Public Attributes</h2></td></tr>
 <div class="line">    ]</div>
 </div><!-- fragment -->
 <p>METHODARR. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000579">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::METHODARR </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000565">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::METHODARR </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Constants::METHODARR </dd></dl>
 
 </div>
@@ -1560,7 +1560,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>STARTWEEK_FRIDAY. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000568">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::STARTWEEK_FRIDAY </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000554">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::STARTWEEK_FRIDAY </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Constants::STARTWEEK_FRIDAY </dd></dl>
 
 </div>
@@ -1578,7 +1578,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>STARTWEEK_MONDAY. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000563">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::STARTWEEK_MONDAY </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000549">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::STARTWEEK_MONDAY </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Constants::STARTWEEK_MONDAY </dd></dl>
 
 </div>
@@ -1596,7 +1596,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>STARTWEEK_MONDAY_ALT. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000564">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::STARTWEEK_MONDAY_ALT </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000550">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::STARTWEEK_MONDAY_ALT </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Constants::STARTWEEK_MONDAY_ALT </dd></dl>
 
 </div>
@@ -1614,7 +1614,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>STARTWEEK_MONDAY_ISO. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000578">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::STARTWEEK_MONDAY_ISO </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000564">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::STARTWEEK_MONDAY_ISO </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Constants::STARTWEEK_MONDAY_ISO </dd></dl>
 
 </div>
@@ -1632,7 +1632,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>STARTWEEK_SATURDAY. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000569">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::STARTWEEK_SATURDAY </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000555">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::STARTWEEK_SATURDAY </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Constants::STARTWEEK_SATURDAY </dd></dl>
 
 </div>
@@ -1650,7 +1650,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>STARTWEEK_SUNDAY. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000562">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::STARTWEEK_SUNDAY </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000548">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::STARTWEEK_SUNDAY </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Constants::STARTWEEK_SUNDAY </dd></dl>
 
 </div>
@@ -1668,7 +1668,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>STARTWEEK_SUNDAY_ALT. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000570">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::STARTWEEK_SUNDAY_ALT </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000556">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::STARTWEEK_SUNDAY_ALT </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Constants::STARTWEEK_SUNDAY_ALT </dd></dl>
 
 </div>
@@ -1686,7 +1686,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>STARTWEEK_THURSDAY. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000567">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::STARTWEEK_THURSDAY </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000553">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::STARTWEEK_THURSDAY </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Constants::STARTWEEK_THURSDAY </dd></dl>
 
 </div>
@@ -1704,7 +1704,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>STARTWEEK_TUESDAY. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000565">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::STARTWEEK_TUESDAY </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000551">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::STARTWEEK_TUESDAY </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Constants::STARTWEEK_TUESDAY </dd></dl>
 
 </div>
@@ -1722,7 +1722,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>STARTWEEK_WEDNESDAY. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000566">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::STARTWEEK_WEDNESDAY </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000552">Deprecated</a></b></dt><dd>1.18.0 Use DateTimeExcel::Constants::STARTWEEK_WEDNESDAY </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>DateTimeExcel::Constants::STARTWEEK_WEDNESDAY </dd></dl>
 
 </div>
@@ -1733,7 +1733,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 27 2024 03:05:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Nov 3 2024 03:05:25 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>
