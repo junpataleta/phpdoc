@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241101) (d015c4c2133)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241108) (2b337b49f97)</div>
   </td>
  </tr>
  </tbody>
@@ -105,6 +105,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7f096cd74977ae3d4cc127b7d044ba5f" id="r_a7f096cd74977ae3d4cc127b7d044ba5f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f096cd74977ae3d4cc127b7d044ba5f">delete_report_filter</a> (int $reportid, int $filterid)</td></tr>
 <tr class="memdesc:a7f096cd74977ae3d4cc127b7d044ba5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete given filter from report.  <br /></td></tr>
 <tr class="separator:a7f096cd74977ae3d4cc127b7d044ba5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15742461b0ecf6efcc1431f0be22381e" id="r_a15742461b0ecf6efcc1431f0be22381e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15742461b0ecf6efcc1431f0be22381e">duplicate_report</a> (report_model $<a class="el" href="../../dd/d35/classcore__reportbuilder_1_1local_1_1helpers_1_1report.html">report</a>, string $reportname, bool $duplicateaudiences, bool $duplicateschedules,)</td></tr>
+<tr class="memdesc:a15742461b0ecf6efcc1431f0be22381e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duplicate custom report.  <br /></td></tr>
+<tr class="separator:a15742461b0ecf6efcc1431f0be22381e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1db995150ba35eedb6081701613aaf86" id="r_a1db995150ba35eedb6081701613aaf86"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1db995150ba35eedb6081701613aaf86">get_available_columns</a> ()</td></tr>
 <tr class="separator:a1db995150ba35eedb6081701613aaf86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a773aabe3d48a64cb7c23c54cbb44c4b7" id="r_a773aabe3d48a64cb7c23c54cbb44c4b7"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a773aabe3d48a64cb7c23c54cbb44c4b7">reorder_report_column</a> (int $reportid, int $columnid, int $position)</td></tr>
@@ -516,6 +519,62 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a15742461b0ecf6efcc1431f0be22381e" name="a15742461b0ecf6efcc1431f0be22381e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15742461b0ecf6efcc1431f0be22381e">&#9670;&#160;</a></span>duplicate_report()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_reportbuilder\local\helpers\report::duplicate_report </td>
+          <td>(</td>
+          <td class="paramtype">report_model</td>          <td class="paramname"><span class="paramname"><em>$report</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$reportname</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$duplicateaudiences</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$duplicateschedules</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Duplicate custom report. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">report_model</td><td class="paramname">$report</td><td>The report to duplicate. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$reportname</td><td></td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$duplicateaudiences</td><td></td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$duplicateschedules</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">report_model</td><td>The duplicated report. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a1db995150ba35eedb6081701613aaf86" name="a1db995150ba35eedb6081701613aaf86"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1db995150ba35eedb6081701613aaf86">&#9670;&#160;</a></span>get_available_columns()</h2>
 
@@ -874,7 +933,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 3 2024 03:04:51 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Nov 10 2024 03:00:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>
