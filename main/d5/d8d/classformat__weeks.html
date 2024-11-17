@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241108) (2b337b49f97)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241115) (269a8a8a1b3)</div>
   </td>
  </tr>
  </tbody>
@@ -333,6 +333,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4f58a81b000775d9539f5ed5a6d90a9d" id="r_a4f58a81b000775d9539f5ed5a6d90a9d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a4f58a81b000775d9539f5ed5a6d90a9d">instance</a> ($courseorid)</td></tr>
 <tr class="memdesc:a4f58a81b000775d9539f5ed5a6d90a9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an instance of the class.  <br /></td></tr>
 <tr class="separator:a4f58a81b000775d9539f5ed5a6d90a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1edb11b4abaf1cb164f8636c9669e7a9" id="r_a1edb11b4abaf1cb164f8636c9669e7a9"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a1edb11b4abaf1cb164f8636c9669e7a9">invalidate_all_session_caches_for_course</a> (stdClass $course)</td></tr>
+<tr class="memdesc:a1edb11b4abaf1cb164f8636c9669e7a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prune a course state cache for all open sessions.  <br /></td></tr>
+<tr class="separator:a1edb11b4abaf1cb164f8636c9669e7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0e898c8f2b611cdcc70d0811a49df48" id="r_ad0e898c8f2b611cdcc70d0811a49df48"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#ad0e898c8f2b611cdcc70d0811a49df48">reset_course_cache</a> ($courseid=0)</td></tr>
 <tr class="memdesc:ad0e898c8f2b611cdcc70d0811a49df48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets cache for the course (or all caches)  <br /></td></tr>
 <tr class="separator:ad0e898c8f2b611cdcc70d0811a49df48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2120,7 +2123,7 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000074">Deprecated</a></b></dt><dd>Since 4.4. Use get_sectionnum instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000072">Deprecated</a></b></dt><dd>Since 4.4. Use get_sectionnum instead. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000033">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80116" class="el">MDL-80116</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8. </dd></dl>
 
 </div>
@@ -2521,6 +2524,46 @@ course_modinfo::get_section_info_all()</dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">base</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1edb11b4abaf1cb164f8636c9669e7a9" name="a1edb11b4abaf1cb164f8636c9669e7a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1edb11b4abaf1cb164f8636c9669e7a9">&#9670;&#160;</a></span>invalidate_all_session_caches_for_course()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_courseformat\base::invalidate_all_session_caches_for_course </td>
+          <td>(</td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$course</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Prune a course state cache for all open sessions. </p>
+<p>Most course edits does not require to invalidate the cache for all users because the cache relies on the course cacherev value. However, there are actions like editing the groups that do not change the course cacherev.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -3095,7 +3138,7 @@ course_modinfo::get_section_info_all()</dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000073">Deprecated</a></b></dt><dd>Since 4.4. Use set_sectionnum instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000071">Deprecated</a></b></dt><dd>Since 4.4. Use set_sectionnum instead. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000032">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80116" class="el">MDL-80116</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8. </dd></dl>
 
 </div>
@@ -3763,7 +3806,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 10 2024 02:58:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Nov 17 2024 03:08:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

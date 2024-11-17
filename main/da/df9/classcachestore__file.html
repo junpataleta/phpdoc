@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241108) (2b337b49f97)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241115) (269a8a8a1b3)</div>
   </td>
  </tr>
  </tbody>
@@ -208,6 +208,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a25b1ed9123e86a660546bc3c6915ddc8" id="r_a25b1ed9123e86a660546bc3c6915ddc8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25b1ed9123e86a660546bc3c6915ddc8">config_get_configuration_array</a> ($data)</td></tr>
 <tr class="memdesc:a25b1ed9123e86a660546bc3c6915ddc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the data from the add instance form this function creates a configuration array.  <br /></td></tr>
 <tr class="separator:a25b1ed9123e86a660546bc3c6915ddc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00652fb4c6fcaa084aab8f68481ea15e" id="r_a00652fb4c6fcaa084aab8f68481ea15e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00652fb4c6fcaa084aab8f68481ea15e">config_get_serializer_options</a> ()</td></tr>
+<tr class="memdesc:a00652fb4c6fcaa084aab8f68481ea15e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an array of options to use as the serialiser.  <br /></td></tr>
+<tr class="separator:a00652fb4c6fcaa084aab8f68481ea15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7f02d548aaeebb82011ff5fee2a152f" id="r_ab7f02d548aaeebb82011ff5fee2a152f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7f02d548aaeebb82011ff5fee2a152f">config_set_edit_form_data</a> (<a class="el" href="../../d8/db1/classmoodleform.html">moodleform</a> $editform, array $config)</td></tr>
 <tr class="memdesc:ab7f02d548aaeebb82011ff5fee2a152f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows the cache store to set its data against the edit form before it is shown to the user.  <br /></td></tr>
 <tr class="separator:ab7f02d548aaeebb82011ff5fee2a152f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,6 +220,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af2bc7e6ec5aca2a7b37c893c349ff890" id="r_af2bc7e6ec5aca2a7b37c893c349ff890"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2bc7e6ec5aca2a7b37c893c349ff890">get_supported_modes</a> (array $configuration=array())</td></tr>
 <tr class="memdesc:af2bc7e6ec5aca2a7b37c893c349ff890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the supported modes as a combined int.  <br /></td></tr>
 <tr class="separator:af2bc7e6ec5aca2a7b37c893c349ff890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6ec288bc73f54448db2e89ea792e34d" id="r_ac6ec288bc73f54448db2e89ea792e34d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6ec288bc73f54448db2e89ea792e34d">igbinary_available</a> ()</td></tr>
+<tr class="memdesc:ac6ec288bc73f54448db2e89ea792e34d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if igbinary functions are available for use.  <br /></td></tr>
+<tr class="separator:ac6ec288bc73f54448db2e89ea792e34d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ed3990e888591aa90e3f5d02d9ebc88" id="r_a9ed3990e888591aa90e3f5d02d9ebc88"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ed3990e888591aa90e3f5d02d9ebc88">initialise_test_instance</a> (<a class="el" href="../../d4/dc8/classcore__cache_1_1definition.html">definition</a> $<a class="el" href="../../d4/dc8/classcore__cache_1_1definition.html">definition</a>)</td></tr>
 <tr class="memdesc:a9ed3990e888591aa90e3f5d02d9ebc88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates an instance of the cache store that can be used for testing.  <br /></td></tr>
 <tr class="separator:a9ed3990e888591aa90e3f5d02d9ebc88"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -252,6 +258,14 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>IS_SEARCHABLE</b> = 
 <tr class="memitem:a7d06aa365cfb9a2590f4c78dc843fc23" id="r_a7d06aa365cfb9a2590f4c78dc843fc23"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2d/classcore__cache_1_1store.html#a7d06aa365cfb9a2590f4c78dc843fc23">MODE_SESSION</a> = 2</td></tr>
 <tr class="memdesc:a7d06aa365cfb9a2590f4c78dc843fc23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Session caches.  <br /></td></tr>
 <tr class="separator:a7d06aa365cfb9a2590f4c78dc843fc23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69c79b14455deac2300336b0a370e837" id="r_a69c79b14455deac2300336b0a370e837"><td class="memItemLeft" align="right" valign="top"><a id="a69c79b14455deac2300336b0a370e837" name="a69c79b14455deac2300336b0a370e837"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>SERIALIZER_IGBINARY</b> = 'igbinary'</td></tr>
+<tr class="memdesc:a69c79b14455deac2300336b0a370e837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value to represent use of the Igbinary serializer. <br /></td></tr>
+<tr class="separator:a69c79b14455deac2300336b0a370e837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0629a55068c2bbefd677590dcc01848" id="r_ae0629a55068c2bbefd677590dcc01848"><td class="memItemLeft" align="right" valign="top"><a id="ae0629a55068c2bbefd677590dcc01848" name="ae0629a55068c2bbefd677590dcc01848"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>SERIALIZER_PHP</b> = 'php'</td></tr>
+<tr class="memdesc:ae0629a55068c2bbefd677590dcc01848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value to represent use of the PHP serializer. <br /></td></tr>
+<tr class="separator:ae0629a55068c2bbefd677590dcc01848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c281b954653ff867f07786caf98f34d" id="r_a8c281b954653ff867f07786caf98f34d"><td class="memItemLeft" align="right" valign="top"><a id="a8c281b954653ff867f07786caf98f34d" name="a8c281b954653ff867f07786caf98f34d"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>STATIC_ACCEL</b> = '** static accel. **'</td></tr>
 <tr class="memdesc:a8c281b954653ff867f07786caf98f34d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static caches. <br /></td></tr>
@@ -293,6 +307,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ac064662bafa0c47528e08eccff1dfa75" id="r_ac064662bafa0c47528e08eccff1dfa75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac064662bafa0c47528e08eccff1dfa75">purge_all_definitions</a> ()</td></tr>
 <tr class="memdesc:ac064662bafa0c47528e08eccff1dfa75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purges all the cache definitions deleting all items within them.  <br /></td></tr>
 <tr class="separator:ac064662bafa0c47528e08eccff1dfa75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab641f345e1fc7bc6495bbfb89f3653c6" id="r_ab641f345e1fc7bc6495bbfb89f3653c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab641f345e1fc7bc6495bbfb89f3653c6">serialize</a> ($value)</td></tr>
+<tr class="memdesc:ab641f345e1fc7bc6495bbfb89f3653c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the data according to the configured serializer.  <br /></td></tr>
+<tr class="separator:ab641f345e1fc7bc6495bbfb89f3653c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff89fe46642cad0b12e44dea2527bfe" id="r_afff89fe46642cad0b12e44dea2527bfe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afff89fe46642cad0b12e44dea2527bfe">unserialize</a> ($value)</td></tr>
+<tr class="memdesc:afff89fe46642cad0b12e44dea2527bfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unserializes the data according to the configured serializer.  <br /></td></tr>
+<tr class="separator:afff89fe46642cad0b12e44dea2527bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13f70c96ba1266e3101f58c1c38ff427" id="r_a13f70c96ba1266e3101f58c1c38ff427"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13f70c96ba1266e3101f58c1c38ff427">write_file</a> ($file, $content)</td></tr>
 <tr class="memdesc:a13f70c96ba1266e3101f58c1c38ff427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes your madness to a file.  <br /></td></tr>
 <tr class="separator:a13f70c96ba1266e3101f58c1c38ff427"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -352,6 +372,10 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$path</b> = false</
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false</td></tr>
 <tr class="memdesc:a6fb80347d6071cfe53d8970b46b5a12e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to true when a prescan has been performed. <br /></td></tr>
 <tr class="separator:a6fb80347d6071cfe53d8970b46b5a12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4790019973caa56e4d5bcf2a4ee0d6b5" id="r_a4790019973caa56e4d5bcf2a4ee0d6b5"><td class="memItemLeft" align="right" valign="top"><a id="a4790019973caa56e4d5bcf2a4ee0d6b5" name="a4790019973caa56e4d5bcf2a4ee0d6b5"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$serializer</b> = self::SERIALIZER_PHP</td></tr>
+<tr class="memdesc:a4790019973caa56e4d5bcf2a4ee0d6b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializer for this store. <br /></td></tr>
+<tr class="separator:a4790019973caa56e4d5bcf2a4ee0d6b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a378ead9a58072628760865a0dc11683d" id="r_a378ead9a58072628760865a0dc11683d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a378ead9a58072628760865a0dc11683d">$singledirectory</a> = false</td></tr>
 <tr class="memdesc:a378ead9a58072628760865a0dc11683d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to true if we should store files within a single directory.  <br /></td></tr>
 <tr class="separator:a378ead9a58072628760865a0dc11683d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -593,7 +617,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000049">Deprecated</a></b></dt><dd>since 2.5 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000047">Deprecated</a></b></dt><dd>since 2.5 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>store::instance_deleted() </dd></dl>
 
 <p>Reimplemented in <a class="el" href="../../dd/d0c/classcore__cache_1_1dummy__cachestore.html#a2a5a7c2e8793c4262a477487b418f081">core_cache\dummy_cachestore</a>.</p>
@@ -638,6 +662,39 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
 </dl>
 
 <p>Implements <a class="el" href="../../d1/d24/interfacecore__cache_1_1configurable__cache__interface.html#ac8be7a54a0e47ad952522036f2cb1e4e">core_cache\configurable_cache_interface</a>.</p>
+
+</div>
+</div>
+<a id="a00652fb4c6fcaa084aab8f68481ea15e" name="a00652fb4c6fcaa084aab8f68481ea15e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00652fb4c6fcaa084aab8f68481ea15e">&#9670;&#160;</a></span>config_get_serializer_options()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static cachestore_file::config_get_serializer_options </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets an array of options to use as the serialiser. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1322,6 +1379,39 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
 
 </div>
 </div>
+<a id="ac6ec288bc73f54448db2e89ea792e34d" name="ac6ec288bc73f54448db2e89ea792e34d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6ec288bc73f54448db2e89ea792e34d">&#9670;&#160;</a></span>igbinary_available()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static cachestore_file::igbinary_available </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine if igbinary functions are available for use. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">boolean</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aabf43b0868f72556ec2528b7d3403b5a" name="aabf43b0868f72556ec2528b7d3403b5a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aabf43b0868f72556ec2528b7d3403b5a">&#9670;&#160;</a></span>initialise()</h2>
 
@@ -1811,6 +1901,45 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
 
 </div>
 </div>
+<a id="ab641f345e1fc7bc6495bbfb89f3653c6" name="ab641f345e1fc7bc6495bbfb89f3653c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab641f345e1fc7bc6495bbfb89f3653c6">&#9670;&#160;</a></span>serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cachestore_file::serialize </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Serializes the data according to the configured serializer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">mixed</td><td class="paramname">$value</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a12694f1ab1c0b237fdcbaa4bf0b99cb8" name="a12694f1ab1c0b237fdcbaa4bf0b99cb8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a12694f1ab1c0b237fdcbaa4bf0b99cb8">&#9670;&#160;</a></span>set()</h2>
 
@@ -2071,6 +2200,45 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
 
 </div>
 </div>
+<a id="afff89fe46642cad0b12e44dea2527bfe" name="afff89fe46642cad0b12e44dea2527bfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afff89fe46642cad0b12e44dea2527bfe">&#9670;&#160;</a></span>unserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cachestore_file::unserialize </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Unserializes the data according to the configured serializer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">mixed</td><td class="paramname">$value</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">mixed</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a13f70c96ba1266e3101f58c1c38ff427" name="a13f70c96ba1266e3101f58c1c38ff427"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a13f70c96ba1266e3101f58c1c38ff427">&#9670;&#160;</a></span>write_file()</h2>
 
@@ -2326,7 +2494,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 10 2024 02:58:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Nov 17 2024 03:08:00 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>
