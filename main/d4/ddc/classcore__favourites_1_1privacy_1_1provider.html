@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241115) (269a8a8a1b3)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241122) (505a85eb9ae)</div>
   </td>
  </tr>
  </tbody>
@@ -164,7 +164,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Provide a list of contexts which have favourites for the user, in the respective area (component/itemtype combination). </p>
 <p>This method is to be called by consumers of the favourites subsystem (plugins), in their get_contexts_for_userid() method, to add the contexts for items which may have been favourited, but would normally not be reported as having user data by the plugin responsible for them.</p>
-<p>Consider an example: Favourite courses. Favourite courses will be handled by the core_course subsystem and courses can be favourited at site context.</p>
+<p>Consider an example: Favourite courses. Favourite courses will be handled by the <a class="el" href="../../da/d9c/namespacecore__course.html" title="&#160;">core_course</a> subsystem and courses can be favourited at site context.</p>
 <p>Now normally, the course provider method get_contexts_for_userid() would report the context of any courses the user is in. Then, we'd export data for those contexts. This won't include courses the user has favourited, but is not a member of.</p>
 <p>To report the full list, the course provider needs to be made aware of the contexts of any courses the user may have marked as favourites. Course will need to ask th favourites subsystem for this - a call to add_contexts_for_userid($userid).</p>
 <p>Once called, if a course has been marked as a favourite, at site context, then we'd return the site context. During export, the consumer (course), just looks at all contexts and decides whether to export favourite courses for each one.</p>
@@ -496,7 +496,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 17 2024 03:09:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Nov 24 2024 03:11:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

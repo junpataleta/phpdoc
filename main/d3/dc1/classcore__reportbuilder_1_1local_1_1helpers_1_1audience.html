@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241115) (269a8a8a1b3)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241122) (505a85eb9ae)</div>
   </td>
  </tr>
  </tbody>
@@ -99,8 +99,11 @@ Static Public Member Functions</h2></td></tr>
 static&#160;</td><td class="memItemRight" valign="bottom"><b>purge_caches</b> ()</td></tr>
 <tr class="memdesc:a2016076611202c6a41820519c67c5002"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purge the audience cache of allowed reports. <br /></td></tr>
 <tr class="separator:a2016076611202c6a41820519c67c5002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a137e9af5d9d66a233569e7b9991994bf" id="r_a137e9af5d9d66a233569e7b9991994bf"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a137e9af5d9d66a233569e7b9991994bf">user_audience_single_sql</a> (audience_model $<a class="el" href="../../d7/d55/classcore__reportbuilder_1_1local_1_1filters_1_1audience.html">audience</a>, string $userfieldsql)</td></tr>
+<tr class="memdesc:a137e9af5d9d66a233569e7b9991994bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return appropriate select clause and params for given audience.  <br /></td></tr>
+<tr class="separator:a137e9af5d9d66a233569e7b9991994bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ec6459b49d40f2e00cb650304a772f8" id="r_a9ec6459b49d40f2e00cb650304a772f8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ec6459b49d40f2e00cb650304a772f8">user_audience_sql</a> (array $audiences, string $usertablealias='u')</td></tr>
-<tr class="memdesc:a9ec6459b49d40f2e00cb650304a772f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return appropriate list of where clauses and params for given audiences.  <br /></td></tr>
+<tr class="memdesc:a9ec6459b49d40f2e00cb650304a772f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return appropriate list of select clauses and params for given audiences.  <br /></td></tr>
 <tr class="separator:a9ec6459b49d40f2e00cb650304a772f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a098402b33200a0eca0909953ed491733" id="r_a098402b33200a0eca0909953ed491733"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a098402b33200a0eca0909953ed491733">user_reports_list</a> (?int $userid=null)</td></tr>
 <tr class="memdesc:a098402b33200a0eca0909953ed491733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return list of report ID's specified user can access, based on audience configuration.  <br /></td></tr>
@@ -185,7 +188,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>purge_caches</b> ()
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001471">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 - please do not use this function any more, {</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001481">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 - please do not use this function any more, {</dd></dl>
 <dl class="section see"><dt>See also</dt><dd>custom_report_audience_cards_exporter} </dd></dl>
 
 </div>
@@ -309,6 +312,50 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>purge_caches</b> ()
 
 </div>
 </div>
+<a id="a137e9af5d9d66a233569e7b9991994bf" name="a137e9af5d9d66a233569e7b9991994bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a137e9af5d9d66a233569e7b9991994bf">&#9670;&#160;</a></span>user_audience_single_sql()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_reportbuilder\local\helpers\audience::user_audience_single_sql </td>
+          <td>(</td>
+          <td class="paramtype">audience_model</td>          <td class="paramname"><span class="paramname"><em>$audience</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$userfieldsql</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return appropriate select clause and params for given audience. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">audience_model</td><td class="paramname">$audience</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$userfieldsql</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>[$select, $params] </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a9ec6459b49d40f2e00cb650304a772f8" name="a9ec6459b49d40f2e00cb650304a772f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9ec6459b49d40f2e00cb650304a772f8">&#9670;&#160;</a></span>user_audience_sql()</h2>
 
@@ -336,7 +383,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>purge_caches</b> ()
 </table>
 </div><div class="memdoc">
 
-<p>Return appropriate list of where clauses and params for given audiences. </p>
+<p>Return appropriate list of select clauses and params for given audiences. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">audience_model[]</td><td class="paramname">$audiences</td><td></td></tr>
@@ -346,7 +393,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>purge_caches</b> ()
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array[]</td><td>[$wheres, $params] </td></tr>
+    <tr><td class="paramname">array[]</td><td>[$selects, $params] </td></tr>
   </table>
   </dd>
 </dl>
@@ -504,7 +551,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>purge_caches</b> ()
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 17 2024 03:09:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Nov 24 2024 03:11:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

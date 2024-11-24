@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241115) (269a8a8a1b3)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241122) (505a85eb9ae)</div>
   </td>
  </tr>
  </tbody>
@@ -155,6 +155,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1a444fce2e706442e26ea6f3710c79df" id="r_ga1a444fce2e706442e26ea6f3710c79df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1a444fce2e706442e26ea6f3710c79df">tool_recyclebin_pre_course_module_delete</a> ($cm)</td></tr>
 <tr class="memdesc:ga1a444fce2e706442e26ea6f3710c79df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hook called before we delete a course module.  <br /></td></tr>
 <tr class="separator:ga1a444fce2e706442e26ea6f3710c79df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd004e72f8edd4022eb4f95a74f048ca" id="r_gabd004e72f8edd4022eb4f95a74f048ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabd004e72f8edd4022eb4f95a74f048ca">xmldb_tool_recyclebin_upgrade</a> ($oldversion)</td></tr>
+<tr class="memdesc:gabd004e72f8edd4022eb4f95a74f048ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upgrade the plugin.  <br /></td></tr>
+<tr class="separator:gabd004e72f8edd4022eb4f95a74f048ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -179,7 +182,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>tool_recyclebin::TOO
 const&#160;</td><td class="memItemRight" valign="bottom"><b>tool_recyclebin::TOOL_RECYCLEBIN_COURSECAT_BIN_FILEAREA</b> 'recyclebin_coursecat'</td></tr>
 <tr class="separator:gaf10cdc2b5180342abf533aeb1be29eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92a3fd99b37c9cbd65c4aead816b3a83" id="r_ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memItemLeft" align="right" valign="top"><a id="ga92a3fd99b37c9cbd65c4aead816b3a83" name="ga92a3fd99b37c9cbd65c4aead816b3a83"></a>
-$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024100700</td></tr>
+$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024111500</td></tr>
 <tr class="separator:ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -362,6 +365,37 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 
 </div>
 </div>
+<a id="gabd004e72f8edd4022eb4f95a74f048ca" name="gabd004e72f8edd4022eb4f95a74f048ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabd004e72f8edd4022eb4f95a74f048ca">&#9670;&#160;</a></span>xmldb_tool_recyclebin_upgrade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">xmldb_tool_recyclebin_upgrade </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$oldversion</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Upgrade the plugin. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$oldversion</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>always true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="gaebdff6d420d3918695f9e95bc01a4d38" name="gaebdff6d420d3918695f9e95bc01a4d38"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaebdff6d420d3918695f9e95bc01a4d38">&#9670;&#160;</a></span>$tasks</h2>
@@ -400,7 +434,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 17 2024 03:07:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Nov 24 2024 03:10:00 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

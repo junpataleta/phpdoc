@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241115) (269a8a8a1b3)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241122) (505a85eb9ae)</div>
   </td>
  </tr>
  </tbody>
@@ -3423,7 +3423,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga198990f932d45cf91c80be6c77a36e1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check to see if a user's real email address should be used for the "From" field.  <br /></td></tr>
 <tr class="separator:ga198990f932d45cf91c80be6c77a36e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8c4fd4bcf7bc31aae2b715f02d7161bb" id="r_ga8c4fd4bcf7bc31aae2b715f02d7161bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8c4fd4bcf7bc31aae2b715f02d7161bb">can_use_readonly</a> (int $type, string $sql)</td></tr>
-<tr class="memdesc:ga8c4fd4bcf7bc31aae2b715f02d7161bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if The query qualifies for readonly connection execution Logging queries are exempt, those are write operations that circumvent standard query_start/query_end paths.  <br /></td></tr>
+<tr class="memdesc:ga8c4fd4bcf7bc31aae2b715f02d7161bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if The query qualifies for readonly connection execution.  <br /></td></tr>
 <tr class="separator:ga8c4fd4bcf7bc31aae2b715f02d7161bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac8a2c3f8b280c784781a04022373761d" id="r_gac8a2c3f8b280c784781a04022373761d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac8a2c3f8b280c784781a04022373761d">can_use_rotated_text</a> ()</td></tr>
 <tr class="separator:gac8a2c3f8b280c784781a04022373761d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3584,7 +3584,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga8839df239156719f7c765f65c57050df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the sesskey and return true of false for whether it is valid.  <br /></td></tr>
 <tr class="separator:ga8839df239156719f7c765f65c57050df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3ae73c52b49526f5a21cf02a3c1fceee" id="r_ga3ae73c52b49526f5a21cf02a3c1fceee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3ae73c52b49526f5a21cf02a3c1fceee">connect</a> ($dbhost, $dbuser, $dbpass, $dbname, $prefix, ?array $dboptions=null)</td></tr>
-<tr class="memdesc:ga3ae73c52b49526f5a21cf02a3c1fceee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to db The connection parameters processor that sets up stage for master write and slave readonly handles.  <br /></td></tr>
+<tr class="memdesc:ga3ae73c52b49526f5a21cf02a3c1fceee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to db.  <br /></td></tr>
 <tr class="separator:ga3ae73c52b49526f5a21cf02a3c1fceee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga970fcc4179ad3e821ece2609f4193282" id="r_ga970fcc4179ad3e821ece2609f4193282"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga970fcc4179ad3e821ece2609f4193282">content_to_text</a> ($content, $contentformat)</td></tr>
 <tr class="memdesc:ga970fcc4179ad3e821ece2609f4193282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts texts or strings to plain text.  <br /></td></tr>
@@ -5015,9 +5015,9 @@ replacement&#160;</td><td class="memItemRight" valign="bottom"><b>moodle_process
 <tr class="memitem:ga4db528e0828bf91af237a5389690dd64" id="r_ga4db528e0828bf91af237a5389690dd64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4db528e0828bf91af237a5389690dd64">password_is_legacy_hash</a> (#[\SensitiveParameter] string $password)</td></tr>
 <tr class="memdesc:ga4db528e0828bf91af237a5389690dd64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check a password hash to see if it was hashed using the legacy hash algorithm (bcrypt).  <br /></td></tr>
 <tr class="separator:ga4db528e0828bf91af237a5389690dd64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacb1d30f7d27b38b701f76771c3291d18" id="r_gacb1d30f7d27b38b701f76771c3291d18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gacb1d30f7d27b38b701f76771c3291d18">perf_get_reads_slave</a> ()</td></tr>
-<tr class="memdesc:gacb1d30f7d27b38b701f76771c3291d18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of reads done by the read only database.  <br /></td></tr>
-<tr class="separator:gacb1d30f7d27b38b701f76771c3291d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6fa7b5d342ce253b3f7b49a5b7208976" id="r_ga6fa7b5d342ce253b3f7b49a5b7208976"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6fa7b5d342ce253b3f7b49a5b7208976">perf_get_reads_replica</a> ()</td></tr>
+<tr class="memdesc:ga6fa7b5d342ce253b3f7b49a5b7208976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of reads done by the read only database.  <br /></td></tr>
+<tr class="separator:ga6fa7b5d342ce253b3f7b49a5b7208976"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae815871a566c749ce217106faa4da91a" id="r_gae815871a566c749ce217106faa4da91a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae815871a566c749ce217106faa4da91a">phpunit_bootstrap_error</a> ($errorcode, $text='')</td></tr>
 <tr class="memdesc:gae815871a566c749ce217106faa4da91a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print error and stop execution.  <br /></td></tr>
 <tr class="separator:gae815871a566c749ce217106faa4da91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5346,7 +5346,7 @@ replacement&#160;</td><td class="memItemRight" valign="bottom"><b>plagiarism_upd
 <tr class="memdesc:gab3abd033bf043f79bf39fae178163856"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate and return a random string of the specified length.  <br /></td></tr>
 <tr class="separator:gab3abd033bf043f79bf39fae178163856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga23088bc6a02791bba64b780159d4cd7d" id="r_ga23088bc6a02791bba64b780159d4cd7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga23088bc6a02791bba64b780159d4cd7d">raw_connect</a> (string $dbhost, string $dbuser, string $dbpass, string $dbname, $prefix, ?array $dboptions=null)</td></tr>
-<tr class="memdesc:ga23088bc6a02791bba64b780159d4cd7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to db The real connection establisment, called from <a class="el" href="#ga3ae73c52b49526f5a21cf02a3c1fceee" title="Connect to db The connection parameters processor that sets up stage for master write and slave reado...">connect()</a> and set_dbhwrite()  <br /></td></tr>
+<tr class="memdesc:ga23088bc6a02791bba64b780159d4cd7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to db.  <br /></td></tr>
 <tr class="separator:ga23088bc6a02791bba64b780159d4cd7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga17282695337990244db8e9b257793fe0" id="r_ga17282695337990244db8e9b257793fe0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga17282695337990244db8e9b257793fe0">rc4decrypt</a> ($data)</td></tr>
 <tr class="memdesc:ga17282695337990244db8e9b257793fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">rc4decrypt  <br /></td></tr>
@@ -5997,9 +5997,9 @@ object&#160;</td><td class="memItemRight" valign="bottom"><b>upgrade_setup_debug
 <tr class="memitem:gaeefe0f8710bb711cc564865900756e2b" id="r_gaeefe0f8710bb711cc564865900756e2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaeefe0f8710bb711cc564865900756e2b">validate_user_key</a> ($keyvalue, $script, $instance)</td></tr>
 <tr class="memdesc:gaeefe0f8710bb711cc564865900756e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates a user key, checking if the key exists, is not expired and the remote ip is correct.  <br /></td></tr>
 <tr class="separator:gaeefe0f8710bb711cc564865900756e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga86dc5dc267194f585644e9b1defde204" id="r_ga86dc5dc267194f585644e9b1defde204"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga86dc5dc267194f585644e9b1defde204">want_read_slave</a> ()</td></tr>
-<tr class="memdesc:ga86dc5dc267194f585644e9b1defde204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether we want to connect to slave database for read queries.  <br /></td></tr>
-<tr class="separator:ga86dc5dc267194f585644e9b1defde204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga703f15e65945648c2e1b8c1402bc4e94" id="r_ga703f15e65945648c2e1b8c1402bc4e94"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga703f15e65945648c2e1b8c1402bc4e94">want_read_replica</a> ()</td></tr>
+<tr class="memdesc:ga703f15e65945648c2e1b8c1402bc4e94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether we want to connect to replica database for read queries.  <br /></td></tr>
+<tr class="separator:ga703f15e65945648c2e1b8c1402bc4e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3211a0357965842ecc405884fcef1244" id="r_ga3211a0357965842ecc405884fcef1244"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3211a0357965842ecc405884fcef1244">wikify_links</a> ($string)</td></tr>
 <tr class="memdesc:ga3211a0357965842ecc405884fcef1244"><td class="mdescLeft">&#160;</td><td class="mdescRight">This expression turns links into something nice in a text format.  <br /></td></tr>
 <tr class="separator:ga3211a0357965842ecc405884fcef1244"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -6066,8 +6066,21 @@ global&#160;</td><td class="memItemRight" valign="bottom"><b>$DB</b></td></tr>
 <tr class="separator:ga56f6c6070edb21a35cfa9e1df79ba61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa4ec01205c2e900fc61c104d86b2e572" id="r_gaa4ec01205c2e900fc61c104d86b2e572"><td class="memItemLeft" align="right" valign="top"><a id="gaa4ec01205c2e900fc61c104d86b2e572" name="gaa4ec01205c2e900fc61c104d86b2e572"></a>
 resource&#160;</td><td class="memItemRight" valign="bottom"><b>$dbhreadonly</b></td></tr>
+<tr class="memdesc:gaa4ec01205c2e900fc61c104d86b2e572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replica read only database handle. <br /></td></tr>
+<tr class="separator:gaa4ec01205c2e900fc61c104d86b2e572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa4ec01205c2e900fc61c104d86b2e572" id="r_gaa4ec01205c2e900fc61c104d86b2e572"><td class="memItemLeft" align="right" valign="top"><a id="gaa4ec01205c2e900fc61c104d86b2e572" name="gaa4ec01205c2e900fc61c104d86b2e572"></a>
+resource&#160;</td><td class="memItemRight" valign="bottom"><b>$dbhreadonly</b></td></tr>
 <tr class="memdesc:gaa4ec01205c2e900fc61c104d86b2e572"><td class="mdescLeft">&#160;</td><td class="mdescRight">slave read only database handle <br /></td></tr>
 <tr class="separator:gaa4ec01205c2e900fc61c104d86b2e572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac559b2afc11622f1562f0a6902d24d4d" id="r_gac559b2afc11622f1562f0a6902d24d4d"><td class="memItemLeft" align="right" valign="top"><a id="gac559b2afc11622f1562f0a6902d24d4d" name="gac559b2afc11622f1562f0a6902d24d4d"></a>
+replacement&#160;</td><td class="memItemRight" valign="bottom"><b>$dbname</b></td></tr>
+<tr class="separator:gac559b2afc11622f1562f0a6902d24d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7bcab90d190b2f29430eea929a326fac" id="r_ga7bcab90d190b2f29430eea929a326fac"><td class="memItemLeft" align="right" valign="top"><a id="ga7bcab90d190b2f29430eea929a326fac" name="ga7bcab90d190b2f29430eea929a326fac"></a>
+replacement&#160;</td><td class="memItemRight" valign="bottom"><b>$dbpass</b></td></tr>
+<tr class="separator:ga7bcab90d190b2f29430eea929a326fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga166f6f32f753588a886c3dc4d77557c9" id="r_ga166f6f32f753588a886c3dc4d77557c9"><td class="memItemLeft" align="right" valign="top"><a id="ga166f6f32f753588a886c3dc4d77557c9" name="ga166f6f32f753588a886c3dc4d77557c9"></a>
+replacement&#160;</td><td class="memItemRight" valign="bottom"><b>$dbuser</b></td></tr>
+<tr class="separator:ga166f6f32f753588a886c3dc4d77557c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac8133dac47f7c0c4f1608117f3e3a667" id="r_gac8133dac47f7c0c4f1608117f3e3a667"><td class="memItemLeft" align="right" valign="top"><a id="gac8133dac47f7c0c4f1608117f3e3a667" name="gac8133dac47f7c0c4f1608117f3e3a667"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$definitions</b></td></tr>
 <tr class="separator:gac8133dac47f7c0c4f1608117f3e3a667"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -6123,8 +6136,11 @@ if($hassiteconfig)&#160;</td><td class="memItemRight" valign="bottom"><b>$pages<
 <tr class="separator:gac006139948707afa34b1315fc1e51082"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4ab51386acb82cd0a0066eac2567b2bd" id="r_ga4ab51386acb82cd0a0066eac2567b2bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4ab51386acb82cd0a0066eac2567b2bd">$plugins</a></td></tr>
 <tr class="separator:ga4ab51386acb82cd0a0066eac2567b2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4020b63f5aefdda259ec31b9a2c2418" id="r_gad4020b63f5aefdda259ec31b9a2c2418"><td class="memItemLeft" align="right" valign="top"><a id="gad4020b63f5aefdda259ec31b9a2c2418" name="gad4020b63f5aefdda259ec31b9a2c2418"></a>
+replacement&#160;</td><td class="memItemRight" valign="bottom"><b>$prefix</b></td></tr>
+<tr class="separator:gad4020b63f5aefdda259ec31b9a2c2418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga63c5d6a8a9f1768ea926cee666dc991b" id="r_ga63c5d6a8a9f1768ea926cee666dc991b"><td class="memItemLeft" align="right" valign="top"><a id="ga63c5d6a8a9f1768ea926cee666dc991b" name="ga63c5d6a8a9f1768ea926cee666dc991b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$release</b> = '5.0dev (Build: 20241115)'</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$release</b> = '5.0dev (Build: 20241122)'</td></tr>
 <tr class="separator:ga63c5d6a8a9f1768ea926cee666dc991b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga21ea4dae509fad0a8aec221e2f095886" id="r_ga21ea4dae509fad0a8aec221e2f095886"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga21ea4dae509fad0a8aec221e2f095886">$renamedclasses</a></td></tr>
 <tr class="separator:ga21ea4dae509fad0a8aec221e2f095886"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -6164,7 +6180,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>core\task::$trace
 global&#160;</td><td class="memItemRight" valign="bottom"><b>$USER</b></td></tr>
 <tr class="separator:ga6e76f75e2c700b871e9e622e51598180"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga17c8948c68aa44fa9961ae169b6a8961" id="r_ga17c8948c68aa44fa9961ae169b6a8961"><td class="memItemLeft" align="right" valign="top"><a id="ga17c8948c68aa44fa9961ae169b6a8961" name="ga17c8948c68aa44fa9961ae169b6a8961"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$version</b> = 2024111500.00</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$version</b> = 2024112200.00</td></tr>
 <tr class="separator:ga17c8948c68aa44fa9961ae169b6a8961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga82281c80e5a34da73d7f831c14a3514a" id="r_ga82281c80e5a34da73d7f831c14a3514a"><td class="memItemLeft" align="right" valign="top"><a id="ga82281c80e5a34da73d7f831c14a3514a" name="ga82281c80e5a34da73d7f831c14a3514a"></a>
 color&#160;</td><td class="memItemRight" valign="bottom"><b>__pad0__</b></td></tr>
@@ -6172,10 +6188,15 @@ color&#160;</td><td class="memItemRight" valign="bottom"><b>__pad0__</b></td></t
 <tr class="memitem:gac97fe15540970d44b7c8169563ef9c37" id="r_gac97fe15540970d44b7c8169563ef9c37"><td class="memItemLeft" align="right" valign="top">since&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac97fe15540970d44b7c8169563ef9c37">__pad0__</a></td></tr>
 <tr class="memdesc:gac97fe15540970d44b7c8169563ef9c37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets specified user's password and send the new password to the user via email.  <br /></td></tr>
 <tr class="separator:gac97fe15540970d44b7c8169563ef9c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d1e55c62a3fabc56142eb272d2d8967" id="r_ga8d1e55c62a3fabc56142eb272d2d8967"><td class="memItemLeft" align="right" valign="top">replacement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8d1e55c62a3fabc56142eb272d2d8967">__pad0__</a></td></tr>
+<tr class="separator:ga8d1e55c62a3fabc56142eb272d2d8967"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga52de45474fa9dddf7a42b56531cea7ee" id="r_ga52de45474fa9dddf7a42b56531cea7ee"><td class="memItemLeft" align="right" valign="top"><a id="ga52de45474fa9dddf7a42b56531cea7ee" name="ga52de45474fa9dddf7a42b56531cea7ee"></a>
 background&#160;</td><td class="memItemRight" valign="bottom"><b>__pad1__</b></td></tr>
 <tr class="separator:ga52de45474fa9dddf7a42b56531cea7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf60b0695b71cbeab8004e6c77a10e8e9" id="r_gaf60b0695b71cbeab8004e6c77a10e8e9"><td class="memItemLeft" align="right" valign="top">replacement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf60b0695b71cbeab8004e6c77a10e8e9">__pad1__</a></td></tr>
+<tr class="separator:gaf60b0695b71cbeab8004e6c77a10e8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf60b0695b71cbeab8004e6c77a10e8e9" id="r_gaf60b0695b71cbeab8004e6c77a10e8e9"><td class="memItemLeft" align="right" valign="top">replacement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf60b0695b71cbeab8004e6c77a10e8e9">__pad1__</a></td></tr>
+<tr class="memdesc:gaf60b0695b71cbeab8004e6c77a10e8e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to db The connection parameters processor that sets up stage for master write and slave readonly handles.  <br /></td></tr>
 <tr class="separator:gaf60b0695b71cbeab8004e6c77a10e8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa89de856a35b8738005d877cd9ae487c" id="r_gaa89de856a35b8738005d877cd9ae487c"><td class="memItemLeft" align="right" valign="top"><a id="gaa89de856a35b8738005d877cd9ae487c" name="gaa89de856a35b8738005d877cd9ae487c"></a>
 margin&#160;</td><td class="memItemRight" valign="bottom"><b>__pad2__</b></td></tr>
@@ -7017,6 +7038,9 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_PASSWORD_CHARACT
 <tr class="memitem:ga9a2fac3fa8bef83ad49badb31a330d22" id="r_ga9a2fac3fa8bef83ad49badb31a330d22"><td class="memItemLeft" align="right" valign="top"><a id="ga9a2fac3fa8bef83ad49badb31a330d22" name="ga9a2fac3fa8bef83ad49badb31a330d22"></a>
 since&#160;</td><td class="memItemRight" valign="bottom"><b>mdl</b></td></tr>
 <tr class="separator:ga9a2fac3fa8bef83ad49badb31a330d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a2fac3fa8bef83ad49badb31a330d22" id="r_ga9a2fac3fa8bef83ad49badb31a330d22"><td class="memItemLeft" align="right" valign="top"><a id="ga9a2fac3fa8bef83ad49badb31a330d22" name="ga9a2fac3fa8bef83ad49badb31a330d22"></a>
+replacement&#160;</td><td class="memItemRight" valign="bottom"><b>mdl</b></td></tr>
+<tr class="separator:ga9a2fac3fa8bef83ad49badb31a330d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadbd2680c1f43bb6c4949d82c91690284" id="r_gadbd2680c1f43bb6c4949d82c91690284"><td class="memItemLeft" align="right" valign="top"><a id="gadbd2680c1f43bb6c4949d82c91690284" name="gadbd2680c1f43bb6c4949d82c91690284"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>MDL_PERF</b> false</td></tr>
 <tr class="separator:gadbd2680c1f43bb6c4949d82c91690284"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -7106,9 +7130,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOODLE_INTERNAL</b> 
 const&#160;</td><td class="memItemRight" valign="bottom"><b>MOODLE_OFFICIAL_MOBILE_SERVICE</b> 'moodle_mobile_app'</td></tr>
 <tr class="memdesc:gaf6fb70f9486cdc497645d14d9afc9a89"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> mobile app service name. <br /></td></tr>
 <tr class="separator:gaf6fb70f9486cdc497645d14d9afc9a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad78473a8ae4a12531def046ac3ff2a88" id="r_gad78473a8ae4a12531def046ac3ff2a88"><td class="memItemLeft" align="right" valign="top">trait&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad78473a8ae4a12531def046ac3ff2a88">moodle_read_slave_trait</a></td></tr>
-<tr class="memdesc:gad78473a8ae4a12531def046ac3ff2a88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trait to wrap <a class="el" href="#ga3ae73c52b49526f5a21cf02a3c1fceee" title="Connect to db The connection parameters processor that sets up stage for master write and slave reado...">connect()</a> method of database driver classes that gives ability to use read only slave instances for SELECT queries.  <br /></td></tr>
-<tr class="separator:gad78473a8ae4a12531def046ac3ff2a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1671c7958420192a4874dd8aae261b3" id="r_gab1671c7958420192a4874dd8aae261b3"><td class="memItemLeft" align="right" valign="top">trait&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab1671c7958420192a4874dd8aae261b3">moodle_read_replica_trait</a></td></tr>
+<tr class="separator:gab1671c7958420192a4874dd8aae261b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga95a5600deb278b693b6c3ffed667df6f" id="r_ga95a5600deb278b693b6c3ffed667df6f"><td class="memItemLeft" align="right" valign="top"><a id="ga95a5600deb278b693b6c3ffed667df6f" name="ga95a5600deb278b693b6c3ffed667df6f"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>MUST_EXIST</b> 2</td></tr>
 <tr class="memdesc:ga95a5600deb278b693b6c3ffed667df6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates exactly one record must exist. <br /></td></tr>
@@ -7533,6 +7556,9 @@ font sans&#160;</td><td class="memItemRight" valign="bottom"><b>serif</b></td></
 <tr class="memitem:ga784dd113a9fc8d25a39e7fa9c541457d" id="r_ga784dd113a9fc8d25a39e7fa9c541457d"><td class="memItemLeft" align="right" valign="top"><a id="ga784dd113a9fc8d25a39e7fa9c541457d" name="ga784dd113a9fc8d25a39e7fa9c541457d"></a>
 replacement&#160;</td><td class="memItemRight" valign="bottom"><b>since</b></td></tr>
 <tr class="separator:ga784dd113a9fc8d25a39e7fa9c541457d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga784dd113a9fc8d25a39e7fa9c541457d" id="r_ga784dd113a9fc8d25a39e7fa9c541457d"><td class="memItemLeft" align="right" valign="top"><a id="ga784dd113a9fc8d25a39e7fa9c541457d" name="ga784dd113a9fc8d25a39e7fa9c541457d"></a>
+replacement&#160;</td><td class="memItemRight" valign="bottom"><b>since</b></td></tr>
+<tr class="separator:ga784dd113a9fc8d25a39e7fa9c541457d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga34a65bb3c7b9d309575ac276f1206167" id="r_ga34a65bb3c7b9d309575ac276f1206167"><td class="memItemLeft" align="right" valign="top"><a id="ga34a65bb3c7b9d309575ac276f1206167" name="ga34a65bb3c7b9d309575ac276f1206167"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>SITEID</b> 1</td></tr>
 <tr class="separator:ga34a65bb3c7b9d309575ac276f1206167"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -7893,13 +7919,13 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 <p>PARAM_INTEGER - deprecated alias for PARAM_INT.</p>
 <p>PARAM_ALPHAEXT the same contents as PARAM_ALPHA (English ascii letters [a-zA-Z]) plus the chars in quotes: "_-" allowed NOTE: originally this allowed "/" too, please use PARAM_SAFEPATH if "/" needed PARAM_ALPHANUM - expected numbers 0-9 and English ascii letters [a-zA-Z] only. PARAM_ALPHANUMEXT - expected numbers 0-9, letters (English ascii letters [a-zA-Z]) and _- only. PARAM_AUTH - actually checks to make sure the string is a valid auth plugin PARAM_BASE64 - <a class="el" href="../../d9/da0/interface_base.html" title="Base for cache objects.">Base</a> 64 encoded format PARAM_BOOL - converts input into 0 or 1, use for switches in forms and urls. PARAM_CAPABILITY - A capability name, like 'moodle/role:manage'. Actually checked against the list of capabilities in the database. PARAM_CLEANHTML - cleans submitted HTML code. Note that you almost never want to use this. The normal mode of operation is to use PARAM_RAW when receiving the input (required/optional_param or formslib) and then sanitise the HTML using format_text on output. This is for the rare cases when you want to sanitise the HTML on input. This cleaning may also fix xhtml strictness. PARAM_EMAIL - an email address following the RFC PARAM_FILE - safe file name, all dangerous chars are stripped, protects against XSS, SQL injections and directory traversals PARAM_FLOAT - a real/floating point number.</p>
 <p>Note that you should not use PARAM_FLOAT for numbers typed in by the user. It does not work for languages that use , as a decimal separator. Use PARAM_LOCALISEDFLOAT instead. PARAM_LOCALISEDFLOAT - a localised real/floating point number. This is preferred over PARAM_FLOAT for numbers typed in by the user. Cleans localised numbers to computer readable numbers; false for invalid numbers. PARAM_HOST - expected fully qualified domain name (FQDN) or an IPv4 dotted quad (IP address) PARAM_INT - integers only, use when expecting only numbers. PARAM_LANG - checks to see if the string is a valid installed language in the current site. PARAM_LOCALURL - expected properly formatted URL as well as one that refers to the local server itself. (NOT orthogonal to the others! Implies PARAM_URL!) PARAM_NOTAGS - all html tags are stripped from the text. Do not abuse this type. PARAM_PATH - safe relative path name, all dangerous chars are stripped, protects against XSS, SQL injections and directory traversals note: the leading slash is not removed, window drive letter is not allowed PARAM_PEM - Privacy Enhanced Mail format PARAM_PERMISSION - A permission, one of CAP_INHERIT, CAP_ALLOW, CAP_PREVENT or CAP_PROHIBIT. PARAM_RAW specifies a parameter that is not cleaned/processed in any way except the discarding of the invalid utf-8 characters PARAM_RAW_TRIMMED like PARAM_RAW but leading and trailing whitespace is stripped. PARAM_SAFEDIR - safe directory name, suitable for include() and require() PARAM_SAFEPATH - several PARAM_SAFEDIR joined by "/", suitable for include() and require(), plugin paths and other references to <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> code files.</p>
-<p>This is NOT intended to be used for absolute paths or any user uploaded files. PARAM_SEQUENCE - expects a sequence of numbers like 8 to 1,5,6,4,6,8,9. Numbers and comma only. PARAM_TAG - one tag (interests, blogs, etc.) - mostly international characters and space, &lt;&gt; not supported PARAM_TAGLIST - list of tags separated by commas (interests, blogs, etc.) PARAM_TEXT - general plain text compatible with multilang filter, no other html tags. Please note '&lt;', or '&gt;' are allowed here. PARAM_THEME - Checks to see if the string is a valid theme name in the current site PARAM_URL - expected properly formatted URL. Please note that domain part is required, <a href="http://localhost/">http://localhost/</a> is not accepted but <a href="http://localhost.localdomain/">http://localhost.localdomain/</a> is ok. PARAM_USERNAME - Clean username to only contains allowed characters. This is to be used ONLY when manually creating user accounts, do NOT use when syncing with external systems!! PARAM_STRINGID - used to check if the given string is valid string identifier for get_string() PARAM_CLEAN - obsoleted, please use a more specific type of parameter. It was one of the first types, that is why it is abused so much ;-) </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000288">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000289">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000290">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000291">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<p>NOTE: originally alias for PARAM_APLHA </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000292">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000293">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<p>Timezone can be int +-(0-13) or float +-(0.5-12.5) or string separated by '/' and can have '-' &amp;/ '_' (eg. America/North_Dakota/New_Salem America/Port-au-Prince) PARAM_CLEANFILE - deprecated alias of PARAM_FILE; originally was removing regional chars too </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000294">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<p>This is NOT intended to be used for absolute paths or any user uploaded files. PARAM_SEQUENCE - expects a sequence of numbers like 8 to 1,5,6,4,6,8,9. Numbers and comma only. PARAM_TAG - one tag (interests, blogs, etc.) - mostly international characters and space, &lt;&gt; not supported PARAM_TAGLIST - list of tags separated by commas (interests, blogs, etc.) PARAM_TEXT - general plain text compatible with multilang filter, no other html tags. Please note '&lt;', or '&gt;' are allowed here. PARAM_THEME - Checks to see if the string is a valid theme name in the current site PARAM_URL - expected properly formatted URL. Please note that domain part is required, <a href="http://localhost/">http://localhost/</a> is not accepted but <a href="http://localhost.localdomain/">http://localhost.localdomain/</a> is ok. PARAM_USERNAME - Clean username to only contains allowed characters. This is to be used ONLY when manually creating user accounts, do NOT use when syncing with external systems!! PARAM_STRINGID - used to check if the given string is valid string identifier for get_string() PARAM_CLEAN - obsoleted, please use a more specific type of parameter. It was one of the first types, that is why it is abused so much ;-) </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000294">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000295">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000296">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000297">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<p>NOTE: originally alias for PARAM_APLHA </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000298">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000299">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<p>Timezone can be int +-(0-13) or float +-(0.5-12.5) or string separated by '/' and can have '-' &amp;/ '_' (eg. America/North_Dakota/New_Salem America/Port-au-Prince) PARAM_CLEANFILE - deprecated alias of PARAM_FILE; originally was removing regional chars too </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000300">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="ggafbdb95183823e8d474f07171cda363c3af939fff79ba150926752251d6f3af945" name="ggafbdb95183823e8d474f07171cda363c3af939fff79ba150926752251d6f3af945"></a>replacement&#160;</td><td class="fielddoc"><p>PARAM_ALPHA - contains only English ascii letters [a-zA-Z]. </p>
 <p>PARAM_TIMEZONE - expected timezone.</p>
@@ -7910,13 +7936,13 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 <p>PARAM_INTEGER - deprecated alias for PARAM_INT.</p>
 <p>PARAM_ALPHAEXT the same contents as PARAM_ALPHA (English ascii letters [a-zA-Z]) plus the chars in quotes: "_-" allowed NOTE: originally this allowed "/" too, please use PARAM_SAFEPATH if "/" needed PARAM_ALPHANUM - expected numbers 0-9 and English ascii letters [a-zA-Z] only. PARAM_ALPHANUMEXT - expected numbers 0-9, letters (English ascii letters [a-zA-Z]) and _- only. PARAM_AUTH - actually checks to make sure the string is a valid auth plugin PARAM_BASE64 - <a class="el" href="../../d9/da0/interface_base.html" title="Base for cache objects.">Base</a> 64 encoded format PARAM_BOOL - converts input into 0 or 1, use for switches in forms and urls. PARAM_CAPABILITY - A capability name, like 'moodle/role:manage'. Actually checked against the list of capabilities in the database. PARAM_CLEANHTML - cleans submitted HTML code. Note that you almost never want to use this. The normal mode of operation is to use PARAM_RAW when receiving the input (required/optional_param or formslib) and then sanitise the HTML using format_text on output. This is for the rare cases when you want to sanitise the HTML on input. This cleaning may also fix xhtml strictness. PARAM_EMAIL - an email address following the RFC PARAM_FILE - safe file name, all dangerous chars are stripped, protects against XSS, SQL injections and directory traversals PARAM_FLOAT - a real/floating point number.</p>
 <p>Note that you should not use PARAM_FLOAT for numbers typed in by the user. It does not work for languages that use , as a decimal separator. Use PARAM_LOCALISEDFLOAT instead. PARAM_LOCALISEDFLOAT - a localised real/floating point number. This is preferred over PARAM_FLOAT for numbers typed in by the user. Cleans localised numbers to computer readable numbers; false for invalid numbers. PARAM_HOST - expected fully qualified domain name (FQDN) or an IPv4 dotted quad (IP address) PARAM_INT - integers only, use when expecting only numbers. PARAM_LANG - checks to see if the string is a valid installed language in the current site. PARAM_LOCALURL - expected properly formatted URL as well as one that refers to the local server itself. (NOT orthogonal to the others! Implies PARAM_URL!) PARAM_NOTAGS - all html tags are stripped from the text. Do not abuse this type. PARAM_PATH - safe relative path name, all dangerous chars are stripped, protects against XSS, SQL injections and directory traversals note: the leading slash is not removed, window drive letter is not allowed PARAM_PEM - Privacy Enhanced Mail format PARAM_PERMISSION - A permission, one of CAP_INHERIT, CAP_ALLOW, CAP_PREVENT or CAP_PROHIBIT. PARAM_RAW specifies a parameter that is not cleaned/processed in any way except the discarding of the invalid utf-8 characters PARAM_RAW_TRIMMED like PARAM_RAW but leading and trailing whitespace is stripped. PARAM_SAFEDIR - safe directory name, suitable for include() and require() PARAM_SAFEPATH - several PARAM_SAFEDIR joined by "/", suitable for include() and require(), plugin paths and other references to <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> code files.</p>
-<p>This is NOT intended to be used for absolute paths or any user uploaded files. PARAM_SEQUENCE - expects a sequence of numbers like 8 to 1,5,6,4,6,8,9. Numbers and comma only. PARAM_TAG - one tag (interests, blogs, etc.) - mostly international characters and space, &lt;&gt; not supported PARAM_TAGLIST - list of tags separated by commas (interests, blogs, etc.) PARAM_TEXT - general plain text compatible with multilang filter, no other html tags. Please note '&lt;', or '&gt;' are allowed here. PARAM_THEME - Checks to see if the string is a valid theme name in the current site PARAM_URL - expected properly formatted URL. Please note that domain part is required, <a href="http://localhost/">http://localhost/</a> is not accepted but <a href="http://localhost.localdomain/">http://localhost.localdomain/</a> is ok. PARAM_USERNAME - Clean username to only contains allowed characters. This is to be used ONLY when manually creating user accounts, do NOT use when syncing with external systems!! PARAM_STRINGID - used to check if the given string is valid string identifier for get_string() PARAM_CLEAN - obsoleted, please use a more specific type of parameter. It was one of the first types, that is why it is abused so much ;-) </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000288">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000289">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000290">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000291">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<p>NOTE: originally alias for PARAM_APLHA </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000292">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000293">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<p>Timezone can be int +-(0-13) or float +-(0.5-12.5) or string separated by '/' and can have '-' &amp;/ '_' (eg. America/North_Dakota/New_Salem America/Port-au-Prince) PARAM_CLEANFILE - deprecated alias of PARAM_FILE; originally was removing regional chars too </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000294">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<p>This is NOT intended to be used for absolute paths or any user uploaded files. PARAM_SEQUENCE - expects a sequence of numbers like 8 to 1,5,6,4,6,8,9. Numbers and comma only. PARAM_TAG - one tag (interests, blogs, etc.) - mostly international characters and space, &lt;&gt; not supported PARAM_TAGLIST - list of tags separated by commas (interests, blogs, etc.) PARAM_TEXT - general plain text compatible with multilang filter, no other html tags. Please note '&lt;', or '&gt;' are allowed here. PARAM_THEME - Checks to see if the string is a valid theme name in the current site PARAM_URL - expected properly formatted URL. Please note that domain part is required, <a href="http://localhost/">http://localhost/</a> is not accepted but <a href="http://localhost.localdomain/">http://localhost.localdomain/</a> is ok. PARAM_USERNAME - Clean username to only contains allowed characters. This is to be used ONLY when manually creating user accounts, do NOT use when syncing with external systems!! PARAM_STRINGID - used to check if the given string is valid string identifier for get_string() PARAM_CLEAN - obsoleted, please use a more specific type of parameter. It was one of the first types, that is why it is abused so much ;-) </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000294">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000295">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000296">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000297">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<p>NOTE: originally alias for PARAM_APLHA </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000298">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000299">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<p>Timezone can be int +-(0-13) or float +-(0.5-12.5) or string separated by '/' and can have '-' &amp;/ '_' (eg. America/North_Dakota/New_Salem America/Port-au-Prince) PARAM_CLEANFILE - deprecated alias of PARAM_FILE; originally was removing regional chars too </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000300">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="ggafbdb95183823e8d474f07171cda363c3af939fff79ba150926752251d6f3af945" name="ggafbdb95183823e8d474f07171cda363c3af939fff79ba150926752251d6f3af945"></a>replacement&#160;</td><td class="fielddoc"><p>PARAM_ALPHA - contains only English ascii letters [a-zA-Z]. </p>
 <p>PARAM_TIMEZONE - expected timezone.</p>
@@ -7927,13 +7953,13 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 <p>PARAM_INTEGER - deprecated alias for PARAM_INT.</p>
 <p>PARAM_ALPHAEXT the same contents as PARAM_ALPHA (English ascii letters [a-zA-Z]) plus the chars in quotes: "_-" allowed NOTE: originally this allowed "/" too, please use PARAM_SAFEPATH if "/" needed PARAM_ALPHANUM - expected numbers 0-9 and English ascii letters [a-zA-Z] only. PARAM_ALPHANUMEXT - expected numbers 0-9, letters (English ascii letters [a-zA-Z]) and _- only. PARAM_AUTH - actually checks to make sure the string is a valid auth plugin PARAM_BASE64 - <a class="el" href="../../d9/da0/interface_base.html" title="Base for cache objects.">Base</a> 64 encoded format PARAM_BOOL - converts input into 0 or 1, use for switches in forms and urls. PARAM_CAPABILITY - A capability name, like 'moodle/role:manage'. Actually checked against the list of capabilities in the database. PARAM_CLEANHTML - cleans submitted HTML code. Note that you almost never want to use this. The normal mode of operation is to use PARAM_RAW when receiving the input (required/optional_param or formslib) and then sanitise the HTML using format_text on output. This is for the rare cases when you want to sanitise the HTML on input. This cleaning may also fix xhtml strictness. PARAM_EMAIL - an email address following the RFC PARAM_FILE - safe file name, all dangerous chars are stripped, protects against XSS, SQL injections and directory traversals PARAM_FLOAT - a real/floating point number.</p>
 <p>Note that you should not use PARAM_FLOAT for numbers typed in by the user. It does not work for languages that use , as a decimal separator. Use PARAM_LOCALISEDFLOAT instead. PARAM_LOCALISEDFLOAT - a localised real/floating point number. This is preferred over PARAM_FLOAT for numbers typed in by the user. Cleans localised numbers to computer readable numbers; false for invalid numbers. PARAM_HOST - expected fully qualified domain name (FQDN) or an IPv4 dotted quad (IP address) PARAM_INT - integers only, use when expecting only numbers. PARAM_LANG - checks to see if the string is a valid installed language in the current site. PARAM_LOCALURL - expected properly formatted URL as well as one that refers to the local server itself. (NOT orthogonal to the others! Implies PARAM_URL!) PARAM_NOTAGS - all html tags are stripped from the text. Do not abuse this type. PARAM_PATH - safe relative path name, all dangerous chars are stripped, protects against XSS, SQL injections and directory traversals note: the leading slash is not removed, window drive letter is not allowed PARAM_PEM - Privacy Enhanced Mail format PARAM_PERMISSION - A permission, one of CAP_INHERIT, CAP_ALLOW, CAP_PREVENT or CAP_PROHIBIT. PARAM_RAW specifies a parameter that is not cleaned/processed in any way except the discarding of the invalid utf-8 characters PARAM_RAW_TRIMMED like PARAM_RAW but leading and trailing whitespace is stripped. PARAM_SAFEDIR - safe directory name, suitable for include() and require() PARAM_SAFEPATH - several PARAM_SAFEDIR joined by "/", suitable for include() and require(), plugin paths and other references to <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> code files.</p>
-<p>This is NOT intended to be used for absolute paths or any user uploaded files. PARAM_SEQUENCE - expects a sequence of numbers like 8 to 1,5,6,4,6,8,9. Numbers and comma only. PARAM_TAG - one tag (interests, blogs, etc.) - mostly international characters and space, &lt;&gt; not supported PARAM_TAGLIST - list of tags separated by commas (interests, blogs, etc.) PARAM_TEXT - general plain text compatible with multilang filter, no other html tags. Please note '&lt;', or '&gt;' are allowed here. PARAM_THEME - Checks to see if the string is a valid theme name in the current site PARAM_URL - expected properly formatted URL. Please note that domain part is required, <a href="http://localhost/">http://localhost/</a> is not accepted but <a href="http://localhost.localdomain/">http://localhost.localdomain/</a> is ok. PARAM_USERNAME - Clean username to only contains allowed characters. This is to be used ONLY when manually creating user accounts, do NOT use when syncing with external systems!! PARAM_STRINGID - used to check if the given string is valid string identifier for get_string() PARAM_CLEAN - obsoleted, please use a more specific type of parameter. It was one of the first types, that is why it is abused so much ;-) </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000288">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000289">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000290">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000291">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<p>NOTE: originally alias for PARAM_APLHA </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000292">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000293">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<p>Timezone can be int +-(0-13) or float +-(0.5-12.5) or string separated by '/' and can have '-' &amp;/ '_' (eg. America/North_Dakota/New_Salem America/Port-au-Prince) PARAM_CLEANFILE - deprecated alias of PARAM_FILE; originally was removing regional chars too </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000294">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<p>This is NOT intended to be used for absolute paths or any user uploaded files. PARAM_SEQUENCE - expects a sequence of numbers like 8 to 1,5,6,4,6,8,9. Numbers and comma only. PARAM_TAG - one tag (interests, blogs, etc.) - mostly international characters and space, &lt;&gt; not supported PARAM_TAGLIST - list of tags separated by commas (interests, blogs, etc.) PARAM_TEXT - general plain text compatible with multilang filter, no other html tags. Please note '&lt;', or '&gt;' are allowed here. PARAM_THEME - Checks to see if the string is a valid theme name in the current site PARAM_URL - expected properly formatted URL. Please note that domain part is required, <a href="http://localhost/">http://localhost/</a> is not accepted but <a href="http://localhost.localdomain/">http://localhost.localdomain/</a> is ok. PARAM_USERNAME - Clean username to only contains allowed characters. This is to be used ONLY when manually creating user accounts, do NOT use when syncing with external systems!! PARAM_STRINGID - used to check if the given string is valid string identifier for get_string() PARAM_CLEAN - obsoleted, please use a more specific type of parameter. It was one of the first types, that is why it is abused so much ;-) </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000294">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000295">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000296">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000297">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<p>NOTE: originally alias for PARAM_APLHA </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000298">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000299">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<p>Timezone can be int +-(0-13) or float +-(0.5-12.5) or string separated by '/' and can have '-' &amp;/ '_' (eg. America/North_Dakota/New_Salem America/Port-au-Prince) PARAM_CLEANFILE - deprecated alias of PARAM_FILE; originally was removing regional chars too </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000300">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="ggafbdb95183823e8d474f07171cda363c3af939fff79ba150926752251d6f3af945" name="ggafbdb95183823e8d474f07171cda363c3af939fff79ba150926752251d6f3af945"></a>replacement&#160;</td><td class="fielddoc"><p>PARAM_ALPHA - contains only English ascii letters [a-zA-Z]. </p>
 <p>PARAM_TIMEZONE - expected timezone.</p>
@@ -7944,13 +7970,13 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 <p>PARAM_INTEGER - deprecated alias for PARAM_INT.</p>
 <p>PARAM_ALPHAEXT the same contents as PARAM_ALPHA (English ascii letters [a-zA-Z]) plus the chars in quotes: "_-" allowed NOTE: originally this allowed "/" too, please use PARAM_SAFEPATH if "/" needed PARAM_ALPHANUM - expected numbers 0-9 and English ascii letters [a-zA-Z] only. PARAM_ALPHANUMEXT - expected numbers 0-9, letters (English ascii letters [a-zA-Z]) and _- only. PARAM_AUTH - actually checks to make sure the string is a valid auth plugin PARAM_BASE64 - <a class="el" href="../../d9/da0/interface_base.html" title="Base for cache objects.">Base</a> 64 encoded format PARAM_BOOL - converts input into 0 or 1, use for switches in forms and urls. PARAM_CAPABILITY - A capability name, like 'moodle/role:manage'. Actually checked against the list of capabilities in the database. PARAM_CLEANHTML - cleans submitted HTML code. Note that you almost never want to use this. The normal mode of operation is to use PARAM_RAW when receiving the input (required/optional_param or formslib) and then sanitise the HTML using format_text on output. This is for the rare cases when you want to sanitise the HTML on input. This cleaning may also fix xhtml strictness. PARAM_EMAIL - an email address following the RFC PARAM_FILE - safe file name, all dangerous chars are stripped, protects against XSS, SQL injections and directory traversals PARAM_FLOAT - a real/floating point number.</p>
 <p>Note that you should not use PARAM_FLOAT for numbers typed in by the user. It does not work for languages that use , as a decimal separator. Use PARAM_LOCALISEDFLOAT instead. PARAM_LOCALISEDFLOAT - a localised real/floating point number. This is preferred over PARAM_FLOAT for numbers typed in by the user. Cleans localised numbers to computer readable numbers; false for invalid numbers. PARAM_HOST - expected fully qualified domain name (FQDN) or an IPv4 dotted quad (IP address) PARAM_INT - integers only, use when expecting only numbers. PARAM_LANG - checks to see if the string is a valid installed language in the current site. PARAM_LOCALURL - expected properly formatted URL as well as one that refers to the local server itself. (NOT orthogonal to the others! Implies PARAM_URL!) PARAM_NOTAGS - all html tags are stripped from the text. Do not abuse this type. PARAM_PATH - safe relative path name, all dangerous chars are stripped, protects against XSS, SQL injections and directory traversals note: the leading slash is not removed, window drive letter is not allowed PARAM_PEM - Privacy Enhanced Mail format PARAM_PERMISSION - A permission, one of CAP_INHERIT, CAP_ALLOW, CAP_PREVENT or CAP_PROHIBIT. PARAM_RAW specifies a parameter that is not cleaned/processed in any way except the discarding of the invalid utf-8 characters PARAM_RAW_TRIMMED like PARAM_RAW but leading and trailing whitespace is stripped. PARAM_SAFEDIR - safe directory name, suitable for include() and require() PARAM_SAFEPATH - several PARAM_SAFEDIR joined by "/", suitable for include() and require(), plugin paths and other references to <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> code files.</p>
-<p>This is NOT intended to be used for absolute paths or any user uploaded files. PARAM_SEQUENCE - expects a sequence of numbers like 8 to 1,5,6,4,6,8,9. Numbers and comma only. PARAM_TAG - one tag (interests, blogs, etc.) - mostly international characters and space, &lt;&gt; not supported PARAM_TAGLIST - list of tags separated by commas (interests, blogs, etc.) PARAM_TEXT - general plain text compatible with multilang filter, no other html tags. Please note '&lt;', or '&gt;' are allowed here. PARAM_THEME - Checks to see if the string is a valid theme name in the current site PARAM_URL - expected properly formatted URL. Please note that domain part is required, <a href="http://localhost/">http://localhost/</a> is not accepted but <a href="http://localhost.localdomain/">http://localhost.localdomain/</a> is ok. PARAM_USERNAME - Clean username to only contains allowed characters. This is to be used ONLY when manually creating user accounts, do NOT use when syncing with external systems!! PARAM_STRINGID - used to check if the given string is valid string identifier for get_string() PARAM_CLEAN - obsoleted, please use a more specific type of parameter. It was one of the first types, that is why it is abused so much ;-) </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000288">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000289">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000290">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000291">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<p>NOTE: originally alias for PARAM_APLHA </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000292">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000293">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<p>Timezone can be int +-(0-13) or float +-(0.5-12.5) or string separated by '/' and can have '-' &amp;/ '_' (eg. America/North_Dakota/New_Salem America/Port-au-Prince) PARAM_CLEANFILE - deprecated alias of PARAM_FILE; originally was removing regional chars too </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000294">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<p>This is NOT intended to be used for absolute paths or any user uploaded files. PARAM_SEQUENCE - expects a sequence of numbers like 8 to 1,5,6,4,6,8,9. Numbers and comma only. PARAM_TAG - one tag (interests, blogs, etc.) - mostly international characters and space, &lt;&gt; not supported PARAM_TAGLIST - list of tags separated by commas (interests, blogs, etc.) PARAM_TEXT - general plain text compatible with multilang filter, no other html tags. Please note '&lt;', or '&gt;' are allowed here. PARAM_THEME - Checks to see if the string is a valid theme name in the current site PARAM_URL - expected properly formatted URL. Please note that domain part is required, <a href="http://localhost/">http://localhost/</a> is not accepted but <a href="http://localhost.localdomain/">http://localhost.localdomain/</a> is ok. PARAM_USERNAME - Clean username to only contains allowed characters. This is to be used ONLY when manually creating user accounts, do NOT use when syncing with external systems!! PARAM_STRINGID - used to check if the given string is valid string identifier for get_string() PARAM_CLEAN - obsoleted, please use a more specific type of parameter. It was one of the first types, that is why it is abused so much ;-) </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000294">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000295">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000296">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000297">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<p>NOTE: originally alias for PARAM_APLHA </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000298">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000299">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<p>Timezone can be int +-(0-13) or float +-(0.5-12.5) or string separated by '/' and can have '-' &amp;/ '_' (eg. America/North_Dakota/New_Salem America/Port-au-Prince) PARAM_CLEANFILE - deprecated alias of PARAM_FILE; originally was removing regional chars too </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000300">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="ggafbdb95183823e8d474f07171cda363c3af939fff79ba150926752251d6f3af945" name="ggafbdb95183823e8d474f07171cda363c3af939fff79ba150926752251d6f3af945"></a>replacement&#160;</td><td class="fielddoc"><p>PARAM_ALPHA - contains only English ascii letters [a-zA-Z]. </p>
 <p>PARAM_TIMEZONE - expected timezone.</p>
@@ -7961,13 +7987,13 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 <p>PARAM_INTEGER - deprecated alias for PARAM_INT.</p>
 <p>PARAM_ALPHAEXT the same contents as PARAM_ALPHA (English ascii letters [a-zA-Z]) plus the chars in quotes: "_-" allowed NOTE: originally this allowed "/" too, please use PARAM_SAFEPATH if "/" needed PARAM_ALPHANUM - expected numbers 0-9 and English ascii letters [a-zA-Z] only. PARAM_ALPHANUMEXT - expected numbers 0-9, letters (English ascii letters [a-zA-Z]) and _- only. PARAM_AUTH - actually checks to make sure the string is a valid auth plugin PARAM_BASE64 - <a class="el" href="../../d9/da0/interface_base.html" title="Base for cache objects.">Base</a> 64 encoded format PARAM_BOOL - converts input into 0 or 1, use for switches in forms and urls. PARAM_CAPABILITY - A capability name, like 'moodle/role:manage'. Actually checked against the list of capabilities in the database. PARAM_CLEANHTML - cleans submitted HTML code. Note that you almost never want to use this. The normal mode of operation is to use PARAM_RAW when receiving the input (required/optional_param or formslib) and then sanitise the HTML using format_text on output. This is for the rare cases when you want to sanitise the HTML on input. This cleaning may also fix xhtml strictness. PARAM_EMAIL - an email address following the RFC PARAM_FILE - safe file name, all dangerous chars are stripped, protects against XSS, SQL injections and directory traversals PARAM_FLOAT - a real/floating point number.</p>
 <p>Note that you should not use PARAM_FLOAT for numbers typed in by the user. It does not work for languages that use , as a decimal separator. Use PARAM_LOCALISEDFLOAT instead. PARAM_LOCALISEDFLOAT - a localised real/floating point number. This is preferred over PARAM_FLOAT for numbers typed in by the user. Cleans localised numbers to computer readable numbers; false for invalid numbers. PARAM_HOST - expected fully qualified domain name (FQDN) or an IPv4 dotted quad (IP address) PARAM_INT - integers only, use when expecting only numbers. PARAM_LANG - checks to see if the string is a valid installed language in the current site. PARAM_LOCALURL - expected properly formatted URL as well as one that refers to the local server itself. (NOT orthogonal to the others! Implies PARAM_URL!) PARAM_NOTAGS - all html tags are stripped from the text. Do not abuse this type. PARAM_PATH - safe relative path name, all dangerous chars are stripped, protects against XSS, SQL injections and directory traversals note: the leading slash is not removed, window drive letter is not allowed PARAM_PEM - Privacy Enhanced Mail format PARAM_PERMISSION - A permission, one of CAP_INHERIT, CAP_ALLOW, CAP_PREVENT or CAP_PROHIBIT. PARAM_RAW specifies a parameter that is not cleaned/processed in any way except the discarding of the invalid utf-8 characters PARAM_RAW_TRIMMED like PARAM_RAW but leading and trailing whitespace is stripped. PARAM_SAFEDIR - safe directory name, suitable for include() and require() PARAM_SAFEPATH - several PARAM_SAFEDIR joined by "/", suitable for include() and require(), plugin paths and other references to <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> code files.</p>
-<p>This is NOT intended to be used for absolute paths or any user uploaded files. PARAM_SEQUENCE - expects a sequence of numbers like 8 to 1,5,6,4,6,8,9. Numbers and comma only. PARAM_TAG - one tag (interests, blogs, etc.) - mostly international characters and space, &lt;&gt; not supported PARAM_TAGLIST - list of tags separated by commas (interests, blogs, etc.) PARAM_TEXT - general plain text compatible with multilang filter, no other html tags. Please note '&lt;', or '&gt;' are allowed here. PARAM_THEME - Checks to see if the string is a valid theme name in the current site PARAM_URL - expected properly formatted URL. Please note that domain part is required, <a href="http://localhost/">http://localhost/</a> is not accepted but <a href="http://localhost.localdomain/">http://localhost.localdomain/</a> is ok. PARAM_USERNAME - Clean username to only contains allowed characters. This is to be used ONLY when manually creating user accounts, do NOT use when syncing with external systems!! PARAM_STRINGID - used to check if the given string is valid string identifier for get_string() PARAM_CLEAN - obsoleted, please use a more specific type of parameter. It was one of the first types, that is why it is abused so much ;-) </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000288">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000289">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000290">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000291">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<p>NOTE: originally alias for PARAM_APLHA </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000292">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000293">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<p>Timezone can be int +-(0-13) or float +-(0.5-12.5) or string separated by '/' and can have '-' &amp;/ '_' (eg. America/North_Dakota/New_Salem America/Port-au-Prince) PARAM_CLEANFILE - deprecated alias of PARAM_FILE; originally was removing regional chars too </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000294">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<p>This is NOT intended to be used for absolute paths or any user uploaded files. PARAM_SEQUENCE - expects a sequence of numbers like 8 to 1,5,6,4,6,8,9. Numbers and comma only. PARAM_TAG - one tag (interests, blogs, etc.) - mostly international characters and space, &lt;&gt; not supported PARAM_TAGLIST - list of tags separated by commas (interests, blogs, etc.) PARAM_TEXT - general plain text compatible with multilang filter, no other html tags. Please note '&lt;', or '&gt;' are allowed here. PARAM_THEME - Checks to see if the string is a valid theme name in the current site PARAM_URL - expected properly formatted URL. Please note that domain part is required, <a href="http://localhost/">http://localhost/</a> is not accepted but <a href="http://localhost.localdomain/">http://localhost.localdomain/</a> is ok. PARAM_USERNAME - Clean username to only contains allowed characters. This is to be used ONLY when manually creating user accounts, do NOT use when syncing with external systems!! PARAM_STRINGID - used to check if the given string is valid string identifier for get_string() PARAM_CLEAN - obsoleted, please use a more specific type of parameter. It was one of the first types, that is why it is abused so much ;-) </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000294">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000295">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000296">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000297">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<p>NOTE: originally alias for PARAM_APLHA </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000298">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000299">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<p>Timezone can be int +-(0-13) or float +-(0.5-12.5) or string separated by '/' and can have '-' &amp;/ '_' (eg. America/North_Dakota/New_Salem America/Port-au-Prince) PARAM_CLEANFILE - deprecated alias of PARAM_FILE; originally was removing regional chars too </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000300">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="ggafbdb95183823e8d474f07171cda363c3af939fff79ba150926752251d6f3af945" name="ggafbdb95183823e8d474f07171cda363c3af939fff79ba150926752251d6f3af945"></a>replacement&#160;</td><td class="fielddoc"><p>PARAM_ALPHA - contains only English ascii letters [a-zA-Z]. </p>
 <p>PARAM_TIMEZONE - expected timezone.</p>
@@ -7978,13 +8004,13 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 <p>PARAM_INTEGER - deprecated alias for PARAM_INT.</p>
 <p>PARAM_ALPHAEXT the same contents as PARAM_ALPHA (English ascii letters [a-zA-Z]) plus the chars in quotes: "_-" allowed NOTE: originally this allowed "/" too, please use PARAM_SAFEPATH if "/" needed PARAM_ALPHANUM - expected numbers 0-9 and English ascii letters [a-zA-Z] only. PARAM_ALPHANUMEXT - expected numbers 0-9, letters (English ascii letters [a-zA-Z]) and _- only. PARAM_AUTH - actually checks to make sure the string is a valid auth plugin PARAM_BASE64 - <a class="el" href="../../d9/da0/interface_base.html" title="Base for cache objects.">Base</a> 64 encoded format PARAM_BOOL - converts input into 0 or 1, use for switches in forms and urls. PARAM_CAPABILITY - A capability name, like 'moodle/role:manage'. Actually checked against the list of capabilities in the database. PARAM_CLEANHTML - cleans submitted HTML code. Note that you almost never want to use this. The normal mode of operation is to use PARAM_RAW when receiving the input (required/optional_param or formslib) and then sanitise the HTML using format_text on output. This is for the rare cases when you want to sanitise the HTML on input. This cleaning may also fix xhtml strictness. PARAM_EMAIL - an email address following the RFC PARAM_FILE - safe file name, all dangerous chars are stripped, protects against XSS, SQL injections and directory traversals PARAM_FLOAT - a real/floating point number.</p>
 <p>Note that you should not use PARAM_FLOAT for numbers typed in by the user. It does not work for languages that use , as a decimal separator. Use PARAM_LOCALISEDFLOAT instead. PARAM_LOCALISEDFLOAT - a localised real/floating point number. This is preferred over PARAM_FLOAT for numbers typed in by the user. Cleans localised numbers to computer readable numbers; false for invalid numbers. PARAM_HOST - expected fully qualified domain name (FQDN) or an IPv4 dotted quad (IP address) PARAM_INT - integers only, use when expecting only numbers. PARAM_LANG - checks to see if the string is a valid installed language in the current site. PARAM_LOCALURL - expected properly formatted URL as well as one that refers to the local server itself. (NOT orthogonal to the others! Implies PARAM_URL!) PARAM_NOTAGS - all html tags are stripped from the text. Do not abuse this type. PARAM_PATH - safe relative path name, all dangerous chars are stripped, protects against XSS, SQL injections and directory traversals note: the leading slash is not removed, window drive letter is not allowed PARAM_PEM - Privacy Enhanced Mail format PARAM_PERMISSION - A permission, one of CAP_INHERIT, CAP_ALLOW, CAP_PREVENT or CAP_PROHIBIT. PARAM_RAW specifies a parameter that is not cleaned/processed in any way except the discarding of the invalid utf-8 characters PARAM_RAW_TRIMMED like PARAM_RAW but leading and trailing whitespace is stripped. PARAM_SAFEDIR - safe directory name, suitable for include() and require() PARAM_SAFEPATH - several PARAM_SAFEDIR joined by "/", suitable for include() and require(), plugin paths and other references to <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> code files.</p>
-<p>This is NOT intended to be used for absolute paths or any user uploaded files. PARAM_SEQUENCE - expects a sequence of numbers like 8 to 1,5,6,4,6,8,9. Numbers and comma only. PARAM_TAG - one tag (interests, blogs, etc.) - mostly international characters and space, &lt;&gt; not supported PARAM_TAGLIST - list of tags separated by commas (interests, blogs, etc.) PARAM_TEXT - general plain text compatible with multilang filter, no other html tags. Please note '&lt;', or '&gt;' are allowed here. PARAM_THEME - Checks to see if the string is a valid theme name in the current site PARAM_URL - expected properly formatted URL. Please note that domain part is required, <a href="http://localhost/">http://localhost/</a> is not accepted but <a href="http://localhost.localdomain/">http://localhost.localdomain/</a> is ok. PARAM_USERNAME - Clean username to only contains allowed characters. This is to be used ONLY when manually creating user accounts, do NOT use when syncing with external systems!! PARAM_STRINGID - used to check if the given string is valid string identifier for get_string() PARAM_CLEAN - obsoleted, please use a more specific type of parameter. It was one of the first types, that is why it is abused so much ;-) </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000288">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000289">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000290">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000291">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<p>NOTE: originally alias for PARAM_APLHA </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000292">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000293">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<p>Timezone can be int +-(0-13) or float +-(0.5-12.5) or string separated by '/' and can have '-' &amp;/ '_' (eg. America/North_Dakota/New_Salem America/Port-au-Prince) PARAM_CLEANFILE - deprecated alias of PARAM_FILE; originally was removing regional chars too </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000294">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<p>This is NOT intended to be used for absolute paths or any user uploaded files. PARAM_SEQUENCE - expects a sequence of numbers like 8 to 1,5,6,4,6,8,9. Numbers and comma only. PARAM_TAG - one tag (interests, blogs, etc.) - mostly international characters and space, &lt;&gt; not supported PARAM_TAGLIST - list of tags separated by commas (interests, blogs, etc.) PARAM_TEXT - general plain text compatible with multilang filter, no other html tags. Please note '&lt;', or '&gt;' are allowed here. PARAM_THEME - Checks to see if the string is a valid theme name in the current site PARAM_URL - expected properly formatted URL. Please note that domain part is required, <a href="http://localhost/">http://localhost/</a> is not accepted but <a href="http://localhost.localdomain/">http://localhost.localdomain/</a> is ok. PARAM_USERNAME - Clean username to only contains allowed characters. This is to be used ONLY when manually creating user accounts, do NOT use when syncing with external systems!! PARAM_STRINGID - used to check if the given string is valid string identifier for get_string() PARAM_CLEAN - obsoleted, please use a more specific type of parameter. It was one of the first types, that is why it is abused so much ;-) </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000294">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000295">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000296">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000297">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<p>NOTE: originally alias for PARAM_APLHA </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000298">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000299">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<p>Timezone can be int +-(0-13) or float +-(0.5-12.5) or string separated by '/' and can have '-' &amp;/ '_' (eg. America/North_Dakota/New_Salem America/Port-au-Prince) PARAM_CLEANFILE - deprecated alias of PARAM_FILE; originally was removing regional chars too </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000300">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="ggafbdb95183823e8d474f07171cda363c3af939fff79ba150926752251d6f3af945" name="ggafbdb95183823e8d474f07171cda363c3af939fff79ba150926752251d6f3af945"></a>replacement&#160;</td><td class="fielddoc"><p>PARAM_ALPHA - contains only English ascii letters [a-zA-Z]. </p>
 <p>PARAM_TIMEZONE - expected timezone.</p>
@@ -7995,13 +8021,13 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 <p>PARAM_INTEGER - deprecated alias for PARAM_INT.</p>
 <p>PARAM_ALPHAEXT the same contents as PARAM_ALPHA (English ascii letters [a-zA-Z]) plus the chars in quotes: "_-" allowed NOTE: originally this allowed "/" too, please use PARAM_SAFEPATH if "/" needed PARAM_ALPHANUM - expected numbers 0-9 and English ascii letters [a-zA-Z] only. PARAM_ALPHANUMEXT - expected numbers 0-9, letters (English ascii letters [a-zA-Z]) and _- only. PARAM_AUTH - actually checks to make sure the string is a valid auth plugin PARAM_BASE64 - <a class="el" href="../../d9/da0/interface_base.html" title="Base for cache objects.">Base</a> 64 encoded format PARAM_BOOL - converts input into 0 or 1, use for switches in forms and urls. PARAM_CAPABILITY - A capability name, like 'moodle/role:manage'. Actually checked against the list of capabilities in the database. PARAM_CLEANHTML - cleans submitted HTML code. Note that you almost never want to use this. The normal mode of operation is to use PARAM_RAW when receiving the input (required/optional_param or formslib) and then sanitise the HTML using format_text on output. This is for the rare cases when you want to sanitise the HTML on input. This cleaning may also fix xhtml strictness. PARAM_EMAIL - an email address following the RFC PARAM_FILE - safe file name, all dangerous chars are stripped, protects against XSS, SQL injections and directory traversals PARAM_FLOAT - a real/floating point number.</p>
 <p>Note that you should not use PARAM_FLOAT for numbers typed in by the user. It does not work for languages that use , as a decimal separator. Use PARAM_LOCALISEDFLOAT instead. PARAM_LOCALISEDFLOAT - a localised real/floating point number. This is preferred over PARAM_FLOAT for numbers typed in by the user. Cleans localised numbers to computer readable numbers; false for invalid numbers. PARAM_HOST - expected fully qualified domain name (FQDN) or an IPv4 dotted quad (IP address) PARAM_INT - integers only, use when expecting only numbers. PARAM_LANG - checks to see if the string is a valid installed language in the current site. PARAM_LOCALURL - expected properly formatted URL as well as one that refers to the local server itself. (NOT orthogonal to the others! Implies PARAM_URL!) PARAM_NOTAGS - all html tags are stripped from the text. Do not abuse this type. PARAM_PATH - safe relative path name, all dangerous chars are stripped, protects against XSS, SQL injections and directory traversals note: the leading slash is not removed, window drive letter is not allowed PARAM_PEM - Privacy Enhanced Mail format PARAM_PERMISSION - A permission, one of CAP_INHERIT, CAP_ALLOW, CAP_PREVENT or CAP_PROHIBIT. PARAM_RAW specifies a parameter that is not cleaned/processed in any way except the discarding of the invalid utf-8 characters PARAM_RAW_TRIMMED like PARAM_RAW but leading and trailing whitespace is stripped. PARAM_SAFEDIR - safe directory name, suitable for include() and require() PARAM_SAFEPATH - several PARAM_SAFEDIR joined by "/", suitable for include() and require(), plugin paths and other references to <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> code files.</p>
-<p>This is NOT intended to be used for absolute paths or any user uploaded files. PARAM_SEQUENCE - expects a sequence of numbers like 8 to 1,5,6,4,6,8,9. Numbers and comma only. PARAM_TAG - one tag (interests, blogs, etc.) - mostly international characters and space, &lt;&gt; not supported PARAM_TAGLIST - list of tags separated by commas (interests, blogs, etc.) PARAM_TEXT - general plain text compatible with multilang filter, no other html tags. Please note '&lt;', or '&gt;' are allowed here. PARAM_THEME - Checks to see if the string is a valid theme name in the current site PARAM_URL - expected properly formatted URL. Please note that domain part is required, <a href="http://localhost/">http://localhost/</a> is not accepted but <a href="http://localhost.localdomain/">http://localhost.localdomain/</a> is ok. PARAM_USERNAME - Clean username to only contains allowed characters. This is to be used ONLY when manually creating user accounts, do NOT use when syncing with external systems!! PARAM_STRINGID - used to check if the given string is valid string identifier for get_string() PARAM_CLEAN - obsoleted, please use a more specific type of parameter. It was one of the first types, that is why it is abused so much ;-) </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000288">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000289">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000290">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000291">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<p>NOTE: originally alias for PARAM_APLHA </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000292">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000293">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
-<p>Timezone can be int +-(0-13) or float +-(0.5-12.5) or string separated by '/' and can have '-' &amp;/ '_' (eg. America/North_Dakota/New_Salem America/Port-au-Prince) PARAM_CLEANFILE - deprecated alias of PARAM_FILE; originally was removing regional chars too </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000294">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<p>This is NOT intended to be used for absolute paths or any user uploaded files. PARAM_SEQUENCE - expects a sequence of numbers like 8 to 1,5,6,4,6,8,9. Numbers and comma only. PARAM_TAG - one tag (interests, blogs, etc.) - mostly international characters and space, &lt;&gt; not supported PARAM_TAGLIST - list of tags separated by commas (interests, blogs, etc.) PARAM_TEXT - general plain text compatible with multilang filter, no other html tags. Please note '&lt;', or '&gt;' are allowed here. PARAM_THEME - Checks to see if the string is a valid theme name in the current site PARAM_URL - expected properly formatted URL. Please note that domain part is required, <a href="http://localhost/">http://localhost/</a> is not accepted but <a href="http://localhost.localdomain/">http://localhost.localdomain/</a> is ok. PARAM_USERNAME - Clean username to only contains allowed characters. This is to be used ONLY when manually creating user accounts, do NOT use when syncing with external systems!! PARAM_STRINGID - used to check if the given string is valid string identifier for get_string() PARAM_CLEAN - obsoleted, please use a more specific type of parameter. It was one of the first types, that is why it is abused so much ;-) </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000294">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000295">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000296">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000297">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<p>NOTE: originally alias for PARAM_APLHA </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000298">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000299">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<p>Timezone can be int +-(0-13) or float +-(0.5-12.5) or string separated by '/' and can have '-' &amp;/ '_' (eg. America/North_Dakota/New_Salem America/Port-au-Prince) PARAM_CLEANFILE - deprecated alias of PARAM_FILE; originally was removing regional chars too </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000300">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="ggafbdb95183823e8d474f07171cda363c3a4e77d5fb25046fc1f1906a954e7f3eb6" name="ggafbdb95183823e8d474f07171cda363c3a4e77d5fb25046fc1f1906a954e7f3eb6"></a>from_type&#160;</td><td class="fielddoc"><p>PARAM_COMPONENT is used for full component names (aka frankenstyle) such as '<a class="el" href="../../d6/dd5/namespacemod__forum.html" title="&#160;">mod_forum</a> = 'core_rating', 'auth_ldap'. </p>
 <p>Short legacy subsystem names and module names are accepted too ex: 'forum = 'rating', 'user'. Only lowercase ascii letters, numbers and underscores are allowed, it has to start with a letter. NOTE: numbers and underscores are strongly discouraged in plugin names! PARAM_AREA is a name of area used when addressing files, comments, ratings, etc. It is usually used together with context id and component. Only lowercase ascii letters, numbers and underscores are allowed, it has to start with a letter. PARAM_PLUGIN is used for plugin names such as 'forum = 'glossary', 'ldap', 'paypal', 'completionstatus'. Only lowercase ascii letters, numbers and underscores are allowed, it has to start with a letter. NOTE: numbers and underscores are strongly discouraged in plugin names! Underscores are forbidden in module names. Get the canonical enumerated parameter from the parameter type name.</p>
@@ -8069,7 +8095,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 </div><div class="memdoc">
 
 <p>Internal recursive category verification function, do not use directly! </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000106">Todo</a></b></dt><dd>Document the arguments of this function better</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000114">Todo</a></b></dt><dd>Document the arguments of this function better</dd></dl>
 <p>@uses CONTEXT_COURSECAT </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$children</td><td></td></tr>
@@ -8171,7 +8197,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000351">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000357">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
 
 </div>
 </div>
@@ -9610,7 +9636,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000337">Deprecated</a></b></dt><dd>since 4.3. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000343">Deprecated</a></b></dt><dd>since 4.3. </dd></dl>
 
 </div>
 </div>
@@ -11084,7 +11110,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 </div><div class="memdoc">
 
 <p>Actually delete from the database any blocks that are currently on this page, but which should not be there according to blocks_name_allowed_in_format. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000090">Todo</a></b></dt><dd>Write/Fix this function. Currently returns immediately </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000098">Todo</a></b></dt><dd>Write/Fix this function. Currently returns immediately </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">$course</td><td></td></tr>
@@ -11316,11 +11342,12 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 </table>
 </div><div class="memdoc">
 
-<p>Check if The query qualifies for readonly connection execution Logging queries are exempt, those are write operations that circumvent standard query_start/query_end paths. </p>
+<p>Check if The query qualifies for readonly connection execution. </p>
+<p>Logging queries are exempt, those are write operations that circumvent standard query_start/query_end paths.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$type</td><td>type of query </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$sql</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$type</td><td>Type of query. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$sql</td><td>The sql to use. </td></tr>
   </table>
   </dd>
 </dl>
@@ -11347,7 +11374,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000324">Deprecated</a></b></dt><dd>since 2.5 - do not use, the textrotate.js will work it out automatically </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000330">Deprecated</a></b></dt><dd>since 2.5 - do not use, the textrotate.js will work it out automatically </dd></dl>
 
 </div>
 </div>
@@ -12004,7 +12031,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 </div><div class="memdoc">
 
 <p>Returns true if the current version of PHP is greater that the specified one. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000206">Todo</a></b></dt><dd>Check PHP version being required here is it too low?</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000218">Todo</a></b></dt><dd>Check PHP version being required here is it too low?</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$version</td><td>The version of php being tested. </td></tr>
@@ -12915,15 +12942,10 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 </div><div class="memdoc">
 
 <p>Indicates delegated transaction finished successfully. </p>
-<p>Set written times after outermost transaction finished </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set written times after outermost transaction finished.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../d8/db9/classmoodle__transaction.html" title="Delegated transaction class.">moodle_transaction</a></td><td class="paramname">$transaction</td><td>The transaction to commit </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../d8/db9/classmoodle__transaction.html" title="Delegated transaction class.">moodle_transaction</a></td><td class="paramname">$transaction</td><td>The transaction to commit. </td></tr>
   </table>
   </dd>
 </dl>
@@ -13233,27 +13255,28 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
       </table>
 </div><div class="memdoc">
 
-<p>Connect to db The connection parameters processor that sets up stage for master write and slave readonly handles. </p>
-<p>Must be called before other methods. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Connect to db. </p>
+<p>The connection parameters processor that sets up stage for primary write and replica readonly handles. Must be called before other methods.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$dbhost</td><td>The database host. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$dbuser</td><td>The database username. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$dbpass</td><td>The database username's password. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$dbname</td><td>The name of the database being connected to. </td></tr>
-    <tr><td class="paramtype">mixed</td><td class="paramname">$prefix</td><td>string means moodle db prefix, false used for external databases where prefix not used </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$dboptions</td><td>driver specific options </td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$prefix</td><td>String means moodle db prefix, false used for external databases where prefix not used. </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$dboptions</td><td>Driver specific options. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">bool</td><td>true </td></tr>
+    <tr><td class="paramname">bool</td><td></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../d5/d8d/classdml__connection__exception.html" title="DML db connection exception - triggered if database not accessible.">dml_connection_exception</a></td><td>if error </td></tr>
+    <tr><td class="paramname"><a class="el" href="../../d5/d8d/classdml__connection__exception.html" title="DML db connection exception - triggered if database not accessible.">dml_connection_exception</a></td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -14230,7 +14253,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 </div><div class="memdoc">
 
 <p>Creates a bare-bones user record. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000202">Todo</a></b></dt><dd>Outline auth types and provide code example</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000214">Todo</a></b></dt><dd>Outline auth types and provide code example</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$username</td><td>New user's username to add to record </td></tr>
@@ -14271,7 +14294,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000335">Deprecated</a></b></dt><dd>since 4.2 Use <a class="el" href="../../d0/d48/classcore_1_1cron.html#a20fd5f67e1472fae2203d932b735f51f" title="Prepare the output renderer for the cron run.">core\cron\prepare_core_renderer()</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000341">Deprecated</a></b></dt><dd>since 4.2 Use <a class="el" href="../../d0/d48/classcore_1_1cron.html#a20fd5f67e1472fae2203d932b735f51f" title="Prepare the output renderer for the cron run.">core\cron\prepare_core_renderer()</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -14297,7 +14320,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000328">Deprecated</a></b></dt><dd>since 4.2 Use <a class="el" href="../../d0/d48/classcore_1_1cron.html#a710ef2ee0393c91ef09f964b64af3e19" title="Execute cron tasks.">core\cron\run_main_process()</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000334">Deprecated</a></b></dt><dd>since 4.2 Use <a class="el" href="../../d0/d48/classcore_1_1cron.html#a710ef2ee0393c91ef09f964b64af3e19" title="Execute cron tasks.">core\cron\run_main_process()</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -14334,7 +14357,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000330">Deprecated</a></b></dt><dd>since 4.2 Use <a class="el" href="../../d0/d48/classcore_1_1cron.html#a21f022c428661bdba87299bf77a39aab" title="Execute all queued adhoc tasks, applying necessary concurrency limits and time limits.">core\cron\run_adhoc_tasks()</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000336">Deprecated</a></b></dt><dd>since 4.2 Use <a class="el" href="../../d0/d48/classcore_1_1cron.html#a21f022c428661bdba87299bf77a39aab" title="Execute all queued adhoc tasks, applying necessary concurrency limits and time limits.">core\cron\run_adhoc_tasks()</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -14360,7 +14383,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000332">Deprecated</a></b></dt><dd>since 4.2 Use <a class="el" href="../../d0/d48/classcore_1_1cron.html#a788c5becfca85b58ed3044e4cb1ad213" title="Shared code that handles running of a single adhoc task within the cron.">core\cron\run_inner_adhoc_task()</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000338">Deprecated</a></b></dt><dd>since 4.2 Use <a class="el" href="../../d0/d48/classcore_1_1cron.html#a788c5becfca85b58ed3044e4cb1ad213" title="Shared code that handles running of a single adhoc task within the cron.">core\cron\run_inner_adhoc_task()</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -14387,7 +14410,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000331">Deprecated</a></b></dt><dd>since 4.2 Use <a class="el" href="../../d0/d48/classcore_1_1cron.html#a0eb4c8f68e74afae5d5c797edd1380b3" title="Shared code that handles running of a single scheduled task within the cron.">core\cron\run_inner_scheduled_task()</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000337">Deprecated</a></b></dt><dd>since 4.2 Use <a class="el" href="../../d0/d48/classcore_1_1cron.html#a0eb4c8f68e74afae5d5c797edd1380b3" title="Shared code that handles running of a single scheduled task within the cron.">core\cron\run_inner_scheduled_task()</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -14413,7 +14436,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000329">Deprecated</a></b></dt><dd>since 4.2 Use <a class="el" href="../../d0/d48/classcore_1_1cron.html#aa1dc2b743084fba27cd7070a2b57717d" title="Execute all queued scheduled tasks, applying necessary concurrency limits and time limits.">core\cron\run_scheduled_tasks()</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000335">Deprecated</a></b></dt><dd>since 4.2 Use <a class="el" href="../../d0/d48/classcore_1_1cron.html#aa1dc2b743084fba27cd7070a2b57717d" title="Execute all queued scheduled tasks, applying necessary concurrency limits and time limits.">core\cron\run_scheduled_tasks()</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -14440,7 +14463,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000333">Deprecated</a></b></dt><dd>since 4.2 Use <a class="el" href="../../d0/d48/classcore_1_1cron.html#a2a69ce3cbc2bc29e12a2eab2c20628c2" title="Sets the process title.">core\cron\set_process_title()</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000339">Deprecated</a></b></dt><dd>since 4.2 Use <a class="el" href="../../d0/d48/classcore_1_1cron.html#a2a69ce3cbc2bc29e12a2eab2c20628c2" title="Sets the process title.">core\cron\set_process_title()</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -14478,7 +14501,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000336">Deprecated</a></b></dt><dd>since 4.2. Use core::core::setup_user() instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000342">Deprecated</a></b></dt><dd>since 4.2. Use core::core::setup_user() instead. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">void</td><td></td></tr>
@@ -14505,7 +14528,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 
 <p>Output some standard information during cron runs. </p>
 <p>Specifically current time and memory usage. This method also does gc_collect_cycles() (before displaying memory usage) to try to help PHP manage memory better.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000334">Deprecated</a></b></dt><dd>since 4.2 Use <a class="el" href="../../d0/d48/classcore_1_1cron.html#a57b97b96cbbfdabced902027f95e310b" title="Output some standard information during cron runs.">core\cron\trace_time_and_memory()</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000340">Deprecated</a></b></dt><dd>since 4.2 Use <a class="el" href="../../d0/d48/classcore_1_1cron.html#a57b97b96cbbfdabced902027f95e310b" title="Output some standard information during cron runs.">core\cron\trace_time_and_memory()</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -15357,7 +15380,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000358">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000364">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 </dd></dl>
 
 </div>
 </div>
@@ -15521,7 +15544,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 
 <p>Given an arbitrary array, and a number of draws, this function returns an array with that amount of items. </p>
 <p>The indexes are retained.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000207">Todo</a></b></dt><dd>Finish documenting this function</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000219">Todo</a></b></dt><dd>Finish documenting this function</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$array</td><td></td></tr>
@@ -15968,7 +15991,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000343">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 - please do not use this function any more, {</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000349">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 - please do not use this function any more, {</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d4/d91/classcore_1_1encryption.html">core\encryption</a>} </dd></dl>
 
 </div>
@@ -18878,7 +18901,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000350">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000356">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
 
 </div>
 </div>
@@ -19733,7 +19756,7 @@ Options:
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001027">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8 <a href="https://tracker.moodle.org/browse/MDL-61038" class="el">MDL-61038</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001037">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8 <a href="https://tracker.moodle.org/browse/MDL-61038" class="el">MDL-61038</a> - please do not use this function any more. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../df/d3c/classcore_1_1uuid.html#adf014732671c87a49ca55e1ee730d328" title="Generate a V4 UUID.">core\uuid\generate()</a> </dd></dl>
 
 </div>
@@ -20321,7 +20344,7 @@ Options:
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000353">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000359">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
 
 </div>
 </div>
@@ -20475,7 +20498,7 @@ Options:
 </div><div class="memdoc">
 
 <p>Return exact absolute path to a plugin directory. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000322">Deprecated</a></b></dt><dd>since 2.6, use core_component::normalize_component()</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000328">Deprecated</a></b></dt><dd>since 2.6, use core_component::normalize_component()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$component</td><td>name such as 'moodle', '<a class="el" href="../../d6/dd5/namespacemod__forum.html" title="&#160;">mod_forum</a>' </td></tr>
@@ -20700,7 +20723,7 @@ Options:
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000323">Deprecated</a></b></dt><dd>since 2.2, use <a class="el" href="../../de/d1c/classcore_1_1context_1_1course.html#a476670ba1d0ffdcc08eac3d35a575956" title="Returns course context instance.">context_course\instance()</a> or other relevant class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000329">Deprecated</a></b></dt><dd>since 2.2, use <a class="el" href="../../de/d1c/classcore_1_1context_1_1course.html#a476670ba1d0ffdcc08eac3d35a575956" title="Returns course context instance.">context_course\instance()</a> or other relevant class instead </dd></dl>
 
 </div>
 </div>
@@ -20828,7 +20851,7 @@ Options:
 <p>List all core subsystems and their location. </p>
 <p>This is a list of components that are part of the core and their language strings are defined in /lang/en/&lt;&lt;subsystem&gt;&gt;.php. If a given plugin is not listed here and it does not have proper plugintype prefix, then it is considered as course activity module.</p>
 <p>The location is optionally dirroot relative path. NULL means there is no special directory for this subsystem. If the location is set, the subsystem's renderer.php is expected to be there.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000316">Deprecated</a></b></dt><dd>since 2.6, use core_component::get_core_subsystems() </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000322">Deprecated</a></b></dt><dd>since 2.6, use core_component::get_core_subsystems() </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$fullpaths</td><td>false means relative paths from dirroot, use true for performance reasons </td></tr>
@@ -21534,7 +21557,7 @@ Options:
 
 <p>Returns an array with all the filenames in all subdirectories, relative to the given rootdir. </p>
 <p>If excludefiles is defined, then that file/directory is ignored If getdirs is true, then (sub)directories are included in the output If getfiles is true, then files are included in the output (at least one of these must be true!)</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000204">Todo</a></b></dt><dd>Finish documenting this function. Add examples of $excludefile usage.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000216">Todo</a></b></dt><dd>Finish documenting this function. Add examples of $excludefile usage.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$rootdir</td><td>A given root directory to start from </td></tr>
@@ -22825,7 +22848,7 @@ Options:
 <li>by the teacher for the current module, eg $assignment-&gt;maxbytes</li>
 </ol>
 <p>These last two are passed to this function as arguments (in bytes). Anything defined as 0 is ignored. The smallest of all the non-zero numbers is returned.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000203">Todo</a></b></dt><dd>Finish documenting this function</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000215">Todo</a></b></dt><dd>Finish documenting this function</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$sitebytes</td><td>Set maximum size </td></tr>
@@ -23313,7 +23336,7 @@ Options:
 </div><div class="memdoc">
 
 <p>Returns the exact absolute path to plugin directory. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000320">Deprecated</a></b></dt><dd>since 2.6, use core_component::get_plugin_directory() </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000326">Deprecated</a></b></dt><dd>since 2.6, use core_component::get_plugin_directory() </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$plugintype</td><td>type of plugin </td></tr>
@@ -23385,7 +23408,7 @@ Options:
 </div><div class="memdoc">
 
 <p>Use when listing real plugins of one type. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000318">Deprecated</a></b></dt><dd>since 2.6, use core_component::get_plugin_list() </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000324">Deprecated</a></b></dt><dd>since 2.6, use core_component::get_plugin_list() </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$plugintype</td><td>type of plugin </td></tr>
@@ -23478,7 +23501,7 @@ Options:
 
 <p>Get a list of all the plugins of a given type that define a certain class in a certain file. </p>
 <p>The plugin component names and class names are returned.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000319">Deprecated</a></b></dt><dd>since 2.6, use core_component::get_plugin_list_with_class() </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000325">Deprecated</a></b></dt><dd>since 2.6, use core_component::get_plugin_list_with_class() </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$plugintype</td><td>the type of plugin, e.g. 'mod' or 'report'. </td></tr>
@@ -23638,7 +23661,7 @@ Options:
 </div><div class="memdoc">
 
 <p>Lists all plugin types. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000317">Deprecated</a></b></dt><dd>since 2.6, use core_component::get_plugin_types() </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000323">Deprecated</a></b></dt><dd>since 2.6, use core_component::get_plugin_types() </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$fullpaths</td><td>false means relative paths from dirroot </td></tr>
@@ -24384,7 +24407,7 @@ Options:
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000325">Deprecated</a></b></dt><dd>since 2.2 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000331">Deprecated</a></b></dt><dd>since 2.2 </dd></dl>
 
 </div>
 </div>
@@ -26576,7 +26599,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 
 <p>Returns true if the page is displayed in a popup window. </p>
 <p>Gets the information from the URL parameter inpopup.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000258">Todo</a></b></dt><dd>Use a central function to create the popup calls all over <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> and In the moment only works with resources and probably questions.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000270">Todo</a></b></dt><dd>Use a central function to create the popup calls all over <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> and In the moment only works with resources and probably questions.</dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">boolean</td><td></td></tr>
@@ -28131,7 +28154,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 
 <p>Creates an array that represents all the current grades that can be chosen using the given grading type. </p>
 <p>Negative numbers are scales, zero is no grade, and positive numbers are maximum grades.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000208">Todo</a></b></dt><dd>Finish documenting this function or better deprecated this completely!</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000220">Todo</a></b></dt><dd>Finish documenting this function or better deprecated this completely!</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$gradingtype</td><td></td></tr>
@@ -28388,7 +28411,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 </div><div class="memdoc">
 
 <p>make_unique_id_code </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000209">Todo</a></b></dt><dd>Finish documenting this function</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000221">Todo</a></b></dt><dd>Finish documenting this function</dd></dl>
 <p>@uses $_SERVER </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$extra</td><td>Extra string to append to the end of the code </td></tr>
@@ -29562,7 +29585,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 </div><div class="memdoc">
 
 <p>Normalize the component name using the "frankenstyle" names. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000321">Deprecated</a></b></dt><dd>since 2.6, use core_component::normalize_component() </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000327">Deprecated</a></b></dt><dd>since 2.6, use core_component::normalize_component() </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$component</td><td></td></tr>
@@ -30211,14 +30234,14 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 
 </div>
 </div>
-<a id="gacb1d30f7d27b38b701f76771c3291d18" name="gacb1d30f7d27b38b701f76771c3291d18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacb1d30f7d27b38b701f76771c3291d18">&#9670;&#160;</a></span>perf_get_reads_slave()</h2>
+<a id="ga6fa7b5d342ce253b3f7b49a5b7208976" name="ga6fa7b5d342ce253b3f7b49a5b7208976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6fa7b5d342ce253b3f7b49a5b7208976">&#9670;&#160;</a></span>perf_get_reads_replica()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">perf_get_reads_slave </td>
+          <td class="memname">perf_get_reads_replica </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -30422,7 +30445,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000205">Todo</a></b></dt><dd>Decide about to deprecate and drop <a class="el" href="#gaabae838ede88093868b5f38027b172da" title="Invoke plugin&#39;s callback functions.">plugin_callback()</a> - <a href="https://tracker.moodle.org/browse/MDL-30743" class="el">MDL-30743</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000217">Todo</a></b></dt><dd>Decide about to deprecate and drop <a class="el" href="#gaabae838ede88093868b5f38027b172da" title="Invoke plugin&#39;s callback functions.">plugin_callback()</a> - <a href="https://tracker.moodle.org/browse/MDL-30743" class="el">MDL-30743</a> </dd></dl>
 
 </div>
 </div>
@@ -30497,7 +30520,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 
 <p>Returns an image of an up or down arrow, used for column sorting. </p>
 <p>To avoid unnecessary <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> accesses, please provide this function with the language strings for sortasc and sortdesc.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000326">Deprecated</a></b></dt><dd>use $OUTPUT-&gt;arrow() instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000332">Deprecated</a></b></dt><dd>use $OUTPUT-&gt;arrow() instead. </dd></dl>
 
 </div>
 </div>
@@ -30716,7 +30739,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000327">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000333">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 
 </div>
 </div>
@@ -30755,7 +30778,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 </div><div class="memdoc">
 
 <p>Prints a grade menu (as part of an existing form) with help showing all possible numerical grades and scales. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000113">Todo</a></b></dt><dd><p class="startdd">Finish documenting this function </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000121">Todo</a></b></dt><dd><p class="startdd">Finish documenting this function </p>
 <p class="enddd">Deprecate: this is only used in a few contrib modules</p>
 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -30774,7 +30797,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000359">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000365">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 </dd></dl>
 
 </div>
 </div>
@@ -30965,7 +30988,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 </div><div class="memdoc">
 
 <p>Returns a localized sentence in the current language summarizing the current password policy. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000259">Todo</a></b></dt><dd>this should be handled by a function/method in the language pack library once we have a support for it @uses $CFG </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000271">Todo</a></b></dt><dd>this should be handled by a function/method in the language pack library once we have a support for it @uses $CFG </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td></td></tr>
@@ -31989,12 +32012,6 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
   </table>
   </dd>
 </dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -32045,12 +32062,6 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
   </table>
   </dd>
 </dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -32068,7 +32079,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000355">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000361">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
 
 </div>
 </div>
@@ -32148,7 +32159,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000354">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000360">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
 
 </div>
 </div>
@@ -32166,7 +32177,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000352">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000358">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
 
 </div>
 </div>
@@ -32560,7 +32571,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000356">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000362">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
 
 </div>
 </div>
@@ -32634,7 +32645,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000348">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000354">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 
 </div>
 </div>
@@ -32787,7 +32798,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000346">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000352">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 
 </div>
 </div>
@@ -32880,7 +32891,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000347">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71573" class="el">MDL-71573</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000353">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71573" class="el">MDL-71573</a> </dd></dl>
 
 </div>
 </div>
@@ -33202,7 +33213,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000345">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000351">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 
 </div>
 </div>
@@ -33220,7 +33231,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000344">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000350">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 
 </div>
 </div>
@@ -33238,7 +33249,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000349">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000355">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
 
 </div>
 </div>
@@ -33611,7 +33622,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000340">Deprecated</a></b></dt><dd>since 4.3. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000346">Deprecated</a></b></dt><dd>since 4.3. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>binary data </td></tr>
@@ -33699,7 +33710,32 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 </table>
 </div><div class="memdoc">
 
-<p>Connect to db The real connection establisment, called from <a class="el" href="#ga3ae73c52b49526f5a21cf02a3c1fceee" title="Connect to db The connection parameters processor that sets up stage for master write and slave reado...">connect()</a> and set_dbhwrite() </p>
+<p>Connect to db. </p>
+<p>Connect to db The real connection establisment, called from <a class="el" href="#ga3ae73c52b49526f5a21cf02a3c1fceee" title="Connect to db.">connect()</a> and set_dbhwrite()</p>
+<p>The real connection establisment, called from <a class="el" href="#ga3ae73c52b49526f5a21cf02a3c1fceee" title="Connect to db.">connect()</a> and set_dbhwrite().</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$dbhost</td><td>The database host. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$dbuser</td><td>The database username. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$dbpass</td><td>The database username's password. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$dbname</td><td>The name of the database being connected to. </td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$prefix</td><td>String means moodle db prefix, false used for external databases where prefix not used. </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$dboptions</td><td>Driver specific options. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d5/d8d/classdml__connection__exception.html" title="DML db connection exception - triggered if database not accessible.">dml_connection_exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$dbhost</td><td>The database host. </td></tr>
@@ -33754,7 +33790,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000342">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 - please do not use this function any more, {</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000348">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 - please do not use this function any more, {</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d4/d91/classcore_1_1encryption.html#a55dec0d9ee68b56458045a73fa213ad7" title="Decrypts data using the server&#39;s key.">core\encryption\decrypt</a>} </dd></dl>
 
 </div>
@@ -33787,7 +33823,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000341">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 - please do not use this function any more, {</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000347">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 - please do not use this function any more, {</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d4/d91/classcore_1_1encryption.html#ab9a1c8f9690b39a9cca1f9ddccfc5b43" title="Encrypts data using the server&#39;s key.">core\encryption\encrypt</a>} </dd></dl>
 
 </div>
@@ -35355,7 +35391,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000357">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.9 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000363">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.9 </dd></dl>
 
 </div>
 </div>
@@ -35444,14 +35480,8 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 <p>Select appropriate db handle - readwrite or readonly. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$type</td><td>type of query </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$sql</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$type</td><td>Type of query. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$sql</td><td>The sql to use. </td></tr>
   </table>
   </dd>
 </dl>
@@ -35818,6 +35848,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 <p>Sets db handle to be used with subsequent queries. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramtype">resource</td><td class="paramname">$dbh</td><td></td></tr>
     <tr><td class="paramtype">resource</td><td class="paramname">$dbh</td><td></td></tr>
   </table>
   </dd>
@@ -37360,7 +37391,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 <p>Parse table names from query. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$sql</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$sql</td><td>The sql to use. </td></tr>
   </table>
   </dd>
 </dl>
@@ -37840,7 +37871,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000339">Deprecated</a></b></dt><dd>since 4.3. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000345">Deprecated</a></b></dt><dd>since 4.3. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>or null </td></tr>
@@ -37985,7 +38016,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000338">Deprecated</a></b></dt><dd>since 4.3. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000344">Deprecated</a></b></dt><dd>since 4.3. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td></td></tr>
@@ -39505,7 +39536,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000213">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000219">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
 
 </div>
 </div>
@@ -40169,14 +40200,14 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 
 </div>
 </div>
-<a id="ga86dc5dc267194f585644e9b1defde204" name="ga86dc5dc267194f585644e9b1defde204"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga86dc5dc267194f585644e9b1defde204">&#9670;&#160;</a></span>want_read_slave()</h2>
+<a id="ga703f15e65945648c2e1b8c1402bc4e94" name="ga703f15e65945648c2e1b8c1402bc4e94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga703f15e65945648c2e1b8c1402bc4e94">&#9670;&#160;</a></span>want_read_replica()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">want_read_slave </td>
+          <td class="memname">want_read_replica </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -40184,10 +40215,10 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
       </table>
 </div><div class="memdoc">
 
-<p>Returns whether we want to connect to slave database for read queries. </p>
+<p>Returns whether we want to connect to replica database for read queries. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">bool</td><td>Want read only connection </td></tr>
+    <tr><td class="paramname">bool</td><td>Want read only connection. </td></tr>
   </table>
   </dd>
 </dl>
@@ -40465,7 +40496,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 </div>
 </div>
 <a id="gac97fe15540970d44b7c8169563ef9c37" name="gac97fe15540970d44b7c8169563ef9c37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac97fe15540970d44b7c8169563ef9c37">&#9670;&#160;</a></span>__pad0__</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gac97fe15540970d44b7c8169563ef9c37">&#9670;&#160;</a></span>__pad0__ <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -40490,13 +40521,31 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="#ga4297b1ee8c06b42469eafea6e301567b" title="Sets specified user&#39;s password and send the new password to the user via email.">setnew_password_and_mail()</a> </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000360">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000114">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-82646" class="el">MDL-82646</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000366">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000122">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-82646" class="el">MDL-82646</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. </dd></dl>
+
+</div>
+</div>
+<a id="ga8d1e55c62a3fabc56142eb272d2d8967" name="ga8d1e55c62a3fabc56142eb272d2d8967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8d1e55c62a3fabc56142eb272d2d8967">&#9670;&#160;</a></span>__pad0__ <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">replacement __pad0__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section copyright"><dt>Copyright</dt><dd>2018 Srdjan Janković, Catalyst IT </dd></dl>
+<dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU GPL v3 or later </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000376">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0. See <a href="https://tracker.moodle.org/browse/MDL-71257" class="el">MDL-71257</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000128">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-83171" class="el">MDL-83171</a>. </dd></dl>
 
 </div>
 </div>
 <a id="gaf60b0695b71cbeab8004e6c77a10e8e9" name="gaf60b0695b71cbeab8004e6c77a10e8e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf60b0695b71cbeab8004e6c77a10e8e9">&#9670;&#160;</a></span>__pad1__</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf60b0695b71cbeab8004e6c77a10e8e9">&#9670;&#160;</a></span>__pad1__ <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -40506,7 +40555,48 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000361">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71175" class="el">MDL-71175</a>. Please use <a class="el" href="#ga032565aa22b971661649786e96b26a23" title="displays the similarity score and provides a link to the full report if allowed.">plagiarism_get_links()</a> or plugin specific functions.. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000367">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71175" class="el">MDL-71175</a>. Please use <a class="el" href="#ga032565aa22b971661649786e96b26a23" title="displays the similarity score and provides a link to the full report if allowed.">plagiarism_get_links()</a> or plugin specific functions.. </dd></dl>
+
+</div>
+</div>
+<a id="gaf60b0695b71cbeab8004e6c77a10e8e9" name="gaf60b0695b71cbeab8004e6c77a10e8e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf60b0695b71cbeab8004e6c77a10e8e9">&#9670;&#160;</a></span>__pad1__ <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">replacement __pad1__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Connect to db The connection parameters processor that sets up stage for master write and slave readonly handles. </p>
+<p>Must be called before other methods. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$dbhost</td><td>The database host. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$dbuser</td><td>The database username. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$dbpass</td><td>The database username's password. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$dbname</td><td>The name of the database being connected to. </td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$prefix</td><td>string means moodle db prefix, false used for external databases where prefix not used </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$dboptions</td><td>driver specific options </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>true </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d5/d8d/classdml__connection__exception.html" title="DML db connection exception - triggered if database not accessible.">dml_connection_exception</a></td><td>if error </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000377">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0. See <a href="https://tracker.moodle.org/browse/MDL-71257" class="el">MDL-71257</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000129">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-83171" class="el">MDL-83171</a>. </dd></dl>
 
 </div>
 </div>
@@ -40521,7 +40611,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000362">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 - Please use {plugin name}_before_standard_top_of_body_html instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000368">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 - Please use {plugin name}_before_standard_top_of_body_html instead. </dd></dl>
 
 </div>
 </div>
@@ -40545,8 +40635,8 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000363">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000115">Todo</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-83366" class="el">MDL-83366</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000369">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000123">Todo</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-83366" class="el">MDL-83366</a>. </dd></dl>
 
 </div>
 </div>
@@ -40784,7 +40874,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000369">Deprecated</a></b></dt><dd><ul>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000379">Deprecated</a></b></dt><dd><ul>
 <li>enrol caching was reworked, use ENROL_MAX_TIMESTAMP instead </li>
 </ul>
 </dd></dl>
@@ -40802,7 +40892,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000370">Deprecated</a></b></dt><dd>since 2.4 not used any more, migrate plugin to new restore methods </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000380">Deprecated</a></b></dt><dd>since 2.4 not used any more, migrate plugin to new restore methods </dd></dl>
 
 </div>
 </div>
@@ -40870,7 +40960,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 </div><div class="memdoc">
 
 <p>True if module supports groupmembersonly (which no longer exists) </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000503">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000513">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 </dd></dl>
 
 </div>
 </div>
@@ -40887,7 +40977,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 </div><div class="memdoc">
 
 <p>Wiki-formatted text. </p>
-<p>Deprecated: left here just to note that '3' is not used (at the moment) and to catch any latent wiki-like text (which generates an error) </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001125">Deprecated</a></b></dt><dd>since 2005! </dd></dl>
+<p>Deprecated: left here just to note that '3' is not used (at the moment) and to catch any latent wiki-like text (which generates an error) </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001135">Deprecated</a></b></dt><dd>since 2005! </dd></dl>
 
 </div>
 </div>
@@ -40976,19 +41066,19 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 </div><div class="memdoc">
 
 <p>Module purpose interface. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000504">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000201">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80701" class="el">MDL-80701</a> Remove in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000514">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000213">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80701" class="el">MDL-80701</a> Remove in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8 </dd></dl>
 
 </div>
 </div>
-<a id="gad78473a8ae4a12531def046ac3ff2a88" name="gad78473a8ae4a12531def046ac3ff2a88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad78473a8ae4a12531def046ac3ff2a88">&#9670;&#160;</a></span>moodle_read_slave_trait</h2>
+<a id="gab1671c7958420192a4874dd8aae261b3" name="gab1671c7958420192a4874dd8aae261b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab1671c7958420192a4874dd8aae261b3">&#9670;&#160;</a></span>moodle_read_replica_trait</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">trait moodle_read_slave_trait</td>
+          <td class="memname">trait moodle_read_replica_trait</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -40996,31 +41086,8 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 <div class="line"> </div>
 <div class="line">    </div>
 <div class="line">    <span class="keyword">protected</span> resource $dbhwrite</div>
-</div><!-- fragment -->
-<p>Trait to wrap <a class="el" href="#ga3ae73c52b49526f5a21cf02a3c1fceee" title="Connect to db The connection parameters processor that sets up stage for master write and slave reado...">connect()</a> method of database driver classes that gives ability to use read only slave instances for SELECT queries. </p>
-<p>For the databases that support replication and read only connections to the slave. If the slave connection is configured there will be two database handles created, one for the master and another one for the slave. If there's no slave specified everything uses master handle.</p>
-<p>Classes that use this trait need to rename existing <a class="el" href="#ga3ae73c52b49526f5a21cf02a3c1fceee" title="Connect to db The connection parameters processor that sets up stage for master write and slave reado...">connect()</a> method to <a class="el" href="#ga23088bc6a02791bba64b780159d4cd7d" title="Connect to db The real connection establisment, called from connect() and set_dbhwrite()">raw_connect()</a>. In addition, they need to provide <a class="el" href="#ga0028cd3cf53288f48b3f62b629f76f2a" title="Gets db handle currently used with queries.">get_db_handle()</a> and <a class="el" href="#ga3673be51222934b8953d02eff7592dbd" title="Sets db handle to be used with subsequent queries.">set_db_handle()</a> methods, due to dbhandle attributes not being named consistently across the database driver classes.</p>
-<p>Read only slave connection is configured in the $CFG-&gt;dboptions['readonly'] array.</p><ul>
-<li>It supports multiple 'instance' entries, in case one is not accessible, but only one (first connectable) instance is used.</li>
-<li>'latency' option: master -&gt; slave sync latency in seconds (will probably be a fraction of a second). A table being written to is deemed fully synced after that period and suitable for slave read. Defaults to 1 sec.</li>
-<li>'exclude_tables' option: a list of tables that never go to the slave for querying. The feature is meant to be used in emergency only, so the readonly feature can still be used in case there is a rogue query that does not go through the standard dml interface or some other unaccounted situation. It should not be used under normal circumstances, and its use indicates a problem in the system that needs addressig.</li>
-</ul>
-<p>Choice of the database handle is based on following:</p><ul>
-<li>SQL_QUERY_INSERT, UPDATE and STRUCTURE record table from the query in the $written array and microtime() the event. For those queries master write handle is used.</li>
-<li>SQL_QUERY_AUX queries will always use the master write handle because they are used for transaction start/end, locking etc. In that respect, <a class="el" href="#gac16264f1f73931f7e3d741f9a09c2963" title="Called before each db query.">query_start()</a> and <a class="el" href="#ga8f421013c42f06a3bd45264e9c744a57" title="This should be called immediately after each db query.">query_end()</a> <em>must not</em> be used during the connection phase.</li>
-<li>SQL_QUERY_AUX_READONLY queries will use the master write handle if in a transaction.</li>
-<li>SELECT queries will use the master write handle if: &ndash; any of the tables involved is a temp table &ndash; any of the tables involved is listed in the 'exclude_tables' option &ndash; any of the tables involved is in the $written array:<ul>
-<li>current microtime() is compared to the write microrime, and if more than latency time has passed the slave handle is used</li>
-<li>otherwise (not enough time passed) we choose the master write handle If none of the above conditions are met the slave instance is used.</li>
-</ul>
-</li>
-</ul>
-<p>A 'latency' example:</p><ul>
-<li>we have set $CFG-&gt;dboptions['readonly']['latency'] to 0.2.</li>
-<li>a SQL_QUERY_UPDATE to table tbl_x happens, and it is recorded in the $written array</li>
-<li>0.15 seconds later SQL_QUERY_SELECT with tbl_x is requested - the master connection is used</li>
-<li>0.10 seconds later (0.25 seconds after SQL_QUERY_UPDATE) another SQL_QUERY_SELECT with tbl_x is requested - this time more than 0.2 secs has gone and master -&gt; slave sync is assumed, so the slave connection is used again </li>
-</ul>
+</div><!-- fragment --><dl class="section copyright"><dt>Copyright</dt><dd>2024 David Woloszyn <a href="#" onclick="location.href='mai'+'lto:'+'dav'+'id'+'.wo'+'lo'+'szy'+'n@'+'moo'+'dl'+'e.c'+'om'; return false;">david<span class="obfuscator">.nosp@m.</span>.wol<span class="obfuscator">.nosp@m.</span>oszyn<span class="obfuscator">.nosp@m.</span>@moo<span class="obfuscator">.nosp@m.</span>dle.c<span class="obfuscator">.nosp@m.</span>om</a> </dd></dl>
+<dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU GPL v3 or later </dd></dl>
 
 </div>
 </div>
@@ -41052,8 +41119,8 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000219">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000089">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-82332" class="el">MDL-82332</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000225">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000097">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-82332" class="el">MDL-82332</a>. </dd></dl>
 
 </div>
 </div>
@@ -41087,7 +41154,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 </div><div class="memdoc">
 
 <p>PARAM_ACTION - deprecated alias for PARAM_ALPHANUMEXT, use for various actions in forms and urls NOTE: originally alias for PARAM_APLHA. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000499">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000509">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
 
 </div>
 </div>
@@ -41138,7 +41205,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 </div><div class="memdoc">
 
 <p>PARAM_CLEAN - obsoleted, please use a more specific type of parameter. </p>
-<p>It was one of the first types, that is why it is abused so much ;-) </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000496">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<p>It was one of the first types, that is why it is abused so much ;-) </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000506">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
 
 </div>
 </div>
@@ -41155,7 +41222,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 </div><div class="memdoc">
 
 <p>PARAM_CLEANFILE - deprecated alias of PARAM_FILE; originally was removing regional chars too. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000502">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000512">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
 
 </div>
 </div>
@@ -41223,7 +41290,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 </div><div class="memdoc">
 
 <p>PARAM_FORMAT - deprecated alias for PARAM_ALPHANUMEXT, use for names of plugins, formats, etc. </p>
-<p>NOTE: originally alias for PARAM_APLHA </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000500">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<p>NOTE: originally alias for PARAM_APLHA </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000510">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
 
 </div>
 </div>
@@ -41240,7 +41307,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 </div><div class="memdoc">
 
 <p>PARAM_INTEGER - deprecated alias for PARAM_INT. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000497">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000507">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
 
 </div>
 </div>
@@ -41291,7 +41358,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 </div><div class="memdoc">
 
 <p>PARAM_MULTILANG - deprecated alias of PARAM_TEXT. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000501">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000511">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
 
 </div>
 </div>
@@ -41325,7 +41392,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 </div><div class="memdoc">
 
 <p>PARAM_NUMBER - deprecated alias of PARAM_FLOAT. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000498">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000508">Deprecated</a></b></dt><dd>since 2.0 </dd></dl>
 
 </div>
 </div>
@@ -41661,7 +41728,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 17 2024 03:07:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Nov 24 2024 03:09:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

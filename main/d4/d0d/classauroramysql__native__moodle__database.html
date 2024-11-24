@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241115) (269a8a8a1b3)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241122) (505a85eb9ae)</div>
   </td>
  </tr>
  </tbody>
@@ -71,6 +71,7 @@ $(function(){ initResizable(false); });
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d2/d00/classauroramysql__native__moodle__database-members.html">List of all members</a>  </div>
@@ -163,7 +164,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6a70298214836bda426b66d8d4606f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns localised database configuration help.  <br /></td></tr>
 <tr class="separator:a6a70298214836bda426b66d8d4606f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58c5bbf6e20fc45b50018c37a6e52874" id="r_a58c5bbf6e20fc45b50018c37a6e52874"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a58c5bbf6e20fc45b50018c37a6e52874">get_configuration_hints</a> ()</td></tr>
-<tr class="memdesc:a58c5bbf6e20fc45b50018c37a6e52874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the localised database description Note: can be used before <a class="el" href="../../d0/de1/group__core.html#ga3ae73c52b49526f5a21cf02a3c1fceee" title="Connect to db The connection parameters processor that sets up stage for master write and slave reado...">connect()</a>  <br /></td></tr>
+<tr class="memdesc:a58c5bbf6e20fc45b50018c37a6e52874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the localised database description Note: can be used before <a class="el" href="../../d0/de1/group__core.html#ga3ae73c52b49526f5a21cf02a3c1fceee" title="Connect to db.">connect()</a>  <br /></td></tr>
 <tr class="separator:a58c5bbf6e20fc45b50018c37a6e52874"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01d209c23d2000949014b76966db19b9" id="r_a01d209c23d2000949014b76966db19b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a01d209c23d2000949014b76966db19b9">get_counted_records_sql</a> (string $sql, string $fullcountcolumn, string $sort='', ?array $params=null, int $limitfrom=0, int $limitnum=0,)</td></tr>
 <tr class="memdesc:a01d209c23d2000949014b76966db19b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve records with a select query and count the total number of records.  <br /></td></tr>
@@ -220,7 +221,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8aff37d2d875769dfe8df46662c48ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns localised database type name.  <br /></td></tr>
 <tr class="separator:a8aff37d2d875769dfe8df46662c48ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8314cb807e9a59a9e3d6ec11f04bb4cf" id="r_a8314cb807e9a59a9e3d6ec11f04bb4cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a8314cb807e9a59a9e3d6ec11f04bb4cf">get_prefix</a> ()</td></tr>
-<tr class="memdesc:a8314cb807e9a59a9e3d6ec11f04bb4cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns database table prefix Note: can be used before <a class="el" href="../../d0/de1/group__core.html#ga3ae73c52b49526f5a21cf02a3c1fceee" title="Connect to db The connection parameters processor that sets up stage for master write and slave reado...">connect()</a>  <br /></td></tr>
+<tr class="memdesc:a8314cb807e9a59a9e3d6ec11f04bb4cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns database table prefix Note: can be used before <a class="el" href="../../d0/de1/group__core.html#ga3ae73c52b49526f5a21cf02a3c1fceee" title="Connect to db.">connect()</a>  <br /></td></tr>
 <tr class="separator:a8314cb807e9a59a9e3d6ec11f04bb4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0264e381dc950fac100b14a3f67cff8a" id="r_a0264e381dc950fac100b14a3f67cff8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a0264e381dc950fac100b14a3f67cff8a">get_record</a> ($table, array $conditions, $fields=' *', $strictness=<a class="el" href="../../d0/de1/group__core.html#gaffc7005a2da386334d76ec5f85ca2d48">IGNORE_MISSING</a>)</td></tr>
 <tr class="memdesc:a0264e381dc950fac100b14a3f67cff8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a single database record as an object where all the given conditions met.  <br /></td></tr>
@@ -324,9 +325,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abef8ec7916dbf288bdc45828e24e2e71" id="r_abef8ec7916dbf288bdc45828e24e2e71"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#abef8ec7916dbf288bdc45828e24e2e71">perf_get_reads</a> ()</td></tr>
 <tr class="memdesc:abef8ec7916dbf288bdc45828e24e2e71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of reads done by this database.  <br /></td></tr>
 <tr class="separator:abef8ec7916dbf288bdc45828e24e2e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaeba8310bf78fca46d35d16aee397b18" id="r_aaeba8310bf78fca46d35d16aee397b18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#aaeba8310bf78fca46d35d16aee397b18">perf_get_reads_slave</a> ()</td></tr>
-<tr class="memdesc:aaeba8310bf78fca46d35d16aee397b18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of reads before first write done by this database.  <br /></td></tr>
-<tr class="separator:aaeba8310bf78fca46d35d16aee397b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aede2b6f470152fcb31b1011e4a0a3c9d" id="r_aede2b6f470152fcb31b1011e4a0a3c9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#aede2b6f470152fcb31b1011e4a0a3c9d">perf_get_reads_replica</a> ()</td></tr>
+<tr class="memdesc:aede2b6f470152fcb31b1011e4a0a3c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of reads before first write done by this database.  <br /></td></tr>
+<tr class="separator:aede2b6f470152fcb31b1011e4a0a3c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3ba367be9772be6b095f58201579543" id="r_ab3ba367be9772be6b095f58201579543"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#ab3ba367be9772be6b095f58201579543">perf_get_writes</a> ()</td></tr>
 <tr class="memdesc:ab3ba367be9772be6b095f58201579543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of writes done by this database.  <br /></td></tr>
 <tr class="separator:ab3ba367be9772be6b095f58201579543"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -489,15 +490,36 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af0bcbea24c115fc7c14d8db268255df8" id="r_af0bcbea24c115fc7c14d8db268255df8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#af0bcbea24c115fc7c14d8db268255df8">update_temp_table_stats</a> ()</td></tr>
 <tr class="memdesc:af0bcbea24c115fc7c14d8db268255df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Analyze the data in temporary tables to force statistics collection after bulk data loads.  <br /></td></tr>
 <tr class="separator:af0bcbea24c115fc7c14d8db268255df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa517abd896e144bc397e5ccb061c3ce2" id="r_aa517abd896e144bc397e5ccb061c3ce2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#aa517abd896e144bc397e5ccb061c3ce2">want_read_slave</a> ()</td></tr>
-<tr class="memdesc:aa517abd896e144bc397e5ccb061c3ce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether we want to connect to slave database for read queries.  <br /></td></tr>
-<tr class="separator:aa517abd896e144bc397e5ccb061c3ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3edae032155bebcb42baaa3a97d8a34" id="r_af3edae032155bebcb42baaa3a97d8a34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#af3edae032155bebcb42baaa3a97d8a34">want_read_replica</a> ()</td></tr>
+<tr class="memdesc:af3edae032155bebcb42baaa3a97d8a34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether we want to connect to replica database for read queries.  <br /></td></tr>
+<tr class="separator:af3edae032155bebcb42baaa3a97d8a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0c73988370f8a4433b6cf8d7bbf8752f" id="r_a0c73988370f8a4433b6cf8d7bbf8752f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a0c73988370f8a4433b6cf8d7bbf8752f">get_driver_instance</a> ($type, $library, $external=false)</td></tr>
 <tr class="memdesc:a0c73988370f8a4433b6cf8d7bbf8752f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads and returns a database instance with the specified type and library.  <br /></td></tr>
 <tr class="separator:a0c73988370f8a4433b6cf8d7bbf8752f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:acd93a51ea24daa4c930d2fb4a45f83a1" id="r_acd93a51ea24daa4c930d2fb4a45f83a1"><td class="memItemLeft" align="right" valign="top">replacement&#160;</td><td class="memItemRight" valign="bottom">: '<a class="el" href="../../d3/d6e/classmoodle__database.html#af3edae032155bebcb42baaa3a97d8a34">want_read_replica</a>'</td></tr>
+<tr class="memdesc:acd93a51ea24daa4c930d2fb4a45f83a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether we want to connect to slave database for read queries.  <br /></td></tr>
+<tr class="separator:acd93a51ea24daa4c930d2fb4a45f83a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc94d1b2b078d795a08fc9e51cb4dda8" id="r_afc94d1b2b078d795a08fc9e51cb4dda8"><td class="memItemLeft" align="right" valign="top">replacement&#160;</td><td class="memItemRight" valign="bottom">: '<a class="el" href="../../d3/d6e/classmoodle__database.html#aede2b6f470152fcb31b1011e4a0a3c9d">perf_get_reads_replica</a>'</td></tr>
+<tr class="memdesc:afc94d1b2b078d795a08fc9e51cb4dda8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of reads before first write done by this database.  <br /></td></tr>
+<tr class="separator:afc94d1b2b078d795a08fc9e51cb4dda8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5071494c024a0b12ab7ce37dd95dfd99" id="r_a5071494c024a0b12ab7ce37dd95dfd99"><td class="memItemLeft" align="right" valign="top"><a id="a5071494c024a0b12ab7ce37dd95dfd99" name="a5071494c024a0b12ab7ce37dd95dfd99"></a>
+return&#160;</td><td class="memItemRight" valign="bottom"><b>false</b></td></tr>
+<tr class="separator:a5071494c024a0b12ab7ce37dd95dfd99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab129ac764e08cd8d96d15663094cd522" id="r_ab129ac764e08cd8d96d15663094cd522"><td class="memItemLeft" align="right" valign="top"><a id="ab129ac764e08cd8d96d15663094cd522" name="ab129ac764e08cd8d96d15663094cd522"></a>
+replacement&#160;</td><td class="memItemRight" valign="bottom"><b>mdl</b>: '&lt;a class=&quot;el&quot; href=&quot;https: reason: 'Renamed' )] public function want_read_slave(): bool { <a class="el" href="../../dd/ddd/classcore_1_1deprecation.html#aa6a2a0314495a710cd681ca96146679d">core\deprecation::emit_deprecation_if_present</a>(__FUNCTION__)</td></tr>
+<tr class="separator:ab129ac764e08cd8d96d15663094cd522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaf43de9920ba1c39733621b137c9ab4" id="r_abaf43de9920ba1c39733621b137c9ab4"><td class="memItemLeft" align="right" valign="top"><a id="abaf43de9920ba1c39733621b137c9ab4" name="abaf43de9920ba1c39733621b137c9ab4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>return</b></td></tr>
+<tr class="separator:abaf43de9920ba1c39733621b137c9ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab673a3e287494dc101a752f9649bcf95" id="r_ab673a3e287494dc101a752f9649bcf95"><td class="memItemLeft" align="right" valign="top"><a id="ab673a3e287494dc101a752f9649bcf95" name="ab673a3e287494dc101a752f9649bcf95"></a>
+replacement&#160;</td><td class="memItemRight" valign="bottom"><b>since</b>: '5.0'</td></tr>
+<tr class="separator:ab673a3e287494dc101a752f9649bcf95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -2209,7 +2231,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Returns the localised database description Note: can be used before <a class="el" href="../../d3/d6e/classmoodle__database.html#a76f184b06a2c39fa93a89926d9777a54" title="Connects to the database.">connect()</a> </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000364">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000370">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td></td></tr>
@@ -3403,7 +3425,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000116">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-30407" class="el">MDL-30407</a> MUST_EXIST option should not throw a <a class="el" href="../../d5/d5c/classdml__exception.html" title="DML exception class, use instead of throw new moodle_exception() in dml code.">dml_exception</a>, it should throw a different exception as it's a requested check. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000124">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-30407" class="el">MDL-30407</a> MUST_EXIST option should not throw a <a class="el" href="../../d5/d5c/classdml__exception.html" title="DML exception class, use instead of throw new moodle_exception() in dml code.">dml_exception</a>, it should throw a different exception as it's a requested check. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">mixed</td><td>a fieldset object containing the first matching record, false or exception if error not found depending on mode </td></tr>
@@ -5521,8 +5543,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 
 </div>
 </div>
-<a id="aaeba8310bf78fca46d35d16aee397b18" name="aaeba8310bf78fca46d35d16aee397b18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaeba8310bf78fca46d35d16aee397b18">&#9670;&#160;</a></span>perf_get_reads_slave()</h2>
+<a id="aede2b6f470152fcb31b1011e4a0a3c9d" name="aede2b6f470152fcb31b1011e4a0a3c9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aede2b6f470152fcb31b1011e4a0a3c9d">&#9670;&#160;</a></span>perf_get_reads_replica()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5531,7 +5553,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">moodle_database::perf_get_reads_slave </td>
+          <td class="memname">moodle_database::perf_get_reads_replica </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -6601,7 +6623,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Enable/disable detailed sql logging. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000365">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.9 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000371">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.9 </dd></dl>
 
 </div>
 </div>
@@ -6879,7 +6901,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Returns the SQL to be used in order to an UNSIGNED INTEGER column to SIGNED. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000368">Deprecated</a></b></dt><dd>since 2.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000378">Deprecated</a></b></dt><dd>since 2.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$fieldname</td><td>The name of the field to be cast </td></tr>
@@ -7230,7 +7252,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>This used to return empty string replacement character. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000367">Deprecated</a></b></dt><dd>use bound parameter with empty string instead</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000373">Deprecated</a></b></dt><dd>use bound parameter with empty string instead</dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>An empty string. </td></tr>
@@ -7334,7 +7356,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Returns the proper SQL (for the dbms in use) to concatenate $firstname and $lastname. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000117">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-31233" class="el">MDL-31233</a> This may not be needed here.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000125">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-31233" class="el">MDL-31233</a> This may not be needed here.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$first</td><td>User's first name (default:'firstname'). </td></tr>
@@ -8486,8 +8508,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 
 </div>
 </div>
-<a id="aa517abd896e144bc397e5ccb061c3ce2" name="aa517abd896e144bc397e5ccb061c3ce2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa517abd896e144bc397e5ccb061c3ce2">&#9670;&#160;</a></span>want_read_slave()</h2>
+<a id="af3edae032155bebcb42baaa3a97d8a34" name="af3edae032155bebcb42baaa3a97d8a34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3edae032155bebcb42baaa3a97d8a34">&#9670;&#160;</a></span>want_read_replica()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8496,7 +8518,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">moodle_database::want_read_slave </td>
+          <td class="memname">moodle_database::want_read_replica </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -8509,10 +8531,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </table>
 </div><div class="memdoc">
 
-<p>Returns whether we want to connect to slave database for read queries. </p>
+<p>Returns whether we want to connect to replica database for read queries. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">bool</td><td>Want read only connection </td></tr>
+    <tr><td class="paramname">bool</td><td>Want read only connection. </td></tr>
   </table>
   </dd>
 </dl>
@@ -8664,13 +8686,77 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 
 </div>
 </div>
+<a id="acd93a51ea24daa4c930d2fb4a45f83a1" name="acd93a51ea24daa4c930d2fb4a45f83a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd93a51ea24daa4c930d2fb4a45f83a1">&#9670;&#160;</a></span>__pad0__</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">replacement moodle_database::__pad0__</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns whether we want to connect to slave database for read queries. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>Want read only connection </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000374">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0. See <a href="https://tracker.moodle.org/browse/MDL-71257" class="el">MDL-71257</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000126">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-83171" class="el">MDL-83171</a>. </dd></dl>
+
+</div>
+</div>
+<a id="afc94d1b2b078d795a08fc9e51cb4dda8" name="afc94d1b2b078d795a08fc9e51cb4dda8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc94d1b2b078d795a08fc9e51cb4dda8">&#9670;&#160;</a></span>__pad1__</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">replacement moodle_database::__pad1__</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of reads before first write done by this database. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td>Number of reads. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000375">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000127">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-83171" class="el">MDL-83171</a>. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>lib/dml/<b>auroramysql_native_moodle_database.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 17 2024 03:07:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Nov 24 2024 03:10:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241115) (269a8a8a1b3)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241122) (505a85eb9ae)</div>
   </td>
  </tr>
  </tbody>
@@ -189,6 +189,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aecfc5742d16113b5045e74089d29af5d" id="r_aecfc5742d16113b5045e74089d29af5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#aecfc5742d16113b5045e74089d29af5d">get_format_string</a> (string $key, $data=null)</td></tr>
 <tr class="memdesc:aecfc5742d16113b5045e74089d29af5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the proper format plugin string if it exists.  <br /></td></tr>
 <tr class="separator:aecfc5742d16113b5045e74089d29af5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a974f1077f4fd58b40d15352f7d8be16d" id="r_a974f1077f4fd58b40d15352f7d8be16d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a974f1077f4fd58b40d15352f7d8be16d">get_generic_section_name</a> ()</td></tr>
+<tr class="memdesc:a974f1077f4fd58b40d15352f7d8be16d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the generic name for sections in this course format.  <br /></td></tr>
+<tr class="separator:a974f1077f4fd58b40d15352f7d8be16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f95b73922f79e67198dfe3f271514d0" id="r_a7f95b73922f79e67198dfe3f271514d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a7f95b73922f79e67198dfe3f271514d0">get_last_section_number</a> ()</td></tr>
 <tr class="memdesc:a7f95b73922f79e67198dfe3f271514d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method used in the rendered and during backup instead of legacy 'numsections'.  <br /></td></tr>
 <tr class="separator:a7f95b73922f79e67198dfe3f271514d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1829,6 +1832,39 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
 
 </div>
 </div>
+<a id="a974f1077f4fd58b40d15352f7d8be16d" name="a974f1077f4fd58b40d15352f7d8be16d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a974f1077f4fd58b40d15352f7d8be16d">&#9670;&#160;</a></span>get_generic_section_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\base::get_generic_section_name </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the generic name for sections in this course format. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a7f95b73922f79e67198dfe3f271514d0" name="a7f95b73922f79e67198dfe3f271514d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f95b73922f79e67198dfe3f271514d0">&#9670;&#160;</a></span>get_last_section_number()</h2>
 
@@ -2288,8 +2324,8 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000072">Deprecated</a></b></dt><dd>Since 4.4. Use get_sectionnum instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000033">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80116" class="el">MDL-80116</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000078">Deprecated</a></b></dt><dd>Since 4.4. Use get_sectionnum instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000041">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80116" class="el">MDL-80116</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8. </dd></dl>
 
 </div>
 </div>
@@ -2702,7 +2738,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 </div><div class="memdoc">
 
 <p>Returns an instance of the class. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000031">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-35727" class="el">MDL-35727</a> use MUC for caching of instances, limit the number of cached instances</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000039">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-35727" class="el">MDL-35727</a> use MUC for caching of instances, limit the number of cached instances</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int&#160;|&#160;stdClass</td><td class="paramname">$courseorid</td><td>either course id or an object that has the property 'format' and may contain property 'id' </td></tr>
@@ -3410,8 +3446,8 @@ course_modinfo::get_section_info_all()</dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000071">Deprecated</a></b></dt><dd>Since 4.4. Use set_sectionnum instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000032">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80116" class="el">MDL-80116</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000077">Deprecated</a></b></dt><dd>Since 4.4. Use set_sectionnum instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000040">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80116" class="el">MDL-80116</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8. </dd></dl>
 
 </div>
 </div>
@@ -3671,7 +3707,7 @@ course_modinfo::get_section_info_all()</dd></dl>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d0/d97/classformat__legacy.html#a3f6a22452ed79af4df1443bd8ec82a67">format_legacy</a>, <a class="el" href="../../de/d63/classformat__social.html#ac8a7b535b3e2135429faafe6fb4bfa65">format_social</a>, <a class="el" href="../../d1/d92/classformat__topics.html#a70826be053e47b3e38103ad4f31aa1bd">format_topics</a>, and <a class="el" href="../../d5/d8d/classformat__weeks.html#a0c9837cdae52637a0bef62945d7c3dfb">format_weeks</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d0/d97/classformat__legacy.html#a3f6a22452ed79af4df1443bd8ec82a67">format_legacy</a>, <a class="el" href="../../d2/df0/classformat__site.html#a482464d08e0d493484f6b92564b43893">format_site</a>, <a class="el" href="../../de/d63/classformat__social.html#ac8a7b535b3e2135429faafe6fb4bfa65">format_social</a>, <a class="el" href="../../d1/d92/classformat__topics.html#a70826be053e47b3e38103ad4f31aa1bd">format_topics</a>, and <a class="el" href="../../d5/d8d/classformat__weeks.html#a0c9837cdae52637a0bef62945d7c3dfb">format_weeks</a>.</p>
 
 </div>
 </div>
@@ -3707,7 +3743,7 @@ course_modinfo::get_section_info_all()</dd></dl>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d1/d92/classformat__topics.html#acd4c0dfc2c5839b22e916e07988da484">format_topics</a>, and <a class="el" href="../../d5/d8d/classformat__weeks.html#abebdba2efc027800c22c68ff7f9f5d70">format_weeks</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d2/df0/classformat__site.html#a5671579111fb1f08b89387fafd39d017">format_site</a>, <a class="el" href="../../d1/d92/classformat__topics.html#acd4c0dfc2c5839b22e916e07988da484">format_topics</a>, and <a class="el" href="../../d5/d8d/classformat__weeks.html#abebdba2efc027800c22c68ff7f9f5d70">format_weeks</a>.</p>
 
 </div>
 </div>
@@ -3983,7 +4019,7 @@ course_modinfo::get_section_info_all()</dd></dl>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d0/d97/classformat__legacy.html#af30cd0c319e2a522ec4f38acc1cdc91c">format_legacy</a>, <a class="el" href="../../d1/d92/classformat__topics.html#a16e6cbe96e9d977833e91a1b3c9d4b00">format_topics</a>, and <a class="el" href="../../d5/d8d/classformat__weeks.html#ab903d76f9ce88d542e654680e47cd551">format_weeks</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d0/d97/classformat__legacy.html#af30cd0c319e2a522ec4f38acc1cdc91c">format_legacy</a>, <a class="el" href="../../d2/df0/classformat__site.html#a41f6a0a8b4065325d0b435f99c86299f">format_site</a>, <a class="el" href="../../d1/d92/classformat__topics.html#a16e6cbe96e9d977833e91a1b3c9d4b00">format_topics</a>, and <a class="el" href="../../d5/d8d/classformat__weeks.html#ab903d76f9ce88d542e654680e47cd551">format_weeks</a>.</p>
 
 </div>
 </div>
@@ -4103,7 +4139,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 17 2024 03:08:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Nov 24 2024 03:10:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>
