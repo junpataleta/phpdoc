@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241122) (505a85eb9ae)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241129) (a798b1db394)</div>
   </td>
  </tr>
  </tbody>
@@ -84,6 +84,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aecba1b768b2cc97ff9a4f6ce7f209f24" id="r_aecba1b768b2cc97ff9a4f6ce7f209f24"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecba1b768b2cc97ff9a4f6ce7f209f24">add_members_to_group</a> (<a class="el" href="../../da/dfc/classcore__group_1_1hook_1_1after__group__membership__added.html">after_group_membership_added</a> $hook,)</td></tr>
 <tr class="memdesc:aecba1b768b2cc97ff9a4f6ce7f209f24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add members to group room when a new member is added to the group.  <br /></td></tr>
 <tr class="separator:aecba1b768b2cc97ff9a4f6ce7f209f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5e611b59091537906f1eb93a84434ec" id="r_ae5e611b59091537906f1eb93a84434ec"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5e611b59091537906f1eb93a84434ec">before_course_viewed</a> (<a class="el" href="../../d7/df9/classcore__course_1_1hook_1_1before__course__viewed.html">before_course_viewed</a> $hook)</td></tr>
+<tr class="memdesc:ae5e611b59091537906f1eb93a84434ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redirect to external course url using the before_course_viewed hook.  <br /></td></tr>
+<tr class="separator:ae5e611b59091537906f1eb93a84434ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a0e54fd5cdb58c93d858849ba86553e" id="r_a2a0e54fd5cdb58c93d858849ba86553e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a0e54fd5cdb58c93d858849ba86553e">remove_members_from_group</a> (<a class="el" href="../../d8/d01/classcore__group_1_1hook_1_1after__group__membership__removed.html">after_group_membership_removed</a> $hook,)</td></tr>
 <tr class="memdesc:a2a0e54fd5cdb58c93d858849ba86553e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove members from the room when a member is removed from group room.  <br /></td></tr>
 <tr class="separator:a2a0e54fd5cdb58c93d858849ba86553e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,6 +119,39 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">after_group_membership_added</td><td class="paramname">$hook</td><td>The group membership added hook. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae5e611b59091537906f1eb93a84434ec" name="ae5e611b59091537906f1eb93a84434ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5e611b59091537906f1eb93a84434ec">&#9670;&#160;</a></span>before_course_viewed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_courseformat\hook_listener::before_course_viewed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/df9/classcore__course_1_1hook_1_1before__course__viewed.html">before_course_viewed</a></td>          <td class="paramname"><span class="paramname"><em>$hook</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Redirect to external course url using the before_course_viewed hook. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">before_course_viewed</td><td class="paramname">$hook</td><td>The hook object containing course data. </td></tr>
   </table>
   </dd>
 </dl>
@@ -161,7 +197,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 24 2024 03:11:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Dec 1 2024 03:26:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

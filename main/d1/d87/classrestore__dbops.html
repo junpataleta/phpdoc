@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241122) (505a85eb9ae)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241129) (a798b1db394)</div>
   </td>
  </tr>
  </tbody>
@@ -147,9 +147,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>load_roles_to_tempi
 <tr class="memitem:ad29218c85473f5dea778381a2dbf752a" id="r_ad29218c85473f5dea778381a2dbf752a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad29218c85473f5dea778381a2dbf752a">reset_backup_ids_cached</a> ()</td></tr>
 <tr class="memdesc:ad29218c85473f5dea778381a2dbf752a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the ids caches completely.  <br /></td></tr>
 <tr class="separator:ad29218c85473f5dea778381a2dbf752a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae571dbb09d7879a055b5416578188d3" id="r_aae571dbb09d7879a055b5416578188d3"><td class="memItemLeft" align="right" valign="top"><a id="aae571dbb09d7879a055b5416578188d3" name="aae571dbb09d7879a055b5416578188d3"></a>
-static&#160;</td><td class="memItemRight" valign="bottom"><b>restore_find_best_target_context</b> ($categories, $courseid, $contextlevel)</td></tr>
-<tr class="memdesc:aae571dbb09d7879a055b5416578188d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the best context found to restore one collection of qcats, al them belonging to the same context (question bank), returning the target context found (object) or false. <br /></td></tr>
+<tr class="memitem:aae571dbb09d7879a055b5416578188d3" id="r_aae571dbb09d7879a055b5416578188d3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae571dbb09d7879a055b5416578188d3">restore_find_best_target_context</a> ($categories, $courseid, $contextlevel)</td></tr>
+<tr class="memdesc:aae571dbb09d7879a055b5416578188d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the best existing context to restore one collection of qcats.  <br /></td></tr>
 <tr class="separator:aae571dbb09d7879a055b5416578188d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec2d4f5a8c9d0df3cd4418b3d718dff4" id="r_aec2d4f5a8c9d0df3cd4418b3d718dff4"><td class="memItemLeft" align="right" valign="top"><a id="aec2d4f5a8c9d0df3cd4418b3d718dff4" name="aec2d4f5a8c9d0df3cd4418b3d718dff4"></a>
 static&#160;</td><td class="memItemRight" valign="bottom"><b>restore_get_question_banks</b> ($restoreid, $contextlevel=null)</td></tr>
@@ -401,7 +400,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>get_best_assignable
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000014">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-25290" class="el">MDL-25290</a> replace static backupids* with MUC code </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000016">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-25290" class="el">MDL-25290</a> replace static backupids* with MUC code </dd></dl>
 
 </div>
 </div>
@@ -805,7 +804,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>get_best_assignable
 </div><div class="memdoc">
 
 <p>This function will process all the question banks present in restore at some contextlevel (from CONTEXT_SYSTEM to CONTEXT_MODULE), finding the target contexts where each bank will be restored and returning warnings/errors as needed. </p>
-<p>Some contextlevels (system, coursecat), will delegate process to course level if any problem is found (lack of permissions, non-matching target context...). Other contextlevels (course, module) will cause return error if some problem is found.</p>
+<p>Question categories at CONTEXT_SYSTEM, CONTEXT_COURSE, and CONTEXT_COURSECAT are now deprecated, but we still have to account for them in backup files made with pre-deprecated code. As such, any categories in backup files that used to target these contexts will now be attached to a 'fallback' qbank instance on the course being restored.</p>
 <p>At the end, if no errors were found, all the categories in backup_temp_ids will be pointing (parentitemid) to the target context where they must be created later in the restore process.</p>
 <p>Note: at the time these prechecks are executed, activities haven't been created yet so, for CONTEXT_MODULE banks, we keep the old contextid in the parentitemid field. Once the activity (and its context) has been created, we'll update that context in the required qcats</p>
 <p>Caller <a class="el" href="#a1fd3e17ef77aecd29911b1d129e2cd12">precheck_categories_and_questions</a> will, simply, execute this function for all the contextlevels, acting as a simple controller of warnings and errors.</p>
@@ -1001,7 +1000,58 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>get_best_assignable
 <p>Reset the ids caches completely. </p>
 <p>Any destructive operation (partial delete, truncate, drop or recreate) performed with the backup_ids table must cause the backup_ids caches to be invalidated by calling this method. See <a href="https://tracker.moodle.org/browse/MDL-33630" class="el">MDL-33630</a>.</p>
 <p>Note that right now, the only operation of that type is the recreation (drop &amp; restore) of the table that may happen once the prechecks have ended. All the rest of operations are always routed via <a class="el" href="#a664593a34d479e20680a1df379b023c2">set_backup_ids_record()</a>, 1 by 1, keeping the caches on sync.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000016">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-25290" class="el">MDL-25290</a> static should be replaced with MUC code. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000018">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-25290" class="el">MDL-25290</a> static should be replaced with MUC code. </dd></dl>
+
+</div>
+</div>
+<a id="aae571dbb09d7879a055b5416578188d3" name="aae571dbb09d7879a055b5416578188d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae571dbb09d7879a055b5416578188d3">&#9670;&#160;</a></span>restore_find_best_target_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static restore_dbops::restore_find_best_target_context </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$categories</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$courseid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$contextlevel</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the best existing context to restore one collection of qcats. </p>
+<p>Uses the backup category stamp to match the target category stamp and categories must all belong to the same context (question bank).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$categories</td><td>categories to find target context for </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td>course to restore to </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$contextlevel</td><td>contextlevel to search for the target context </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool|core::context</td><td>target context or false if no target context found </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1207,7 +1257,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>get_best_assignable
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000015">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-25290" class="el">MDL-25290</a> replace static BACKUP_IDS_* with MUC code </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000017">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-25290" class="el">MDL-25290</a> replace static BACKUP_IDS_* with MUC code </dd></dl>
 
 </div>
 </div>
@@ -1267,7 +1317,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>get_best_assignable
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 24 2024 03:11:04 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Dec 1 2024 03:26:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

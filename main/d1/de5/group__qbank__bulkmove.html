@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241122) (505a85eb9ae)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241129) (a798b1db394)</div>
   </td>
  </tr>
  </tbody>
@@ -71,6 +71,7 @@ $(function(){ initResizable(false); });
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">qbank_bulkmove</div></div>
 </div><!--header-->
@@ -94,12 +95,21 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dae/classqbank__bulkmove_1_1helper.html">qbank_bulkmove\helper</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6d/classqbank__bulkmove_1_1output_1_1bulk__move.html">qbank_bulkmove\output\bulk_move</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output class to create a modal template with selects for question banks, question categories, and a move button.  <a href="../../de/d6d/classqbank__bulkmove_1_1output_1_1bulk__move.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d83/classqbank__bulkmove_1_1output_1_1renderer.html">qbank_bulkmove\output\renderer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/db3/classqbank__bulkmove_1_1plugin__feature.html">qbank_bulkmove\plugin_feature</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4d/classqbank__bulkmove_1_1privacy_1_1provider.html">qbank_bulkmove\privacy\provider</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga96a24de6fcf0362b727224dcc44566c7" id="r_ga96a24de6fcf0362b727224dcc44566c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga96a24de6fcf0362b727224dcc44566c7">qbank_bulkmove_output_fragment_bulk_move</a> (array $args)</td></tr>
+<tr class="memdesc:ga96a24de6fcf0362b727224dcc44566c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the bulkmove bank and category chooser for display in the modal.  <br /></td></tr>
+<tr class="separator:ga96a24de6fcf0362b727224dcc44566c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -113,14 +123,46 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>component</b> = 'q
 $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>maturity</b> = MATURITY_STABLE</td></tr>
 <tr class="separator:ga32ceacc498b265853073aba2281015e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92a3fd99b37c9cbd65c4aead816b3a83" id="r_ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memItemLeft" align="right" valign="top"><a id="ga92a3fd99b37c9cbd65c4aead816b3a83" name="ga92a3fd99b37c9cbd65c4aead816b3a83"></a>
-$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024100700</td></tr>
+$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024100800</td></tr>
 <tr class="separator:ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga96a24de6fcf0362b727224dcc44566c7" name="ga96a24de6fcf0362b727224dcc44566c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga96a24de6fcf0362b727224dcc44566c7">&#9670;&#160;</a></span>qbank_bulkmove_output_fragment_bulk_move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">qbank_bulkmove_output_fragment_bulk_move </td>
+          <td>(</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$args</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generates the bulkmove bank and category chooser for display in the modal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$args</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool|string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 24 2024 03:09:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Dec 1 2024 03:25:09 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241122) (505a85eb9ae)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241129) (a798b1db394)</div>
   </td>
  </tr>
  </tbody>
@@ -154,6 +154,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab9ee1f6463de9f4bb57c644788a5cf44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5208937fbe9b4b086b06bab07a2b6cf" id="r_aa5208937fbe9b4b086b06bab07a2b6cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5208937fbe9b4b086b06bab07a2b6cf">has_view</a> ()</td></tr>
 <tr class="separator:aa5208937fbe9b4b086b06bab07a2b6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a163d6bc9363a2d58584858098aea50f5" id="r_a163d6bc9363a2d58584858098aea50f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a163d6bc9363a2d58584858098aea50f5">is_of_type_that_can_display</a> ()</td></tr>
+<tr class="memdesc:a163d6bc9363a2d58584858098aea50f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this method if you want to check if the plugin overrides any visibility checks to block rendering to the display.  <br /></td></tr>
+<tr class="separator:a163d6bc9363a2d58584858098aea50f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7709ccac98a65be14d6700859477157a" id="r_a7709ccac98a65be14d6700859477157a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7709ccac98a65be14d6700859477157a">is_stealth</a> ()</td></tr>
 <tr class="memdesc:a7709ccac98a65be14d6700859477157a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this module is available but hidden from course page.  <br /></td></tr>
 <tr class="separator:a7709ccac98a65be14d6700859477157a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -989,6 +992,31 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_VIEW</b> = 4</
 
 </div>
 </div>
+<a id="a163d6bc9363a2d58584858098aea50f5" name="a163d6bc9363a2d58584858098aea50f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a163d6bc9363a2d58584858098aea50f5">&#9670;&#160;</a></span>is_of_type_that_can_display()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cm_info::is_of_type_that_can_display </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Use this method if you want to check if the plugin overrides any visibility checks to block rendering to the display. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a7709ccac98a65be14d6700859477157a" name="a7709ccac98a65be14d6700859477157a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7709ccac98a65be14d6700859477157a">&#9670;&#160;</a></span>is_stealth()</h2>
 
@@ -1056,7 +1084,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_VIEW</b> = 4</
 </div><div class="memdoc">
 
 <p>Checks whether the module's conditional access settings mean that the user cannot see the activity at all. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000505">Deprecated</a></b></dt><dd>since 2.7 <a href="https://tracker.moodle.org/browse/MDL-44070" class="el">MDL-44070</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000514">Deprecated</a></b></dt><dd>since 2.7 <a href="https://tracker.moodle.org/browse/MDL-44070" class="el">MDL-44070</a> </dd></dl>
 
 </div>
 </div>
@@ -1077,7 +1105,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_VIEW</b> = 4</
 
 <p>This method has been deprecated and should not be used. </p>
 <dl class="section see"><dt>See also</dt><dd>$uservisible </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000504">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000513">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 </dd></dl>
 
 </div>
 </div>
@@ -1493,7 +1521,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_VIEW</b> = 4</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 24 2024 03:10:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Dec 1 2024 03:25:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

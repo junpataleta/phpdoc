@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241122) (505a85eb9ae)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241129) (a798b1db394)</div>
   </td>
  </tr>
  </tbody>
@@ -74,6 +74,7 @@ $(function(){ initResizable(false); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="../../da/dc4/classcore__courseformat_1_1output_1_1local_1_1content_1_1cm_1_1completion-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">core_courseformat\output\local\content\cm\completion Class Reference<div class="ingroups"><a class="el" href="../../db/d92/group__core__courseformat.html">core_courseformat</a></div></div></div>
 </div><!--header-->
@@ -103,6 +104,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a374ca790bd411fad026cdb4d5a46c2e8" id="r_a374ca790bd411fad026cdb4d5a46c2e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df6/interfacecore_1_1output_1_1named__templatable.html#a374ca790bd411fad026cdb4d5a46c2e8">get_template_name</a> (renderer_base $renderer)</td></tr>
 <tr class="memdesc:a374ca790bd411fad026cdb4d5a46c2e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the template to use for this templatable.  <br /></td></tr>
 <tr class="separator:a374ca790bd411fad026cdb4d5a46c2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a34799aec89ccf69f94451b8b46025389" id="r_a34799aec89ccf69f94451b8b46025389"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34799aec89ccf69f94451b8b46025389">get_completion_dialog</a> (\renderer_base $output, stdClass $completioninfo)</td></tr>
+<tr class="memdesc:a34799aec89ccf69f94451b8b46025389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the completion dialog.  <br /></td></tr>
+<tr class="separator:a34799aec89ccf69f94451b8b46025389"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4b47d03ea4b8cb5c146f17e1d80da900" name="a4b47d03ea4b8cb5c146f17e1d80da900"></a>
@@ -218,6 +225,50 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a34799aec89ccf69f94451b8b46025389" name="a34799aec89ccf69f94451b8b46025389"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34799aec89ccf69f94451b8b46025389">&#9670;&#160;</a></span>get_completion_dialog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\output\local\content\cm\completion::get_completion_dialog </td>
+          <td>(</td>
+          <td class="paramtype">\renderer_base</td>          <td class="paramname"><span class="paramname"><em>$output</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$completioninfo</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the completion dialog. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">renderer_base</td><td class="paramname">$output</td><td>typically, the renderer that's calling this function </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$completioninfo</td><td>the completion info </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>the completion dialog exported for template </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a374ca790bd411fad026cdb4d5a46c2e8" name="a374ca790bd411fad026cdb4d5a46c2e8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a374ca790bd411fad026cdb4d5a46c2e8">&#9670;&#160;</a></span>get_template_name()</h2>
 
@@ -265,7 +316,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 24 2024 03:11:44 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Dec 1 2024 03:26:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241122) (505a85eb9ae)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241129) (a798b1db394)</div>
   </td>
  </tr>
  </tbody>
@@ -90,6 +90,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae7645368f93c6c80c9caa3c073ca110b" id="r_ae7645368f93c6c80c9caa3c073ca110b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7645368f93c6c80c9caa3c073ca110b">get_condition_classes</a> ()</td></tr>
 <tr class="memdesc:ae7645368f93c6c80c9caa3c073ca110b"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of condition classes.  <br /></td></tr>
 <tr class="separator:ae7645368f93c6c80c9caa3c073ca110b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af24d9e7c0b22f3456ad2c55439c5f3e4" id="r_af24d9e7c0b22f3456ad2c55439c5f3e4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af24d9e7c0b22f3456ad2c55439c5f3e4">get_default_filter</a> (string $catstring)</td></tr>
+<tr class="memdesc:af24d9e7c0b22f3456ad2c55439c5f3e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide a category-context string to get a default filter array for the category.  <br /></td></tr>
+<tr class="separator:af24d9e7c0b22f3456ad2c55439c5f3e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1359fa4bd9e5a2874ed3bfb572eea5ff" id="r_a1359fa4bd9e5a2874ed3bfb572eea5ff"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1359fa4bd9e5a2874ed3bfb572eea5ff">unpack_filteroptions_param</a> (array $filters)</td></tr>
 <tr class="memdesc:a1359fa4bd9e5a2874ed3bfb572eea5ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpack filteroptions passed in a request's filter param if required.  <br /></td></tr>
 <tr class="separator:a1359fa4bd9e5a2874ed3bfb572eea5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,6 +169,45 @@ Static Public Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">condition[]</td><td>condition classes: [condition_key] = class </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af24d9e7c0b22f3456ad2c55439c5f3e4" name="af24d9e7c0b22f3456ad2c55439c5f3e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af24d9e7c0b22f3456ad2c55439c5f3e4">&#9670;&#160;</a></span>get_default_filter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_question\local\bank\filter_condition_manager::get_default_filter </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$catstring</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Provide a category-context string to get a default filter array for the category. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$catstring</td><td>in format '1,2' or 'categoryid,contextid' </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -262,7 +304,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 24 2024 03:11:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Dec 1 2024 03:26:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

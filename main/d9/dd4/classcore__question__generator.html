@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241122) (505a85eb9ae)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241129) (a798b1db394)</div>
   </td>
  </tr>
  </tbody>
@@ -109,9 +109,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aad7e9e8186f21d20e8e23b7b7f3948f5" id="r_aad7e9e8186f21d20e8e23b7b7f3948f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad7e9e8186f21d20e8e23b7b7f3948f5">reset</a> ()</td></tr>
 <tr class="memdesc:aad7e9e8186f21d20e8e23b7b7f3948f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make the category count to zero.  <br /></td></tr>
 <tr class="separator:aad7e9e8186f21d20e8e23b7b7f3948f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19a898c802cafbfd6f377691f79a7260" id="r_a19a898c802cafbfd6f377691f79a7260"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19a898c802cafbfd6f377691f79a7260">setup_course_and_questions</a> ($type='course')</td></tr>
-<tr class="memdesc:a19a898c802cafbfd6f377691f79a7260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup a course category, course, a question category, and 2 questions for testing.  <br /></td></tr>
-<tr class="separator:a19a898c802cafbfd6f377691f79a7260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0a014d40d90804e53cbba98d3bcc326" id="r_ae0a014d40d90804e53cbba98d3bcc326"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0a014d40d90804e53cbba98d3bcc326">setup_course_and_questions</a> ()</td></tr>
+<tr class="memdesc:ae0a014d40d90804e53cbba98d3bcc326"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up a course category, a course, a mod_qbank instance, a question category for the mod_qbank instance, and 2 questions for testing.  <br /></td></tr>
+<tr class="separator:ae0a014d40d90804e53cbba98d3bcc326"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3dced674016b34868b32a891a18d034" id="r_af3dced674016b34868b32a891a18d034"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3dced674016b34868b32a891a18d034">update_question</a> ($question, $which=null, $overrides=null)</td></tr>
 <tr class="memdesc:af3dced674016b34868b32a891a18d034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update an existing question.  <br /></td></tr>
 <tr class="separator:af3dced674016b34868b32a891a18d034"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -455,8 +455,8 @@ testing_data_generator&#160;</td><td class="memItemRight" valign="bottom"><b>$da
 
 </div>
 </div>
-<a id="a19a898c802cafbfd6f377691f79a7260" name="a19a898c802cafbfd6f377691f79a7260"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19a898c802cafbfd6f377691f79a7260">&#9670;&#160;</a></span>setup_course_and_questions()</h2>
+<a id="ae0a014d40d90804e53cbba98d3bcc326" name="ae0a014d40d90804e53cbba98d3bcc326"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0a014d40d90804e53cbba98d3bcc326">&#9670;&#160;</a></span>setup_course_and_questions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -464,22 +464,16 @@ testing_data_generator&#160;</td><td class="memItemRight" valign="bottom"><b>$da
         <tr>
           <td class="memname">core_question_generator::setup_course_and_questions </td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$type</em></span><span class="paramdefsep"> = </span><span class="paramdefval">'course'</span></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Setup a course category, course, a question category, and 2 questions for testing. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$type</td><td>The type of question category to create. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Set up a course category, a course, a mod_qbank instance, a question category for the mod_qbank instance, and 2 questions for testing. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td>The created data objects </td></tr>
+    <tr><td class="paramname">array</td><td>of the data objects mentioned above </td></tr>
   </table>
   </dd>
 </dl>
@@ -534,7 +528,7 @@ testing_data_generator&#160;</td><td class="memItemRight" valign="bottom"><b>$da
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 24 2024 03:10:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Dec 1 2024 03:25:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

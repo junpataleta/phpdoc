@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241122) (505a85eb9ae)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241129) (a798b1db394)</div>
   </td>
  </tr>
  </tbody>
@@ -214,6 +214,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db0/classcore__course_1_1hook_1_1before__activitychooserbutton__exported.html">core_course\hook\before_activitychooserbutton_exported</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d93/classcore__course_1_1hook_1_1before__course__deleted.html">core_course\hook\before_course_deleted</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df9/classcore__course_1_1hook_1_1before__course__viewed.html">core_course\hook\before_course_viewed</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">External course redirect hook before_course_viewed.  <a href="../../d7/df9/classcore__course_1_1hook_1_1before__course__viewed.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d93/classcore__course_1_1local_1_1factory_1_1content__item__service__factory.html">core_course\local\factory\content_item_service_factory</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class service_factory, providing functions for location of service objects for course content items.  <a href="../../d2/d93/classcore__course_1_1local_1_1factory_1_1content__item__service__factory.html#details">More...</a><br /></td></tr>
@@ -435,9 +438,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gae96140dba26150064ddbd53c38c7c1e3" id="r_gae96140dba26150064ddbd53c38c7c1e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae96140dba26150064ddbd53c38c7c1e3">core_courseformat_output_fragment_section</a> ($args)</td></tr>
 <tr class="memdesc:gae96140dba26150064ddbd53c38c7c1e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Section fragment renderer method.  <br /></td></tr>
 <tr class="separator:gae96140dba26150064ddbd53c38c7c1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5f4ba7dd0feaf52507e49fdbe200dfb1" id="r_ga5f4ba7dd0feaf52507e49fdbe200dfb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5f4ba7dd0feaf52507e49fdbe200dfb1">course_add_cm_to_section</a> ($courseorid, $cmid, $sectionnum, $beforemod=null)</td></tr>
-<tr class="memdesc:ga5f4ba7dd0feaf52507e49fdbe200dfb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an existing module to the section.  <br /></td></tr>
-<tr class="separator:ga5f4ba7dd0feaf52507e49fdbe200dfb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga332b136c1e42263c109a23eb34c24802" id="r_ga332b136c1e42263c109a23eb34c24802"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga332b136c1e42263c109a23eb34c24802">course_add_cm_to_section</a> ($courseorid, $cmid, $sectionnum, $beforemod=null, string $modname='')</td></tr>
+<tr class="memdesc:ga332b136c1e42263c109a23eb34c24802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an existing module to the section.  <br /></td></tr>
+<tr class="separator:ga332b136c1e42263c109a23eb34c24802"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga85a577aae6da03064902800817b6f61a" id="r_ga85a577aae6da03064902800817b6f61a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga85a577aae6da03064902800817b6f61a">course_ajax_enabled</a> ($course)</td></tr>
 <tr class="memdesc:ga85a577aae6da03064902800817b6f61a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether course ajax should be enabled for the specified course.  <br /></td></tr>
 <tr class="separator:ga85a577aae6da03064902800817b6f61a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2084,8 +2087,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 
 </div>
 </div>
-<a id="ga5f4ba7dd0feaf52507e49fdbe200dfb1" name="ga5f4ba7dd0feaf52507e49fdbe200dfb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5f4ba7dd0feaf52507e49fdbe200dfb1">&#9670;&#160;</a></span>course_add_cm_to_section()</h2>
+<a id="ga332b136c1e42263c109a23eb34c24802" name="ga332b136c1e42263c109a23eb34c24802"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga332b136c1e42263c109a23eb34c24802">&#9670;&#160;</a></span>course_add_cm_to_section()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2108,7 +2111,12 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$beforemod</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$beforemod</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$modname</em></span><span class="paramdefsep"> = </span><span class="paramdefval">''</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2122,12 +2130,19 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
     <tr><td class="paramtype">int</td><td class="paramname">$cmid</td><td>id of the module already existing in course_modules table </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$sectionnum</td><td>relative number of the section (field course_sections.section) If section does not exist it will be created </td></tr>
     <tr><td class="paramtype">int&#160;|&#160;stdClass</td><td class="paramname">$beforemod</td><td>id or object with field id corresponding to the module before which the module needs to be included. Null for inserting in the end of the section </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$modname</td><td>Optional, name of the module in the modules table. We need to do some checks to see if this module type can be displayed to the course page. If not passed a <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> query will need to be run instead. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int</td><td>The course_sections ID where the module is inserted </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">moodle_exception</td><td>if a module that has feature flag FEATURE_CAN_DISPLAY set to false is attempted to be moved to a section number other than 0. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2972,6 +2987,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 
 <p>Returns the information about the ajax support in the given source format. </p>
 <p>The returned object's property (boolean)capable indicates that the course format supports <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> course ajax features.</p>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000114">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0 <a href="https://tracker.moodle.org/browse/MDL-82351" class="el">MDL-82351</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000054">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-83417" class="el">MDL-83417</a> Remove this function in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$format</td><td></td></tr>
@@ -7277,6 +7294,12 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.2 </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">coding_exception</td><td>if you try to set a section other than 0 on a module type that has feature flag FEATURE_CAN_DISPLAY set to false. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -8194,14 +8217,14 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 </div><div class="memdoc">
 
 <p>Number of courses to display when summaries are included. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000105">Deprecated</a></b></dt><dd>since 2.4, use $CFG-&gt;courseswithsummarieslimit instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000113">Deprecated</a></b></dt><dd>since 2.4, use $CFG-&gt;courseswithsummarieslimit instead. </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 24 2024 03:09:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Dec 1 2024 03:25:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

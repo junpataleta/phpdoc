@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241122) (505a85eb9ae)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241129) (a798b1db394)</div>
   </td>
  </tr>
  </tbody>
@@ -607,15 +607,15 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a8d5b895644dd554ccf18def3a1ad073d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc63752222f6e5ae162bf12d54dddb17" id="r_abc63752222f6e5ae162bf12d54dddb17"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc63752222f6e5ae162bf12d54dddb17">available_phases_list</a> ()</td></tr>
 <tr class="separator:abc63752222f6e5ae162bf12d54dddb17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9583089686aa893780510b61105910d4" id="r_a9583089686aa893780510b61105910d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9583089686aa893780510b61105910d4">get_participants_sql</a> ($musthavesubmission=false, $groupid=0)</td></tr>
-<tr class="memdesc:a9583089686aa893780510b61105910d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns SQL statement that can be used to fetch all actively enrolled participants in the workshop.  <br /></td></tr>
-<tr class="separator:a9583089686aa893780510b61105910d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f3d8328bd18a32c847b3d9233cd8c9b" id="r_a8f3d8328bd18a32c847b3d9233cd8c9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f3d8328bd18a32c847b3d9233cd8c9b">get_users_with_capability_sql</a> ($capability, $musthavesubmission, $groupid)</td></tr>
-<tr class="memdesc:a8f3d8328bd18a32c847b3d9233cd8c9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns SQL to fetch all enrolled users with the given capability in the current workshop.  <br /></td></tr>
-<tr class="separator:a8f3d8328bd18a32c847b3d9233cd8c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa40c68f356bb72cef195c68c8fee60d4" id="r_aa40c68f356bb72cef195c68c8fee60d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa40c68f356bb72cef195c68c8fee60d4">get_users_with_initial_filtering_sql_where</a> ()</td></tr>
-<tr class="memdesc:aa40c68f356bb72cef195c68c8fee60d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns SQL to fetch all enrolled users with the first name or last name.  <br /></td></tr>
-<tr class="separator:aa40c68f356bb72cef195c68c8fee60d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd385b46523c9810e7fa517043159798" id="r_abd385b46523c9810e7fa517043159798"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd385b46523c9810e7fa517043159798">build_sql</a> (array $sqlarray)</td></tr>
+<tr class="memdesc:abd385b46523c9810e7fa517043159798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build SQL string from array of clauses.  <br /></td></tr>
+<tr class="separator:abd385b46523c9810e7fa517043159798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4a7354ed4f50b0a54f7dbb14a8338f0" id="r_ac4a7354ed4f50b0a54f7dbb14a8338f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4a7354ed4f50b0a54f7dbb14a8338f0">get_users_with_capability</a> (array $capabilities, bool $musthavesubmission, int $groupid, int $limitfrom=0, int $limitnum=0)</td></tr>
+<tr class="memdesc:ac4a7354ed4f50b0a54f7dbb14a8338f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a replacement for the old get_users_with_capability_sql method.  <br /></td></tr>
+<tr class="separator:ac4a7354ed4f50b0a54f7dbb14a8338f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc7ec06d0bfd32711aa5f3dc95d5d6c2" id="r_adc7ec06d0bfd32711aa5f3dc95d5d6c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc7ec06d0bfd32711aa5f3dc95d5d6c2">get_users_with_initial_filtering_sql_where</a> (string $table)</td></tr>
+<tr class="memdesc:adc7ec06d0bfd32711aa5f3dc95d5d6c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns SQL to fetch all enrolled users with the first name or last name.  <br /></td></tr>
+<tr class="separator:adc7ec06d0bfd32711aa5f3dc95d5d6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91021dcfc32cba6537a8d41ee97ce81f" id="r_a91021dcfc32cba6537a8d41ee97ce81f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91021dcfc32cba6537a8d41ee97ce81f">log_convert_url</a> (moodle_url $fullurl)</td></tr>
 <tr class="memdesc:a91021dcfc32cba6537a8d41ee97ce81f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts absolute URL to relative URL needed by {.  <br /></td></tr>
 <tr class="separator:a91021dcfc32cba6537a8d41ee97ce81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1314,6 +1314,45 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$initialbarprefs</b>
 
 </div>
 </div>
+<a id="abd385b46523c9810e7fa517043159798" name="abd385b46523c9810e7fa517043159798"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd385b46523c9810e7fa517043159798">&#9670;&#160;</a></span>build_sql()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">workshop::build_sql </td>
+          <td>(</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$sqlarray</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Build SQL string from array of clauses. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$sqlarray</td><td>['select' =&gt; '', 'from' =&gt; '', 'join' =&gt; [], 'where' =&gt; [], 'sort' =&gt; ''] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a9d66fe4ec901e62b569946a3fe20d511" name="a9d66fe4ec901e62b569946a3fe20d511"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9d66fe4ec901e62b569946a3fe20d511">&#9670;&#160;</a></span>check_edit_assessment()</h2>
 
@@ -1522,7 +1561,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$initialbarprefs</b>
 </div><div class="memdoc">
 
 <p>Cleans the user provided list of file extensions. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001370">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001379">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$extensions</td><td></td></tr>
@@ -1858,7 +1897,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$initialbarprefs</b>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000345">Todo</a></b></dt><dd>Give grading strategy plugins a chance to clean up their data, too. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000356">Todo</a></b></dt><dd>Give grading strategy plugins a chance to clean up their data, too. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td>true </td></tr>
@@ -2757,50 +2796,6 @@ self::get_potential_reviewers() </dd></dl>
 
 </div>
 </div>
-<a id="a9583089686aa893780510b61105910d4" name="a9583089686aa893780510b61105910d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9583089686aa893780510b61105910d4">&#9670;&#160;</a></span>get_participants_sql()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">workshop::get_participants_sql </td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$musthavesubmission</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$groupid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns SQL statement that can be used to fetch all actively enrolled participants in the workshop. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">bool</td><td class="paramname">$musthavesubmission</td><td>if true, return only users who have already submitted </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$groupid</td><td>0 means ignore groups, any other value limits the result by group id </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">array</td><td>of (string)sql, (array)params </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="ae2fd1aa8fc99d8fda49f9e1e0799d8bd" name="ae2fd1aa8fc99d8fda49f9e1e0799d8bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae2fd1aa8fc99d8fda49f9e1e0799d8bd">&#9670;&#160;</a></span>get_pending_assessments_by_reviewer()</h2>
 
@@ -3073,8 +3068,8 @@ self::get_potential_reviewers() </dd></dl>
 
 </div>
 </div>
-<a id="a8f3d8328bd18a32c847b3d9233cd8c9b" name="a8f3d8328bd18a32c847b3d9233cd8c9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f3d8328bd18a32c847b3d9233cd8c9b">&#9670;&#160;</a></span>get_users_with_capability_sql()</h2>
+<a id="ac4a7354ed4f50b0a54f7dbb14a8338f0" name="ac4a7354ed4f50b0a54f7dbb14a8338f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4a7354ed4f50b0a54f7dbb14a8338f0">&#9670;&#160;</a></span>get_users_with_capability()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3083,19 +3078,29 @@ self::get_potential_reviewers() </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">workshop::get_users_with_capability_sql </td>
+          <td class="memname">workshop::get_users_with_capability </td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$capability</em></span>, </td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$capabilities</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$musthavesubmission</em></span>, </td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$musthavesubmission</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$groupid</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$groupid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$limitfrom</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$limitnum</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -3105,28 +3110,31 @@ self::get_potential_reviewers() </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Returns SQL to fetch all enrolled users with the given capability in the current workshop. </p>
-<p>The returned array consists of string $sql and the $params array. Note that the $sql can be empty if a grouping is selected and it has no groups.</p>
+<p>This is a replacement for the old get_users_with_capability_sql method. </p>
+<p>The old method returned huge amounts of SQL for large courses, potentially 10s of thousands of lines with hundreds of UNIONS, which caused some poor performance. This new method aims to streamline it all into one query.</p>
+<p>Gets users with any of the specified capabilities on the workshop activity.</p>
 <p>The list is automatically restricted according to any availability restrictions that apply to user lists (e.g. group, grouping restrictions).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$capability</td><td>the name of the capability </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$musthavesubmission</td><td>ff true, return only users who have already submitted </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$capabilities</td><td>array of capability names (If the user has ANY of them, it returns true for that user) </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$musthavesubmission</td><td>if true, return only users who have already submitted </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$groupid</td><td>0 means ignore groups, any other value limits the result by group id </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$limitfrom</td><td>return a subset of records, starting at this point (optional, required if $limitnum is set) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$limitnum</td><td>return a subset containing this number of records (optional, required if $limitfrom is set) </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td>of (string)sql, (array)params </td></tr>
+    <tr><td class="paramname">array</td><td>of users </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="aa40c68f356bb72cef195c68c8fee60d4" name="aa40c68f356bb72cef195c68c8fee60d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa40c68f356bb72cef195c68c8fee60d4">&#9670;&#160;</a></span>get_users_with_initial_filtering_sql_where()</h2>
+<a id="adc7ec06d0bfd32711aa5f3dc95d5d6c2" name="adc7ec06d0bfd32711aa5f3dc95d5d6c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc7ec06d0bfd32711aa5f3dc95d5d6c2">&#9670;&#160;</a></span>get_users_with_initial_filtering_sql_where()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3137,7 +3145,7 @@ self::get_potential_reviewers() </dd></dl>
         <tr>
           <td class="memname">workshop::get_users_with_initial_filtering_sql_where </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$table</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -3149,6 +3157,12 @@ self::get_potential_reviewers() </dd></dl>
 </div><div class="memdoc">
 
 <p>Returns SQL to fetch all enrolled users with the first name or last name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$table</td><td>Table alias for users table </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td></td></tr>
@@ -3383,7 +3397,7 @@ self::get_potential_reviewers() </dd></dl>
 
 <p>Check given file types and return invalid/unknown ones. </p>
 <p>Empty allowlist is interpretted as "any extension is valid".</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001371">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001380">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$extensions</td><td>list of file extensions </td></tr>
@@ -3429,7 +3443,7 @@ self::get_potential_reviewers() </dd></dl>
 
 <p>Is the file have allowed to be uploaded to the workshop? </p>
 <p>Empty allowlist is interpretted as "any file type is allowed" rather than "no file can be uploaded".</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001372">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001381">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$filename</td><td>the file name </td></tr>
@@ -3552,7 +3566,7 @@ self::get_potential_reviewers() </dd></dl>
 
 <p>Workshop wrapper around {. </p>
 <dl class="section see"><dt>See also</dt><dd>add_to_log()} </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001373">Deprecated</a></b></dt><dd>since 2.7 Please use the provided event classes for logging actions.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001382">Deprecated</a></b></dt><dd>since 2.7 Please use the provided event classes for logging actions.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>to be logged </td></tr>
@@ -3673,7 +3687,7 @@ self::get_potential_reviewers() </dd></dl>
 
 <p>Converts the argument into an array (list) of file extensions. </p>
 <p>The list can be separated by whitespace, end of lines, commas colons and semicolons. Empty values are not returned. Values are converted to lowercase. Duplicates are removed. Glob evaluation is not supported.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001369">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001378">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$extensions</td><td>list of file extensions </td></tr>
@@ -4787,7 +4801,7 @@ self::get_potential_reviewers() </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 24 2024 03:11:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Dec 1 2024 03:26:16 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

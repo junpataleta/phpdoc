@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241122) (505a85eb9ae)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241129) (a798b1db394)</div>
   </td>
  </tr>
  </tbody>
@@ -1391,9 +1391,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga49e3002e85444fe7c34bbbd73001df4f" id="r_ga49e3002e85444fe7c34bbbd73001df4f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga49e3002e85444fe7c34bbbd73001df4f">question_build_edit_resources</a> ($edittab, $baseurl, $params, $defaultquestionsperpage=DEFAULT_QUESTIONS_PER_PAGE)</td></tr>
 <tr class="memdesc:ga49e3002e85444fe7c34bbbd73001df4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common function for building the generic resources required by the editing questions pages.  <br /></td></tr>
 <tr class="separator:ga49e3002e85444fe7c34bbbd73001df4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaf099f5800b541fb2a3cc62276911143" id="r_gaaf099f5800b541fb2a3cc62276911143"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaaf099f5800b541fb2a3cc62276911143">question_edit_setup</a> ($edittab, $baseurl, $requirecmid=false, $unused=null)</td></tr>
-<tr class="memdesc:gaaf099f5800b541fb2a3cc62276911143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common setup for all pages for editing questions.  <br /></td></tr>
-<tr class="separator:gaaf099f5800b541fb2a3cc62276911143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba33b342b1ed151d131e87263c056831" id="r_gaba33b342b1ed151d131e87263c056831"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaba33b342b1ed151d131e87263c056831">question_edit_setup</a> ($edittab, $baseurl, $requirecmid=null, $unused=null)</td></tr>
+<tr class="memdesc:gaba33b342b1ed151d131e87263c056831"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common setup for all pages for editing questions.  <br /></td></tr>
+<tr class="separator:gaba33b342b1ed151d131e87263c056831"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae5d015c349aff623c7eb495a59432652" id="r_gae5d015c349aff623c7eb495a59432652"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae5d015c349aff623c7eb495a59432652">question_fix_random_question_parents</a> ()</td></tr>
 <tr class="memdesc:gae5d015c349aff623c7eb495a59432652"><td class="mdescLeft">&#160;</td><td class="mdescRight">In <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a>, all random questions should have question.parent set to be the same as question.id.  <br /></td></tr>
 <tr class="separator:gae5d015c349aff623c7eb495a59432652"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3003,7 +3003,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[U
 
 <p>Old syntax of class constructor. </p>
 <p>Deprecated in PHP7.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000466">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000475">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -3264,7 +3264,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[U
 
 <p>Old syntax of class constructor. </p>
 <p>Deprecated in PHP7.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000464">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000473">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -3329,8 +3329,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[U
 </div><div class="memdoc">
 
 <p>Common function for building the generic resources required by the editing questions pages. </p>
-<p>Either a cmid or a course id must be provided as keys in $params or an exception will be thrown. All other params are optional and will have sane default applied if not provided.</p>
-<p>The acceptable keys for $params are: [ 'cmid' =&gt; PARAM_INT, 'courseid' =&gt; PARAM_INT, 'qpage' =&gt; PARAM_INT, 'cat' =&gt; PARAM_SEQUENCE, 'category' =&gt; PARAM_SEQUENCE, 'qperpage' =&gt; PARAM_INT, 'cpage' =&gt; PARAM_INT, 'recurse' =&gt; PARAM_BOOL, 'showhidden' =&gt; PARAM_BOOL, 'qbshowtext' =&gt; PARAM_INT, 'qtagids' =&gt; [PARAM_INT], (array of integers) 'qbs1' =&gt; PARAM_TEXT, 'qbs2' =&gt; PARAM_TEXT, 'qbs3' =&gt; PARAM_TEXT, ... and more qbs keys up to <a class="el" href="../../da/da7/classcore__question_1_1local_1_1bank_1_1view.html#abcc3384386e0d71b77364a7627810c3d" title="Maximum number of sorts allowed.">core_question\local\bank\view\MAX_SORTS</a> ... ];</p>
+<p>A cmid must be provided as a key in $params or an exception will be thrown. All other params are optional and will have sane default applied if not provided.</p>
+<p>The acceptable keys for $params are: [ 'cmid' =&gt; PARAM_INT, 'qpage' =&gt; PARAM_INT, 'cat' =&gt; PARAM_SEQUENCE, 'category' =&gt; PARAM_SEQUENCE, 'qperpage' =&gt; PARAM_INT, 'cpage' =&gt; PARAM_INT, 'recurse' =&gt; PARAM_BOOL, 'showhidden' =&gt; PARAM_BOOL, 'qbshowtext' =&gt; PARAM_INT, 'qtagids' =&gt; [PARAM_INT], (array of integers) 'qbs1' =&gt; PARAM_TEXT, 'qbs2' =&gt; PARAM_TEXT, 'qbs3' =&gt; PARAM_TEXT, ... and more qbs keys up to <a class="el" href="../../da/da7/classcore__question_1_1local_1_1bank_1_1view.html#abcc3384386e0d71b77364a7627810c3d" title="Maximum number of sorts allowed.">core_question\local\bank\view\MAX_SORTS</a> ... ];</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$edittab</td><td>Code for this edit tab </td></tr>
@@ -3349,8 +3349,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[U
 
 </div>
 </div>
-<a id="gaaf099f5800b541fb2a3cc62276911143" name="gaaf099f5800b541fb2a3cc62276911143"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaf099f5800b541fb2a3cc62276911143">&#9670;&#160;</a></span>question_edit_setup()</h2>
+<a id="gaba33b342b1ed151d131e87263c056831" name="gaba33b342b1ed151d131e87263c056831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba33b342b1ed151d131e87263c056831">&#9670;&#160;</a></span>question_edit_setup()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3368,7 +3368,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[U
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$requirecmid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$requirecmid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3383,7 +3383,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[U
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$baseurl</td><td>the name of the script calling this funciton. For examle 'qusetion/edit.php'. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$edittab</td><td>code for this edit tab </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$requirecmid</td><td>require cmid? default false </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$requirecmid</td><td>This parameter has been deprecated since 4.5 and should not be used anymore. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$unused</td><td>no longer used, do no pass </td></tr>
   </table>
   </dd>
@@ -3435,7 +3435,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[U
 <p>Get the category id from $pagevars. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$pagevars</td><td>from <a class="el" href="#gaaf099f5800b541fb2a3cc62276911143">question_edit_setup()</a>. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$pagevars</td><td>from <a class="el" href="#gaba33b342b1ed151d131e87263c056831">question_edit_setup()</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3596,7 +3596,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[U
 
 <p>Old syntax of class constructor. </p>
 <p>Deprecated in PHP7.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000465">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000474">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -3927,7 +3927,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[U
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 24 2024 03:09:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Dec 1 2024 03:25:09 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

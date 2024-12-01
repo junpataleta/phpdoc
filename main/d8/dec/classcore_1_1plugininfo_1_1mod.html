@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241122) (505a85eb9ae)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241129) (a798b1db394)</div>
   </td>
  </tr>
  </tbody>
@@ -158,7 +158,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4d2de8f9d99c24737ad01ac69c9ace3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this is a subplugin?  <br /></td></tr>
 <tr class="separator:a4d2de8f9d99c24737ad01ac69c9ace3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27adee6bd8b03f5f1c2cbc967f40ab07" id="r_a27adee6bd8b03f5f1c2cbc967f40ab07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27adee6bd8b03f5f1c2cbc967f40ab07">is_uninstall_allowed</a> ()</td></tr>
-<tr class="memdesc:a27adee6bd8b03f5f1c2cbc967f40ab07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow all activity modules but Forum to be uninstalled.  <br /></td></tr>
+<tr class="memdesc:a27adee6bd8b03f5f1c2cbc967f40ab07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activity modules that declare feature flag FEATURE_CAN_UNINSTALL as false cannot be uninstalled.  <br /></td></tr>
 <tr class="separator:a27adee6bd8b03f5f1c2cbc967f40ab07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4aab24ab5939b68f53e7e4c3d95f288" id="r_ac4aab24ab5939b68f53e7e4c3d95f288"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7d/classcore_1_1plugininfo_1_1base.html#ac4aab24ab5939b68f53e7e4c3d95f288">load_db_version</a> ()</td></tr>
 <tr class="memdesc:ac4aab24ab5939b68f53e7e4c3d95f288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets <a class="el" href="">$versiondb</a> property to a numerical value representing the currently installed version of the plugin.  <br /></td></tr>
@@ -1304,8 +1304,7 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
       </table>
 </div><div class="memdoc">
 
-<p>Allow all activity modules but Forum to be uninstalled. </p>
-<p>This exception for the Forum has been hard-coded in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> since ages, we may want to re-think it one day. </p>
+<p>Activity modules that declare feature flag FEATURE_CAN_UNINSTALL as false cannot be uninstalled. </p>
 
 <p>Reimplemented from <a class="el" href="../../da/d7d/classcore_1_1plugininfo_1_1base.html#ad92aed3f4cf80f397a46b571e72ec1cb">core\plugininfo\base</a>.</p>
 
@@ -1673,7 +1672,7 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 24 2024 03:11:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Dec 1 2024 03:26:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

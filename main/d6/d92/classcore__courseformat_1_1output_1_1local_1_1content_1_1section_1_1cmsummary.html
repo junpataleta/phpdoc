@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241122) (505a85eb9ae)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241129) (a798b1db394)</div>
   </td>
  </tr>
  </tbody>
@@ -74,6 +74,7 @@ $(function(){ initResizable(false); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d2/d43/classcore__courseformat_1_1output_1_1local_1_1content_1_1section_1_1cmsummary-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">core_courseformat\output\local\content\section\cmsummary Class Reference<div class="ingroups"><a class="el" href="../../db/d92/group__core__courseformat.html">core_courseformat</a></div></div></div>
@@ -107,6 +108,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a374ca790bd411fad026cdb4d5a46c2e8" id="r_a374ca790bd411fad026cdb4d5a46c2e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df6/interfacecore_1_1output_1_1named__templatable.html#a374ca790bd411fad026cdb4d5a46c2e8">get_template_name</a> (renderer_base $renderer)</td></tr>
 <tr class="memdesc:a374ca790bd411fad026cdb4d5a46c2e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the template to use for this templatable.  <br /></td></tr>
 <tr class="separator:a374ca790bd411fad026cdb4d5a46c2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ac0290f967835948e5f86017b14db631b" id="r_ac0290f967835948e5f86017b14db631b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0290f967835948e5f86017b14db631b">calculate_section_stats</a> ()</td></tr>
+<tr class="memdesc:ac0290f967835948e5f86017b14db631b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the activities count of the current section.  <br /></td></tr>
+<tr class="separator:ac0290f967835948e5f86017b14db631b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -155,6 +162,39 @@ course_format&#160;</td><td class="memItemRight" valign="bottom"><b>$format</b><
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac0290f967835948e5f86017b14db631b" name="ac0290f967835948e5f86017b14db631b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0290f967835948e5f86017b14db631b">&#9670;&#160;</a></span>calculate_section_stats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\output\local\content\section\cmsummary::calculate_section_stats </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculate the activities count of the current section. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>with [[count by activity type], completed activities, total of activitites] </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a3cf6e8a9b1f2e80e8cace2e4c6c8df0c" name="a3cf6e8a9b1f2e80e8cace2e4c6c8df0c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3cf6e8a9b1f2e80e8cace2e4c6c8df0c">&#9670;&#160;</a></span>export_for_template() <span class="overload">[1/2]</span></h2>
 
@@ -278,7 +318,7 @@ course_format&#160;</td><td class="memItemRight" valign="bottom"><b>$format</b><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 24 2024 03:11:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Dec 1 2024 03:26:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

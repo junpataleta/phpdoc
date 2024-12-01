@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241122) (505a85eb9ae)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241129) (a798b1db394)</div>
   </td>
  </tr>
  </tbody>
@@ -162,6 +162,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa92179b4ffabc3f40ae49d1593ba630d" id="r_aa92179b4ffabc3f40ae49d1593ba630d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa92179b4ffabc3f40ae49d1593ba630d">instance</a> ($courseorid, $userid=0)</td></tr>
 <tr class="memdesc:aa92179b4ffabc3f40ae49d1593ba630d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the instance of <a class="el" href="../../d5/d26/classcourse__modinfo.html">course_modinfo</a> for the specified course and specified user.  <br /></td></tr>
 <tr class="separator:aa92179b4ffabc3f40ae49d1593ba630d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a652a15d7f678c4d410f4536b584c11a4" id="r_a652a15d7f678c4d410f4536b584c11a4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a652a15d7f678c4d410f4536b584c11a4">is_mod_type_visible_on_course</a> (string $modname)</td></tr>
+<tr class="memdesc:a652a15d7f678c4d410f4536b584c11a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can this module type be displayed on a course page or selected from the activity types when adding an activity to a course?  <br /></td></tr>
+<tr class="separator:a652a15d7f678c4d410f4536b584c11a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87974214313f3947b5ef1586c5a7388b" id="r_a87974214313f3947b5ef1586c5a7388b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87974214313f3947b5ef1586c5a7388b">purge_course_cache</a> (int $courseid)</td></tr>
 <tr class="memdesc:a87974214313f3947b5ef1586c5a7388b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purge the cache of a given course.  <br /></td></tr>
 <tr class="separator:a87974214313f3947b5ef1586c5a7388b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -501,7 +504,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>This method can not be used anymore. </p>
 <dl class="section see"><dt>See also</dt><dd>course_modinfo::build_course_cache() </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000500">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000509">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
 
 </div>
 </div>
@@ -1168,6 +1171,45 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a652a15d7f678c4d410f4536b584c11a4" name="a652a15d7f678c4d410f4536b584c11a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a652a15d7f678c4d410f4536b584c11a4">&#9670;&#160;</a></span>is_mod_type_visible_on_course()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static course_modinfo::is_mod_type_visible_on_course </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$modname</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Can this module type be displayed on a course page or selected from the activity types when adding an activity to a course? </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$modname</td><td>The module type name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a87974214313f3947b5ef1586c5a7388b" name="a87974214313f3947b5ef1586c5a7388b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87974214313f3947b5ef1586c5a7388b">&#9670;&#160;</a></span>purge_course_cache()</h2>
 
@@ -1502,7 +1544,7 @@ course_modinfo::clear_instance_cache() </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 24 2024 03:10:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Dec 1 2024 03:25:22 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>
