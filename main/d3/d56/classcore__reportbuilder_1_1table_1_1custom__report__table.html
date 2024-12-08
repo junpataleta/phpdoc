@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241129) (a798b1db394)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241205) (0888a6d324e)</div>
   </td>
  </tr>
  </tbody>
@@ -158,9 +158,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:acbcfa196a07c2579789e6625188f13fe" id="r_acbcfa196a07c2579789e6625188f13fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbcfa196a07c2579789e6625188f13fe">get_active_columns</a> ()</td></tr>
 <tr class="memdesc:acbcfa196a07c2579789e6625188f13fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the columns of the custom report, returned instances being valid and available for the user.  <br /></td></tr>
 <tr class="separator:acbcfa196a07c2579789e6625188f13fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf34fc26b5596fde81ddc1d63c414f7a" id="r_adf34fc26b5596fde81ddc1d63c414f7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dd7/classcore__reportbuilder_1_1table_1_1base__report__table.html#adf34fc26b5596fde81ddc1d63c414f7a">get_table_sql</a> ()</td></tr>
-<tr class="memdesc:adf34fc26b5596fde81ddc1d63c414f7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate suitable SQL for the table.  <br /></td></tr>
-<tr class="separator:adf34fc26b5596fde81ddc1d63c414f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab6a926a7b1d3a9b4db7e09783e3ec6e" id="r_aab6a926a7b1d3a9b4db7e09783e3ec6e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dd7/classcore__reportbuilder_1_1table_1_1base__report__table.html#aab6a926a7b1d3a9b4db7e09783e3ec6e">get_table_sql</a> (bool $includesort=true)</td></tr>
+<tr class="memdesc:aab6a926a7b1d3a9b4db7e09783e3ec6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate suitable SQL for the table.  <br /></td></tr>
+<tr class="separator:aab6a926a7b1d3a9b4db7e09783e3ec6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b882c521c9589497428f350349305e6" id="r_a2b882c521c9589497428f350349305e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dd7/classcore__reportbuilder_1_1table_1_1base__report__table.html#a2b882c521c9589497428f350349305e6">init_sql</a> (string $fields, string $from, array $joins, string $where, array $params, array $groupby=[])</td></tr>
 <tr class="memdesc:a2b882c521c9589497428f350349305e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialises table SQL properties.  <br /></td></tr>
 <tr class="separator:a2b882c521c9589497428f350349305e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -497,8 +497,8 @@ bool const&#160;</td><td class="memItemRight" valign="bottom"><b>REPORT_EDITING<
 
 </div>
 </div>
-<a id="adf34fc26b5596fde81ddc1d63c414f7a" name="adf34fc26b5596fde81ddc1d63c414f7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf34fc26b5596fde81ddc1d63c414f7a">&#9670;&#160;</a></span>get_table_sql()</h2>
+<a id="aab6a926a7b1d3a9b4db7e09783e3ec6e" name="aab6a926a7b1d3a9b4db7e09783e3ec6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab6a926a7b1d3a9b4db7e09783e3ec6e">&#9670;&#160;</a></span>get_table_sql()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -509,7 +509,7 @@ bool const&#160;</td><td class="memItemRight" valign="bottom"><b>REPORT_EDITING<
         <tr>
           <td class="memname">core_reportbuilder\table\base_report_table::get_table_sql </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$includesort</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -521,6 +521,12 @@ bool const&#160;</td><td class="memItemRight" valign="bottom"><b>REPORT_EDITING<
 </div><div class="memdoc">
 
 <p>Generate suitable SQL for the table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">bool</td><td class="paramname">$includesort</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td></td></tr>
@@ -777,7 +783,7 @@ bool const&#160;</td><td class="memItemRight" valign="bottom"><b>REPORT_EDITING<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 1 2024 03:27:03 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Dec 8 2024 03:16:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>
