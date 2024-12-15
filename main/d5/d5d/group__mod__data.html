@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241205) (0888a6d324e)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241213) (a97ddeb2a2c)</div>
   </td>
  </tr>
  </tbody>
@@ -597,10 +597,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6b7b681d19554bb594186dfe3d0f3f79" id="r_ga6b7b681d19554bb594186dfe3d0f3f79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6b7b681d19554bb594186dfe3d0f3f79">mod_data_get_completion_active_rule_descriptions</a> ($cm)</td></tr>
 <tr class="memdesc:ga6b7b681d19554bb594186dfe3d0f3f79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback which returns human-readable strings describing the active completion custom rules for the module instance.  <br /></td></tr>
 <tr class="separator:ga6b7b681d19554bb594186dfe3d0f3f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9d89ad1a533748ab15d2a08e3ae5ef78" id="r_ga9d89ad1a533748ab15d2a08e3ae5ef78"><td class="memItemLeft" align="right" valign="top"><a id="ga9d89ad1a533748ab15d2a08e3ae5ef78" name="ga9d89ad1a533748ab15d2a08e3ae5ef78"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>mod_data_get_fontawesome_icon_map</b> ()</td></tr>
-<tr class="memdesc:ga9d89ad1a533748ab15d2a08e3ae5ef78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get icon mapping for font-awesome. <br /></td></tr>
-<tr class="separator:ga9d89ad1a533748ab15d2a08e3ae5ef78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac28fa2a1a54177602cc336ba2c69aaf8" id="r_gac28fa2a1a54177602cc336ba2c69aaf8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac28fa2a1a54177602cc336ba2c69aaf8">mod_data_get_deprecated_icons</a> ()</td></tr>
+<tr class="memdesc:gac28fa2a1a54177602cc336ba2c69aaf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of deprecated icons.  <br /></td></tr>
+<tr class="separator:gac28fa2a1a54177602cc336ba2c69aaf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac6e4a9770c804fe536f59de3727f0a5f" id="r_gac6e4a9770c804fe536f59de3727f0a5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac6e4a9770c804fe536f59de3727f0a5f">mod_data_get_tagged_records</a> ($tag, $exclusivemode=false, $fromctx=0, $ctx=0, $rec=true, $page=0)</td></tr>
 <tr class="memdesc:gac6e4a9770c804fe536f59de3727f0a5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns data records tagged with a specified tag.  <br /></td></tr>
 <tr class="separator:gac6e4a9770c804fe536f59de3727f0a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4738,6 +4737,32 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 
 </div>
 </div>
+<a id="gac28fa2a1a54177602cc336ba2c69aaf8" name="gac28fa2a1a54177602cc336ba2c69aaf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac28fa2a1a54177602cc336ba2c69aaf8">&#9670;&#160;</a></span>mod_data_get_deprecated_icons()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_data_get_deprecated_icons </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the list of deprecated icons. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>with the deprecated key icons. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000312">Todo</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0 <a href="https://tracker.moodle.org/browse/MDL-83465" class="el">MDL-83465</a>. </dd></dl>
+
+</div>
+</div>
 <a id="gac6e4a9770c804fe536f59de3727f0a5f" name="gac6e4a9770c804fe536f59de3727f0a5f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac6e4a9770c804fe536f59de3727f0a5f">&#9670;&#160;</a></span>mod_data_get_tagged_records()</h2>
 
@@ -4904,7 +4929,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 8 2024 03:14:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Dec 15 2024 03:16:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>
