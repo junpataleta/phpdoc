@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241213) (a97ddeb2a2c)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241219) (7d6f282aef0)</div>
   </td>
  </tr>
  </tbody>
@@ -114,9 +114,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9c44dbe8f824d354298e2fb31871b57" id="r_ae9c44dbe8f824d354298e2fb31871b57"><td class="memItemLeft" align="right" valign="top"><a id="ae9c44dbe8f824d354298e2fb31871b57" name="ae9c44dbe8f824d354298e2fb31871b57"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>get_question_columns</b> ($qbank)</td></tr>
 <tr class="separator:ae9c44dbe8f824d354298e2fb31871b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3033f56de529fc13501e24893e487d59" id="r_a3033f56de529fc13501e24893e487d59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d70/classcore__question_1_1local_1_1bank_1_1plugin__features__base.html#a3033f56de529fc13501e24893e487d59">get_question_filters</a> (?<a class="el" href="../../da/da7/classcore__question_1_1local_1_1bank_1_1view.html">view</a> $qbank=null)</td></tr>
-<tr class="memdesc:a3033f56de529fc13501e24893e487d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return search conditions for the plugin.  <br /></td></tr>
-<tr class="separator:a3033f56de529fc13501e24893e487d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cafbfb5e1f98c4eeb092c1a8b01642d" id="r_a2cafbfb5e1f98c4eeb092c1a8b01642d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cafbfb5e1f98c4eeb092c1a8b01642d">get_question_filters</a> (?<a class="el" href="../../da/da7/classcore__question_1_1local_1_1bank_1_1view.html">view</a> $qbank=null)</td></tr>
+<tr class="memdesc:a2cafbfb5e1f98c4eeb092c1a8b01642d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return search conditions for the plugin.  <br /></td></tr>
+<tr class="separator:a2cafbfb5e1f98c4eeb092c1a8b01642d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class columns is the entrypoint for the columns. </p>
@@ -353,27 +353,19 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3033f56de529fc13501e24893e487d59" name="a3033f56de529fc13501e24893e487d59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3033f56de529fc13501e24893e487d59">&#9670;&#160;</a></span>get_question_filters()</h2>
+<a id="a2cafbfb5e1f98c4eeb092c1a8b01642d" name="a2cafbfb5e1f98c4eeb092c1a8b01642d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cafbfb5e1f98c4eeb092c1a8b01642d">&#9670;&#160;</a></span>get_question_filters()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">core_question\local\bank\plugin_features_base::get_question_filters </td>
+          <td class="memname">qbank_editquestion\plugin_feature::get_question_filters </td>
           <td>(</td>
           <td class="paramtype">?<a class="el" href="../../da/da7/classcore__question_1_1local_1_1bank_1_1view.html">view</a></td>          <td class="paramname"><span class="paramname"><em>$qbank</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Return search conditions for the plugin. </p>
@@ -390,7 +382,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d7/d54/classmod__quiz_1_1question_1_1bank_1_1quiz__managecategories__feature.html#a1d6dfdd659236d222849a3a47b2ac69a">mod_quiz\question\bank\quiz_managecategories_feature</a>, <a class="el" href="../../d4/d04/classqbank__deletequestion_1_1plugin__feature.html#a92b302e60aa60510b0974bb19beb2c8c">qbank_deletequestion\plugin_feature</a>, <a class="el" href="../../d3/d1f/classqbank__managecategories_1_1plugin__feature.html#aec0be7a2a27a8df264046747d898b67b">qbank_managecategories\plugin_feature</a>, and <a class="el" href="../../d4/da8/classqbank__tagquestion_1_1plugin__feature.html#ae2fa903fe8e01c8c5f78bd29aa031578">qbank_tagquestion\plugin_feature</a>.</p>
+<p>Reimplemented from <a class="el" href="../../dd/d70/classcore__question_1_1local_1_1bank_1_1plugin__features__base.html#a3033f56de529fc13501e24893e487d59">core_question\local\bank\plugin_features_base</a>.</p>
 
 </div>
 </div>
@@ -400,7 +392,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 15 2024 03:19:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Dec 22 2024 03:03:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

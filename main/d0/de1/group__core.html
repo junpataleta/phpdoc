@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241213) (a97ddeb2a2c)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241219) (7d6f282aef0)</div>
   </td>
  </tr>
  </tbody>
@@ -3976,10 +3976,20 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf4f16127c450b28e4c2e0168b3eb9f46" id="r_gaf4f16127c450b28e4c2e0168b3eb9f46"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf4f16127c450b28e4c2e0168b3eb9f46">extract_draft_file_urls_from_text</a> ($text, $forcehttps=false, $contextid=null, $component=null, $filearea=null, $itemid=null, $filename=null)</td></tr>
 <tr class="memdesc:gaf4f16127c450b28e4c2e0168b3eb9f46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory method for extracting draft file links from arbitrary text using regular expressions.  <br /></td></tr>
 <tr class="separator:gaf4f16127c450b28e4c2e0168b3eb9f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga83a886105981944160a99863abce01b7" id="r_ga83a886105981944160a99863abce01b7"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga83a886105981944160a99863abce01b7">core::fetch_plugins</a> ($plugintype, $fulldir)</td></tr>
+<tr class="memdesc:ga83a886105981944160a99863abce01b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns list of plugins of given type in given directory.  <br /></td></tr>
+<tr class="separator:ga83a886105981944160a99863abce01b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad590fa4e261743e635e6b1c3f66446c1" id="r_gad590fa4e261743e635e6b1c3f66446c1"><td class="memItemLeft" align="right" valign="top"><a id="gad590fa4e261743e635e6b1c3f66446c1" name="gad590fa4e261743e635e6b1c3f66446c1"></a>
+static&#160;</td><td class="memItemRight" valign="bottom"><b>core::fill_classmap_cache</b> ()</td></tr>
+<tr class="memdesc:gad590fa4e261743e635e6b1c3f66446c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find all classes that can be autoloaded including frankenstyle namespaces. <br /></td></tr>
+<tr class="separator:gad590fa4e261743e635e6b1c3f66446c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadc6eb6af9eb1d1647d53b499b87e72be" id="r_gadc6eb6af9eb1d1647d53b499b87e72be"><td class="memItemLeft" align="right" valign="top"><a id="gadc6eb6af9eb1d1647d53b499b87e72be" name="gadc6eb6af9eb1d1647d53b499b87e72be"></a>
 static&#160;</td><td class="memItemRight" valign="bottom"><b>core::fill_classmap_renames_cache</b> ()</td></tr>
 <tr class="memdesc:gadc6eb6af9eb1d1647d53b499b87e72be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records all class renames that have been made to facilitate autoloading. <br /></td></tr>
 <tr class="separator:gadc6eb6af9eb1d1647d53b499b87e72be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace506dd7dfbe625b05c3ef4f5b87c5b4" id="r_gace506dd7dfbe625b05c3ef4f5b87c5b4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gace506dd7dfbe625b05c3ef4f5b87c5b4">core::fill_filemap_cache</a> ()</td></tr>
+<tr class="memdesc:gace506dd7dfbe625b05c3ef4f5b87c5b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills up the cache defining what plugins have certain files.  <br /></td></tr>
+<tr class="separator:gace506dd7dfbe625b05c3ef4f5b87c5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf40f862fbda170d323e234481dd01a31" id="r_gaf40f862fbda170d323e234481dd01a31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf40f862fbda170d323e234481dd01a31">filter_add_javascript</a> ($text)</td></tr>
 <tr class="memdesc:gaf40f862fbda170d323e234481dd01a31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add missing openpopup javascript to HTML files.  <br /></td></tr>
 <tr class="separator:gaf40f862fbda170d323e234481dd01a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4791,6 +4801,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>core::fill_classmap
 <tr class="memitem:ga616744cdb009d19cae0784c8fcea4d9d" id="r_ga616744cdb009d19cae0784c8fcea4d9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga616744cdb009d19cae0784c8fcea4d9d">link_arrow_right</a> ($text, $url='', $accesshide=false, $addclass='', $addparams=[])</td></tr>
 <tr class="memdesc:ga616744cdb009d19cae0784c8fcea4d9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the right arrow with text ('next'), and optionally embedded in a link.  <br /></td></tr>
 <tr class="separator:ga616744cdb009d19cae0784c8fcea4d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf35102e4a7a2e17d08c2cd3887dde6c1" id="r_gaf35102e4a7a2e17d08c2cd3887dde6c1"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf35102e4a7a2e17d08c2cd3887dde6c1">core::load_classes</a> ($<a class="el" href="../../db/d60/classcore_1_1component.html">component</a>, $fulldir, $namespace='')</td></tr>
+<tr class="memdesc:gaf35102e4a7a2e17d08c2cd3887dde6c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find classes in directory and recurse to subdirs.  <br /></td></tr>
+<tr class="separator:gaf35102e4a7a2e17d08c2cd3887dde6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae7e98d245c3419495094284e783fa725" id="r_gae7e98d245c3419495094284e783fa725"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae7e98d245c3419495094284e783fa725">load_environment_xml</a> ($env_select=<a class="el" href="#gad0d5fd9ff1c9439f5702d9f28d61b03c">ENV_SELECT_NEWER</a>)</td></tr>
 <tr class="memdesc:gae7e98d245c3419495094284e783fa725"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will load the environment.xml file and xmlize it.  <br /></td></tr>
 <tr class="separator:gae7e98d245c3419495094284e783fa725"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -6141,7 +6154,7 @@ if($hassiteconfig)&#160;</td><td class="memItemRight" valign="bottom"><b>$pages<
 replacement&#160;</td><td class="memItemRight" valign="bottom"><b>$prefix</b></td></tr>
 <tr class="separator:gad4020b63f5aefdda259ec31b9a2c2418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga63c5d6a8a9f1768ea926cee666dc991b" id="r_ga63c5d6a8a9f1768ea926cee666dc991b"><td class="memItemLeft" align="right" valign="top"><a id="ga63c5d6a8a9f1768ea926cee666dc991b" name="ga63c5d6a8a9f1768ea926cee666dc991b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$release</b> = '5.0dev (Build: 20241213)'</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$release</b> = '5.0dev (Build: 20241219)'</td></tr>
 <tr class="separator:ga63c5d6a8a9f1768ea926cee666dc991b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga21ea4dae509fad0a8aec221e2f095886" id="r_ga21ea4dae509fad0a8aec221e2f095886"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga21ea4dae509fad0a8aec221e2f095886">$renamedclasses</a></td></tr>
 <tr class="separator:ga21ea4dae509fad0a8aec221e2f095886"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -6177,11 +6190,14 @@ if(!defined('<a class="el" href="#ga4a87e5b19cb6b7e3148f68a819ff0790">MOODLE_INT
 <tr class="memitem:ga677d3b77f512c5e3d221e61c8b2b511d" id="r_ga677d3b77f512c5e3d221e61c8b2b511d"><td class="memItemLeft" align="right" valign="top"><a id="ga677d3b77f512c5e3d221e61c8b2b511d" name="ga677d3b77f512c5e3d221e61c8b2b511d"></a>
 stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>core\task::$tracestats</b> = null</td></tr>
 <tr class="separator:ga677d3b77f512c5e3d221e61c8b2b511d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6b79e8a26670d8de1261828efc14eca7" id="r_ga6b79e8a26670d8de1261828efc14eca7"><td class="memItemLeft" align="right" valign="top"><a id="ga6b79e8a26670d8de1261828efc14eca7" name="ga6b79e8a26670d8de1261828efc14eca7"></a>
+if(function_exists('debugging') &amp;&amp;debugging()) else if(file_exists(&quot;$ownerdir/db/subplugins.php&quot;)) <a class="el" href="#ga13a74e59a81139e77c9593ab40cec354">foreach</a>($subplugins as $subtype=&gt; $dir) return&#160;</td><td class="memItemRight" valign="bottom"><b>core::$types</b></td></tr>
+<tr class="separator:ga6b79e8a26670d8de1261828efc14eca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6e76f75e2c700b871e9e622e51598180" id="r_ga6e76f75e2c700b871e9e622e51598180"><td class="memItemLeft" align="right" valign="top"><a id="ga6e76f75e2c700b871e9e622e51598180" name="ga6e76f75e2c700b871e9e622e51598180"></a>
 global&#160;</td><td class="memItemRight" valign="bottom"><b>$USER</b></td></tr>
 <tr class="separator:ga6e76f75e2c700b871e9e622e51598180"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga17c8948c68aa44fa9961ae169b6a8961" id="r_ga17c8948c68aa44fa9961ae169b6a8961"><td class="memItemLeft" align="right" valign="top"><a id="ga17c8948c68aa44fa9961ae169b6a8961" name="ga17c8948c68aa44fa9961ae169b6a8961"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$version</b> = 2024121300.00</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$version</b> = 2024121900.00</td></tr>
 <tr class="separator:ga17c8948c68aa44fa9961ae169b6a8961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga82281c80e5a34da73d7f831c14a3514a" id="r_ga82281c80e5a34da73d7f831c14a3514a"><td class="memItemLeft" align="right" valign="top"><a id="ga82281c80e5a34da73d7f831c14a3514a" name="ga82281c80e5a34da73d7f831c14a3514a"></a>
 color&#160;</td><td class="memItemRight" valign="bottom"><b>__pad0__</b></td></tr>
@@ -6620,6 +6636,8 @@ $CFG&#160;</td><td class="memItemRight" valign="bottom"><b>docroot</b> = 'https:
 <tr class="memitem:gae2c51424a7acfb5fe2dd7082793e3686" id="r_gae2c51424a7acfb5fe2dd7082793e3686"><td class="memItemLeft" align="right" valign="top"><a id="gae2c51424a7acfb5fe2dd7082793e3686" name="gae2c51424a7acfb5fe2dd7082793e3686"></a>
 $CFG&#160;</td><td class="memItemRight" valign="bottom"><b>early_install_lang</b> = true</td></tr>
 <tr class="separator:gae2c51424a7acfb5fe2dd7082793e3686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga298fa9d5215b8ec1b82064c76c682298" id="r_ga298fa9d5215b8ec1b82064c76c682298"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga298fa9d5215b8ec1b82064c76c682298">core::else</a></td></tr>
+<tr class="separator:ga298fa9d5215b8ec1b82064c76c682298"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab62673f622617cfbcdaf6846db8e66f0" id="r_gab62673f622617cfbcdaf6846db8e66f0"><td class="memItemLeft" align="right" valign="top">if(isset($<a class="el" href="../../d2/dad/classmnet__peer.html">mnet_peer</a>-&gt;id) &amp;&amp; $<a class="el" href="../../d2/dad/classmnet__peer.html">mnet_peer</a>-&gt;id &gt; 0)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab62673f622617cfbcdaf6846db8e66f0">else</a></td></tr>
 <tr class="separator:gab62673f622617cfbcdaf6846db8e66f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9129926468c9df1e3962a00181f33c78" id="r_ga9129926468c9df1e3962a00181f33c78"><td class="memItemLeft" align="right" valign="top">if(isset($_REQUEST['lang']))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9129926468c9df1e3962a00181f33c78">else</a></td></tr>
@@ -8110,7 +8128,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 </div><div class="memdoc">
 
 <p>Internal recursive category verification function, do not use directly! </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000126">Todo</a></b></dt><dd>Document the arguments of this function better</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000125">Todo</a></b></dt><dd>Document the arguments of this function better</dd></dl>
 <p>@uses CONTEXT_COURSECAT </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$children</td><td></td></tr>
@@ -12046,7 +12064,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 </div><div class="memdoc">
 
 <p>Returns true if the current version of PHP is greater that the specified one. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000230">Todo</a></b></dt><dd>Check PHP version being required here is it too low?</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000229">Todo</a></b></dt><dd>Check PHP version being required here is it too low?</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$version</td><td>The version of php being tested. </td></tr>
@@ -14268,7 +14286,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 </div><div class="memdoc">
 
 <p>Creates a bare-bones user record. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000226">Todo</a></b></dt><dd>Outline auth types and provide code example</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000225">Todo</a></b></dt><dd>Outline auth types and provide code example</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$username</td><td>New user's username to add to record </td></tr>
@@ -15559,7 +15577,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 
 <p>Given an arbitrary array, and a number of draws, this function returns an array with that amount of items. </p>
 <p>The indexes are retained.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000231">Todo</a></b></dt><dd>Finish documenting this function</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000230">Todo</a></b></dt><dd>Finish documenting this function</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$array</td><td></td></tr>
@@ -17742,6 +17760,84 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga83a886105981944160a99863abce01b7" name="ga83a886105981944160a99863abce01b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga83a886105981944160a99863abce01b7">&#9670;&#160;</a></span>fetch_plugins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core\fetch_plugins </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$plugintype</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$fulldir</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns list of plugins of given type in given directory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$plugintype</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$fulldir</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gace506dd7dfbe625b05c3ef4f5b87c5b4" name="gace506dd7dfbe625b05c3ef4f5b87c5b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gace506dd7dfbe625b05c3ef4f5b87c5b4">&#9670;&#160;</a></span>fill_filemap_cache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core\fill_filemap_cache </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fills up the cache defining what plugins have certain files. </p>
+<dl class="section see"><dt>See also</dt><dd>self::get_plugin_list_with_file </dd></dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -21572,7 +21668,7 @@ Options:
 
 <p>Returns an array with all the filenames in all subdirectories, relative to the given rootdir. </p>
 <p>If excludefiles is defined, then that file/directory is ignored If getdirs is true, then (sub)directories are included in the output If getfiles is true, then files are included in the output (at least one of these must be true!)</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000228">Todo</a></b></dt><dd>Finish documenting this function. Add examples of $excludefile usage.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000227">Todo</a></b></dt><dd>Finish documenting this function. Add examples of $excludefile usage.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$rootdir</td><td>A given root directory to start from </td></tr>
@@ -22863,7 +22959,7 @@ Options:
 <li>by the teacher for the current module, eg $assignment-&gt;maxbytes</li>
 </ol>
 <p>These last two are passed to this function as arguments (in bytes). Anything defined as 0 is ignored. The smallest of all the non-zero numbers is returned.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000227">Todo</a></b></dt><dd>Finish documenting this function</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000226">Todo</a></b></dt><dd>Finish documenting this function</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$sitebytes</td><td>Set maximum size </td></tr>
@@ -26614,7 +26710,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 
 <p>Returns true if the page is displayed in a popup window. </p>
 <p>Gets the information from the URL parameter inpopup.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000282">Todo</a></b></dt><dd>Use a central function to create the popup calls all over <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> and In the moment only works with resources and probably questions.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000281">Todo</a></b></dt><dd>Use a central function to create the popup calls all over <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> and In the moment only works with resources and probably questions.</dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">boolean</td><td></td></tr>
@@ -27661,6 +27757,50 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 
 </div>
 </div>
+<a id="gaf35102e4a7a2e17d08c2cd3887dde6c1" name="gaf35102e4a7a2e17d08c2cd3887dde6c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf35102e4a7a2e17d08c2cd3887dde6c1">&#9670;&#160;</a></span>load_classes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core\load_classes </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$component</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$fulldir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$namespace</em></span><span class="paramdefsep"> = </span><span class="paramdefval">''</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Find classes in directory and recurse to subdirs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$component</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$fulldir</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$namespace</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="gae7e98d245c3419495094284e783fa725" name="gae7e98d245c3419495094284e783fa725"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gae7e98d245c3419495094284e783fa725">&#9670;&#160;</a></span>load_environment_xml()</h2>
 
@@ -28169,7 +28309,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 
 <p>Creates an array that represents all the current grades that can be chosen using the given grading type. </p>
 <p>Negative numbers are scales, zero is no grade, and positive numbers are maximum grades.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000232">Todo</a></b></dt><dd>Finish documenting this function or better deprecated this completely!</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000231">Todo</a></b></dt><dd>Finish documenting this function or better deprecated this completely!</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$gradingtype</td><td></td></tr>
@@ -28426,7 +28566,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 </div><div class="memdoc">
 
 <p>make_unique_id_code </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000233">Todo</a></b></dt><dd>Finish documenting this function</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000232">Todo</a></b></dt><dd>Finish documenting this function</dd></dl>
 <p>@uses $_SERVER </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$extra</td><td>Extra string to append to the end of the code </td></tr>
@@ -30460,7 +30600,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000229">Todo</a></b></dt><dd>Decide about to deprecate and drop <a class="el" href="#gaabae838ede88093868b5f38027b172da" title="Invoke plugin&#39;s callback functions.">plugin_callback()</a> - <a href="https://tracker.moodle.org/browse/MDL-30743" class="el">MDL-30743</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000228">Todo</a></b></dt><dd>Decide about to deprecate and drop <a class="el" href="#gaabae838ede88093868b5f38027b172da" title="Invoke plugin&#39;s callback functions.">plugin_callback()</a> - <a href="https://tracker.moodle.org/browse/MDL-30743" class="el">MDL-30743</a> </dd></dl>
 
 </div>
 </div>
@@ -30793,7 +30933,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 </div><div class="memdoc">
 
 <p>Prints a grade menu (as part of an existing form) with help showing all possible numerical grades and scales. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000133">Todo</a></b></dt><dd><p class="startdd">Finish documenting this function </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000132">Todo</a></b></dt><dd><p class="startdd">Finish documenting this function </p>
 <p class="enddd">Deprecate: this is only used in a few contrib modules</p>
 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -31003,7 +31143,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 </div><div class="memdoc">
 
 <p>Returns a localized sentence in the current language summarizing the current password policy. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000283">Todo</a></b></dt><dd>this should be handled by a function/method in the language pack library once we have a support for it @uses $CFG </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000282">Todo</a></b></dt><dd>this should be handled by a function/method in the language pack library once we have a support for it @uses $CFG </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td></td></tr>
@@ -40539,7 +40679,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="#ga4297b1ee8c06b42469eafea6e301567b" title="Sets specified user&#39;s password and send the new password to the user via email.">setnew_password_and_mail()</a> </dd></dl>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000376">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000134">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-82646" class="el">MDL-82646</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000133">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-82646" class="el">MDL-82646</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. </dd></dl>
 
 </div>
 </div>
@@ -40557,7 +40697,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 <dl class="section copyright"><dt>Copyright</dt><dd>2018 Srdjan Janković, Catalyst IT </dd></dl>
 <dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU GPL v3 or later </dd></dl>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000386">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0. See <a href="https://tracker.moodle.org/browse/MDL-71257" class="el">MDL-71257</a>. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000140">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-83171" class="el">MDL-83171</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000139">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-83171" class="el">MDL-83171</a>. </dd></dl>
 
 </div>
 </div>
@@ -40613,7 +40753,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
   </dd>
 </dl>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000387">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0. See <a href="https://tracker.moodle.org/browse/MDL-71257" class="el">MDL-71257</a>. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000141">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-83171" class="el">MDL-83171</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000140">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-83171" class="el">MDL-83171</a>. </dd></dl>
 
 </div>
 </div>
@@ -40653,7 +40793,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
   </dd>
 </dl>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000379">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000135">Todo</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-83366" class="el">MDL-83366</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000134">Todo</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-83366" class="el">MDL-83366</a>. </dd></dl>
 
 </div>
 </div>
@@ -40710,8 +40850,24 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 
 </div>
 </div>
+<a id="ga298fa9d5215b8ec1b82064c76c682298" name="ga298fa9d5215b8ec1b82064c76c682298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga298fa9d5215b8ec1b82064c76c682298">&#9670;&#160;</a></span>else <span class="overload">[1/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core\else</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">                $jsonerror = json_last_error_msg()</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="gab62673f622617cfbcdaf6846db8e66f0" name="gab62673f622617cfbcdaf6846db8e66f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab62673f622617cfbcdaf6846db8e66f0">&#9670;&#160;</a></span>else <span class="overload">[1/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gab62673f622617cfbcdaf6846db8e66f0">&#9670;&#160;</a></span>else <span class="overload">[2/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -40727,7 +40883,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 </div>
 </div>
 <a id="ga9129926468c9df1e3962a00181f33c78" name="ga9129926468c9df1e3962a00181f33c78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9129926468c9df1e3962a00181f33c78">&#9670;&#160;</a></span>else <span class="overload">[2/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9129926468c9df1e3962a00181f33c78">&#9670;&#160;</a></span>else <span class="overload">[3/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -40743,7 +40899,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 </div>
 </div>
 <a id="gabd6bb3cb2dc256d24c3db86549bb21eb" name="gabd6bb3cb2dc256d24c3db86549bb21eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabd6bb3cb2dc256d24c3db86549bb21eb">&#9670;&#160;</a></span>else <span class="overload">[3/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gabd6bb3cb2dc256d24c3db86549bb21eb">&#9670;&#160;</a></span>else <span class="overload">[4/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -40759,7 +40915,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 </div>
 </div>
 <a id="gac5bb9dd31b1c7cdc4991e76bcb567870" name="gac5bb9dd31b1c7cdc4991e76bcb567870"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac5bb9dd31b1c7cdc4991e76bcb567870">&#9670;&#160;</a></span>else <span class="overload">[4/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gac5bb9dd31b1c7cdc4991e76bcb567870">&#9670;&#160;</a></span>else <span class="overload">[5/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -40776,7 +40932,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 </div>
 </div>
 <a id="ga0f966d3da5ecfe67dced81391bc20de9" name="ga0f966d3da5ecfe67dced81391bc20de9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0f966d3da5ecfe67dced81391bc20de9">&#9670;&#160;</a></span>else <span class="overload">[5/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0f966d3da5ecfe67dced81391bc20de9">&#9670;&#160;</a></span>else <span class="overload">[6/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -40793,7 +40949,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 </div>
 </div>
 <a id="ga987dec4146a6538914cc4def427f96cc" name="ga987dec4146a6538914cc4def427f96cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga987dec4146a6538914cc4def427f96cc">&#9670;&#160;</a></span>else <span class="overload">[6/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga987dec4146a6538914cc4def427f96cc">&#9670;&#160;</a></span>else <span class="overload">[7/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -41101,7 +41257,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 
 <p>Module purpose interface. </p>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000524">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000225">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80701" class="el">MDL-80701</a> Remove in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000224">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80701" class="el">MDL-80701</a> Remove in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8 </dd></dl>
 
 </div>
 </div>
@@ -41762,7 +41918,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 15 2024 03:16:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Dec 22 2024 03:00:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

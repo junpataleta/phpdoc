@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241213) (a97ddeb2a2c)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241219) (7d6f282aef0)</div>
   </td>
  </tr>
  </tbody>
@@ -112,6 +112,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a50268eb0fd22dd5e20c76128d57eaa03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17bf340a074a16ab2dd865c2211f9bbe" id="r_a17bf340a074a16ab2dd865c2211f9bbe"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17bf340a074a16ab2dd865c2211f9bbe">get_qtype_name</a> ($qtypename)</td></tr>
 <tr class="separator:a17bf340a074a16ab2dd865c2211f9bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42db6be71f9990f6eb7c67534d97f2ca" id="r_a42db6be71f9990f6eb7c67534d97f2ca"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42db6be71f9990f6eb7c67534d97f2ca">get_version_of_questions</a> (array $questionids)</td></tr>
+<tr class="memdesc:a42db6be71f9990f6eb7c67534d97f2ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves version information for a list of questions.  <br /></td></tr>
+<tr class="separator:a42db6be71f9990f6eb7c67534d97f2ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69f45d2c2df2783e7dba86b3cfa14039" id="r_a69f45d2c2df2783e7dba86b3cfa14039"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69f45d2c2df2783e7dba86b3cfa14039">is_qtype_installed</a> ($qtypename)</td></tr>
 <tr class="separator:a69f45d2c2df2783e7dba86b3cfa14039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7f3d1742918043690f645afeb64ebb0" id="r_aa7f3d1742918043690f645afeb64ebb0"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7f3d1742918043690f645afeb64ebb0">load_question</a> ($questionid, $allowshuffle=true)</td></tr>
@@ -577,6 +580,45 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>ensure_fraction_opt
 
 </div>
 </div>
+<a id="a42db6be71f9990f6eb7c67534d97f2ca" name="a42db6be71f9990f6eb7c67534d97f2ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42db6be71f9990f6eb7c67534d97f2ca">&#9670;&#160;</a></span>get_version_of_questions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static question_bank::get_version_of_questions </td>
+          <td>(</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$questionids</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieves version information for a list of questions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$questionids</td><td>Array of question ids. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>An array question_bank_entries.id =&gt; version number =&gt; question.id. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a69f45d2c2df2783e7dba86b3cfa14039" name="a69f45d2c2df2783e7dba86b3cfa14039"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a69f45d2c2df2783e7dba86b3cfa14039">&#9670;&#160;</a></span>is_qtype_installed()</h2>
 
@@ -953,7 +995,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>ensure_fraction_opt
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 15 2024 03:17:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Dec 22 2024 03:02:03 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

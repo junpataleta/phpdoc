@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241213) (a97ddeb2a2c)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241219) (7d6f282aef0)</div>
   </td>
  </tr>
  </tbody>
@@ -624,12 +624,9 @@ since&#160;</td><td class="memItemRight" valign="bottom"><b>reason</b>: 'Moved t
 </div><div class="memdoc">
 
 <p>Remove stale questions from a category. </p>
-<p>While questions should not be left behind when they are not used any more, it does happen, maybe via restore, or old logic, or uncovered scenarios. When this happens, the users are unable to delete the question category unless they move those stale questions to another one category, but to them the category is empty as it does not contain anything. The purpose of this function is to detect the questions that may have gone stale and remove them.</p>
+<p>This finds and removes any old-style random questions (qtype = random), or any questions that were deleted while they were in use by a quiz (status = hidden), but those usages have since been removed.</p>
+<p>If a category only contains stale questions, the users are unable to delete the question category unless they move those stale questions to another one category, but to them the category may appear empty. The purpose of this function is to detect the questions that may have gone stale and remove them.</p>
 <p>You will typically use this prior to checking if the category contains questions.</p>
-<p>The stale questions (unused and hidden to the user) handled are:</p><ul>
-<li>hidden questions</li>
-<li>random questions</li>
-</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$categoryid</td><td>The category ID. </td></tr>
@@ -651,7 +648,7 @@ since&#160;</td><td class="memItemRight" valign="bottom"><b>reason</b>: 'Moved t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 15 2024 03:19:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Dec 22 2024 03:03:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

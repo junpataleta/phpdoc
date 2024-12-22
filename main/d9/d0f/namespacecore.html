@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241213) (a97ddeb2a2c)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241219) (7d6f282aef0)</div>
   </td>
  </tr>
  </tbody>
@@ -305,10 +305,20 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga83a886105981944160a99863abce01b7" id="r_ga83a886105981944160a99863abce01b7"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#ga83a886105981944160a99863abce01b7">fetch_plugins</a> ($plugintype, $fulldir)</td></tr>
+<tr class="memdesc:ga83a886105981944160a99863abce01b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns list of plugins of given type in given directory.  <br /></td></tr>
+<tr class="separator:ga83a886105981944160a99863abce01b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad590fa4e261743e635e6b1c3f66446c1" id="r_gad590fa4e261743e635e6b1c3f66446c1"><td class="memItemLeft" align="right" valign="top">
+static&#160;</td><td class="memItemRight" valign="bottom"><b>fill_classmap_cache</b> ()</td></tr>
+<tr class="memdesc:gad590fa4e261743e635e6b1c3f66446c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find all classes that can be autoloaded including frankenstyle namespaces. <br /></td></tr>
+<tr class="separator:gad590fa4e261743e635e6b1c3f66446c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadc6eb6af9eb1d1647d53b499b87e72be" id="r_gadc6eb6af9eb1d1647d53b499b87e72be"><td class="memItemLeft" align="right" valign="top">
 static&#160;</td><td class="memItemRight" valign="bottom"><b>fill_classmap_renames_cache</b> ()</td></tr>
 <tr class="memdesc:gadc6eb6af9eb1d1647d53b499b87e72be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records all class renames that have been made to facilitate autoloading. <br /></td></tr>
 <tr class="separator:gadc6eb6af9eb1d1647d53b499b87e72be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace506dd7dfbe625b05c3ef4f5b87c5b4" id="r_gace506dd7dfbe625b05c3ef4f5b87c5b4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#gace506dd7dfbe625b05c3ef4f5b87c5b4">fill_filemap_cache</a> ()</td></tr>
+<tr class="memdesc:gace506dd7dfbe625b05c3ef4f5b87c5b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills up the cache defining what plugins have certain files.  <br /></td></tr>
+<tr class="separator:gace506dd7dfbe625b05c3ef4f5b87c5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafc02d5f849f155c21dc8fa8b2eb8e6b1" id="r_gafc02d5f849f155c21dc8fa8b2eb8e6b1"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#gafc02d5f849f155c21dc8fa8b2eb8e6b1">get_all_component_hash</a> (?array $components=null)</td></tr>
 <tr class="memdesc:gafc02d5f849f155c21dc8fa8b2eb8e6b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns hash of all core + plugin /db/ directories.  <br /></td></tr>
 <tr class="separator:gafc02d5f849f155c21dc8fa8b2eb8e6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -387,6 +397,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>fill_classmap_renam
 <tr class="memitem:gabedd5c6e775996107519ed5983292972" id="r_gabedd5c6e775996107519ed5983292972"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#gabedd5c6e775996107519ed5983292972">is_valid_plugin_name</a> ($plugintype, $pluginname)</td></tr>
 <tr class="memdesc:gabedd5c6e775996107519ed5983292972"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method validates a plug name.  <br /></td></tr>
 <tr class="separator:gabedd5c6e775996107519ed5983292972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf35102e4a7a2e17d08c2cd3887dde6c1" id="r_gaf35102e4a7a2e17d08c2cd3887dde6c1"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#gaf35102e4a7a2e17d08c2cd3887dde6c1">load_classes</a> ($<a class="el" href="../../db/d60/classcore_1_1component.html">component</a>, $fulldir, $namespace='')</td></tr>
+<tr class="memdesc:gaf35102e4a7a2e17d08c2cd3887dde6c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find classes in directory and recurse to subdirs.  <br /></td></tr>
+<tr class="separator:gaf35102e4a7a2e17d08c2cd3887dde6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3eb8e8a959d0c27f96f616e4b651b82b" id="r_ga3eb8e8a959d0c27f96f616e4b651b82b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#ga3eb8e8a959d0c27f96f616e4b651b82b">load_legacy_classes</a> (?string $fulldir, bool $allowsubsystems=false,)</td></tr>
 <tr class="memdesc:ga3eb8e8a959d0c27f96f616e4b651b82b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load legacy classes based upon the db/legacyclasses.php file.  <br /></td></tr>
 <tr class="separator:ga3eb8e8a959d0c27f96f616e4b651b82b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -402,10 +415,15 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>fill_classmap_renam
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:ga6b79e8a26670d8de1261828efc14eca7" id="r_ga6b79e8a26670d8de1261828efc14eca7"><td class="memItemLeft" align="right" valign="top">
+if(function_exists('debugging') &amp;&amp;debugging()) else if(file_exists(&quot;$ownerdir/db/subplugins.php&quot;)) <a class="el" href="../../d0/de1/group__core.html#ga13a74e59a81139e77c9593ab40cec354">foreach</a>($subplugins as $subtype=&gt; $dir) return&#160;</td><td class="memItemRight" valign="bottom"><b>$types</b></td></tr>
+<tr class="separator:ga6b79e8a26670d8de1261828efc14eca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabbb14152f5df63b1a8cc6c02f0fc5cf0" id="r_gabbb14152f5df63b1a8cc6c02f0fc5cf0"><td class="memItemLeft" align="right" valign="top">
 const&#160;</td><td class="memItemRight" valign="bottom"><b>ANY_VERSION</b> 'any'</td></tr>
 <tr class="memdesc:gabbb14152f5df63b1a8cc6c02f0fc5cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Any version - special value that can be used in $plugin-&gt;dependencies in version.php files. <br /></td></tr>
 <tr class="separator:gabbb14152f5df63b1a8cc6c02f0fc5cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga298fa9d5215b8ec1b82064c76c682298" id="r_ga298fa9d5215b8ec1b82064c76c682298"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#ga298fa9d5215b8ec1b82064c76c682298">else</a></td></tr>
+<tr class="separator:ga298fa9d5215b8ec1b82064c76c682298"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa2c1d109c36ee432f0d00fc6d99298b3" id="r_gaa2c1d109c36ee432f0d00fc6d99298b3"><td class="memItemLeft" align="right" valign="top">
 const&#160;</td><td class="memItemRight" valign="bottom"><b>MATURITY_ALPHA</b> 50</td></tr>
 <tr class="memdesc:gaa2c1d109c36ee432f0d00fc6d99298b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software maturity level - internals can be tested using white box techniques. <br /></td></tr>
@@ -428,7 +446,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MATURITY_STABLE</b> 
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 15 2024 03:18:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Dec 22 2024 03:02:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

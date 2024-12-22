@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241213) (a97ddeb2a2c)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241219) (7d6f282aef0)</div>
   </td>
  </tr>
  </tbody>
@@ -71,6 +71,7 @@ $(function(){ initResizable(false); });
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">search_solr</div></div>
 </div><!--header-->
@@ -81,12 +82,17 @@ Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/namespacesearch__solr.html">search_solr</a></td></tr>
 <tr class="memdesc:db/d09/namespacesearch__solr"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#160; <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc7/namespacesearch__solr_1_1check.html">search_solr\check</a></td></tr>
+<tr class="memdesc:db/dc7/namespacesearch__solr_1_1check"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#160; <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d43/namespacesearch__solr_1_1privacy.html">search_solr\privacy</a></td></tr>
 <tr class="memdesc:df/d43/namespacesearch__solr_1_1privacy"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#160; <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d21/classsearch__solr_1_1check_1_1connection.html">search_solr\check\connection</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/classsearch__solr_1_1document.html">search_solr\document</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Respresents a document to index.  <a href="../../d5/d8e/classsearch__solr_1_1document.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,6 +106,12 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schema class to interact with Solr schema.  <a href="../../d0/da1/classsearch__solr_1_1schema.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gaaad36be0dbc592bea0b14d0aa7f07c48" id="r_gaaad36be0dbc592bea0b14d0aa7f07c48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaaad36be0dbc592bea0b14d0aa7f07c48">search_solr_status_checks</a> ()</td></tr>
+<tr class="memdesc:gaaad36be0dbc592bea0b14d0aa7f07c48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets status checks contributed by this plugin.  <br /></td></tr>
+<tr class="separator:gaaad36be0dbc592bea0b14d0aa7f07c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:gada8a7130088351710bb02ed622d6bf65" id="r_gada8a7130088351710bb02ed622d6bf65"><td class="memItemLeft" align="right" valign="top"><a id="gada8a7130088351710bb02ed622d6bf65" name="gada8a7130088351710bb02ed622d6bf65"></a>
@@ -109,14 +121,41 @@ Variables</h2></td></tr>
 $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>component</b> = 'search_solr'</td></tr>
 <tr class="separator:ga27dc7e2c13f48a05e56e0d3138fe3c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92a3fd99b37c9cbd65c4aead816b3a83" id="r_ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memItemLeft" align="right" valign="top"><a id="ga92a3fd99b37c9cbd65c4aead816b3a83" name="ga92a3fd99b37c9cbd65c4aead816b3a83"></a>
-$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024100700</td></tr>
+$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024121800</td></tr>
 <tr class="separator:ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="gaaad36be0dbc592bea0b14d0aa7f07c48" name="gaaad36be0dbc592bea0b14d0aa7f07c48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaad36be0dbc592bea0b14d0aa7f07c48">&#9670;&#160;</a></span>search_solr_status_checks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">search_solr_status_checks </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets status checks contributed by this plugin. </p>
+<p>If Solr is enabled and indexing is on, returns a check that the connection works.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">core::check::check[]</td><td>Array of status checks </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 15 2024 03:16:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Dec 22 2024 03:01:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

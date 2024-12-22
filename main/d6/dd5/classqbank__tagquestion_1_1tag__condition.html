@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241213) (a97ddeb2a2c)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241219) (7d6f282aef0)</div>
   </td>
  </tr>
  </tbody>
@@ -115,7 +115,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae5b0618d399130ce0d966b20f9ef3b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return this condition class.  <br /></td></tr>
 <tr class="separator:ae5b0618d399130ce0d966b20f9ef3b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a270026c5d7cd0565d300a1c30ef08b25" id="r_a270026c5d7cd0565d300a1c30ef08b25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a270026c5d7cd0565d300a1c30ef08b25">get_filter_class</a> ()</td></tr>
-<tr class="memdesc:a270026c5d7cd0565d300a1c30ef08b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return filter class associated with this condition.  <br /></td></tr>
+<tr class="memdesc:a270026c5d7cd0565d300a1c30ef08b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the Javascript filter class to provide the UI for this condition.  <br /></td></tr>
 <tr class="separator:a270026c5d7cd0565d300a1c30ef08b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a8579714c2c1a7d166ecaec9cdd1f71" id="r_a8a8579714c2c1a7d166ecaec9cdd1f71"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddd/classcore__question_1_1local_1_1bank_1_1condition.html#a8a8579714c2c1a7d166ecaec9cdd1f71">get_filteroptions</a> ()</td></tr>
 <tr class="memdesc:a8a8579714c2c1a7d166ecaec9cdd1f71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extra data specific to this condition.  <br /></td></tr>
@@ -400,7 +400,7 @@ string string&#160;</td><td class="memItemRight" valign="bottom"><b>$where</b> =
   </dd>
 </dl>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001432">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-72321" class="el">MDL-72321</a> - please do not use this function any more. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000400">Todo</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-72572" class="el">MDL-72572</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000399">Todo</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-72572" class="el">MDL-72572</a> </dd></dl>
 
 <p>Reimplemented in <a class="el" href="../../db/dab/classqbank__managecategories_1_1category__condition.html#acd8485caeaa848c7c40a27f7836b5067">qbank_managecategories\category_condition</a>.</p>
 
@@ -490,10 +490,11 @@ string string&#160;</td><td class="memItemRight" valign="bottom"><b>$where</b> =
       </table>
 </div><div class="memdoc">
 
-<p>Return filter class associated with this condition. </p>
+<p>Return the Javascript filter class to provide the UI for this condition. </p>
+<p>If left as null, this will use the default core/datafilter/filtertype class. Otherwise, override it to return the full path to the Javascript module path for the class.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">string</td><td>filter class </td></tr>
+    <tr><td class="paramname">?string</td><td>filter class </td></tr>
   </table>
   </dd>
 </dl>
@@ -634,7 +635,7 @@ string string&#160;</td><td class="memItemRight" valign="bottom"><b>$where</b> =
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d0/df5/classqbank__deletequestion_1_1hidden__condition.html#a2a7d5224fdb4ed8b514e566004cb7d8d">qbank_deletequestion\hidden_condition</a>, and <a class="el" href="../../db/dab/classqbank__managecategories_1_1category__condition.html#a58e34c09225fac66e55a8729873f3d62">qbank_managecategories\category_condition</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d0/df5/classqbank__deletequestion_1_1hidden__condition.html#a2a7d5224fdb4ed8b514e566004cb7d8d">qbank_deletequestion\hidden_condition</a>, <a class="el" href="../../d3/df1/classqbank__editquestion_1_1status__condition.html#a77b1d7930585498f5d6459fc5679283a">qbank_editquestion\status_condition</a>, <a class="el" href="../../db/dab/classqbank__managecategories_1_1category__condition.html#a58e34c09225fac66e55a8729873f3d62">qbank_managecategories\category_condition</a>, and <a class="el" href="../../dc/d63/classqbank__viewquestiontype_1_1type__condition.html#a944f454b49a6f7e0bd66404b4c92075f">qbank_viewquestiontype\type_condition</a>.</p>
 
 </div>
 </div>
@@ -772,7 +773,7 @@ string string&#160;</td><td class="memItemRight" valign="bottom"><b>$where</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 15 2024 03:19:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Dec 22 2024 03:03:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

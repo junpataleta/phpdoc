@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20241213) (a97ddeb2a2c)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20241219) (7d6f282aef0)</div>
   </td>
  </tr>
  </tbody>
@@ -233,6 +233,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ae178c9c79a8df57050de2bebfe7504e2" id="r_ae178c9c79a8df57050de2bebfe7504e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae178c9c79a8df57050de2bebfe7504e2">move_question_category</a> (stdClass $oldtopcategory, context $newcontext)</td></tr>
 <tr class="memdesc:ae178c9c79a8df57050de2bebfe7504e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new 'Top' category in our new context and move the old categories descendents beneath it.  <br /></td></tr>
 <tr class="separator:ae178c9c79a8df57050de2bebfe7504e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66abd06cce7066924d55dd45c9ec0626" id="r_a66abd06cce7066924d55dd45c9ec0626"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66abd06cce7066924d55dd45c9ec0626">question_category_is_empty</a> (int $categoryid)</td></tr>
+<tr class="memdesc:a66abd06cce7066924d55dd45c9ec0626"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively check if a question category or its children contain any questions.  <br /></td></tr>
+<tr class="separator:a66abd06cce7066924d55dd45c9ec0626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a83a2d82756508d4e264bf56ed2acb4ee" name="a83a2d82756508d4e264bf56ed2acb4ee"></a>
@@ -982,6 +985,51 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a66abd06cce7066924d55dd45c9ec0626" name="a66abd06cce7066924d55dd45c9ec0626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66abd06cce7066924d55dd45c9ec0626">&#9670;&#160;</a></span>question_category_is_empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_qbank\task\transfer_question_categories::question_category_is_empty </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$categoryid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Recursively check if a question category or its children contain any questions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$categoryid</td><td>The parent category to check from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>True if neither the category nor its children contain any questions. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d5/d5c/classdml__exception.html" title="DML exception class, use instead of throw new moodle_exception() in dml code.">dml_exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a6e35ed89429e2f72550bfa41003dca37" name="a6e35ed89429e2f72550bfa41003dca37"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6e35ed89429e2f72550bfa41003dca37">&#9670;&#160;</a></span>retry_until_success()</h2>
 
@@ -1533,7 +1581,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 15 2024 03:19:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sun Dec 22 2024 03:03:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>
