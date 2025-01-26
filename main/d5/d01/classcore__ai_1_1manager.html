@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250117) (a2653cc9242)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20250124) (bcf06a0484e)</div>
   </td>
  </tr>
  </tbody>
@@ -83,30 +83,54 @@ $(function(){ initResizable(false); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a8a5a13d0138c85d0f08bd22ff649d5a4" id="r_a8a5a13d0138c85d0f08bd22ff649d5a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a5a13d0138c85d0f08bd22ff649d5a4">__construct</a> (protected <a class="el" href="../../d3/d6e/classmoodle__database.html">moodle_database</a> readonly <a class="el" href="../../d3/d6e/classmoodle__database.html">moodle_database</a> $db,)</td></tr>
+<tr class="memdesc:a8a5a13d0138c85d0f08bd22ff649d5a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new AI manager.  <br /></td></tr>
+<tr class="separator:a8a5a13d0138c85d0f08bd22ff649d5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a532def03d887759cfd56c7eadb8bedaa" id="r_a532def03d887759cfd56c7eadb8bedaa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a532def03d887759cfd56c7eadb8bedaa">create_provider_instance</a> (string $classname, string $name, bool $enabled=false, ?array $config=null,)</td></tr>
+<tr class="memdesc:a532def03d887759cfd56c7eadb8bedaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new provider instance.  <br /></td></tr>
+<tr class="separator:a532def03d887759cfd56c7eadb8bedaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9121241e8d3f77e4facfc1168ded213c" id="r_a9121241e8d3f77e4facfc1168ded213c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9121241e8d3f77e4facfc1168ded213c">delete_provider_instance</a> (<a class="el" href="../../d5/dec/classcore__ai_1_1provider.html">provider</a> $<a class="el" href="../../d5/dec/classcore__ai_1_1provider.html">provider</a>)</td></tr>
+<tr class="memdesc:a9121241e8d3f77e4facfc1168ded213c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the provider instance.  <br /></td></tr>
+<tr class="separator:a9121241e8d3f77e4facfc1168ded213c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7e1bbee076352d2555f008a569433e2" id="r_ad7e1bbee076352d2555f008a569433e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7e1bbee076352d2555f008a569433e2">disable_provider_instance</a> (<a class="el" href="../../d5/dec/classcore__ai_1_1provider.html">provider</a> $<a class="el" href="../../d5/dec/classcore__ai_1_1provider.html">provider</a>)</td></tr>
+<tr class="memdesc:ad7e1bbee076352d2555f008a569433e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable a provider.  <br /></td></tr>
+<tr class="separator:ad7e1bbee076352d2555f008a569433e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f3723c300716ee61abb62a98cae4d3b" id="r_a2f3723c300716ee61abb62a98cae4d3b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f3723c300716ee61abb62a98cae4d3b">enable_provider_instance</a> (<a class="el" href="../../d5/dec/classcore__ai_1_1provider.html">provider</a> $<a class="el" href="../../d5/dec/classcore__ai_1_1provider.html">provider</a>)</td></tr>
+<tr class="memdesc:a2f3723c300716ee61abb62a98cae4d3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable a provider instance.  <br /></td></tr>
+<tr class="separator:a2f3723c300716ee61abb62a98cae4d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64274753ba825bfbff6da18430f121cc" id="r_a64274753ba825bfbff6da18430f121cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64274753ba825bfbff6da18430f121cc">get_provider_instances</a> (?array $filter=null)</td></tr>
+<tr class="memdesc:a64274753ba825bfbff6da18430f121cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of all provider instances.  <br /></td></tr>
+<tr class="separator:a64274753ba825bfbff6da18430f121cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fd506c9a91e59e3e74a76eb334a0ca8" id="r_a0fd506c9a91e59e3e74a76eb334a0ca8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fd506c9a91e59e3e74a76eb334a0ca8">get_provider_records</a> (?array $filter=null)</td></tr>
+<tr class="memdesc:a0fd506c9a91e59e3e74a76eb334a0ca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the provider records according to the filter.  <br /></td></tr>
+<tr class="separator:a0fd506c9a91e59e3e74a76eb334a0ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f8b6ebda7a1c9a69ea5a43ce4d0c55f" id="r_a6f8b6ebda7a1c9a69ea5a43ce4d0c55f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f8b6ebda7a1c9a69ea5a43ce4d0c55f">get_providers_for_actions</a> (array $actions, bool $enabledonly=false)</td></tr>
+<tr class="memdesc:a6f8b6ebda7a1c9a69ea5a43ce4d0c55f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a list of actions get the provider instances that support them.  <br /></td></tr>
+<tr class="separator:a6f8b6ebda7a1c9a69ea5a43ce4d0c55f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecc065be9fbd0b52c383a1ce01faa572" id="r_aecc065be9fbd0b52c383a1ce01faa572"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecc065be9fbd0b52c383a1ce01faa572">is_action_available</a> (string $actionclass)</td></tr>
+<tr class="memdesc:aecc065be9fbd0b52c383a1ce01faa572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an action is available.  <br /></td></tr>
+<tr class="separator:aecc065be9fbd0b52c383a1ce01faa572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70afcb7dcee4cb81f8440091233921dd" id="r_a70afcb7dcee4cb81f8440091233921dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70afcb7dcee4cb81f8440091233921dd">is_action_enabled</a> (string $plugin, string $actionclass, int $instanceid=0)</td></tr>
+<tr class="memdesc:a70afcb7dcee4cb81f8440091233921dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an action is enabled for a given plugin.  <br /></td></tr>
+<tr class="separator:a70afcb7dcee4cb81f8440091233921dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95f662fd6e7baac32bfdddfa2646b161" id="r_a95f662fd6e7baac32bfdddfa2646b161"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95f662fd6e7baac32bfdddfa2646b161">process_action</a> (<a class="el" href="../../db/db5/classcore__ai_1_1aiactions_1_1base.html">base</a> $action)</td></tr>
 <tr class="memdesc:a95f662fd6e7baac32bfdddfa2646b161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process an action.  <br /></td></tr>
 <tr class="separator:a95f662fd6e7baac32bfdddfa2646b161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa84fec8a1ede95bc33755d38e7e54b65" id="r_aa84fec8a1ede95bc33755d38e7e54b65"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa84fec8a1ede95bc33755d38e7e54b65">set_action_state</a> (string $plugin, string $actionbasename, int $enabled, int $instanceid=0)</td></tr>
+<tr class="memdesc:aa84fec8a1ede95bc33755d38e7e54b65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the action state for a given plugin.  <br /></td></tr>
+<tr class="separator:aa84fec8a1ede95bc33755d38e7e54b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a189cb0e857e2b2c47ebc8512c86e0249" id="r_a189cb0e857e2b2c47ebc8512c86e0249"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a189cb0e857e2b2c47ebc8512c86e0249">update_provider_instance</a> (<a class="el" href="../../d5/dec/classcore__ai_1_1provider.html">provider</a> $<a class="el" href="../../d5/dec/classcore__ai_1_1provider.html">provider</a>, ?array $config=null, ?array $actionconfig=null)</td></tr>
+<tr class="memdesc:a189cb0e857e2b2c47ebc8512c86e0249"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update provider instance.  <br /></td></tr>
+<tr class="separator:a189cb0e857e2b2c47ebc8512c86e0249"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a994070988d064aae78936a7e0231f180" id="r_a994070988d064aae78936a7e0231f180"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a994070988d064aae78936a7e0231f180">get_providers_for_actions</a> (array $actions, bool $enabledonly=false)</td></tr>
-<tr class="memdesc:a994070988d064aae78936a7e0231f180"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a list of actions get the provider plugins that support them.  <br /></td></tr>
-<tr class="separator:a994070988d064aae78936a7e0231f180"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae17b761c3599dc1f8d3572351aaae61b" id="r_ae17b761c3599dc1f8d3572351aaae61b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae17b761c3599dc1f8d3572351aaae61b">get_supported_actions</a> (string $pluginname)</td></tr>
 <tr class="memdesc:ae17b761c3599dc1f8d3572351aaae61b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of actions that this provider or placement supports, given the name of the plugin.  <br /></td></tr>
 <tr class="separator:ae17b761c3599dc1f8d3572351aaae61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d52d8e445ecc4870c09f1a343908286" id="r_a0d52d8e445ecc4870c09f1a343908286"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d52d8e445ecc4870c09f1a343908286">get_user_policy_status</a> (int $userid)</td></tr>
 <tr class="memdesc:a0d52d8e445ecc4870c09f1a343908286"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the user policy.  <br /></td></tr>
 <tr class="separator:a0d52d8e445ecc4870c09f1a343908286"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7aa0da57e07dbe1aa0c0e931f6d37d6" id="r_ac7aa0da57e07dbe1aa0c0e931f6d37d6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7aa0da57e07dbe1aa0c0e931f6d37d6">is_action_available</a> (string $actionclass)</td></tr>
-<tr class="memdesc:ac7aa0da57e07dbe1aa0c0e931f6d37d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an action is available.  <br /></td></tr>
-<tr class="separator:ac7aa0da57e07dbe1aa0c0e931f6d37d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a9073365db9fe7709190f64223fd2d2" id="r_a9a9073365db9fe7709190f64223fd2d2"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a9073365db9fe7709190f64223fd2d2">is_action_enabled</a> (string $plugin, string $actionclass)</td></tr>
-<tr class="memdesc:a9a9073365db9fe7709190f64223fd2d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an action is enabled for a given plugin.  <br /></td></tr>
-<tr class="separator:a9a9073365db9fe7709190f64223fd2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47eb27243b3093e0aa14bb3add227a70" id="r_a47eb27243b3093e0aa14bb3add227a70"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47eb27243b3093e0aa14bb3add227a70">set_action_state</a> (string $plugin, string $actionbasename, int $enabled)</td></tr>
-<tr class="memdesc:a47eb27243b3093e0aa14bb3add227a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the action state for a given plugin.  <br /></td></tr>
-<tr class="separator:a47eb27243b3093e0aa14bb3add227a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a461f907ff7c2d94e3f1ab01448925761" id="r_a461f907ff7c2d94e3f1ab01448925761"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a461f907ff7c2d94e3f1ab01448925761">user_policy_accepted</a> (int $userid, int $contextid)</td></tr>
 <tr class="memdesc:a461f907ff7c2d94e3f1ab01448925761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the policy acceptance for a given user.  <br /></td></tr>
 <tr class="separator:a461f907ff7c2d94e3f1ab01448925761"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,6 +141,38 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a5a1f74f5cc0602aba15ddd6591729b3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the action provider.  <br /></td></tr>
 <tr class="separator:a5a1f74f5cc0602aba15ddd6591729b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a8a5a13d0138c85d0f08bd22ff649d5a4" name="a8a5a13d0138c85d0f08bd22ff649d5a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a5a13d0138c85d0f08bd22ff649d5a4">&#9670;&#160;</a></span>__construct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_ai\manager::__construct </td>
+          <td>(</td>
+          <td class="paramtype">protected <a class="el" href="../../d3/d6e/classmoodle__database.html">moodle_database</a> readonly <a class="el" href="../../d3/d6e/classmoodle__database.html">moodle_database</a></td>          <td class="paramname"><span class="paramname"><em>$db</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new AI manager. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d3/d6e/classmoodle__database.html" title="Abstract class representing moodle database interface.">moodle_database</a></td><td class="paramname">$db</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">$db</td><td>The database instance </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5a1f74f5cc0602aba15ddd6591729b3c" name="a5a1f74f5cc0602aba15ddd6591729b3c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a1f74f5cc0602aba15ddd6591729b3c">&#9670;&#160;</a></span>call_action_provider()</h2>
@@ -163,17 +219,230 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a994070988d064aae78936a7e0231f180" name="a994070988d064aae78936a7e0231f180"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a994070988d064aae78936a7e0231f180">&#9670;&#160;</a></span>get_providers_for_actions()</h2>
+<a id="a532def03d887759cfd56c7eadb8bedaa" name="a532def03d887759cfd56c7eadb8bedaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a532def03d887759cfd56c7eadb8bedaa">&#9670;&#160;</a></span>create_provider_instance()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static core_ai\manager::get_providers_for_actions </td>
+          <td class="memname">core_ai\manager::create_provider_instance </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$classname</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$enabled</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?array</td>          <td class="paramname"><span class="paramname"><em>$config</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new provider instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$classname</td><td>Classname of the provider. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$name</td><td>The name of the provider config. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$enabled</td><td>The enabled state of the provider. </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$config</td><td>The config json. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">provider</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9121241e8d3f77e4facfc1168ded213c" name="a9121241e8d3f77e4facfc1168ded213c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9121241e8d3f77e4facfc1168ded213c">&#9670;&#160;</a></span>delete_provider_instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_ai\manager::delete_provider_instance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/dec/classcore__ai_1_1provider.html">provider</a></td>          <td class="paramname"><span class="paramname"><em>$provider</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Delete the provider instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">provider</td><td class="paramname">$provider</td><td>The provider instance. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad7e1bbee076352d2555f008a569433e2" name="ad7e1bbee076352d2555f008a569433e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7e1bbee076352d2555f008a569433e2">&#9670;&#160;</a></span>disable_provider_instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_ai\manager::disable_provider_instance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/dec/classcore__ai_1_1provider.html">provider</a></td>          <td class="paramname"><span class="paramname"><em>$provider</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable a provider. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">provider</td><td class="paramname">$provider</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">provider</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2f3723c300716ee61abb62a98cae4d3b" name="a2f3723c300716ee61abb62a98cae4d3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f3723c300716ee61abb62a98cae4d3b">&#9670;&#160;</a></span>enable_provider_instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_ai\manager::enable_provider_instance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/dec/classcore__ai_1_1provider.html">provider</a></td>          <td class="paramname"><span class="paramname"><em>$provider</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable a provider instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">provider</td><td class="paramname">$provider</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">provider</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a64274753ba825bfbff6da18430f121cc" name="a64274753ba825bfbff6da18430f121cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64274753ba825bfbff6da18430f121cc">&#9670;&#160;</a></span>get_provider_instances()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_ai\manager::get_provider_instances </td>
+          <td>(</td>
+          <td class="paramtype">?array</td>          <td class="paramname"><span class="paramname"><em>$filter</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a list of all provider instances. </p>
+<p>This method retrieves provider records from the database, attempts to instantiate each provider class, and returns an array of provider instances. It filters out any records where the provider class does not exist.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">null&#160;|&#160;array</td><td class="paramname">$filter</td><td>The database filter to apply when fetching provider records. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>An array of instantiated provider objects. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d5/d5c/classdml__exception.html" title="DML exception class, use instead of throw new moodle_exception() in dml code.">dml_exception</a></td><td>If there is a database error during record retrieval. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0fd506c9a91e59e3e74a76eb334a0ca8" name="a0fd506c9a91e59e3e74a76eb334a0ca8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fd506c9a91e59e3e74a76eb334a0ca8">&#9670;&#160;</a></span>get_provider_records()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_ai\manager::get_provider_records </td>
+          <td>(</td>
+          <td class="paramtype">?array</td>          <td class="paramname"><span class="paramname"><em>$filter</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the provider records according to the filter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$filter</td><td>The filterable elements to get the records from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d5/d5c/classdml__exception.html" title="DML exception class, use instead of throw new moodle_exception() in dml code.">dml_exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6f8b6ebda7a1c9a69ea5a43ce4d0c55f" name="a6f8b6ebda7a1c9a69ea5a43ce4d0c55f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f8b6ebda7a1c9a69ea5a43ce4d0c55f">&#9670;&#160;</a></span>get_providers_for_actions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_ai\manager::get_providers_for_actions </td>
           <td>(</td>
           <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$actions</em></span>, </td>
         </tr>
@@ -183,14 +452,9 @@ Protected Member Functions</h2></td></tr>
           <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$enabledonly</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Given a list of actions get the provider plugins that support them. </p>
+<p>Given a list of actions get the provider instances that support them. </p>
 <p>Will return an array of arrays, indexed by action name.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -286,27 +550,19 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac7aa0da57e07dbe1aa0c0e931f6d37d6" name="ac7aa0da57e07dbe1aa0c0e931f6d37d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7aa0da57e07dbe1aa0c0e931f6d37d6">&#9670;&#160;</a></span>is_action_available()</h2>
+<a id="aecc065be9fbd0b52c383a1ce01faa572" name="aecc065be9fbd0b52c383a1ce01faa572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecc065be9fbd0b52c383a1ce01faa572">&#9670;&#160;</a></span>is_action_available()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static core_ai\manager::is_action_available </td>
+          <td class="memname">core_ai\manager::is_action_available </td>
           <td>(</td>
           <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$actionclass</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Check if an action is available. </p>
@@ -326,31 +582,28 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9a9073365db9fe7709190f64223fd2d2" name="a9a9073365db9fe7709190f64223fd2d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a9073365db9fe7709190f64223fd2d2">&#9670;&#160;</a></span>is_action_enabled()</h2>
+<a id="a70afcb7dcee4cb81f8440091233921dd" name="a70afcb7dcee4cb81f8440091233921dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70afcb7dcee4cb81f8440091233921dd">&#9670;&#160;</a></span>is_action_enabled()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static core_ai\manager::is_action_enabled </td>
+          <td class="memname">core_ai\manager::is_action_enabled </td>
           <td>(</td>
           <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$plugin</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$actionclass</em></span>&#160;)</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$actionclass</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$instanceid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Check if an action is enabled for a given plugin. </p>
@@ -358,12 +611,13 @@ Protected Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$plugin</td><td>The name of the plugin. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$actionclass</td><td>The fully qualified action class name to be checked. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$instanceid</td><td>The instance id of the plugin. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">mixed</td><td>Returns the configuration value of the action for the given plugin. </td></tr>
+    <tr><td class="paramname">bool</td><td>Returns the configuration value of the action for the given plugin. </td></tr>
   </table>
   </dd>
 </dl>
@@ -402,17 +656,14 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a47eb27243b3093e0aa14bb3add227a70" name="a47eb27243b3093e0aa14bb3add227a70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47eb27243b3093e0aa14bb3add227a70">&#9670;&#160;</a></span>set_action_state()</h2>
+<a id="aa84fec8a1ede95bc33755d38e7e54b65" name="aa84fec8a1ede95bc33755d38e7e54b65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa84fec8a1ede95bc33755d38e7e54b65">&#9670;&#160;</a></span>set_action_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static core_ai\manager::set_action_state </td>
+          <td class="memname">core_ai\manager::set_action_state </td>
           <td>(</td>
           <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$plugin</em></span>, </td>
         </tr>
@@ -424,14 +675,14 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$enabled</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$enabled</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$instanceid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Set the action state for a given plugin. </p>
@@ -440,12 +691,61 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$plugin</td><td>The name of the plugin. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$actionbasename</td><td>The action to be set. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$enabled</td><td>The state to be set (e.g., enabled or disabled). </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$instanceid</td><td>The instance id of the instance. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td>Returns true if the configuration was successfully set, false otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a189cb0e857e2b2c47ebc8512c86e0249" name="a189cb0e857e2b2c47ebc8512c86e0249"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a189cb0e857e2b2c47ebc8512c86e0249">&#9670;&#160;</a></span>update_provider_instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_ai\manager::update_provider_instance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/dec/classcore__ai_1_1provider.html">provider</a></td>          <td class="paramname"><span class="paramname"><em>$provider</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?array</td>          <td class="paramname"><span class="paramname"><em>$config</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?array</td>          <td class="paramname"><span class="paramname"><em>$actionconfig</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update provider instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">provider</td><td class="paramname">$provider</td><td>The provider instance. </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$config</td><td>the configuration of the provider instance to be updated. </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$actionconfig</td><td>the action configuration of the provider instance to be updated. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">provider</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d5/d5c/classdml__exception.html" title="DML exception class, use instead of throw new moodle_exception() in dml code.">dml_exception</a></td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -502,7 +802,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 19 2025 03:03:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jan 26 2025 03:00:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

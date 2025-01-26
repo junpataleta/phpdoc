@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250117) (a2653cc9242)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20250124) (bcf06a0484e)</div>
   </td>
  </tr>
  </tbody>
@@ -85,10 +85,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab0f523a4f31ab28fada9c116f438fc34" id="r_ab0f523a4f31ab28fada9c116f438fc34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0f523a4f31ab28fada9c116f438fc34">__construct</a> ($key, $factory)</td></tr>
 <tr class="memdesc:ab0f523a4f31ab28fada9c116f438fc34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a lock containing the unique key required to release it.  <br /></td></tr>
 <tr class="separator:ab0f523a4f31ab28fada9c116f438fc34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa795ab53ad90fe29a830a4ecd1cb6eee" id="r_aa795ab53ad90fe29a830a4ecd1cb6eee"><td class="memItemLeft" align="right" valign="top"><a id="aa795ab53ad90fe29a830a4ecd1cb6eee" name="aa795ab53ad90fe29a830a4ecd1cb6eee"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>__destruct</b> ()</td></tr>
-<tr class="memdesc:aa795ab53ad90fe29a830a4ecd1cb6eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print debugging if this lock falls out of scope before being released. <br /></td></tr>
-<tr class="separator:aa795ab53ad90fe29a830a4ecd1cb6eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52339733bb2de3df7d2b8ac52505e882" id="r_a52339733bb2de3df7d2b8ac52505e882"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52339733bb2de3df7d2b8ac52505e882">extend</a> ()</td></tr>
 <tr class="separator:a52339733bb2de3df7d2b8ac52505e882"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeacf5c81f4259c4d5e23cdb36fac9fd3" id="r_aeacf5c81f4259c4d5e23cdb36fac9fd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeacf5c81f4259c4d5e23cdb36fac9fd3">get_key</a> ()</td></tr>
@@ -100,6 +96,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab720853145d7dd2f925d9cbd07ec1f14" id="r_ab720853145d7dd2f925d9cbd07ec1f14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab720853145d7dd2f925d9cbd07ec1f14">release</a> ()</td></tr>
 <tr class="memdesc:ab720853145d7dd2f925d9cbd07ec1f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release this lock.  <br /></td></tr>
 <tr class="separator:ab720853145d7dd2f925d9cbd07ec1f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e31b56a6f86bd67b3a68c95224c8440" id="r_a9e31b56a6f86bd67b3a68c95224c8440"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e31b56a6f86bd67b3a68c95224c8440">release_if_not_released</a> (bool $withexception=false)</td></tr>
+<tr class="memdesc:a9e31b56a6f86bd67b3a68c95224c8440"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a lock if it has not already been released.  <br /></td></tr>
+<tr class="separator:a9e31b56a6f86bd67b3a68c95224c8440"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -167,7 +166,7 @@ string int&#160;</td><td class="memItemRight" valign="bottom"><b>$key</b> = ''</
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000281">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000284">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10. </dd></dl>
 
 </div>
 </div>
@@ -248,6 +247,37 @@ string int&#160;</td><td class="memItemRight" valign="bottom"><b>$key</b> = ''</
 
 </div>
 </div>
+<a id="a9e31b56a6f86bd67b3a68c95224c8440" name="a9e31b56a6f86bd67b3a68c95224c8440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e31b56a6f86bd67b3a68c95224c8440">&#9670;&#160;</a></span>release_if_not_released()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core\lock\lock::release_if_not_released </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$withexception</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Release a lock if it has not already been released. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">bool</td><td class="paramname">$withexception</td><td>If true, throw an exception if the lock has not been released. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">coding_exception</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a9d9dca000ac616ffc973ca9dbfa2632a" name="a9d9dca000ac616ffc973ca9dbfa2632a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9d9dca000ac616ffc973ca9dbfa2632a">&#9670;&#160;</a></span>$caller</h2>
@@ -305,7 +335,7 @@ string int&#160;</td><td class="memItemRight" valign="bottom"><b>$key</b> = ''</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 19 2025 03:03:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jan 26 2025 02:59:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

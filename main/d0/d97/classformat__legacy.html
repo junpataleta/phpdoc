@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250117) (a2653cc9242)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20250124) (bcf06a0484e)</div>
   </td>
  </tr>
  </tbody>
@@ -71,6 +71,7 @@ $(function(){ initResizable(false); });
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
@@ -198,9 +199,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab6fb2d33e0eb3df84823c1c1aa499698" id="r_ab6fb2d33e0eb3df84823c1c1aa499698"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#ab6fb2d33e0eb3df84823c1c1aa499698">get_modinfo</a> ()</td></tr>
 <tr class="memdesc:ab6fb2d33e0eb3df84823c1c1aa499698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current course modinfo.  <br /></td></tr>
 <tr class="separator:ab6fb2d33e0eb3df84823c1c1aa499698"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f4445c1b8d99d0c6ff355d9d65de201" id="r_a4f4445c1b8d99d0c6ff355d9d65de201"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a4f4445c1b8d99d0c6ff355d9d65de201">get_non_ajax_cm_action_url</a> (string $action, <a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $cm)</td></tr>
-<tr class="memdesc:a4f4445c1b8d99d0c6ff355d9d65de201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the old non-ajax activity action url.  <br /></td></tr>
-<tr class="separator:a4f4445c1b8d99d0c6ff355d9d65de201"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10a7a94a6a9598e409d42d5e19eee88c" id="r_a10a7a94a6a9598e409d42d5e19eee88c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a10a7a94a6a9598e409d42d5e19eee88c">get_output_classname</a> (string $outputname)</td></tr>
 <tr class="memdesc:a10a7a94a6a9598e409d42d5e19eee88c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns instance of output component used by this plugin.  <br /></td></tr>
 <tr class="separator:a10a7a94a6a9598e409d42d5e19eee88c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,6 +235,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a740265d6596a5009e2e58654daaf780d" id="r_a740265d6596a5009e2e58654daaf780d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a740265d6596a5009e2e58654daaf780d">get_sections_preferences_by_preference</a> ()</td></tr>
 <tr class="memdesc:a740265d6596a5009e2e58654daaf780d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the format section preferences.  <br /></td></tr>
 <tr class="separator:a740265d6596a5009e2e58654daaf780d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2b3fac5a42f287797804953655d4f8e" id="r_ad2b3fac5a42f287797804953655d4f8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#ad2b3fac5a42f287797804953655d4f8e">get_stateactions_instance</a> ()</td></tr>
+<tr class="memdesc:ad2b3fac5a42f287797804953655d4f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a format state actions instance.  <br /></td></tr>
+<tr class="separator:ad2b3fac5a42f287797804953655d4f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa13678a9268fdad2c4ba9a0665a44442" id="r_aa13678a9268fdad2c4ba9a0665a44442"><td class="memItemLeft" align="right" valign="top"><a id="aa13678a9268fdad2c4ba9a0665a44442" name="aa13678a9268fdad2c4ba9a0665a44442"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>get_stateupdates_instance</b> ()</td></tr>
+<tr class="memdesc:aa13678a9268fdad2c4ba9a0665a44442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a format state updates instance. <br /></td></tr>
+<tr class="separator:aa13678a9268fdad2c4ba9a0665a44442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7a851df791f1d734264f4f0e00c85f2" id="r_ab7a851df791f1d734264f4f0e00c85f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#ab7a851df791f1d734264f4f0e00c85f2">get_update_url</a> (string $action, array $ids=[], ?int $targetsectionid=null, ?int $targetcmid=null, ?moodle_url $returnurl=null)</td></tr>
+<tr class="memdesc:ab7a851df791f1d734264f4f0e00c85f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The URL to update the course format.  <br /></td></tr>
+<tr class="separator:ab7a851df791f1d734264f4f0e00c85f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fc4192e865376fdae1634e0fc6379f4" id="r_a4fc4192e865376fdae1634e0fc6379f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fc4192e865376fdae1634e0fc6379f4">get_view_url</a> ($section, $options=array())</td></tr>
 <tr class="memdesc:a4fc4192e865376fdae1634e0fc6379f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The URL to use for the specified course (with section)  <br /></td></tr>
 <tr class="separator:a4fc4192e865376fdae1634e0fc6379f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -348,6 +356,24 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a47adc887b40707bbc924b961d012cee2" id="r_a47adc887b40707bbc924b961d012cee2"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a47adc887b40707bbc924b961d012cee2">session_cache_reset_all</a> ()</td></tr>
 <tr class="memdesc:a47adc887b40707bbc924b961d012cee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the current user for all courses.  <br /></td></tr>
 <tr class="separator:a47adc887b40707bbc924b961d012cee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ab78be857f67541b2409d625b60491416" id="r_ab78be857f67541b2409d625b60491416"><td class="memItemLeft" align="right" valign="top"><a id="ab78be857f67541b2409d625b60491416" name="ab78be857f67541b2409d625b60491416"></a>
+replacement <a class="el" href="../../df/db9/classcm__info.html">cm_info</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$cm</b>: moodle_url { $nonajaxactions = [ 'cmDelete' =&gt; 'cm_delete'</td></tr>
+<tr class="separator:ab78be857f67541b2409d625b60491416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedc6336969b21fa974c90b43aad51869" id="r_aedc6336969b21fa974c90b43aad51869"><td class="memItemLeft" align="right" valign="top"><a id="aedc6336969b21fa974c90b43aad51869" name="aedc6336969b21fa974c90b43aad51869"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$nonajaxaction</b> = $nonajaxactions[$action]</td></tr>
+<tr class="separator:aedc6336969b21fa974c90b43aad51869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0093e5cc722428480db03d1da3eb3555" id="r_a0093e5cc722428480db03d1da3eb3555"><td class="memItemLeft" align="right" valign="top">replacement&#160;</td><td class="memItemRight" valign="bottom">: '<a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#ab7a851df791f1d734264f4f0e00c85f2">core_courseformat\base::get_update_url</a>'</td></tr>
+<tr class="memdesc:a0093e5cc722428480db03d1da3eb3555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the old non-ajax activity action url.  <br /></td></tr>
+<tr class="separator:a0093e5cc722428480db03d1da3eb3555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ae4dca2086428b3c818e973f608561d" id="r_a3ae4dca2086428b3c818e973f608561d"><td class="memItemLeft" align="right" valign="top"><a id="a3ae4dca2086428b3c818e973f608561d" name="a3ae4dca2086428b3c818e973f608561d"></a>
+replacement&#160;</td><td class="memItemRight" valign="bottom"><b>mdl</b>: '&lt;a class=&quot;el&quot; href=&quot;https: )] public function get_non_ajax_cm_action_url(string $action</td></tr>
+<tr class="separator:a3ae4dca2086428b3c818e973f608561d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1268a77e9ec8c596ece47a607fd91cac" id="r_a1268a77e9ec8c596ece47a607fd91cac"><td class="memItemLeft" align="right" valign="top"><a id="a1268a77e9ec8c596ece47a607fd91cac" name="a1268a77e9ec8c596ece47a607fd91cac"></a>
+replacement&#160;</td><td class="memItemRight" valign="bottom"><b>since</b>: '5.0'</td></tr>
+<tr class="separator:a1268a77e9ec8c596ece47a607fd91cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -1840,51 +1866,6 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
 
 </div>
 </div>
-<a id="a4f4445c1b8d99d0c6ff355d9d65de201" name="a4f4445c1b8d99d0c6ff355d9d65de201"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f4445c1b8d99d0c6ff355d9d65de201">&#9670;&#160;</a></span>get_non_ajax_cm_action_url()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">core_courseformat\base::get_non_ajax_cm_action_url </td>
-          <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$action</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td>          <td class="paramname"><span class="paramname"><em>$cm</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return the old non-ajax activity action url. </p>
-<p>BrowserKit behats tests cannot trigger javascript events, so we must translate to an old non-ajax url while non-ajax course editing is still supported.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>action name the reactive action </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td><td class="paramname">$cm</td><td>course module </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">moodle_url</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a10a7a94a6a9598e409d42d5e19eee88c" name="a10a7a94a6a9598e409d42d5e19eee88c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a10a7a94a6a9598e409d42d5e19eee88c">&#9670;&#160;</a></span>get_output_classname()</h2>
 
@@ -2190,8 +2171,8 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000097">Deprecated</a></b></dt><dd>Since 4.4. Use get_sectionnum instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000065">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80116" class="el">MDL-80116</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000100">Deprecated</a></b></dt><dd>Since 4.4. Use get_sectionnum instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000066">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80116" class="el">MDL-80116</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8. </dd></dl>
 
 </div>
 </div>
@@ -2362,6 +2343,102 @@ course_modinfo::get_section_info_all()</dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>of preferences indexed by preference name </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad2b3fac5a42f287797804953655d4f8e" name="ad2b3fac5a42f287797804953655d4f8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2b3fac5a42f287797804953655d4f8e">&#9670;&#160;</a></span>get_stateactions_instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\base::get_stateactions_instance </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return a format state actions instance. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../de/dbb/classcore__courseformat_1_1stateactions.html">core_courseformat\stateactions</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab7a851df791f1d734264f4f0e00c85f2" name="ab7a851df791f1d734264f4f0e00c85f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7a851df791f1d734264f4f0e00c85f2">&#9670;&#160;</a></span>get_update_url()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\base::get_update_url </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$action</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$ids</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int</td>          <td class="paramname"><span class="paramname"><em>$targetsectionid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int</td>          <td class="paramname"><span class="paramname"><em>$targetcmid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?moodle_url</td>          <td class="paramname"><span class="paramname"><em>$returnurl</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The URL to update the course format. </p>
+<p>If no section is specified, the update will redirect to the general course page.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>action name the reactive action </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$ids</td><td>list of ids to update </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetsectionid</td><td>optional target section id </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetcmid</td><td>optional target cm id </td></tr>
+    <tr><td class="paramtype">moodle_url&#160;|&#160;null</td><td class="paramname">$returnurl</td><td>optional custom return url </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">moodle_url</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2582,7 +2659,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 </div><div class="memdoc">
 
 <p>Returns an instance of the class. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000063">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-35727" class="el">MDL-35727</a> use MUC for caching of instances, limit the number of cached instances</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000064">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-35727" class="el">MDL-35727</a> use MUC for caching of instances, limit the number of cached instances</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int&#160;|&#160;stdClass</td><td class="paramname">$courseorid</td><td>either course id or an object that has the property 'format' and may contain property 'id' </td></tr>
@@ -3233,8 +3310,8 @@ course_modinfo::get_section_info_all()</dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000096">Deprecated</a></b></dt><dd>Since 4.4. Use set_sectionnum instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000064">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80116" class="el">MDL-80116</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000099">Deprecated</a></b></dt><dd>Since 4.4. Use set_sectionnum instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000065">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80116" class="el">MDL-80116</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8. </dd></dl>
 
 </div>
 </div>
@@ -3896,13 +3973,53 @@ course_modinfo::get_section_info_all()</dd></dl>
 
 </div>
 </div>
+<a id="a0093e5cc722428480db03d1da3eb3555" name="a0093e5cc722428480db03d1da3eb3555"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0093e5cc722428480db03d1da3eb3555">&#9670;&#160;</a></span>__pad0__</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">replacement core_courseformat\base::__pad0__</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the old non-ajax activity action url. </p>
+<p>BrowserKit behats tests cannot trigger javascript events, so we must translate to an old non-ajax url while non-ajax course editing is still supported.</p>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000101">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000067">Todo</a></b></dt><dd>Remove this method in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0 (<a href="https://tracker.moodle.org/browse/MDL-83530" class="el">MDL-83530</a>).</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>action name the reactive action </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td><td class="paramname">$cm</td><td>course module </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">moodle_url</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>course/format/<b>formatlegacy.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 19 2025 03:01:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jan 26 2025 02:58:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

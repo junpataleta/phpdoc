@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250117) (a2653cc9242)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20250124) (bcf06a0484e)</div>
   </td>
  </tr>
  </tbody>
@@ -74,6 +74,8 @@ $(function(){ initResizable(false); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="../../da/d5e/classaiprovider__openai_1_1provider-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">aiprovider_openai\provider Class Reference<div class="ingroups"><a class="el" href="../../d9/d90/group__aiprovider__openai.html">aiprovider_openai</a></div></div></div>
 </div><!--header-->
@@ -90,22 +92,12 @@ Inheritance diagram for aiprovider_openai\provider:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aea3c02df4282bd2bf2e2980596cf0539" id="r_aea3c02df4282bd2bf2e2980596cf0539"><td class="memItemLeft" align="right" valign="top"><a id="aea3c02df4282bd2bf2e2980596cf0539" name="aea3c02df4282bd2bf2e2980596cf0539"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>__construct</b> ()</td></tr>
-<tr class="memdesc:aea3c02df4282bd2bf2e2980596cf0539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor. <br /></td></tr>
-<tr class="separator:aea3c02df4282bd2bf2e2980596cf0539"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19a817c1fc5a507a3d935b14a9dfd14a" id="r_a19a817c1fc5a507a3d935b14a9dfd14a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19a817c1fc5a507a3d935b14a9dfd14a">add_authentication_headers</a> (<a class="el" href="../../d8/db5/interface_psr_1_1_http_1_1_message_1_1_request_interface.html">RequestInterface</a> $request)</td></tr>
 <tr class="memdesc:a19a817c1fc5a507a3d935b14a9dfd14a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a request to add any headers required by the provider.  <br /></td></tr>
 <tr class="separator:a19a817c1fc5a507a3d935b14a9dfd14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae89fa69db003fbb262e77da103c4d906" id="r_ae89fa69db003fbb262e77da103c4d906"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae89fa69db003fbb262e77da103c4d906">generate_userid</a> (string $userid)</td></tr>
 <tr class="memdesc:ae89fa69db003fbb262e77da103c4d906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a user id.  <br /></td></tr>
 <tr class="separator:ae89fa69db003fbb262e77da103c4d906"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96f72ea0384d8ccb495a5fc92e388aca" id="r_a96f72ea0384d8ccb495a5fc92e388aca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96f72ea0384d8ccb495a5fc92e388aca">get_action_list</a> ()</td></tr>
-<tr class="memdesc:a96f72ea0384d8ccb495a5fc92e388aca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of actions that this provider supports.  <br /></td></tr>
-<tr class="separator:a96f72ea0384d8ccb495a5fc92e388aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41831ef7487befdf217d3176113b8c48" id="r_a41831ef7487befdf217d3176113b8c48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41831ef7487befdf217d3176113b8c48">get_action_settings</a> (string $action, <a class="el" href="../../db/d2d/classadmin__root.html">admin_root</a> $ADMIN, string $section, bool $hassiteconfig)</td></tr>
-<tr class="memdesc:a41831ef7487befdf217d3176113b8c48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get any action settings for this provider.  <br /></td></tr>
-<tr class="separator:a41831ef7487befdf217d3176113b8c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a117c980cb19513cab04f7f3291ed456c" id="r_a117c980cb19513cab04f7f3291ed456c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dec/classcore__ai_1_1provider.html#a117c980cb19513cab04f7f3291ed456c">get_name</a> ()</td></tr>
 <tr class="memdesc:a117c980cb19513cab04f7f3291ed456c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the provider.  <br /></td></tr>
 <tr class="separator:a117c980cb19513cab04f7f3291ed456c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,9 +107,42 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7b1b04d112caa9c5160361fd8824da5a" id="r_a7b1b04d112caa9c5160361fd8824da5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b1b04d112caa9c5160361fd8824da5a">is_provider_configured</a> ()</td></tr>
 <tr class="memdesc:a7b1b04d112caa9c5160361fd8824da5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check this provider has the minimal configuration to work.  <br /></td></tr>
 <tr class="separator:a7b1b04d112caa9c5160361fd8824da5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a932fdb447bf3076dfddedb783a41ba89" id="r_a932fdb447bf3076dfddedb783a41ba89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a932fdb447bf3076dfddedb783a41ba89">is_request_allowed</a> (<a class="el" href="../../db/db5/classcore__ai_1_1aiactions_1_1base.html">aiactions\base</a> $action)</td></tr>
-<tr class="memdesc:a932fdb447bf3076dfddedb783a41ba89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the request is allowed by the rate limiter.  <br /></td></tr>
-<tr class="separator:a932fdb447bf3076dfddedb783a41ba89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeab40920ab0bfa78c553434613e1757" id="r_abeab40920ab0bfa78c553434613e1757"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dec/classcore__ai_1_1provider.html#abeab40920ab0bfa78c553434613e1757">is_request_allowed</a> (aiactions\base $action)</td></tr>
+<tr class="memdesc:abeab40920ab0bfa78c553434613e1757"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the request is allowed by the rate limiter.  <br /></td></tr>
+<tr class="separator:abeab40920ab0bfa78c553434613e1757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1c1e2a63d52eaee2503e62936b57dcf" id="r_ab1c1e2a63d52eaee2503e62936b57dcf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dec/classcore__ai_1_1provider.html#ab1c1e2a63d52eaee2503e62936b57dcf">to_record</a> ()</td></tr>
+<tr class="memdesc:ab1c1e2a63d52eaee2503e62936b57dcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert this object to a stdClass, suitable for saving to the database.  <br /></td></tr>
+<tr class="separator:ab1c1e2a63d52eaee2503e62936b57dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aac6e3d26d4d5eb8a10646e1b29857df2" id="r_aac6e3d26d4d5eb8a10646e1b29857df2"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac6e3d26d4d5eb8a10646e1b29857df2">get_action_list</a> ()</td></tr>
+<tr class="memdesc:aac6e3d26d4d5eb8a10646e1b29857df2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of actions that this provider supports.  <br /></td></tr>
+<tr class="separator:aac6e3d26d4d5eb8a10646e1b29857df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79f3826f1e50530326703aac09e60456" id="r_a79f3826f1e50530326703aac09e60456"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79f3826f1e50530326703aac09e60456">get_action_setting_defaults</a> (string $action)</td></tr>
+<tr class="memdesc:a79f3826f1e50530326703aac09e60456"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default settings for an action.  <br /></td></tr>
+<tr class="separator:a79f3826f1e50530326703aac09e60456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ac758b89fa3ee88d23a583920aeb434" id="r_a4ac758b89fa3ee88d23a583920aeb434"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ac758b89fa3ee88d23a583920aeb434">get_action_settings</a> (string $action, array $customdata=[],)</td></tr>
+<tr class="memdesc:a4ac758b89fa3ee88d23a583920aeb434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get any action settings for this provider.  <br /></td></tr>
+<tr class="separator:a4ac758b89fa3ee88d23a583920aeb434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b36921cf060d90e075f9e5995496658" id="r_a7b36921cf060d90e075f9e5995496658"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dec/classcore__ai_1_1provider.html#a7b36921cf060d90e075f9e5995496658">initialise_action_settings</a> ()</td></tr>
+<tr class="memdesc:a7b36921cf060d90e075f9e5995496658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise the action settings array.  <br /></td></tr>
+<tr class="separator:a7b36921cf060d90e075f9e5995496658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:acf82554ba515a5d4ccb1f8d79163c1f7" id="r_acf82554ba515a5d4ccb1f8d79163c1f7"><td class="memItemLeft" align="right" valign="top"><a id="acf82554ba515a5d4ccb1f8d79163c1f7" name="acf82554ba515a5d4ccb1f8d79163c1f7"></a>
+array readonly array&#160;</td><td class="memItemRight" valign="bottom"><b>$actionconfig</b></td></tr>
+<tr class="memdesc:acf82554ba515a5d4ccb1f8d79163c1f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The action specific settings for this instance. <br /></td></tr>
+<tr class="separator:acf82554ba515a5d4ccb1f8d79163c1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3018c5db4b1c4fbe40285a1567f7353" id="r_ad3018c5db4b1c4fbe40285a1567f7353"><td class="memItemLeft" align="right" valign="top"><a id="ad3018c5db4b1c4fbe40285a1567f7353" name="ad3018c5db4b1c4fbe40285a1567f7353"></a>
+array readonly array&#160;</td><td class="memItemRight" valign="bottom"><b>$config</b></td></tr>
+<tr class="memdesc:ad3018c5db4b1c4fbe40285a1567f7353"><td class="mdescLeft">&#160;</td><td class="mdescRight">The configuration for this instance. <br /></td></tr>
+<tr class="separator:ad3018c5db4b1c4fbe40285a1567f7353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ae2c18c66d289791d08e5599daf13b" id="r_ac1ae2c18c66d289791d08e5599daf13b"><td class="memItemLeft" align="right" valign="top"><a id="ac1ae2c18c66d289791d08e5599daf13b" name="ac1ae2c18c66d289791d08e5599daf13b"></a>
+string readonly string&#160;</td><td class="memItemRight" valign="bottom"><b>$provider</b></td></tr>
+<tr class="memdesc:ac1ae2c18c66d289791d08e5599daf13b"><td class="mdescLeft">&#160;</td><td class="mdescRight">$provider The provider used to make this instance <br /></td></tr>
+<tr class="separator:ac1ae2c18c66d289791d08e5599daf13b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a19a817c1fc5a507a3d935b14a9dfd14a" name="a19a817c1fc5a507a3d935b14a9dfd14a"></a>
@@ -138,13 +163,13 @@ Public Member Functions</h2></td></tr>
 <p>Update a request to add any headers required by the provider. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../d8/db5/interface_psr_1_1_http_1_1_message_1_1_request_interface.html">Psr\Http\Message\RequestInterface</a></td><td class="paramname">$request</td><td></td></tr>
+    <tr><td class="paramtype">RequestInterface</td><td class="paramname">$request</td><td></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d8/db5/interface_psr_1_1_http_1_1_message_1_1_request_interface.html">Psr\Http\Message\RequestInterface</a></td><td></td></tr>
+    <tr><td class="paramname">RequestInterface</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -183,19 +208,27 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a96f72ea0384d8ccb495a5fc92e388aca" name="a96f72ea0384d8ccb495a5fc92e388aca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96f72ea0384d8ccb495a5fc92e388aca">&#9670;&#160;</a></span>get_action_list()</h2>
+<a id="aac6e3d26d4d5eb8a10646e1b29857df2" name="aac6e3d26d4d5eb8a10646e1b29857df2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac6e3d26d4d5eb8a10646e1b29857df2">&#9670;&#160;</a></span>get_action_list()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">aiprovider_openai\provider::get_action_list </td>
+          <td class="memname">static aiprovider_openai\provider::get_action_list </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Get the list of actions that this provider supports. </p>
@@ -206,57 +239,94 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="../../d5/dec/classcore__ai_1_1provider.html#ab3bd78e7c33058c352b8affead2bce95">core_ai\provider</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d5/dec/classcore__ai_1_1provider.html#a9c95bd1b59988e6e8accf9128b348ed1">core_ai\provider</a>.</p>
 
 </div>
 </div>
-<a id="a41831ef7487befdf217d3176113b8c48" name="a41831ef7487befdf217d3176113b8c48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41831ef7487befdf217d3176113b8c48">&#9670;&#160;</a></span>get_action_settings()</h2>
+<a id="a79f3826f1e50530326703aac09e60456" name="a79f3826f1e50530326703aac09e60456"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79f3826f1e50530326703aac09e60456">&#9670;&#160;</a></span>get_action_setting_defaults()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">aiprovider_openai\provider::get_action_settings </td>
+          <td class="memname">static aiprovider_openai\provider::get_action_setting_defaults </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$action</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the default settings for an action. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>The action class name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>The default settings for the action. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="../../d5/dec/classcore__ai_1_1provider.html#a05968020c457ad3e0706a106f6416a09">core_ai\provider</a>.</p>
+
+</div>
+</div>
+<a id="a4ac758b89fa3ee88d23a583920aeb434" name="a4ac758b89fa3ee88d23a583920aeb434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ac758b89fa3ee88d23a583920aeb434">&#9670;&#160;</a></span>get_action_settings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static aiprovider_openai\provider::get_action_settings </td>
           <td>(</td>
           <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$action</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../db/d2d/classadmin__root.html">admin_root</a></td>          <td class="paramname"><span class="paramname"><em>$ADMIN</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$section</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$hassiteconfig</em></span>&#160;)</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$customdata</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[]</span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Get any action settings for this provider. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>The action class name. </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../db/d2d/classadmin__root.html" title="Root of admin settings tree, does not have any parent.">admin_root</a></td><td class="paramname">$ADMIN</td><td>The admin root object. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$section</td><td>The section name. </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$hassiteconfig</td><td>Whether the current user has moodle/site:config capability. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$customdata</td><td>The customdata for the form. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td>An array of settings. </td></tr>
+    <tr><td class="paramname">action_settings_form|bool</td><td>The settings form for this action or false in no settings. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="../../d5/dec/classcore__ai_1_1provider.html#a0987383c3b963209b7e2b62691d8e447">core_ai\provider</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d5/dec/classcore__ai_1_1provider.html#ab5184e0cdb7bce956c79848a91c3db29">core_ai\provider</a>.</p>
 
 </div>
 </div>
@@ -332,6 +402,39 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a7b36921cf060d90e075f9e5995496658" name="a7b36921cf060d90e075f9e5995496658"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b36921cf060d90e075f9e5995496658">&#9670;&#160;</a></span>initialise_action_settings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_ai\provider::initialise_action_settings </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel inherited">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialise the action settings array. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>The initialised action settings. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a7b1b04d112caa9c5160361fd8824da5a" name="a7b1b04d112caa9c5160361fd8824da5a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7b1b04d112caa9c5160361fd8824da5a">&#9670;&#160;</a></span>is_provider_configured()</h2>
 
@@ -359,19 +462,27 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a932fdb447bf3076dfddedb783a41ba89" name="a932fdb447bf3076dfddedb783a41ba89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a932fdb447bf3076dfddedb783a41ba89">&#9670;&#160;</a></span>is_request_allowed()</h2>
+<a id="abeab40920ab0bfa78c553434613e1757" name="abeab40920ab0bfa78c553434613e1757"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeab40920ab0bfa78c553434613e1757">&#9670;&#160;</a></span>is_request_allowed()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">aiprovider_openai\provider::is_request_allowed </td>
+          <td class="memname">core_ai\provider::is_request_allowed </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../db/db5/classcore__ai_1_1aiactions_1_1base.html">aiactions\base</a></td>          <td class="paramname"><span class="paramname"><em>$action</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Check if the request is allowed by the rate limiter. </p>
@@ -388,7 +499,38 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="../../d5/dec/classcore__ai_1_1provider.html#abeab40920ab0bfa78c553434613e1757">core_ai\provider</a>.</p>
+</div>
+</div>
+<a id="ab1c1e2a63d52eaee2503e62936b57dcf" name="ab1c1e2a63d52eaee2503e62936b57dcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1c1e2a63d52eaee2503e62936b57dcf">&#9670;&#160;</a></span>to_record()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_ai\provider::to_record </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert this object to a stdClass, suitable for saving to the database. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -398,7 +540,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 19 2025 03:02:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jan 26 2025 02:59:22 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

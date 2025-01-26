@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250117) (a2653cc9242)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20250124) (bcf06a0484e)</div>
   </td>
  </tr>
  </tbody>
@@ -119,7 +119,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4e2d1bb5b51d276a2646f28094f7987f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where should we return after plugin of this type is uninstalled?  <br /></td></tr>
 <tr class="separator:a4e2d1bb5b51d276a2646f28094f7987f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa47a100f336c4a73318187ea89bad202" id="r_aa47a100f336c4a73318187ea89bad202"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa47a100f336c4a73318187ea89bad202">get_settings_section_name</a> ()</td></tr>
-<tr class="memdesc:aa47a100f336c4a73318187ea89bad202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the node name used in admin settings menu for this plugin settings.  <br /></td></tr>
+<tr class="memdesc:aa47a100f336c4a73318187ea89bad202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the node name used in admin settings menu for this plugin settings (if applicable)  <br /></td></tr>
 <tr class="separator:aa47a100f336c4a73318187ea89bad202"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac84e27664893f91c2f9686e4ae2443df" id="r_ac84e27664893f91c2f9686e4ae2443df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7d/classcore_1_1plugininfo_1_1base.html#ac84e27664893f91c2f9686e4ae2443df">get_settings_url</a> ()</td></tr>
 <tr class="memdesc:ac84e27664893f91c2f9686e4ae2443df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the URL of the plugin settings screen.  <br /></td></tr>
@@ -163,9 +163,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad2e777c13141718acee200832889903c" id="r_ad2e777c13141718acee200832889903c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7d/classcore_1_1plugininfo_1_1base.html#ad2e777c13141718acee200832889903c">load_disk_version</a> ()</td></tr>
 <tr class="memdesc:ad2e777c13141718acee200832889903c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets <a class="el" href="">$versiondisk</a> property to a numerical value representing the version of the plugin's source code.  <br /></td></tr>
 <tr class="separator:ad2e777c13141718acee200832889903c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade897c7ef08dc237d60c0cfd85fe1ef8" id="r_ade897c7ef08dc237d60c0cfd85fe1ef8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade897c7ef08dc237d60c0cfd85fe1ef8">load_settings</a> (<a class="el" href="../../d6/d23/interfacepart__of__admin__tree.html">part_of_admin_tree</a> $adminroot, $parentnodename, $hassiteconfig,)</td></tr>
-<tr class="memdesc:ade897c7ef08dc237d60c0cfd85fe1ef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads plugin settings to the settings tree.  <br /></td></tr>
-<tr class="separator:ade897c7ef08dc237d60c0cfd85fe1ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5edf5fad4429f25a0a401fa29afcb93" id="r_ab5edf5fad4429f25a0a401fa29afcb93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7d/classcore_1_1plugininfo_1_1base.html#ab5edf5fad4429f25a0a401fa29afcb93">load_settings</a> (\<a class="el" href="../../d6/d23/interfacepart__of__admin__tree.html">part_of_admin_tree</a> $adminroot, $parentnodename, $hassiteconfig)</td></tr>
 <tr class="memdesc:ab5edf5fad4429f25a0a401fa29afcb93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads plugin settings to the settings tree.  <br /></td></tr>
 <tr class="separator:ab5edf5fad4429f25a0a401fa29afcb93"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,9 +178,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a3da1c0e463b98fa927202f417bdc865e" id="r_a3da1c0e463b98fa927202f417bdc865e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7d/classcore_1_1plugininfo_1_1base.html#a3da1c0e463b98fa927202f417bdc865e">change_plugin_order</a> (string $pluginname, int $direction)</td></tr>
 <tr class="memdesc:a3da1c0e463b98fa927202f417bdc865e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the order of the plugin relative to other plugins in the plugintype.  <br /></td></tr>
 <tr class="separator:a3da1c0e463b98fa927202f417bdc865e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54013d51399cd9a8ef961d25dd545af6" id="r_a54013d51399cd9a8ef961d25dd545af6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54013d51399cd9a8ef961d25dd545af6">enable_plugin</a> (string $pluginname, int $enabled)</td></tr>
-<tr class="memdesc:a54013d51399cd9a8ef961d25dd545af6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable a plugin.  <br /></td></tr>
-<tr class="separator:a54013d51399cd9a8ef961d25dd545af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac11c7378a2160431c12168653073f29" id="r_aac11c7378a2160431c12168653073f29"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7d/classcore_1_1plugininfo_1_1base.html#aac11c7378a2160431c12168653073f29">enable_plugin</a> (string $pluginname, int $enabled)</td></tr>
+<tr class="memdesc:aac11c7378a2160431c12168653073f29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable a plugin.  <br /></td></tr>
+<tr class="separator:aac11c7378a2160431c12168653073f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a913b6d68b23c55fb70f6f5ff712fc5d1" id="r_a913b6d68b23c55fb70f6f5ff712fc5d1"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7d/classcore_1_1plugininfo_1_1base.html#a913b6d68b23c55fb70f6f5ff712fc5d1">get_enabled_plugin</a> (string $pluginname)</td></tr>
 <tr class="memdesc:a913b6d68b23c55fb70f6f5ff712fc5d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns current status for a pluginname.  <br /></td></tr>
 <tr class="separator:a913b6d68b23c55fb70f6f5ff712fc5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,12 +196,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4d73996bc77cd4ee76424812c564e122" id="r_a4d73996bc77cd4ee76424812c564e122"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7d/classcore_1_1plugininfo_1_1base.html#a4d73996bc77cd4ee76424812c564e122">get_sorted_plugins</a> (bool $enabledonly=false)</td></tr>
 <tr class="memdesc:a4d73996bc77cd4ee76424812c564e122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds all enabled plugins, the result may include missing plugins.  <br /></td></tr>
 <tr class="separator:a4d73996bc77cd4ee76424812c564e122"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c0f83984ebb0628179556ae1f218776" id="r_a3c0f83984ebb0628179556ae1f218776"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c0f83984ebb0628179556ae1f218776">is_plugin_enabled</a> (string $plugin)</td></tr>
-<tr class="memdesc:a3c0f83984ebb0628179556ae1f218776"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a provider plugin is enabled in config.  <br /></td></tr>
-<tr class="separator:a3c0f83984ebb0628179556ae1f218776"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad60a588092396f732f0b6b08e321640" id="r_aad60a588092396f732f0b6b08e321640"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad60a588092396f732f0b6b08e321640">plugintype_supports_disabling</a> ()</td></tr>
-<tr class="memdesc:aad60a588092396f732f0b6b08e321640"><td class="mdescLeft">&#160;</td><td class="mdescRight">This plugintype supports its plugins being disabled.  <br /></td></tr>
-<tr class="separator:aad60a588092396f732f0b6b08e321640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa77aec3bb97941666423af3f7dc4c855" id="r_aa77aec3bb97941666423af3f7dc4c855"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7d/classcore_1_1plugininfo_1_1base.html#aa77aec3bb97941666423af3f7dc4c855">plugintype_supports_disabling</a> ()</td></tr>
+<tr class="memdesc:aa77aec3bb97941666423af3f7dc4c855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this plugintype supports its plugins being disabled.  <br /></td></tr>
+<tr class="separator:aa77aec3bb97941666423af3f7dc4c855"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae093f93b1d307bbe2a27114efe00f418" id="r_ae093f93b1d307bbe2a27114efe00f418"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7d/classcore_1_1plugininfo_1_1base.html#ae093f93b1d307bbe2a27114efe00f418">plugintype_supports_ordering</a> ()</td></tr>
 <tr class="memdesc:ae093f93b1d307bbe2a27114efe00f418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this plugintype supports ordering of plugins using native functionality.  <br /></td></tr>
 <tr class="separator:ae093f93b1d307bbe2a27114efe00f418"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -431,8 +425,8 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
 
 </div>
 </div>
-<a id="a54013d51399cd9a8ef961d25dd545af6" name="a54013d51399cd9a8ef961d25dd545af6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54013d51399cd9a8ef961d25dd545af6">&#9670;&#160;</a></span>enable_plugin()</h2>
+<a id="aac11c7378a2160431c12168653073f29" name="aac11c7378a2160431c12168653073f29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac11c7378a2160431c12168653073f29">&#9670;&#160;</a></span>enable_plugin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -441,7 +435,7 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static core\plugininfo\aiprovider::enable_plugin </td>
+          <td class="memname">static core\plugininfo\base::enable_plugin </td>
           <td>(</td>
           <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$pluginname</em></span>, </td>
         </tr>
@@ -453,7 +447,7 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -463,7 +457,7 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$pluginname</td><td>The plugin name to enable/disable. </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$enabled</td><td>Whether the pluginname should be enabled (1) or not (0). </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$enabled</td><td>Whether the pluginname should be enabled (1) or not (0). This is an integer because some plugins, such as filters or repositories, might support more statuses than just enabled/disabled.</td></tr>
   </table>
   </dd>
 </dl>
@@ -474,7 +468,7 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="../../da/d7d/classcore_1_1plugininfo_1_1base.html#aac11c7378a2160431c12168653073f29">core\plugininfo\base</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d8/d7a/classcore_1_1plugininfo_1_1aiplacement.html#acd4cf1be9c66945dc46d5eabb3ec4ab4">core\plugininfo\aiplacement</a>, <a class="el" href="../../db/d4b/classcore_1_1plugininfo_1_1antivirus.html#a0badc44bbd2255324313d1108c4188bc">core\plugininfo\antivirus</a>, <a class="el" href="../../df/d9b/classcore_1_1plugininfo_1_1auth.html#ab38ca87892331b620061c91a1656ccf6">core\plugininfo\auth</a>, <a class="el" href="../../d4/d9e/classcore_1_1plugininfo_1_1availability.html#ac1444c95d08a02bcfb5b9916fcd46497">core\plugininfo\availability</a>, <a class="el" href="../../d7/d8a/classcore_1_1plugininfo_1_1block.html#ad5106dd98a0555c821dbef505dd6c6cb">core\plugininfo\block</a>, <a class="el" href="../../d1/d6c/classcore_1_1plugininfo_1_1communication.html#ad6a21065b525666a443b2437b61f6b63">core\plugininfo\communication</a>, <a class="el" href="../../dd/d34/classcore_1_1plugininfo_1_1contenttype.html#a2269f0109844bab00462b5cc4b7d4515">core\plugininfo\contenttype</a>, <a class="el" href="../../d2/d32/classcore_1_1plugininfo_1_1customfield.html#a96bc7caf0de23a1964718686cd6cf63a">core\plugininfo\customfield</a>, <a class="el" href="../../dd/d58/classcore_1_1plugininfo_1_1dataformat.html#ad92b7886578cee81bc770363521bf305">core\plugininfo\dataformat</a>, <a class="el" href="../../db/dea/classcore_1_1plugininfo_1_1editor.html#a59cbb564e283f56a6a9fa95fb73668b3">core\plugininfo\editor</a>, <a class="el" href="../../d2/d2a/classcore_1_1plugininfo_1_1enrol.html#a8b37a5fffb826d9ebe146839624c0929">core\plugininfo\enrol</a>, <a class="el" href="../../db/d85/classcore_1_1plugininfo_1_1fileconverter.html#ac77cf1a37cb0d010ce03d20bed349dd7">core\plugininfo\fileconverter</a>, <a class="el" href="../../d5/d14/classcore_1_1plugininfo_1_1filter.html#a400a758a5897ec67099f171735a5dd3a">core\plugininfo\filter</a>, <a class="el" href="../../db/d35/classcore_1_1plugininfo_1_1format.html#aed105df4b5ff285fa34becb579816557">core\plugininfo\format</a>, <a class="el" href="../../dd/d5a/classcore_1_1plugininfo_1_1media.html#af12bdcd9fb37449a0f42121c7ac1c856">core\plugininfo\media</a>, <a class="el" href="../../d8/dc5/classcore_1_1plugininfo_1_1message.html#a8f3310d36dfd6239e533c275d9f1edb0">core\plugininfo\message</a>, <a class="el" href="../../d8/dec/classcore_1_1plugininfo_1_1mod.html#ae666511d11d89f6cb7950def1431eeb3">core\plugininfo\mod</a>, <a class="el" href="../../d4/dfd/classcore_1_1plugininfo_1_1paygw.html#a45ae2497c22f8fb2b56ebf89797b0045">core\plugininfo\paygw</a>, <a class="el" href="../../de/ddd/classcore_1_1plugininfo_1_1portfolio.html#a8199ae412f86a3a6b685dd82a102cbc6">core\plugininfo\portfolio</a>, <a class="el" href="../../d2/d80/classcore_1_1plugininfo_1_1qbank.html#a5539e4bcbbff4d099c6e32c9a4d5bfdf">core\plugininfo\qbank</a>, <a class="el" href="../../d9/d76/classcore_1_1plugininfo_1_1qbehaviour.html#a291fe899ef5cc3bf41b25a60753a5797">core\plugininfo\qbehaviour</a>, <a class="el" href="../../dc/da7/classcore_1_1plugininfo_1_1qtype.html#adbe32eb842c2943ef09eecb6f025754b">core\plugininfo\qtype</a>, <a class="el" href="../../db/daa/classcore_1_1plugininfo_1_1repository.html#a8a2ee68f33f346897302fb8d708a619b">core\plugininfo\repository</a>, <a class="el" href="../../d7/d92/classcore_1_1plugininfo_1_1webservice.html#af716bde82444812bda18d49b90d16fa3">core\plugininfo\webservice</a>, <a class="el" href="../../da/d9d/classeditor__tiny_1_1plugininfo_1_1tiny.html#a088e3f451f5f56893f99c5dd7c83a40c">editor_tiny\plugininfo\tiny</a>, <a class="el" href="../../dd/dd3/classmod__assign_1_1plugininfo_1_1assignfeedback.html#a6deceb970edab66a80779f773d2601c8">mod_assign\plugininfo\assignfeedback</a>, <a class="el" href="../../d5/d52/classmod__assign_1_1plugininfo_1_1assignsubmission.html#ab5b0ddea941beb07f95af34664280159">mod_assign\plugininfo\assignsubmission</a>, <a class="el" href="../../d7/d2b/classmod__bigbluebuttonbn_1_1plugininfo_1_1bbbext.html#aad25be740578c14082b0940e08f7f3c6">mod_bigbluebuttonbn\plugininfo\bbbext</a>, <a class="el" href="../../d8/d2c/classtool__log_1_1plugininfo_1_1logstore.html#ad161cb75f2dedcd6dd1b36e47fa73576">tool_log\plugininfo\logstore</a>, and <a class="el" href="../../dc/df8/classtool__mfa_1_1plugininfo_1_1factor.html#a6871adb03c3bb7afe843672e59a43a72">tool_mfa\plugininfo\factor</a>.</p>
 
 </div>
 </div>
@@ -658,7 +652,7 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
 <p>Finds all enabled plugins, the result may include missing plugins. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array|null</td><td>of enabled plugins $pluginname=&gt;$pluginname, null means unknown. </td></tr>
+    <tr><td class="paramname">array|null</td><td>of enabled plugins $pluginname=&gt;$pluginname, null means unknown </td></tr>
   </table>
   </dd>
 </dl>
@@ -881,10 +875,10 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
       </table>
 </div><div class="memdoc">
 
-<p>Returns the node name used in admin settings menu for this plugin settings. </p>
+<p>Returns the node name used in admin settings menu for this plugin settings (if applicable) </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">string</td><td>node name. </td></tr>
+    <tr><td class="paramname">null|string</td><td>node name or null if plugin does not create settings node (default) </td></tr>
   </table>
   </dd>
 </dl>
@@ -1240,45 +1234,6 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
 
 </div>
 </div>
-<a id="a3c0f83984ebb0628179556ae1f218776" name="a3c0f83984ebb0628179556ae1f218776"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c0f83984ebb0628179556ae1f218776">&#9670;&#160;</a></span>is_plugin_enabled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static core\plugininfo\aiprovider::is_plugin_enabled </td>
-          <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$plugin</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Check if a provider plugin is enabled in config. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$plugin</td><td>The plugin to check. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td>Return true if enabled. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a80ab32ee5be9085366f21401553f3f7f" name="a80ab32ee5be9085366f21401553f3f7f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a80ab32ee5be9085366f21401553f3f7f">&#9670;&#160;</a></span>is_standard()</h2>
 
@@ -1361,7 +1316,7 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
 </div><div class="memdoc">
 
 <p>Should there be a way to uninstall the plugin via the administration UI. </p>
-<p>By default, uninstallation is allowed.</p>
+<p>By default uninstallation is not allowed, plugin developers must enable it explicitly!</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td></td></tr>
@@ -1429,44 +1384,8 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
 
 </div>
 </div>
-<a id="ade897c7ef08dc237d60c0cfd85fe1ef8" name="ade897c7ef08dc237d60c0cfd85fe1ef8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade897c7ef08dc237d60c0cfd85fe1ef8">&#9670;&#160;</a></span>load_settings() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">core\plugininfo\aiprovider::load_settings </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d6/d23/interfacepart__of__admin__tree.html">part_of_admin_tree</a></td>          <td class="paramname"><span class="paramname"><em>$adminroot</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$parentnodename</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$hassiteconfig</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Loads plugin settings to the settings tree. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../d6/d23/interfacepart__of__admin__tree.html" title="CLASS DEFINITIONS /////////////////////////////////////////////////////////.">part_of_admin_tree</a></td><td class="paramname">$adminroot</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$parentnodename</td><td></td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$hassiteconfig</td><td>whether the current user has moodle/site:config capability </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="ab5edf5fad4429f25a0a401fa29afcb93" name="ab5edf5fad4429f25a0a401fa29afcb93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5edf5fad4429f25a0a401fa29afcb93">&#9670;&#160;</a></span>load_settings() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5edf5fad4429f25a0a401fa29afcb93">&#9670;&#160;</a></span>load_settings()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1580,8 +1499,8 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
 
 </div>
 </div>
-<a id="aad60a588092396f732f0b6b08e321640" name="aad60a588092396f732f0b6b08e321640"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad60a588092396f732f0b6b08e321640">&#9670;&#160;</a></span>plugintype_supports_disabling()</h2>
+<a id="aa77aec3bb97941666423af3f7dc4c855" name="aa77aec3bb97941666423af3f7dc4c855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa77aec3bb97941666423af3f7dc4c855">&#9670;&#160;</a></span>plugintype_supports_disabling()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1590,7 +1509,7 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static core\plugininfo\aiprovider::plugintype_supports_disabling </td>
+          <td class="memname">static core\plugininfo\base::plugintype_supports_disabling </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -1598,12 +1517,12 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>This plugintype supports its plugins being disabled. </p>
+<p>Whether this plugintype supports its plugins being disabled. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td></td></tr>
@@ -1611,7 +1530,7 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="../../da/d7d/classcore_1_1plugininfo_1_1base.html#aa77aec3bb97941666423af3f7dc4c855">core\plugininfo\base</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d8/d7a/classcore_1_1plugininfo_1_1aiplacement.html#a3416889b4d219541a39f91476c1b9a83">core\plugininfo\aiplacement</a>, <a class="el" href="../../db/d4b/classcore_1_1plugininfo_1_1antivirus.html#a7f78501513469aee56da9a50ea9f7fae">core\plugininfo\antivirus</a>, <a class="el" href="../../df/d9b/classcore_1_1plugininfo_1_1auth.html#a44de2e4a84ef0304fe3f5ae01f20a781">core\plugininfo\auth</a>, <a class="el" href="../../d4/d9e/classcore_1_1plugininfo_1_1availability.html#a911677d470eb9cec2ebf95360a8594c9">core\plugininfo\availability</a>, <a class="el" href="../../d7/d8a/classcore_1_1plugininfo_1_1block.html#a6beb69f6f1df8fb3f0e12d78bc5fa398">core\plugininfo\block</a>, <a class="el" href="../../dd/d34/classcore_1_1plugininfo_1_1contenttype.html#a437334b4899d5010fda57d5949e5241e">core\plugininfo\contenttype</a>, <a class="el" href="../../d2/d32/classcore_1_1plugininfo_1_1customfield.html#aaf07cb92d49467129233c4b79f565441">core\plugininfo\customfield</a>, <a class="el" href="../../dd/d58/classcore_1_1plugininfo_1_1dataformat.html#a58407d12da431f12fed93f37bf0a66a3">core\plugininfo\dataformat</a>, <a class="el" href="../../db/dea/classcore_1_1plugininfo_1_1editor.html#a362bb785843e882f7e59c399239baf6b">core\plugininfo\editor</a>, <a class="el" href="../../d2/d2a/classcore_1_1plugininfo_1_1enrol.html#af1c7ba1d42dda02552ee7e8f550bdbed">core\plugininfo\enrol</a>, <a class="el" href="../../db/d85/classcore_1_1plugininfo_1_1fileconverter.html#a7bbee8a18989a0308718407130cfb6fd">core\plugininfo\fileconverter</a>, <a class="el" href="../../d5/d14/classcore_1_1plugininfo_1_1filter.html#aea78e15980f0c94d95878e94dd9c1698">core\plugininfo\filter</a>, <a class="el" href="../../dd/d5a/classcore_1_1plugininfo_1_1media.html#acb06835c2a9755b7ce92346b74d8b9a1">core\plugininfo\media</a>, <a class="el" href="../../d8/dc5/classcore_1_1plugininfo_1_1message.html#adf9b694e3efa4f8e78b3d37e23f6aceb">core\plugininfo\message</a>, <a class="el" href="../../d8/dec/classcore_1_1plugininfo_1_1mod.html#ad2edfd7195b68852217d8c4ef91b92b8">core\plugininfo\mod</a>, <a class="el" href="../../d4/dfd/classcore_1_1plugininfo_1_1paygw.html#ac9427bfc76d11c33dd5f8b67e8d9b713">core\plugininfo\paygw</a>, <a class="el" href="../../de/ddd/classcore_1_1plugininfo_1_1portfolio.html#adcb382bf845f11ed848a1d26083b5d78">core\plugininfo\portfolio</a>, <a class="el" href="../../d2/d80/classcore_1_1plugininfo_1_1qbank.html#ab2a1338fbcfd4e284f246c731989f875">core\plugininfo\qbank</a>, <a class="el" href="../../d9/d76/classcore_1_1plugininfo_1_1qbehaviour.html#af07232001376585064b11a961eceab94">core\plugininfo\qbehaviour</a>, <a class="el" href="../../dc/da7/classcore_1_1plugininfo_1_1qtype.html#a952d5a3b8215c1667ec4c71fb775cd6d">core\plugininfo\qtype</a>, <a class="el" href="../../db/daa/classcore_1_1plugininfo_1_1repository.html#a377bad72b606fddf4686a6f7ea39bc40">core\plugininfo\repository</a>, <a class="el" href="../../d7/d92/classcore_1_1plugininfo_1_1webservice.html#a9b659592460a4f1e3d998366f3df0fef">core\plugininfo\webservice</a>, <a class="el" href="../../da/d9d/classeditor__tiny_1_1plugininfo_1_1tiny.html#a73308a0d9526b99ac822d54f45d6e7fb">editor_tiny\plugininfo\tiny</a>, <a class="el" href="../../dd/dd3/classmod__assign_1_1plugininfo_1_1assignfeedback.html#a0652750d5139f7dffbaed285f3b1a6f4">mod_assign\plugininfo\assignfeedback</a>, <a class="el" href="../../d5/d52/classmod__assign_1_1plugininfo_1_1assignsubmission.html#a4cb9c163fa275e669207963ff57149ce">mod_assign\plugininfo\assignsubmission</a>, <a class="el" href="../../d8/d2c/classtool__log_1_1plugininfo_1_1logstore.html#a4c831e4c72078415103b06d84ccbe4c2">tool_log\plugininfo\logstore</a>, and <a class="el" href="../../dc/df8/classtool__mfa_1_1plugininfo_1_1factor.html#a939dae8365526ca25efd0f80918e20ac">tool_mfa\plugininfo\factor</a>.</p>
 
 </div>
 </div>
@@ -1779,7 +1698,7 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 19 2025 03:03:25 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jan 26 2025 03:00:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

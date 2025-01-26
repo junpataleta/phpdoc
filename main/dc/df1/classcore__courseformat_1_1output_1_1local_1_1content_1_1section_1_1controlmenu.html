@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250117) (a2653cc9242)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20250124) (bcf06a0484e)</div>
   </td>
  </tr>
  </tbody>
@@ -114,6 +114,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adb26a8cc15935be6a45771a787424677" id="r_adb26a8cc15935be6a45771a787424677"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb26a8cc15935be6a45771a787424677">section_control_items</a> ()</td></tr>
 <tr class="memdesc:adb26a8cc15935be6a45771a787424677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the edit control items of a section.  <br /></td></tr>
 <tr class="separator:adb26a8cc15935be6a45771a787424677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab274fe15d2e0a9396e00da5c9ddd900b" id="r_ab274fe15d2e0a9396e00da5c9ddd900b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d30/classcore__courseformat_1_1output_1_1local_1_1content_1_1basecontrolmenu.html#ab274fe15d2e0a9396e00da5c9ddd900b">set_baseurl</a> (<a class="el" href="../../de/d0a/classcore_1_1url.html">url</a> $baseurl)</td></tr>
+<tr class="memdesc:ab274fe15d2e0a9396e00da5c9ddd900b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the default base URL to return after each action.  <br /></td></tr>
+<tr class="separator:ab274fe15d2e0a9396e00da5c9ddd900b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -819,6 +822,39 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$menuid</b></td></t
 
 </div>
 </div>
+<a id="ab274fe15d2e0a9396e00da5c9ddd900b" name="ab274fe15d2e0a9396e00da5c9ddd900b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab274fe15d2e0a9396e00da5c9ddd900b">&#9670;&#160;</a></span>set_baseurl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\output\local\content\basecontrolmenu::set_baseurl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d0a/classcore_1_1url.html">url</a></td>          <td class="paramname"><span class="paramname"><em>$baseurl</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Change the default base URL to return after each action. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">url</td><td class="paramname">$baseurl</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a09740fb88f372de9d255ff17a6d54f6b" name="a09740fb88f372de9d255ff17a6d54f6b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a09740fb88f372de9d255ff17a6d54f6b">&#9670;&#160;</a></span>__pad0__</h2>
@@ -835,8 +871,8 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$menuid</b></td></t
 <p>Generate the edit control items of a section. </p>
 <p>It is not clear this kind of controls are still available in 4.0 so, for now, this method is almost a clone of the previous section_control_items from the course/renderer.php.</p>
 <p>This method must remain public until the final deprecation of section_edit_control_items.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000101">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000071">Todo</a></b></dt><dd>Remove this method in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0 (<a href="https://tracker.moodle.org/browse/MDL-83530" class="el">MDL-83530</a>). </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000105">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000073">Todo</a></b></dt><dd>Remove this method in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0 (<a href="https://tracker.moodle.org/browse/MDL-83530" class="el">MDL-83530</a>). </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>of edit control items </td></tr>
@@ -852,7 +888,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$menuid</b></td></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 19 2025 03:03:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jan 26 2025 03:00:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>
