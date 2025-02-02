@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250124) (bcf06a0484e)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20250131) (07881a57720)</div>
   </td>
  </tr>
  </tbody>
@@ -378,9 +378,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return search conditions for the plugin. </p>
+<p>This is used by question bank view classes to get the list of available filters to display in the filter UI.</p>
+<p>This is also used to get the list of available filters for other purposes, for example resolving the list of questions selected by a set of filters, in which case the <code>$qbank</code> argument may be <code>null</code> {</p><dl class="section see"><dt>See also</dt><dd>filter_condition_manager::get_condition_classes()}.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">view&#160;|&#160;null</td><td class="paramname">$qbank</td><td></td></tr>
+    <tr><td class="paramtype">view&#160;|&#160;null</td><td class="paramname">$qbank</td><td>The current question bank view the filters are being rendered for, for example the main question bank page, or the random question view. </td></tr>
   </table>
   </dd>
 </dl>
@@ -401,7 +403,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 26 2025 03:01:51 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Feb 2 2025 03:02:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

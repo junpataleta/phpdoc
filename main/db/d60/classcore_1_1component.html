@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250124) (bcf06a0484e)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20250131) (07881a57720)</div>
   </td>
  </tr>
  </tbody>
@@ -96,9 +96,9 @@ Static Public Member Functions</h2></td></tr>
 static&#160;</td><td class="memItemRight" valign="bottom"><b>register_autoloader</b> ()</td></tr>
 <tr class="memdesc:a65965b54fa088027e7cd6f167963ad04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> class autoloader. <br /></td></tr>
 <tr class="separator:a65965b54fa088027e7cd6f167963ad04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95fdb8b881fa45a114cc976da54ca375" id="r_a95fdb8b881fa45a114cc976da54ca375"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95fdb8b881fa45a114cc976da54ca375">reset</a> ()</td></tr>
-<tr class="memdesc:a95fdb8b881fa45a114cc976da54ca375"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the initialisation of the component utility.  <br /></td></tr>
-<tr class="separator:a95fdb8b881fa45a114cc976da54ca375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91fef4fecd161c15058cba4599c9cabb" id="r_a91fef4fecd161c15058cba4599c9cabb"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91fef4fecd161c15058cba4599c9cabb">reset</a> (bool $fullreset=false,)</td></tr>
+<tr class="memdesc:a91fef4fecd161c15058cba4599c9cabb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the initialisation of the component utility.  <br /></td></tr>
+<tr class="separator:a91fef4fecd161c15058cba4599c9cabb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
@@ -162,6 +162,30 @@ static object&#160;</td><td class="memItemRight" valign="bottom"><b>$componentso
 <tr class="memitem:a57bee87f7ec6e9540a6858257e9f3674" id="r_a57bee87f7ec6e9540a6858257e9f3674"><td class="memItemLeft" align="right" valign="top">static array&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57bee87f7ec6e9540a6858257e9f3674">$composerautoloadfiles</a></td></tr>
 <tr class="memdesc:a57bee87f7ec6e9540a6858257e9f3674"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array containing files which are normally in a package's composer/autoload.files section.  <br /></td></tr>
 <tr class="separator:a57bee87f7ec6e9540a6858257e9f3674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a587c4985397bd966b3fadbcdf2429472" id="r_a587c4985397bd966b3fadbcdf2429472"><td class="memItemLeft" align="right" valign="top"><a id="a587c4985397bd966b3fadbcdf2429472" name="a587c4985397bd966b3fadbcdf2429472"></a>
+static array&#160;</td><td class="memItemRight" valign="bottom"><b>$deletedplugins</b> = null</td></tr>
+<tr class="memdesc:a587c4985397bd966b3fadbcdf2429472"><td class="mdescLeft">&#160;</td><td class="mdescRight">deleted plugins <br /></td></tr>
+<tr class="separator:a587c4985397bd966b3fadbcdf2429472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aef54d9c5c9f1f46e4eae11c989d813" id="r_a8aef54d9c5c9f1f46e4eae11c989d813"><td class="memItemLeft" align="right" valign="top"><a id="a8aef54d9c5c9f1f46e4eae11c989d813" name="a8aef54d9c5c9f1f46e4eae11c989d813"></a>
+static array&#160;</td><td class="memItemRight" valign="bottom"><b>$deletedplugintypes</b> = null</td></tr>
+<tr class="memdesc:a8aef54d9c5c9f1f46e4eae11c989d813"><td class="mdescLeft">&#160;</td><td class="mdescRight">deleted plugin types <br /></td></tr>
+<tr class="separator:a8aef54d9c5c9f1f46e4eae11c989d813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56b698988f4f1c3d907c63d9b98be019" id="r_a56b698988f4f1c3d907c63d9b98be019"><td class="memItemLeft" align="right" valign="top"><a id="a56b698988f4f1c3d907c63d9b98be019" name="a56b698988f4f1c3d907c63d9b98be019"></a>
+static array&#160;</td><td class="memItemRight" valign="bottom"><b>$deletedsubplugins</b> = null</td></tr>
+<tr class="memdesc:a56b698988f4f1c3d907c63d9b98be019"><td class="mdescLeft">&#160;</td><td class="mdescRight">deleted sub plugins <br /></td></tr>
+<tr class="separator:a56b698988f4f1c3d907c63d9b98be019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a806c44fa3ffed9ab0696b5f4b9182" id="r_af1a806c44fa3ffed9ab0696b5f4b9182"><td class="memItemLeft" align="right" valign="top"><a id="af1a806c44fa3ffed9ab0696b5f4b9182" name="af1a806c44fa3ffed9ab0696b5f4b9182"></a>
+static array&#160;</td><td class="memItemRight" valign="bottom"><b>$deprecatedplugins</b> = null</td></tr>
+<tr class="memdesc:af1a806c44fa3ffed9ab0696b5f4b9182"><td class="mdescLeft">&#160;</td><td class="mdescRight">deprecated plugins <br /></td></tr>
+<tr class="separator:af1a806c44fa3ffed9ab0696b5f4b9182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a61be3f5e0b9dd099e43d34cf44088c" id="r_a3a61be3f5e0b9dd099e43d34cf44088c"><td class="memItemLeft" align="right" valign="top"><a id="a3a61be3f5e0b9dd099e43d34cf44088c" name="a3a61be3f5e0b9dd099e43d34cf44088c"></a>
+static array&#160;</td><td class="memItemRight" valign="bottom"><b>$deprecatedplugintypes</b> = null</td></tr>
+<tr class="memdesc:a3a61be3f5e0b9dd099e43d34cf44088c"><td class="mdescLeft">&#160;</td><td class="mdescRight">deprecated plugin types <br /></td></tr>
+<tr class="separator:a3a61be3f5e0b9dd099e43d34cf44088c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12ab20a58971ca1583cf1f2b5840359b" id="r_a12ab20a58971ca1583cf1f2b5840359b"><td class="memItemLeft" align="right" valign="top"><a id="a12ab20a58971ca1583cf1f2b5840359b" name="a12ab20a58971ca1583cf1f2b5840359b"></a>
+static array&#160;</td><td class="memItemRight" valign="bottom"><b>$deprecatedsubplugins</b> = null</td></tr>
+<tr class="memdesc:a12ab20a58971ca1583cf1f2b5840359b"><td class="mdescLeft">&#160;</td><td class="mdescRight">deprecated sub plugins <br /></td></tr>
+<tr class="separator:a12ab20a58971ca1583cf1f2b5840359b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7817709b011a36c8048b6356baabb720" id="r_a7817709b011a36c8048b6356baabb720"><td class="memItemLeft" align="right" valign="top"><a id="a7817709b011a36c8048b6356baabb720" name="a7817709b011a36c8048b6356baabb720"></a>
 static array&#160;</td><td class="memItemRight" valign="bottom"><b>$filemap</b> = null</td></tr>
 <tr class="memdesc:a7817709b011a36c8048b6356baabb720"><td class="mdescLeft">&#160;</td><td class="mdescRight">list of some known files that can be included. <br /></td></tr>
@@ -658,8 +682,8 @@ static int float&#160;</td><td class="memItemRight" valign="bottom"><b>$version<
 
 </div>
 </div>
-<a id="a95fdb8b881fa45a114cc976da54ca375" name="a95fdb8b881fa45a114cc976da54ca375"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95fdb8b881fa45a114cc976da54ca375">&#9670;&#160;</a></span>reset()</h2>
+<a id="a91fef4fecd161c15058cba4599c9cabb" name="a91fef4fecd161c15058cba4599c9cabb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91fef4fecd161c15058cba4599c9cabb">&#9670;&#160;</a></span>reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -670,7 +694,7 @@ static int float&#160;</td><td class="memItemRight" valign="bottom"><b>$version<
         <tr>
           <td class="memname">static core\component::reset </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$fullreset</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -793,7 +817,7 @@ static int float&#160;</td><td class="memItemRight" valign="bottom"><b>$version<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 26 2025 02:59:25 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Feb 2 2025 03:00:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

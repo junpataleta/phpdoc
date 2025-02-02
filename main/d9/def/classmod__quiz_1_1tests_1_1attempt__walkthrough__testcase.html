@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250124) (bcf06a0484e)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20250131) (07881a57720)</div>
   </td>
  </tr>
  </tbody>
@@ -225,9 +225,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ae097afdd7261febcc0d095010b037d00" id="r_ae097afdd7261febcc0d095010b037d00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/daf/classadvanced__testcase.html#ae097afdd7261febcc0d095010b037d00">add_mocked_plugin</a> (string $plugintype, string $pluginname, string $path,)</td></tr>
 <tr class="memdesc:ae097afdd7261febcc0d095010b037d00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a mocked plugin to <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a>.  <br /></td></tr>
 <tr class="separator:ae097afdd7261febcc0d095010b037d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f46baadfb6c339702314ee3e1bda126" id="r_a8f46baadfb6c339702314ee3e1bda126"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/daf/classadvanced__testcase.html#a8f46baadfb6c339702314ee3e1bda126">add_mocked_plugintype</a> (string $plugintype, string $path,)</td></tr>
-<tr class="memdesc:a8f46baadfb6c339702314ee3e1bda126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a mocked plugintype to <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a>.  <br /></td></tr>
-<tr class="separator:a8f46baadfb6c339702314ee3e1bda126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac776388c0c7feef0ff692711d1707cd7" id="r_ac776388c0c7feef0ff692711d1707cd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/daf/classadvanced__testcase.html#ac776388c0c7feef0ff692711d1707cd7">add_mocked_plugintype</a> (string $plugintype, string $path, bool $deprecated=false,)</td></tr>
+<tr class="memdesc:ac776388c0c7feef0ff692711d1707cd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a mocked plugintype to <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a>.  <br /></td></tr>
+<tr class="separator:ac776388c0c7feef0ff692711d1707cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3d60f580ef68df7ba3204d574b8b8be" id="r_aa3d60f580ef68df7ba3204d574b8b8be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3d60f580ef68df7ba3204d574b8b8be">check_attempt_results</a> (array $result, <a class="el" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html">quiz_attempt</a> $attemptobj)</td></tr>
 <tr class="memdesc:aa3d60f580ef68df7ba3204d574b8b8be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that attempt results are as specified in $result.  <br /></td></tr>
 <tr class="separator:aa3d60f580ef68df7ba3204d574b8b8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -371,8 +371,8 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$quiz</b></td></t
 
 </div>
 </div>
-<a id="a8f46baadfb6c339702314ee3e1bda126" name="a8f46baadfb6c339702314ee3e1bda126"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f46baadfb6c339702314ee3e1bda126">&#9670;&#160;</a></span>add_mocked_plugintype()</h2>
+<a id="ac776388c0c7feef0ff692711d1707cd7" name="ac776388c0c7feef0ff692711d1707cd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac776388c0c7feef0ff692711d1707cd7">&#9670;&#160;</a></span>add_mocked_plugintype()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -388,7 +388,12 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$quiz</b></td></t
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$path</em></span>&#160;)</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$deprecated</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -405,6 +410,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$quiz</b></td></t
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$plugintype</td><td>The name of the plugintype </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$path</td><td>The path to the plugintype's root </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$deprecated</td><td>whether to add the plugintype as a deprecated plugin type. </td></tr>
   </table>
   </dd>
 </dl>
@@ -784,7 +790,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$quiz</b></td></t
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000997">Deprecated</a></b></dt><dd>3.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000998">Deprecated</a></b></dt><dd>3.0 </dd></dl>
 
 </div>
 </div>
@@ -836,7 +842,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$quiz</b></td></t
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000996">Deprecated</a></b></dt><dd>3.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000997">Deprecated</a></b></dt><dd>3.0 </dd></dl>
 
 </div>
 </div>
@@ -1100,7 +1106,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$quiz</b></td></t
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000994">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10 - See <a href="https://tracker.moodle.org/browse/MDL-67673" class="el">MDL-67673</a> and <a href="https://tracker.moodle.org/browse/MDL-64600" class="el">MDL-64600</a> for more info. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000995">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10 - See <a href="https://tracker.moodle.org/browse/MDL-67673" class="el">MDL-67673</a> and <a href="https://tracker.moodle.org/browse/MDL-64600" class="el">MDL-64600</a> for more info. </dd></dl>
 
 </div>
 </div>
@@ -1126,7 +1132,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$quiz</b></td></t
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000993">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10 - See <a href="https://tracker.moodle.org/browse/MDL-67673" class="el">MDL-67673</a> and <a href="https://tracker.moodle.org/browse/MDL-64600" class="el">MDL-64600</a> for more info. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000994">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10 - See <a href="https://tracker.moodle.org/browse/MDL-67673" class="el">MDL-67673</a> and <a href="https://tracker.moodle.org/browse/MDL-64600" class="el">MDL-64600</a> for more info. </dd></dl>
 
 </div>
 </div>
@@ -1152,7 +1158,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$quiz</b></td></t
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000992">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10 - See <a href="https://tracker.moodle.org/browse/MDL-67673" class="el">MDL-67673</a> and <a href="https://tracker.moodle.org/browse/MDL-64600" class="el">MDL-64600</a> for more info. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000993">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10 - See <a href="https://tracker.moodle.org/browse/MDL-67673" class="el">MDL-67673</a> and <a href="https://tracker.moodle.org/browse/MDL-64600" class="el">MDL-64600</a> for more info. </dd></dl>
 
 </div>
 </div>
@@ -2095,7 +2101,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$quiz</b></td></t
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000995">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10 - See <a href="https://tracker.moodle.org/browse/MDL-67673" class="el">MDL-67673</a> and <a href="https://tracker.moodle.org/browse/MDL-64600" class="el">MDL-64600</a> for more info. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000996">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10 - See <a href="https://tracker.moodle.org/browse/MDL-67673" class="el">MDL-67673</a> and <a href="https://tracker.moodle.org/browse/MDL-64600" class="el">MDL-64600</a> for more info. </dd></dl>
 
 </div>
 </div>
@@ -2921,7 +2927,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$quiz</b></td></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 26 2025 03:01:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Feb 2 2025 03:02:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

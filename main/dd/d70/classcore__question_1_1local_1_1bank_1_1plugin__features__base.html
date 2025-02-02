@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250124) (bcf06a0484e)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20250131) (07881a57720)</div>
   </td>
  </tr>
  </tbody>
@@ -353,9 +353,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return search conditions for the plugin. </p>
+<p>This is used by question bank view classes to get the list of available filters to display in the filter UI.</p>
+<p>This is also used to get the list of available filters for other purposes, for example resolving the list of questions selected by a set of filters, in which case the <code>$qbank</code> argument may be <code>null</code> {</p><dl class="section see"><dt>See also</dt><dd>filter_condition_manager::get_condition_classes()}.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">view&#160;|&#160;null</td><td class="paramname">$qbank</td><td></td></tr>
+    <tr><td class="paramtype">view&#160;|&#160;null</td><td class="paramname">$qbank</td><td>The current question bank view the filters are being rendered for, for example the main question bank page, or the random question view. </td></tr>
   </table>
   </dd>
 </dl>
@@ -366,7 +368,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d7/d54/classmod__quiz_1_1question_1_1bank_1_1quiz__managecategories__feature.html#a1d6dfdd659236d222849a3a47b2ac69a">mod_quiz\question\bank\quiz_managecategories_feature</a>, <a class="el" href="../../d4/d04/classqbank__deletequestion_1_1plugin__feature.html#a92b302e60aa60510b0974bb19beb2c8c">qbank_deletequestion\plugin_feature</a>, <a class="el" href="../../d3/d4b/classqbank__editquestion_1_1plugin__feature.html#a2cafbfb5e1f98c4eeb092c1a8b01642d">qbank_editquestion\plugin_feature</a>, <a class="el" href="../../d3/d1f/classqbank__managecategories_1_1plugin__feature.html#aec0be7a2a27a8df264046747d898b67b">qbank_managecategories\plugin_feature</a>, <a class="el" href="../../d4/da8/classqbank__tagquestion_1_1plugin__feature.html#ae2fa903fe8e01c8c5f78bd29aa031578">qbank_tagquestion\plugin_feature</a>, <a class="el" href="../../df/dfc/classqbank__viewquestionname_1_1plugin__feature.html#afa8bb81e7a98752b09560f437a5b6f44">qbank_viewquestionname\plugin_feature</a>, <a class="el" href="../../d5/d14/classqbank__viewquestiontext_1_1plugin__feature.html#a6dfc82d683a584a4b78716ae1021cf30">qbank_viewquestiontext\plugin_feature</a>, and <a class="el" href="../../dc/d17/classqbank__viewquestiontype_1_1plugin__feature.html#ac9fde29620324daed2e530f69b8cb85d">qbank_viewquestiontype\plugin_feature</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d7/d54/classmod__quiz_1_1question_1_1bank_1_1quiz__managecategories__feature.html#a1d6dfdd659236d222849a3a47b2ac69a">mod_quiz\question\bank\quiz_managecategories_feature</a>, <a class="el" href="../../d4/d04/classqbank__deletequestion_1_1plugin__feature.html#a92b302e60aa60510b0974bb19beb2c8c">qbank_deletequestion\plugin_feature</a>, <a class="el" href="../../d3/d4b/classqbank__editquestion_1_1plugin__feature.html#a2cafbfb5e1f98c4eeb092c1a8b01642d">qbank_editquestion\plugin_feature</a>, <a class="el" href="../../d3/d1f/classqbank__managecategories_1_1plugin__feature.html#aec0be7a2a27a8df264046747d898b67b">qbank_managecategories\plugin_feature</a>, <a class="el" href="../../d4/da8/classqbank__tagquestion_1_1plugin__feature.html#ae2fa903fe8e01c8c5f78bd29aa031578">qbank_tagquestion\plugin_feature</a>, <a class="el" href="../../d6/de7/classqbank__viewcreator_1_1plugin__feature.html#a855f327b02ef70c2fd8fe18c8bf1ba4e">qbank_viewcreator\plugin_feature</a>, <a class="el" href="../../df/dfc/classqbank__viewquestionname_1_1plugin__feature.html#afa8bb81e7a98752b09560f437a5b6f44">qbank_viewquestionname\plugin_feature</a>, <a class="el" href="../../d5/d14/classqbank__viewquestiontext_1_1plugin__feature.html#a6dfc82d683a584a4b78716ae1021cf30">qbank_viewquestiontext\plugin_feature</a>, and <a class="el" href="../../dc/d17/classqbank__viewquestiontype_1_1plugin__feature.html#ac9fde29620324daed2e530f69b8cb85d">qbank_viewquestiontype\plugin_feature</a>.</p>
 
 </div>
 </div>
@@ -376,7 +378,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 26 2025 03:00:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Feb 2 2025 03:01:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>
