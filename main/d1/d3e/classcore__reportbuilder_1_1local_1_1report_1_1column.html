@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250131) (07881a57720)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20250206) (139a0ad5f04)</div>
   </td>
  </tr>
  </tbody>
@@ -122,6 +122,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a64c133f44704540d01157c7097767f3c" id="r_a64c133f44704540d01157c7097767f3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64c133f44704540d01157c7097767f3c">get_groupby_sql</a> ()</td></tr>
 <tr class="memdesc:a64c133f44704540d01157c7097767f3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return suitable SQL fragment for grouping by the column fields (during aggregation)  <br /></td></tr>
 <tr class="separator:a64c133f44704540d01157c7097767f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a759c2f98d8f9655eaefc4fe2144169f2" id="r_a759c2f98d8f9655eaefc4fe2144169f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a759c2f98d8f9655eaefc4fe2144169f2">get_help_icon</a> ()</td></tr>
+<tr class="memdesc:a759c2f98d8f9655eaefc4fe2144169f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return column help icon.  <br /></td></tr>
+<tr class="separator:a759c2f98d8f9655eaefc4fe2144169f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a979d01d286b31436d934e9f974c0184e" id="r_a979d01d286b31436d934e9f974c0184e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a979d01d286b31436d934e9f974c0184e">get_is_available</a> ()</td></tr>
 <tr class="memdesc:a979d01d286b31436d934e9f974c0184e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return available state of the column for the current user.  <br /></td></tr>
 <tr class="separator:a979d01d286b31436d934e9f974c0184e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,6 +176,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a755ba87767f8afcedcdb159f37a897a0" id="r_a755ba87767f8afcedcdb159f37a897a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a755ba87767f8afcedcdb159f37a897a0">set_groupby_sql</a> (string $groupbysql)</td></tr>
 <tr class="memdesc:a755ba87767f8afcedcdb159f37a897a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define suitable SQL fragment for grouping by the columns fields.  <br /></td></tr>
 <tr class="separator:a755ba87767f8afcedcdb159f37a897a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf0102a863a19422119066c484faa1ae" id="r_aaf0102a863a19422119066c484faa1ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf0102a863a19422119066c484faa1ae">set_help_icon</a> (<a class="el" href="../../d0/dc8/classcore_1_1output_1_1help__icon.html">help_icon</a> $helpicon)</td></tr>
+<tr class="memdesc:aaf0102a863a19422119066c484faa1ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set column help icon.  <br /></td></tr>
+<tr class="separator:aaf0102a863a19422119066c484faa1ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a287546c449d0d1973922f417c58eb66a" id="r_a287546c449d0d1973922f417c58eb66a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a287546c449d0d1973922f417c58eb66a">set_index</a> (int $index)</td></tr>
 <tr class="memdesc:a287546c449d0d1973922f417c58eb66a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the column index within the current report.  <br /></td></tr>
 <tr class="separator:a287546c449d0d1973922f417c58eb66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -693,6 +699,31 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_TIMESTAMP</
 
 </div>
 </div>
+<a id="a759c2f98d8f9655eaefc4fe2144169f2" name="a759c2f98d8f9655eaefc4fe2144169f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a759c2f98d8f9655eaefc4fe2144169f2">&#9670;&#160;</a></span>get_help_icon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_reportbuilder\local\report\column::get_help_icon </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return column help icon. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">help_icon|null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a979d01d286b31436d934e9f974c0184e" name="a979d01d286b31436d934e9f974c0184e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a979d01d286b31436d934e9f974c0184e">&#9670;&#160;</a></span>get_is_available()</h2>
 
@@ -1157,6 +1188,37 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_TIMESTAMP</
 
 </div>
 </div>
+<a id="aaf0102a863a19422119066c484faa1ae" name="aaf0102a863a19422119066c484faa1ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf0102a863a19422119066c484faa1ae">&#9670;&#160;</a></span>set_help_icon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_reportbuilder\local\report\column::set_help_icon </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/dc8/classcore_1_1output_1_1help__icon.html">help_icon</a></td>          <td class="paramname"><span class="paramname"><em>$helpicon</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set column help icon. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">help_icon</td><td class="paramname">$helpicon</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">self</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a287546c449d0d1973922f417c58eb66a" name="a287546c449d0d1973922f417c58eb66a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a287546c449d0d1973922f417c58eb66a">&#9670;&#160;</a></span>set_index()</h2>
 
@@ -1425,7 +1487,7 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_TIMESTAMP</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 2 2025 03:01:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Feb 9 2025 03:02:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

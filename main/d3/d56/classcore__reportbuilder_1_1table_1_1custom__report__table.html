@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250131) (07881a57720)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20250206) (139a0ad5f04)</div>
   </td>
  </tr>
  </tbody>
@@ -116,6 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad035ed6fe866705e61b433655ab0cff4" id="r_ad035ed6fe866705e61b433655ab0cff4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dd7/classcore__reportbuilder_1_1table_1_1base__report__table.html#ad035ed6fe866705e61b433655ab0cff4">get_sql_sort</a> ()</td></tr>
 <tr class="memdesc:ad035ed6fe866705e61b433655ab0cff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override parent method of the same, to ensure that any columns with custom sort fields are accounted for.  <br /></td></tr>
 <tr class="separator:ad035ed6fe866705e61b433655ab0cff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a931b872404ff96bb251f09ff52c9e475" id="r_a931b872404ff96bb251f09ff52c9e475"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dd7/classcore__reportbuilder_1_1table_1_1base__report__table.html#a931b872404ff96bb251f09ff52c9e475">get_total_row_count</a> ()</td></tr>
+<tr class="memdesc:a931b872404ff96bb251f09ff52c9e475"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return total row count for report table.  <br /></td></tr>
+<tr class="separator:a931b872404ff96bb251f09ff52c9e475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61f2abe0de369dab3a3facc51ce7ae9f" id="r_a61f2abe0de369dab3a3facc51ce7ae9f"><td class="memItemLeft" align="right" valign="top"><a id="a61f2abe0de369dab3a3facc51ce7ae9f" name="a61f2abe0de369dab3a3facc51ce7ae9f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>guess_base_url</b> ()</td></tr>
 <tr class="memdesc:a61f2abe0de369dab3a3facc51ce7ae9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the base URL of the table to the current page URL. <br /></td></tr>
@@ -536,6 +539,42 @@ bool const&#160;</td><td class="memItemRight" valign="bottom"><b>REPORT_EDITING<
 
 </div>
 </div>
+<a id="a931b872404ff96bb251f09ff52c9e475" name="a931b872404ff96bb251f09ff52c9e475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a931b872404ff96bb251f09ff52c9e475">&#9670;&#160;</a></span>get_total_row_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_reportbuilder\table\base_report_table::get_total_row_count </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return total row count for report table. </p>
+<p>Note we'd typically use {</p><dl class="section see"><dt>See also</dt><dd>query_db} and then read the {</dd>
+<dd>
+totalrows} property to reduce <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> calls, however we can use this method when we specifically don't also need to obtain all data</dd></dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a0c08cbb161440c2621d7ca94470aad68" name="a0c08cbb161440c2621d7ca94470aad68"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0c08cbb161440c2621d7ca94470aad68">&#9670;&#160;</a></span>has_capability()</h2>
 
@@ -783,7 +822,7 @@ bool const&#160;</td><td class="memItemRight" valign="bottom"><b>REPORT_EDITING<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 2 2025 03:01:27 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Feb 9 2025 03:02:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>
