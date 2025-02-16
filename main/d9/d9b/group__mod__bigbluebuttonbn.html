@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250206) (139a0ad5f04)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20250214) (77a7d81290f)</div>
   </td>
  </tr>
  </tbody>
@@ -384,6 +384,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf9b9777061c5eda640887dad791b457a" id="r_gaf9b9777061c5eda640887dad791b457a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf9b9777061c5eda640887dad791b457a">bigbluebuttonbn_get_recent_mod_activity</a> (&amp;$activities, &amp;$index, $timestart, $courseid, $cmid, $userid=0, $groupid=0)</td></tr>
 <tr class="memdesc:gaf9b9777061c5eda640887dad791b457a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all events since a given time in specified bigbluebutton activity.  <br /></td></tr>
 <tr class="separator:gaf9b9777061c5eda640887dad791b457a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7b278d250e5bafd18851c77674a59432" id="r_ga7b278d250e5bafd18851c77674a59432"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7b278d250e5bafd18851c77674a59432">bigbluebuttonbn_grade_item_delete</a> (stdClass $bigbluebuttonbn)</td></tr>
+<tr class="memdesc:ga7b278d250e5bafd18851c77674a59432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete grade item for given activity.  <br /></td></tr>
+<tr class="separator:ga7b278d250e5bafd18851c77674a59432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae18e69107a3c3c28ee51878ca508cd1d" id="r_gae18e69107a3c3c28ee51878ca508cd1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae18e69107a3c3c28ee51878ca508cd1d">bigbluebuttonbn_grade_item_update</a> (stdClass $bigbluebuttonbn, array|object|string|null $grades=null)</td></tr>
+<tr class="memdesc:gae18e69107a3c3c28ee51878ca508cd1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update/create grade item for given BigBlueButtonBN activity.  <br /></td></tr>
+<tr class="separator:gae18e69107a3c3c28ee51878ca508cd1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga362fd25223e0b7ab719cc82987bfe511" id="r_ga362fd25223e0b7ab719cc82987bfe511"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga362fd25223e0b7ab719cc82987bfe511">bigbluebuttonbn_inplace_editable</a> ($itemtype, $itemid, $newvalue)</td></tr>
 <tr class="memdesc:ga362fd25223e0b7ab719cc82987bfe511"><td class="mdescLeft">&#160;</td><td class="mdescRight">In place editable for the recording table.  <br /></td></tr>
 <tr class="separator:ga362fd25223e0b7ab719cc82987bfe511"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -405,12 +411,18 @@ Functions</h2></td></tr>
 <tr class="memitem:gab20370d9a86c8bf92f13fc3020ef0fc2" id="r_gab20370d9a86c8bf92f13fc3020ef0fc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab20370d9a86c8bf92f13fc3020ef0fc2">bigbluebuttonbn_reset_course_form_definition</a> (&amp;$mform)</td></tr>
 <tr class="memdesc:gab20370d9a86c8bf92f13fc3020ef0fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by course/reset.php.  <br /></td></tr>
 <tr class="separator:gab20370d9a86c8bf92f13fc3020ef0fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f11313dae77fadf0ae1ceb6796bb825" id="r_ga9f11313dae77fadf0ae1ceb6796bb825"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9f11313dae77fadf0ae1ceb6796bb825">bigbluebuttonbn_reset_gradebook</a> (int $courseid)</td></tr>
+<tr class="memdesc:ga9f11313dae77fadf0ae1ceb6796bb825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all grades from gradebook.  <br /></td></tr>
+<tr class="separator:ga9f11313dae77fadf0ae1ceb6796bb825"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga070bcb025ff9ccad36b9d84ce76f3d83" id="r_ga070bcb025ff9ccad36b9d84ce76f3d83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga070bcb025ff9ccad36b9d84ce76f3d83">bigbluebuttonbn_reset_userdata</a> (stdClass $data)</td></tr>
 <tr class="memdesc:ga070bcb025ff9ccad36b9d84ce76f3d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is used by the reset_course_userdata function in moodlelib.  <br /></td></tr>
 <tr class="separator:ga070bcb025ff9ccad36b9d84ce76f3d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga56f907a4a2bb63f2337d683c1172bc8c" id="r_ga56f907a4a2bb63f2337d683c1172bc8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga56f907a4a2bb63f2337d683c1172bc8c">bigbluebuttonbn_supports</a> ($feature)</td></tr>
 <tr class="memdesc:ga56f907a4a2bb63f2337d683c1172bc8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates API features that the bigbluebuttonbn supports.  <br /></td></tr>
 <tr class="separator:ga56f907a4a2bb63f2337d683c1172bc8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2f23fd3f869da80767187fe1a7b86c9" id="r_gae2f23fd3f869da80767187fe1a7b86c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae2f23fd3f869da80767187fe1a7b86c9">bigbluebuttonbn_update_grades</a> (stdClass $bigbluebuttonbn)</td></tr>
+<tr class="memdesc:gae2f23fd3f869da80767187fe1a7b86c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update activity grades.  <br /></td></tr>
+<tr class="separator:gae2f23fd3f869da80767187fe1a7b86c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga258be1cee931e5960455ceedfb66b51b" id="r_ga258be1cee931e5960455ceedfb66b51b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga258be1cee931e5960455ceedfb66b51b">bigbluebuttonbn_update_instance</a> ($bigbluebuttonbn)</td></tr>
 <tr class="memdesc:ga258be1cee931e5960455ceedfb66b51b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an object containing all the necessary data, (defined by the form in mod_form.php) this function will update an existing instance with new data.  <br /></td></tr>
 <tr class="separator:ga258be1cee931e5960455ceedfb66b51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -536,7 +548,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>component</b> = 'm
 <tr class="memitem:ga6793e283f7db9895f3bfca30c0f88c64" id="r_ga6793e283f7db9895f3bfca30c0f88c64"><td class="memItemLeft" align="right" valign="top">trait&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6793e283f7db9895f3bfca30c0f88c64">mod_bigbluebuttonbn\test::testcase_helper_trait</a></td></tr>
 <tr class="separator:ga6793e283f7db9895f3bfca30c0f88c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92a3fd99b37c9cbd65c4aead816b3a83" id="r_ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memItemLeft" align="right" valign="top"><a id="ga92a3fd99b37c9cbd65c4aead816b3a83" name="ga92a3fd99b37c9cbd65c4aead816b3a83"></a>
-$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024121800</td></tr>
+$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2025011000</td></tr>
 <tr class="separator:ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -873,6 +885,73 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 
 </div>
 </div>
+<a id="ga7b278d250e5bafd18851c77674a59432" name="ga7b278d250e5bafd18851c77674a59432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7b278d250e5bafd18851c77674a59432">&#9670;&#160;</a></span>bigbluebuttonbn_grade_item_delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bigbluebuttonbn_grade_item_delete </td>
+          <td>(</td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$bigbluebuttonbn</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Delete grade item for given activity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$bigbluebuttonbn</td><td>instance object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td>Returns GRADE_UPDATE_OK, GRADE_UPDATE_FAILED, GRADE_UPDATE_MULTIPLE or GRADE_UPDATE_ITEM_LOCKED </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gae18e69107a3c3c28ee51878ca508cd1d" name="gae18e69107a3c3c28ee51878ca508cd1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae18e69107a3c3c28ee51878ca508cd1d">&#9670;&#160;</a></span>bigbluebuttonbn_grade_item_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bigbluebuttonbn_grade_item_update </td>
+          <td>(</td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$bigbluebuttonbn</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array|object|string|null</td>          <td class="paramname"><span class="paramname"><em>$grades</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update/create grade item for given BigBlueButtonBN activity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$bigbluebuttonbn</td><td>instance object </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;object&#160;|&#160;string&#160;|&#160;null</td><td class="paramname">$grades</td><td>Optional array/object of grade(s); 'reset' means reset grades in gradebook </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td>0 if ok, error code otherwise </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga362fd25223e0b7ab719cc82987bfe511" name="ga362fd25223e0b7ab719cc82987bfe511"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga362fd25223e0b7ab719cc82987bfe511">&#9670;&#160;</a></span>bigbluebuttonbn_inplace_editable()</h2>
 
@@ -1154,6 +1233,31 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 
 </div>
 </div>
+<a id="ga9f11313dae77fadf0ae1ceb6796bb825" name="ga9f11313dae77fadf0ae1ceb6796bb825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9f11313dae77fadf0ae1ceb6796bb825">&#9670;&#160;</a></span>bigbluebuttonbn_reset_gradebook()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bigbluebuttonbn_reset_gradebook </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$courseid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes all grades from gradebook. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga070bcb025ff9ccad36b9d84ce76f3d83" name="ga070bcb025ff9ccad36b9d84ce76f3d83"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga070bcb025ff9ccad36b9d84ce76f3d83">&#9670;&#160;</a></span>bigbluebuttonbn_reset_userdata()</h2>
 
@@ -1210,6 +1314,31 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">mixed</td><td>True if yes (some features may use other values) @uses FEATURE_IDNUMBER @uses FEATURE_GROUPS @uses FEATURE_GROUPINGS @uses FEATURE_GROUPMEMBERSONLY @uses FEATURE_MOD_INTRO @uses FEATURE_BACKUP_MOODLE2 @uses FEATURE_COMPLETION_TRACKS_VIEWS @uses FEATURE_COMPLETION_HAS_RULES @uses FEATURE_GRADE_HAS_GRADE @uses FEATURE_GRADE_OUTCOMES @uses FEATURE_SHOW_DESCRIPTION </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gae2f23fd3f869da80767187fe1a7b86c9" name="gae2f23fd3f869da80767187fe1a7b86c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae2f23fd3f869da80767187fe1a7b86c9">&#9670;&#160;</a></span>bigbluebuttonbn_update_grades()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bigbluebuttonbn_update_grades </td>
+          <td>(</td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$bigbluebuttonbn</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update activity grades. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$bigbluebuttonbn</td><td>instance object </td></tr>
   </table>
   </dd>
 </dl>
@@ -2075,7 +2204,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 9 2025 02:59:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Feb 16 2025 03:03:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>
