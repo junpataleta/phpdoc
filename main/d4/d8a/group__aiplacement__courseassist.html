@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250221) (7a318d5c85a)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20250227) (688478cfa44)</div>
   </td>
  </tr>
  </tbody>
@@ -93,6 +93,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d43/classaiplacement__courseassist_1_1external_1_1explain__text.html">aiplacement_courseassist\external\explain_text</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d61/classaiplacement__courseassist_1_1external_1_1summarise__text.html">aiplacement_courseassist\external\summarise_text</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dfd/classaiplacement__courseassist_1_1hook__callbacks.html">aiplacement_courseassist\hook_callbacks</a></td></tr>
@@ -124,7 +126,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>component</b> = 'a
 $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>maturity</b> = MATURITY_STABLE</td></tr>
 <tr class="separator:ga32ceacc498b265853073aba2281015e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92a3fd99b37c9cbd65c4aead816b3a83" id="r_ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memItemLeft" align="right" valign="top"><a id="ga92a3fd99b37c9cbd65c4aead816b3a83" name="ga92a3fd99b37c9cbd65c4aead816b3a83"></a>
-$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024121800</td></tr>
+$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2025012000</td></tr>
 <tr class="separator:ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -177,6 +179,16 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 <div class="line">            <span class="stringliteral">&#39;student&#39;</span> =&gt; <a class="code hl_variable" href="../../da/d16/group__core__access.html#gacc879f41ad412efa2fc8022359b3ebfb">CAP_ALLOW</a>,</div>
 <div class="line">        ],</div>
 <div class="line">    ],</div>
+<div class="line">    <span class="stringliteral">&#39;aiplacement/courseassist:explain_text&#39;</span> =&gt; [</div>
+<div class="line">        <span class="stringliteral">&#39;captype&#39;</span> =&gt; <span class="stringliteral">&#39;write&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;contextlevel&#39;</span> =&gt; <a class="code hl_variable" href="../../da/d16/group__core__access.html#ga6793164cc4e484b90054c9938b7689ed">CONTEXT_COURSE</a>,</div>
+<div class="line">        <span class="stringliteral">&#39;archetypes&#39;</span> =&gt; [</div>
+<div class="line">            <span class="stringliteral">&#39;manager&#39;</span> =&gt; <a class="code hl_variable" href="../../da/d16/group__core__access.html#gacc879f41ad412efa2fc8022359b3ebfb">CAP_ALLOW</a>,</div>
+<div class="line">            <span class="stringliteral">&#39;editingteacher&#39;</span> =&gt; <a class="code hl_variable" href="../../da/d16/group__core__access.html#gacc879f41ad412efa2fc8022359b3ebfb">CAP_ALLOW</a>,</div>
+<div class="line">            <span class="stringliteral">&#39;teacher&#39;</span> =&gt; <a class="code hl_variable" href="../../da/d16/group__core__access.html#gacc879f41ad412efa2fc8022359b3ebfb">CAP_ALLOW</a>,</div>
+<div class="line">            <span class="stringliteral">&#39;student&#39;</span> =&gt; <a class="code hl_variable" href="../../da/d16/group__core__access.html#gacc879f41ad412efa2fc8022359b3ebfb">CAP_ALLOW</a>,</div>
+<div class="line">        ],</div>
+<div class="line">    ],</div>
 <div class="line">]</div>
 <div class="ttc" id="agroup__core__access_html_ga6793164cc4e484b90054c9938b7689ed"><div class="ttname"><a href="../../da/d16/group__core__access.html#ga6793164cc4e484b90054c9938b7689ed">CONTEXT_COURSE</a></div><div class="ttdeci">const CONTEXT_COURSE</div><div class="ttdoc">Course context level - one instances for each course.</div><div class="ttdef"><b>Definition</b> accesslib.php:128</div></div>
 <div class="ttc" id="agroup__core__access_html_gacc879f41ad412efa2fc8022359b3ebfb"><div class="ttname"><a href="../../da/d16/group__core__access.html#gacc879f41ad412efa2fc8022359b3ebfb">CAP_ALLOW</a></div><div class="ttdeci">const CAP_ALLOW</div><div class="ttdoc">Allow permission, overrides CAP_PREVENT defined in parent contexts.</div><div class="ttdef"><b>Definition</b> accesslib.php:115</div></div>
@@ -202,6 +214,13 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 <div class="line">        <span class="stringliteral">&#39;ajax&#39;</span> =&gt; <span class="keyword">true</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;services&#39;</span> =&gt; [<a class="code hl_variable" href="../../d0/de1/group__core.html#gaf6fb70f9486cdc497645d14d9afc9a89">MOODLE_OFFICIAL_MOBILE_SERVICE</a>],</div>
 <div class="line">    ],</div>
+<div class="line">    <span class="stringliteral">&#39;aiplacement_courseassist_explain_text&#39;</span> =&gt; [</div>
+<div class="line">        <span class="stringliteral">&#39;classname&#39;</span> =&gt; <span class="stringliteral">&#39;aiplacement_courseassist\external\explain_text&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;description&#39;</span> =&gt; <span class="stringliteral">&#39;Explain text for the Course Assistance Placement&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;type&#39;</span> =&gt; <span class="stringliteral">&#39;write&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;ajax&#39;</span> =&gt; <span class="keyword">true</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;services&#39;</span> =&gt; [<a class="code hl_variable" href="../../d0/de1/group__core.html#gaf6fb70f9486cdc497645d14d9afc9a89">MOODLE_OFFICIAL_MOBILE_SERVICE</a>],</div>
+<div class="line">    ],</div>
 <div class="line">]</div>
 <div class="ttc" id="agroup__core_html_gaf6fb70f9486cdc497645d14d9afc9a89"><div class="ttname"><a href="../../d0/de1/group__core.html#gaf6fb70f9486cdc497645d14d9afc9a89">MOODLE_OFFICIAL_MOBILE_SERVICE</a></div><div class="ttdeci">const MOODLE_OFFICIAL_MOBILE_SERVICE</div><div class="ttdoc">Moodle mobile app service name.</div><div class="ttdef"><b>Definition</b> moodlelib.php:564</div></div>
 </div><!-- fragment -->
@@ -210,7 +229,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 23 2025 03:03:25 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 2 2025 03:06:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250221) (7a318d5c85a)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20250227) (688478cfa44)</div>
   </td>
  </tr>
  </tbody>
@@ -129,6 +129,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af48e4a2546b57e38425d07fc79e6e3c0" id="r_af48e4a2546b57e38425d07fc79e6e3c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af48e4a2546b57e38425d07fc79e6e3c0">get_icon_url</a> ($output=null)</td></tr>
 <tr class="memdesc:af48e4a2546b57e38425d07fc79e6e3c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch the module's icon URL.  <br /></td></tr>
 <tr class="separator:af48e4a2546b57e38425d07fc79e6e3c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af348dc7c86a55a73f9df1224d06b7f78" id="r_af348dc7c86a55a73f9df1224d06b7f78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af348dc7c86a55a73f9df1224d06b7f78">get_instance_record</a> ()</td></tr>
+<tr class="memdesc:af348dc7c86a55a73f9df1224d06b7f78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the activity database table record.  <br /></td></tr>
+<tr class="separator:af348dc7c86a55a73f9df1224d06b7f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6ca8ebd101093a682e91d15c708d337" id="r_ae6ca8ebd101093a682e91d15c708d337"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6ca8ebd101093a682e91d15c708d337">get_modinfo</a> ()</td></tr>
 <tr class="separator:ae6ca8ebd101093a682e91d15c708d337"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a3d3f16a6c52b0e4063d863ce1c188f" id="r_a2a3d3f16a6c52b0e4063d863ce1c188f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a3d3f16a6c52b0e4063d863ce1c188f">get_module_type_name</a> ($plural=false)</td></tr>
@@ -761,6 +764,32 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_VIEW</b> = 4</
 
 </div>
 </div>
+<a id="af348dc7c86a55a73f9df1224d06b7f78" name="af348dc7c86a55a73f9df1224d06b7f78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af348dc7c86a55a73f9df1224d06b7f78">&#9670;&#160;</a></span>get_instance_record()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cm_info::get_instance_record </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the activity database table record. </p>
+<p>The instance record will be cached after the first call.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ae6ca8ebd101093a682e91d15c708d337" name="ae6ca8ebd101093a682e91d15c708d337"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae6ca8ebd101093a682e91d15c708d337">&#9670;&#160;</a></span>get_modinfo()</h2>
 
@@ -1084,7 +1113,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_VIEW</b> = 4</
 </div><div class="memdoc">
 
 <p>Checks whether the module's conditional access settings mean that the user cannot see the activity at all. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000538">Deprecated</a></b></dt><dd>since 2.7 <a href="https://tracker.moodle.org/browse/MDL-44070" class="el">MDL-44070</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000539">Deprecated</a></b></dt><dd>since 2.7 <a href="https://tracker.moodle.org/browse/MDL-44070" class="el">MDL-44070</a> </dd></dl>
 
 </div>
 </div>
@@ -1105,7 +1134,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_VIEW</b> = 4</
 
 <p>This method has been deprecated and should not be used. </p>
 <dl class="section see"><dt>See also</dt><dd>$uservisible </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000537">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000538">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 </dd></dl>
 
 </div>
 </div>
@@ -1521,7 +1550,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_VIEW</b> = 4</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 23 2025 03:03:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 2 2025 03:06:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

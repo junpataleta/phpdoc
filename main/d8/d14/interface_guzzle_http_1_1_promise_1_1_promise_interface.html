@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250221) (7a318d5c85a)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20250227) (688478cfa44)</div>
   </td>
  </tr>
  </tbody>
@@ -109,9 +109,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae39a5f1a81903f74af5114c272bf7b7b" id="r_ae39a5f1a81903f74af5114c272bf7b7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae39a5f1a81903f74af5114c272bf7b7b">resolve</a> ($value)</td></tr>
 <tr class="memdesc:ae39a5f1a81903f74af5114c272bf7b7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve the promise with the given value.  <br /></td></tr>
 <tr class="separator:ae39a5f1a81903f74af5114c272bf7b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f1174c4a67f1b7fb1a74d37466bc90a" id="r_a2f1174c4a67f1b7fb1a74d37466bc90a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f1174c4a67f1b7fb1a74d37466bc90a">then</a> (callable $onFulfilled=null, callable $onRejected=null)</td></tr>
-<tr class="memdesc:a2f1174c4a67f1b7fb1a74d37466bc90a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends fulfillment and rejection handlers to the promise, and returns a new promise resolving to the return value of the called handler.  <br /></td></tr>
-<tr class="separator:a2f1174c4a67f1b7fb1a74d37466bc90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5311d3a21fcbf5f844fd9e81164b19e7" id="r_a5311d3a21fcbf5f844fd9e81164b19e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5311d3a21fcbf5f844fd9e81164b19e7">then</a> (?callable $onFulfilled=null, ?callable $onRejected=null)</td></tr>
+<tr class="memdesc:a5311d3a21fcbf5f844fd9e81164b19e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends fulfillment and rejection handlers to the promise, and returns a new promise resolving to the return value of the called handler.  <br /></td></tr>
+<tr class="separator:a5311d3a21fcbf5f844fd9e81164b19e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2613742eb067ca52aaac3a884a9ffa7f" id="r_a2613742eb067ca52aaac3a884a9ffa7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2613742eb067ca52aaac3a884a9ffa7f">wait</a> (bool $unwrap=true)</td></tr>
 <tr class="memdesc:a2613742eb067ca52aaac3a884a9ffa7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits until the promise completes if possible.  <br /></td></tr>
 <tr class="separator:a2613742eb067ca52aaac3a884a9ffa7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -266,8 +266,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REJECTED</b> = 'reje
 
 </div>
 </div>
-<a id="a2f1174c4a67f1b7fb1a74d37466bc90a" name="a2f1174c4a67f1b7fb1a74d37466bc90a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f1174c4a67f1b7fb1a74d37466bc90a">&#9670;&#160;</a></span>then()</h2>
+<a id="a5311d3a21fcbf5f844fd9e81164b19e7" name="a5311d3a21fcbf5f844fd9e81164b19e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5311d3a21fcbf5f844fd9e81164b19e7">&#9670;&#160;</a></span>then()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -275,12 +275,12 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REJECTED</b> = 'reje
         <tr>
           <td class="memname">GuzzleHttp\Promise\PromiseInterface::then </td>
           <td>(</td>
-          <td class="paramtype">callable</td>          <td class="paramname"><span class="paramname"><em>$onFulfilled</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+          <td class="paramtype">?callable</td>          <td class="paramname"><span class="paramname"><em>$onFulfilled</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">callable</td>          <td class="paramname"><span class="paramname"><em>$onRejected</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">?callable</td>          <td class="paramname"><span class="paramname"><em>$onRejected</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -294,7 +294,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REJECTED</b> = 'reje
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="../../de/ddf/class_guzzle_http_1_1_promise_1_1_coroutine.html#a11783468845f704928e1ba13a63534e8">GuzzleHttp\Promise\Coroutine</a>, <a class="el" href="../../d6/d52/class_guzzle_http_1_1_promise_1_1_fulfilled_promise.html#aecac67e3bd3294aae15a10748b81c155">GuzzleHttp\Promise\FulfilledPromise</a>, <a class="el" href="../../d5/dd6/class_guzzle_http_1_1_promise_1_1_promise.html#a3f45723dce9315b6dcc5639f897c77b3">GuzzleHttp\Promise\Promise</a>, and <a class="el" href="../../d4/d60/class_guzzle_http_1_1_promise_1_1_rejected_promise.html#a2b91783cd3388e3aa66d0902c3cf4c49">GuzzleHttp\Promise\RejectedPromise</a>.</p>
+<p>Implemented in <a class="el" href="../../de/ddf/class_guzzle_http_1_1_promise_1_1_coroutine.html#a44d43f244861d3eac2524df6a13a116e">GuzzleHttp\Promise\Coroutine</a>, <a class="el" href="../../d6/d52/class_guzzle_http_1_1_promise_1_1_fulfilled_promise.html#a1bb512249bb43d91634e3e586d2afa69">GuzzleHttp\Promise\FulfilledPromise</a>, <a class="el" href="../../d5/dd6/class_guzzle_http_1_1_promise_1_1_promise.html#af92f0b7e93ac639b6b031a0226c89a88">GuzzleHttp\Promise\Promise</a>, and <a class="el" href="../../d4/d60/class_guzzle_http_1_1_promise_1_1_rejected_promise.html#a954762117cb9d7d1dedf690c82e140e1">GuzzleHttp\Promise\RejectedPromise</a>.</p>
 
 </div>
 </div>
@@ -339,7 +339,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REJECTED</b> = 'reje
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 23 2025 03:06:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 2 2025 03:09:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250221) (7a318d5c85a)</div>
+   <div id="projectbrief">Moodle 5.0dev (Build: 20250227) (688478cfa44)</div>
   </td>
  </tr>
  </tbody>
@@ -74,6 +74,7 @@ $(function(){ initResizable(false); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../dc/dc2/classcore__courseformat_1_1local_1_1overview_1_1resourceoverview-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">core_courseformat\local\overview\resourceoverview Class Reference<div class="ingroups"><a class="el" href="../../db/d92/group__core__courseformat.html">core_courseformat</a></div></div></div>
@@ -107,6 +108,12 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>get_name_overview</b> ()</td></tr>
 <tr class="memdesc:a75ac2f0f1bff9415cda7873fff1f325a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the activity. <br /></td></tr>
 <tr class="separator:a75ac2f0f1bff9415cda7873fff1f325a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:afc87fcbc1adfa9f1e363b9d4247543d8" id="r_afc87fcbc1adfa9f1e363b9d4247543d8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/da8/classcore__courseformat_1_1activityoverviewbase.html#afc87fcbc1adfa9f1e363b9d4247543d8">redirect_to_overview_page</a> (int $courseid, string $modname)</td></tr>
+<tr class="memdesc:afc87fcbc1adfa9f1e363b9d4247543d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redirects to the overview page for the activity.  <br /></td></tr>
+<tr class="separator:afc87fcbc1adfa9f1e363b9d4247543d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -154,6 +161,8 @@ courseformat courseformat&#160;</td><td class="memItemRight" valign="bottom"><b>
   </table>
   </dd>
 </dl>
+
+<p>Reimplemented in <a class="el" href="../../dd/dcc/classmod__feedback_1_1courseformat_1_1overview.html#a6cb55f0a34d9caa8f1500b832b50cdc7">mod_feedback\courseformat\overview</a>.</p>
 
 </div>
 </div>
@@ -221,6 +230,8 @@ courseformat courseformat&#160;</td><td class="memItemRight" valign="bottom"><b>
   </dd>
 </dl>
 
+<p>Reimplemented in <a class="el" href="../../dd/dcc/classmod__feedback_1_1courseformat_1_1overview.html#a87a7b5ba77b38b0d2cea6bbfcc7ad151">mod_feedback\courseformat\overview</a>.</p>
+
 </div>
 </div>
 <a id="adf484bb395def13b18af4141b224c6f0" name="adf484bb395def13b18af4141b224c6f0"></a>
@@ -252,13 +263,51 @@ courseformat courseformat&#160;</td><td class="memItemRight" valign="bottom"><b>
 
 </div>
 </div>
+<a id="afc87fcbc1adfa9f1e363b9d4247543d8" name="afc87fcbc1adfa9f1e363b9d4247543d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc87fcbc1adfa9f1e363b9d4247543d8">&#9670;&#160;</a></span>redirect_to_overview_page()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_courseformat\activityoverviewbase::redirect_to_overview_page </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$courseid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$modname</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel inherited">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Redirects to the overview page for the activity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td>The course id. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$modname</td><td>The module name. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>course/format/classes/local/overview/<b>resourceoverview.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 23 2025 03:05:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 2 2025 03:09:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>
