@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250227) (688478cfa44)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
   </td>
  </tr>
  </tbody>
@@ -117,9 +117,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a38d71dd3c81b4c5de224a1e1cd4c4e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab17e2bfe600e95e3fe7bc24105f1cb42" id="r_ab17e2bfe600e95e3fe7bc24105f1cb42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab17e2bfe600e95e3fe7bc24105f1cb42">getSystemDispatchMap</a> ()</td></tr>
 <tr class="separator:ab17e2bfe600e95e3fe7bc24105f1cb42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a66f6dafb0001252eaec2af61c0202e" id="r_a2a66f6dafb0001252eaec2af61c0202e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a66f6dafb0001252eaec2af61c0202e">methodNameCallback</a> ($methodName, $xmlParser, $parser)</td></tr>
-<tr class="memdesc:a2a66f6dafb0001252eaec2af61c0202e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registered as callback for when the XMLParser has found the name of the method to execute.  <br /></td></tr>
-<tr class="separator:a2a66f6dafb0001252eaec2af61c0202e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f871c64cdf2d0ef2e31dce7dacc2fe" id="r_a40f871c64cdf2d0ef2e31dce7dacc2fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40f871c64cdf2d0ef2e31dce7dacc2fe">methodNameCallback</a> ($methodName, $xmlParser, $parser=null)</td></tr>
+<tr class="memdesc:a40f871c64cdf2d0ef2e31dce7dacc2fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registered as callback for when the XMLParser has found the name of the method to execute.  <br /></td></tr>
+<tr class="separator:a40f871c64cdf2d0ef2e31dce7dacc2fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3224d1ea1ae5bfd1819cce7bb284657" id="r_ae3224d1ea1ae5bfd1819cce7bb284657"><td class="memItemLeft" align="right" valign="top"><a id="ae3224d1ea1ae5bfd1819cce7bb284657" name="ae3224d1ea1ae5bfd1819cce7bb284657"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>parseRequest</b> ($data, $reqEncoding='')</td></tr>
 <tr class="memdesc:ae3224d1ea1ae5bfd1819cce7bb284657"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an xml chunk containing an xml-rpc request and execute the corresponding php function registered with the server. <br /></td></tr>
@@ -303,7 +303,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$responseCla
 <li>docstring (optional)</li>
 <li>signature (array, optional)</li>
 <li>signature_docs (array, optional)</li>
-<li>parameters_type (string, optional)</li>
+<li>parameters_type (string, optional). Valid values: 'phpvals', 'xmlrpcvals'</li>
 <li>exception_handling (int, optional) </li>
 </ul>
 </td></tr>
@@ -427,8 +427,8 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$responseCla
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000281">Todo</a></b></dt><dd>raise a warning if the user tries to register a 'system.' method </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001022">Deprecated</a></b></dt><dd>use addToMap instead </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000276">Todo</a></b></dt><dd>raise a warning if the user tries to register a 'system.' method </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001008">Deprecated</a></b></dt><dd>use addToMap instead </dd></dl>
 
 </div>
 </div>
@@ -496,7 +496,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$responseCla
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000280">Todo</a></b></dt><dd>raise a warning if the user tries to register a 'system.' method </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000275">Todo</a></b></dt><dd>raise a warning if the user tries to register a 'system.' method </dd></dl>
 
 </div>
 </div>
@@ -800,8 +800,8 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$responseCla
 
 </div>
 </div>
-<a id="a2a66f6dafb0001252eaec2af61c0202e" name="a2a66f6dafb0001252eaec2af61c0202e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a66f6dafb0001252eaec2af61c0202e">&#9670;&#160;</a></span>methodNameCallback()</h2>
+<a id="a40f871c64cdf2d0ef2e31dce7dacc2fe" name="a40f871c64cdf2d0ef2e31dce7dacc2fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40f871c64cdf2d0ef2e31dce7dacc2fe">&#9670;&#160;</a></span>methodNameCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -819,7 +819,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$responseCla
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$parser</em></span>&#160;)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$parser</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1134,7 +1134,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$responseCla
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001023">Deprecated</a></b></dt><dd>this method was moved to the Response class </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001009">Deprecated</a></b></dt><dd>this method was moved to the Response class </dd></dl>
 
 </div>
 </div>
@@ -1352,8 +1352,8 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$responseCla
 </div><div class="memdoc">
 
 <p>Defines how functions in $dmap will be invoked: either using an xml-rpc Request object or plain php values. </p>
-<p>Valid strings are 'xmlrpcvals', 'phpvals' or 'epivals' (only for use by polyfill-xmlrpc).</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000279">Todo</a></b></dt><dd>create class constants for these </dd></dl>
+<p>Valid strings are 'xmlrpcvals', 'phpvals' or 'epivals' (the latter only for use by polyfill-xmlrpc).</p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000274">Todo</a></b></dt><dd>create class constants for these </dd></dl>
 
 </div>
 </div>
@@ -1466,7 +1466,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$responseCla
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 2 2025 03:10:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 9 2025 02:43:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

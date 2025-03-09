@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250227) (688478cfa44)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
   </td>
  </tr>
  </tbody>
@@ -75,6 +75,7 @@ $(function(){ initResizable(false); });
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d5/db4/classcore__courseformat_1_1activityoverviewbase-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">core_courseformat\activityoverviewbase Class Reference<div class="ingroups"><a class="el" href="../../db/d92/group__core__courseformat.html">core_courseformat</a></div></div></div>
@@ -87,7 +88,8 @@ Inheritance diagram for core_courseformat\activityoverviewbase:</div>
   <img src="../../dd/da8/classcore__courseformat_1_1activityoverviewbase.png" usemap="#core_5Fcourseformat_5Cactivityoverviewbase_map" alt=""/>
   <map id="core_5Fcourseformat_5Cactivityoverviewbase_map" name="core_5Fcourseformat_5Cactivityoverviewbase_map">
 <area href="../../d1/df7/classcore__courseformat_1_1local_1_1overview_1_1resourceoverview.html" alt="core_courseformat\local\overview\resourceoverview" shape="rect" coords="0,56,313,80"/>
-<area href="../../dd/dcc/classmod__feedback_1_1courseformat_1_1overview.html" alt="mod_feedback\courseformat\overview" shape="rect" coords="323,56,636,80"/>
+<area href="../../d0/d10/classmod__assign_1_1courseformat_1_1overview.html" alt="mod_assign\courseformat\overview" shape="rect" coords="323,56,636,80"/>
+<area href="../../dd/dcc/classmod__feedback_1_1courseformat_1_1overview.html" alt="mod_feedback\courseformat\overview" shape="rect" coords="646,56,959,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -108,6 +110,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a33bfc863e07832c2a8ad92655f9806ca" id="r_a33bfc863e07832c2a8ad92655f9806ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33bfc863e07832c2a8ad92655f9806ca">get_extra_overview_items</a> ()</td></tr>
 <tr class="memdesc:a33bfc863e07832c2a8ad92655f9806ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the plugin specific overview items for the activity.  <br /></td></tr>
 <tr class="separator:a33bfc863e07832c2a8ad92655f9806ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac14a74ff1c51b8627f6655b6febe3aac" id="r_ac14a74ff1c51b8627f6655b6febe3aac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac14a74ff1c51b8627f6655b6febe3aac">get_grades_overviews</a> ()</td></tr>
+<tr class="memdesc:ac14a74ff1c51b8627f6655b6febe3aac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the grades overview items for the activity.  <br /></td></tr>
+<tr class="separator:ac14a74ff1c51b8627f6655b6febe3aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75ac2f0f1bff9415cda7873fff1f325a" id="r_a75ac2f0f1bff9415cda7873fff1f325a"><td class="memItemLeft" align="right" valign="top"><a id="a75ac2f0f1bff9415cda7873fff1f325a" name="a75ac2f0f1bff9415cda7873fff1f325a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>get_name_overview</b> ()</td></tr>
 <tr class="memdesc:a75ac2f0f1bff9415cda7873fff1f325a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the activity. <br /></td></tr>
@@ -118,6 +123,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:afc87fcbc1adfa9f1e363b9d4247543d8" id="r_afc87fcbc1adfa9f1e363b9d4247543d8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc87fcbc1adfa9f1e363b9d4247543d8">redirect_to_overview_page</a> (int $courseid, string $modname)</td></tr>
 <tr class="memdesc:afc87fcbc1adfa9f1e363b9d4247543d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redirects to the overview page for the activity.  <br /></td></tr>
 <tr class="separator:afc87fcbc1adfa9f1e363b9d4247543d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a4fb7f8a04a4ad04db2a9a44ab0b0cce3" id="r_a4fb7f8a04a4ad04db2a9a44ab0b0cce3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fb7f8a04a4ad04db2a9a44ab0b0cce3">get_grade_item_names</a> (array $items)</td></tr>
+<tr class="memdesc:a4fb7f8a04a4ad04db2a9a44ab0b0cce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the grade item names for the activity.  <br /></td></tr>
+<tr class="separator:a4fb7f8a04a4ad04db2a9a44ab0b0cce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -198,7 +209,7 @@ courseformat courseformat&#160;</td><td class="memItemRight" valign="bottom"><b>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../dd/dcc/classmod__feedback_1_1courseformat_1_1overview.html#a6cb55f0a34d9caa8f1500b832b50cdc7">mod_feedback\courseformat\overview</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d0/d10/classmod__assign_1_1courseformat_1_1overview.html#a4cb3e6953d0d3bfe4b9d850d352b8a59">mod_assign\courseformat\overview</a>, and <a class="el" href="../../dd/dcc/classmod__feedback_1_1courseformat_1_1overview.html#a6cb55f0a34d9caa8f1500b832b50cdc7">mod_feedback\courseformat\overview</a>.</p>
 
 </div>
 </div>
@@ -250,7 +261,7 @@ courseformat courseformat&#160;</td><td class="memItemRight" valign="bottom"><b>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../dd/dcc/classmod__feedback_1_1courseformat_1_1overview.html#a87a7b5ba77b38b0d2cea6bbfcc7ad151">mod_feedback\courseformat\overview</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d0/d10/classmod__assign_1_1courseformat_1_1overview.html#a8b8b996099ef42b7f9b395387dd27036">mod_assign\courseformat\overview</a>, and <a class="el" href="../../dd/dcc/classmod__feedback_1_1courseformat_1_1overview.html#a87a7b5ba77b38b0d2cea6bbfcc7ad151">mod_feedback\courseformat\overview</a>.</p>
 
 </div>
 </div>
@@ -279,7 +290,74 @@ courseformat courseformat&#160;</td><td class="memItemRight" valign="bottom"><b>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d1/df7/classcore__courseformat_1_1local_1_1overview_1_1resourceoverview.html#adf484bb395def13b18af4141b224c6f0">core_courseformat\local\overview\resourceoverview</a>, and <a class="el" href="../../dd/dcc/classmod__feedback_1_1courseformat_1_1overview.html#ae0a4de9ab1088608abfd7fede4e258c9">mod_feedback\courseformat\overview</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d1/df7/classcore__courseformat_1_1local_1_1overview_1_1resourceoverview.html#adf484bb395def13b18af4141b224c6f0">core_courseformat\local\overview\resourceoverview</a>, <a class="el" href="../../d0/d10/classmod__assign_1_1courseformat_1_1overview.html#af7f53fd046595267c831483a2ecafe93">mod_assign\courseformat\overview</a>, and <a class="el" href="../../dd/dcc/classmod__feedback_1_1courseformat_1_1overview.html#ae0a4de9ab1088608abfd7fede4e258c9">mod_feedback\courseformat\overview</a>.</p>
+
+</div>
+</div>
+<a id="a4fb7f8a04a4ad04db2a9a44ab0b0cce3" name="a4fb7f8a04a4ad04db2a9a44ab0b0cce3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fb7f8a04a4ad04db2a9a44ab0b0cce3">&#9670;&#160;</a></span>get_grade_item_names()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\activityoverviewbase::get_grade_item_names </td>
+          <td>(</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$items</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieves the grade item names for the activity. </p>
+<p>By default, the overview will display the grade if the activities has only one grade item. The name of the grade item will be 'Grade'. For plugins with multiple grade items, the plugin must override this method and provide names for each grade item that want to be displayed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d0/d8b/classgrade__item.html" title="Class representing a grade item.">grade_item</a>[]</td><td class="paramname">$items</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array&lt;integer,string&gt;</td><td>the grade item names indexed by item id. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac14a74ff1c51b8627f6655b6febe3aac" name="ac14a74ff1c51b8627f6655b6febe3aac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac14a74ff1c51b8627f6655b6febe3aac">&#9670;&#160;</a></span>get_grades_overviews()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\activityoverviewbase::get_grades_overviews </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the grades overview items for the activity. </p>
+<p>Most activities will have none or one grade. However, some activities may have multiple grades, such as workshop or quiz.</p>
+<p>It is not recommended to override this method unless the plugin has specific requirements. Instead, plugins should override get_grade_item_names to provide the grade item names.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">overviewitem[]</td><td>Array of overview items representing the grades. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -327,7 +405,7 @@ courseformat courseformat&#160;</td><td class="memItemRight" valign="bottom"><b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 2 2025 03:09:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 9 2025 02:41:37 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

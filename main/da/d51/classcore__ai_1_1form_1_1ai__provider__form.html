@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250227) (688478cfa44)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
   </td>
  </tr>
  </tbody>
@@ -190,9 +190,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:gaf3ef8403402c885e7e823843dcb2a244" id="r_gaf3ef8403402c885e7e823843dcb2a244"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#gaf3ef8403402c885e7e823843dcb2a244">validate_defined_fields</a> ($validateonnosubmit=false)</td></tr>
 <tr class="memdesc:gaf3ef8403402c885e7e823843dcb2a244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate the form.  <br /></td></tr>
 <tr class="separator:gaf3ef8403402c885e7e823843dcb2a244"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga78804d4a6734d8166cd0b32a3c02c946" id="r_ga78804d4a6734d8166cd0b32a3c02c946"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#ga78804d4a6734d8166cd0b32a3c02c946">validation</a> ($data, $files)</td></tr>
-<tr class="memdesc:ga78804d4a6734d8166cd0b32a3c02c946"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dummy stub method - override if you needed to perform some extra validation.  <br /></td></tr>
-<tr class="separator:ga78804d4a6734d8166cd0b32a3c02c946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f602832e0ae65a90b71075ceffc82a0" id="r_a7f602832e0ae65a90b71075ceffc82a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f602832e0ae65a90b71075ceffc82a0">validation</a> ($data, $files)</td></tr>
+<tr class="memdesc:a7f602832e0ae65a90b71075ceffc82a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dummy stub method - override if you needed to perform some extra validation.  <br /></td></tr>
+<tr class="separator:a7f602832e0ae65a90b71075ceffc82a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -323,13 +323,53 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 
 </div>
 </div>
+<a id="a7f602832e0ae65a90b71075ceffc82a0" name="a7f602832e0ae65a90b71075ceffc82a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f602832e0ae65a90b71075ceffc82a0">&#9670;&#160;</a></span>validation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_ai\form\ai_provider_form::validation </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$files</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dummy stub method - override if you needed to perform some extra validation. </p>
+<p>If there are errors return array of errors ("fieldname"=&gt;"error message"), otherwise true if ok.</p>
+<p>Server side rules do not work for uploaded files, implement serverside rules here if needed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>array of ("fieldname"=&gt;value) of submitted data </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$files</td><td>array of uploaded files "element_name"=&gt;tmp_file_path </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>of "element_name"=&gt;"error_description" if there are errors, or an empty array if everything is OK (true allowed for backwards compatibility too). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="../../d6/d9c/group__core__form.html#ga78804d4a6734d8166cd0b32a3c02c946">moodleform</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>ai/classes/form/<b>ai_provider_form.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 2 2025 03:08:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 9 2025 02:41:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

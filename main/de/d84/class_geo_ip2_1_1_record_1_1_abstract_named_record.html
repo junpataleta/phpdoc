@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250227) (688478cfa44)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
   </td>
  </tr>
  </tbody>
@@ -96,11 +96,7 @@ Inheritance diagram for GeoIp2\Record\AbstractNamedRecord:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa184d62a3c067d1f38c25210f293ba7d" id="r_aa184d62a3c067d1f38c25210f293ba7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa184d62a3c067d1f38c25210f293ba7d">__construct</a> (array $record, array $locales=['en'])</td></tr>
-<tr class="memdesc:aa184d62a3c067d1f38c25210f293ba7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">@ignore  <br /></td></tr>
-<tr class="separator:aa184d62a3c067d1f38c25210f293ba7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad410fc78a9a052bdf6d55ee0aefa7682" id="r_ad410fc78a9a052bdf6d55ee0aefa7682"><td class="memItemLeft" align="right" valign="top"><a id="ad410fc78a9a052bdf6d55ee0aefa7682" name="ad410fc78a9a052bdf6d55ee0aefa7682"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>jsonSerialize</b> ()</td></tr>
+<tr class="memitem:ad410fc78a9a052bdf6d55ee0aefa7682" id="r_ad410fc78a9a052bdf6d55ee0aefa7682"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad410fc78a9a052bdf6d55ee0aefa7682">jsonSerialize</a> ()</td></tr>
 <tr class="separator:ad410fc78a9a052bdf6d55ee0aefa7682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -108,50 +104,53 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aec36d60c343b04addae339cb63bd10dd" id="r_aec36d60c343b04addae339cb63bd10dd"><td class="memItemLeft" align="right" valign="top"><a id="aec36d60c343b04addae339cb63bd10dd" name="aec36d60c343b04addae339cb63bd10dd"></a>
 string null readonly string&#160;</td><td class="memItemRight" valign="bottom"><b>$name</b></td></tr>
 <tr class="separator:aec36d60c343b04addae339cb63bd10dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e40c98ae85612260eb79a623f71cea1" id="r_a9e40c98ae85612260eb79a623f71cea1"><td class="memItemLeft" align="right" valign="top">array readonly array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e40c98ae85612260eb79a623f71cea1">$names</a></td></tr>
-<tr class="memdesc:a9e40c98ae85612260eb79a623f71cea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array map where the keys are locale codes and the values are names.  <br /></td></tr>
-<tr class="separator:a9e40c98ae85612260eb79a623f71cea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a441a44759ee327455b5b69b0ce2f426d" id="r_a441a44759ee327455b5b69b0ce2f426d"><td class="memItemLeft" align="right" valign="top"><a id="a441a44759ee327455b5b69b0ce2f426d" name="a441a44759ee327455b5b69b0ce2f426d"></a>
+<a class="el" href="../../d0/de1/group__core.html#ga13a74e59a81139e77c9593ab40cec354">foreach</a>($locales as $locale) $this&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> = null</td></tr>
+<tr class="separator:a441a44759ee327455b5b69b0ce2f426d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7c089ef20c5a6dd6e68e1844f45a1fc" id="r_ae7c089ef20c5a6dd6e68e1844f45a1fc"><td class="memItemLeft" align="right" valign="top">array&lt; string, readonly array $names;public function __construct(array $record, array $locales=[ 'en']) { $this-&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7c089ef20c5a6dd6e68e1844f45a1fc">names</a> = $record['names'] ?? []</td></tr>
+<tr class="memdesc:ae7c089ef20c5a6dd6e68e1844f45a1fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">string&gt; An array map where the keys are locale codes and the values are names.  <br /></td></tr>
+<tr class="separator:ae7c089ef20c5a6dd6e68e1844f45a1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa184d62a3c067d1f38c25210f293ba7d" name="aa184d62a3c067d1f38c25210f293ba7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa184d62a3c067d1f38c25210f293ba7d">&#9670;&#160;</a></span>__construct()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad410fc78a9a052bdf6d55ee0aefa7682" name="ad410fc78a9a052bdf6d55ee0aefa7682"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad410fc78a9a052bdf6d55ee0aefa7682">&#9670;&#160;</a></span>jsonSerialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">GeoIp2\Record\AbstractNamedRecord::__construct </td>
+          <td class="memname">GeoIp2\Record\AbstractNamedRecord::jsonSerialize </td>
           <td>(</td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$record</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$locales</em></span><span class="paramdefsep"> = </span><span class="paramdefval">['en']</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array&lt;string,mixed&gt;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>@ignore </p>
-
-<p>Reimplemented in <a class="el" href="../../d9/d8f/class_geo_ip2_1_1_record_1_1_abstract_place_record.html#a103f31006e565c576376c421ed3677f9">GeoIp2\Record\AbstractPlaceRecord</a>, <a class="el" href="../../db/d14/class_geo_ip2_1_1_record_1_1_continent.html#a7562d685d9a9d316c24036bf9abb6380">GeoIp2\Record\Continent</a>, <a class="el" href="../../d5/de7/class_geo_ip2_1_1_record_1_1_country.html#a6da21686d26a5ea9ba8782c2d7a327f4">GeoIp2\Record\Country</a>, <a class="el" href="../../db/df3/class_geo_ip2_1_1_record_1_1_represented_country.html#a5eb39e76a605d9813067a57ed1bfc306">GeoIp2\Record\RepresentedCountry</a>, and <a class="el" href="../../d2/d7a/class_geo_ip2_1_1_record_1_1_subdivision.html#a086ae6c6a8d4163cc08641f229baba8a">GeoIp2\Record\Subdivision</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d9/d8f/class_geo_ip2_1_1_record_1_1_abstract_place_record.html#a482be93db4cb6382437fc0c51020bdd3">GeoIp2\Record\AbstractPlaceRecord</a>, <a class="el" href="../../db/d14/class_geo_ip2_1_1_record_1_1_continent.html#a49ad0885e00ffae09528e1a87299faa8">GeoIp2\Record\Continent</a>, <a class="el" href="../../d5/de7/class_geo_ip2_1_1_record_1_1_country.html#a50927fb9d7b9251ac33aaedda4bab8c6">GeoIp2\Record\Country</a>, <a class="el" href="../../db/df3/class_geo_ip2_1_1_record_1_1_represented_country.html#a01fedb6ef9d06fc55d25f4da7fd2d675">GeoIp2\Record\RepresentedCountry</a>, and <a class="el" href="../../d2/d7a/class_geo_ip2_1_1_record_1_1_subdivision.html#a9c060de1a0986bd1868c7e16f513cbf5">GeoIp2\Record\Subdivision</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a9e40c98ae85612260eb79a623f71cea1" name="a9e40c98ae85612260eb79a623f71cea1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e40c98ae85612260eb79a623f71cea1">&#9670;&#160;</a></span>$names</h2>
+<a id="ae7c089ef20c5a6dd6e68e1844f45a1fc" name="ae7c089ef20c5a6dd6e68e1844f45a1fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7c089ef20c5a6dd6e68e1844f45a1fc">&#9670;&#160;</a></span>names</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">array readonly array GeoIp2\Record\AbstractNamedRecord::$names</td>
+          <td class="memname">array&lt;string, readonly array $names; public function __construct(array $record, array $locales = ['en']) { $this-&gt; GeoIp2\Record\AbstractNamedRecord::names = $record['names'] ?? []</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>An array map where the keys are locale codes and the values are names. </p>
+<p>string&gt; An array map where the keys are locale codes and the values are names. </p>
 <p>This attribute is returned by all location services and databases. </p>
 
 </div>
@@ -162,7 +161,7 @@ string null readonly string&#160;</td><td class="memItemRight" valign="bottom"><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 2 2025 03:09:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 9 2025 02:42:09 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

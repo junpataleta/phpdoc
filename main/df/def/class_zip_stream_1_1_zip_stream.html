@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250227) (688478cfa44)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
   </td>
  </tr>
  </tbody>
@@ -305,7 +305,7 @@ File Options</h5>
 <h5><a class="anchor" id="autotoc_md42"></a>
 Examples</h5>
 <div class="fragment"><div class="line"><span class="comment">// add a directory named &#39;world/&#39;</span></div>
-<div class="line">$zip-&gt;addFile(fileName: <span class="stringliteral">&#39;world/&#39;</span>);</div>
+<div class="line">$zip-&gt;addDirectory(fileName: <span class="stringliteral">&#39;world/&#39;</span>);</div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -449,7 +449,7 @@ Examples</h5>
 <h5><a class="anchor" id="autotoc_md40"></a>
 Examples</h5>
 <div class="fragment"><div class="line"><span class="keywordflow">foreach</span>($files as $name =&gt; $size) {</div>
-<div class="line">  $archive-&gt;addFileFromPsr7Stream(</div>
+<div class="line">  $archive-&gt;addFileFromCallback(</div>
 <div class="line">    fileName: <span class="stringliteral">&#39;streamfile.txt&#39;</span>,</div>
 <div class="line">    exactSize: $size,</div>
 <div class="line">    callback: <span class="keyword">function</span>() use($name): <a class="code hl_interface" href="../../d8/d24/interface_psr_1_1_http_1_1_message_1_1_stream_interface.html">Psr::Http::Message::StreamInterface</a> {</div>
@@ -569,7 +569,7 @@ File Options</h5>
 <div class="line"><span class="comment">// add a file named &#39;bigfile.rar&#39; from the local file</span></div>
 <div class="line"><span class="comment">// &#39;/usr/share/bigfile.rar&#39; with a comment and a last-modified</span></div>
 <div class="line"><span class="comment">// time of two hours ago</span></div>
-<div class="line">$zip-&gt;addFile(</div>
+<div class="line">$zip-&gt;addFileFromPath(</div>
 <div class="line">  fileName: <span class="stringliteral">&#39;bigfile.rar&#39;</span>,</div>
 <div class="line">  path: <span class="stringliteral">&#39;/usr/share/bigfile.rar&#39;</span>,</div>
 <div class="line">  comment: <span class="stringliteral">&#39;this is a comment about bigfile.rar&#39;</span>,</div>
@@ -858,7 +858,7 @@ Example</h5>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 2 2025 03:10:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 9 2025 02:43:25 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

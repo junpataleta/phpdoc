@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250227) (688478cfa44)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
   </td>
  </tr>
  </tbody>
@@ -75,7 +75,6 @@ $(function(){ initResizable(false); });
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="../../dc/dba/classcore__sms_1_1manager-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">core_sms\manager Class Reference<div class="ingroups"><a class="el" href="../../d7/dba/group__core__sms.html">core_sms</a></div></div></div>
 </div><!--header-->
@@ -125,6 +124,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aff40bc82dc900b05c2102e1755f976fa" id="r_aff40bc82dc900b05c2102e1755f976fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff40bc82dc900b05c2102e1755f976fa">send</a> (string $recipientnumber, string $content, string $component, string $messagetype, ?int $recipientuserid, bool $issensitive=false, bool $async=true, ?int $gatewayid=null,)</td></tr>
 <tr class="memdesc:aff40bc82dc900b05c2102e1755f976fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an SMS to the given recipient.  <br /></td></tr>
 <tr class="separator:aff40bc82dc900b05c2102e1755f976fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eda940e8d709c1b8d3c4593802731c7" id="r_a3eda940e8d709c1b8d3c4593802731c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3eda940e8d709c1b8d3c4593802731c7">send_message</a> (<a class="el" href="../../d1/d01/classcore__sms_1_1message.html">message</a> $<a class="el" href="../../d1/d01/classcore__sms_1_1message.html">message</a>, bool $async=true, ?int $gatewayid=null,)</td></tr>
+<tr class="memdesc:a3eda940e8d709c1b8d3c4593802731c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message using the message object.  <br /></td></tr>
+<tr class="separator:a3eda940e8d709c1b8d3c4593802731c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa170e0326b50add8121bedd23b415b8f" id="r_aa170e0326b50add8121bedd23b415b8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa170e0326b50add8121bedd23b415b8f">update_gateway_instance</a> (<a class="el" href="../../d4/dc5/classcore__sms_1_1gateway.html">gateway</a> $<a class="el" href="../../d4/dc5/classcore__sms_1_1gateway.html">gateway</a>, ?stdClass $config=null,)</td></tr>
 <tr class="memdesc:aa170e0326b50add8121bedd23b415b8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update gateway instance.  <br /></td></tr>
 <tr class="separator:aa170e0326b50add8121bedd23b415b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,13 +136,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:acb52374754de959bc72d62f6119c353b" id="r_acb52374754de959bc72d62f6119c353b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb52374754de959bc72d62f6119c353b">format_number</a> (string $phonenumber, ?string $countrycode=null,)</td></tr>
 <tr class="memdesc:acb52374754de959bc72d62f6119c353b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function internationalises a number to E.164 standard.  <br /></td></tr>
 <tr class="separator:acb52374754de959bc72d62f6119c353b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a05b9cc751824ffe3140ae55db0dab383" id="r_a05b9cc751824ffe3140ae55db0dab383"><td class="memItemLeft" align="right" valign="top"><a id="a05b9cc751824ffe3140ae55db0dab383" name="a05b9cc751824ffe3140ae55db0dab383"></a>
-int const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_LENGTH_LIMIT</b> = 160 * 3</td></tr>
-<tr class="memdesc:a05b9cc751824ffe3140ae55db0dab383"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum length of a message. <br /></td></tr>
-<tr class="separator:a05b9cc751824ffe3140ae55db0dab383"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae042c7140d92e68e4563f5a441e2cc33" name="ae042c7140d92e68e4563f5a441e2cc33"></a>
@@ -703,6 +698,48 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_LENGTH_L
 
 </div>
 </div>
+<a id="a3eda940e8d709c1b8d3c4593802731c7" name="a3eda940e8d709c1b8d3c4593802731c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eda940e8d709c1b8d3c4593802731c7">&#9670;&#160;</a></span>send_message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_sms\manager::send_message </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d01/classcore__sms_1_1message.html">message</a></td>          <td class="paramname"><span class="paramname"><em>$message</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$async</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int</td>          <td class="paramname"><span class="paramname"><em>$gatewayid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send a message using the message object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">message</td><td class="paramname">$message</td><td>The message object </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$async</td><td>Whether this SMS should be sent asynchronously. Note: sensitive messages cannot be sent async </td></tr>
+    <tr><td class="paramtype">?int</td><td class="paramname">$gatewayid</td><td>the gateway instance id to send the sms in a specific gateway config </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">message</td><td>the message object after trying to send the message </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aa170e0326b50add8121bedd23b415b8f" name="aa170e0326b50add8121bedd23b415b8f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa170e0326b50add8121bedd23b415b8f">&#9670;&#160;</a></span>update_gateway_instance()</h2>
 
@@ -745,7 +782,7 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_LENGTH_L
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 2 2025 03:09:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 9 2025 02:42:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250227) (688478cfa44)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
   </td>
  </tr>
  </tbody>
@@ -225,9 +225,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a81473e8f6bd6761f43365a9d70ddf077" id="r_a81473e8f6bd6761f43365a9d70ddf077"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81473e8f6bd6761f43365a9d70ddf077">maybeStripNationalPrefixAndCarrierCode</a> (string &amp;$number, <a class="el" href="../../d9/d57/classlibphonenumber_1_1_phone_metadata.html">PhoneMetadata</a> $metadata, ?string &amp;$carrierCode)</td></tr>
 <tr class="memdesc:a81473e8f6bd6761f43365a9d70ddf077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strips any national prefix (such as 0, 1) present in the number provided.  <br /></td></tr>
 <tr class="separator:a81473e8f6bd6761f43365a9d70ddf077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ec422c2925c807cdcf0d88c2be3491d" id="r_a2ec422c2925c807cdcf0d88c2be3491d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ec422c2925c807cdcf0d88c2be3491d">parse</a> (string $numberToParse, ?string $defaultRegion=null, <a class="el" href="../../df/def/classlibphonenumber_1_1_phone_number.html">PhoneNumber</a> $phoneNumber=null, bool $keepRawInput=false)</td></tr>
-<tr class="memdesc:a2ec422c2925c807cdcf0d88c2be3491d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a string and returns it as a phone number in proto buffer format.  <br /></td></tr>
-<tr class="separator:a2ec422c2925c807cdcf0d88c2be3491d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52a7c9de967fec40b669e5654ea89a89" id="r_a52a7c9de967fec40b669e5654ea89a89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52a7c9de967fec40b669e5654ea89a89">parse</a> (string $numberToParse, ?string $defaultRegion=null, ?<a class="el" href="../../df/def/classlibphonenumber_1_1_phone_number.html">PhoneNumber</a> $phoneNumber=null, bool $keepRawInput=false)</td></tr>
+<tr class="memdesc:a52a7c9de967fec40b669e5654ea89a89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a string and returns it as a phone number in proto buffer format.  <br /></td></tr>
+<tr class="separator:a52a7c9de967fec40b669e5654ea89a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7352285dd3ff442251bd18f824a7c64" id="r_ac7352285dd3ff442251bd18f824a7c64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7352285dd3ff442251bd18f824a7c64">parseAndKeepRawInput</a> (string $numberToParse, ?string $defaultRegion, ?<a class="el" href="../../df/def/classlibphonenumber_1_1_phone_number.html">PhoneNumber</a> $phoneNumber=null)</td></tr>
 <tr class="memdesc:ac7352285dd3ff442251bd18f824a7c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a string and returns it in proto buffer format.  <br /></td></tr>
 <tr class="separator:ac7352285dd3ff442251bd18f824a7c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -251,9 +251,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>formattingRuleHasFi
 <tr class="memitem:aefe29e901e83b30f86531464337c2eaf" id="r_aefe29e901e83b30f86531464337c2eaf"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefe29e901e83b30f86531464337c2eaf">getCountryMobileToken</a> (int $countryCallingCode)</td></tr>
 <tr class="memdesc:aefe29e901e83b30f86531464337c2eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mobile token for the provided country calling code if it has one, otherwise returns an empty string.  <br /></td></tr>
 <tr class="separator:aefe29e901e83b30f86531464337c2eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec48aa6dfe93ad4c13988d57894e9f66" id="r_aec48aa6dfe93ad4c13988d57894e9f66"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec48aa6dfe93ad4c13988d57894e9f66">getInstance</a> (string $baseFileLocation=self::META_DATA_FILE_PREFIX, array $countryCallingCodeToRegionCodeMap=null, <a class="el" href="../../de/d84/interfacelibphonenumber_1_1_metadata_loader_interface.html">MetadataLoaderInterface</a> $metadataLoader=null, <a class="el" href="../../d4/d88/interfacelibphonenumber_1_1_metadata_source_interface.html">MetadataSourceInterface</a> $metadataSource=null)</td></tr>
-<tr class="memdesc:aec48aa6dfe93ad4c13988d57894e9f66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a <a class="el" href="">PhoneNumberUtil</a> instance to carry out international phone number formatting, parsing or validation.  <br /></td></tr>
-<tr class="separator:aec48aa6dfe93ad4c13988d57894e9f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab58ee8c678390556f2a6f8dd02261bc6" id="r_ab58ee8c678390556f2a6f8dd02261bc6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab58ee8c678390556f2a6f8dd02261bc6">getInstance</a> (string $baseFileLocation=self::META_DATA_FILE_PREFIX, ?array $countryCallingCodeToRegionCodeMap=null, ?<a class="el" href="../../de/d84/interfacelibphonenumber_1_1_metadata_loader_interface.html">MetadataLoaderInterface</a> $metadataLoader=null, ?<a class="el" href="../../d4/d88/interfacelibphonenumber_1_1_metadata_source_interface.html">MetadataSourceInterface</a> $metadataSource=null)</td></tr>
+<tr class="memdesc:ab58ee8c678390556f2a6f8dd02261bc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a <a class="el" href="">PhoneNumberUtil</a> instance to carry out international phone number formatting, parsing or validation.  <br /></td></tr>
+<tr class="separator:ab58ee8c678390556f2a6f8dd02261bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef4f78e1d19038820da4001884a2fb5c" id="r_aef4f78e1d19038820da4001884a2fb5c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef4f78e1d19038820da4001884a2fb5c">isViablePhoneNumber</a> (string $number)</td></tr>
 <tr class="memdesc:aef4f78e1d19038820da4001884a2fb5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks to see if the string of characters could possibly be a phone number at all.  <br /></td></tr>
 <tr class="separator:aef4f78e1d19038820da4001884a2fb5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -263,7 +263,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>formattingRuleHasFi
 <tr class="memitem:acef68e1e1ed138c2534dbc38837fb6da" id="r_acef68e1e1ed138c2534dbc38837fb6da"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acef68e1e1ed138c2534dbc38837fb6da">normalizeDiallableCharsOnly</a> (string $number)</td></tr>
 <tr class="memdesc:acef68e1e1ed138c2534dbc38837fb6da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalizes a string of characters representing a phone number.  <br /></td></tr>
 <tr class="separator:acef68e1e1ed138c2534dbc38837fb6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f94006c37d21b3058a16e3053e64606" id="r_a6f94006c37d21b3058a16e3053e64606"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f94006c37d21b3058a16e3053e64606">normalizeDigits</a> (string $number, bool $keepNonDigits)</td></tr>
+<tr class="memitem:a6f94006c37d21b3058a16e3053e64606" id="r_a6f94006c37d21b3058a16e3053e64606"><td class="memItemLeft" align="right" valign="top"><a id="a6f94006c37d21b3058a16e3053e64606" name="a6f94006c37d21b3058a16e3053e64606"></a>
+static&#160;</td><td class="memItemRight" valign="bottom"><b>normalizeDigits</b> (string $number, bool $keepNonDigits)</td></tr>
 <tr class="separator:a6f94006c37d21b3058a16e3053e64606"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa276fc17578612f3ed535cf8763d8300" id="r_aa276fc17578612f3ed535cf8763d8300"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa276fc17578612f3ed535cf8763d8300">normalizeDigitsOnly</a> (string $number)</td></tr>
 <tr class="memdesc:aa276fc17578612f3ed535cf8763d8300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalizes a string of characters representing a phone number.  <br /></td></tr>
@@ -272,8 +273,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>formattingRuleHasFi
 static&#160;</td><td class="memItemRight" valign="bottom"><b>resetInstance</b> ()</td></tr>
 <tr class="memdesc:ab0e9f8ab87ce0d8c145d8b5c331fce21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used for testing purposes only to reset the PhoneNumberUtil singleton to null. <br /></td></tr>
 <tr class="separator:ab0e9f8ab87ce0d8c145d8b5c331fce21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d8fc38ec9931b73dc6942183c0b3e80" id="r_a2d8fc38ec9931b73dc6942183c0b3e80"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d8fc38ec9931b73dc6942183c0b3e80">setItalianLeadingZerosForPhoneNumber</a> (string $nationalNumber, <a class="el" href="../../df/def/classlibphonenumber_1_1_phone_number.html">PhoneNumber</a> $phoneNumber)</td></tr>
-<tr class="memdesc:a2d8fc38ec9931b73dc6942183c0b3e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper function to set the values related to leading zeros in a PhoneNumber.  <br /></td></tr>
+<tr class="memitem:a2d8fc38ec9931b73dc6942183c0b3e80" id="r_a2d8fc38ec9931b73dc6942183c0b3e80"><td class="memItemLeft" align="right" valign="top"><a id="a2d8fc38ec9931b73dc6942183c0b3e80" name="a2d8fc38ec9931b73dc6942183c0b3e80"></a>
+static&#160;</td><td class="memItemRight" valign="bottom"><b>setItalianLeadingZerosForPhoneNumber</b> (string $nationalNumber, <a class="el" href="../../df/def/classlibphonenumber_1_1_phone_number.html">PhoneNumber</a> $phoneNumber)</td></tr>
+<tr class="memdesc:a2d8fc38ec9931b73dc6942183c0b3e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper function to set the values related to leading zeros in a PhoneNumber. <br /></td></tr>
 <tr class="separator:a2d8fc38ec9931b73dc6942183c0b3e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -281,6 +283,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a5be7eb4986e3e8c73d946f34e723241b" id="r_a5be7eb4986e3e8c73d946f34e723241b"><td class="memItemLeft" align="right" valign="top"><a id="a5be7eb4986e3e8c73d946f34e723241b" name="a5be7eb4986e3e8c73d946f34e723241b"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>META_DATA_FILE_PREFIX</b> = __DIR__ . '/data/PhoneNumberMetadata'</td></tr>
 <tr class="separator:a5be7eb4986e3e8c73d946f34e723241b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2889f79650c039e86fe9c744a870af68" id="r_a2889f79650c039e86fe9c744a870af68"><td class="memItemLeft" align="right" valign="top"><a id="a2889f79650c039e86fe9c744a870af68" name="a2889f79650c039e86fe9c744a870af68"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>PLUS_CHARS_PATTERN</b> = '[' . self::PLUS_CHARS . ']+'</td></tr>
+<tr class="separator:a2889f79650c039e86fe9c744a870af68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6dbc1bbaf55ed3df977a3b63bd78f71" id="r_ad6dbc1bbaf55ed3df977a3b63bd78f71"><td class="memItemLeft" align="right" valign="top"><a id="ad6dbc1bbaf55ed3df977a3b63bd78f71" name="ad6dbc1bbaf55ed3df977a3b63bd78f71"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>REGION_CODE_FOR_NON_GEO_ENTITY</b> = '001'</td></tr>
 <tr class="separator:ad6dbc1bbaf55ed3df977a3b63bd78f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -319,16 +324,19 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a694691ddcec623867e9a62db206ea5ec" id="r_a694691ddcec623867e9a62db206ea5ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a694691ddcec623867e9a62db206ea5ec">getRegionCodeForNumberFromRegionList</a> (<a class="el" href="../../df/def/classlibphonenumber_1_1_phone_number.html">PhoneNumber</a> $number, array $regionCodes)</td></tr>
 <tr class="memdesc:a694691ddcec623867e9a62db206ea5ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the region code for a number from the list of region codes passing in.  <br /></td></tr>
 <tr class="separator:a694691ddcec623867e9a62db206ea5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a251ca69d7d919e5b0f756e156a73f3f0" id="r_a251ca69d7d919e5b0f756e156a73f3f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a251ca69d7d919e5b0f756e156a73f3f0">hasFormattingPatternForNumber</a> (<a class="el" href="../../df/def/classlibphonenumber_1_1_phone_number.html">PhoneNumber</a> $number)</td></tr>
+<tr class="memitem:a251ca69d7d919e5b0f756e156a73f3f0" id="r_a251ca69d7d919e5b0f756e156a73f3f0"><td class="memItemLeft" align="right" valign="top"><a id="a251ca69d7d919e5b0f756e156a73f3f0" name="a251ca69d7d919e5b0f756e156a73f3f0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>hasFormattingPatternForNumber</b> (<a class="el" href="../../df/def/classlibphonenumber_1_1_phone_number.html">PhoneNumber</a> $number)</td></tr>
 <tr class="separator:a251ca69d7d919e5b0f756e156a73f3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa5edafdb2b1f2f2e4ca90903ecd6277" id="r_aaa5edafdb2b1f2f2e4ca90903ecd6277"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa5edafdb2b1f2f2e4ca90903ecd6277">hasValidCountryCallingCode</a> (int $countryCallingCode)</td></tr>
-<tr class="memdesc:aaa5edafdb2b1f2f2e4ca90903ecd6277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to check the country calling code is valid.  <br /></td></tr>
+<tr class="memitem:aaa5edafdb2b1f2f2e4ca90903ecd6277" id="r_aaa5edafdb2b1f2f2e4ca90903ecd6277"><td class="memItemLeft" align="right" valign="top"><a id="aaa5edafdb2b1f2f2e4ca90903ecd6277" name="aaa5edafdb2b1f2f2e4ca90903ecd6277"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>hasValidCountryCallingCode</b> (int $countryCallingCode)</td></tr>
+<tr class="memdesc:aaa5edafdb2b1f2f2e4ca90903ecd6277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to check the country calling code is valid. <br /></td></tr>
 <tr class="separator:aaa5edafdb2b1f2f2e4ca90903ecd6277"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa00e8dd955e26367eb55f79f8a87c12" id="r_afa00e8dd955e26367eb55f79f8a87c12"><td class="memItemLeft" align="right" valign="top"><a id="afa00e8dd955e26367eb55f79f8a87c12" name="afa00e8dd955e26367eb55f79f8a87c12"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
 <tr class="separator:afa00e8dd955e26367eb55f79f8a87c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc65e0edd4eb2eaff5495a2ac63d7ea8" id="r_afc65e0edd4eb2eaff5495a2ac63d7ea8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc65e0edd4eb2eaff5495a2ac63d7ea8">isNationalNumberSuffixOfTheOther</a> (<a class="el" href="../../df/def/classlibphonenumber_1_1_phone_number.html">PhoneNumber</a> $firstNumber, <a class="el" href="../../df/def/classlibphonenumber_1_1_phone_number.html">PhoneNumber</a> $secondNumber)</td></tr>
-<tr class="memdesc:afc65e0edd4eb2eaff5495a2ac63d7ea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true when one national number is the suffix of the other or both are the same.  <br /></td></tr>
+<tr class="memitem:afc65e0edd4eb2eaff5495a2ac63d7ea8" id="r_afc65e0edd4eb2eaff5495a2ac63d7ea8"><td class="memItemLeft" align="right" valign="top"><a id="afc65e0edd4eb2eaff5495a2ac63d7ea8" name="afc65e0edd4eb2eaff5495a2ac63d7ea8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>isNationalNumberSuffixOfTheOther</b> (<a class="el" href="../../df/def/classlibphonenumber_1_1_phone_number.html">PhoneNumber</a> $firstNumber, <a class="el" href="../../df/def/classlibphonenumber_1_1_phone_number.html">PhoneNumber</a> $secondNumber)</td></tr>
+<tr class="memdesc:afc65e0edd4eb2eaff5495a2ac63d7ea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true when one national number is the suffix of the other or both are the same. <br /></td></tr>
 <tr class="separator:afc65e0edd4eb2eaff5495a2ac63d7ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd3966a4bfea1f081eea954d27a3e332" id="r_abd3966a4bfea1f081eea954d27a3e332"><td class="memItemLeft" align="right" valign="top"><a id="abd3966a4bfea1f081eea954d27a3e332" name="abd3966a4bfea1f081eea954d27a3e332"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>isPhoneContextValid</b> (?string $phoneContext)</td></tr>
@@ -368,11 +376,13 @@ Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:abe8b4b300005240382678c8c207be1a6" id="r_abe8b4b300005240382678c8c207be1a6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe8b4b300005240382678c8c207be1a6">createExtnPattern</a> (bool $forParsing)</td></tr>
 <tr class="memdesc:abe8b4b300005240382678c8c207be1a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper initialiser method to create the regular-expression pattern to match extensions.  <br /></td></tr>
 <tr class="separator:abe8b4b300005240382678c8c207be1a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade64546fa01e0316db896d20f1f448c5" id="r_ade64546fa01e0316db896d20f1f448c5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade64546fa01e0316db896d20f1f448c5">descHasData</a> (<a class="el" href="../../d1/de4/classlibphonenumber_1_1_phone_number_desc.html">PhoneNumberDesc</a> $desc)</td></tr>
-<tr class="memdesc:ade64546fa01e0316db896d20f1f448c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if there is any data set for a particular PhoneNumberDesc.  <br /></td></tr>
+<tr class="memitem:ade64546fa01e0316db896d20f1f448c5" id="r_ade64546fa01e0316db896d20f1f448c5"><td class="memItemLeft" align="right" valign="top"><a id="ade64546fa01e0316db896d20f1f448c5" name="ade64546fa01e0316db896d20f1f448c5"></a>
+static&#160;</td><td class="memItemRight" valign="bottom"><b>descHasData</b> (<a class="el" href="../../d1/de4/classlibphonenumber_1_1_phone_number_desc.html">PhoneNumberDesc</a> $desc)</td></tr>
+<tr class="memdesc:ade64546fa01e0316db896d20f1f448c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if there is any data set for a particular PhoneNumberDesc. <br /></td></tr>
 <tr class="separator:ade64546fa01e0316db896d20f1f448c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0925300ea0cb511a050d7c6dbfd29900" id="r_a0925300ea0cb511a050d7c6dbfd29900"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0925300ea0cb511a050d7c6dbfd29900">descHasPossibleNumberData</a> (<a class="el" href="../../d1/de4/classlibphonenumber_1_1_phone_number_desc.html">PhoneNumberDesc</a> $desc)</td></tr>
-<tr class="memdesc:a0925300ea0cb511a050d7c6dbfd29900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if there is any possible number data set for a particular PhoneNumberDesc.  <br /></td></tr>
+<tr class="memitem:a0925300ea0cb511a050d7c6dbfd29900" id="r_a0925300ea0cb511a050d7c6dbfd29900"><td class="memItemLeft" align="right" valign="top"><a id="a0925300ea0cb511a050d7c6dbfd29900" name="a0925300ea0cb511a050d7c6dbfd29900"></a>
+static&#160;</td><td class="memItemRight" valign="bottom"><b>descHasPossibleNumberData</b> (<a class="el" href="../../d1/de4/classlibphonenumber_1_1_phone_number_desc.html">PhoneNumberDesc</a> $desc)</td></tr>
+<tr class="memdesc:a0925300ea0cb511a050d7c6dbfd29900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if there is any possible number data set for a particular PhoneNumberDesc. <br /></td></tr>
 <tr class="separator:a0925300ea0cb511a050d7c6dbfd29900"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6619b479d3ba41d7d2ed5e105318aea" id="r_ac6619b479d3ba41d7d2ed5e105318aea"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6619b479d3ba41d7d2ed5e105318aea">extnDigits</a> (int $maxLength)</td></tr>
 <tr class="memdesc:ac6619b479d3ba41d7d2ed5e105318aea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper method for constructing regular expressions for parsing.  <br /></td></tr>
@@ -436,6 +446,9 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>CAPTURING_DIGIT_PATT
 <tr class="memitem:ac85e378f34af04b5bfe075e886415cfd" id="r_ac85e378f34af04b5bfe075e886415cfd"><td class="memItemLeft" align="right" valign="top"><a id="ac85e378f34af04b5bfe075e886415cfd" name="ac85e378f34af04b5bfe075e886415cfd"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>CC_STRING</b> = '$CC'</td></tr>
 <tr class="separator:ac85e378f34af04b5bfe075e886415cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae191156368ff998e9bc98db411d921fc" id="r_ae191156368ff998e9bc98db411d921fc"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae191156368ff998e9bc98db411d921fc">COUNTRIES_WITHOUT_NATIONAL_PREFIX_WITH_AREA_CODES</a></td></tr>
+<tr class="memdesc:ae191156368ff998e9bc98db411d921fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set of country codes that doesn't have national prefix, but it has area codes.  <br /></td></tr>
+<tr class="separator:ae191156368ff998e9bc98db411d921fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3582c39e80b2d6d3f3b9cd9f349a62a" id="r_ab3582c39e80b2d6d3f3b9cd9f349a62a"><td class="memItemLeft" align="right" valign="top"><a id="ab3582c39e80b2d6d3f3b9cd9f349a62a" name="ab3582c39e80b2d6d3f3b9cd9f349a62a"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_EXTN_PREFIX</b> = ' ext. '</td></tr>
 <tr class="separator:ab3582c39e80b2d6d3f3b9cd9f349a62a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -489,9 +502,6 @@ array&lt; string, int &gt; const&#160;</td><td class="memItemRight" valign="bott
 <tr class="memitem:ab5bf6d974e1c4157ebcbb3a09da2a485" id="r_ab5bf6d974e1c4157ebcbb3a09da2a485"><td class="memItemLeft" align="right" valign="top"><a id="ab5bf6d974e1c4157ebcbb3a09da2a485" name="ab5bf6d974e1c4157ebcbb3a09da2a485"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>PLUS_CHARS</b> = '+＋'</td></tr>
 <tr class="separator:ab5bf6d974e1c4157ebcbb3a09da2a485"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2889f79650c039e86fe9c744a870af68" id="r_a2889f79650c039e86fe9c744a870af68"><td class="memItemLeft" align="right" valign="top"><a id="a2889f79650c039e86fe9c744a870af68" name="a2889f79650c039e86fe9c744a870af68"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>PLUS_CHARS_PATTERN</b> = '[' . self::PLUS_CHARS . ']+'</td></tr>
-<tr class="separator:a2889f79650c039e86fe9c744a870af68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f4de77df30883981a1a540d590e4e7e" id="r_a0f4de77df30883981a1a540d590e4e7e"><td class="memItemLeft" align="right" valign="top"><a id="a0f4de77df30883981a1a540d590e4e7e" name="a0f4de77df30883981a1a540d590e4e7e"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>PLUS_SIGN</b> = '+'</td></tr>
 <tr class="separator:a0f4de77df30883981a1a540d590e4e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -583,9 +593,9 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$RFC3966_TOP
 <tr class="memitem:a5ef0cd985a3617c7968cb2435f03c7e4" id="r_a5ef0cd985a3617c7968cb2435f03c7e4"><td class="memItemLeft" align="right" valign="top"><a id="a5ef0cd985a3617c7968cb2435f03c7e4" name="a5ef0cd985a3617c7968cb2435f03c7e4"></a>
 static string&#160;</td><td class="memItemRight" valign="bottom"><b>$RFC3966_VISUAL_SEPARATOR</b> = '[\\-\\.\\&zwj;(\\&zwj;)]?'</td></tr>
 <tr class="separator:a5ef0cd985a3617c7968cb2435f03c7e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1faed924de496e31ab8841713f7b8d66" id="r_a1faed924de496e31ab8841713f7b8d66"><td class="memItemLeft" align="right" valign="top">static string string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1faed924de496e31ab8841713f7b8d66">$VALID_PHONE_NUMBER</a></td></tr>
-<tr class="memdesc:a1faed924de496e31ab8841713f7b8d66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regular expression of viable phone numbers.  <br /></td></tr>
-<tr class="separator:a1faed924de496e31ab8841713f7b8d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2715ea719c8f3d40b19fbeae027595c" id="r_ad2715ea719c8f3d40b19fbeae027595c"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2715ea719c8f3d40b19fbeae027595c">$VALID_PHONE_NUMBER</a></td></tr>
+<tr class="memdesc:ad2715ea719c8f3d40b19fbeae027595c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regular expression of viable phone numbers.  <br /></td></tr>
+<tr class="separator:ad2715ea719c8f3d40b19fbeae027595c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae031ab98357aa403f207cc9b3bdfa5df" id="r_ae031ab98357aa403f207cc9b3bdfa5df"><td class="memItemLeft" align="right" valign="top"><a id="ae031ab98357aa403f207cc9b3bdfa5df" name="ae031ab98357aa403f207cc9b3bdfa5df"></a>
 static string&#160;</td><td class="memItemRight" valign="bottom"><b>$VALID_PHONE_NUMBER_PATTERN</b></td></tr>
 <tr class="separator:ae031ab98357aa403f207cc9b3bdfa5df"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -621,8 +631,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$VALID_PHONE
 <p>This class implements a singleton, so the only constructor is protected. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">MetadataSourceInterface</td><td class="paramname">$metadataSource</td><td></td></tr>
-    <tr><td class="paramtype"></td><td class="paramname">array&lt;int,string[]&gt;</td><td>$countryCallingCodeToRegionCodeMap </td></tr>
+    <tr><td class="paramname">array&lt;int,string[]&gt;</td><td>$countryCallingCodeToRegionCodeMap </td></tr>
   </table>
   </dd>
 </dl>
@@ -658,13 +667,6 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$VALID_PHONE
 </div><div class="memdoc">
 
 <p>Converts numberToParse to a form that we can parse and write it to nationalNumber if it is written in RFC3966; otherwise extract a possible number out of it and write to nationalNumber. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$numberToParse</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$nationalNumber</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">NumberParseException</td><td></td></tr>
@@ -694,12 +696,6 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$VALID_PHONE
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">PhoneNumber</td><td class="paramname">$number</td><td>the phone-number for which we want to know whether it is diallable from outside the region </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -759,13 +755,6 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$VALID_PHONE
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">NumberFormat[]</td><td class="paramname">$availableFormats</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$nationalNumber</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">NumberFormat|null</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -796,13 +785,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$VALID_PHONE
 </div><div class="memdoc">
 
 <p>Returns a new phone number containing only the fields needed to uniquely identify a phone number, rather than any fields that capture the context in which the phone number was created. </p>
-<p>These fields correspond to those set in <a class="el" href="../../d8/ded/group___simple_pie.html#ga38d99acc70a1d8fd8f94455743b2d237" title="Parse the input data.">parse()</a> rather than parseAndKeepRawInput()</p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">PhoneNumber</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>These fields correspond to those set in <a class="el" href="../../d8/ded/group___simple_pie.html#ga38d99acc70a1d8fd8f94455743b2d237" title="Parse the input data.">parse()</a> rather than parseAndKeepRawInput() </p>
 
 </div>
 </div>
@@ -831,72 +814,6 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$VALID_PHONE
 
 <p>Helper initialiser method to create the regular-expression pattern to match extensions. </p>
 <p>Note that there are currently six capturing groups for the extension itself. If this number is changed, MaybeStripExtension needs to be updated. </p>
-
-</div>
-</div>
-<a id="ade64546fa01e0316db896d20f1f448c5" name="ade64546fa01e0316db896d20f1f448c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade64546fa01e0316db896d20f1f448c5">&#9670;&#160;</a></span>descHasData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static libphonenumber\PhoneNumberUtil::descHasData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/de4/classlibphonenumber_1_1_phone_number_desc.html">PhoneNumberDesc</a></td>          <td class="paramname"><span class="paramname"><em>$desc</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel protected">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if there is any data set for a particular PhoneNumberDesc. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a0925300ea0cb511a050d7c6dbfd29900" name="a0925300ea0cb511a050d7c6dbfd29900"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0925300ea0cb511a050d7c6dbfd29900">&#9670;&#160;</a></span>descHasPossibleNumberData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static libphonenumber\PhoneNumberUtil::descHasPossibleNumberData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/de4/classlibphonenumber_1_1_phone_number_desc.html">PhoneNumberDesc</a></td>          <td class="paramname"><span class="paramname"><em>$desc</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel protected">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if there is any possible number data set for a particular PhoneNumberDesc. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -956,19 +873,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$VALID_PHONE
 </div><div class="memdoc">
 
 <p>Extracts country calling code from fullNumber, returns it and places the remaining number in nationalNumber. </p>
-<p>It assumes that the leading plus sign or IDD has already been removed. Returns 0 if fullNumber doesn't start with a valid country calling code, and leaves nationalNumber unmodified. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$fullNumber</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$nationalNumber</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">int</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>It assumes that the leading plus sign or IDD has already been removed. Returns 0 if fullNumber doesn't start with a valid country calling code, and leaves nationalNumber unmodified. </p>
 
 </div>
 </div>
@@ -1283,15 +1188,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$VALID_PHONE
 <p>Note in some regions, the national number can be written in two completely different ways depending on whether it forms part of the NATIONAL format or INTERNATIONAL format. </p>
 <p>The numberFormat parameter here is used to specify which format to use for those cases. If a carrierCode is specified, this will be inserted into the formatted string to replace $CC. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$number</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$numberFormat</td><td>PhoneNumberFormat </td></tr>
-    <tr><td class="paramtype">null&#160;|&#160;string</td><td class="paramname">$carrierCode</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1330,15 +1227,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$VALID_PHONE
 <p>Note that carrierCode is optional - if null or an empty string, no carrier code replacement will take place. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$nationalNumber</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$numberFormat</td><td>PhoneNumberFormat </td></tr>
-    <tr><td class="paramtype">null&#160;|&#160;string</td><td class="paramname">$carrierCode</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1688,8 +1577,8 @@ This will also not produce good results if the raw input has any grouping inform
 
 </div>
 </div>
-<a id="aec48aa6dfe93ad4c13988d57894e9f66" name="aec48aa6dfe93ad4c13988d57894e9f66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec48aa6dfe93ad4c13988d57894e9f66">&#9670;&#160;</a></span>getInstance()</h2>
+<a id="ab58ee8c678390556f2a6f8dd02261bc6" name="ab58ee8c678390556f2a6f8dd02261bc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab58ee8c678390556f2a6f8dd02261bc6">&#9670;&#160;</a></span>getInstance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1705,17 +1594,17 @@ This will also not produce good results if the raw input has any grouping inform
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$countryCallingCodeToRegionCodeMap</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+          <td class="paramtype">?array</td>          <td class="paramname"><span class="paramname"><em>$countryCallingCodeToRegionCodeMap</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../de/d84/interfacelibphonenumber_1_1_metadata_loader_interface.html">MetadataLoaderInterface</a></td>          <td class="paramname"><span class="paramname"><em>$metadataLoader</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+          <td class="paramtype">?<a class="el" href="../../de/d84/interfacelibphonenumber_1_1_metadata_loader_interface.html">MetadataLoaderInterface</a></td>          <td class="paramname"><span class="paramname"><em>$metadataLoader</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d4/d88/interfacelibphonenumber_1_1_metadata_source_interface.html">MetadataSourceInterface</a></td>          <td class="paramname"><span class="paramname"><em>$metadataSource</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">?<a class="el" href="../../d4/d88/interfacelibphonenumber_1_1_metadata_source_interface.html">MetadataSourceInterface</a></td>          <td class="paramname"><span class="paramname"><em>$metadataSource</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -1730,10 +1619,7 @@ This will also not produce good results if the raw input has any grouping inform
 <p>The <a class="el" href="">PhoneNumberUtil</a> is implemented as a singleton. Therefore, calling getInstance multiple times will only result in one instance being created.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$baseFileLocation</td><td></td></tr>
-    <tr><td class="paramtype"></td><td class="paramname">array&lt;int,array&lt;int|string&gt;&gt;|null</td><td>$countryCallingCodeToRegionCodeMap </td></tr>
-    <tr><td class="paramtype">MetadataLoaderInterface&#160;|&#160;null</td><td class="paramname">$metadataLoader</td><td></td></tr>
-    <tr><td class="paramtype">MetadataSourceInterface&#160;|&#160;null</td><td class="paramname">$metadataSource</td><td></td></tr>
+    <tr><td class="paramname">array&lt;int,array&lt;int|string&gt;&gt;|null</td><td>$countryCallingCodeToRegionCodeMap </td></tr>
   </table>
   </dd>
 </dl>
@@ -1962,12 +1848,6 @@ some geographical numbers have no area codes. </li>
   </table>
   </dd>
 </dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">PhoneNumberDesc</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -2030,12 +1910,6 @@ some geographical numbers have no area codes. </li>
 </div><div class="memdoc">
 
 <p>Returns the type of number passed in i.e Toll free, premium. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$nationalNumber</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int</td><td>PhoneNumberType constant </td></tr>
@@ -2150,13 +2024,7 @@ some geographical numbers have no area codes. </li>
 </div><div class="memdoc">
 
 <p>Returns a list with the region codes that match the specific country calling code. </p>
-<p>For non-geographical country calling codes, the region code 001 is returned. Also, in the case of no region code being found, an empty list is returned. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$countryCallingCode</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
+<p>For non-geographical country calling codes, the region code 001 is returned. Also, in the case of no region code being found, an empty list is returned. </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string[]</td><td></td></tr>
   </table>
@@ -2284,85 +2152,9 @@ some geographical numbers have no area codes. </li>
 <p>Returns the types for a given region which the library has metadata for. </p>
 <p>Will not include FIXED_LINE_OR_MOBILE (if the numbers in this region could be classified as FIXED_LINE_OR_MOBILE, both FIXED_LINE and MOBILE would be present) and UNKNOWN.</p>
 <p>No types will be returned for invalid or unknown region codes.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$regionCode</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array&lt;int&gt;</td><td>Array of PhoneNumberType's </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a251ca69d7d919e5b0f756e156a73f3f0" name="a251ca69d7d919e5b0f756e156a73f3f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a251ca69d7d919e5b0f756e156a73f3f0">&#9670;&#160;</a></span>hasFormattingPatternForNumber()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">libphonenumber\PhoneNumberUtil::hasFormattingPatternForNumber </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../df/def/classlibphonenumber_1_1_phone_number.html">PhoneNumber</a></td>          <td class="paramname"><span class="paramname"><em>$number</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aaa5edafdb2b1f2f2e4ca90903ecd6277" name="aaa5edafdb2b1f2f2e4ca90903ecd6277"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa5edafdb2b1f2f2e4ca90903ecd6277">&#9670;&#160;</a></span>hasValidCountryCallingCode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">libphonenumber\PhoneNumberUtil::hasValidCountryCallingCode </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$countryCallingCode</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Helper function to check the country calling code is valid. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$countryCallingCode</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2424,12 +2216,6 @@ some geographical numbers have no area codes. </li>
   </table>
   </dd>
 </dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -2449,52 +2235,9 @@ some geographical numbers have no area codes. </li>
 </div><div class="memdoc">
 
 <p>Checks if this is a region under the North American Numbering Plan Administration (NANPA). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$regionCode</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">boolean</td><td>true if regionCode is one of the regions under NANPA </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="afc65e0edd4eb2eaff5495a2ac63d7ea8" name="afc65e0edd4eb2eaff5495a2ac63d7ea8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc65e0edd4eb2eaff5495a2ac63d7ea8">&#9670;&#160;</a></span>isNationalNumberSuffixOfTheOther()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">libphonenumber\PhoneNumberUtil::isNationalNumberSuffixOfTheOther </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../df/def/classlibphonenumber_1_1_phone_number.html">PhoneNumber</a></td>          <td class="paramname"><span class="paramname"><em>$firstNumber</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../df/def/classlibphonenumber_1_1_phone_number.html">PhoneNumber</a></td>          <td class="paramname"><span class="paramname"><em>$secondNumber</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true when one national number is the suffix of the other or both are the same. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2529,12 +2272,6 @@ some geographical numbers have no area codes. </li>
   <table class="params">
     <tr><td class="paramtype">PhoneNumber&#160;|&#160;int</td><td class="paramname">$phoneNumberObjOrType</td><td>A PhoneNumber object, or a PhoneNumberType integer </td></tr>
     <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$countryCallingCode</td><td>Used when passing a PhoneNumberType </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2689,6 +2426,7 @@ It only checks the length of phone numbers. In particular, it doesn't check star
 <li>
 For some numbers (particularly fixed-line), many regions have the concept of area code, which together with subscriber number constitute the national significant number. It is sometimes okay to dial only the subscriber number when dialing in the same area. This function will return IS_POSSIBLE_LOCAL_ONLY if the subscriber-number-only version is passed in. On the other hand, because isValidNumber validates using information on both starting digits (for fixed line numbers, that would most likely be area codes) and length (obviously includes the length of area codes for fixed line numbers), it will return false for the subscriber-number-only version. </li>
 </ol>
+<p>There is a known <a href="https://issuetracker.google.com/issues/335892662">issue</a> with this method: if a number is possible only in a certain region among several regions that share the same country calling code, this method will consider only the "main" region. For example, +1310xxxx are valid numbers in Canada. However, they are not possible in the US. As a result, this method will return IS_POSSIBLE_LOCAL_ONLY for +1310xxxx.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">PhoneNumber</td><td class="paramname">$number</td><td>the number that needs to be checked </td></tr>
@@ -2729,6 +2467,7 @@ It doesn't attempt to figure out the type of the number, but uses general rules 
 <li>
 For some numbers (particularly fixed-line), many regions have the concept of area code, which together with subscriber number constitute the national significant number. It is sometimes okay to dial only the subscriber number when dialing in the same area. This function will return IS_POSSIBLE_LOCAL_ONLY if the subscriber-number-only version is passed in. On the other hand, because isValidNumber validates using information on both starting digits (for fixed line numbers, that would most likely be area codes) and length (obviously includes the length of area codes for fixed line numbers), it will return false for the subscriber-number-only version. </li>
 </ol>
+<p>There is a known <a href="https://issuetracker.google.com/issues/335892662">issue</a> with this method: if a number is possible only in a certain region among several regions that share the same country calling code, this method will consider only the "main" region. For example, +1310xxxx are valid numbers in Canada. However, they are not possible in the US. As a result, this method will return IS_POSSIBLE_LOCAL_ONLY for +1310xxxx.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">PhoneNumber</td><td class="paramname">$number</td><td>the number that needs to be checked </td></tr>
@@ -2893,10 +2632,7 @@ For some numbers (particularly fixed-line), many regions have the concept of are
 <p>Appends the formatted extension of a phone number to formattedNumber, if the phone number had an extension specified. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">PhoneNumber</td><td class="paramname">$number</td><td></td></tr>
-    <tr><td class="paramtype">PhoneMetadata&#160;|&#160;null</td><td class="paramname">$metadata</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$numberFormat</td><td>PhoneNumberFormat </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$formattedNumber</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -3173,48 +2909,6 @@ by comparing the start of the number and the country calling code of the default
 
 </div>
 </div>
-<a id="a6f94006c37d21b3058a16e3053e64606" name="a6f94006c37d21b3058a16e3053e64606"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f94006c37d21b3058a16e3053e64606">&#9670;&#160;</a></span>normalizeDigits()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static libphonenumber\PhoneNumberUtil::normalizeDigits </td>
-          <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$number</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$keepNonDigits</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$number</td><td></td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$keepNonDigits</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="aa276fc17578612f3ed535cf8763d8300" name="aa276fc17578612f3ed535cf8763d8300"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa276fc17578612f3ed535cf8763d8300">&#9670;&#160;</a></span>normalizeDigitsOnly()</h2>
 
@@ -3305,8 +2999,8 @@ by comparing the start of the number and the country calling code of the default
 
 </div>
 </div>
-<a id="a2ec422c2925c807cdcf0d88c2be3491d" name="a2ec422c2925c807cdcf0d88c2be3491d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ec422c2925c807cdcf0d88c2be3491d">&#9670;&#160;</a></span>parse()</h2>
+<a id="a52a7c9de967fec40b669e5654ea89a89" name="a52a7c9de967fec40b669e5654ea89a89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52a7c9de967fec40b669e5654ea89a89">&#9670;&#160;</a></span>parse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3324,7 +3018,7 @@ by comparing the start of the number and the country calling code of the default
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../df/def/classlibphonenumber_1_1_phone_number.html">PhoneNumber</a></td>          <td class="paramname"><span class="paramname"><em>$phoneNumber</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+          <td class="paramtype">?<a class="el" href="../../df/def/classlibphonenumber_1_1_phone_number.html">PhoneNumber</a></td>          <td class="paramname"><span class="paramname"><em>$phoneNumber</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3342,8 +3036,6 @@ by comparing the start of the number and the country calling code of the default
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$numberToParse</td><td>number that we are attempting to parse. This can contain formatting such as +, ( and -, as well as a phone number extension. </td></tr>
     <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$defaultRegion</td><td>region that we are expecting the number to be from. This is only used if the number being parsed is not written in international format. The country_code for the number in this case would be stored as that of the default region supplied. If the number is guaranteed to start with a '+' followed by the country calling code, then "ZZ" or null can be supplied. </td></tr>
-    <tr><td class="paramtype">PhoneNumber&#160;|&#160;null</td><td class="paramname">$phoneNumber</td><td></td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$keepRawInput</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -3484,19 +3176,7 @@ by comparing the start of the number and the country calling code of the default
 </div><div class="memdoc">
 
 <p>Strips the IDD from the start of the number if present. </p>
-<p>Helper function used by maybeStripInternationalPrefixAndNormalize. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$iddPattern</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$number</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Helper function used by maybeStripInternationalPrefixAndNormalize. </p>
 
 </div>
 </div>
@@ -3535,9 +3215,7 @@ by comparing the start of the number and the country calling code of the default
 <p>A helper function that is used by format and formatByPattern. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$countryCallingCode</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$numberFormat</td><td>PhoneNumberFormat </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$formattedNumber</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -3577,57 +3255,7 @@ by comparing the start of the number and the country calling code of the default
 </div><div class="memdoc">
 
 <p>Check if rawInput, which is assumed to be in the national format, has a national prefix. </p>
-<p>The national prefix is assumed to be in digits-only form. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$rawInput</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$nationalPrefix</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$regionCode</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a2d8fc38ec9931b73dc6942183c0b3e80" name="a2d8fc38ec9931b73dc6942183c0b3e80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d8fc38ec9931b73dc6942183c0b3e80">&#9670;&#160;</a></span>setItalianLeadingZerosForPhoneNumber()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static libphonenumber\PhoneNumberUtil::setItalianLeadingZerosForPhoneNumber </td>
-          <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$nationalNumber</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../df/def/classlibphonenumber_1_1_phone_number.html">PhoneNumber</a></td>          <td class="paramname"><span class="paramname"><em>$phoneNumber</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>A helper function to set the values related to leading zeros in a PhoneNumber. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$nationalNumber</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>The national prefix is assumed to be in digits-only form. </p>
 
 </div>
 </div>
@@ -3666,7 +3294,6 @@ by comparing the start of the number and the country calling code of the default
 <p>Helper method to check a number against possible lengths for this number type, and determine whether it matches, or is too short or too long. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$number</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$type</td><td>PhoneNumberType </td></tr>
   </table>
   </dd>
@@ -3788,8 +3415,8 @@ by comparing the start of the number and the country calling code of the default
 
 </div>
 </div>
-<a id="a1faed924de496e31ab8841713f7b8d66" name="a1faed924de496e31ab8841713f7b8d66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1faed924de496e31ab8841713f7b8d66">&#9670;&#160;</a></span>$VALID_PHONE_NUMBER</h2>
+<a id="ad2715ea719c8f3d40b19fbeae027595c" name="ad2715ea719c8f3d40b19fbeae027595c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2715ea719c8f3d40b19fbeae027595c">&#9670;&#160;</a></span>$VALID_PHONE_NUMBER</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3798,7 +3425,7 @@ by comparing the start of the number and the country calling code of the default
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string string libphonenumber\PhoneNumberUtil::$VALID_PHONE_NUMBER</td>
+          <td class="memname">string libphonenumber\PhoneNumberUtil::$VALID_PHONE_NUMBER</td>
         </tr>
       </table>
   </td>
@@ -3903,6 +3530,33 @@ by comparing the start of the number and the country calling code of the default
 
 </div>
 </div>
+<a id="ae191156368ff998e9bc98db411d921fc" name="ae191156368ff998e9bc98db411d921fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae191156368ff998e9bc98db411d921fc">&#9670;&#160;</a></span>COUNTRIES_WITHOUT_NATIONAL_PREFIX_WITH_AREA_CODES</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const libphonenumber\PhoneNumberUtil::COUNTRIES_WITHOUT_NATIONAL_PREFIX_WITH_AREA_CODES</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= [</div>
+<div class="line">        52, </div>
+<div class="line">    ]</div>
+</div><!-- fragment -->
+<p>Set of country codes that doesn't have national prefix, but it has area codes. </p>
+
+</div>
+</div>
 <a id="a4fd5c347aab3a3db7b96af9f797f27a5" name="a4fd5c347aab3a3db7b96af9f797f27a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4fd5c347aab3a3db7b96af9f797f27a5">&#9670;&#160;</a></span>DIALLABLE_CHAR_MAPPINGS</h2>
 
@@ -3923,7 +3577,7 @@ by comparing the start of the number and the country calling code of the default
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= self::ASCII_DIGIT_MAPPINGS</div>
-<div class="line">    + [self::PLUS_SIGN =&gt; self::PLUS_SIGN]</div>
+<div class="line">        + [self::PLUS_SIGN =&gt; self::PLUS_SIGN]</div>
 <div class="line">    + [<span class="charliteral">&#39;*&#39;</span> =&gt; <span class="charliteral">&#39;*&#39;</span>, <span class="charliteral">&#39;#&#39;</span> =&gt; <span class="charliteral">&#39;#&#39;</span>]</div>
 </div><!-- fragment -->
 </div>
@@ -4021,7 +3675,7 @@ by comparing the start of the number and the country calling code of the default
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 2 2025 03:09:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 9 2025 02:42:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

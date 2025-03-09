@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250227) (688478cfa44)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
   </td>
  </tr>
  </tbody>
@@ -86,6 +86,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8a5a13d0138c85d0f08bd22ff649d5a4" id="r_a8a5a13d0138c85d0f08bd22ff649d5a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a5a13d0138c85d0f08bd22ff649d5a4">__construct</a> (protected <a class="el" href="../../d3/d6e/classmoodle__database.html">moodle_database</a> readonly <a class="el" href="../../d3/d6e/classmoodle__database.html">moodle_database</a> $db,)</td></tr>
 <tr class="memdesc:a8a5a13d0138c85d0f08bd22ff649d5a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new AI manager.  <br /></td></tr>
 <tr class="separator:a8a5a13d0138c85d0f08bd22ff649d5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a380ac8fcb6c905205ffd79e20c0dc358" id="r_a380ac8fcb6c905205ffd79e20c0dc358"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a380ac8fcb6c905205ffd79e20c0dc358">change_provider_order</a> (int $providerid, int $direction)</td></tr>
+<tr class="memdesc:a380ac8fcb6c905205ffd79e20c0dc358"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the order of the provider instance relative to other provider instances.  <br /></td></tr>
+<tr class="separator:a380ac8fcb6c905205ffd79e20c0dc358"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafafc505f39c077429eb233236d91cc1" id="r_aafafc505f39c077429eb233236d91cc1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aafafc505f39c077429eb233236d91cc1">create_provider_instance</a> (string $classname, string $name, bool $enabled=false, ?array $config=null, ?array $actionconfig=null,)</td></tr>
 <tr class="memdesc:aafafc505f39c077429eb233236d91cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new provider instance.  <br /></td></tr>
 <tr class="separator:aafafc505f39c077429eb233236d91cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,6 +113,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6f8b6ebda7a1c9a69ea5a43ce4d0c55f" id="r_a6f8b6ebda7a1c9a69ea5a43ce4d0c55f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f8b6ebda7a1c9a69ea5a43ce4d0c55f">get_providers_for_actions</a> (array $actions, bool $enabledonly=false)</td></tr>
 <tr class="memdesc:a6f8b6ebda7a1c9a69ea5a43ce4d0c55f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a list of actions get the provider instances that support them.  <br /></td></tr>
 <tr class="separator:a6f8b6ebda7a1c9a69ea5a43ce4d0c55f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a357569d493125d484f0958f06041e4f4" id="r_a357569d493125d484f0958f06041e4f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a357569d493125d484f0958f06041e4f4">get_sorted_providers</a> ()</td></tr>
+<tr class="memdesc:a357569d493125d484f0958f06041e4f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the configured ai providers from the manager.  <br /></td></tr>
+<tr class="separator:a357569d493125d484f0958f06041e4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecc065be9fbd0b52c383a1ce01faa572" id="r_aecc065be9fbd0b52c383a1ce01faa572"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecc065be9fbd0b52c383a1ce01faa572">is_action_available</a> (string $actionclass)</td></tr>
 <tr class="memdesc:aecc065be9fbd0b52c383a1ce01faa572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an action is available.  <br /></td></tr>
 <tr class="separator:aecc065be9fbd0b52c383a1ce01faa572"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,9 +128,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa84fec8a1ede95bc33755d38e7e54b65" id="r_aa84fec8a1ede95bc33755d38e7e54b65"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa84fec8a1ede95bc33755d38e7e54b65">set_action_state</a> (string $plugin, string $actionbasename, int $enabled, int $instanceid=0)</td></tr>
 <tr class="memdesc:aa84fec8a1ede95bc33755d38e7e54b65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the action state for a given plugin.  <br /></td></tr>
 <tr class="separator:aa84fec8a1ede95bc33755d38e7e54b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26a2a368f2b11c6bdeedb04266cc0f19" id="r_a26a2a368f2b11c6bdeedb04266cc0f19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26a2a368f2b11c6bdeedb04266cc0f19">set_provider_config</a> (array $data, string $plugin)</td></tr>
+<tr class="memdesc:a26a2a368f2b11c6bdeedb04266cc0f19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets config variable for given provider instance.  <br /></td></tr>
+<tr class="separator:a26a2a368f2b11c6bdeedb04266cc0f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a189cb0e857e2b2c47ebc8512c86e0249" id="r_a189cb0e857e2b2c47ebc8512c86e0249"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a189cb0e857e2b2c47ebc8512c86e0249">update_provider_instance</a> (<a class="el" href="../../d5/dec/classcore__ai_1_1provider.html">provider</a> $<a class="el" href="../../d5/dec/classcore__ai_1_1provider.html">provider</a>, ?array $config=null, ?array $actionconfig=null)</td></tr>
 <tr class="memdesc:a189cb0e857e2b2c47ebc8512c86e0249"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update provider instance.  <br /></td></tr>
 <tr class="separator:a189cb0e857e2b2c47ebc8512c86e0249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae134bdbd71f3305247c82646ff7f62ac" id="r_ae134bdbd71f3305247c82646ff7f62ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae134bdbd71f3305247c82646ff7f62ac">update_provider_order</a> (int $providerid, string|int $action)</td></tr>
+<tr class="memdesc:ae134bdbd71f3305247c82646ff7f62ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the provider instance order configuration.  <br /></td></tr>
+<tr class="separator:ae134bdbd71f3305247c82646ff7f62ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -134,6 +146,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d52d8e445ecc4870c09f1a343908286" id="r_a0d52d8e445ecc4870c09f1a343908286"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d52d8e445ecc4870c09f1a343908286">get_user_policy_status</a> (int $userid)</td></tr>
 <tr class="memdesc:a0d52d8e445ecc4870c09f1a343908286"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the user policy.  <br /></td></tr>
 <tr class="separator:a0d52d8e445ecc4870c09f1a343908286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a805826b5621c14bd30bb9b939afdc5e5" id="r_a805826b5621c14bd30bb9b939afdc5e5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a805826b5621c14bd30bb9b939afdc5e5">sort_providers_by_order</a> (array $unsorted)</td></tr>
+<tr class="memdesc:a805826b5621c14bd30bb9b939afdc5e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts provider instances by configured order.  <br /></td></tr>
+<tr class="separator:a805826b5621c14bd30bb9b939afdc5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a461f907ff7c2d94e3f1ab01448925761" id="r_a461f907ff7c2d94e3f1ab01448925761"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a461f907ff7c2d94e3f1ab01448925761">user_policy_accepted</a> (int $userid, int $contextid)</td></tr>
 <tr class="memdesc:a461f907ff7c2d94e3f1ab01448925761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the policy acceptance for a given user.  <br /></td></tr>
 <tr class="separator:a461f907ff7c2d94e3f1ab01448925761"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,6 +231,43 @@ Protected Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">responses::response_base</td><td>The result of the action. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a380ac8fcb6c905205ffd79e20c0dc358" name="a380ac8fcb6c905205ffd79e20c0dc358"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a380ac8fcb6c905205ffd79e20c0dc358">&#9670;&#160;</a></span>change_provider_order()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_ai\manager::change_provider_order </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$providerid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$direction</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change the order of the provider instance relative to other provider instances. </p>
+<p>When possible, the change will be stored into the config_log table, to let admins check when/who has modified it.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$providerid</td><td>The provider ID. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$direction</td><td>The direction to move the provider instance. Negative numbers mean up, Positive mean down. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>Whether the provider has been updated or not. </td></tr>
   </table>
   </dd>
 </dl>
@@ -398,12 +450,6 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../d5/d5c/classdml__exception.html" title="DML exception class, use instead of throw new moodle_exception() in dml code.">dml_exception</a></td><td>If there is a database error during record retrieval. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -467,7 +513,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">stdClass[]</td><td></td></tr>
+    <tr><td class="paramname">array</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -505,6 +551,31 @@ Protected Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>An array of provider instances indexed by action name. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a357569d493125d484f0958f06041e4f4" name="a357569d493125d484f0958f06041e4f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a357569d493125d484f0958f06041e4f4">&#9670;&#160;</a></span>get_sorted_providers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_ai\manager::get_sorted_providers </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the configured ai providers from the manager. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -743,6 +814,87 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a26a2a368f2b11c6bdeedb04266cc0f19" name="a26a2a368f2b11c6bdeedb04266cc0f19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26a2a368f2b11c6bdeedb04266cc0f19">&#9670;&#160;</a></span>set_provider_config()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_ai\manager::set_provider_config </td>
+          <td>(</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$plugin</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets config variable for given provider instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>The data to set. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$plugin</td><td>The plugin name.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>true or exception. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d5/d5c/classdml__exception.html" title="DML exception class, use instead of throw new moodle_exception() in dml code.">dml_exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a805826b5621c14bd30bb9b939afdc5e5" name="a805826b5621c14bd30bb9b939afdc5e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a805826b5621c14bd30bb9b939afdc5e5">&#9670;&#160;</a></span>sort_providers_by_order()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_ai\manager::sort_providers_by_order </td>
+          <td>(</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$unsorted</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sorts provider instances by configured order. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$unsorted</td><td>of provider instance objects </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>of provider instance objects </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a189cb0e857e2b2c47ebc8512c86e0249" name="a189cb0e857e2b2c47ebc8512c86e0249"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a189cb0e857e2b2c47ebc8512c86e0249">&#9670;&#160;</a></span>update_provider_instance()</h2>
 
@@ -779,6 +931,36 @@ Protected Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">provider</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae134bdbd71f3305247c82646ff7f62ac" name="ae134bdbd71f3305247c82646ff7f62ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae134bdbd71f3305247c82646ff7f62ac">&#9670;&#160;</a></span>update_provider_order()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_ai\manager::update_provider_order </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$providerid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string|int</td>          <td class="paramname"><span class="paramname"><em>$action</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update the provider instance order configuration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$providerid</td><td>The provider ID. </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;int</td><td class="paramname">$action</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -841,7 +1023,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 2 2025 03:08:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 9 2025 02:41:25 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

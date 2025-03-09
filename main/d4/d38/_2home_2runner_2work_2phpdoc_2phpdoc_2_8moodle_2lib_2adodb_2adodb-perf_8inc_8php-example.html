@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250227) (688478cfa44)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
   </td>
  </tr>
  </tbody>
@@ -706,7 +706,7 @@ $(function(){ initResizable(false); });
 <div class="line">            $ADODB_FETCH_MODE = $save;</div>
 <div class="line">            <span class="keywordflow">if</span> ($rs) {</div>
 <div class="line">                <span class="keywordflow">while</span> (!$rs-&gt;EOF) {</div>
-<div class="line">                    $keyf = <a class="code hl_function" href="../../d2/d5d/namespace_phpml_1_1_helper.html#acb3c8c60cc116f09ba34c6254625ccae">reset</a>($rs-&gt;fields);</div>
+<div class="line">                    $keyf = reset($rs-&gt;fields);</div>
 <div class="line">                    <span class="keywordflow">if</span> (trim($keyf) == $key) {</div>
 <div class="line">                        $ret = $rs-&gt;fields[$pos];</div>
 <div class="line">                        <span class="keywordflow">if</span> ($coef) $ret *= $coef;</div>
@@ -1121,11 +1121,10 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="aclassadodb__perf_html_ad4f9952aee2039976255eed5c577354f"><div class="ttname"><a href="../../de/d06/classadodb__perf.html#ad4f9952aee2039976255eed5c577354f">adodb_perf\OptimizeTable</a></div><div class="ttdeci">OptimizeTable( $table, $mode=ADODB_OPT_LOW)</div><div class="ttdoc">Reorganise the table-indices/statistics/.</div><div class="ttdef"><b>Definition</b> adodb-perf.inc.php:1053</div></div>
 <div class="ttc" id="agroup___a_d_odb_html_gabebde3934156634d30698df19db6401a"><div class="ttname"><a href="../../dc/d2c/group___a_d_odb.html#gabebde3934156634d30698df19db6401a">$ADODB_vers</a></div><div class="ttdeci">if(defined( &#39;ADODB_EXTENSION&#39;)) if(!defined(&#39;ADODB_DIR&#39;)) GLOBAL $ADODB_vers</div><div class="ttdoc">Set ADODB_DIR to the directory where this file resides... This constant was formerly called $ADODB_Ro...</div><div class="ttdef"><b>Definition</b> adodb.inc.php:49</div></div>
 <div class="ttc" id="agroup__tool__log_html_ga7543e29bf5065f86f5b6ec5145aacc77"><div class="ttname"><a href="../../d7/d02/group__tool__log.html#ga7543e29bf5065f86f5b6ec5145aacc77">tool_log\helper\flush</a></div><div class="ttdeci">flush()</div><div class="ttdoc">Flush event buffer.</div><div class="ttdef"><b>Definition</b> buffered_writer.php:99</div></div>
-<div class="ttc" id="anamespace_phpml_1_1_helper_html_acb3c8c60cc116f09ba34c6254625ccae"><div class="ttname"><a href="../../d2/d5d/namespace_phpml_1_1_helper.html#acb3c8c60cc116f09ba34c6254625ccae">Phpml\Helper\reset</a></div><div class="ttdeci">reset()</div><div class="ttdoc">Resets the classifier and the vars internally used by OneVsRest to create multiple classifiers.</div><div class="ttdef"><b>Definition</b> OneVsRest.php:42</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 2 2025 03:06:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 9 2025 02:39:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

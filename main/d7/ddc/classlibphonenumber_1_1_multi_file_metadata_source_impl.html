@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250227) (688478cfa44)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
   </td>
  </tr>
  </tbody>
@@ -96,23 +96,12 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>__construct</b> (protected <a class="el" href="../../de/d84/interfacelibphonenumber_1_1_metadata_loader_interface.html">MetadataLoaderInterface</a> $metadataLoader, ?string $currentFilePrefix=null)</td></tr>
 <tr class="separator:aa856d920cba7084bf89531a57cc96a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57d03c9c2c3214dfb4aed29dae35273f" id="r_a57d03c9c2c3214dfb4aed29dae35273f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57d03c9c2c3214dfb4aed29dae35273f">getMetadataForNonGeographicalRegion</a> (int $countryCallingCode)</td></tr>
-<tr class="memdesc:a57d03c9c2c3214dfb4aed29dae35273f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets phone metadata for a non-geographical region.<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$countryCallingCode</td><td>the country calling code. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d9/d57/classlibphonenumber_1_1_phone_metadata.html">PhoneMetadata</a></td><td>the phone metadata for that region, or null if there is none.</td></tr>
-  </table>
-  </dd>
-</dl>
-  <br /></td></tr>
+<tr class="memdesc:a57d03c9c2c3214dfb4aed29dae35273f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets phone metadata for a non-geographical region.  <br /></td></tr>
 <tr class="separator:a57d03c9c2c3214dfb4aed29dae35273f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1f16756872ae285f37190d04be41aa9" id="r_af1f16756872ae285f37190d04be41aa9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1f16756872ae285f37190d04be41aa9">getMetadataForRegion</a> (string $regionCode)</td></tr>
 <tr class="separator:af1f16756872ae285f37190d04be41aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbbe33f0c1d106ce8f42228445a4ba40" id="r_acbbe33f0c1d106ce8f42228445a4ba40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbbe33f0c1d106ce8f42228445a4ba40">loadMetadataFromFile</a> (string $filePrefix, string $regionCode, int $countryCallingCode, <a class="el" href="../../de/d84/interfacelibphonenumber_1_1_metadata_loader_interface.html">MetadataLoaderInterface</a> $metadataLoader)</td></tr>
+<tr class="memitem:acbbe33f0c1d106ce8f42228445a4ba40" id="r_acbbe33f0c1d106ce8f42228445a4ba40"><td class="memItemLeft" align="right" valign="top"><a id="acbbe33f0c1d106ce8f42228445a4ba40" name="acbbe33f0c1d106ce8f42228445a4ba40"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>loadMetadataFromFile</b> (string $filePrefix, string $regionCode, int $countryCallingCode, <a class="el" href="../../de/d84/interfacelibphonenumber_1_1_metadata_loader_interface.html">MetadataLoaderInterface</a> $metadataLoader)</td></tr>
 <tr class="separator:acbbe33f0c1d106ce8f42228445a4ba40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -151,7 +140,8 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$metaDataFil
       </table>
 </div><div class="memdoc">
 
-<p>Gets phone metadata for a non-geographical region.<dl class="params"><dt>Parameters</dt><dd>
+<p>Gets phone metadata for a non-geographical region. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$countryCallingCode</td><td>the country calling code. </td></tr>
   </table>
@@ -159,11 +149,10 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$metaDataFil
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d9/d57/classlibphonenumber_1_1_phone_metadata.html">PhoneMetadata</a></td><td>the phone metadata for that region, or null if there is none.</td></tr>
+    <tr><td class="paramname">PhoneMetadata</td><td>the phone metadata for that region, or null if there is none. </td></tr>
   </table>
   </dd>
 </dl>
- </p>
 
 <p>Implements <a class="el" href="../../d4/d88/interfacelibphonenumber_1_1_metadata_source_interface.html#a1c0e20bc372614fdf034a3897f92a50d">libphonenumber\MetadataSourceInterface</a>.</p>
 
@@ -184,49 +173,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$metaDataFil
       </table>
 </div><div class="memdoc">
 
-<p></p>
-
 <p>Implements <a class="el" href="../../d4/d88/interfacelibphonenumber_1_1_metadata_source_interface.html">libphonenumber\MetadataSourceInterface</a>.</p>
-
-</div>
-</div>
-<a id="acbbe33f0c1d106ce8f42228445a4ba40" name="acbbe33f0c1d106ce8f42228445a4ba40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbbe33f0c1d106ce8f42228445a4ba40">&#9670;&#160;</a></span>loadMetadataFromFile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">libphonenumber\MultiFileMetadataSourceImpl::loadMetadataFromFile </td>
-          <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$filePrefix</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$regionCode</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$countryCallingCode</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../de/d84/interfacelibphonenumber_1_1_metadata_loader_interface.html">MetadataLoaderInterface</a></td>          <td class="paramname"><span class="paramname"><em>$metadataLoader</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$filePrefix</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$regionCode</td><td></td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$countryCallingCode</td><td></td></tr>
-    <tr><td class="paramtype">MetadataLoaderInterface</td><td class="paramname">$metadataLoader</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -262,7 +209,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$metaDataFil
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 2 2025 03:09:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 9 2025 02:42:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

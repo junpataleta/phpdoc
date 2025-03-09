@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev (Build: 20250227) (688478cfa44)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
   </td>
  </tr>
  </tbody>
@@ -201,9 +201,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6e6d9cf7066de888f89c7c5d108290ce" id="r_ga6e6d9cf7066de888f89c7c5d108290ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6e6d9cf7066de888f89c7c5d108290ce">choice_get_post_actions</a> ()</td></tr>
 <tr class="memdesc:ga6e6d9cf7066de888f89c7c5d108290ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">List the actions that correspond to a post of this module.  <br /></td></tr>
 <tr class="separator:ga6e6d9cf7066de888f89c7c5d108290ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa4bac9739efdfd065175e039445d07cb" id="r_gaa4bac9739efdfd065175e039445d07cb"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa4bac9739efdfd065175e039445d07cb">choice_get_response_data</a> ($choice, $cm, $groupmode, $onlyactive)</td></tr>
-<tr class="memdesc:gaa4bac9739efdfd065175e039445d07cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">@global object @global object @uses CONTEXT_MODULE  <br /></td></tr>
-<tr class="separator:gaa4bac9739efdfd065175e039445d07cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga161065e3c895302d8ad772aecc6da0bb" id="r_ga161065e3c895302d8ad772aecc6da0bb"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga161065e3c895302d8ad772aecc6da0bb">choice_get_response_data</a> ($choice, $cm, $groupmode, $onlyactive, ?int $groupid=null)</td></tr>
+<tr class="memdesc:ga161065e3c895302d8ad772aecc6da0bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get response data for a choice and group.  <br /></td></tr>
+<tr class="separator:ga161065e3c895302d8ad772aecc6da0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad6f5b5754d04d6034839541d5cd51781" id="r_gad6f5b5754d04d6034839541d5cd51781"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad6f5b5754d04d6034839541d5cd51781">choice_get_user_response</a> ($choice, $userid)</td></tr>
 <tr class="memdesc:gad6f5b5754d04d6034839541d5cd51781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get responses of a given user on a given choice.  <br /></td></tr>
 <tr class="separator:gad6f5b5754d04d6034839541d5cd51781"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -680,7 +680,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001208">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001198">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
 
 </div>
 </div>
@@ -811,8 +811,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 
 </div>
 </div>
-<a id="gaa4bac9739efdfd065175e039445d07cb" name="gaa4bac9739efdfd065175e039445d07cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa4bac9739efdfd065175e039445d07cb">&#9670;&#160;</a></span>choice_get_response_data()</h2>
+<a id="ga161065e3c895302d8ad772aecc6da0bb" name="ga161065e3c895302d8ad772aecc6da0bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga161065e3c895302d8ad772aecc6da0bb">&#9670;&#160;</a></span>choice_get_response_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -835,18 +835,24 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$onlyactive</em></span>&#160;)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$onlyactive</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int</td>          <td class="paramname"><span class="paramname"><em>$groupid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>@global object @global object @uses CONTEXT_MODULE </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Get response data for a choice and group. </p>
+<p>@global object @global object @uses CONTEXT_MODULE </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">object</td><td class="paramname">$choice</td><td></td></tr>
     <tr><td class="paramtype">object</td><td class="paramname">$cm</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$groupmode</td><td></td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$onlyactive</td><td>Whether to get response data for active users only. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$groupid</td><td>Group id, null for current group if choice has groups. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1073,7 +1079,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001209">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3, when the block_course_overview block was removed. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001199">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3, when the block_course_overview block was removed. </dd></dl>
 
 </div>
 </div>
@@ -1827,7 +1833,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 2 2025 03:06:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 9 2025 02:39:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>
