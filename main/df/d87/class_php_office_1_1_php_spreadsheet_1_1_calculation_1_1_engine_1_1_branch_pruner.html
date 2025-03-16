@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
   </td>
  </tr>
  </tbody>
@@ -91,8 +91,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adafcc723b67493da99ebb04beb9a2702" id="r_adafcc723b67493da99ebb04beb9a2702"><td class="memItemLeft" align="right" valign="top"><a id="adafcc723b67493da99ebb04beb9a2702" name="adafcc723b67493da99ebb04beb9a2702"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>clearBranchStore</b> ()</td></tr>
 <tr class="separator:adafcc723b67493da99ebb04beb9a2702"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14838b89a4bdae0ac306cc409787ed73" id="r_a14838b89a4bdae0ac306cc409787ed73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14838b89a4bdae0ac306cc409787ed73">closingBrace</a> ($value)</td></tr>
-<tr class="separator:a14838b89a4bdae0ac306cc409787ed73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea004290859e54cdcf5ae3d1eaed861" id="r_aeea004290859e54cdcf5ae3d1eaed861"><td class="memItemLeft" align="right" valign="top"><a id="aeea004290859e54cdcf5ae3d1eaed861" name="aeea004290859e54cdcf5ae3d1eaed861"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>closingBrace</b> (mixed $value)</td></tr>
+<tr class="separator:aeea004290859e54cdcf5ae3d1eaed861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34389484a50ece5ca5437ad6654b8c87" id="r_a34389484a50ece5ca5437ad6654b8c87"><td class="memItemLeft" align="right" valign="top"><a id="a34389484a50ece5ca5437ad6654b8c87" name="a34389484a50ece5ca5437ad6654b8c87"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>currentCondition</b> ()</td></tr>
 <tr class="separator:a34389484a50ece5ca5437ad6654b8c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,72 +118,48 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:afd25ab1dccfa60d3436fa028356ea705" id="r_afd25ab1dccfa60d3436fa028356ea705"><td class="memItemLeft" align="right" valign="top"><a id="afd25ab1dccfa60d3436fa028356ea705" name="afd25ab1dccfa60d3436fa028356ea705"></a>
-int[]&#160;</td><td class="memItemRight" valign="bottom"><b>$braceDepthMap</b> = []</td></tr>
-<tr class="separator:afd25ab1dccfa60d3436fa028356ea705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af563c2fedaa0cf8efa80cd9df6d4ae14" id="r_af563c2fedaa0cf8efa80cd9df6d4ae14"><td class="memItemLeft" align="right" valign="top"><a id="af563c2fedaa0cf8efa80cd9df6d4ae14" name="af563c2fedaa0cf8efa80cd9df6d4ae14"></a>
+int[] array&#160;</td><td class="memItemRight" valign="bottom"><b>$braceDepthMap</b> = []</td></tr>
+<tr class="separator:af563c2fedaa0cf8efa80cd9df6d4ae14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a603fd356071140cf09bcd9740aa032af" id="r_a603fd356071140cf09bcd9740aa032af"><td class="memItemLeft" align="right" valign="top"><a id="a603fd356071140cf09bcd9740aa032af" name="a603fd356071140cf09bcd9740aa032af"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>$branchPruningEnabled</b> = true</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>$branchPruningEnabled</b></td></tr>
 <tr class="separator:a603fd356071140cf09bcd9740aa032af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb50376d3dddbf7fed4e18e3aeb6f229" id="r_afb50376d3dddbf7fed4e18e3aeb6f229"><td class="memItemLeft" align="right" valign="top"><a id="afb50376d3dddbf7fed4e18e3aeb6f229" name="afb50376d3dddbf7fed4e18e3aeb6f229"></a>
-bool[]&#160;</td><td class="memItemRight" valign="bottom"><b>$conditionMap</b> = []</td></tr>
-<tr class="separator:afb50376d3dddbf7fed4e18e3aeb6f229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87454d9a4ec0f79a4824ce3f40cb3f93" id="r_a87454d9a4ec0f79a4824ce3f40cb3f93"><td class="memItemLeft" align="right" valign="top"><a id="a87454d9a4ec0f79a4824ce3f40cb3f93" name="a87454d9a4ec0f79a4824ce3f40cb3f93"></a>
-null string&#160;</td><td class="memItemRight" valign="bottom"><b>$currentCondition</b></td></tr>
-<tr class="separator:a87454d9a4ec0f79a4824ce3f40cb3f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affc1477bf9d3e0c1b8f86842a27daa86" id="r_affc1477bf9d3e0c1b8f86842a27daa86"><td class="memItemLeft" align="right" valign="top"><a id="affc1477bf9d3e0c1b8f86842a27daa86" name="affc1477bf9d3e0c1b8f86842a27daa86"></a>
-null string&#160;</td><td class="memItemRight" valign="bottom"><b>$currentOnlyIf</b></td></tr>
-<tr class="separator:affc1477bf9d3e0c1b8f86842a27daa86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bfc029f8ff3fa8078ddff02267f01e5" id="r_a2bfc029f8ff3fa8078ddff02267f01e5"><td class="memItemLeft" align="right" valign="top"><a id="a2bfc029f8ff3fa8078ddff02267f01e5" name="a2bfc029f8ff3fa8078ddff02267f01e5"></a>
-null string&#160;</td><td class="memItemRight" valign="bottom"><b>$currentOnlyIfNot</b></td></tr>
-<tr class="separator:a2bfc029f8ff3fa8078ddff02267f01e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfa6c9d2e7df03219a64141a389ded82" id="r_abfa6c9d2e7df03219a64141a389ded82"><td class="memItemLeft" align="right" valign="top"><a id="abfa6c9d2e7df03219a64141a389ded82" name="abfa6c9d2e7df03219a64141a389ded82"></a>
-bool[]&#160;</td><td class="memItemRight" valign="bottom"><b>$elseMap</b> = []</td></tr>
-<tr class="separator:abfa6c9d2e7df03219a64141a389ded82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17ca7704348633e7bcfba751bb42f8c3" id="r_a17ca7704348633e7bcfba751bb42f8c3"><td class="memItemLeft" align="right" valign="top"><a id="a17ca7704348633e7bcfba751bb42f8c3" name="a17ca7704348633e7bcfba751bb42f8c3"></a>
+bool[] array&#160;</td><td class="memItemRight" valign="bottom"><b>$conditionMap</b> = []</td></tr>
+<tr class="separator:a17ca7704348633e7bcfba751bb42f8c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9693dab70db9a9c1e9a15467e3a4b874" id="r_a9693dab70db9a9c1e9a15467e3a4b874"><td class="memItemLeft" align="right" valign="top"><a id="a9693dab70db9a9c1e9a15467e3a4b874" name="a9693dab70db9a9c1e9a15467e3a4b874"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$currentCondition</b> = null</td></tr>
+<tr class="separator:a9693dab70db9a9c1e9a15467e3a4b874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaac8b9857cfdf8382502b5d6fc9dc9bf" id="r_aaac8b9857cfdf8382502b5d6fc9dc9bf"><td class="memItemLeft" align="right" valign="top"><a id="aaac8b9857cfdf8382502b5d6fc9dc9bf" name="aaac8b9857cfdf8382502b5d6fc9dc9bf"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$currentOnlyIf</b> = null</td></tr>
+<tr class="separator:aaac8b9857cfdf8382502b5d6fc9dc9bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32785a6eee20c70b151a29e53956184a" id="r_a32785a6eee20c70b151a29e53956184a"><td class="memItemLeft" align="right" valign="top"><a id="a32785a6eee20c70b151a29e53956184a" name="a32785a6eee20c70b151a29e53956184a"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$currentOnlyIfNot</b> = null</td></tr>
+<tr class="separator:a32785a6eee20c70b151a29e53956184a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac50f7fbdd2133bac03a68e60004b0b3c" id="r_ac50f7fbdd2133bac03a68e60004b0b3c"><td class="memItemLeft" align="right" valign="top"><a id="ac50f7fbdd2133bac03a68e60004b0b3c" name="ac50f7fbdd2133bac03a68e60004b0b3c"></a>
+bool[] array&#160;</td><td class="memItemRight" valign="bottom"><b>$elseMap</b> = []</td></tr>
+<tr class="separator:ac50f7fbdd2133bac03a68e60004b0b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35a182e66837c4903f8eb198e59a5d41" id="r_a35a182e66837c4903f8eb198e59a5d41"><td class="memItemLeft" align="right" valign="top"><a id="a35a182e66837c4903f8eb198e59a5d41" name="a35a182e66837c4903f8eb198e59a5d41"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>$pendingStoreKey</b></td></tr>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$pendingStoreKey</b> = null</td></tr>
 <tr class="memdesc:a35a182e66837c4903f8eb198e59a5d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">currently pending storeKey (last item of the storeKeysStack. <br /></td></tr>
 <tr class="separator:a35a182e66837c4903f8eb198e59a5d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a982c1e17da89f8cf039722829c8dbaa9" id="r_a982c1e17da89f8cf039722829c8dbaa9"><td class="memItemLeft" align="right" valign="top"><a id="a982c1e17da89f8cf039722829c8dbaa9" name="a982c1e17da89f8cf039722829c8dbaa9"></a>
-null string&#160;</td><td class="memItemRight" valign="bottom"><b>$previousStoreKey</b></td></tr>
-<tr class="separator:a982c1e17da89f8cf039722829c8dbaa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94ef30aeba2a38359e7ef00bd3556f01" id="r_a94ef30aeba2a38359e7ef00bd3556f01"><td class="memItemLeft" align="right" valign="top"><a id="a94ef30aeba2a38359e7ef00bd3556f01" name="a94ef30aeba2a38359e7ef00bd3556f01"></a>
-string[]&#160;</td><td class="memItemRight" valign="bottom"><b>$storeKeysStack</b> = []</td></tr>
-<tr class="separator:a94ef30aeba2a38359e7ef00bd3556f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7adadc0bbbf8cd1a20cc6483fd80464" id="r_ae7adadc0bbbf8cd1a20cc6483fd80464"><td class="memItemLeft" align="right" valign="top"><a id="ae7adadc0bbbf8cd1a20cc6483fd80464" name="ae7adadc0bbbf8cd1a20cc6483fd80464"></a>
-bool[]&#160;</td><td class="memItemRight" valign="bottom"><b>$thenMap</b> = []</td></tr>
-<tr class="separator:ae7adadc0bbbf8cd1a20cc6483fd80464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2b4831c4b3fc8ad890519eab63f583a" id="r_aa2b4831c4b3fc8ad890519eab63f583a"><td class="memItemLeft" align="right" valign="top"><a id="aa2b4831c4b3fc8ad890519eab63f583a" name="aa2b4831c4b3fc8ad890519eab63f583a"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$previousStoreKey</b> = null</td></tr>
+<tr class="separator:aa2b4831c4b3fc8ad890519eab63f583a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f4064b2668f33cf1d719dbe8369c185" id="r_a4f4064b2668f33cf1d719dbe8369c185"><td class="memItemLeft" align="right" valign="top"><a id="a4f4064b2668f33cf1d719dbe8369c185" name="a4f4064b2668f33cf1d719dbe8369c185"></a>
+string[] array&#160;</td><td class="memItemRight" valign="bottom"><b>$storeKeysStack</b> = []</td></tr>
+<tr class="separator:a4f4064b2668f33cf1d719dbe8369c185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35e9d6603a085bc32fc31b36d27ddcd" id="r_ab35e9d6603a085bc32fc31b36d27ddcd"><td class="memItemLeft" align="right" valign="top"><a id="ab35e9d6603a085bc32fc31b36d27ddcd" name="ab35e9d6603a085bc32fc31b36d27ddcd"></a>
+bool[] array&#160;</td><td class="memItemRight" valign="bottom"><b>$thenMap</b> = []</td></tr>
+<tr class="separator:ab35e9d6603a085bc32fc31b36d27ddcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a14838b89a4bdae0ac306cc409787ed73" name="a14838b89a4bdae0ac306cc409787ed73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14838b89a4bdae0ac306cc409787ed73">&#9670;&#160;</a></span>closingBrace()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PhpOffice\PhpSpreadsheet\Calculation\Engine\BranchPruner::closingBrace </td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$value</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">mixed</td><td class="paramname">$value</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>lib/phpspreadsheet/phpspreadsheet/src/PhpSpreadsheet/Calculation/Engine/<b>BranchPruner.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 9 2025 02:42:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 16 2025 03:14:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
   </td>
  </tr>
  </tbody>
@@ -374,6 +374,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2fe2d71760286306d4c226595c08789e" id="r_a2fe2d71760286306d4c226595c08789e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fe2d71760286306d4c226595c08789e">plugin_data_preprocessing</a> (&amp;$defaultvalues)</td></tr>
 <tr class="memdesc:a2fe2d71760286306d4c226595c08789e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow each plugin an opportunity to update the defaultvalues passed in to the settings form (needed to set up draft areas for editor and filemanager elements)  <br /></td></tr>
 <tr class="separator:a2fe2d71760286306d4c226595c08789e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2632230bfb452fb119048afa753f0259" id="r_a2632230bfb452fb119048afa753f0259"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2632230bfb452fb119048afa753f0259">plugin_settings_validation</a> (array $data, array $files)</td></tr>
+<tr class="memdesc:a2632230bfb452fb119048afa753f0259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow each plugin to validiate the data from the assignments settings form.  <br /></td></tr>
+<tr class="separator:a2632230bfb452fb119048afa753f0259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20543f6ddc7fb10b71d8c348160e054e" id="r_a20543f6ddc7fb10b71d8c348160e054e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20543f6ddc7fb10b71d8c348160e054e">register_return_link</a> ($action, $params)</td></tr>
 <tr class="memdesc:a20543f6ddc7fb10b71d8c348160e054e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the action and parameters that can be used to return to the current page.  <br /></td></tr>
 <tr class="separator:a20543f6ddc7fb10b71d8c348160e054e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1216,7 +1219,7 @@ array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001181">Deprecated</a></b></dt><dd>since 2.7 - Use new events system instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000669">Deprecated</a></b></dt><dd>since 2.7 - Use new events system instead. </dd></dl>
 
 </div>
 </div>
@@ -2307,7 +2310,7 @@ array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001183">Deprecated</a></b></dt><dd>since 2.7 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000671">Deprecated</a></b></dt><dd>since 2.7 </dd></dl>
 
 </div>
 </div>
@@ -2455,7 +2458,7 @@ array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001184">Deprecated</a></b></dt><dd>since 2.7 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000672">Deprecated</a></b></dt><dd>since 2.7 </dd></dl>
 
 </div>
 </div>
@@ -5366,6 +5369,42 @@ array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$defaultvalues</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2632230bfb452fb119048afa753f0259" name="a2632230bfb452fb119048afa753f0259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2632230bfb452fb119048afa753f0259">&#9670;&#160;</a></span>plugin_settings_validation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">assign::plugin_settings_validation </td>
+          <td>(</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$files</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allow each plugin to validiate the data from the assignments settings form. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>as passed to <a class="el" href="../../d7/d6a/classmod__assign__mod__form.html#af1e48efda7128e4bbf77be25c1ef114a" title="Perform minimal validation on the settings form.">mod_assign_mod_form\validation()</a>. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$files</td><td>as passed to <a class="el" href="../../d7/d6a/classmod__assign__mod__form.html#af1e48efda7128e4bbf77be25c1ef114a" title="Perform minimal validation on the settings form.">mod_assign_mod_form\validation()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>and validation errors that should be displayed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -8546,7 +8585,7 @@ array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 9 2025 02:39:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 16 2025 03:11:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
   </td>
  </tr>
  </tbody>
@@ -97,8 +97,8 @@ Inheritance diagram for PhpOffice\PhpSpreadsheet\Style\ConditionalFormatting\Wiz
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6a154babb46f56d8533481d41b89c4f7" id="r_a6a154babb46f56d8533481d41b89c4f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a154babb46f56d8533481d41b89c4f7">__construct</a> (string $cellRange)</td></tr>
 <tr class="separator:a6a154babb46f56d8533481d41b89c4f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd2e252cbad0347da202e13686b5a9b4" id="r_afd2e252cbad0347da202e13686b5a9b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd2e252cbad0347da202e13686b5a9b4">__call</a> ($methodName, $arguments)</td></tr>
-<tr class="separator:afd2e252cbad0347da202e13686b5a9b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f70ce08b5204f04eb858e8f031414b8" id="r_a1f70ce08b5204f04eb858e8f031414b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f70ce08b5204f04eb858e8f031414b8">__call</a> (string $methodName, array $arguments)</td></tr>
+<tr class="separator:a1f70ce08b5204f04eb858e8f031414b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab29b642c34c9daac431386a7332f46ec" id="r_ab29b642c34c9daac431386a7332f46ec"><td class="memItemLeft" align="right" valign="top"><a id="ab29b642c34c9daac431386a7332f46ec" name="ab29b642c34c9daac431386a7332f46ec"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>getCellRange</b> ()</td></tr>
 <tr class="separator:ab29b642c34c9daac431386a7332f46ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,7 +212,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$referenceRow</b></td>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>$stopIfTrue</b> = false</td></tr>
 <tr class="separator:a52306c51e1a6a6ffdeb88c4c86a681e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2343a87df9ea2ee3566fef6b499a4215" id="r_a2343a87df9ea2ee3566fef6b499a4215"><td class="memItemLeft" align="right" valign="top"><a id="a2343a87df9ea2ee3566fef6b499a4215" name="a2343a87df9ea2ee3566fef6b499a4215"></a>
-<a class="el" href="../../da/d05/class_php_office_1_1_php_spreadsheet_1_1_style_1_1_style.html">Style</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$style</b></td></tr>
+<a class="el" href="../../da/d05/class_php_office_1_1_php_spreadsheet_1_1_style_1_1_style.html">Style</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$style</b> = null</td></tr>
 <tr class="separator:a2343a87df9ea2ee3566fef6b499a4215"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f80f86e727514b8cfd716e9634a5347" id="r_a9f80f86e727514b8cfd716e9634a5347"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f80f86e727514b8cfd716e9634a5347">EXPRESSIONS</a></td></tr>
 <tr class="separator:a9f80f86e727514b8cfd716e9634a5347"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -242,8 +242,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$stopIfTrue</b> = fal
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="afd2e252cbad0347da202e13686b5a9b4" name="afd2e252cbad0347da202e13686b5a9b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd2e252cbad0347da202e13686b5a9b4">&#9670;&#160;</a></span>__call()</h2>
+<a id="a1f70ce08b5204f04eb858e8f031414b8" name="a1f70ce08b5204f04eb858e8f031414b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f70ce08b5204f04eb858e8f031414b8">&#9670;&#160;</a></span>__call()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -251,18 +251,17 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$stopIfTrue</b> = fal
         <tr>
           <td class="memname">PhpOffice\PhpSpreadsheet\Style\ConditionalFormatting\Wizard\TextValue::__call </td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$methodName</em></span>, </td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$methodName</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$arguments</em></span>&#160;)</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$arguments</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$methodName</td><td></td></tr>
     <tr><td class="paramtype">mixed[]</td><td class="paramname">$arguments</td><td></td></tr>
   </table>
   </dd>
@@ -413,7 +412,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$stopIfTrue</b> = fal
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 9 2025 02:42:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 16 2025 03:15:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

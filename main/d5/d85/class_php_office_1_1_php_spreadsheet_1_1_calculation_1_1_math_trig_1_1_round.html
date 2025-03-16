@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
   </td>
  </tr>
  </tbody>
@@ -87,15 +87,15 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9d3a6d9e1f4a28b428f12094a64095d5" id="r_a9d3a6d9e1f4a28b428f12094a64095d5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d3a6d9e1f4a28b428f12094a64095d5">even</a> ($number)</td></tr>
 <tr class="memdesc:a9d3a6d9e1f4a28b428f12094a64095d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">EVEN.  <br /></td></tr>
 <tr class="separator:a9d3a6d9e1f4a28b428f12094a64095d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae69e2f5fe5da613761245faa69951547" id="r_ae69e2f5fe5da613761245faa69951547"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae69e2f5fe5da613761245faa69951547">multiple</a> ($number, $multiple)</td></tr>
-<tr class="memdesc:ae69e2f5fe5da613761245faa69951547"><td class="mdescLeft">&#160;</td><td class="mdescRight">MROUND.  <br /></td></tr>
-<tr class="separator:ae69e2f5fe5da613761245faa69951547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3492bdc636e95d6b81fa4ae4a16f7c8" id="r_ac3492bdc636e95d6b81fa4ae4a16f7c8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3492bdc636e95d6b81fa4ae4a16f7c8">multiple</a> (mixed $number, mixed $multiple)</td></tr>
+<tr class="memdesc:ac3492bdc636e95d6b81fa4ae4a16f7c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">MROUND.  <br /></td></tr>
+<tr class="separator:ac3492bdc636e95d6b81fa4ae4a16f7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a557253c2f4f488535ed7cfafa271bc6a" id="r_a557253c2f4f488535ed7cfafa271bc6a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a557253c2f4f488535ed7cfafa271bc6a">odd</a> ($number)</td></tr>
 <tr class="memdesc:a557253c2f4f488535ed7cfafa271bc6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ODD.  <br /></td></tr>
 <tr class="separator:a557253c2f4f488535ed7cfafa271bc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25a9a16493a50bd480833b4651bd0469" id="r_a25a9a16493a50bd480833b4651bd0469"><td class="memItemLeft" align="right" valign="top"><a id="a25a9a16493a50bd480833b4651bd0469" name="a25a9a16493a50bd480833b4651bd0469"></a>
-static&#160;</td><td class="memItemRight" valign="bottom"><b>round</b> ($number, $precision)</td></tr>
-<tr class="separator:a25a9a16493a50bd480833b4651bd0469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d57b666e8d34e69477958739e318e9a" id="r_a3d57b666e8d34e69477958739e318e9a"><td class="memItemLeft" align="right" valign="top"><a id="a3d57b666e8d34e69477958739e318e9a" name="a3d57b666e8d34e69477958739e318e9a"></a>
+static&#160;</td><td class="memItemRight" valign="bottom"><b>round</b> (mixed $number, mixed $precision)</td></tr>
+<tr class="separator:a3d57b666e8d34e69477958739e318e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2447bb25afc9283bd4d6e0e5c7ed7930" id="r_a2447bb25afc9283bd4d6e0e5c7ed7930"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2447bb25afc9283bd4d6e0e5c7ed7930">up</a> ($number, $digits)</td></tr>
 <tr class="memdesc:a2447bb25afc9283bd4d6e0e5c7ed7930"><td class="mdescLeft">&#160;</td><td class="mdescRight">ROUNDUP.  <br /></td></tr>
 <tr class="separator:a2447bb25afc9283bd4d6e0e5c7ed7930"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,8 +132,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>round</b> ($number,
 <p>Rounds a number down to a specified number of decimal places</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array&#160;|&#160;float</td><td class="paramname">$number</td><td>Number to round, or can be an array of numbers </td></tr>
-    <tr><td class="paramtype">array&#160;|&#160;int</td><td class="paramname">$digits</td><td>Number of digits to which you want to round $number, or can be an array of numbers</td></tr>
+    <tr><td class="paramtype">null&#160;|&#160;array&#160;|&#160;float&#160;|&#160;string</td><td class="paramname">$number</td><td>Number to round, or can be an array of numbers </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;float&#160;|&#160;int&#160;|&#160;string</td><td class="paramname">$digits</td><td>Number of digits to which you want to round $number, or can be an array of numbers</td></tr>
   </table>
   </dd>
 </dl>
@@ -187,8 +187,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>round</b> ($number,
 
 </div>
 </div>
-<a id="ae69e2f5fe5da613761245faa69951547" name="ae69e2f5fe5da613761245faa69951547"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae69e2f5fe5da613761245faa69951547">&#9670;&#160;</a></span>multiple()</h2>
+<a id="ac3492bdc636e95d6b81fa4ae4a16f7c8" name="ac3492bdc636e95d6b81fa4ae4a16f7c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3492bdc636e95d6b81fa4ae4a16f7c8">&#9670;&#160;</a></span>multiple()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -199,12 +199,12 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>round</b> ($number,
         <tr>
           <td class="memname">static PhpOffice\PhpSpreadsheet\Calculation\MathTrig\Round::multiple </td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$number</em></span>, </td>
+          <td class="paramtype">mixed</td>          <td class="paramname"><span class="paramname"><em>$number</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$multiple</em></span>&#160;)</td>
+          <td class="paramtype">mixed</td>          <td class="paramname"><span class="paramname"><em>$multiple</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -225,7 +225,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>round</b> ($number,
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array|float|string</td><td>Rounded Number, or a string containing an error If an array of numbers is passed as the argument, then the returned result will also be an array with the same dimensions </td></tr>
+    <tr><td class="paramname">array|float|int|string</td><td>Rounded Number, or a string containing an error If an array of numbers is passed as the argument, then the returned result will also be an array with the same dimensions </td></tr>
   </table>
   </dd>
 </dl>
@@ -265,7 +265,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>round</b> ($number,
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array|float|string</td><td>Rounded Number, or a string containing an error If an array of numbers is passed as the argument, then the returned result will also be an array with the same dimensions </td></tr>
+    <tr><td class="paramname">array|float|int|string</td><td>Rounded Number, or a string containing an error If an array of numbers is passed as the argument, then the returned result will also be an array with the same dimensions </td></tr>
   </table>
   </dd>
 </dl>
@@ -323,7 +323,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>round</b> ($number,
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 9 2025 02:42:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 16 2025 03:14:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

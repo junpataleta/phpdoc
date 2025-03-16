@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
   </td>
  </tr>
  </tbody>
@@ -102,6 +102,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2d6efa50dd1a219a0e836d6e1a002cb9" id="r_a2d6efa50dd1a219a0e836d6e1a002cb9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d72/classcore_1_1dataformat_1_1base.html#a2d6efa50dd1a219a0e836d6e1a002cb9">close_sheet</a> ($columns)</td></tr>
 <tr class="memdesc:a2d6efa50dd1a219a0e836d6e1a002cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the end of the sheet containing the data.  <br /></td></tr>
 <tr class="separator:a2d6efa50dd1a219a0e836d6e1a002cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc735c01db70b118ec89049bfaad8a42" id="r_acc735c01db70b118ec89049bfaad8a42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc735c01db70b118ec89049bfaad8a42">format_value</a> ($value, array $values, array $callbacks, int $columntype)</td></tr>
+<tr class="memdesc:acc735c01db70b118ec89049bfaad8a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return formatted value for column when applying aggregation.  <br /></td></tr>
+<tr class="separator:acc735c01db70b118ec89049bfaad8a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25950bdd321267193f1b979e3063b346" id="r_a25950bdd321267193f1b979e3063b346"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d72/classcore_1_1dataformat_1_1base.html#a25950bdd321267193f1b979e3063b346">get_extension</a> ()</td></tr>
 <tr class="memdesc:a25950bdd321267193f1b979e3063b346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the file extension.  <br /></td></tr>
 <tr class="separator:a25950bdd321267193f1b979e3063b346"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,9 +141,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1be3dce495bbcf64ebf0142bb35a9dc8" id="r_a1be3dce495bbcf64ebf0142bb35a9dc8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1be3dce495bbcf64ebf0142bb35a9dc8">compatible</a> (int $columntype)</td></tr>
 <tr class="memdesc:a1be3dce495bbcf64ebf0142bb35a9dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This aggregation can be performed on all numeric and boolean columns.  <br /></td></tr>
 <tr class="separator:a1be3dce495bbcf64ebf0142bb35a9dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb4814017092ecfc49012d1406b14665" id="r_acb4814017092ecfc49012d1406b14665"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb4814017092ecfc49012d1406b14665">format_value</a> ($value, array $values, array $callbacks, int $columntype)</td></tr>
-<tr class="memdesc:acb4814017092ecfc49012d1406b14665"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return formatted value for column when applying aggregation.  <br /></td></tr>
-<tr class="separator:acb4814017092ecfc49012d1406b14665"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a041432203f379d749ca09b510ed14f0b" id="r_a041432203f379d749ca09b510ed14f0b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a041432203f379d749ca09b510ed14f0b">get_column_type</a> (int $columntype)</td></tr>
 <tr class="memdesc:a041432203f379d749ca09b510ed14f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns aggregated column type.  <br /></td></tr>
 <tr class="separator:a041432203f379d749ca09b510ed14f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -399,17 +399,14 @@ $mimetype&#160;</td><td class="memItemRight" valign="bottom"><b>$mimetype</b> = 
 
 </div>
 </div>
-<a id="acb4814017092ecfc49012d1406b14665" name="acb4814017092ecfc49012d1406b14665"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb4814017092ecfc49012d1406b14665">&#9670;&#160;</a></span>format_value()</h2>
+<a id="acc735c01db70b118ec89049bfaad8a42" name="acc735c01db70b118ec89049bfaad8a42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc735c01db70b118ec89049bfaad8a42">&#9670;&#160;</a></span>format_value()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static core_reportbuilder\local\aggregation\sum::format_value </td>
+          <td class="memname">core_reportbuilder\local\aggregation\sum::format_value </td>
           <td>(</td>
           <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$value</em></span>, </td>
         </tr>
@@ -429,11 +426,6 @@ $mimetype&#160;</td><td class="memItemRight" valign="bottom"><b>$mimetype</b> = 
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$columntype</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Return formatted value for column when applying aggregation. </p>
@@ -957,7 +949,7 @@ $mimetype&#160;</td><td class="memItemRight" valign="bottom"><b>$mimetype</b> = 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 9 2025 02:41:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 16 2025 03:14:03 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
   </td>
  </tr>
  </tbody>
@@ -70,7 +70,9 @@ $(function(){ initResizable(false); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d9/d2b/classrestore__questions__parser__processor-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">restore_questions_parser_processor Class Reference<div class="ingroups"><a class="el" href="../../d6/d9f/group__moodlecore.html">moodlecore</a></div></div></div>
@@ -120,6 +122,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad0cf10832e3141f4491de65f80dcb36f" id="r_ad0cf10832e3141f4491de65f80dcb36f"><td class="memItemLeft" align="right" valign="top"><a id="ad0cf10832e3141f4491de65f80dcb36f" name="ad0cf10832e3141f4491de65f80dcb36f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>receive_chunk</b> ($data)</td></tr>
 <tr class="separator:ad0cf10832e3141f4491de65f80dcb36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:adfba7bba164d0d75119b54c2d6223d5d" id="r_adfba7bba164d0d75119b54c2d6223d5d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfba7bba164d0d75119b54c2d6223d5d">generate_question_identity_hash</a> (stdClass $questiondata, ?<a class="el" href="../../d3/de9/classbackup__xml__transformer.html">backup_xml_transformer</a> $transformer=null,)</td></tr>
+<tr class="memdesc:adfba7bba164d0d75119b54c2d6223d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a data structure containing the data for a question, reduce it to a flat array and return a sha1 hash of the data.  <br /></td></tr>
+<tr class="separator:adfba7bba164d0d75119b54c2d6223d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -171,6 +179,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:ad6df4ceeb905e58ae668641b89e2ef25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first selected parent if available or false. <br /></td></tr>
 <tr class="separator:ad6df4ceeb905e58ae668641b89e2ef25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a91ef603394771a12efa71d40b1bd8250" id="r_a91ef603394771a12efa71d40b1bd8250"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91ef603394771a12efa71d40b1bd8250">get_qtype_restore</a> (string $qtype)</td></tr>
+<tr class="memdesc:a91ef603394771a12efa71d40b1bd8250"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load and instantiate the restore class for the given question type.  <br /></td></tr>
+<tr class="separator:a91ef603394771a12efa71d40b1bd8250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ada88ea15c09e9ddd962e3cd267af099a" id="r_ada88ea15c09e9ddd962e3cd267af099a"><td class="memItemLeft" align="right" valign="top"><a id="ada88ea15c09e9ddd962e3cd267af099a" name="ada88ea15c09e9ddd962e3cd267af099a"></a>
@@ -220,6 +234,10 @@ string string&#160;</td><td class="memItemRight" valign="bottom"><b>$restoreid</
 string const&#160;</td><td class="memItemRight" valign="bottom"><b>CATEGORY_PATH</b> = '/question_categories/question_category'</td></tr>
 <tr class="memdesc:a4be0fb936c3662b5f86cb387965945f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">XML path in the questions.xml backup file to question categories. <br /></td></tr>
 <tr class="separator:a4be0fb936c3662b5f86cb387965945f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a996498cce69ee6d9587c9c2cf7a54fc2" id="r_a996498cce69ee6d9587c9c2cf7a54fc2"><td class="memItemLeft" align="right" valign="top"><a id="a996498cce69ee6d9587c9c2cf7a54fc2" name="a996498cce69ee6d9587c9c2cf7a54fc2"></a>
+string const&#160;</td><td class="memItemRight" valign="bottom"><b>HASHDATA_SEPARATOR</b> = '|HASHDATA|'</td></tr>
+<tr class="memdesc:a996498cce69ee6d9587c9c2cf7a54fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">String for concatenating data into a string for hashing. <br /></td></tr>
+<tr class="separator:a996498cce69ee6d9587c9c2cf7a54fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76504b4a231adae6979c1b29235c442b" id="r_a76504b4a231adae6979c1b29235c442b"><td class="memItemLeft" align="right" valign="top"><a id="a76504b4a231adae6979c1b29235c442b" name="a76504b4a231adae6979c1b29235c442b"></a>
 string const&#160;</td><td class="memItemRight" valign="bottom"><b>LEGACY_QUESTION_SUBPATH</b> = '/questions/question'</td></tr>
 <tr class="memdesc:a76504b4a231adae6979c1b29235c442b"><td class="mdescLeft">&#160;</td><td class="mdescRight">XML path in the questions.xml to question elements within question_category (before <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0). <br /></td></tr>
@@ -332,6 +350,50 @@ string const&#160;</td><td class="memItemRight" valign="bottom"><b>LEGACY_QUESTI
 
 </div>
 </div>
+<a id="adfba7bba164d0d75119b54c2d6223d5d" name="adfba7bba164d0d75119b54c2d6223d5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfba7bba164d0d75119b54c2d6223d5d">&#9670;&#160;</a></span>generate_question_identity_hash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static restore_questions_parser_processor::generate_question_identity_hash </td>
+          <td>(</td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$questiondata</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?<a class="el" href="../../d3/de9/classbackup__xml__transformer.html">backup_xml_transformer</a></td>          <td class="paramname"><span class="paramname"><em>$transformer</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Given a data structure containing the data for a question, reduce it to a flat array and return a sha1 hash of the data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$questiondata</td><td>An array containing all the data for a question, including hints and qtype plugin data. </td></tr>
+    <tr><td class="paramtype">?backup_xml_transformer</td><td class="paramname">$transformer</td><td>If provided, run the backup transformer process on all text fields. This ensures that values from the database are compared like-for-like with encoded values from the backup. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>A sha1 hash of all question data, normalised and concatenated together. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a12409071f63d60578f610778e02c633d" name="a12409071f63d60578f610778e02c633d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a12409071f63d60578f610778e02c633d">&#9670;&#160;</a></span>get_parent_path()</h2>
 
@@ -365,6 +427,46 @@ string const&#160;</td><td class="memItemRight" valign="bottom"><b>LEGACY_QUESTI
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>The parent pathname. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a91ef603394771a12efa71d40b1bd8250" name="a91ef603394771a12efa71d40b1bd8250"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91ef603394771a12efa71d40b1bd8250">&#9670;&#160;</a></span>get_qtype_restore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static restore_questions_parser_processor::get_qtype_restore </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$qtype</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load and instantiate the restore class for the given question type. </p>
+<p>If there is no restore class, null is returned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$qtype</td><td>The question type name (no qtype_ prefix) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">?restore_qtype_plugin</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -609,7 +711,7 @@ string const&#160;</td><td class="memItemRight" valign="bottom"><b>LEGACY_QUESTI
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 9 2025 02:40:32 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 16 2025 03:12:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

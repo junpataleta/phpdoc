@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
   </td>
  </tr>
  </tbody>
@@ -73,6 +73,7 @@ $(function(){ initResizable(false); });
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="../../d4/dda/classcore__reportbuilder_1_1local_1_1aggregation_1_1base-members.html">List of all members</a>  </div>
@@ -94,6 +95,15 @@ Inheritance diagram for core_reportbuilder\local\aggregation\base:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4bc1683a0ecf2970efb59291994772c5" id="r_a4bc1683a0ecf2970efb59291994772c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bc1683a0ecf2970efb59291994772c5">__construct</a> (protected array readonly array $options=[],)</td></tr>
+<tr class="memdesc:a4bc1683a0ecf2970efb59291994772c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:a4bc1683a0ecf2970efb59291994772c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58a1c3fd83ab8f8afbd9a320f56bd861" id="r_a58a1c3fd83ab8f8afbd9a320f56bd861"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58a1c3fd83ab8f8afbd9a320f56bd861">format_value</a> ($value, array $values, array $callbacks, int $columntype)</td></tr>
+<tr class="memdesc:a58a1c3fd83ab8f8afbd9a320f56bd861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return formatted value for column when applying aggregation, by default executing all callbacks on the value.  <br /></td></tr>
+<tr class="separator:a58a1c3fd83ab8f8afbd9a320f56bd861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a445dba58ed6106b5f8cd46a4f43cc185" id="r_a445dba58ed6106b5f8cd46a4f43cc185"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a445dba58ed6106b5f8cd46a4f43cc185">column_groupby</a> ()</td></tr>
@@ -102,9 +112,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a19b2f0f87e222a9216ed1b780a6b58b3" id="r_a19b2f0f87e222a9216ed1b780a6b58b3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19b2f0f87e222a9216ed1b780a6b58b3">compatible</a> (int $columntype)</td></tr>
 <tr class="memdesc:a19b2f0f87e222a9216ed1b780a6b58b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the aggregation is compatible with the given column type.  <br /></td></tr>
 <tr class="separator:a19b2f0f87e222a9216ed1b780a6b58b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afee0e5878cdad634774cd3ee35693449" id="r_afee0e5878cdad634774cd3ee35693449"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afee0e5878cdad634774cd3ee35693449">format_value</a> ($value, array $values, array $callbacks, int $columntype)</td></tr>
-<tr class="memdesc:afee0e5878cdad634774cd3ee35693449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return formatted value for column when applying aggregation, by default executing all callbacks on the value.  <br /></td></tr>
-<tr class="separator:afee0e5878cdad634774cd3ee35693449"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af58f2943981c1f7f21a436b5febfae36" id="r_af58f2943981c1f7f21a436b5febfae36"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af58f2943981c1f7f21a436b5febfae36">get_class_name</a> ()</td></tr>
 <tr class="memdesc:af58f2943981c1f7f21a436b5febfae36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the class name of the aggregation type.  <br /></td></tr>
 <tr class="separator:af58f2943981c1f7f21a436b5febfae36"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,6 +137,38 @@ Static Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a724ae15ab19b94c8996248987f299640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper method for concatenating given fields for a column, so they are suitable for aggregation.  <br /></td></tr>
 <tr class="separator:a724ae15ab19b94c8996248987f299640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4bc1683a0ecf2970efb59291994772c5" name="a4bc1683a0ecf2970efb59291994772c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bc1683a0ecf2970efb59291994772c5">&#9670;&#160;</a></span>__construct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_reportbuilder\local\aggregation\base::__construct </td>
+          <td>(</td>
+          <td class="paramtype">protected array readonly array</td>          <td class="paramname"><span class="paramname"><em>$options</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[]</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$options</td><td>Aggregation type specific options </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">$options</td><td>Aggregation type specific options </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a445dba58ed6106b5f8cd46a4f43cc185" name="a445dba58ed6106b5f8cd46a4f43cc185"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a445dba58ed6106b5f8cd46a4f43cc185">&#9670;&#160;</a></span>column_groupby()</h2>
@@ -204,17 +243,14 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afee0e5878cdad634774cd3ee35693449" name="afee0e5878cdad634774cd3ee35693449"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afee0e5878cdad634774cd3ee35693449">&#9670;&#160;</a></span>format_value()</h2>
+<a id="a58a1c3fd83ab8f8afbd9a320f56bd861" name="a58a1c3fd83ab8f8afbd9a320f56bd861"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58a1c3fd83ab8f8afbd9a320f56bd861">&#9670;&#160;</a></span>format_value()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static core_reportbuilder\local\aggregation\base::format_value </td>
+          <td class="memname">core_reportbuilder\local\aggregation\base::format_value </td>
           <td>(</td>
           <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$value</em></span>, </td>
         </tr>
@@ -234,11 +270,6 @@ Static Protected Member Functions</h2></td></tr>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$columntype</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Return formatted value for column when applying aggregation, by default executing all callbacks on the value. </p>
@@ -553,7 +584,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 9 2025 02:41:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 16 2025 03:14:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

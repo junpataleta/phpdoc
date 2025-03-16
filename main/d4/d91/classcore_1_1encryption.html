@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
   </td>
  </tr>
  </tbody>
@@ -96,7 +96,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a59cc3eb41cce1f5fe1b0308577b625bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the file path used to store the secret key.  <br /></td></tr>
 <tr class="separator:a59cc3eb41cce1f5fe1b0308577b625bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a12c12b787e2f0cb383818484d087ac" id="r_a1a12c12b787e2f0cb383818484d087ac"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a12c12b787e2f0cb383818484d087ac">is_sodium_installed</a> ()</td></tr>
-<tr class="memdesc:a1a12c12b787e2f0cb383818484d087ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if Sodium is installed.  <br /></td></tr>
 <tr class="separator:a1a12c12b787e2f0cb383818484d087ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e4f577ad2d9006a40ea61a8fc328c2a" id="r_a5e4f577ad2d9006a40ea61a8fc328c2a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e4f577ad2d9006a40ea61a8fc328c2a">key_exists</a> (?string $method=null)</td></tr>
 <tr class="memdesc:a5e4f577ad2d9006a40ea61a8fc328c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if there is a key file.  <br /></td></tr>
@@ -104,16 +103,10 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:add8ca88229db528df556c7cf692546cd" id="r_add8ca88229db528df556c7cf692546cd"><td class="memItemLeft" align="right" valign="top">string const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add8ca88229db528df556c7cf692546cd">METHOD_OPENSSL</a> = 'openssl-aes-256-ctr'</td></tr>
-<tr class="memdesc:add8ca88229db528df556c7cf692546cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encryption method: hand-coded OpenSSL (less safe)  <br /></td></tr>
-<tr class="separator:add8ca88229db528df556c7cf692546cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a299dab21fb3818a242313818a9c2e0bf" id="r_a299dab21fb3818a242313818a9c2e0bf"><td class="memItemLeft" align="right" valign="top"><a id="a299dab21fb3818a242313818a9c2e0bf" name="a299dab21fb3818a242313818a9c2e0bf"></a>
 string const&#160;</td><td class="memItemRight" valign="bottom"><b>METHOD_SODIUM</b> = 'sodium'</td></tr>
 <tr class="memdesc:a299dab21fb3818a242313818a9c2e0bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encryption method: Sodium. <br /></td></tr>
 <tr class="separator:a299dab21fb3818a242313818a9c2e0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a853bd1b5550772de85cba22c852746b4" id="r_a853bd1b5550772de85cba22c852746b4"><td class="memItemLeft" align="right" valign="top">string const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a853bd1b5550772de85cba22c852746b4">OPENSSL_CIPHER</a> = 'AES-256-CTR'</td></tr>
-<tr class="memdesc:a853bd1b5550772de85cba22c852746b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenSSL cipher method.  <br /></td></tr>
-<tr class="separator:a853bd1b5550772de85cba22c852746b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
@@ -159,7 +152,6 @@ Static Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a key for the server. </p>
-<p>Note we currently retain support for all methods, in order to decrypt legacy {</p><dl class="section see"><dt>See also</dt><dd>METHOD_OPENSSL} content</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$method</td><td>Encryption method (only if you want to create a non-default key) </td></tr>
@@ -201,7 +193,6 @@ Static Protected Member Functions</h2></td></tr>
 
 <p>Decrypts data using the server's key. </p>
 <p>The decryption works with either supported method.</p>
-<p>Note currently we retain support for all methods, in order to decrypt legacy {</p><dl class="section see"><dt>See also</dt><dd>METHOD_OPENSSL} content</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$data</td><td>Data to decrypt </td></tr>
@@ -325,7 +316,6 @@ Static Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the length in bytes of the initial values data required. </p>
-<p>Note we currently retain support for all methods, in order to decrypt legacy {</p><dl class="section see"><dt>See also</dt><dd>METHOD_OPENSSL} content</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$method</td><td>Crypto method </td></tr>
@@ -481,15 +471,7 @@ Static Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Checks if Sodium is installed. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td>True if the Sodium extension is available</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000256">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 Sodium is always present </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000245">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 Sodium is always present </dd></dl>
 
 </div>
 </div>
@@ -532,48 +514,13 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="add8ca88229db528df556c7cf692546cd" name="add8ca88229db528df556c7cf692546cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add8ca88229db528df556c7cf692546cd">&#9670;&#160;</a></span>METHOD_OPENSSL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string const core\encryption::METHOD_OPENSSL = 'openssl-aes-256-ctr'</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Encryption method: hand-coded OpenSSL (less safe) </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000254">Deprecated</a></b></dt><dd></dd></dl>
-
-</div>
-</div>
-<a id="a853bd1b5550772de85cba22c852746b4" name="a853bd1b5550772de85cba22c852746b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a853bd1b5550772de85cba22c852746b4">&#9670;&#160;</a></span>OPENSSL_CIPHER</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string const core\encryption::OPENSSL_CIPHER = 'AES-256-CTR'</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>OpenSSL cipher method. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000255">Deprecated</a></b></dt><dd></dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>lib/classes/<b>encryption.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 9 2025 02:40:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 16 2025 03:12:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
   </td>
  </tr>
  </tbody>
@@ -1089,6 +1089,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9830a7a508d9437388fbc459a6effdff" id="r_ga9830a7a508d9437388fbc459a6effdff"><td class="memItemLeft" align="right" valign="top"><a id="ga9830a7a508d9437388fbc459a6effdff" name="ga9830a7a508d9437388fbc459a6effdff"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>favorites_remove</b> ($photo_id)</td></tr>
 <tr class="separator:ga9830a7a508d9437388fbc459a6effdff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19651b36b2a041b591c5c1fb9ae2204c" id="r_ga19651b36b2a041b591c5c1fb9ae2204c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga19651b36b2a041b591c5c1fb9ae2204c">get_backup_xml_transformer</a> (int $courseid)</td></tr>
+<tr class="memdesc:ga19651b36b2a041b591c5c1fb9ae2204c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load required classes and return a backup XML transformer for the specified course.  <br /></td></tr>
+<tr class="separator:ga19651b36b2a041b591c5c1fb9ae2204c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabbda98b8c671e964aff0718ed77743c4" id="r_gabbda98b8c671e964aff0718ed77743c4"><td class="memItemLeft" align="right" valign="top"><a id="gabbda98b8c671e964aff0718ed77743c4" name="gabbda98b8c671e964aff0718ed77743c4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>get_module_from_cmid</b> ($cmid)</td></tr>
 <tr class="separator:gabbda98b8c671e964aff0718ed77743c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2849,6 +2852,46 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[U
 
 </div>
 </div>
+<a id="ga19651b36b2a041b591c5c1fb9ae2204c" name="ga19651b36b2a041b591c5c1fb9ae2204c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga19651b36b2a041b591c5c1fb9ae2204c">&#9670;&#160;</a></span>get_backup_xml_transformer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static get_backup_xml_transformer </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$courseid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load required classes and return a backup XML transformer for the specified course. </p>
+<p>These classes may not have been loaded if we're only doing a restore in the current process, so make sure we have them here.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../d3/de9/classbackup__xml__transformer.html" title="Class implementing the @xml_contenttransformed logic to be applied in moodle2 backups.">backup_xml_transformer</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga4be62a6bf543604cb5931cbeebb928ae" name="ga4be62a6bf543604cb5931cbeebb928ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4be62a6bf543604cb5931cbeebb928ae">&#9670;&#160;</a></span>get_questions_category()</h2>
 
@@ -2979,7 +3022,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[U
 
 <p>Old syntax of class constructor. </p>
 <p>Deprecated in PHP7.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000486">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000481">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -3240,7 +3283,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[U
 
 <p>Old syntax of class constructor. </p>
 <p>Deprecated in PHP7.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000484">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000479">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -3572,7 +3615,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[U
 
 <p>Old syntax of class constructor. </p>
 <p>Deprecated in PHP7.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000485">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000480">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -3859,7 +3902,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[U
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 9 2025 02:39:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 16 2025 03:11:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

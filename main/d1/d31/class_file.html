@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
   </td>
  </tr>
  </tbody>
@@ -85,7 +85,8 @@ Inheritance diagram for File:</div>
  <div class="center">
   <img src="../../d1/d31/class_file.png" usemap="#File_map" alt=""/>
   <map id="File_map" name="File_map">
-<area href="../../d9/da0/interface_base.html" title="Base for cache objects." alt="Base" shape="rect" coords="0,0,40,24"/>
+<area href="../../d9/da0/interface_base.html" title="Base for cache objects." alt="Base" shape="rect" coords="0,0,135,24"/>
+<area href="../../d2/d40/classmoodle__simplepie__file.html" title="Moodle Customised version of the SimplePie_File class." alt="moodle_simplepie_file" shape="rect" coords="0,112,135,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -158,7 +159,7 @@ string const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_IMAGE</b
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a340c33c1e1c9653317d37f45939c2ed3" id="r_a340c33c1e1c9653317d37f45939c2ed3"><td class="memItemLeft" align="right" valign="top"><a id="a340c33c1e1c9653317d37f45939c2ed3" name="a340c33c1e1c9653317d37f45939c2ed3"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$extension</b></td></tr>
-<tr class="memdesc:a340c33c1e1c9653317d37f45939c2ed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">File extension. <br /></td></tr>
+<tr class="memdesc:a340c33c1e1c9653317d37f45939c2ed3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d1/d31/class_file.html" title="Caches data to the filesystem.">File</a> extension. <br /></td></tr>
 <tr class="separator:a340c33c1e1c9653317d37f45939c2ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a494104e9584a22421384cfca7683e07c" id="r_a494104e9584a22421384cfca7683e07c"><td class="memItemLeft" align="right" valign="top"><a id="a494104e9584a22421384cfca7683e07c" name="a494104e9584a22421384cfca7683e07c"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$filename</b></td></tr>
@@ -169,16 +170,16 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$filename</b></td><
 <tr class="separator:a0d6956c7d5e06edbf10d216f136b3308"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a48a48321b5ff8558c1ef2a1f7af3af" id="r_a9a48a48321b5ff8558c1ef2a1f7af3af"><td class="memItemLeft" align="right" valign="top"><a id="a9a48a48321b5ff8558c1ef2a1f7af3af" name="a9a48a48321b5ff8558c1ef2a1f7af3af"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$name</b></td></tr>
-<tr class="memdesc:a9a48a48321b5ff8558c1ef2a1f7af3af"><td class="mdescLeft">&#160;</td><td class="mdescRight">File path. <br /></td></tr>
+<tr class="memdesc:a9a48a48321b5ff8558c1ef2a1f7af3af"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d1/d31/class_file.html" title="Caches data to the filesystem.">File</a> path. <br /></td></tr>
 <tr class="separator:a9a48a48321b5ff8558c1ef2a1f7af3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Caches data to the filesystem. </p>
 <p>Used for fetching remote files and reading local files.</p>
-<p>@subpackage Caching </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001132">Deprecated</a></b></dt><dd>since <a class="el" href="../../d5/db8/class_simple_pie.html" title="SimplePie.">SimplePie</a> 1.8.0, use implementation of "Psr::SimpleCache::CacheInterface" instead </dd></dl>
+<p>@subpackage Caching </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000620">Deprecated</a></b></dt><dd>since <a class="el" href="../../d5/db8/class_simple_pie.html" title="SimplePie.">SimplePie</a> 1.8.0, use implementation of "Psr::SimpleCache::CacheInterface" instead </dd></dl>
 <p>Supports <a class="el" href="../../dd/d0c/namespace_simple_pie_1_1_h_t_t_p.html" title="&#160;">HTTP</a> 1.0 via cURL or fsockopen, with spotty <a class="el" href="../../dd/d0c/namespace_simple_pie_1_1_h_t_t_p.html" title="&#160;">HTTP</a> 1.1 support</p>
 <p>This class can be overloaded with {</p><dl class="section see"><dt>See also</dt><dd>SimplePie::SimplePie::set_file_class()}</dd></dl>
-<p>@subpackage <a class="el" href="../../dd/d0c/namespace_simple_pie_1_1_h_t_t_p.html" title="&#160;">HTTP</a> </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000291">Todo</a></b></dt><dd>Move to properly supporting RFC2616 (HTTP/1.1) </dd></dl>
+<p>@subpackage <a class="el" href="../../dd/d0c/namespace_simple_pie_1_1_h_t_t_p.html" title="&#160;">HTTP</a> </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000281">Todo</a></b></dt><dd>Move to properly supporting RFC2616 (HTTP/1.1) </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3b949c75b42290c68877fae37971fa32" name="a3b949c75b42290c68877fae37971fa32"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3b949c75b42290c68877fae37971fa32">&#9670;&#160;</a></span>__construct()</h2>
@@ -393,7 +394,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$name</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 9 2025 02:39:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 16 2025 03:11:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

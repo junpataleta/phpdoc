@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
   </td>
  </tr>
  </tbody>
@@ -81,16 +81,16 @@ $(function(){ initResizable(false); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab638da4e59d77124b2e15d976c1b4ecc" id="r_ab638da4e59d77124b2e15d976c1b4ecc"><td class="memItemLeft" align="right" valign="top"><a id="ab638da4e59d77124b2e15d976c1b4ecc" name="ab638da4e59d77124b2e15d976c1b4ecc"></a>
-static&#160;</td><td class="memItemRight" valign="bottom"><b>DELTA</b> ($a, $b=0.0)</td></tr>
-<tr class="separator:ab638da4e59d77124b2e15d976c1b4ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a109673cd6b98d949965895fc0d0958d8" id="r_a109673cd6b98d949965895fc0d0958d8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a109673cd6b98d949965895fc0d0958d8">GESTEP</a> ($number, $step=0.0)</td></tr>
-<tr class="memdesc:a109673cd6b98d949965895fc0d0958d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">GESTEP.  <br /></td></tr>
-<tr class="separator:a109673cd6b98d949965895fc0d0958d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdbb52a2325d4170a196a21a0c69f517" id="r_abdbb52a2325d4170a196a21a0c69f517"><td class="memItemLeft" align="right" valign="top"><a id="abdbb52a2325d4170a196a21a0c69f517" name="abdbb52a2325d4170a196a21a0c69f517"></a>
+static&#160;</td><td class="memItemRight" valign="bottom"><b>DELTA</b> (array|float|bool|string|int $a, array|float|bool|string|int $b=0.0)</td></tr>
+<tr class="separator:abdbb52a2325d4170a196a21a0c69f517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79a73f0de5fab3023e2894a53484a971" id="r_a79a73f0de5fab3023e2894a53484a971"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79a73f0de5fab3023e2894a53484a971">GESTEP</a> (array|float|bool|string|int $number, $step=0.0)</td></tr>
+<tr class="memdesc:a79a73f0de5fab3023e2894a53484a971"><td class="mdescLeft">&#160;</td><td class="mdescRight">GESTEP.  <br /></td></tr>
+<tr class="separator:a79a73f0de5fab3023e2894a53484a971"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a109673cd6b98d949965895fc0d0958d8" name="a109673cd6b98d949965895fc0d0958d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a109673cd6b98d949965895fc0d0958d8">&#9670;&#160;</a></span>GESTEP()</h2>
+<a id="a79a73f0de5fab3023e2894a53484a971" name="a79a73f0de5fab3023e2894a53484a971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79a73f0de5fab3023e2894a53484a971">&#9670;&#160;</a></span>GESTEP()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -101,7 +101,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>DELTA</b> ($a, $b=0
         <tr>
           <td class="memname">static PhpOffice\PhpSpreadsheet\Calculation\Engineering\Compare::GESTEP </td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$number</em></span>, </td>
+          <td class="paramtype">array|float|bool|string|int</td>          <td class="paramname"><span class="paramname"><em>$number</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -121,8 +121,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>DELTA</b> ($a, $b=0
 <p>Returns 1 if number &gt;= step; returns 0 (zero) otherwise Use this function to filter a set of values. For example, by summing several GESTEP functions you calculate the count of values that exceed a threshold.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array&#160;|&#160;float</td><td class="paramname">$number</td><td>the value to test against step Or can be an array of values </td></tr>
-    <tr><td class="paramtype">null&#160;|&#160;array&#160;|&#160;float</td><td class="paramname">$step</td><td>The threshold value. If you omit a value for step, GESTEP uses zero. Or can be an array of values</td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;bool&#160;|&#160;float&#160;|&#160;int&#160;|&#160;string</td><td class="paramname">$number</td><td>the value to test against step Or can be an array of values </td></tr>
+    <tr><td class="paramtype">null&#160;|&#160;array&#160;|&#160;bool&#160;|&#160;float&#160;|&#160;int&#160;|&#160;string</td><td class="paramname">$step</td><td>The threshold value. If you omit a value for step, GESTEP uses zero. Or can be an array of values</td></tr>
   </table>
   </dd>
 </dl>
@@ -141,7 +141,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>DELTA</b> ($a, $b=0
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 9 2025 02:42:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 16 2025 03:14:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

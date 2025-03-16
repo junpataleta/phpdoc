@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
   </td>
  </tr>
  </tbody>
@@ -100,9 +100,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa9cce14202a9412d688389a847ce28bd" id="r_aa9cce14202a9412d688389a847ce28bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9cce14202a9412d688389a847ce28bd">__construct</a> ($courseid, $gpr, $context, $page=null)</td></tr>
 <tr class="memdesc:aa9cce14202a9412d688389a847ce28bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:aa9cce14202a9412d688389a847ce28bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0150ab3ac9c714ba81b011b3591857c6" id="r_a0150ab3ac9c714ba81b011b3591857c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0150ab3ac9c714ba81b011b3591857c6">get_lang_string</a> ($strcode, $section=null)</td></tr>
-<tr class="memdesc:a0150ab3ac9c714ba81b011b3591857c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">First checks the cached language strings, then returns match if found, or uses get_string() to get it from the <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>, caches it then returns it.  <br /></td></tr>
-<tr class="separator:a0150ab3ac9c714ba81b011b3591857c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb1f5ae57b61080ce2504a90446213a" id="r_a0cb1f5ae57b61080ce2504a90446213a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cb1f5ae57b61080ce2504a90446213a">get_lang_string</a> ()</td></tr>
+<tr class="separator:a0cb1f5ae57b61080ce2504a90446213a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6442894441e636572bc80f11fad74efd" id="r_a6442894441e636572bc80f11fad74efd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6442894441e636572bc80f11fad74efd">get_numusers</a> ($groups=true, $users=false)</td></tr>
 <tr class="memdesc:a6442894441e636572bc80f11fad74efd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches and returns a count of all the users that will be shown on this page.  <br /></td></tr>
 <tr class="separator:a6442894441e636572bc80f11fad74efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -333,7 +332,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><div class="memdoc">
 
 <p>Optionally blank out course/category totals if they contain any hidden items. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000207">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 - Call blank_hidden_total_and_adjust_bounds instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000198">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 - Call blank_hidden_total_and_adjust_bounds instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$courseid</td><td>the course id </td></tr>
@@ -655,8 +654,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 
 </div>
 </div>
-<a id="a0150ab3ac9c714ba81b011b3591857c6" name="a0150ab3ac9c714ba81b011b3591857c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0150ab3ac9c714ba81b011b3591857c6">&#9670;&#160;</a></span>get_lang_string()</h2>
+<a id="a0cb1f5ae57b61080ce2504a90446213a" name="a0cb1f5ae57b61080ce2504a90446213a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cb1f5ae57b61080ce2504a90446213a">&#9670;&#160;</a></span>get_lang_string()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -664,32 +663,12 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
         <tr>
           <td class="memname">grade_report::get_lang_string </td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$strcode</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$section</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>First checks the cached language strings, then returns match if found, or uses get_string() to get it from the <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>, caches it then returns it. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000206">Deprecated</a></b></dt><dd>since 4.2 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000110">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-77307" class="el">MDL-77307</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$strcode</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$section</td><td>Optional language section </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000197">Deprecated</a></b></dt><dd>since 4.2 </dd></dl>
 
 </div>
 </div>
@@ -1437,7 +1416,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 9 2025 02:40:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 16 2025 03:12:17 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

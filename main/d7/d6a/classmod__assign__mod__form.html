@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
   </td>
  </tr>
  </tbody>
@@ -280,6 +280,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ga87ff3ae1b2bcec06efb04bbaed1d776a" id="r_ga87ff3ae1b2bcec06efb04bbaed1d776a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#ga87ff3ae1b2bcec06efb04bbaed1d776a">get_array_value_by_keys</a> (array $array, array $keys)</td></tr>
 <tr class="memdesc:ga87ff3ae1b2bcec06efb04bbaed1d776a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an element of multi-dimensional array given the list of keys.  <br /></td></tr>
 <tr class="separator:ga87ff3ae1b2bcec06efb04bbaed1d776a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe893849910ac424bc8b0982ea71a0f" id="r_adbe893849910ac424bc8b0982ea71a0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbe893849910ac424bc8b0982ea71a0f">get_assign</a> ()</td></tr>
+<tr class="memdesc:adbe893849910ac424bc8b0982ea71a0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a relevant assign instance for this form, and the context.  <br /></td></tr>
+<tr class="separator:adbe893849910ac424bc8b0982ea71a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5e46298834215f851999cff554fb6f2d" id="r_ga5e46298834215f851999cff554fb6f2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#ga5e46298834215f851999cff554fb6f2d">get_draft_files</a> ($elname)</td></tr>
 <tr class="memdesc:ga5e46298834215f851999cff554fb6f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get draft files of a form element This is a protected method which will be used only inside moodleforms.  <br /></td></tr>
 <tr class="separator:ga5e46298834215f851999cff554fb6f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -535,7 +538,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 </div><div class="memdoc">
 
 <p>Add an editor for an activity's introduction field. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000135">Deprecated</a></b></dt><dd>since <a href="https://tracker.moodle.org/browse/MDL-49101" class="el">MDL-49101</a> - use <a class="el" href="../../d2/d19/classmoodleform__mod.html#a2a5c6838f92b5e644e3291e4964a6654" title="Add an editor for an activity&#39;s introduction field.">moodleform_mod\standard_intro_elements()</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000129">Deprecated</a></b></dt><dd>since <a href="https://tracker.moodle.org/browse/MDL-49101" class="el">MDL-49101</a> - use <a class="el" href="../../d2/d19/classmoodleform__mod.html#a2a5c6838f92b5e644e3291e4964a6654" title="Add an editor for an activity&#39;s introduction field.">moodleform_mod\standard_intro_elements()</a> instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">null</td><td class="paramname">$required</td><td>Override system default for requiremodintro </td></tr>
@@ -809,6 +812,40 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 <p>Reimplemented from <a class="el" href="../../d6/d9c/group__core__form.html#ga5ccc3aeffce27e3335c4fbc26b857563">moodleform</a>.</p>
 
 <p>Reimplemented in <a class="el" href="../../d7/db1/classmod__bigbluebuttonbn__mod__form.html#a004b444e2f734dd4d80ae6c6ad5e1b1e">mod_bigbluebuttonbn_mod_form</a>, <a class="el" href="../../de/df9/classmod__forum__mod__form.html#a4aaff9fdf781940b234f877da28248c3">mod_forum_mod_form</a>, <a class="el" href="../../dc/dae/classmod__glossary__mod__form.html#a634350558f5180308287b3bef630d962">mod_glossary_mod_form</a>, <a class="el" href="../../de/de2/classmod__resource__mod__form.html#a62aeab24f5bd663dd62abd0e1acb29a1">mod_resource_mod_form</a>, and <a class="el" href="../../d7/d70/classmod__workshop__mod__form.html#af9cf9ae5c29eeb39808820bcc5b4f0f3">mod_workshop_mod_form</a>.</p>
+
+</div>
+</div>
+<a id="adbe893849910ac424bc8b0982ea71a0f" name="adbe893849910ac424bc8b0982ea71a0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbe893849910ac424bc8b0982ea71a0f">&#9670;&#160;</a></span>get_assign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_assign_mod_form::get_assign </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a relevant assign instance for this form, and the context. </p>
+<p>If we are editing an existing assign, it is that assignment and context, otherwise it is for the course context.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>[$assignment, $ctx] the assignment object and the context. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1120,7 +1157,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 
 <p>Old syntax of class constructor. </p>
 <p>Deprecated in PHP7.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000134">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000128">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -1354,7 +1391,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 9 2025 02:40:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 16 2025 03:12:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

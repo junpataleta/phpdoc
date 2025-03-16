@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
   </td>
  </tr>
  </tbody>
@@ -157,7 +157,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a16163556311387aa8414c2fd1e484142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform custom validation of the data used to edit the instance.  <br /></td></tr>
 <tr class="separator:a16163556311387aa8414c2fd1e484142"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a964e4823d13a4ebc9af3812f605b0380" id="r_a964e4823d13a4ebc9af3812f605b0380"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#a964e4823d13a4ebc9af3812f605b0380">enrol_page_hook</a> (stdClass $instance)</td></tr>
-<tr class="memdesc:a964e4823d13a4ebc9af3812f605b0380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates course enrol form, checks if form submitted and enrols user if necessary.  <br /></td></tr>
+<tr class="memdesc:a964e4823d13a4ebc9af3812f605b0380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a widget to display on the course enrolment page.  <br /></td></tr>
 <tr class="separator:a964e4823d13a4ebc9af3812f605b0380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6977e5956965b542fd6ba481cc921406" id="r_a6977e5956965b542fd6ba481cc921406"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#a6977e5956965b542fd6ba481cc921406">enrol_user</a> (stdClass $instance, $userid, $roleid=null, $timestart=0, $timeend=0, $status=null, $recovergrades=null)</td></tr>
 <tr class="memdesc:a6977e5956965b542fd6ba481cc921406"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enrol user into course via enrol instance.  <br /></td></tr>
@@ -192,6 +192,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9bf8e4be2dcb81985b88b2a2d0087f63" id="r_a9bf8e4be2dcb81985b88b2a2d0087f63"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#a9bf8e4be2dcb81985b88b2a2d0087f63">get_instance_name</a> ($instance)</td></tr>
 <tr class="memdesc:a9bf8e4be2dcb81985b88b2a2d0087f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns localised name of enrol instance.  <br /></td></tr>
 <tr class="separator:a9bf8e4be2dcb81985b88b2a2d0087f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9750c92914895bb4ebdfa248255f4fd3" id="r_a9750c92914895bb4ebdfa248255f4fd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#a9750c92914895bb4ebdfa248255f4fd3">get_instance_name_for_management_page</a> (stdClass $instance)</td></tr>
+<tr class="memdesc:a9750c92914895bb4ebdfa248255f4fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">How this enrolment method should be displayed on the "Enrolment methods" page.  <br /></td></tr>
+<tr class="separator:a9750c92914895bb4ebdfa248255f4fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb0ba8ea5eabe21b7b0528d558c9a3f4" id="r_acb0ba8ea5eabe21b7b0528d558c9a3f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#acb0ba8ea5eabe21b7b0528d558c9a3f4">get_manual_enrol_button</a> (<a class="el" href="../../dd/d43/classcourse__enrolment__manager.html">course_enrolment_manager</a> $manager)</td></tr>
 <tr class="memdesc:acb0ba8ea5eabe21b7b0528d558c9a3f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an <a class="el" href="../../d8/dda/classenrol__user__button.html" title="A button that is used to enrol users in a course.">enrol_user_button</a> that takes the user to a page where they are able to enrol users into the managers course through this plugin.  <br /></td></tr>
 <tr class="separator:acb0ba8ea5eabe21b7b0528d558c9a3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -272,9 +275,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa4b79087279be01dd92550d8f3aa93ed" id="r_aa4b79087279be01dd92550d8f3aa93ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#aa4b79087279be01dd92550d8f3aa93ed">unenrol_user</a> (stdClass $instance, $userid)</td></tr>
 <tr class="memdesc:aa4b79087279be01dd92550d8f3aa93ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unenrol user from course, the last unenrolment removes all remaining roles.  <br /></td></tr>
 <tr class="separator:aa4b79087279be01dd92550d8f3aa93ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaafc60926e75e29b49851b1b836f719b" id="r_aaafc60926e75e29b49851b1b836f719b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#aaafc60926e75e29b49851b1b836f719b">update_communication</a> (int $enrolmentinstanceid, string $action, stdClass $course)</td></tr>
-<tr class="memdesc:aaafc60926e75e29b49851b1b836f719b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update instance members.  <br /></td></tr>
-<tr class="separator:aaafc60926e75e29b49851b1b836f719b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2905e0a68fe0c9916ac265ab0a4b962" id="r_aa2905e0a68fe0c9916ac265ab0a4b962"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#aa2905e0a68fe0c9916ac265ab0a4b962">update_communication</a> ()</td></tr>
+<tr class="separator:aa2905e0a68fe0c9916ac265ab0a4b962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acad17b1d39d1c602f8b0ededaacebf0f" id="r_acad17b1d39d1c602f8b0ededaacebf0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#acad17b1d39d1c602f8b0ededaacebf0f">update_enrol_plugin_data</a> (int $courseid, array $enrolmentdata, stdClass $instance)</td></tr>
 <tr class="memdesc:acad17b1d39d1c602f8b0ededaacebf0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates enrol plugin instance with provided data.  <br /></td></tr>
 <tr class="separator:acad17b1d39d1c602f8b0ededaacebf0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1359,9 +1361,11 @@ $xmlcache&#160;</td><td class="memItemRight" valign="bottom"><b>$xmlcache</b></t
 </table>
 </div><div class="memdoc">
 
-<p>Creates course enrol form, checks if form submitted and enrols user if necessary. </p>
+<p>Creates a widget to display on the course enrolment page. </p>
 <p>It can also redirect.</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>It is recommended that all plugins use the same template for the consistent output. Example: </p><pre class="fragment">$obj = new core_enrol::output::enrol_page($instance, ...);
+return $OUTPUT-&gt;render($obj);
+</pre><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$instance</td><td></td></tr>
   </table>
@@ -1369,7 +1373,7 @@ $xmlcache&#160;</td><td class="memItemRight" valign="bottom"><b>$xmlcache</b></t
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">string</td><td>html text, usually a form in a text box </td></tr>
+    <tr><td class="paramname">string|null</td><td>html to display on the enrolment page </td></tr>
   </table>
   </dd>
 </dl>
@@ -1808,8 +1812,6 @@ $xmlcache&#160;</td><td class="memItemRight" valign="bottom"><b>$xmlcache</b></t
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../da/df1/classenrol__fee__plugin.html#a80e2e3abce58607f20ce323a32b5c059">enrol_fee_plugin</a>.</p>
-
 </div>
 </div>
 <a id="a066d2d45a338009e6b87e73a3474da67" name="a066d2d45a338009e6b87e73a3474da67"></a>
@@ -2064,7 +2066,7 @@ $xmlcache&#160;</td><td class="memItemRight" valign="bottom"><b>$xmlcache</b></t
 <p>Returns localised name of enrol instance. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$instance</td><td>(null is accepted too) </td></tr>
+    <tr><td class="paramtype">stdClass&#160;|&#160;null</td><td class="paramname">$instance</td><td>(null is accepted too) </td></tr>
   </table>
   </dd>
 </dl>
@@ -2076,6 +2078,48 @@ $xmlcache&#160;</td><td class="memItemRight" valign="bottom"><b>$xmlcache</b></t
 </dl>
 
 <p>Reimplemented in <a class="el" href="../../dd/d72/classenrol__cohort__plugin.html#aafe5b69bd68428dd3f052b368eb89983">enrol_cohort_plugin</a>, <a class="el" href="../../d0/ddf/classenrol__meta__plugin.html#a0bc4c3bbcedcf8b3442ab8f259252011">enrol_meta_plugin</a>, and <a class="el" href="../../de/d61/classenrol__self__plugin.html#ab4a44595a94ae6b0829aa8041bae11bf">enrol_self_plugin</a>.</p>
+
+</div>
+</div>
+<a id="a9750c92914895bb4ebdfa248255f4fd3" name="a9750c92914895bb4ebdfa248255f4fd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9750c92914895bb4ebdfa248255f4fd3">&#9670;&#160;</a></span>get_instance_name_for_management_page()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enrol_plugin::get_instance_name_for_management_page </td>
+          <td>(</td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$instance</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How this enrolment method should be displayed on the "Enrolment methods" page. </p>
+<p>Some plugins may choose to add more information, for example, user role, dates, etc.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$instance</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../da/df1/classenrol__fee__plugin.html#ad004318e6eab1c3eacdba13fb999312c">enrol_fee_plugin</a>.</p>
 
 </div>
 </div>
@@ -2470,7 +2514,7 @@ $xmlcache&#160;</td><td class="memItemRight" valign="bottom"><b>$xmlcache</b></t
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000401">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 <a href="https://tracker.moodle.org/browse/MDL-35864" class="el">MDL-35864</a> - please use <a class="el" href="../../d6/d0e/classenrol__plugin.html#a43826b65b708c61e1d2a3b10ff4607d0" title="Is it possible to delete enrol instance via standard UI?">can_delete_instance()</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000396">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 <a href="https://tracker.moodle.org/browse/MDL-35864" class="el">MDL-35864</a> - please use <a class="el" href="../../d6/d0e/classenrol__plugin.html#a43826b65b708c61e1d2a3b10ff4607d0" title="Is it possible to delete enrol instance via standard UI?">can_delete_instance()</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -3412,8 +3456,8 @@ self::validate_plugin_data_context()}</dd></dl>
 
 </div>
 </div>
-<a id="aaafc60926e75e29b49851b1b836f719b" name="aaafc60926e75e29b49851b1b836f719b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaafc60926e75e29b49851b1b836f719b">&#9670;&#160;</a></span>update_communication()</h2>
+<a id="aa2905e0a68fe0c9916ac265ab0a4b962" name="aa2905e0a68fe0c9916ac265ab0a4b962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2905e0a68fe0c9916ac265ab0a4b962">&#9670;&#160;</a></span>update_communication()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3424,17 +3468,8 @@ self::validate_plugin_data_context()}</dd></dl>
         <tr>
           <td class="memname">enrol_plugin::update_communication </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$enrolmentinstanceid</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$action</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$course</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -3443,26 +3478,7 @@ self::validate_plugin_data_context()}</dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Update instance members. </p>
-<p>Update communication room membership for an instance action being performed.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$enrolmentinstanceid</td><td>ID of the enrolment instance </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>The update action being performed </td></tr>
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>The course object </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000402">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4.0. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d42/classcore__communication_1_1hook__listener.html#ad6d543a7f1ddb71d47e0a3571b2d9c39" title="Update the communication memberships for enrol status change.">core_communication\hook_listener\update_communication_memberships_for_enrol_status_change()</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000157">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80491" class="el">MDL-80491</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000397">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4.0. </dd></dl>
 
 </div>
 </div>
@@ -3894,7 +3910,7 @@ self::validate_plugin_data_context()}</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 9 2025 02:39:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 16 2025 03:11:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

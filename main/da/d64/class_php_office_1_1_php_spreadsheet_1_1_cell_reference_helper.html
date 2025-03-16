@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
   </td>
  </tr>
  </tbody>
@@ -92,12 +92,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a48667aa75385c2cf984cc51a5a946501" id="r_a48667aa75385c2cf984cc51a5a946501"><td class="memItemLeft" align="right" valign="top"><a id="a48667aa75385c2cf984cc51a5a946501" name="a48667aa75385c2cf984cc51a5a946501"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>cellAddressInDeleteRange</b> (string $cellAddress)</td></tr>
 <tr class="separator:a48667aa75385c2cf984cc51a5a946501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06203361849102ce13bc91a47514a5fc" id="r_a06203361849102ce13bc91a47514a5fc"><td class="memItemLeft" align="right" valign="top"><a id="a06203361849102ce13bc91a47514a5fc" name="a06203361849102ce13bc91a47514a5fc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>computeNewColumnIndex</b> (int $newColumnIndex, ?bool $topLeft)</td></tr>
+<tr class="separator:a06203361849102ce13bc91a47514a5fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5e106721a7577ccb22d511b71e6b56c" id="r_ad5e106721a7577ccb22d511b71e6b56c"><td class="memItemLeft" align="right" valign="top"><a id="ad5e106721a7577ccb22d511b71e6b56c" name="ad5e106721a7577ccb22d511b71e6b56c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>computeNewRowIndex</b> (int $newRowIndex, ?bool $topLeft)</td></tr>
+<tr class="separator:ad5e106721a7577ccb22d511b71e6b56c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc5f7e703b59ccb4c687ca64616070c7" id="r_abc5f7e703b59ccb4c687ca64616070c7"><td class="memItemLeft" align="right" valign="top"><a id="abc5f7e703b59ccb4c687ca64616070c7" name="abc5f7e703b59ccb4c687ca64616070c7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>refreshRequired</b> (string $beforeCellAddress, int $numberOfColumns, int $numberOfRows)</td></tr>
 <tr class="separator:abc5f7e703b59ccb4c687ca64616070c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad28298c165e12746df73c101223cac74" id="r_ad28298c165e12746df73c101223cac74"><td class="memItemLeft" align="right" valign="top"><a id="ad28298c165e12746df73c101223cac74" name="ad28298c165e12746df73c101223cac74"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>updateCellReference</b> (string $cellReference='A1', bool $includeAbsoluteReferences=false)</td></tr>
-<tr class="separator:ad28298c165e12746df73c101223cac74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af74a05ee8966e47bec035128a8c778d0" id="r_af74a05ee8966e47bec035128a8c778d0"><td class="memItemLeft" align="right" valign="top"><a id="af74a05ee8966e47bec035128a8c778d0" name="af74a05ee8966e47bec035128a8c778d0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>updateCellReference</b> (string $cellReference='A1', bool $includeAbsoluteReferences=false, bool $onlyAbsoluteReferences=false, ?bool $topLeft=null)</td></tr>
+<tr class="separator:af74a05ee8966e47bec035128a8c778d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -116,9 +122,18 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$beforeCellAddress<
 <tr class="memitem:a909dcb97101785046b27077c18a50639" id="r_a909dcb97101785046b27077c18a50639"><td class="memItemLeft" align="right" valign="top"><a id="a909dcb97101785046b27077c18a50639" name="a909dcb97101785046b27077c18a50639"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>$beforeColumn</b></td></tr>
 <tr class="separator:a909dcb97101785046b27077c18a50639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c2b2bf110341f4662ec11cd4f213658" id="r_a3c2b2bf110341f4662ec11cd4f213658"><td class="memItemLeft" align="right" valign="top"><a id="a3c2b2bf110341f4662ec11cd4f213658" name="a3c2b2bf110341f4662ec11cd4f213658"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>$beforeColumnAbsolute</b> = false</td></tr>
+<tr class="separator:a3c2b2bf110341f4662ec11cd4f213658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a421456bc9c07c7703a5fbbd286e13ab6" id="r_a421456bc9c07c7703a5fbbd286e13ab6"><td class="memItemLeft" align="right" valign="top"><a id="a421456bc9c07c7703a5fbbd286e13ab6" name="a421456bc9c07c7703a5fbbd286e13ab6"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$beforeColumnString</b></td></tr>
+<tr class="separator:a421456bc9c07c7703a5fbbd286e13ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33d4ef8926ae2c2b6315c6f9ab872340" id="r_a33d4ef8926ae2c2b6315c6f9ab872340"><td class="memItemLeft" align="right" valign="top"><a id="a33d4ef8926ae2c2b6315c6f9ab872340" name="a33d4ef8926ae2c2b6315c6f9ab872340"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>$beforeRow</b></td></tr>
 <tr class="separator:a33d4ef8926ae2c2b6315c6f9ab872340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f83e03b2508f7963be80db08d2ed367" id="r_a4f83e03b2508f7963be80db08d2ed367"><td class="memItemLeft" align="right" valign="top"><a id="a4f83e03b2508f7963be80db08d2ed367" name="a4f83e03b2508f7963be80db08d2ed367"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>$beforeRowAbsolute</b> = false</td></tr>
+<tr class="separator:a4f83e03b2508f7963be80db08d2ed367"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac006f8a7be3e4d7427a70d2bdc7a8b44" id="r_ac006f8a7be3e4d7427a70d2bdc7a8b44"><td class="memItemLeft" align="right" valign="top"><a id="ac006f8a7be3e4d7427a70d2bdc7a8b44" name="ac006f8a7be3e4d7427a70d2bdc7a8b44"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>$numberOfColumns</b></td></tr>
 <tr class="separator:ac006f8a7be3e4d7427a70d2bdc7a8b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,7 +147,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$numberOfRows</b></td>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 9 2025 02:42:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 16 2025 03:14:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

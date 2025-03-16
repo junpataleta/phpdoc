@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
   </td>
  </tr>
  </tbody>
@@ -92,8 +92,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>count</b> ()</td></tr>
 <tr class="memdesc:a92cb370ab520a8aaac0cb9bb045c22fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of entries on the stack. <br /></td></tr>
 <tr class="separator:a92cb370ab520a8aaac0cb9bb045c22fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02d00e406262a9be2ff45ccb1c2d500c" id="r_a02d00e406262a9be2ff45ccb1c2d500c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02d00e406262a9be2ff45ccb1c2d500c">getStackItem</a> (string $type, $value, ?string $reference=null)</td></tr>
-<tr class="separator:a02d00e406262a9be2ff45ccb1c2d500c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8c6a81b27ee1f7ca27894aeffb2064" id="r_a4b8c6a81b27ee1f7ca27894aeffb2064"><td class="memItemLeft" align="right" valign="top"><a id="a4b8c6a81b27ee1f7ca27894aeffb2064" name="a4b8c6a81b27ee1f7ca27894aeffb2064"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>getStackItem</b> (string $type, mixed $value, ?string $reference=null)</td></tr>
+<tr class="separator:a4b8c6a81b27ee1f7ca27894aeffb2064"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9bcd6595096fcea78d1d08b65fb461f" id="r_af9bcd6595096fcea78d1d08b65fb461f"><td class="memItemLeft" align="right" valign="top"><a id="af9bcd6595096fcea78d1d08b65fb461f" name="af9bcd6595096fcea78d1d08b65fb461f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>last</b> (int $n=1)</td></tr>
 <tr class="memdesc:af9bcd6595096fcea78d1d08b65fb461f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an entry from the stack without removing it. <br /></td></tr>
@@ -102,87 +103,21 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>pop</b> ()</td></tr>
 <tr class="memdesc:a6482ba48631eb2cbb1f0e4e7eccedf50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pop the last entry from the stack. <br /></td></tr>
 <tr class="separator:a6482ba48631eb2cbb1f0e4e7eccedf50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49c5ddf90c7cef742a89858c893912f3" id="r_a49c5ddf90c7cef742a89858c893912f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49c5ddf90c7cef742a89858c893912f3">push</a> (string $type, $value, ?string $reference=null)</td></tr>
-<tr class="memdesc:a49c5ddf90c7cef742a89858c893912f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push a new entry onto the stack.  <br /></td></tr>
-<tr class="separator:a49c5ddf90c7cef742a89858c893912f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49fa0ef7d6f24556c2f440f1a002d13e" id="r_a49fa0ef7d6f24556c2f440f1a002d13e"><td class="memItemLeft" align="right" valign="top"><a id="a49fa0ef7d6f24556c2f440f1a002d13e" name="a49fa0ef7d6f24556c2f440f1a002d13e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>push</b> (string $type, mixed $value, ?string $reference=null)</td></tr>
+<tr class="memdesc:a49fa0ef7d6f24556c2f440f1a002d13e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push a new entry onto the stack. <br /></td></tr>
+<tr class="separator:a49fa0ef7d6f24556c2f440f1a002d13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed16e1b2ae016426c0d562c66927b972" id="r_aed16e1b2ae016426c0d562c66927b972"><td class="memItemLeft" align="right" valign="top"><a id="aed16e1b2ae016426c0d562c66927b972" name="aed16e1b2ae016426c0d562c66927b972"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>pushStackItem</b> (array $stackItem)</td></tr>
 <tr class="separator:aed16e1b2ae016426c0d562c66927b972"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a02d00e406262a9be2ff45ccb1c2d500c" name="a02d00e406262a9be2ff45ccb1c2d500c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02d00e406262a9be2ff45ccb1c2d500c">&#9670;&#160;</a></span>getStackItem()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PhpOffice\PhpSpreadsheet\Calculation\Token\Stack::getStackItem </td>
-          <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$type</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$value</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">?string</td>          <td class="paramname"><span class="paramname"><em>$reference</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">mixed</td><td class="paramname">$value</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a49c5ddf90c7cef742a89858c893912f3" name="a49c5ddf90c7cef742a89858c893912f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49c5ddf90c7cef742a89858c893912f3">&#9670;&#160;</a></span>push()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PhpOffice\PhpSpreadsheet\Calculation\Token\Stack::push </td>
-          <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$type</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$value</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">?string</td>          <td class="paramname"><span class="paramname"><em>$reference</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Push a new entry onto the stack. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">mixed</td><td class="paramname">$value</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>lib/phpspreadsheet/phpspreadsheet/src/PhpSpreadsheet/Calculation/Token/<b>Stack.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 9 2025 02:42:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 16 2025 03:14:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

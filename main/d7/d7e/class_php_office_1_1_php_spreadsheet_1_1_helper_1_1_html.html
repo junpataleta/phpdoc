@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
   </td>
  </tr>
  </tbody>
@@ -75,7 +75,9 @@ $(function(){ initResizable(false); });
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../da/d6a/class_php_office_1_1_php_spreadsheet_1_1_helper_1_1_html-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">PhpOffice\PhpSpreadsheet\Helper\Html Class Reference</div></div>
 </div><!--header-->
@@ -83,9 +85,19 @@ $(function(){ initResizable(false); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a10a570fd6bbf84590b9a40f80f0b50c0" id="r_a10a570fd6bbf84590b9a40f80f0b50c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10a570fd6bbf84590b9a40f80f0b50c0">toRichTextObject</a> ($html)</td></tr>
-<tr class="memdesc:a10a570fd6bbf84590b9a40f80f0b50c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse HTML formatting and return the resulting RichText.  <br /></td></tr>
-<tr class="separator:a10a570fd6bbf84590b9a40f80f0b50c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab92626c033074c1bf8d76cb347d337d3" id="r_ab92626c033074c1bf8d76cb347d337d3"><td class="memItemLeft" align="right" valign="top"><a id="ab92626c033074c1bf8d76cb347d337d3" name="ab92626c033074c1bf8d76cb347d337d3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>addEndTagCallback</b> (string $tag, callable $callback)</td></tr>
+<tr class="separator:ab92626c033074c1bf8d76cb347d337d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a868e2fc869a9d695811f0412cadbd528" id="r_a868e2fc869a9d695811f0412cadbd528"><td class="memItemLeft" align="right" valign="top"><a id="a868e2fc869a9d695811f0412cadbd528" name="a868e2fc869a9d695811f0412cadbd528"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>addStartTagCallback</b> (string $tag, callable $callback)</td></tr>
+<tr class="separator:a868e2fc869a9d695811f0412cadbd528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8607b49f325fa5f23c21d55ef25f6148" id="r_a8607b49f325fa5f23c21d55ef25f6148"><td class="memItemLeft" align="right" valign="top"><a id="a8607b49f325fa5f23c21d55ef25f6148" name="a8607b49f325fa5f23c21d55ef25f6148"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>breakTag</b> ()</td></tr>
+<tr class="separator:a8607b49f325fa5f23c21d55ef25f6148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a521374b3e7faad4ec154deb9c2d580b5" id="r_a521374b3e7faad4ec154deb9c2d580b5"><td class="memItemLeft" align="right" valign="top"><a id="a521374b3e7faad4ec154deb9c2d580b5" name="a521374b3e7faad4ec154deb9c2d580b5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>toRichTextObject</b> (string $html, bool $preserveWhiteSpace=false)</td></tr>
+<tr class="memdesc:a521374b3e7faad4ec154deb9c2d580b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse HTML formatting and return the resulting RichText. <br /></td></tr>
+<tr class="separator:a521374b3e7faad4ec154deb9c2d580b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -93,11 +105,14 @@ Static Public Member Functions</h2></td></tr>
 static&#160;</td><td class="memItemRight" valign="bottom"><b>colourNameLookup</b> (string $colorName)</td></tr>
 <tr class="separator:afe4895c0aef2ff8d6fee11328dee14f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a0cf6024be49a4caaddca7e4618043199" id="r_a0cf6024be49a4caaddca7e4618043199"><td class="memItemLeft" align="right" valign="top"><a id="a0cf6024be49a4caaddca7e4618043199" name="a0cf6024be49a4caaddca7e4618043199"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$stringData</b> = ''</td></tr>
+<tr class="separator:a0cf6024be49a4caaddca7e4618043199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a8607b49f325fa5f23c21d55ef25f6148" id="r_a8607b49f325fa5f23c21d55ef25f6148"><td class="memItemLeft" align="right" valign="top"><a id="a8607b49f325fa5f23c21d55ef25f6148" name="a8607b49f325fa5f23c21d55ef25f6148"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>breakTag</b> ()</td></tr>
-<tr class="separator:a8607b49f325fa5f23c21d55ef25f6148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a5adfe76260e794bb9b4969cbd45ade" id="r_a5a5adfe76260e794bb9b4969cbd45ade"><td class="memItemLeft" align="right" valign="top"><a id="a5a5adfe76260e794bb9b4969cbd45ade" name="a5a5adfe76260e794bb9b4969cbd45ade"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>endBoldTag</b> ()</td></tr>
 <tr class="separator:a5a5adfe76260e794bb9b4969cbd45ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,46 +155,26 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aea18c1fb91ea9e6235b3cd3da55651d3" id="r_aea18c1fb91ea9e6235b3cd3da55651d3"><td class="memItemLeft" align="right" valign="top"><a id="aea18c1fb91ea9e6235b3cd3da55651d3" name="aea18c1fb91ea9e6235b3cd3da55651d3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>startUnderlineTag</b> ()</td></tr>
 <tr class="separator:aea18c1fb91ea9e6235b3cd3da55651d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a8ef3ee08199b45c1c7a9a4210521e0da" id="r_a8ef3ee08199b45c1c7a9a4210521e0da"><td class="memItemLeft" align="right" valign="top"><a id="a8ef3ee08199b45c1c7a9a4210521e0da" name="a8ef3ee08199b45c1c7a9a4210521e0da"></a>
+callable[] array&#160;</td><td class="memItemRight" valign="bottom"><b>$endTagCallbacks</b></td></tr>
+<tr class="separator:a8ef3ee08199b45c1c7a9a4210521e0da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d856805ee3e7df8a1fafde55563174f" id="r_a8d856805ee3e7df8a1fafde55563174f"><td class="memItemLeft" align="right" valign="top"><a id="a8d856805ee3e7df8a1fafde55563174f" name="a8d856805ee3e7df8a1fafde55563174f"></a>
+callable[] file home runner work phpdoc phpdoc moodle lib phpspreadsheet phpspreadsheet src PhpSpreadsheet Helper <a class="el" href="../../d7/d7e/class_php_office_1_1_php_spreadsheet_1_1_helper_1_1_html.html">Html</a> php array&#160;</td><td class="memItemRight" valign="bottom"><b>$startTagCallbacks</b></td></tr>
+<tr class="separator:a8d856805ee3e7df8a1fafde55563174f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37641f67be783a7332f55d71a9302cc1" id="r_a37641f67be783a7332f55d71a9302cc1"><td class="memItemLeft" align="right" valign="top"><a id="a37641f67be783a7332f55d71a9302cc1" name="a37641f67be783a7332f55d71a9302cc1"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>COLOUR_MAP</b></td></tr>
+<tr class="separator:a37641f67be783a7332f55d71a9302cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a10a570fd6bbf84590b9a40f80f0b50c0" name="a10a570fd6bbf84590b9a40f80f0b50c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10a570fd6bbf84590b9a40f80f0b50c0">&#9670;&#160;</a></span>toRichTextObject()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PhpOffice\PhpSpreadsheet\Helper\Html::toRichTextObject </td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$html</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Parse HTML formatting and return the resulting RichText. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$html</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">RichText</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>lib/phpspreadsheet/phpspreadsheet/src/PhpSpreadsheet/Helper/<b>Html.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 9 2025 02:42:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 16 2025 03:14:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

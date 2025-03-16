@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
   </td>
  </tr>
  </tbody>
@@ -101,15 +101,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af7126f671418c6e2cf8e3823c04646fb" id="r_af7126f671418c6e2cf8e3823c04646fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7126f671418c6e2cf8e3823c04646fb">canRead</a> (string $filename)</td></tr>
 <tr class="memdesc:af7126f671418c6e2cf8e3823c04646fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate that the current file is an HTML file.  <br /></td></tr>
 <tr class="separator:af7126f671418c6e2cf8e3823c04646fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e4ec854bd77442b166b9b6f80f5fb54" id="r_a9e4ec854bd77442b166b9b6f80f5fb54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e4ec854bd77442b166b9b6f80f5fb54">getBorderStyle</a> ($style)</td></tr>
-<tr class="memdesc:a9e4ec854bd77442b166b9b6f80f5fb54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map html border style to PhpSpreadsheet border style.  <br /></td></tr>
-<tr class="separator:a9e4ec854bd77442b166b9b6f80f5fb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a494eefeb20bd39ad3dd2d31518cc961a" id="r_a494eefeb20bd39ad3dd2d31518cc961a"><td class="memItemLeft" align="right" valign="top"><a id="a494eefeb20bd39ad3dd2d31518cc961a" name="a494eefeb20bd39ad3dd2d31518cc961a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>getBorderStyle</b> (string $style)</td></tr>
+<tr class="memdesc:a494eefeb20bd39ad3dd2d31518cc961a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map html border style to PhpSpreadsheet border style. <br /></td></tr>
+<tr class="separator:a494eefeb20bd39ad3dd2d31518cc961a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d25c3813ee4176a19ff1733906c1820" id="r_a0d25c3813ee4176a19ff1733906c1820"><td class="memItemLeft" align="right" valign="top"><a id="a0d25c3813ee4176a19ff1733906c1820" name="a0d25c3813ee4176a19ff1733906c1820"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>getIgnoreRowsWithNoCells</b> ()</td></tr>
+<tr class="separator:a0d25c3813ee4176a19ff1733906c1820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a544d089993bf5aab0a7e21f85f88b2d0" id="r_a544d089993bf5aab0a7e21f85f88b2d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ddc/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_base_reader.html#a544d089993bf5aab0a7e21f85f88b2d0">getIncludeCharts</a> ()</td></tr>
 <tr class="memdesc:a544d089993bf5aab0a7e21f85f88b2d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read charts in workbook?  <br /></td></tr>
 <tr class="separator:a544d089993bf5aab0a7e21f85f88b2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a647b1046990f59123d6990a9c55e688f" id="r_a647b1046990f59123d6990a9c55e688f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a647b1046990f59123d6990a9c55e688f">getInputEncoding</a> ()</td></tr>
-<tr class="memdesc:a647b1046990f59123d6990a9c55e688f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get input encoding.  <br /></td></tr>
-<tr class="separator:a647b1046990f59123d6990a9c55e688f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9835c6659ac3da1fdda5a2a9aea76d2" id="r_ae9835c6659ac3da1fdda5a2a9aea76d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ddc/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_base_reader.html#ae9835c6659ac3da1fdda5a2a9aea76d2">getLoadSheetsOnly</a> ()</td></tr>
 <tr class="memdesc:ae9835c6659ac3da1fdda5a2a9aea76d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get which sheets to load Returns either an array of worksheet names (the list of worksheets that should be loaded), or a null indicating that all worksheets in the workbook should be loaded.  <br /></td></tr>
 <tr class="separator:ae9835c6659ac3da1fdda5a2a9aea76d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,48 +129,64 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a93a00264cb6f272776328a4e9f49665a" id="r_a93a00264cb6f272776328a4e9f49665a"><td class="memItemLeft" align="right" valign="top"><a id="a93a00264cb6f272776328a4e9f49665a" name="a93a00264cb6f272776328a4e9f49665a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>getSecurityScannerOrThrow</b> ()</td></tr>
 <tr class="separator:a93a00264cb6f272776328a4e9f49665a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62156f3fe4de86564a4adf50df59bcdc" id="r_a62156f3fe4de86564a4adf50df59bcdc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62156f3fe4de86564a4adf50df59bcdc">getSheetIndex</a> ()</td></tr>
-<tr class="memdesc:a62156f3fe4de86564a4adf50df59bcdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sheet index.  <br /></td></tr>
+<tr class="memitem:a62156f3fe4de86564a4adf50df59bcdc" id="r_a62156f3fe4de86564a4adf50df59bcdc"><td class="memItemLeft" align="right" valign="top"><a id="a62156f3fe4de86564a4adf50df59bcdc" name="a62156f3fe4de86564a4adf50df59bcdc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>getSheetIndex</b> ()</td></tr>
+<tr class="memdesc:a62156f3fe4de86564a4adf50df59bcdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sheet index. <br /></td></tr>
 <tr class="separator:a62156f3fe4de86564a4adf50df59bcdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c5e92ba417ff9ce28d7392939564e50" id="r_a6c5e92ba417ff9ce28d7392939564e50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c5e92ba417ff9ce28d7392939564e50">getStyleColor</a> ($value)</td></tr>
-<tr class="memdesc:a6c5e92ba417ff9ce28d7392939564e50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if has #, so we can get clean hex.  <br /></td></tr>
-<tr class="separator:a6c5e92ba417ff9ce28d7392939564e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af867a894e219d41e52346d454fbe0a84" id="r_af867a894e219d41e52346d454fbe0a84"><td class="memItemLeft" align="right" valign="top"><a id="af867a894e219d41e52346d454fbe0a84" name="af867a894e219d41e52346d454fbe0a84"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>getStyleColor</b> (?string $value)</td></tr>
+<tr class="memdesc:af867a894e219d41e52346d454fbe0a84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if has #, so we can get clean hex. <br /></td></tr>
+<tr class="separator:af867a894e219d41e52346d454fbe0a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa269cdad22b865107cc6680cee3510d6" id="r_aa269cdad22b865107cc6680cee3510d6"><td class="memItemLeft" align="right" valign="top"><a id="aa269cdad22b865107cc6680cee3510d6" name="aa269cdad22b865107cc6680cee3510d6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>getValueBinder</b> ()</td></tr>
+<tr class="separator:aa269cdad22b865107cc6680cee3510d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbaa4f38cc53cb1862a87e7b5d572a5e" id="r_adbaa4f38cc53cb1862a87e7b5d572a5e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbaa4f38cc53cb1862a87e7b5d572a5e">listWorksheetInfo</a> (string $filename)</td></tr>
+<tr class="memdesc:adbaa4f38cc53cb1862a87e7b5d572a5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return worksheet info (Name, Last Column Letter, Last Column Index, Total Rows, Total Columns).  <br /></td></tr>
+<tr class="separator:adbaa4f38cc53cb1862a87e7b5d572a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0621e5e9da0056e409473d3632fdcb4c" id="r_a0621e5e9da0056e409473d3632fdcb4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ddc/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_base_reader.html#a0621e5e9da0056e409473d3632fdcb4c">listWorksheetNames</a> (string $filename)</td></tr>
+<tr class="memdesc:a0621e5e9da0056e409473d3632fdcb4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns names of the worksheets from a file, possibly without parsing the whole file to a Spreadsheet object.  <br /></td></tr>
+<tr class="separator:a0621e5e9da0056e409473d3632fdcb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cb8b607444dd26c0ef57beab6b3dbd5" id="r_a4cb8b607444dd26c0ef57beab6b3dbd5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ddc/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_base_reader.html#a4cb8b607444dd26c0ef57beab6b3dbd5">load</a> (string $filename, int $flags=0)</td></tr>
 <tr class="memdesc:a4cb8b607444dd26c0ef57beab6b3dbd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads Spreadsheet from file.  <br /></td></tr>
 <tr class="separator:a4cb8b607444dd26c0ef57beab6b3dbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae97f81b11a387514184de96279719087" id="r_ae97f81b11a387514184de96279719087"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae97f81b11a387514184de96279719087">loadFromString</a> ($content, ?Spreadsheet $spreadsheet=null)</td></tr>
-<tr class="memdesc:ae97f81b11a387514184de96279719087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spreadsheet from content.  <br /></td></tr>
-<tr class="separator:ae97f81b11a387514184de96279719087"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9e498b15ba39c7a78d234f2323750ef" id="r_ac9e498b15ba39c7a78d234f2323750ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9e498b15ba39c7a78d234f2323750ef">loadIntoExisting</a> ($filename, Spreadsheet $spreadsheet)</td></tr>
-<tr class="memdesc:ac9e498b15ba39c7a78d234f2323750ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads PhpSpreadsheet from file into PhpSpreadsheet instance.  <br /></td></tr>
-<tr class="separator:ac9e498b15ba39c7a78d234f2323750ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae43a3f2bfdb456abf12e583fd52846fc" id="r_ae43a3f2bfdb456abf12e583fd52846fc"><td class="memItemLeft" align="right" valign="top"><a id="ae43a3f2bfdb456abf12e583fd52846fc" name="ae43a3f2bfdb456abf12e583fd52846fc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>loadFromString</b> (string $content, ?Spreadsheet $spreadsheet=null)</td></tr>
+<tr class="memdesc:ae43a3f2bfdb456abf12e583fd52846fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spreadsheet from content. <br /></td></tr>
+<tr class="separator:ae43a3f2bfdb456abf12e583fd52846fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe28e8e374c0aeae614ad10d08ad20c7" id="r_abe28e8e374c0aeae614ad10d08ad20c7"><td class="memItemLeft" align="right" valign="top"><a id="abe28e8e374c0aeae614ad10d08ad20c7" name="abe28e8e374c0aeae614ad10d08ad20c7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>loadIntoExisting</b> (string $filename, Spreadsheet $spreadsheet)</td></tr>
+<tr class="memdesc:abe28e8e374c0aeae614ad10d08ad20c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads PhpSpreadsheet from file into PhpSpreadsheet instance. <br /></td></tr>
+<tr class="separator:abe28e8e374c0aeae614ad10d08ad20c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2412c98b847e2ace83b6da5796bff0bc" id="r_a2412c98b847e2ace83b6da5796bff0bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2412c98b847e2ace83b6da5796bff0bc">loadSpreadsheetFromFile</a> (string $filename)</td></tr>
 <tr class="memdesc:a2412c98b847e2ace83b6da5796bff0bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads Spreadsheet from file.  <br /></td></tr>
 <tr class="separator:a2412c98b847e2ace83b6da5796bff0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af452156872fd8474a6945106737198e7" id="r_af452156872fd8474a6945106737198e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ddc/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_base_reader.html#af452156872fd8474a6945106737198e7">setIncludeCharts</a> ($includeCharts)</td></tr>
-<tr class="memdesc:af452156872fd8474a6945106737198e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set read charts in workbook Set to true, to advise the Reader to include any charts that exist in the workbook.  <br /></td></tr>
-<tr class="separator:af452156872fd8474a6945106737198e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a144554e25a98917af94f64fd236f83bf" id="r_a144554e25a98917af94f64fd236f83bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a144554e25a98917af94f64fd236f83bf">setInputEncoding</a> ($inputEncoding)</td></tr>
-<tr class="memdesc:a144554e25a98917af94f64fd236f83bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set input encoding.  <br /></td></tr>
-<tr class="separator:a144554e25a98917af94f64fd236f83bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aed6eab99b4e1b0c7426e8162b51d7d" id="r_a8aed6eab99b4e1b0c7426e8162b51d7d"><td class="memItemLeft" align="right" valign="top"><a id="a8aed6eab99b4e1b0c7426e8162b51d7d" name="a8aed6eab99b4e1b0c7426e8162b51d7d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>setIgnoreRowsWithNoCells</b> (bool $ignoreRowsWithNoCells)</td></tr>
+<tr class="separator:a8aed6eab99b4e1b0c7426e8162b51d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abec6b07dd42c1f884d365ab51f0f9b26" id="r_abec6b07dd42c1f884d365ab51f0f9b26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ddc/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_base_reader.html#abec6b07dd42c1f884d365ab51f0f9b26">setIncludeCharts</a> (bool $includeCharts)</td></tr>
+<tr class="memdesc:abec6b07dd42c1f884d365ab51f0f9b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set read charts in workbook Set to true, to advise the Reader to include any charts that exist in the workbook.  <br /></td></tr>
+<tr class="separator:abec6b07dd42c1f884d365ab51f0f9b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d1c03196aa2c3c2775f3dc701b806eb" id="r_a4d1c03196aa2c3c2775f3dc701b806eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ddc/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_base_reader.html#a4d1c03196aa2c3c2775f3dc701b806eb">setLoadAllSheets</a> ()</td></tr>
 <tr class="memdesc:a4d1c03196aa2c3c2775f3dc701b806eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set all sheets to load Tells the Reader to load all worksheets from the workbook.  <br /></td></tr>
 <tr class="separator:a4d1c03196aa2c3c2775f3dc701b806eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5ed7d99db5370b9aa97a92c92ae46e8" id="r_ae5ed7d99db5370b9aa97a92c92ae46e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ddc/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_base_reader.html#ae5ed7d99db5370b9aa97a92c92ae46e8">setLoadSheetsOnly</a> ($sheetList)</td></tr>
-<tr class="memdesc:ae5ed7d99db5370b9aa97a92c92ae46e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set which sheets to load.  <br /></td></tr>
-<tr class="separator:ae5ed7d99db5370b9aa97a92c92ae46e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5906d2ec2c59e9f46960daf7bd164b3" id="r_ab5906d2ec2c59e9f46960daf7bd164b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ddc/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_base_reader.html#ab5906d2ec2c59e9f46960daf7bd164b3">setReadDataOnly</a> ($readCellValuesOnly)</td></tr>
-<tr class="memdesc:ab5906d2ec2c59e9f46960daf7bd164b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set read data only Set to true, to advise the Reader only to read data values for cells, and to ignore any formatting or structural information (like merges).  <br /></td></tr>
-<tr class="separator:ab5906d2ec2c59e9f46960daf7bd164b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeec96ee8f4658ac06790278a09f4d142" id="r_aeec96ee8f4658ac06790278a09f4d142"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ddc/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_base_reader.html#aeec96ee8f4658ac06790278a09f4d142">setReadEmptyCells</a> ($readEmptyCells)</td></tr>
-<tr class="memdesc:aeec96ee8f4658ac06790278a09f4d142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set read empty cells Set to true (the default) to advise the Reader read data values for all cells, irrespective of value.  <br /></td></tr>
-<tr class="separator:aeec96ee8f4658ac06790278a09f4d142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad20e88b65d8a031a1ab6118284c9f244" id="r_ad20e88b65d8a031a1ab6118284c9f244"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ddc/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_base_reader.html#ad20e88b65d8a031a1ab6118284c9f244">setLoadSheetsOnly</a> (string|array|null $sheetList)</td></tr>
+<tr class="memdesc:ad20e88b65d8a031a1ab6118284c9f244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set which sheets to load.  <br /></td></tr>
+<tr class="separator:ad20e88b65d8a031a1ab6118284c9f244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86319b885bf63ac027c307431e0299f5" id="r_a86319b885bf63ac027c307431e0299f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ddc/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_base_reader.html#a86319b885bf63ac027c307431e0299f5">setReadDataOnly</a> (bool $readCellValuesOnly)</td></tr>
+<tr class="memdesc:a86319b885bf63ac027c307431e0299f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set read data only Set to true, to advise the Reader only to read data values for cells, and to ignore any formatting or structural information (like merges).  <br /></td></tr>
+<tr class="separator:a86319b885bf63ac027c307431e0299f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a312dcff7a784d54fe106080517eacad0" id="r_a312dcff7a784d54fe106080517eacad0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ddc/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_base_reader.html#a312dcff7a784d54fe106080517eacad0">setReadEmptyCells</a> (bool $readEmptyCells)</td></tr>
+<tr class="memdesc:a312dcff7a784d54fe106080517eacad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set read empty cells Set to true (the default) to advise the Reader read data values for all cells, irrespective of value.  <br /></td></tr>
+<tr class="separator:a312dcff7a784d54fe106080517eacad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8ee4ae4aebab2c3d2ae5a9adaaf666b" id="r_aa8ee4ae4aebab2c3d2ae5a9adaaf666b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ddc/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_base_reader.html#aa8ee4ae4aebab2c3d2ae5a9adaaf666b">setReadFilter</a> (<a class="el" href="../../dc/dc7/interface_php_office_1_1_php_spreadsheet_1_1_reader_1_1_i_read_filter.html">IReadFilter</a> $readFilter)</td></tr>
 <tr class="memdesc:aa8ee4ae4aebab2c3d2ae5a9adaaf666b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set read filter.  <br /></td></tr>
 <tr class="separator:aa8ee4ae4aebab2c3d2ae5a9adaaf666b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad295b66e02fdb91d72f3daa474f5f5b0" id="r_ad295b66e02fdb91d72f3daa474f5f5b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad295b66e02fdb91d72f3daa474f5f5b0">setSheetIndex</a> ($sheetIndex)</td></tr>
-<tr class="memdesc:ad295b66e02fdb91d72f3daa474f5f5b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set sheet index.  <br /></td></tr>
-<tr class="separator:ad295b66e02fdb91d72f3daa474f5f5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd0fc7f5f76d809abc576a5003f9ee40" id="r_afd0fc7f5f76d809abc576a5003f9ee40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd0fc7f5f76d809abc576a5003f9ee40">setSheetIndex</a> (int $sheetIndex)</td></tr>
+<tr class="memdesc:afd0fc7f5f76d809abc576a5003f9ee40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set sheet index.  <br /></td></tr>
+<tr class="separator:afd0fc7f5f76d809abc576a5003f9ee40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a5c8779352fd7bcf98f2dea556fc21a" id="r_a2a5c8779352fd7bcf98f2dea556fc21a"><td class="memItemLeft" align="right" valign="top"><a id="a2a5c8779352fd7bcf98f2dea556fc21a" name="a2a5c8779352fd7bcf98f2dea556fc21a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>setValueBinder</b> (?<a class="el" href="../../db/d49/interface_php_office_1_1_php_spreadsheet_1_1_cell_1_1_i_value_binder.html">IValueBinder</a> $valueBinder)</td></tr>
+<tr class="separator:a2a5c8779352fd7bcf98f2dea556fc21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -179,27 +196,32 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>getBorderMappings</
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a33e3034c23b0e33e4fa56b3c6cdc1211" id="r_a33e3034c23b0e33e4fa56b3c6cdc1211"><td class="memItemLeft" align="right" valign="top"><a id="a33e3034c23b0e33e4fa56b3c6cdc1211" name="a33e3034c23b0e33e4fa56b3c6cdc1211"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>IGNORE_EMPTY_CELLS</b> = 4</td></tr>
+<tr class="memitem:a7e78cb49f9a9fbc49ea6665561a453e2" id="r_a7e78cb49f9a9fbc49ea6665561a453e2"><td class="memItemLeft" align="right" valign="top"><a id="a7e78cb49f9a9fbc49ea6665561a453e2" name="a7e78cb49f9a9fbc49ea6665561a453e2"></a>
+if(in_array(mb_strtoupper( $cellContent), self::$falseTrueArray[1], true)) if(in_array(mb_strtoupper($cellContent), self::$falseTrueArray[0], true)) return&#160;</td><td class="memItemRight" valign="bottom"><b>$cellContent</b></td></tr>
+<tr class="separator:a7e78cb49f9a9fbc49ea6665561a453e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33e3034c23b0e33e4fa56b3c6cdc1211" id="r_a33e3034c23b0e33e4fa56b3c6cdc1211"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d39/interface_php_office_1_1_php_spreadsheet_1_1_reader_1_1_i_reader.html#a33e3034c23b0e33e4fa56b3c6cdc1211">IGNORE_EMPTY_CELLS</a> = 4</td></tr>
+<tr class="memdesc:a33e3034c23b0e33e4fa56b3c6cdc1211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag used to ignore empty cells when reading.  <br /></td></tr>
 <tr class="separator:a33e3034c23b0e33e4fa56b3c6cdc1211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5ee858bda2a8b06f9d01c17213fc55a" id="r_ad5ee858bda2a8b06f9d01c17213fc55a"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d39/interface_php_office_1_1_php_spreadsheet_1_1_reader_1_1_i_reader.html#ad5ee858bda2a8b06f9d01c17213fc55a">IGNORE_ROWS_WITH_NO_CELLS</a> = 8</td></tr>
+<tr class="memdesc:ad5ee858bda2a8b06f9d01c17213fc55a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag used to ignore rows without cells.  <br /></td></tr>
+<tr class="separator:ad5ee858bda2a8b06f9d01c17213fc55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb64d633b1a7be4c20607cda78e4cab3" id="r_aeb64d633b1a7be4c20607cda78e4cab3"><td class="memItemLeft" align="right" valign="top"><a id="aeb64d633b1a7be4c20607cda78e4cab3" name="aeb64d633b1a7be4c20607cda78e4cab3"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>LOAD_WITH_CHARTS</b> = 1</td></tr>
 <tr class="separator:aeb64d633b1a7be4c20607cda78e4cab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae149ed27ffbf781745137f6091d098e7" id="r_ae149ed27ffbf781745137f6091d098e7"><td class="memItemLeft" align="right" valign="top"><a id="ae149ed27ffbf781745137f6091d098e7" name="ae149ed27ffbf781745137f6091d098e7"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>READ_DATA_ONLY</b> = 2</td></tr>
+<tr class="memdesc:ae149ed27ffbf781745137f6091d098e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag used to read data only, not style or structure information. <br /></td></tr>
 <tr class="separator:ae149ed27ffbf781745137f6091d098e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61afdb2e8b9a490052fcd562ca761304" id="r_a61afdb2e8b9a490052fcd562ca761304"><td class="memItemLeft" align="right" valign="top"><a id="a61afdb2e8b9a490052fcd562ca761304" name="a61afdb2e8b9a490052fcd562ca761304"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>SKIP_EMPTY_CELLS</b> = 4</td></tr>
-<tr class="separator:a61afdb2e8b9a490052fcd562ca761304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06d4fdfe529ed7359854d882cad71055" id="r_a06d4fdfe529ed7359854d882cad71055"><td class="memItemLeft" align="right" valign="top"><a id="a06d4fdfe529ed7359854d882cad71055" name="a06d4fdfe529ed7359854d882cad71055"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>TEST_SAMPLE_SIZE</b> = 2048</td></tr>
 <tr class="separator:a06d4fdfe529ed7359854d882cad71055"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a5579383c40fe962b55e499975f867e88" id="r_a5579383c40fe962b55e499975f867e88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5579383c40fe962b55e499975f867e88">flushCell</a> (<a class="el" href="../../d9/dd5/class_php_office_1_1_php_spreadsheet_1_1_worksheet_1_1_worksheet.html">Worksheet</a> $sheet, $column, $row, &amp;$cellContent, array $attributeArray)</td></tr>
-<tr class="memdesc:a5579383c40fe962b55e499975f867e88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush cell.  <br /></td></tr>
-<tr class="separator:a5579383c40fe962b55e499975f867e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56175808f2e83f7c0628c791cedf1b9e" id="r_a56175808f2e83f7c0628c791cedf1b9e"><td class="memItemLeft" align="right" valign="top"><a id="a56175808f2e83f7c0628c791cedf1b9e" name="a56175808f2e83f7c0628c791cedf1b9e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>flushCell</b> (<a class="el" href="../../d9/dd5/class_php_office_1_1_php_spreadsheet_1_1_worksheet_1_1_worksheet.html">Worksheet</a> $sheet, string $column, int|string $row, mixed &amp;$cellContent, array $attributeArray)</td></tr>
+<tr class="memdesc:a56175808f2e83f7c0628c791cedf1b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush cell. <br /></td></tr>
+<tr class="separator:a56175808f2e83f7c0628c791cedf1b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a319f7ec5a50bae1d1e43e33fba709c57" id="r_a319f7ec5a50bae1d1e43e33fba709c57"><td class="memItemLeft" align="right" valign="top"><a id="a319f7ec5a50bae1d1e43e33fba709c57" name="a319f7ec5a50bae1d1e43e33fba709c57"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>getTableStartColumn</b> ()</td></tr>
 <tr class="separator:a319f7ec5a50bae1d1e43e33fba709c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,6 +254,9 @@ resource&#160;</td><td class="memItemRight" valign="bottom"><b>$fileHandle</b></
 array&#160;</td><td class="memItemRight" valign="bottom"><b>$formats</b></td></tr>
 <tr class="memdesc:aab4f30948d7f0965884b6717591c163e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats. <br /></td></tr>
 <tr class="separator:aab4f30948d7f0965884b6717591c163e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54ca64e819a343688491676c14fc1e56" id="r_a54ca64e819a343688491676c14fc1e56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ddc/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_base_reader.html#a54ca64e819a343688491676c14fc1e56">$ignoreRowsWithNoCells</a> = false</td></tr>
+<tr class="memdesc:a54ca64e819a343688491676c14fc1e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ignore rows with no cells?  <br /></td></tr>
+<tr class="separator:a54ca64e819a343688491676c14fc1e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accbef37d0964e79720647679a950ea29" id="r_accbef37d0964e79720647679a950ea29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ddc/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_base_reader.html#accbef37d0964e79720647679a950ea29">$includeCharts</a> = false</td></tr>
 <tr class="memdesc:accbef37d0964e79720647679a950ea29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read charts that are defined in the workbook?  <br /></td></tr>
 <tr class="separator:accbef37d0964e79720647679a950ea29"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -239,9 +264,9 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$formats</b></td></t
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$inputEncoding</b> = 'ANSI'</td></tr>
 <tr class="memdesc:ac40af35972aec4f3a23d3ff6166b2798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input encoding. <br /></td></tr>
 <tr class="separator:ac40af35972aec4f3a23d3ff6166b2798"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4177db14d531e4ebf4c99cd11cbf571" id="r_ab4177db14d531e4ebf4c99cd11cbf571"><td class="memItemLeft" align="right" valign="top">null string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ddc/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_base_reader.html#ab4177db14d531e4ebf4c99cd11cbf571">$loadSheetsOnly</a></td></tr>
-<tr class="memdesc:ab4177db14d531e4ebf4c99cd11cbf571"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restrict which sheets should be loaded?  <br /></td></tr>
-<tr class="separator:ab4177db14d531e4ebf4c99cd11cbf571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69f0c7c4e32f2eb45e55ee9b5a88d944" id="r_a69f0c7c4e32f2eb45e55ee9b5a88d944"><td class="memItemLeft" align="right" valign="top">null string[] array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ddc/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_base_reader.html#a69f0c7c4e32f2eb45e55ee9b5a88d944">$loadSheetsOnly</a> = null</td></tr>
+<tr class="memdesc:a69f0c7c4e32f2eb45e55ee9b5a88d944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restrict which sheets should be loaded?  <br /></td></tr>
+<tr class="separator:a69f0c7c4e32f2eb45e55ee9b5a88d944"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a665e34c3091c09fb10885f64abf90113" id="r_a665e34c3091c09fb10885f64abf90113"><td class="memItemLeft" align="right" valign="top"><a id="a665e34c3091c09fb10885f64abf90113" name="a665e34c3091c09fb10885f64abf90113"></a>
 array&#160;</td><td class="memItemRight" valign="bottom"><b>$nestedColumn</b> = ['A']</td></tr>
 <tr class="separator:a665e34c3091c09fb10885f64abf90113"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,7 +284,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$readDataOnly</b> = f
 array&#160;</td><td class="memItemRight" valign="bottom"><b>$rowspan</b> = []</td></tr>
 <tr class="separator:a64ffeb476c689a9d406a9b38826d7212"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a869a822bee9b759658becdae9a989633" id="r_a869a822bee9b759658becdae9a989633"><td class="memItemLeft" align="right" valign="top"><a id="a869a822bee9b759658becdae9a989633" name="a869a822bee9b759658becdae9a989633"></a>
-<a class="el" href="../../d7/d52/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_security_1_1_xml_scanner.html">XmlScanner</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$securityScanner</b></td></tr>
+XmlScanner&#160;</td><td class="memItemRight" valign="bottom"><b>$securityScanner</b> = null</td></tr>
 <tr class="separator:a869a822bee9b759658becdae9a989633"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa0dd13f6804a6a51e0fffdea69abad3" id="r_afa0dd13f6804a6a51e0fffdea69abad3"><td class="memItemLeft" align="right" valign="top"><a id="afa0dd13f6804a6a51e0fffdea69abad3" name="afa0dd13f6804a6a51e0fffdea69abad3"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>$sheetIndex</b> = 0</td></tr>
@@ -268,6 +293,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$sheetIndex</b> = 0</t
 <tr class="memitem:aa5781872a54bba0f800059c8842a47ad" id="r_aa5781872a54bba0f800059c8842a47ad"><td class="memItemLeft" align="right" valign="top"><a id="aa5781872a54bba0f800059c8842a47ad" name="aa5781872a54bba0f800059c8842a47ad"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</td></tr>
 <tr class="separator:aa5781872a54bba0f800059c8842a47ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28ad4ba9bd51aabbc324784148af273e" id="r_a28ad4ba9bd51aabbc324784148af273e"><td class="memItemLeft" align="right" valign="top"><a id="a28ad4ba9bd51aabbc324784148af273e" name="a28ad4ba9bd51aabbc324784148af273e"></a>
+<a class="el" href="../../db/d49/interface_php_office_1_1_php_spreadsheet_1_1_cell_1_1_i_value_binder.html">IValueBinder</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$valueBinder</b> = null</td></tr>
+<tr class="separator:a28ad4ba9bd51aabbc324784148af273e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a666baf0c9c641a1e69d9b28e1fa6b646" name="a666baf0c9c641a1e69d9b28e1fa6b646"></a>
@@ -313,91 +341,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
 
 </div>
 </div>
-<a id="a5579383c40fe962b55e499975f867e88" name="a5579383c40fe962b55e499975f867e88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5579383c40fe962b55e499975f867e88">&#9670;&#160;</a></span>flushCell()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">PhpOffice\PhpSpreadsheet\Reader\Html::flushCell </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d9/dd5/class_php_office_1_1_php_spreadsheet_1_1_worksheet_1_1_worksheet.html">Worksheet</a></td>          <td class="paramname"><span class="paramname"><em>$sheet</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$column</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$row</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&amp;</td>          <td class="paramname"><span class="paramname"><em>$cellContent</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$attributeArray</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Flush cell. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$column</td><td></td></tr>
-    <tr><td class="paramtype">int&#160;|&#160;string</td><td class="paramname">$row</td><td></td></tr>
-    <tr><td class="paramtype">mixed</td><td class="paramname">$cellContent</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a9e4ec854bd77442b166b9b6f80f5fb54" name="a9e4ec854bd77442b166b9b6f80f5fb54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e4ec854bd77442b166b9b6f80f5fb54">&#9670;&#160;</a></span>getBorderStyle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PhpOffice\PhpSpreadsheet\Reader\Html::getBorderStyle </td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$style</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Map html border style to PhpSpreadsheet border style. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$style</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">null|string</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a544d089993bf5aab0a7e21f85f88b2d0" name="a544d089993bf5aab0a7e21f85f88b2d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a544d089993bf5aab0a7e21f85f88b2d0">&#9670;&#160;</a></span>getIncludeCharts()</h2>
 
@@ -422,42 +365,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
 </div><div class="memdoc">
 
 <p>Read charts in workbook? </p>
-<p>If this is true, then the Reader will include any charts that exist in the workbook. Note that a ReadDataOnly value of false overrides, and charts won't be read regardless of the IncludeCharts value. If false (the default) it will ignore any charts defined in the workbook file.</p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>If this is true, then the Reader will include any charts that exist in the workbook. Note that a ReadDataOnly value of false overrides, and charts won't be read regardless of the IncludeCharts value. If false (the default) it will ignore any charts defined in the workbook file. </p>
 
 <p>Implements <a class="el" href="../../d8/d39/interface_php_office_1_1_php_spreadsheet_1_1_reader_1_1_i_reader.html#aec745b1b9bbab2abf42826171dfb4320">PhpOffice\PhpSpreadsheet\Reader\IReader</a>.</p>
-
-</div>
-</div>
-<a id="a647b1046990f59123d6990a9c55e688f" name="a647b1046990f59123d6990a9c55e688f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a647b1046990f59123d6990a9c55e688f">&#9670;&#160;</a></span>getInputEncoding()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PhpOffice\PhpSpreadsheet\Reader\Html::getInputEncoding </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get input encoding. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<p>@codeCoverageIgnore</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000956">Deprecated</a></b></dt><dd>no use is made of this property </dd></dl>
 
 </div>
 </div>
@@ -485,12 +395,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
 </div><div class="memdoc">
 
 <p>Get which sheets to load Returns either an array of worksheet names (the list of worksheets that should be loaded), or a null indicating that all worksheets in the workbook should be loaded. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">mixed</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
 <p>Implements <a class="el" href="../../d8/d39/interface_php_office_1_1_php_spreadsheet_1_1_reader_1_1_i_reader.html#ac38fbd0647898af545365ed8f0ed9c04">PhpOffice\PhpSpreadsheet\Reader\IReader</a>.</p>
 
@@ -520,13 +424,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
 </div><div class="memdoc">
 
 <p>Read data only? </p>
-<p>If this is true, then the Reader will only read data values for cells, it will not read any formatting or structural information (like merges). If false (the default) it will read data and formatting.</p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>If this is true, then the Reader will only read data values for cells, it will not read any formatting or structural information (like merges). If false (the default) it will read data and formatting. </p>
 
 <p>Implements <a class="el" href="../../d8/d39/interface_php_office_1_1_php_spreadsheet_1_1_reader_1_1_i_reader.html#af0df6572c5c26e181b138a4964c928b8">PhpOffice\PhpSpreadsheet\Reader\IReader</a>.</p>
 
@@ -556,13 +454,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
 </div><div class="memdoc">
 
 <p>Read empty cells? </p>
-<p>If this is true (the default), then the Reader will read data values for all cells, irrespective of value. If false it will not read data for cells containing a null value or an empty string.</p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>If this is true (the default), then the Reader will read data values for all cells, irrespective of value. If false it will not read data for cells containing a null value or an empty string. </p>
 
 <p>Implements <a class="el" href="../../d8/d39/interface_php_office_1_1_php_spreadsheet_1_1_reader_1_1_i_reader.html#abfebee86fb7d1918caf18cc8ff32c77c">PhpOffice\PhpSpreadsheet\Reader\IReader</a>.</p>
 
@@ -592,70 +484,59 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
 </div><div class="memdoc">
 
 <p>Read filter. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">IReadFilter</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
 <p>Implements <a class="el" href="../../d8/d39/interface_php_office_1_1_php_spreadsheet_1_1_reader_1_1_i_reader.html#a3ae7f83eff2437f574fc0627d309cef2">PhpOffice\PhpSpreadsheet\Reader\IReader</a>.</p>
 
 </div>
 </div>
-<a id="a62156f3fe4de86564a4adf50df59bcdc" name="a62156f3fe4de86564a4adf50df59bcdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62156f3fe4de86564a4adf50df59bcdc">&#9670;&#160;</a></span>getSheetIndex()</h2>
+<a id="adbaa4f38cc53cb1862a87e7b5d572a5e" name="adbaa4f38cc53cb1862a87e7b5d572a5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbaa4f38cc53cb1862a87e7b5d572a5e">&#9670;&#160;</a></span>listWorksheetInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PhpOffice\PhpSpreadsheet\Reader\Html::getSheetIndex </td>
+          <td class="memname">PhpOffice\PhpSpreadsheet\Reader\Html::listWorksheetInfo </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$filename</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get sheet index. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">int</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Return worksheet info (Name, Last Column Letter, Last Column Index, Total Rows, Total Columns). </p>
+
+<p>Reimplemented from <a class="el" href="../../d0/ddc/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_base_reader.html#a1891d04b0a24a14048871eece4218f3c">PhpOffice\PhpSpreadsheet\Reader\BaseReader</a>.</p>
 
 </div>
 </div>
-<a id="a6c5e92ba417ff9ce28d7392939564e50" name="a6c5e92ba417ff9ce28d7392939564e50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c5e92ba417ff9ce28d7392939564e50">&#9670;&#160;</a></span>getStyleColor()</h2>
+<a id="a0621e5e9da0056e409473d3632fdcb4c" name="a0621e5e9da0056e409473d3632fdcb4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0621e5e9da0056e409473d3632fdcb4c">&#9670;&#160;</a></span>listWorksheetNames()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">PhpOffice\PhpSpreadsheet\Reader\Html::getStyleColor </td>
+          <td class="memname">PhpOffice\PhpSpreadsheet\Reader\BaseReader::listWorksheetNames </td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$value</em></span></td><td>)</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$filename</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Check if has #, so we can get clean hex. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">mixed</td><td class="paramname">$value</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">null|string</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Returns names of the worksheets from a file, possibly without parsing the whole file to a Spreadsheet object. </p>
+<p>Readers will often have a more efficient method with which they can override this method. </p>
+
+<p>Reimplemented in <a class="el" href="../../d2/d17/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_gnumeric.html#ab0c76e341f3b97efbeafdc6746891ed7">PhpOffice\PhpSpreadsheet\Reader\Gnumeric</a>, <a class="el" href="../../d5/d22/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_ods.html#a84dfecb5f1a43477991996fc294e2c0f">PhpOffice\PhpSpreadsheet\Reader\Ods</a>, <a class="el" href="../../de/d9a/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_xlsx.html#adac8a447b8ec22f5a3419565e9ed400c">PhpOffice\PhpSpreadsheet\Reader\Xlsx</a>, and <a class="el" href="../../d5/d48/class_php_office_1_1_php_spreadsheet_1_1_reader_1_1_xml.html#ae1284e80b956d764270025274702eff4">PhpOffice\PhpSpreadsheet\Reader\Xml</a>.</p>
 
 </div>
 </div>
@@ -698,70 +579,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
 
 </div>
 </div>
-<a id="ae97f81b11a387514184de96279719087" name="ae97f81b11a387514184de96279719087"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae97f81b11a387514184de96279719087">&#9670;&#160;</a></span>loadFromString()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PhpOffice\PhpSpreadsheet\Reader\Html::loadFromString </td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$content</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">?Spreadsheet</td>          <td class="paramname"><span class="paramname"><em>$spreadsheet</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Spreadsheet from content. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$content</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ac9e498b15ba39c7a78d234f2323750ef" name="ac9e498b15ba39c7a78d234f2323750ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9e498b15ba39c7a78d234f2323750ef">&#9670;&#160;</a></span>loadIntoExisting()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PhpOffice\PhpSpreadsheet\Reader\Html::loadIntoExisting </td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$filename</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Spreadsheet</td>          <td class="paramname"><span class="paramname"><em>$spreadsheet</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Loads PhpSpreadsheet from file into PhpSpreadsheet instance. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$filename</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">Spreadsheet</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a2412c98b847e2ace83b6da5796bff0bc" name="a2412c98b847e2ace83b6da5796bff0bc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2412c98b847e2ace83b6da5796bff0bc">&#9670;&#160;</a></span>loadSpreadsheetFromFile()</h2>
 
@@ -783,8 +600,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
 
 </div>
 </div>
-<a id="af452156872fd8474a6945106737198e7" name="af452156872fd8474a6945106737198e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af452156872fd8474a6945106737198e7">&#9670;&#160;</a></span>setIncludeCharts()</h2>
+<a id="abec6b07dd42c1f884d365ab51f0f9b26" name="abec6b07dd42c1f884d365ab51f0f9b26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abec6b07dd42c1f884d365ab51f0f9b26">&#9670;&#160;</a></span>setIncludeCharts()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -795,7 +612,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
         <tr>
           <td class="memname">PhpOffice\PhpSpreadsheet\Reader\BaseReader::setIncludeCharts </td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$includeCharts</em></span></td><td>)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$includeCharts</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -808,53 +625,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
 
 <p>Set read charts in workbook Set to true, to advise the Reader to include any charts that exist in the workbook. </p>
 <p>Note that a ReadDataOnly value of false overrides, and charts won't be read regardless of the IncludeCharts value. Set to false (the default) to discard charts.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">bool</td><td class="paramname">$includeCharts</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">IReader</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="../../d8/d39/interface_php_office_1_1_php_spreadsheet_1_1_reader_1_1_i_reader.html#aba47705505c2a982eaf3f2c8d57afcda">PhpOffice\PhpSpreadsheet\Reader\IReader</a>.</p>
-
-</div>
-</div>
-<a id="a144554e25a98917af94f64fd236f83bf" name="a144554e25a98917af94f64fd236f83bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a144554e25a98917af94f64fd236f83bf">&#9670;&#160;</a></span>setInputEncoding()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PhpOffice\PhpSpreadsheet\Reader\Html::setInputEncoding </td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$inputEncoding</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set input encoding. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$inputEncoding</td><td>Input encoding, eg: 'ANSI'</td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">$this</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<p>@codeCoverageIgnore</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000955">Deprecated</a></b></dt><dd>no use is made of this property </dd></dl>
+
+<p>Implements <a class="el" href="../../d8/d39/interface_php_office_1_1_php_spreadsheet_1_1_reader_1_1_i_reader.html#a99b126c14789ed5e47283e483baa8dc3">PhpOffice\PhpSpreadsheet\Reader\IReader</a>.</p>
 
 </div>
 </div>
@@ -884,7 +662,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
 <p>Set all sheets to load Tells the Reader to load all worksheets from the workbook. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">IReader</td><td></td></tr>
+    <tr><td class="paramname">$this</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -893,8 +671,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
 
 </div>
 </div>
-<a id="ae5ed7d99db5370b9aa97a92c92ae46e8" name="ae5ed7d99db5370b9aa97a92c92ae46e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5ed7d99db5370b9aa97a92c92ae46e8">&#9670;&#160;</a></span>setLoadSheetsOnly()</h2>
+<a id="ad20e88b65d8a031a1ab6118284c9f244" name="ad20e88b65d8a031a1ab6118284c9f244"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad20e88b65d8a031a1ab6118284c9f244">&#9670;&#160;</a></span>setLoadSheetsOnly()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -905,7 +683,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
         <tr>
           <td class="memname">PhpOffice\PhpSpreadsheet\Reader\BaseReader::setLoadSheetsOnly </td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$value</em></span></td><td>)</td>
+          <td class="paramtype">string|array|null</td>          <td class="paramname"><span class="paramname"><em>$value</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -919,23 +697,23 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
 <p>Set which sheets to load. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">mixed</td><td class="paramname">$value</td><td>This should be either an array of worksheet names to be loaded, or a string containing a single worksheet name. If NULL, then it tells the Reader to read all worksheets in the workbook</td></tr>
+    <tr><td class="paramtype">null&#160;|&#160;array&#160;|&#160;string</td><td class="paramname">$value</td><td>This should be either an array of worksheet names to be loaded, or a string containing a single worksheet name. If NULL, then it tells the Reader to read all worksheets in the workbook</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">IReader</td><td></td></tr>
+    <tr><td class="paramname">$this</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="../../d8/d39/interface_php_office_1_1_php_spreadsheet_1_1_reader_1_1_i_reader.html#ad04c4f7673ae98547d4783867cbc1789">PhpOffice\PhpSpreadsheet\Reader\IReader</a>.</p>
+<p>Implements <a class="el" href="../../d8/d39/interface_php_office_1_1_php_spreadsheet_1_1_reader_1_1_i_reader.html#a7fa38f02669f1a94c60902255cc21a26">PhpOffice\PhpSpreadsheet\Reader\IReader</a>.</p>
 
 </div>
 </div>
-<a id="ab5906d2ec2c59e9f46960daf7bd164b3" name="ab5906d2ec2c59e9f46960daf7bd164b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5906d2ec2c59e9f46960daf7bd164b3">&#9670;&#160;</a></span>setReadDataOnly()</h2>
+<a id="a86319b885bf63ac027c307431e0299f5" name="a86319b885bf63ac027c307431e0299f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86319b885bf63ac027c307431e0299f5">&#9670;&#160;</a></span>setReadDataOnly()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -946,7 +724,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
         <tr>
           <td class="memname">PhpOffice\PhpSpreadsheet\Reader\BaseReader::setReadDataOnly </td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$readDataOnly</em></span></td><td>)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$readDataOnly</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -959,25 +737,19 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
 
 <p>Set read data only Set to true, to advise the Reader only to read data values for cells, and to ignore any formatting or structural information (like merges). </p>
 <p>Set to false (the default) to advise the Reader to read both data and formatting for cells.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">bool</td><td class="paramname">$readDataOnly</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">IReader</td><td></td></tr>
+    <tr><td class="paramname">$this</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="../../d8/d39/interface_php_office_1_1_php_spreadsheet_1_1_reader_1_1_i_reader.html#af82654de087d0d8ceb5583b6111761de">PhpOffice\PhpSpreadsheet\Reader\IReader</a>.</p>
+<p>Implements <a class="el" href="../../d8/d39/interface_php_office_1_1_php_spreadsheet_1_1_reader_1_1_i_reader.html#a3098e5943abebbda36ee46c9b30c0247">PhpOffice\PhpSpreadsheet\Reader\IReader</a>.</p>
 
 </div>
 </div>
-<a id="aeec96ee8f4658ac06790278a09f4d142" name="aeec96ee8f4658ac06790278a09f4d142"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeec96ee8f4658ac06790278a09f4d142">&#9670;&#160;</a></span>setReadEmptyCells()</h2>
+<a id="a312dcff7a784d54fe106080517eacad0" name="a312dcff7a784d54fe106080517eacad0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a312dcff7a784d54fe106080517eacad0">&#9670;&#160;</a></span>setReadEmptyCells()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -988,7 +760,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
         <tr>
           <td class="memname">PhpOffice\PhpSpreadsheet\Reader\BaseReader::setReadEmptyCells </td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$readEmptyCells</em></span></td><td>)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$readEmptyCells</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1001,20 +773,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
 
 <p>Set read empty cells Set to true (the default) to advise the Reader read data values for all cells, irrespective of value. </p>
 <p>Set to false to advise the Reader to ignore cells containing a null value or an empty string.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">bool</td><td class="paramname">$readEmptyCells</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">IReader</td><td></td></tr>
+    <tr><td class="paramname">$this</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="../../d8/d39/interface_php_office_1_1_php_spreadsheet_1_1_reader_1_1_i_reader.html#a32b4107d93b712e2f126fe6193463c2c">PhpOffice\PhpSpreadsheet\Reader\IReader</a>.</p>
+<p>Implements <a class="el" href="../../d8/d39/interface_php_office_1_1_php_spreadsheet_1_1_reader_1_1_i_reader.html#a2ddad51249e16b38038749ca8ea5cf59">PhpOffice\PhpSpreadsheet\Reader\IReader</a>.</p>
 
 </div>
 </div>
@@ -1044,7 +810,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
 <p>Set read filter. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">IReader</td><td></td></tr>
+    <tr><td class="paramname">$this</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1053,8 +819,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
 
 </div>
 </div>
-<a id="ad295b66e02fdb91d72f3daa474f5f5b0" name="ad295b66e02fdb91d72f3daa474f5f5b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad295b66e02fdb91d72f3daa474f5f5b0">&#9670;&#160;</a></span>setSheetIndex()</h2>
+<a id="afd0fc7f5f76d809abc576a5003f9ee40" name="afd0fc7f5f76d809abc576a5003f9ee40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd0fc7f5f76d809abc576a5003f9ee40">&#9670;&#160;</a></span>setSheetIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1062,7 +828,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
         <tr>
           <td class="memname">PhpOffice\PhpSpreadsheet\Reader\Html::setSheetIndex </td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$sheetIndex</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$sheetIndex</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1085,6 +851,31 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a54ca64e819a343688491676c14fc1e56" name="a54ca64e819a343688491676c14fc1e56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54ca64e819a343688491676c14fc1e56">&#9670;&#160;</a></span>$ignoreRowsWithNoCells</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PhpOffice\PhpSpreadsheet\Reader\BaseReader::$ignoreRowsWithNoCells = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel inherited">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ignore rows with no cells? </p>
+<p>Identifies whether the Reader should ignore rows with no cells. Currently implemented only for Xlsx. </p>
+
+</div>
+</div>
 <a id="accbef37d0964e79720647679a950ea29" name="accbef37d0964e79720647679a950ea29"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#accbef37d0964e79720647679a950ea29">&#9670;&#160;</a></span>$includeCharts</h2>
 
@@ -1110,8 +901,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
 
 </div>
 </div>
-<a id="ab4177db14d531e4ebf4c99cd11cbf571" name="ab4177db14d531e4ebf4c99cd11cbf571"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4177db14d531e4ebf4c99cd11cbf571">&#9670;&#160;</a></span>$loadSheetsOnly</h2>
+<a id="a69f0c7c4e32f2eb45e55ee9b5a88d944" name="a69f0c7c4e32f2eb45e55ee9b5a88d944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69f0c7c4e32f2eb45e55ee9b5a88d944">&#9670;&#160;</a></span>$loadSheetsOnly</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1120,7 +911,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">null string [] PhpOffice\PhpSpreadsheet\Reader\BaseReader::$loadSheetsOnly</td>
+          <td class="memname">null string [] array PhpOffice\PhpSpreadsheet\Reader\BaseReader::$loadSheetsOnly = null</td>
         </tr>
       </table>
   </td>
@@ -1131,7 +922,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
 </div><div class="memdoc">
 
 <p>Restrict which sheets should be loaded? </p>
-<p>This property holds an array of worksheet names to be loaded. If null, then all worksheets will be loaded. </p>
+<p>This property holds an array of worksheet names to be loaded. If null, then all worksheets will be loaded. This property is ignored for Csv, Html, and Slk. </p>
 
 </div>
 </div>
@@ -1156,7 +947,57 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
 </div><div class="memdoc">
 
 <p>Read empty cells? </p>
-<p>Identifies whether the Reader should read data values for cells all cells, or should ignore cells containing null value or empty string. </p>
+<p>Identifies whether the Reader should read data values for all cells, or should ignore cells containing null value or empty string. </p>
+
+</div>
+</div>
+<a id="a33e3034c23b0e33e4fa56b3c6cdc1211" name="a33e3034c23b0e33e4fa56b3c6cdc1211"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33e3034c23b0e33e4fa56b3c6cdc1211">&#9670;&#160;</a></span>IGNORE_EMPTY_CELLS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const PhpOffice\PhpSpreadsheet\Reader\IReader::IGNORE_EMPTY_CELLS = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Flag used to ignore empty cells when reading. </p>
+<p>The ignored cells will not be instantiated. </p>
+
+</div>
+</div>
+<a id="ad5ee858bda2a8b06f9d01c17213fc55a" name="ad5ee858bda2a8b06f9d01c17213fc55a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5ee858bda2a8b06f9d01c17213fc55a">&#9670;&#160;</a></span>IGNORE_ROWS_WITH_NO_CELLS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const PhpOffice\PhpSpreadsheet\Reader\IReader::IGNORE_ROWS_WITH_NO_CELLS = 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Flag used to ignore rows without cells. </p>
+<p>This flag is supported only for some formats. This can heavily improve performance for some files. </p>
 
 </div>
 </div>
@@ -1166,7 +1007,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$tableLevel</b> = 0</t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 9 2025 02:42:51 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 16 2025 03:14:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

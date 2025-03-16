@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
   </td>
  </tr>
  </tbody>
@@ -140,6 +140,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa3b4b8679a610efc68bdf17319e23af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96c174e7d8430fef28449731d16d3d53" id="r_a96c174e7d8430fef28449731d16d3d53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96c174e7d8430fef28449731d16d3d53">compare_url</a> ($sid, array $aids)</td></tr>
 <tr class="separator:a96c174e7d8430fef28449731d16d3d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45f27e63a671185579592480fcf09ba6" id="r_a45f27e63a671185579592480fcf09ba6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45f27e63a671185579592480fcf09ba6">count_assessments</a> (bool $onlygraded=false, ?int $groupid=null)</td></tr>
+<tr class="memdesc:a45f27e63a671185579592480fcf09ba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of assessments in the workshop.  <br /></td></tr>
+<tr class="separator:a45f27e63a671185579592480fcf09ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a141b1732f157e0af752650370bd69cab" id="r_a141b1732f157e0af752650370bd69cab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a141b1732f157e0af752650370bd69cab">count_participants</a> ($musthavesubmission=false, $groupid=0)</td></tr>
 <tr class="memdesc:a141b1732f157e0af752650370bd69cab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of records that would be returned by <a class="el" href="">self::get_participants()</a>.  <br /></td></tr>
 <tr class="separator:a141b1732f157e0af752650370bd69cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -444,7 +447,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$evaluation</b></td
 <tr class="separator:ab88e8b8cb9816dad475e56a8a45d98c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6ed0cccb32f4ed14770d7dcbe33ccd3" id="r_ac6ed0cccb32f4ed14770d7dcbe33ccd3"><td class="memItemLeft" align="right" valign="top"><a id="ac6ed0cccb32f4ed14770d7dcbe33ccd3" name="ac6ed0cccb32f4ed14770d7dcbe33ccd3"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>$examplesmode</b></td></tr>
-<tr class="memdesc:ac6ed0cccb32f4ed14770d7dcbe33ccd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">mode of example submissions support, for example <a class="el" href="#a5bbcfe282ceedbfd06b7c44e79655bc9">workshop::EXAMPLES_VOLUNTARY</a> <br /></td></tr>
+<tr class="memdesc:ac6ed0cccb32f4ed14770d7dcbe33ccd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">mode of example submissions support, for example <a class="el" href="">workshop::EXAMPLES_VOLUNTARY</a> <br /></td></tr>
 <tr class="separator:ac6ed0cccb32f4ed14770d7dcbe33ccd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69f1bd8ca7ed8c5b278225eb1eb79398" id="r_a69f1bd8ca7ed8c5b278225eb1eb79398"><td class="memItemLeft" align="right" valign="top"><a id="a69f1bd8ca7ed8c5b278225eb1eb79398" name="a69f1bd8ca7ed8c5b278225eb1eb79398"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>$grade</b></td></tr>
@@ -468,7 +471,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$instructauthors</b
 <tr class="separator:a70d6ee3ffd89594416b599990b5591fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d352e7f559f64f166424abbae2f09c9" id="r_a8d352e7f559f64f166424abbae2f09c9"><td class="memItemLeft" align="right" valign="top"><a id="a8d352e7f559f64f166424abbae2f09c9" name="a8d352e7f559f64f166424abbae2f09c9"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>$instructauthorsformat</b></td></tr>
-<tr class="memdesc:a8d352e7f559f64f166424abbae2f09c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">format of the <a class="el" href="#a70d6ee3ffd89594416b599990b5591fe">$instructauthors</a> <br /></td></tr>
+<tr class="memdesc:a8d352e7f559f64f166424abbae2f09c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">format of the <a class="el" href="">$instructauthors</a> <br /></td></tr>
 <tr class="separator:a8d352e7f559f64f166424abbae2f09c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0540ba56f0caf8fc66b54d00d99546ab" id="r_a0540ba56f0caf8fc66b54d00d99546ab"><td class="memItemLeft" align="right" valign="top"><a id="a0540ba56f0caf8fc66b54d00d99546ab" name="a0540ba56f0caf8fc66b54d00d99546ab"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$instructreviewers</b></td></tr>
@@ -476,7 +479,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$instructreviewers<
 <tr class="separator:a0540ba56f0caf8fc66b54d00d99546ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3abe877d7687492913949932e5d7409f" id="r_a3abe877d7687492913949932e5d7409f"><td class="memItemLeft" align="right" valign="top"><a id="a3abe877d7687492913949932e5d7409f" name="a3abe877d7687492913949932e5d7409f"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>$instructreviewersformat</b></td></tr>
-<tr class="memdesc:a3abe877d7687492913949932e5d7409f"><td class="mdescLeft">&#160;</td><td class="mdescRight">format of the <a class="el" href="#a0540ba56f0caf8fc66b54d00d99546ab">$instructreviewers</a> <br /></td></tr>
+<tr class="memdesc:a3abe877d7687492913949932e5d7409f"><td class="mdescLeft">&#160;</td><td class="mdescRight">format of the <a class="el" href="">$instructreviewers</a> <br /></td></tr>
 <tr class="separator:a3abe877d7687492913949932e5d7409f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad308787ea8e8023744c77c9d00d8707a" id="r_ad308787ea8e8023744c77c9d00d8707a"><td class="memItemLeft" align="right" valign="top"><a id="ad308787ea8e8023744c77c9d00d8707a" name="ad308787ea8e8023744c77c9d00d8707a"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$intro</b></td></tr>
@@ -484,7 +487,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$intro</b></td></tr
 <tr class="separator:ad308787ea8e8023744c77c9d00d8707a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a177d66918b83cb6cac24afecbc29f6" id="r_a4a177d66918b83cb6cac24afecbc29f6"><td class="memItemLeft" align="right" valign="top"><a id="a4a177d66918b83cb6cac24afecbc29f6" name="a4a177d66918b83cb6cac24afecbc29f6"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>$introformat</b></td></tr>
-<tr class="memdesc:a4a177d66918b83cb6cac24afecbc29f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">format of the <a class="el" href="#ad308787ea8e8023744c77c9d00d8707a">$intro</a> <br /></td></tr>
+<tr class="memdesc:a4a177d66918b83cb6cac24afecbc29f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">format of the <a class="el" href="">$intro</a> <br /></td></tr>
 <tr class="separator:a4a177d66918b83cb6cac24afecbc29f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcf14f6c2673e5fa15c4d48bcc768a5e" id="r_adcf14f6c2673e5fa15c4d48bcc768a5e"><td class="memItemLeft" align="right" valign="top"><a id="adcf14f6c2673e5fa15c4d48bcc768a5e" name="adcf14f6c2673e5fa15c4d48bcc768a5e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>$latesubmissions</b></td></tr>
@@ -520,7 +523,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$overallfeedbackmode</
 <tr class="separator:a39af98f3cdc3d689a1555a91a92d6a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af92e209f5fee7fca360f5a173f966e0c" id="r_af92e209f5fee7fca360f5a173f966e0c"><td class="memItemLeft" align="right" valign="top"><a id="af92e209f5fee7fca360f5a173f966e0c" name="af92e209f5fee7fca360f5a173f966e0c"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>$phase</b></td></tr>
-<tr class="memdesc:af92e209f5fee7fca360f5a173f966e0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">current phase of workshop, for example <a class="el" href="#a6fca7b4c8410bf56da1edcae23acc480">workshop::PHASE_SETUP</a> <br /></td></tr>
+<tr class="memdesc:af92e209f5fee7fca360f5a173f966e0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">current phase of workshop, for example <a class="el" href="">workshop::PHASE_SETUP</a> <br /></td></tr>
 <tr class="separator:af92e209f5fee7fca360f5a173f966e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab37944bc52ba3f00c4e4e77506d2eea0" id="r_ab37944bc52ba3f00c4e4e77506d2eea0"><td class="memItemLeft" align="right" valign="top"><a id="ab37944bc52ba3f00c4e4e77506d2eea0" name="ab37944bc52ba3f00c4e4e77506d2eea0"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>$phaseswitchassessment</b></td></tr>
@@ -634,7 +637,7 @@ Protected Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ae497520d0c12610c107441a2cad6bc70" id="r_ae497520d0c12610c107441a2cad6bc70"><td class="memItemLeft" align="right" valign="top"><a id="ae497520d0c12610c107441a2cad6bc70" name="ae497520d0c12610c107441a2cad6bc70"></a>
 <a class="el" href="../../dd/d4b/classworkshop__evaluation.html">workshop_evaluation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$evaluationinstance</b> = null</td></tr>
-<tr class="memdesc:ae497520d0c12610c107441a2cad6bc70"><td class="mdescLeft">&#160;</td><td class="mdescRight">grading evaluation instance Do not use directly, get the instance using <a class="el" href="#a2a8b653a2a2803dd5476116c2b5b2d47">workshop::grading_evaluation_instance()</a> <br /></td></tr>
+<tr class="memdesc:ae497520d0c12610c107441a2cad6bc70"><td class="mdescLeft">&#160;</td><td class="mdescRight">grading evaluation instance Do not use directly, get the instance using <a class="el" href="">workshop::grading_evaluation_instance()</a> <br /></td></tr>
 <tr class="separator:ae497520d0c12610c107441a2cad6bc70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8c231c14fef96a3229a7e3db0be6d96" id="r_ad8c231c14fef96a3229a7e3db0be6d96"><td class="memItemLeft" align="right" valign="top"><a id="ad8c231c14fef96a3229a7e3db0be6d96" name="ad8c231c14fef96a3229a7e3db0be6d96"></a>
 array&#160;</td><td class="memItemRight" valign="bottom"><b>$initialbarprefs</b> = []</td></tr>
@@ -642,7 +645,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$initialbarprefs</b>
 <tr class="separator:ad8c231c14fef96a3229a7e3db0be6d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b49ca26e8700a208464a37ee92b7d83" id="r_a8b49ca26e8700a208464a37ee92b7d83"><td class="memItemLeft" align="right" valign="top"><a id="a8b49ca26e8700a208464a37ee92b7d83" name="a8b49ca26e8700a208464a37ee92b7d83"></a>
 <a class="el" href="../../de/dde/interfaceworkshop__strategy.html">workshop_strategy</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$strategyinstance</b> = null</td></tr>
-<tr class="memdesc:a8b49ca26e8700a208464a37ee92b7d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">grading strategy instance Do not use directly, get the instance using <a class="el" href="#a987ddd2fee6a8409a0eb0155bf305630">workshop::grading_strategy_instance()</a> <br /></td></tr>
+<tr class="memdesc:a8b49ca26e8700a208464a37ee92b7d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">grading strategy instance Do not use directly, get the instance using <a class="el" href="">workshop::grading_strategy_instance()</a> <br /></td></tr>
 <tr class="separator:a8b49ca26e8700a208464a37ee92b7d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -1561,7 +1564,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$initialbarprefs</b>
 </div><div class="memdoc">
 
 <p>Cleans the user provided list of file extensions. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001388">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000876">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$extensions</td><td></td></tr>
@@ -1693,6 +1696,42 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$initialbarprefs</b>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">moodle_url</td><td>of the page to compare assessments of the given submission </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a45f27e63a671185579592480fcf09ba6" name="a45f27e63a671185579592480fcf09ba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45f27e63a671185579592480fcf09ba6">&#9670;&#160;</a></span>count_assessments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">workshop::count_assessments </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$onlygraded</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int</td>          <td class="paramname"><span class="paramname"><em>$groupid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the total number of assessments in the workshop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">bool</td><td class="paramname">$onlygraded</td><td>If true, count only graded assessments </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$groupid</td><td>If not null, return only assessments by reviewers in the specified group </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td>Number of assessments </td></tr>
   </table>
   </dd>
 </dl>
@@ -1897,7 +1936,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$initialbarprefs</b>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000354">Todo</a></b></dt><dd>Give grading strategy plugins a chance to clean up their data, too. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000344">Todo</a></b></dt><dd>Give grading strategy plugins a chance to clean up their data, too. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td>true </td></tr>
@@ -2511,7 +2550,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$initialbarprefs</b>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="#af5881eb44691bdd3823f3a74776d48f9" title="Prepares renderable example submission summary component.">workshop\prepare_example_summary()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>workshop::prepare_example_summary() </dd></dl>
 
 </div>
 </div>
@@ -2543,7 +2582,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$initialbarprefs</b>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="#af5881eb44691bdd3823f3a74776d48f9" title="Prepares renderable example submission summary component.">workshop\prepare_example_summary()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>workshop::prepare_example_summary() </dd></dl>
 
 </div>
 </div>
@@ -3397,7 +3436,7 @@ self::get_potential_reviewers() </dd></dl>
 
 <p>Check given file types and return invalid/unknown ones. </p>
 <p>Empty allowlist is interpretted as "any extension is valid".</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001389">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000877">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$extensions</td><td>list of file extensions </td></tr>
@@ -3443,7 +3482,7 @@ self::get_potential_reviewers() </dd></dl>
 
 <p>Is the file have allowed to be uploaded to the workshop? </p>
 <p>Empty allowlist is interpretted as "any file type is allowed" rather than "no file can be uploaded".</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001390">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000878">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$filename</td><td>the file name </td></tr>
@@ -3566,7 +3605,7 @@ self::get_potential_reviewers() </dd></dl>
 
 <p>Workshop wrapper around {. </p>
 <dl class="section see"><dt>See also</dt><dd>add_to_log()} </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001391">Deprecated</a></b></dt><dd>since 2.7 Please use the provided event classes for logging actions.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000879">Deprecated</a></b></dt><dd>since 2.7 Please use the provided event classes for logging actions.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>to be logged </td></tr>
@@ -3574,7 +3613,7 @@ self::get_potential_reviewers() </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a03ff59e2c766a1cdf399b3c8601a1d50">workshop\submission_url()</a>} and friends </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>workshop::submission_url()} and friends </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">mixed</td><td class="paramname">$info</td><td>additional info, usually id in a table </td></tr>
@@ -3687,7 +3726,7 @@ self::get_potential_reviewers() </dd></dl>
 
 <p>Converts the argument into an array (list) of file extensions. </p>
 <p>The list can be separated by whitespace, end of lines, commas colons and semicolons. Empty values are not returned. Values are converted to lowercase. Duplicates are removed. Glob evaluation is not supported.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001387">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000875">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$extensions</td><td>list of file extensions </td></tr>
@@ -3977,7 +4016,7 @@ self::get_potential_reviewers() </dd></dl>
 <p>If the example is editable, the caller must set the 'editable' flag explicitly.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$example</td><td>as returned by <a class="el" href="#aa6121d48dad8c58c23f34c1da9e35574">workshop::get_examples_for_manager()</a> or <a class="el" href="#a3e8dd075147600d34f911bf65e745a13">workshop::get_examples_for_reviewer()</a> </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$example</td><td>as returned by <a class="el" href="">workshop::get_examples_for_manager()</a> or <a class="el" href="">workshop::get_examples_for_reviewer()</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -4801,7 +4840,7 @@ self::get_potential_reviewers() </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 9 2025 02:40:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 16 2025 03:12:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

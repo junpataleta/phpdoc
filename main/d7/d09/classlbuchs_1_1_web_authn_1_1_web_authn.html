@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
   </td>
  </tr>
  </tbody>
@@ -84,6 +84,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a771c3ba528c25c581d4fb4fd9f990c0a" id="r_a771c3ba528c25c581d4fb4fd9f990c0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a771c3ba528c25c581d4fb4fd9f990c0a">__construct</a> ($rpName, $rpId, $allowedFormats=null, $useBase64UrlEncoding=false)</td></tr>
 <tr class="memdesc:a771c3ba528c25c581d4fb4fd9f990c0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a new WebAuthn server.  <br /></td></tr>
 <tr class="separator:a771c3ba528c25c581d4fb4fd9f990c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8bb8b7cb39759f58ffbb583c6083354" id="r_ac8bb8b7cb39759f58ffbb583c6083354"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8bb8b7cb39759f58ffbb583c6083354">addAndroidKeyHashes</a> ($hashes)</td></tr>
+<tr class="memdesc:ac8bb8b7cb39759f58ffbb583c6083354"><td class="mdescLeft">&#160;</td><td class="mdescRight">add key hashes for android verification  <br /></td></tr>
+<tr class="separator:ac8bb8b7cb39759f58ffbb583c6083354"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac440540e58823c2212c0e82054cbaef2" id="r_ac440540e58823c2212c0e82054cbaef2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac440540e58823c2212c0e82054cbaef2">addRootCertificates</a> ($path, $certFileExtensions=null)</td></tr>
 <tr class="memdesc:ac440540e58823c2212c0e82054cbaef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a root certificate to verify new registrations  <br /></td></tr>
 <tr class="separator:ac440540e58823c2212c0e82054cbaef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,6 +161,37 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac8bb8b7cb39759f58ffbb583c6083354" name="ac8bb8b7cb39759f58ffbb583c6083354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8bb8b7cb39759f58ffbb583c6083354">&#9670;&#160;</a></span>addAndroidKeyHashes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">lbuchs\WebAuthn\WebAuthn::addAndroidKeyHashes </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$hashes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>add key hashes for android verification </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">array&lt;string&gt;</td><td>$hashes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac440540e58823c2212c0e82054cbaef2" name="ac440540e58823c2212c0e82054cbaef2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac440540e58823c2212c0e82054cbaef2">&#9670;&#160;</a></span>addRootCertificates()</h2>
 
@@ -580,7 +614,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 9 2025 02:42:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 16 2025 03:14:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

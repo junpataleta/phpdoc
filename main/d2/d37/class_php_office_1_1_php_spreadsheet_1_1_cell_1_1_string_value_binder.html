@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
   </td>
  </tr>
  </tbody>
@@ -74,6 +74,7 @@ $(function(){ initResizable(false); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../de/def/class_php_office_1_1_php_spreadsheet_1_1_cell_1_1_string_value_binder-members.html">List of all members</a>  </div>
@@ -86,15 +87,16 @@ Inheritance diagram for PhpOffice\PhpSpreadsheet\Cell\StringValueBinder:</div>
  <div class="center">
   <img src="../../d2/d37/class_php_office_1_1_php_spreadsheet_1_1_cell_1_1_string_value_binder.png" usemap="#PhpOffice_5CPhpSpreadsheet_5CCell_5CStringValueBinder_map" alt=""/>
   <map id="PhpOffice_5CPhpSpreadsheet_5CCell_5CStringValueBinder_map" name="PhpOffice_5CPhpSpreadsheet_5CCell_5CStringValueBinder_map">
-<area href="../../db/d49/interface_php_office_1_1_php_spreadsheet_1_1_cell_1_1_i_value_binder.html" alt="PhpOffice\PhpSpreadsheet\Cell\IValueBinder" shape="rect" coords="0,0,299,24"/>
+<area href="../../d4/da7/class_php_office_1_1_php_spreadsheet_1_1_cell_1_1_default_value_binder.html" alt="PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder" shape="rect" coords="0,56,306,80"/>
+<area href="../../db/d49/interface_php_office_1_1_php_spreadsheet_1_1_cell_1_1_i_value_binder.html" alt="PhpOffice\PhpSpreadsheet\Cell\IValueBinder" shape="rect" coords="316,56,622,80"/>
+<area href="../../db/d49/interface_php_office_1_1_php_spreadsheet_1_1_cell_1_1_i_value_binder.html" alt="PhpOffice\PhpSpreadsheet\Cell\IValueBinder" shape="rect" coords="0,0,306,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad06b375f31a3345092492057d360b526" id="r_ad06b375f31a3345092492057d360b526"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad06b375f31a3345092492057d360b526">bindValue</a> (<a class="el" href="../../d5/d18/class_php_office_1_1_php_spreadsheet_1_1_cell_1_1_cell.html">Cell</a> $cell, $value)</td></tr>
-<tr class="memdesc:ad06b375f31a3345092492057d360b526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind value to a cell.  <br /></td></tr>
-<tr class="separator:ad06b375f31a3345092492057d360b526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8426aaa13f9eecabcace9965bac1cad5" id="r_a8426aaa13f9eecabcace9965bac1cad5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8426aaa13f9eecabcace9965bac1cad5">bindValue</a> (<a class="el" href="../../d5/d18/class_php_office_1_1_php_spreadsheet_1_1_cell_1_1_cell.html">Cell</a> $cell, mixed $value)</td></tr>
+<tr class="separator:a8426aaa13f9eecabcace9965bac1cad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bffc01969e2c5b8e7e5a01188b74864" id="r_a3bffc01969e2c5b8e7e5a01188b74864"><td class="memItemLeft" align="right" valign="top"><a id="a3bffc01969e2c5b8e7e5a01188b74864" name="a3bffc01969e2c5b8e7e5a01188b74864"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>getBooleanConversion</b> ()</td></tr>
 <tr class="separator:a3bffc01969e2c5b8e7e5a01188b74864"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,6 +115,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa6529c89f92c13ec9c59c8596a51a01b" id="r_aa6529c89f92c13ec9c59c8596a51a01b"><td class="memItemLeft" align="right" valign="top"><a id="aa6529c89f92c13ec9c59c8596a51a01b" name="aa6529c89f92c13ec9c59c8596a51a01b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>setNumericConversion</b> (bool $suppressConversion=false)</td></tr>
 <tr class="separator:aa6529c89f92c13ec9c59c8596a51a01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dc73bcd1eee6f2c36af63fac17871cb" id="r_a2dc73bcd1eee6f2c36af63fac17871cb"><td class="memItemLeft" align="right" valign="top"><a id="a2dc73bcd1eee6f2c36af63fac17871cb" name="a2dc73bcd1eee6f2c36af63fac17871cb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>setSetIgnoredErrors</b> (bool $setIgnoredErrors=false)</td></tr>
+<tr class="separator:a2dc73bcd1eee6f2c36af63fac17871cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae1a43465d679a831b7eefc77f35acc67" id="r_ae1a43465d679a831b7eefc77f35acc67"><td class="memItemLeft" align="right" valign="top"><a id="ae1a43465d679a831b7eefc77f35acc67" name="ae1a43465d679a831b7eefc77f35acc67"></a>
+static&#160;</td><td class="memItemRight" valign="bottom"><b>dataTypeForValue</b> (mixed $value)</td></tr>
+<tr class="memdesc:ae1a43465d679a831b7eefc77f35acc67"><td class="mdescLeft">&#160;</td><td class="mdescRight">DataType for value. <br /></td></tr>
+<tr class="separator:ae1a43465d679a831b7eefc77f35acc67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -134,10 +146,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$convertNull</b> = tr
 <tr class="memitem:acd4e918d66ce148a2dfc662558a471e8" id="r_acd4e918d66ce148a2dfc662558a471e8"><td class="memItemLeft" align="right" valign="top"><a id="acd4e918d66ce148a2dfc662558a471e8" name="acd4e918d66ce148a2dfc662558a471e8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>$convertNumeric</b> = true</td></tr>
 <tr class="separator:acd4e918d66ce148a2dfc662558a471e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a707f00f65291fa7fc2fb2b0f66c16de5" id="r_a707f00f65291fa7fc2fb2b0f66c16de5"><td class="memItemLeft" align="right" valign="top"><a id="a707f00f65291fa7fc2fb2b0f66c16de5" name="a707f00f65291fa7fc2fb2b0f66c16de5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>$setIgnoredErrors</b> = false</td></tr>
+<tr class="separator:a707f00f65291fa7fc2fb2b0f66c16de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad06b375f31a3345092492057d360b526" name="ad06b375f31a3345092492057d360b526"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad06b375f31a3345092492057d360b526">&#9670;&#160;</a></span>bindValue()</h2>
+<a id="a8426aaa13f9eecabcace9965bac1cad5" name="a8426aaa13f9eecabcace9965bac1cad5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8426aaa13f9eecabcace9965bac1cad5">&#9670;&#160;</a></span>bindValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,21 +165,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$convertNumeric</b> =
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$value</em></span>&#160;)</td>
+          <td class="paramtype">mixed</td>          <td class="paramname"><span class="paramname"><em>$value</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Bind value to a cell. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">Cell</td><td class="paramname">$cell</td><td>Cell to bind value to </td></tr>
-    <tr><td class="paramtype">mixed</td><td class="paramname">$value</td><td>Value to bind in cell </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="../../db/d49/interface_php_office_1_1_php_spreadsheet_1_1_cell_1_1_i_value_binder.html">PhpOffice\PhpSpreadsheet\Cell\IValueBinder</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d4/da7/class_php_office_1_1_php_spreadsheet_1_1_cell_1_1_default_value_binder.html">PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder</a>.</p>
 
 </div>
 </div>
@@ -174,7 +180,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$convertNumeric</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 9 2025 02:42:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 16 2025 03:14:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

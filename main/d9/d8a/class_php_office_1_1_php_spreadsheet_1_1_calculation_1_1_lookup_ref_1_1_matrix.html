@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
   </td>
  </tr>
  </tbody>
@@ -81,9 +81,9 @@ $(function(){ initResizable(false); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a50bd745c552896271ccf53ef0dda18f7" id="r_a50bd745c552896271ccf53ef0dda18f7"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50bd745c552896271ccf53ef0dda18f7">index</a> ($matrix, $rowNum=0, $columnNum=null)</td></tr>
-<tr class="memdesc:a50bd745c552896271ccf53ef0dda18f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">INDEX.  <br /></td></tr>
-<tr class="separator:a50bd745c552896271ccf53ef0dda18f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47543f8b58df1fe0cdd0471aa5c7851b" id="r_a47543f8b58df1fe0cdd0471aa5c7851b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47543f8b58df1fe0cdd0471aa5c7851b">index</a> (mixed $matrix, mixed $rowNum=0, mixed $columnNum=null)</td></tr>
+<tr class="memdesc:a47543f8b58df1fe0cdd0471aa5c7851b"><td class="mdescLeft">&#160;</td><td class="mdescRight">INDEX.  <br /></td></tr>
+<tr class="separator:a47543f8b58df1fe0cdd0471aa5c7851b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c85120fa2088a800a940ed32b42ab1b" id="r_a3c85120fa2088a800a940ed32b42ab1b"><td class="memItemLeft" align="right" valign="top"><a id="a3c85120fa2088a800a940ed32b42ab1b" name="a3c85120fa2088a800a940ed32b42ab1b"></a>
 static&#160;</td><td class="memItemRight" valign="bottom"><b>isColumnVector</b> (array $values)</td></tr>
 <tr class="separator:a3c85120fa2088a800a940ed32b42ab1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -96,8 +96,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>isRowVector</b> (ar
 <tr class="separator:a4a4890e5fa0c6db16534feaa1b260563"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a50bd745c552896271ccf53ef0dda18f7" name="a50bd745c552896271ccf53ef0dda18f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50bd745c552896271ccf53ef0dda18f7">&#9670;&#160;</a></span>index()</h2>
+<a id="a47543f8b58df1fe0cdd0471aa5c7851b" name="a47543f8b58df1fe0cdd0471aa5c7851b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47543f8b58df1fe0cdd0471aa5c7851b">&#9670;&#160;</a></span>index()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -108,17 +108,17 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>isRowVector</b> (ar
         <tr>
           <td class="memname">static PhpOffice\PhpSpreadsheet\Calculation\LookupRef\Matrix::index </td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$matrix</em></span>, </td>
+          <td class="paramtype">mixed</td>          <td class="paramname"><span class="paramname"><em>$matrix</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$rowNum</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+          <td class="paramtype">mixed</td>          <td class="paramname"><span class="paramname"><em>$rowNum</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$columnNum</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">mixed</td>          <td class="paramname"><span class="paramname"><em>$columnNum</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -175,13 +175,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>isRowVector</b> (ar
 <p>TRANSPOSE. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array&#160;|&#160;mixed</td><td class="paramname">$matrixData</td><td>A matrix of values</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">array</td><td></td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;mixed</td><td class="paramname">$matrixData</td><td>A matrix of values </td></tr>
   </table>
   </dd>
 </dl>
@@ -194,7 +188,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>isRowVector</b> (ar
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 9 2025 02:42:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 16 2025 03:14:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

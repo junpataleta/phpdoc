@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250308) (8cb5d000a1f)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
   </td>
  </tr>
  </tbody>
@@ -233,6 +233,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae498c05e9fb263843279ba3e64309d82" id="r_ae498c05e9fb263843279ba3e64309d82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d88/classassign__plugin.html#ae498c05e9fb263843279ba3e64309d82">set_editor_text</a> ($name, $value, $submissionorgradeid)</td></tr>
 <tr class="memdesc:ae498c05e9fb263843279ba3e64309d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a field name and value should update the text for this field in the plugins submission or grade.  <br /></td></tr>
 <tr class="separator:ae498c05e9fb263843279ba3e64309d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafb19e09c85d98cc0b8f57fb0dd28656" id="r_aafb19e09c85d98cc0b8f57fb0dd28656"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d88/classassign__plugin.html#aafb19e09c85d98cc0b8f57fb0dd28656">settings_validation</a> (array $data, array $files)</td></tr>
+<tr class="memdesc:aafb19e09c85d98cc0b8f57fb0dd28656"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when the <a class="el" href="../../d7/d6a/classmod__assign__mod__form.html" title="Assignment settings form.">mod_assign_mod_form</a> is submitted.  <br /></td></tr>
+<tr class="separator:aafb19e09c85d98cc0b8f57fb0dd28656"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b4e961914735fe4b2e31d587ea80828" id="r_a9b4e961914735fe4b2e31d587ea80828"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d9c/classassign__submission__plugin.html#a9b4e961914735fe4b2e31d587ea80828">submission_is_empty</a> (stdClass $data)</td></tr>
 <tr class="memdesc:a9b4e961914735fe4b2e31d587ea80828"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a submission is empty.  <br /></td></tr>
 <tr class="separator:a9b4e961914735fe4b2e31d587ea80828"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -626,7 +629,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001167">Deprecated</a></b></dt><dd>since 2.7 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000655">Deprecated</a></b></dt><dd>since 2.7 </dd></dl>
 
 </div>
 </div>
@@ -2101,6 +2104,51 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aafb19e09c85d98cc0b8f57fb0dd28656" name="aafb19e09c85d98cc0b8f57fb0dd28656"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafb19e09c85d98cc0b8f57fb0dd28656">&#9670;&#160;</a></span>settings_validation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">assign_plugin::settings_validation </td>
+          <td>(</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$files</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method is called when the <a class="el" href="../../d7/d6a/classmod__assign__mod__form.html" title="Assignment settings form.">mod_assign_mod_form</a> is submitted. </p>
+<p>It is an opportunity to validate the settings form fields added by {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dc/d88/classassign__plugin.html#a2f4e3e9634414fb282cf9e9ddfcb8013" title="This function should be overridden to provide an array of elements that can be added to a moodle form...">get_settings()</a>}.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>as passed to <a class="el" href="../../d7/d6a/classmod__assign__mod__form.html#af1e48efda7128e4bbf77be25c1ef114a" title="Perform minimal validation on the settings form.">mod_assign_mod_form\validation()</a>. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$files</td><td>as passed to <a class="el" href="../../d7/d6a/classmod__assign__mod__form.html#af1e48efda7128e4bbf77be25c1ef114a" title="Perform minimal validation on the settings form.">mod_assign_mod_form\validation()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>and validation errors that should be displayed. This is array_merged with any other validation errors from the form. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a9b4e961914735fe4b2e31d587ea80828" name="a9b4e961914735fe4b2e31d587ea80828"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9b4e961914735fe4b2e31d587ea80828">&#9670;&#160;</a></span>submission_is_empty()</h2>
 
@@ -2486,7 +2534,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 9 2025 02:39:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 16 2025 03:11:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>
