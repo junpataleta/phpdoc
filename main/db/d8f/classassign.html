@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
   </td>
  </tr>
  </tbody>
@@ -100,8 +100,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa852676b43697b74c63feddcec3613b6" id="r_aa852676b43697b74c63feddcec3613b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa852676b43697b74c63feddcec3613b6">add_submission_form_elements</a> (<a class="el" href="../../d5/d8e/class_moodle_quick_form.html">MoodleQuickForm</a> $mform, stdClass $data)</td></tr>
 <tr class="memdesc:aa852676b43697b74c63feddcec3613b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add elements to submission form.  <br /></td></tr>
 <tr class="separator:aa852676b43697b74c63feddcec3613b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdbca3b7afb34cb2866e17a5e185653c" id="r_afdbca3b7afb34cb2866e17a5e185653c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdbca3b7afb34cb2866e17a5e185653c">add_to_log</a> ()</td></tr>
-<tr class="separator:afdbca3b7afb34cb2866e17a5e185653c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac609a51471404f98cba80fea75510d7" id="r_aac609a51471404f98cba80fea75510d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac609a51471404f98cba80fea75510d7">calculate_penalised_grade</a> (stdClass $grade)</td></tr>
+<tr class="memdesc:aac609a51471404f98cba80fea75510d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate penalised grade and deducted mark.  <br /></td></tr>
+<tr class="separator:aac609a51471404f98cba80fea75510d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a772252d7488d6d85234325a1abbeef57" id="r_a772252d7488d6d85234325a1abbeef57"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a772252d7488d6d85234325a1abbeef57">can_edit_group_submission</a> ($groupid)</td></tr>
 <tr class="memdesc:a772252d7488d6d85234325a1abbeef57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform an access check to see if the current $USER can edit this group submission.  <br /></td></tr>
 <tr class="separator:a772252d7488d6d85234325a1abbeef57"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,16 +158,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad0fd173540720992b6593063a97fb19e" id="r_ad0fd173540720992b6593063a97fb19e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0fd173540720992b6593063a97fb19e">delete_override</a> ($overrideid)</td></tr>
 <tr class="memdesc:ad0fd173540720992b6593063a97fb19e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a assign override from the database and clears any corresponding calendar events.  <br /></td></tr>
 <tr class="separator:ad0fd173540720992b6593063a97fb19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a759ee06f172535aaf57780bd566e9149" id="r_a759ee06f172535aaf57780bd566e9149"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a759ee06f172535aaf57780bd566e9149">display_grade</a> ($grade, $editing, $userid=0, $modified=0)</td></tr>
-<tr class="memdesc:a759ee06f172535aaf57780bd566e9149"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a grade in user-friendly form, whether it's a scale or not.  <br /></td></tr>
-<tr class="separator:a759ee06f172535aaf57780bd566e9149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a595f6cf68dc9a394e031a8caf830d801" id="r_a595f6cf68dc9a394e031a8caf830d801"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a595f6cf68dc9a394e031a8caf830d801">display_grade</a> ($grade, $editing, $userid=0, $modified=0, float $deductedmark=0)</td></tr>
+<tr class="memdesc:a595f6cf68dc9a394e031a8caf830d801"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a grade in user-friendly form, whether it's a scale or not.  <br /></td></tr>
+<tr class="separator:a595f6cf68dc9a394e031a8caf830d801"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae4eb460e0e6e6ab28f51fe594ff0908" id="r_aae4eb460e0e6e6ab28f51fe594ff0908"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae4eb460e0e6e6ab28f51fe594ff0908">download_rewrite_pluginfile_urls</a> ($text, $user, $plugin)</td></tr>
 <tr class="memdesc:aae4eb460e0e6e6ab28f51fe594ff0908"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rewrite plugin file urls so they resolve correctly in an exported zip.  <br /></td></tr>
 <tr class="separator:aae4eb460e0e6e6ab28f51fe594ff0908"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3a5264bfde2a1d51717ccaf861b5bf7" id="r_af3a5264bfde2a1d51717ccaf861b5bf7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3a5264bfde2a1d51717ccaf861b5bf7">format_grade_for_log</a> ()</td></tr>
-<tr class="separator:af3a5264bfde2a1d51717ccaf861b5bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90101d530522954f415ecb83c2dd22c6" id="r_a90101d530522954f415ecb83c2dd22c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90101d530522954f415ecb83c2dd22c6">format_submission_for_log</a> ()</td></tr>
-<tr class="separator:a90101d530522954f415ecb83c2dd22c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00ef2848dddb5b5f54bffa91f042637d" id="r_a00ef2848dddb5b5f54bffa91f042637d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00ef2848dddb5b5f54bffa91f042637d">fullname</a> ($user)</td></tr>
 <tr class="memdesc:a00ef2848dddb5b5f54bffa91f042637d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name for a user - hiding their real name if blind marking is on.  <br /></td></tr>
 <tr class="separator:a00ef2848dddb5b5f54bffa91f042637d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -416,9 +413,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae7a38cbee438bc9ed3ea49978a10e36e" id="r_ae7a38cbee438bc9ed3ea49978a10e36e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7a38cbee438bc9ed3ea49978a10e36e">save_user_extension</a> ($userid, $extensionduedate)</td></tr>
 <tr class="memdesc:ae7a38cbee438bc9ed3ea49978a10e36e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the extension date for a single user.  <br /></td></tr>
 <tr class="separator:ae7a38cbee438bc9ed3ea49978a10e36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04970a1758a4f77c9d58fdafe9f18374" id="r_a04970a1758a4f77c9d58fdafe9f18374"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04970a1758a4f77c9d58fdafe9f18374">send_notification</a> ($userfrom, $userto, $messagetype, $eventtype, $updatetime)</td></tr>
-<tr class="memdesc:a04970a1758a4f77c9d58fdafe9f18374"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message someone about something.  <br /></td></tr>
-<tr class="separator:a04970a1758a4f77c9d58fdafe9f18374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f5d78e8bd009ff2d5df19bde52b1702" id="r_a6f5d78e8bd009ff2d5df19bde52b1702"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f5d78e8bd009ff2d5df19bde52b1702">send_notification</a> ($userfrom, $userto, $messagetype, $eventtype, $updatetime, $extrainfo=[])</td></tr>
+<tr class="memdesc:a6f5d78e8bd009ff2d5df19bde52b1702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message someone about something.  <br /></td></tr>
+<tr class="separator:a6f5d78e8bd009ff2d5df19bde52b1702"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae487f1b7bddf094599ef5e453f9f006f" id="r_ae487f1b7bddf094599ef5e453f9f006f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae487f1b7bddf094599ef5e453f9f006f">set_context</a> (context $context)</td></tr>
 <tr class="memdesc:ae487f1b7bddf094599ef5e453f9f006f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the context.  <br /></td></tr>
 <tr class="separator:ae487f1b7bddf094599ef5e453f9f006f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -506,9 +503,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a70b61d940445a77cb9b7c1933518e902" id="r_a70b61d940445a77cb9b7c1933518e902"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70b61d940445a77cb9b7c1933518e902">get_user_id_for_uniqueid_static</a> ($assignid, $uniqueid)</td></tr>
 <tr class="memdesc:a70b61d940445a77cb9b7c1933518e902"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lookup this unique id and return the user id for this assignment.  <br /></td></tr>
 <tr class="separator:a70b61d940445a77cb9b7c1933518e902"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac1bb854d32d6d09a642357821e1b6dd" id="r_aac1bb854d32d6d09a642357821e1b6dd"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac1bb854d32d6d09a642357821e1b6dd">send_assignment_notification</a> ($userfrom, $userto, $messagetype, $eventtype, $updatetime, $coursemodule, $context, $course, $modulename, $assignmentname, $blindmarking, $uniqueidforuser)</td></tr>
-<tr class="memdesc:aac1bb854d32d6d09a642357821e1b6dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message someone about something (static so it can be called from cron).  <br /></td></tr>
-<tr class="separator:aac1bb854d32d6d09a642357821e1b6dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa073bbdb0997e5c5f868f5820b56f8fd" id="r_aa073bbdb0997e5c5f868f5820b56f8fd"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa073bbdb0997e5c5f868f5820b56f8fd">send_assignment_notification</a> ($userfrom, $userto, $messagetype, $eventtype, $updatetime, $coursemodule, $context, $course, $modulename, $assignmentname, $blindmarking, $uniqueidforuser, $extrainfo=[])</td></tr>
+<tr class="memdesc:aa073bbdb0997e5c5f868f5820b56f8fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message someone about something (static so it can be called from cron).  <br /></td></tr>
+<tr class="separator:aa073bbdb0997e5c5f868f5820b56f8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -597,6 +594,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ab22b26e89095851c04fdf85bb73045ae" id="r_ab22b26e89095851c04fdf85bb73045ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab22b26e89095851c04fdf85bb73045ae">get_submission</a> ($submissionid)</td></tr>
 <tr class="memdesc:ab22b26e89095851c04fdf85bb73045ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the submission object from it's id.  <br /></td></tr>
 <tr class="separator:ab22b26e89095851c04fdf85bb73045ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88c270f98eae79fe1e8a7ee33cb82660" id="r_a88c270f98eae79fe1e8a7ee33cb82660"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88c270f98eae79fe1e8a7ee33cb82660">get_submission_summaries_for_messages</a> (stdClass $submission)</td></tr>
+<tr class="memdesc:a88c270f98eae79fe1e8a7ee33cb82660"><td class="mdescLeft">&#160;</td><td class="mdescRight">Produce a summary of a submission that can be used in messages.  <br /></td></tr>
+<tr class="separator:a88c270f98eae79fe1e8a7ee33cb82660"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef20f6d2a76c4b28b000d953ea695281" id="r_aef20f6d2a76c4b28b000d953ea695281"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef20f6d2a76c4b28b000d953ea695281">get_submissionstatement</a> ($adminconfig, $instance, $context)</td></tr>
 <tr class="memdesc:aef20f6d2a76c4b28b000d953ea695281"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the correct submission statement depending on single submisison, team submission or team submission where all team memebers must submit.  <br /></td></tr>
 <tr class="separator:aef20f6d2a76c4b28b000d953ea695281"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1205,24 +1205,6 @@ array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b
 
 </div>
 </div>
-<a id="afdbca3b7afb34cb2866e17a5e185653c" name="afdbca3b7afb34cb2866e17a5e185653c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdbca3b7afb34cb2866e17a5e185653c">&#9670;&#160;</a></span>add_to_log()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">assign::add_to_log </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000669">Deprecated</a></b></dt><dd>since 2.7 - Use new events system instead. </dd></dl>
-
-</div>
-</div>
 <a id="a2b537d7a5613437e0c842bbff3b42203" name="a2b537d7a5613437e0c842bbff3b42203"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2b537d7a5613437e0c842bbff3b42203">&#9670;&#160;</a></span>allocate_unique_ids()</h2>
 
@@ -1300,6 +1282,37 @@ array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aac609a51471404f98cba80fea75510d7" name="aac609a51471404f98cba80fea75510d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac609a51471404f98cba80fea75510d7">&#9670;&#160;</a></span>calculate_penalised_grade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">assign::calculate_penalised_grade </td>
+          <td>(</td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$grade</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate penalised grade and deducted mark. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$grade</td><td>The grade object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>[$penalisedgrade, $deductedmark] the penalised grade and the deducted mark </td></tr>
   </table>
   </dd>
 </dl>
@@ -2140,8 +2153,8 @@ array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b
 
 </div>
 </div>
-<a id="a759ee06f172535aaf57780bd566e9149" name="a759ee06f172535aaf57780bd566e9149"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a759ee06f172535aaf57780bd566e9149">&#9670;&#160;</a></span>display_grade()</h2>
+<a id="a595f6cf68dc9a394e031a8caf830d801" name="a595f6cf68dc9a394e031a8caf830d801"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a595f6cf68dc9a394e031a8caf830d801">&#9670;&#160;</a></span>display_grade()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2164,7 +2177,12 @@ array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$modified</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$modified</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>$deductedmark</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2176,6 +2194,7 @@ array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b
     <tr><td class="paramtype">boolean</td><td class="paramname">$editing</td><td>Are we allowing changes to this grade? </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>The user id the grade belongs to </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$modified</td><td>Timestamp from when the grade was last modified </td></tr>
+    <tr><td class="paramtype">float</td><td class="paramname">$deductedmark</td><td>The deducted mark if penalty is applied </td></tr>
   </table>
   </dd>
 </dl>
@@ -2293,24 +2312,6 @@ array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="af3a5264bfde2a1d51717ccaf861b5bf7" name="af3a5264bfde2a1d51717ccaf861b5bf7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3a5264bfde2a1d51717ccaf861b5bf7">&#9670;&#160;</a></span>format_grade_for_log()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">assign::format_grade_for_log </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000671">Deprecated</a></b></dt><dd>since 2.7 </dd></dl>
 
 </div>
 </div>
@@ -2441,24 +2442,6 @@ array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a90101d530522954f415ecb83c2dd22c6" name="a90101d530522954f415ecb83c2dd22c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90101d530522954f415ecb83c2dd22c6">&#9670;&#160;</a></span>format_submission_for_log()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">assign::format_submission_for_log </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000672">Deprecated</a></b></dt><dd>since 2.7 </dd></dl>
 
 </div>
 </div>
@@ -3920,6 +3903,46 @@ array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a88c270f98eae79fe1e8a7ee33cb82660" name="a88c270f98eae79fe1e8a7ee33cb82660"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88c270f98eae79fe1e8a7ee33cb82660">&#9670;&#160;</a></span>get_submission_summaries_for_messages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">assign::get_submission_summaries_for_messages </td>
+          <td>(</td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$submission</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Produce a summary of a submission that can be used in messages. </p>
+<p>This function iterates through all enabled submission plugins and calls their <code>get_submission_summary</code> method (if implemented). It aggregates the results into a formatted summary string.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$submission</td><td>the submission the message is about. Row from assign_submission table. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string[]</td><td>with two elements: 'submissionsummarytext' =&gt; a plain text summary, 'submissionsummaryhtml' =&gt; an HTML summary. </td></tr>
   </table>
   </dd>
 </dl>
@@ -6678,8 +6701,8 @@ array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b
 
 </div>
 </div>
-<a id="aac1bb854d32d6d09a642357821e1b6dd" name="aac1bb854d32d6d09a642357821e1b6dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac1bb854d32d6d09a642357821e1b6dd">&#9670;&#160;</a></span>send_assignment_notification()</h2>
+<a id="aa073bbdb0997e5c5f868f5820b56f8fd" name="aa073bbdb0997e5c5f868f5820b56f8fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa073bbdb0997e5c5f868f5820b56f8fd">&#9670;&#160;</a></span>send_assignment_notification()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6745,7 +6768,12 @@ array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$uniqueidforuser</em></span>&#160;)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$uniqueidforuser</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$extrainfo</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[]</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -6770,6 +6798,7 @@ array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b
     <tr><td class="paramtype">string</td><td class="paramname">$assignmentname</td><td></td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$blindmarking</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$uniqueidforuser</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$extrainfo</td><td>extra values to pass to any language strings or templates used in preparing the message. </td></tr>
   </table>
   </dd>
 </dl>
@@ -6782,8 +6811,8 @@ array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b
 
 </div>
 </div>
-<a id="a04970a1758a4f77c9d58fdafe9f18374" name="a04970a1758a4f77c9d58fdafe9f18374"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04970a1758a4f77c9d58fdafe9f18374">&#9670;&#160;</a></span>send_notification()</h2>
+<a id="a6f5d78e8bd009ff2d5df19bde52b1702" name="a6f5d78e8bd009ff2d5df19bde52b1702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f5d78e8bd009ff2d5df19bde52b1702">&#9670;&#160;</a></span>send_notification()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6811,7 +6840,12 @@ array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$updatetime</em></span>&#160;)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$updatetime</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$extrainfo</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[]</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -6824,6 +6858,7 @@ array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b
     <tr><td class="paramtype">string</td><td class="paramname">$messagetype</td><td></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$eventtype</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$updatetime</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$extrainfo</td><td>extra values to pass to any language strings or templates used in preparing the message. </td></tr>
   </table>
   </dd>
 </dl>
@@ -8585,7 +8620,7 @@ array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 16 2025 03:11:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 23 2025 03:13:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

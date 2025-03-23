@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
   </td>
  </tr>
  </tbody>
@@ -285,8 +285,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1139fddfe54e3eac10d6875f0975ba20" id="r_ga1139fddfe54e3eac10d6875f0975ba20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1139fddfe54e3eac10d6875f0975ba20">glossary_get_categories</a> ($glossary, $from, $limit)</td></tr>
 <tr class="memdesc:ga1139fddfe54e3eac10d6875f0975ba20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the categories of a glossary.  <br /></td></tr>
 <tr class="separator:ga1139fddfe54e3eac10d6875f0975ba20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaec24a16eb0de78f60c59ff0395cc2efc" id="r_gaec24a16eb0de78f60c59ff0395cc2efc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaec24a16eb0de78f60c59ff0395cc2efc">glossary_get_completion_state</a> ()</td></tr>
-<tr class="separator:gaec24a16eb0de78f60c59ff0395cc2efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7ee48014951d31260a4240b83e80de52" id="r_ga7ee48014951d31260a4240b83e80de52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7ee48014951d31260a4240b83e80de52">glossary_get_coursemodule_info</a> ($coursemodule)</td></tr>
 <tr class="memdesc:ga7ee48014951d31260a4240b83e80de52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a get_coursemodule_info function in case any glossary type wants to add 'extra' information for the course (see resource).  <br /></td></tr>
 <tr class="separator:ga7ee48014951d31260a4240b83e80de52"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -467,8 +465,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gab0a194a31f15b8fe53d897f315719d5c" id="r_gab0a194a31f15b8fe53d897f315719d5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab0a194a31f15b8fe53d897f315719d5c">glossary_rss_newstuff</a> ($glossary, $time)</td></tr>
 <tr class="memdesc:gab0a194a31f15b8fe53d897f315719d5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">If there is new stuff in since $time this returns true Otherwise it returns false.  <br /></td></tr>
 <tr class="separator:gab0a194a31f15b8fe53d897f315719d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad06d2d6bccac5ec0acbca1b5d921ff0f" id="r_gad06d2d6bccac5ec0acbca1b5d921ff0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad06d2d6bccac5ec0acbca1b5d921ff0f">glossary_scale_used</a> ()</td></tr>
-<tr class="separator:gad06d2d6bccac5ec0acbca1b5d921ff0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga38a6ae959de1388baf00dcef6e5e8885" id="r_ga38a6ae959de1388baf00dcef6e5e8885"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga38a6ae959de1388baf00dcef6e5e8885">glossary_scale_used_anywhere</a> ($scaleid)</td></tr>
 <tr class="memdesc:ga38a6ae959de1388baf00dcef6e5e8885"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if scale is being used by any instance of glossary.  <br /></td></tr>
 <tr class="separator:ga38a6ae959de1388baf00dcef6e5e8885"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1406,24 +1402,6 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
-
-</div>
-</div>
-<a id="gaec24a16eb0de78f60c59ff0395cc2efc" name="gaec24a16eb0de78f60c59ff0395cc2efc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaec24a16eb0de78f60c59ff0395cc2efc">&#9670;&#160;</a></span>glossary_get_completion_state()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">glossary_get_completion_state </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000789">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
 
 </div>
 </div>
@@ -4379,24 +4357,6 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 
 </div>
 </div>
-<a id="gad06d2d6bccac5ec0acbca1b5d921ff0f" name="gad06d2d6bccac5ec0acbca1b5d921ff0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad06d2d6bccac5ec0acbca1b5d921ff0f">&#9670;&#160;</a></span>glossary_scale_used()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">glossary_scale_used </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000790">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8 </dd></dl>
-
-</div>
-</div>
 <a id="ga38a6ae959de1388baf00dcef6e5e8885" name="ga38a6ae959de1388baf00dcef6e5e8885"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga38a6ae959de1388baf00dcef6e5e8885">&#9670;&#160;</a></span>glossary_scale_used_anywhere()</h2>
 
@@ -5438,7 +5398,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 16 2025 03:11:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 23 2025 03:13:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

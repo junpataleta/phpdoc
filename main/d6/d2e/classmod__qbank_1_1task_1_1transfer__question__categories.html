@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
   </td>
  </tr>
  </tbody>
@@ -94,11 +94,17 @@ Inheritance diagram for mod_qbank\task\transfer_question_categories:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afafb89e2dfbf21ef8751b71034de79ee" id="r_afafb89e2dfbf21ef8751b71034de79ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afafb89e2dfbf21ef8751b71034de79ee">execute</a> ()</td></tr>
-<tr class="memdesc:afafb89e2dfbf21ef8751b71034de79ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the install task.  <br /></td></tr>
+<tr class="memdesc:afafb89e2dfbf21ef8751b71034de79ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do the job.  <br /></td></tr>
 <tr class="separator:afafb89e2dfbf21ef8751b71034de79ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8d6865a9166ec290292d9e662d07aae" id="r_af8d6865a9166ec290292d9e662d07aae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8d6865a9166ec290292d9e662d07aae">fix_wrong_parents</a> ()</td></tr>
+<tr class="memdesc:af8d6865a9166ec290292d9e662d07aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fix the context of child categories whose contextid does not match that of their parents.  <br /></td></tr>
+<tr class="separator:af8d6865a9166ec290292d9e662d07aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b9d0450754d87b155830bb484ee4cea" id="r_a3b9d0450754d87b155830bb484ee4cea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/classcore_1_1task_1_1adhoc__task.html#a3b9d0450754d87b155830bb484ee4cea">get_attempts_available</a> ()</td></tr>
 <tr class="memdesc:a3b9d0450754d87b155830bb484ee4cea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the remaining attempts of the task.  <br /></td></tr>
 <tr class="separator:a3b9d0450754d87b155830bb484ee4cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a455bb0e681cbb6eb1c1b59d389a37736" id="r_a455bb0e681cbb6eb1c1b59d389a37736"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a455bb0e681cbb6eb1c1b59d389a37736">get_categories_in_a_different_context_to_their_parent</a> ()</td></tr>
+<tr class="memdesc:a455bb0e681cbb6eb1c1b59d389a37736"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get question categories that are in a different context to their parent.  <br /></td></tr>
+<tr class="separator:a455bb0e681cbb6eb1c1b59d389a37736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a239d98c229628eb668725f5983ce7f9e" id="r_a239d98c229628eb668725f5983ce7f9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfa/classcore_1_1task_1_1task__base.html#a239d98c229628eb668725f5983ce7f9e">get_component</a> ()</td></tr>
 <tr class="memdesc:a239d98c229628eb668725f5983ce7f9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for $component.  <br /></td></tr>
 <tr class="separator:a239d98c229628eb668725f5983ce7f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,6 +159,9 @@ replacement&#160;</td><td class="memItemRight" valign="bottom"><b>is_blocking</b
 <tr class="memitem:ad72a2d80a0486abcbea1c295be9416c0" id="r_ad72a2d80a0486abcbea1c295be9416c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfa/classcore_1_1task_1_1task__base.html#ad72a2d80a0486abcbea1c295be9416c0">is_component_enabled</a> ()</td></tr>
 <tr class="memdesc:ad72a2d80a0486abcbea1c295be9416c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs whether the task's component is enabled.  <br /></td></tr>
 <tr class="separator:ad72a2d80a0486abcbea1c295be9416c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff179d9e747e7bd0bafec01f402cc6d7" id="r_aff179d9e747e7bd0bafec01f402cc6d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff179d9e747e7bd0bafec01f402cc6d7">move_category_and_its_children</a> (int $categoryid, int $newcontextid)</td></tr>
+<tr class="memdesc:aff179d9e747e7bd0bafec01f402cc6d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the contextid of category $categoryid and all its children to $newcontextid.  <br /></td></tr>
+<tr class="separator:aff179d9e747e7bd0bafec01f402cc6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac87bf56658eb73f6a83b1e52cdbbb416" id="r_ac87bf56658eb73f6a83b1e52cdbbb416"><td class="memItemLeft" align="right" valign="top"><a id="ac87bf56658eb73f6a83b1e52cdbbb416" name="ac87bf56658eb73f6a83b1e52cdbbb416"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>release_concurrency_lock</b> ()</td></tr>
 <tr class="memdesc:ac87bf56658eb73f6a83b1e52cdbbb416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release the concurrency lock for this task type. <br /></td></tr>
@@ -224,12 +233,15 @@ replacement&#160;</td><td class="memItemRight" valign="bottom"><b>since</b>: '4.
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a83a2d82756508d4e264bf56ed2acb4ee" id="r_a83a2d82756508d4e264bf56ed2acb4ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83a2d82756508d4e264bf56ed2acb4ee">create_course</a> (\<a class="el" href="../../d4/dec/classcore__course__category.html">core_course_category</a> $coursecategory, string $shortname)</td></tr>
-<tr class="memdesc:a83a2d82756508d4e264bf56ed2acb4ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for create_course.  <br /></td></tr>
-<tr class="separator:a83a2d82756508d4e264bf56ed2acb4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa195f1693035d76d8edc8dabee6eaa8f" id="r_aa195f1693035d76d8edc8dabee6eaa8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa195f1693035d76d8edc8dabee6eaa8f">create_course</a> (<a class="el" href="../../d4/dec/classcore__course__category.html">core_course_category</a> $coursecategory, string $shortname)</td></tr>
+<tr class="memdesc:aa195f1693035d76d8edc8dabee6eaa8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for create_course.  <br /></td></tr>
+<tr class="separator:aa195f1693035d76d8edc8dabee6eaa8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af824e83aef69dbb6211aea9604744669" id="r_af824e83aef69dbb6211aea9604744669"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/classcore_1_1task_1_1adhoc__task.html#af824e83aef69dbb6211aea9604744669">get_default_concurrency_limit</a> ()</td></tr>
 <tr class="memdesc:af824e83aef69dbb6211aea9604744669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns default concurrency limit for this task.  <br /></td></tr>
 <tr class="separator:af824e83aef69dbb6211aea9604744669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f1a75feecb1b36a63ba1e83497cb711" id="r_a8f1a75feecb1b36a63ba1e83497cb711"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f1a75feecb1b36a63ba1e83497cb711">get_top_category_id_for_context</a> (int $contextid)</td></tr>
+<tr class="memdesc:a8f1a75feecb1b36a63ba1e83497cb711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the Top category for a context, if there is one.  <br /></td></tr>
+<tr class="separator:a8f1a75feecb1b36a63ba1e83497cb711"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae178c9c79a8df57050de2bebfe7504e2" id="r_ae178c9c79a8df57050de2bebfe7504e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae178c9c79a8df57050de2bebfe7504e2">move_question_category</a> (stdClass $oldtopcategory, context $newcontext)</td></tr>
 <tr class="memdesc:ae178c9c79a8df57050de2bebfe7504e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new 'Top' category in our new context and move the old categories descendents beneath it.  <br /></td></tr>
 <tr class="separator:ae178c9c79a8df57050de2bebfe7504e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -238,8 +250,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a66abd06cce7066924d55dd45c9ec0626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a83a2d82756508d4e264bf56ed2acb4ee" name="a83a2d82756508d4e264bf56ed2acb4ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83a2d82756508d4e264bf56ed2acb4ee">&#9670;&#160;</a></span>create_course()</h2>
+<a id="aa195f1693035d76d8edc8dabee6eaa8f" name="aa195f1693035d76d8edc8dabee6eaa8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa195f1693035d76d8edc8dabee6eaa8f">&#9670;&#160;</a></span>create_course()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -250,7 +262,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">mod_qbank\task\transfer_question_categories::create_course </td>
           <td>(</td>
-          <td class="paramtype">\<a class="el" href="../../d4/dec/classcore__course__category.html">core_course_category</a></td>          <td class="paramname"><span class="paramname"><em>$coursecategory</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/dec/classcore__course__category.html">core_course_category</a></td>          <td class="paramname"><span class="paramname"><em>$coursecategory</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -297,15 +309,35 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Run the install task. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Do the job. </p>
+<p>Throw exceptions on errors (the job will be retried). </p>
 
 <p>Reimplemented from <a class="el" href="../../db/dfa/classcore_1_1task_1_1task__base.html#a5c5ea521fb1baa489783be5c79b4f1fc">core\task\task_base</a>.</p>
+
+</div>
+</div>
+<a id="af8d6865a9166ec290292d9e662d07aae" name="af8d6865a9166ec290292d9e662d07aae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8d6865a9166ec290292d9e662d07aae">&#9670;&#160;</a></span>fix_wrong_parents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_qbank\task\transfer_question_categories::fix_wrong_parents </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fix the context of child categories whose contextid does not match that of their parents. </p>
+<p>Fix here means:</p>
+<ul>
+<li>if the child category's context exists, and has a 'Top' category, we move the child category to be just under that Top category. That is where they would have appeared before, e.g. in the return from <a class="el" href="../../d0/de1/group__core.html#gaa72bfd3cfafb800c003db8ba8436f06b" title="Get the list of categories.">question_categorylist()</a>.</li>
+<li>if the child category points to a context that does not exist at all, then we instead change its context to be the same as it's parent's context. This may break things like images in the question text of questions there, but there is no real alternative.</li>
+</ul>
+<p>This is necessary because, due to old bugs, for example in backup and restoree code, we know there can be question categories in the databases of old <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> sites with the wrong context id. </p>
 
 </div>
 </div>
@@ -336,6 +368,31 @@ Protected Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int</td><td>Number of the remaining attempts of the task. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a455bb0e681cbb6eb1c1b59d389a37736" name="a455bb0e681cbb6eb1c1b59d389a37736"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a455bb0e681cbb6eb1c1b59d389a37736">&#9670;&#160;</a></span>get_categories_in_a_different_context_to_their_parent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_qbank\task\transfer_question_categories::get_categories_in_a_different_context_to_their_parent </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get question categories that are in a different context to their parent. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int[]</td><td>child category id =&gt; context id of the child category. </td></tr>
   </table>
   </dd>
 </dl>
@@ -875,6 +932,45 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a8f1a75feecb1b36a63ba1e83497cb711" name="a8f1a75feecb1b36a63ba1e83497cb711"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f1a75feecb1b36a63ba1e83497cb711">&#9670;&#160;</a></span>get_top_category_id_for_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_qbank\task\transfer_question_categories::get_top_category_id_for_context </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$contextid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Find the Top category for a context, if there is one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$contextid</td><td>the id of a context (which might not exist). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td>a Top category id, or 0 if none is found. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a80cf8e87a64167fc78f750371fa793dd" name="a80cf8e87a64167fc78f750371fa793dd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a80cf8e87a64167fc78f750371fa793dd">&#9670;&#160;</a></span>get_userid()</h2>
 
@@ -935,6 +1031,36 @@ Protected Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td>true when enabled. false otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aff179d9e747e7bd0bafec01f402cc6d7" name="aff179d9e747e7bd0bafec01f402cc6d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff179d9e747e7bd0bafec01f402cc6d7">&#9670;&#160;</a></span>move_category_and_its_children()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_qbank\task\transfer_question_categories::move_category_and_its_children </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$categoryid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$newcontextid</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the contextid of category $categoryid and all its children to $newcontextid. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$categoryid</td><td>a question_category id. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$newcontextid</td><td>the place to move to. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1018,12 +1144,6 @@ Protected Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td>True if neither the category nor its children contain any questions. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../d5/d5c/classdml__exception.html" title="DML exception class, use instead of throw new moodle_exception() in dml code.">dml_exception</a></td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1548,7 +1668,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000314">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 See <a href="https://tracker.moodle.org/browse/MDL-67667" class="el">MDL-67667</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000235">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 See <a href="https://tracker.moodle.org/browse/MDL-67667" class="el">MDL-67667</a> </dd></dl>
 
 </div>
 </div>
@@ -1571,7 +1691,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000315">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 See <a href="https://tracker.moodle.org/browse/MDL-67667" class="el">MDL-67667</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000236">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 See <a href="https://tracker.moodle.org/browse/MDL-67667" class="el">MDL-67667</a> </dd></dl>
 
 </div>
 </div>
@@ -1581,7 +1701,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 16 2025 03:14:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 23 2025 03:16:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

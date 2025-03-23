@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
   </td>
  </tr>
  </tbody>
@@ -99,8 +99,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aac35dc5d2030a6990ff98d9726ac65a1" id="r_aac35dc5d2030a6990ff98d9726ac65a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac35dc5d2030a6990ff98d9726ac65a1">auto_release</a> ()</td></tr>
 <tr class="memdesc:aac35dc5d2030a6990ff98d9726ac65a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auto release any open locks on shutdown.  <br /></td></tr>
 <tr class="separator:aac35dc5d2030a6990ff98d9726ac65a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82bfa0de83dceea727ad688b259749d9" id="r_a82bfa0de83dceea727ad688b259749d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82bfa0de83dceea727ad688b259749d9">extend_lock</a> ()</td></tr>
-<tr class="separator:a82bfa0de83dceea727ad688b259749d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11e227e566de67249857585caf7e2be3" id="r_a11e227e566de67249857585caf7e2be3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11e227e566de67249857585caf7e2be3">get_lock</a> ($resource, $timeout, $maxlifetime=86400)</td></tr>
 <tr class="memdesc:a11e227e566de67249857585caf7e2be3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and get a lock.  <br /></td></tr>
 <tr class="separator:a11e227e566de67249857585caf7e2be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,8 +111,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a01ece136e175e2097d757f9cc4468ddc" id="r_a01ece136e175e2097d757f9cc4468ddc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01ece136e175e2097d757f9cc4468ddc">supports_auto_release</a> ()</td></tr>
 <tr class="memdesc:a01ece136e175e2097d757f9cc4468ddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will this lock type will be automatically released when a process ends.  <br /></td></tr>
 <tr class="separator:a01ece136e175e2097d757f9cc4468ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ca69ee1018da433bad1866e5f2c0131" id="r_a8ca69ee1018da433bad1866e5f2c0131"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ca69ee1018da433bad1866e5f2c0131">supports_recursion</a> ()</td></tr>
-<tr class="separator:a8ca69ee1018da433bad1866e5f2c0131"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4b76010e9c00ac6e0ffe7ef23c5e5a2" id="r_ad4b76010e9c00ac6e0ffe7ef23c5e5a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4b76010e9c00ac6e0ffe7ef23c5e5a2">supports_timeout</a> ()</td></tr>
 <tr class="memdesc:ad4b76010e9c00ac6e0ffe7ef23c5e5a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return information about the blocking behaviour of the lock type on this platform.  <br /></td></tr>
 <tr class="separator:ad4b76010e9c00ac6e0ffe7ef23c5e5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,24 +203,6 @@ static int[]&#160;</td><td class="memItemRight" valign="bottom"><b>$locksbytoken
 
 <p>Auto release any open locks on shutdown. </p>
 <p>This is required, because we may be using persistent <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> connections. </p>
-
-</div>
-</div>
-<a id="a82bfa0de83dceea727ad688b259749d9" name="a82bfa0de83dceea727ad688b259749d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82bfa0de83dceea727ad688b259749d9">&#9670;&#160;</a></span>extend_lock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">core\lock\postgres_lock_factory::extend_lock </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000268">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10. </dd></dl>
 
 </div>
 </div>
@@ -437,24 +415,6 @@ static int[]&#160;</td><td class="memItemRight" valign="bottom"><b>$locksbytoken
 
 </div>
 </div>
-<a id="a8ca69ee1018da433bad1866e5f2c0131" name="a8ca69ee1018da433bad1866e5f2c0131"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ca69ee1018da433bad1866e5f2c0131">&#9670;&#160;</a></span>supports_recursion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">core\lock\postgres_lock_factory::supports_recursion </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000267">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10. </dd></dl>
-
-</div>
-</div>
 <a id="ad4b76010e9c00ac6e0ffe7ef23c5e5a2" name="ad4b76010e9c00ac6e0ffe7ef23c5e5a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad4b76010e9c00ac6e0ffe7ef23c5e5a2">&#9670;&#160;</a></span>supports_timeout()</h2>
 
@@ -488,7 +448,7 @@ static int[]&#160;</td><td class="memItemRight" valign="bottom"><b>$locksbytoken
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 16 2025 03:13:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 23 2025 03:15:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
   </td>
  </tr>
  </tbody>
@@ -373,9 +373,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1ed46b38cf912a3b8e915ed3cf7c2730" id="r_a1ed46b38cf912a3b8e915ed3cf7c2730"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7c/classmysqli__native__moodle__database.html#a1ed46b38cf912a3b8e915ed3cf7c2730">set_field_select</a> ($table, $newfield, $newvalue, $select, ?array $params=null)</td></tr>
 <tr class="memdesc:a1ed46b38cf912a3b8e915ed3cf7c2730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a single field in every table record which match a particular WHERE clause.  <br /></td></tr>
 <tr class="separator:a1ed46b38cf912a3b8e915ed3cf7c2730"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a205e6752958e056c91aafbfb0ead2d3f" id="r_a205e6752958e056c91aafbfb0ead2d3f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a205e6752958e056c91aafbfb0ead2d3f">set_logging</a> ($state)</td></tr>
-<tr class="memdesc:a205e6752958e056c91aafbfb0ead2d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable detailed sql logging.  <br /></td></tr>
-<tr class="separator:a205e6752958e056c91aafbfb0ead2d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d8a59b122bc0668b00eb85465a0d413" id="r_a8d8a59b122bc0668b00eb85465a0d413"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7c/classmysqli__native__moodle__database.html#a8d8a59b122bc0668b00eb85465a0d413">setup_is_unicodedb</a> ()</td></tr>
 <tr class="memdesc:a8d8a59b122bc0668b00eb85465a0d413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this database compatible with utf8?  <br /></td></tr>
 <tr class="separator:a8d8a59b122bc0668b00eb85465a0d413"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2231,7 +2228,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Returns the localised database description Note: can be used before <a class="el" href="../../d3/d6e/classmoodle__database.html#a76f184b06a2c39fa93a89926d9777a54" title="Connects to the database.">connect()</a> </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000385">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000287">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td></td></tr>
@@ -3425,7 +3422,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000142">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-30407" class="el">MDL-30407</a> MUST_EXIST option should not throw a <a class="el" href="../../d5/d5c/classdml__exception.html" title="DML exception class, use instead of throw new moodle_exception() in dml code.">dml_exception</a>, it should throw a different exception as it's a requested check. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000141">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-30407" class="el">MDL-30407</a> MUST_EXIST option should not throw a <a class="el" href="../../d5/d5c/classdml__exception.html" title="DML exception class, use instead of throw new moodle_exception() in dml code.">dml_exception</a>, it should throw a different exception as it's a requested check. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">mixed</td><td>a fieldset object containing the first matching record, false or exception if error not found depending on mode </td></tr>
@@ -6598,34 +6595,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 
 </div>
 </div>
-<a id="a205e6752958e056c91aafbfb0ead2d3f" name="a205e6752958e056c91aafbfb0ead2d3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a205e6752958e056c91aafbfb0ead2d3f">&#9670;&#160;</a></span>set_logging()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">moodle_database::set_logging </td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$state</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Enable/disable detailed sql logging. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000386">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.9 </dd></dl>
-
-</div>
-</div>
 <a id="a8d8a59b122bc0668b00eb85465a0d413" name="a8d8a59b122bc0668b00eb85465a0d413"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8d8a59b122bc0668b00eb85465a0d413">&#9670;&#160;</a></span>setup_is_unicodedb()</h2>
 
@@ -6894,7 +6863,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Returns the SQL to be used in order to an UNSIGNED INTEGER column to SIGNED. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000393">Deprecated</a></b></dt><dd>since 2.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000294">Deprecated</a></b></dt><dd>since 2.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$fieldname</td><td>The name of the field to be cast </td></tr>
@@ -7245,7 +7214,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>This used to return empty string replacement character. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000388">Deprecated</a></b></dt><dd>use bound parameter with empty string instead</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000289">Deprecated</a></b></dt><dd>use bound parameter with empty string instead</dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>An empty string. </td></tr>
@@ -7349,7 +7318,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Returns the proper SQL (for the dbms in use) to concatenate $firstname and $lastname. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000143">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-31233" class="el">MDL-31233</a> This may not be needed here.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000142">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-31233" class="el">MDL-31233</a> This may not be needed here.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$first</td><td>User's first name (default:'firstname'). </td></tr>
@@ -8702,8 +8671,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000389">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0. See <a href="https://tracker.moodle.org/browse/MDL-71257" class="el">MDL-71257</a>. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000144">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-83171" class="el">MDL-83171</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000290">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0. See <a href="https://tracker.moodle.org/browse/MDL-71257" class="el">MDL-71257</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000143">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-83171" class="el">MDL-83171</a>. </dd></dl>
 
 </div>
 </div>
@@ -8734,8 +8703,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000390">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000145">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-83171" class="el">MDL-83171</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000291">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000144">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-83171" class="el">MDL-83171</a>. </dd></dl>
 
 </div>
 </div>
@@ -8745,7 +8714,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 16 2025 03:11:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 23 2025 03:13:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

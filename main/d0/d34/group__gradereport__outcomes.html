@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
   </td>
  </tr>
  </tbody>
@@ -110,23 +110,35 @@ Variables</h2></td></tr>
 <tr class="memitem:ga749a54eb7daa2b8849eed0223aa414d5" id="r_ga749a54eb7daa2b8849eed0223aa414d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga749a54eb7daa2b8849eed0223aa414d5">$event</a></td></tr>
 <tr class="separator:ga749a54eb7daa2b8849eed0223aa414d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga34be95f4bfa10c3dc5b1cdb043bb1564" id="r_ga34be95f4bfa10c3dc5b1cdb043bb1564"><td class="memItemLeft" align="right" valign="top"><a id="ga34be95f4bfa10c3dc5b1cdb043bb1564" name="ga34be95f4bfa10c3dc5b1cdb043bb1564"></a>
-if( $showonlyactiveenrol) <a class="el" href="../../d0/de1/group__core.html#ga13a74e59a81139e77c9593ab40cec354">foreach</a>($outcomes as $outcomeid=&gt; $outcome)&#160;</td><td class="memItemRight" valign="bottom"><b>$html</b> = '&lt;table class=&quot;generaltable boxaligncenter&quot; width=&quot;90%&quot; cellspacing=&quot;1&quot; cellpadding=&quot;5&quot; summary=&quot;Outcomes Report&quot;&gt;' . &quot;\n&quot;</td></tr>
+if($taskindicator-&gt;has_task_record())&#160;</td><td class="memItemRight" valign="bottom"><b>$html</b> = '&lt;table class=&quot;generaltable boxaligncenter&quot; width=&quot;90%&quot; cellspacing=&quot;1&quot; cellpadding=&quot;5&quot; summary=&quot;Outcomes Report&quot;&gt;' . &quot;\n&quot;</td></tr>
 <tr class="separator:ga34be95f4bfa10c3dc5b1cdb043bb1564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa22bb03fe644e3eb67454830c643ba78" id="r_gaa22bb03fe644e3eb67454830c643ba78"><td class="memItemLeft" align="right" valign="top"><a id="gaa22bb03fe644e3eb67454830c643ba78" name="gaa22bb03fe644e3eb67454830c643ba78"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$indicatorheading</b> = get_string('recalculatinggrades', 'grades')</td></tr>
+<tr class="separator:gaa22bb03fe644e3eb67454830c643ba78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga918d8cc5211e4365254aff295e657a27" id="r_ga918d8cc5211e4365254aff295e657a27"><td class="memItemLeft" align="right" valign="top"><a id="ga918d8cc5211e4365254aff295e657a27" name="ga918d8cc5211e4365254aff295e657a27"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$indicatormessage</b> = get_string('recalculatinggradesadhoc', 'grades')</td></tr>
+<tr class="separator:ga918d8cc5211e4365254aff295e657a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2565069eadb97bf19ff237072330130a" id="r_ga2565069eadb97bf19ff237072330130a"><td class="memItemLeft" align="right" valign="top"><a id="ga2565069eadb97bf19ff237072330130a" name="ga2565069eadb97bf19ff237072330130a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$outcomes</b> = grade_outcome::fetch_all_available($courseid)</td></tr>
 <tr class="separator:ga2565069eadb97bf19ff237072330130a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gada8a7130088351710bb02ed622d6bf65" id="r_gada8a7130088351710bb02ed622d6bf65"><td class="memItemLeft" align="right" valign="top"><a id="gada8a7130088351710bb02ed622d6bf65" name="gada8a7130088351710bb02ed622d6bf65"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$plugin</b> = 2024100100</td></tr>
 <tr class="separator:gada8a7130088351710bb02ed622d6bf65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0016494000e1a2c6c4d7cb8e99b115b0" id="r_ga0016494000e1a2c6c4d7cb8e99b115b0"><td class="memItemLeft" align="right" valign="top"><a id="ga0016494000e1a2c6c4d7cb8e99b115b0" name="ga0016494000e1a2c6c4d7cb8e99b115b0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$report_info</b> = array()</td></tr>
-<tr class="separator:ga0016494000e1a2c6c4d7cb8e99b115b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f7ca78b0d553c54826ecf2300e11b1c" id="r_ga2f7ca78b0d553c54826ecf2300e11b1c"><td class="memItemLeft" align="right" valign="top"><a id="ga2f7ca78b0d553c54826ecf2300e11b1c" name="ga2f7ca78b0d553c54826ecf2300e11b1c"></a>
+if(empty($CFG-&gt;enableoutcomes))&#160;</td><td class="memItemRight" valign="bottom"><b>$regradetask</b> = <a class="el" href="../../d7/de8/classcore__course_1_1task_1_1regrade__final__grades.html#a86bd48699a9c25480e8eb3504977a203">core_course\task\regrade_final_grades::create</a>($courseid)</td></tr>
+<tr class="separator:ga2f7ca78b0d553c54826ecf2300e11b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ea858d02c22251008b34b9557fc4c48" id="r_ga0ea858d02c22251008b34b9557fc4c48"><td class="memItemLeft" align="right" valign="top"><a id="ga0ea858d02c22251008b34b9557fc4c48" name="ga0ea858d02c22251008b34b9557fc4c48"></a>
+if(! $taskindicator-&gt;has_task_record())&#160;</td><td class="memItemRight" valign="bottom"><b>$report_info</b> = array()</td></tr>
+<tr class="separator:ga0ea858d02c22251008b34b9557fc4c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa1d731aa570613e5bcff831bb10e9b87" id="r_gaa1d731aa570613e5bcff831bb10e9b87"><td class="memItemLeft" align="right" valign="top"><a id="gaa1d731aa570613e5bcff831bb10e9b87" name="gaa1d731aa570613e5bcff831bb10e9b87"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$row</b> = 0</td></tr>
 <tr class="separator:gaa1d731aa570613e5bcff831bb10e9b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga505344ee636407a6ba4770dcdf414c3a" id="r_ga505344ee636407a6ba4770dcdf414c3a"><td class="memItemLeft" align="right" valign="top"><a id="ga505344ee636407a6ba4770dcdf414c3a" name="ga505344ee636407a6ba4770dcdf414c3a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$showonlyactiveenrol</b> = <a class="el" href="../../d0/de1/group__core.html#ga84c330e0f7d2b00f4c1fec94b0eee08b">get_user_preferences</a>('grade_report_showonlyactiveenrol', $defaultgradeshowactiveenrol)</td></tr>
 <tr class="separator:ga505344ee636407a6ba4770dcdf414c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf97d71982d21c20cc9ba8024c56d53ed" id="r_gaf97d71982d21c20cc9ba8024c56d53ed"><td class="memItemLeft" align="right" valign="top"><a id="gaf97d71982d21c20cc9ba8024c56d53ed" name="gaf97d71982d21c20cc9ba8024c56d53ed"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$taskindicator</b> = new <a class="el" href="../../d8/d42/classcore_1_1output_1_1task__indicator.html">core\output\task_indicator</a>($regradetask, $indicatorheading, $indicatormessage, $PAGE-&gt;url)</td></tr>
+<tr class="separator:gaf97d71982d21c20cc9ba8024c56d53ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga27dc7e2c13f48a05e56e0d3138fe3c82" id="r_ga27dc7e2c13f48a05e56e0d3138fe3c82"><td class="memItemLeft" align="right" valign="top"><a id="ga27dc7e2c13f48a05e56e0d3138fe3c82" name="ga27dc7e2c13f48a05e56e0d3138fe3c82"></a>
 $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>component</b> = 'gradereport_outcomes'</td></tr>
 <tr class="separator:ga27dc7e2c13f48a05e56e0d3138fe3c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,7 +206,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 16 2025 03:11:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 23 2025 03:13:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

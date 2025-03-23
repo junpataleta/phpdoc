@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
   </td>
  </tr>
  </tbody>
@@ -104,6 +104,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae63e26cc736d4ee286f2032aa3e901de" id="r_ae63e26cc736d4ee286f2032aa3e901de"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da5/classeditor__tiny_1_1plugin.html#ae63e26cc736d4ee286f2032aa3e901de">is_enabled</a> (context $context, array $options, array $fpoptions, ?editor $editor=null)</td></tr>
 <tr class="memdesc:ae63e26cc736d4ee286f2032aa3e901de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the plugin is enabled and accessible (e.g.  <br /></td></tr>
 <tr class="separator:ae63e26cc736d4ee286f2032aa3e901de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb4b9f31899b35091afaf7bd2231f29d" id="r_adb4b9f31899b35091afaf7bd2231f29d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da5/classeditor__tiny_1_1plugin.html#adb4b9f31899b35091afaf7bd2231f29d">is_enabled_for_external</a> (context $context, array $options)</td></tr>
+<tr class="memdesc:adb4b9f31899b35091afaf7bd2231f29d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the plugin is enabled and accessible for external functions.  <br /></td></tr>
+<tr class="separator:adb4b9f31899b35091afaf7bd2231f29d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6dcccf5567b0c39d09ed88bc21eab530" name="a6dcccf5567b0c39d09ed88bc21eab530"></a>
@@ -291,13 +294,62 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="adb4b9f31899b35091afaf7bd2231f29d" name="adb4b9f31899b35091afaf7bd2231f29d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb4b9f31899b35091afaf7bd2231f29d">&#9670;&#160;</a></span>is_enabled_for_external()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static editor_tiny\plugin::is_enabled_for_external </td>
+          <td>(</td>
+          <td class="paramtype">context</td>          <td class="paramname"><span class="paramname"><em>$context</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$options</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel inherited">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether the plugin is enabled and accessible for external functions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">context</td><td class="paramname">$context</td><td>The context that the editor is used within. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$options</td><td>Additional options:<ul>
+<li>pluginname: Name of the plugin, without the "tiny_" prefix. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../da/dfe/classtiny__aiplacement_1_1plugininfo.html#a9019797078979f46c46fa1604cbeb4f8">tiny_aiplacement\plugininfo</a>, <a class="el" href="../../d5/df6/classtiny__media_1_1plugininfo.html#ae3305141e7caa3acd8453a19633cd793">tiny_media\plugininfo</a>, and <a class="el" href="../../d6/d85/classtiny__recordrtc_1_1plugininfo.html#aba5b598661d7f6e85eda95d315cd721d">tiny_recordrtc\plugininfo</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>lib/editor/tiny/plugins/noautolink/classes/<b>plugininfo.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 16 2025 03:15:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 23 2025 03:17:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
   </td>
  </tr>
  </tbody>
@@ -151,9 +151,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a864aee90163706ebf980f1b20e994fef" id="r_a864aee90163706ebf980f1b20e994fef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a864aee90163706ebf980f1b20e994fef">col_workflowstatus</a> (stdClass $row)</td></tr>
 <tr class="memdesc:a864aee90163706ebf980f1b20e994fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">list current marking workflow state  <br /></td></tr>
 <tr class="separator:a864aee90163706ebf980f1b20e994fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a424f0a2f263f1260f22b44039f1a2b22" id="r_a424f0a2f263f1260f22b44039f1a2b22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a424f0a2f263f1260f22b44039f1a2b22">display_grade</a> ($grade, $editable, $userid, $modified)</td></tr>
-<tr class="memdesc:a424f0a2f263f1260f22b44039f1a2b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a grade with scales etc.  <br /></td></tr>
-<tr class="separator:a424f0a2f263f1260f22b44039f1a2b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15463824d76d209c4411eea6e00234de" id="r_a15463824d76d209c4411eea6e00234de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15463824d76d209c4411eea6e00234de">display_grade</a> ($grade, $editable, $userid, $modified, float $deductedmark=0)</td></tr>
+<tr class="memdesc:a15463824d76d209c4411eea6e00234de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a grade with scales etc.  <br /></td></tr>
+<tr class="separator:a15463824d76d209c4411eea6e00234de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae93fb9f52508acf3bf2d88882707b68a" id="r_ae93fb9f52508acf3bf2d88882707b68a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae93fb9f52508acf3bf2d88882707b68a">finish_html</a> ()</td></tr>
 <tr class="memdesc:ae93fb9f52508acf3bf2d88882707b68a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finish the HTML output.  <br /></td></tr>
 <tr class="separator:ae93fb9f52508acf3bf2d88882707b68a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -958,8 +958,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a424f0a2f263f1260f22b44039f1a2b22" name="a424f0a2f263f1260f22b44039f1a2b22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a424f0a2f263f1260f22b44039f1a2b22">&#9670;&#160;</a></span>display_grade()</h2>
+<a id="a15463824d76d209c4411eea6e00234de" name="a15463824d76d209c4411eea6e00234de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15463824d76d209c4411eea6e00234de">&#9670;&#160;</a></span>display_grade()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -982,7 +982,12 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$modified</em></span>&#160;)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$modified</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>$deductedmark</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -994,6 +999,7 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">boolean</td><td class="paramname">$editable</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>The user id of the user this grade belongs to </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$modified</td><td>Timestamp showing when the grade was last modified </td></tr>
+    <tr><td class="paramtype">float</td><td class="paramname">$deductedmark</td><td>The deducted mark if penalty is applied </td></tr>
   </table>
   </dd>
 </dl>
@@ -1568,8 +1574,8 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000666">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000293">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-82336" class="el">MDL-82336</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000556">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000292">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-82336" class="el">MDL-82336</a>. </dd></dl>
 
 </div>
 </div>
@@ -1598,8 +1604,8 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000667">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000294">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-82336" class="el">MDL-82336</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000557">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000293">Todo</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-82336" class="el">MDL-82336</a>. </dd></dl>
 
 </div>
 </div>
@@ -1641,7 +1647,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 16 2025 03:11:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 23 2025 03:13:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

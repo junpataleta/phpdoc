@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
   </td>
  </tr>
  </tbody>
@@ -166,12 +166,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3238f51ec391bafad80af2fcc3790687" id="r_a3238f51ec391bafad80af2fcc3790687"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3238f51ec391bafad80af2fcc3790687">is_user_access_restricted_by_capability</a> ()</td></tr>
 <tr class="memdesc:a3238f51ec391bafad80af2fcc3790687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether mod/...:view capability restricts the current user's access.  <br /></td></tr>
 <tr class="separator:a3238f51ec391bafad80af2fcc3790687"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e0a7757ac064d6ecda866e61be27647" id="r_a2e0a7757ac064d6ecda866e61be27647"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e0a7757ac064d6ecda866e61be27647">is_user_access_restricted_by_conditional_access</a> ()</td></tr>
-<tr class="memdesc:a2e0a7757ac064d6ecda866e61be27647"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the module's conditional access settings mean that the user cannot see the activity at all.  <br /></td></tr>
-<tr class="separator:a2e0a7757ac064d6ecda866e61be27647"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acec2b558ccf4fefdc4184e58e54ed724" id="r_acec2b558ccf4fefdc4184e58e54ed724"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acec2b558ccf4fefdc4184e58e54ed724">is_user_access_restricted_by_group</a> ()</td></tr>
-<tr class="memdesc:acec2b558ccf4fefdc4184e58e54ed724"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method has been deprecated and should not be used.  <br /></td></tr>
-<tr class="separator:acec2b558ccf4fefdc4184e58e54ed724"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1524eb1b7c38c9aab6ce9b57728d5cb0" id="r_a1524eb1b7c38c9aab6ce9b57728d5cb0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1524eb1b7c38c9aab6ce9b57728d5cb0">is_visible_on_course_page</a> ()</td></tr>
 <tr class="memdesc:a1524eb1b7c38c9aab6ce9b57728d5cb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether this module is visible to the current user on course page.  <br /></td></tr>
 <tr class="separator:a1524eb1b7c38c9aab6ce9b57728d5cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1097,47 +1091,6 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_VIEW</b> = 4</
 
 </div>
 </div>
-<a id="a2e0a7757ac064d6ecda866e61be27647" name="a2e0a7757ac064d6ecda866e61be27647"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e0a7757ac064d6ecda866e61be27647">&#9670;&#160;</a></span>is_user_access_restricted_by_conditional_access()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">cm_info::is_user_access_restricted_by_conditional_access </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Checks whether the module's conditional access settings mean that the user cannot see the activity at all. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000520">Deprecated</a></b></dt><dd>since 2.7 <a href="https://tracker.moodle.org/browse/MDL-44070" class="el">MDL-44070</a> </dd></dl>
-
-</div>
-</div>
-<a id="acec2b558ccf4fefdc4184e58e54ed724" name="acec2b558ccf4fefdc4184e58e54ed724"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acec2b558ccf4fefdc4184e58e54ed724">&#9670;&#160;</a></span>is_user_access_restricted_by_group()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">cm_info::is_user_access_restricted_by_group </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This method has been deprecated and should not be used. </p>
-<dl class="section see"><dt>See also</dt><dd>$uservisible </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000519">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 </dd></dl>
-
-</div>
-</div>
 <a id="a1524eb1b7c38c9aab6ce9b57728d5cb0" name="a1524eb1b7c38c9aab6ce9b57728d5cb0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1524eb1b7c38c9aab6ce9b57728d5cb0">&#9670;&#160;</a></span>is_visible_on_course_page()</h2>
 
@@ -1550,7 +1503,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_VIEW</b> = 4</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 16 2025 03:11:27 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 23 2025 03:13:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

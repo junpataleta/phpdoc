@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
   </td>
  </tr>
  </tbody>
@@ -117,6 +117,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a42db6be71f9990f6eb7c67534d97f2ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69f45d2c2df2783e7dba86b3cfa14039" id="r_a69f45d2c2df2783e7dba86b3cfa14039"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69f45d2c2df2783e7dba86b3cfa14039">is_qtype_installed</a> ($qtypename)</td></tr>
 <tr class="separator:a69f45d2c2df2783e7dba86b3cfa14039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e127c8c2cc902d518a306908503ead" id="r_ab3e127c8c2cc902d518a306908503ead"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3e127c8c2cc902d518a306908503ead">is_qtype_usable</a> (string $qtypename)</td></tr>
+<tr class="memdesc:ab3e127c8c2cc902d518a306908503ead"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a given question type is one that is installed and usable.  <br /></td></tr>
+<tr class="separator:ab3e127c8c2cc902d518a306908503ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7f3d1742918043690f645afeb64ebb0" id="r_aa7f3d1742918043690f645afeb64ebb0"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7f3d1742918043690f645afeb64ebb0">load_question</a> ($questionid, $allowshuffle=true)</td></tr>
 <tr class="memdesc:aa7f3d1742918043690f645afeb64ebb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a question definition from the database.  <br /></td></tr>
 <tr class="separator:aa7f3d1742918043690f645afeb64ebb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,6 +143,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>notify_question_edi
 <tr class="separator:a94069e3b382d7b98c84cc2a3337d772b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca5961f44e83bb64edf791fc00e4e803" id="r_aca5961f44e83bb64edf791fc00e4e803"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca5961f44e83bb64edf791fc00e4e803">qtype_exists</a> ($qtypename)</td></tr>
 <tr class="separator:aca5961f44e83bb64edf791fc00e4e803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c07606e475d2fe697e52fcf06ec822f" id="r_a9c07606e475d2fe697e52fcf06ec822f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c07606e475d2fe697e52fcf06ec822f">render_preview_of_question</a> (<a class="el" href="../../d7/da5/classquestion__definition.html">question_definition</a> $question)</td></tr>
+<tr class="memdesc:a9c07606e475d2fe697e52fcf06ec822f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render a throw-away preview of a question.  <br /></td></tr>
+<tr class="separator:a9c07606e475d2fe697e52fcf06ec822f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2689c41f8625a8ed17cb3caffb7faf05" id="r_a2689c41f8625a8ed17cb3caffb7faf05"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2689c41f8625a8ed17cb3caffb7faf05">sort_qtype_array</a> ($qtypes, $config=null)</td></tr>
 <tr class="memdesc:a2689c41f8625a8ed17cb3caffb7faf05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort an array of question types according to the order the admin set up, and then alphabetically for the rest.  <br /></td></tr>
 <tr class="separator:a2689c41f8625a8ed17cb3caffb7faf05"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -656,6 +662,47 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>ensure_fraction_opt
 
 </div>
 </div>
+<a id="ab3e127c8c2cc902d518a306908503ead" name="ab3e127c8c2cc902d518a306908503ead"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3e127c8c2cc902d518a306908503ead">&#9670;&#160;</a></span>is_qtype_usable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static question_bank::is_qtype_usable </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$qtypename</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if a given question type is one that is installed and usable. </p>
+<p>Use this before doing things like rendering buttons/options which will only work for installed question types.</p>
+<p>When loaded through most of the <a class="el" href="../../df/dac/namespacecore__question.html" title="&#160;">core_question</a> areas, qtype will still be the uninstalled type, e.g. 'mytype', but when we get to the quiz pages, it will have been converted to 'missingtype'. So we need to check that as well here.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$qtypename</td><td>e.g. 'multichoice'. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aa7f3d1742918043690f645afeb64ebb0" name="aa7f3d1742918043690f645afeb64ebb0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa7f3d1742918043690f645afeb64ebb0">&#9670;&#160;</a></span>load_question()</h2>
 
@@ -918,6 +965,46 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>ensure_fraction_opt
 
 </div>
 </div>
+<a id="a9c07606e475d2fe697e52fcf06ec822f" name="a9c07606e475d2fe697e52fcf06ec822f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c07606e475d2fe697e52fcf06ec822f">&#9670;&#160;</a></span>render_preview_of_question()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static question_bank::render_preview_of_question </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/da5/classquestion__definition.html">question_definition</a></td>          <td class="paramname"><span class="paramname"><em>$question</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Render a throw-away preview of a question. </p>
+<p>If the question cannot be rendered (e.g. because it is not installed) then display a message instead.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d7/da5/classquestion__definition.html" title="The definition of a question of a particular type.">question_definition</a></td><td class="paramname">$question</td><td>a question. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>HTML to output. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a2689c41f8625a8ed17cb3caffb7faf05" name="a2689c41f8625a8ed17cb3caffb7faf05"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2689c41f8625a8ed17cb3caffb7faf05">&#9670;&#160;</a></span>sort_qtype_array()</h2>
 
@@ -995,7 +1082,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>ensure_fraction_opt
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 16 2025 03:12:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 23 2025 03:14:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

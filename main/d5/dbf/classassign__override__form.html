@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
   </td>
  </tr>
  </tbody>
@@ -111,9 +111,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:gaf0ef5769b5b417de449f46f3d0cac4d1" id="r_gaf0ef5769b5b417de449f46f3d0cac4d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#gaf0ef5769b5b417de449f46f3d0cac4d1">add_sticky_action_buttons</a> (bool $cancel=true, ?string $submitlabel=null)</td></tr>
 <tr class="memdesc:gaf0ef5769b5b417de449f46f3d0cac4d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this method to make a sticky submit/cancel button at the end of your form.  <br /></td></tr>
 <tr class="separator:gaf0ef5769b5b417de449f46f3d0cac4d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5ccc3aeffce27e3335c4fbc26b857563" id="r_ga5ccc3aeffce27e3335c4fbc26b857563"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#ga5ccc3aeffce27e3335c4fbc26b857563">definition_after_data</a> ()</td></tr>
-<tr class="memdesc:ga5ccc3aeffce27e3335c4fbc26b857563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dummy stub method - override if you need to setup the form depending on current values.  <br /></td></tr>
-<tr class="separator:ga5ccc3aeffce27e3335c4fbc26b857563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab93abdf86c1cfb15e613aa1829e51846" id="r_ab93abdf86c1cfb15e613aa1829e51846"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab93abdf86c1cfb15e613aa1829e51846">definition_after_data</a> ()</td></tr>
+<tr class="memdesc:ab93abdf86c1cfb15e613aa1829e51846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override definition after data has been set.  <br /></td></tr>
+<tr class="separator:ab93abdf86c1cfb15e613aa1829e51846"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8070116639d10b49ff37aea6d0cfd6e2" id="r_ga8070116639d10b49ff37aea6d0cfd6e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#ga8070116639d10b49ff37aea6d0cfd6e2">display</a> ()</td></tr>
 <tr class="memdesc:ga8070116639d10b49ff37aea6d0cfd6e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print html form.  <br /></td></tr>
 <tr class="separator:ga8070116639d10b49ff37aea6d0cfd6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -395,6 +395,29 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 
 </div>
 </div>
+<a id="ab93abdf86c1cfb15e613aa1829e51846" name="ab93abdf86c1cfb15e613aa1829e51846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab93abdf86c1cfb15e613aa1829e51846">&#9670;&#160;</a></span>definition_after_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">assign_override_form::definition_after_data </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Override definition after data has been set. </p>
+<p>The value of date time selector will be lost in a POST request, if the selector is disabled. So, we need to set the value again.</p>
+<p>return void </p>
+
+<p>Reimplemented from <a class="el" href="../../d6/d9c/group__core__form.html#ga5ccc3aeffce27e3335c4fbc26b857563">moodleform</a>.</p>
+
+</div>
+</div>
 <a id="a047caec66a8e9b5fa1feaa4a8c35ef34" name="a047caec66a8e9b5fa1feaa4a8c35ef34"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a047caec66a8e9b5fa1feaa4a8c35ef34">&#9670;&#160;</a></span>validation()</h2>
 
@@ -439,7 +462,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 16 2025 03:11:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 23 2025 03:13:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

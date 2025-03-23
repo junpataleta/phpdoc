@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
   </td>
  </tr>
  </tbody>
@@ -95,8 +95,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aabcc2038cd3c99463ce807e10d8001ee" id="r_aabcc2038cd3c99463ce807e10d8001ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabcc2038cd3c99463ce807e10d8001ee">__construct</a> ($type, ?<a class="el" href="../../d7/da2/interfacecore_1_1lock_1_1lock__factory.html">lock_factory</a> $factory=null)</td></tr>
 <tr class="memdesc:aabcc2038cd3c99463ce807e10d8001ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor required by interface.  <br /></td></tr>
 <tr class="separator:aabcc2038cd3c99463ce807e10d8001ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7704fd86d4ad7dcd80973fccb1fb9e7e" id="r_a7704fd86d4ad7dcd80973fccb1fb9e7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7704fd86d4ad7dcd80973fccb1fb9e7e">extend_lock</a> ()</td></tr>
-<tr class="separator:a7704fd86d4ad7dcd80973fccb1fb9e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed6475499e022ecc52137c00cb06f55d" id="r_aed6475499e022ecc52137c00cb06f55d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed6475499e022ecc52137c00cb06f55d">get_lock</a> ($resource, $timeout, $maxlifetime=86400)</td></tr>
 <tr class="memdesc:aed6475499e022ecc52137c00cb06f55d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of lock_factory::get_lock that defers to function inner_get_lock and keeps track of how long it took.  <br /></td></tr>
 <tr class="separator:aed6475499e022ecc52137c00cb06f55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -112,8 +110,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad736d41bf7598d1494085c782f64c7bb" id="r_ad736d41bf7598d1494085c782f64c7bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad736d41bf7598d1494085c782f64c7bb">supports_auto_release</a> ()</td></tr>
 <tr class="memdesc:ad736d41bf7598d1494085c782f64c7bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls parent factory to check if it auto-releases locks.  <br /></td></tr>
 <tr class="separator:ad736d41bf7598d1494085c782f64c7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab18b021bcf613397da0a195a08cd066c" id="r_ab18b021bcf613397da0a195a08cd066c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab18b021bcf613397da0a195a08cd066c">supports_recursion</a> ()</td></tr>
-<tr class="separator:ab18b021bcf613397da0a195a08cd066c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7175a4347ef3ffc6202006ec5f514225" id="r_a7175a4347ef3ffc6202006ec5f514225"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7175a4347ef3ffc6202006ec5f514225">supports_timeout</a> ()</td></tr>
 <tr class="memdesc:a7175a4347ef3ffc6202006ec5f514225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls parent factory to check if it supports timeout.  <br /></td></tr>
 <tr class="separator:a7175a4347ef3ffc6202006ec5f514225"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,24 +169,6 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$type</b></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7704fd86d4ad7dcd80973fccb1fb9e7e" name="a7704fd86d4ad7dcd80973fccb1fb9e7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7704fd86d4ad7dcd80973fccb1fb9e7e">&#9670;&#160;</a></span>extend_lock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">core\lock\timing_wrapper_lock_factory::extend_lock </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000270">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10. </dd></dl>
-
-</div>
-</div>
 <a id="aed6475499e022ecc52137c00cb06f55d" name="aed6475499e022ecc52137c00cb06f55d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aed6475499e022ecc52137c00cb06f55d">&#9670;&#160;</a></span>get_lock()</h2>
 
@@ -455,24 +433,6 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$type</b></td></tr>
 
 </div>
 </div>
-<a id="ab18b021bcf613397da0a195a08cd066c" name="ab18b021bcf613397da0a195a08cd066c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab18b021bcf613397da0a195a08cd066c">&#9670;&#160;</a></span>supports_recursion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">core\lock\timing_wrapper_lock_factory::supports_recursion </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000269">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10. </dd></dl>
-
-</div>
-</div>
 <a id="a7175a4347ef3ffc6202006ec5f514225" name="a7175a4347ef3ffc6202006ec5f514225"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7175a4347ef3ffc6202006ec5f514225">&#9670;&#160;</a></span>supports_timeout()</h2>
 
@@ -506,7 +466,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$type</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 16 2025 03:13:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 23 2025 03:15:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

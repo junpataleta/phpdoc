@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
   </td>
  </tr>
  </tbody>
@@ -94,6 +94,9 @@ Inheritance diagram for grade_grade:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a937cbf30150f9798cab7242c90b58041" id="r_a937cbf30150f9798cab7242c90b58041"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a937cbf30150f9798cab7242c90b58041">can_apply_penalty_to_overridden_mark</a> ()</td></tr>
+<tr class="memdesc:a937cbf30150f9798cab7242c90b58041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if penalty is applied to this overridden mark.  <br /></td></tr>
+<tr class="separator:a937cbf30150f9798cab7242c90b58041"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72d4478355452f2ff308d9e11849225d" id="r_a72d4478355452f2ff308d9e11849225d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/classgrade__object.html#a72d4478355452f2ff308d9e11849225d">can_control_visibility</a> ()</td></tr>
 <tr class="memdesc:a72d4478355452f2ff308d9e11849225d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the grade object can control the visibility of the grades.  <br /></td></tr>
 <tr class="separator:a72d4478355452f2ff308d9e11849225d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,6 +160,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1fdfdcbe0d4330a2cf8883cc42a11362" id="r_a1fdfdcbe0d4330a2cf8883cc42a11362"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fdfdcbe0d4330a2cf8883cc42a11362">is_passed</a> ($<a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a>=null)</td></tr>
 <tr class="memdesc:a1fdfdcbe0d4330a2cf8883cc42a11362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the grade's value is superior or equal to the grade item's gradepass value, false otherwise.  <br /></td></tr>
 <tr class="separator:a1fdfdcbe0d4330a2cf8883cc42a11362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2240f6f58c44f654549b0989119321f0" id="r_a2240f6f58c44f654549b0989119321f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2240f6f58c44f654549b0989119321f0">is_penalty_applied_to_final_grade</a> ()</td></tr>
+<tr class="memdesc:a2240f6f58c44f654549b0989119321f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the penalty is applied to this final grade.  <br /></td></tr>
+<tr class="separator:a2240f6f58c44f654549b0989119321f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd39ca5918bc842634aad30a90037072" id="r_abd39ca5918bc842634aad30a90037072"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd39ca5918bc842634aad30a90037072">is_penalty_applied_to_overridden_mark</a> ()</td></tr>
+<tr class="memdesc:abd39ca5918bc842634aad30a90037072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the penalty is applied to this overridden mark.  <br /></td></tr>
+<tr class="separator:abd39ca5918bc842634aad30a90037072"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9146b2553e28877040e677958be636bb" id="r_a9146b2553e28877040e677958be636bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9146b2553e28877040e677958be636bb">load_grade_item</a> ()</td></tr>
 <tr class="memdesc:a9146b2553e28877040e677958be636bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the <a class="el" href="../../d0/d8b/classgrade__item.html" title="Class representing a grade item.">grade_item</a> object referenced by $this-&gt;itemid and saves it as $this-&gt;<a class="el" href="../../d0/d8b/classgrade__item.html" title="Class representing a grade item.">grade_item</a> for easy access.  <br /></td></tr>
 <tr class="separator:a9146b2553e28877040e677958be636bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,6 +235,10 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a581ea60524fa2e82651e083eac850967" id="r_a581ea60524fa2e82651e083eac850967"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a581ea60524fa2e82651e083eac850967">$aggregationweight</a> = null</td></tr>
 <tr class="memdesc:a581ea60524fa2e82651e083eac850967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aggregation weight is the specific weight used in the aggregation calculation for this grade.  <br /></td></tr>
 <tr class="separator:a581ea60524fa2e82651e083eac850967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc3b9ad426a8067b670db522d5ec2bdf" id="r_adc3b9ad426a8067b670db522d5ec2bdf"><td class="memItemLeft" align="right" valign="top"><a id="adc3b9ad426a8067b670db522d5ec2bdf" name="adc3b9ad426a8067b670db522d5ec2bdf"></a>
+float float&#160;</td><td class="memItemRight" valign="bottom"><b>$deductedmark</b> = 0</td></tr>
+<tr class="memdesc:adc3b9ad426a8067b670db522d5ec2bdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">$deductedmark mark deducted from final grade <br /></td></tr>
+<tr class="separator:adc3b9ad426a8067b670db522d5ec2bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afba00ea1d1901b8c9d463a9ddbd7fd96" id="r_afba00ea1d1901b8c9d463a9ddbd7fd96"><td class="memItemLeft" align="right" valign="top"><a id="afba00ea1d1901b8c9d463a9ddbd7fd96" name="afba00ea1d1901b8c9d463a9ddbd7fd96"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>$excluded</b> = 0</td></tr>
 <tr class="memdesc:afba00ea1d1901b8c9d463a9ddbd7fd96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grade excluded from aggregation functions $excluded. <br /></td></tr>
@@ -284,6 +297,10 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$optional_fields</b>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>$overridden</b> = 0</td></tr>
 <tr class="memdesc:ae49617b29aea280e41ffd7e44bd625b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridden flag $overridden. <br /></td></tr>
 <tr class="separator:ae49617b29aea280e41ffd7e44bd625b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a502262273c6bb33ce0baba25e2c78ddc" id="r_a502262273c6bb33ce0baba25e2c78ddc"><td class="memItemLeft" align="right" valign="top"><a id="a502262273c6bb33ce0baba25e2c78ddc" name="a502262273c6bb33ce0baba25e2c78ddc"></a>
+float float&#160;</td><td class="memItemRight" valign="bottom"><b>$overriddenmark</b> = 0</td></tr>
+<tr class="memdesc:a502262273c6bb33ce0baba25e2c78ddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">$overriddenmark mark overridden by teacher <br /></td></tr>
+<tr class="separator:a502262273c6bb33ce0baba25e2c78ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ab5bc1b06d4f4fbc3dd591ec1beee3a" id="r_a0ab5bc1b06d4f4fbc3dd591ec1beee3a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ab5bc1b06d4f4fbc3dd591ec1beee3a">$rawgrade</a></td></tr>
 <tr class="memdesc:a0ab5bc1b06d4f4fbc3dd591ec1beee3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The grade value of this raw grade, if such was provided by the module.  <br /></td></tr>
 <tr class="separator:a0ab5bc1b06d4f4fbc3dd591ec1beee3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -384,6 +401,31 @@ Static Protected Member Functions</h2></td></tr>
 </dl>
 
 <p>Reimplemented from <a class="el" href="../../de/d85/classgrade__object.html#af082f76448292a75996a8b2d067c3fdd">grade_object</a>.</p>
+
+</div>
+</div>
+<a id="a937cbf30150f9798cab7242c90b58041" name="a937cbf30150f9798cab7242c90b58041"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a937cbf30150f9798cab7242c90b58041">&#9670;&#160;</a></span>can_apply_penalty_to_overridden_mark()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">grade_grade::can_apply_penalty_to_overridden_mark </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine if penalty is applied to this overridden mark. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>whether penalty is applied </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1404,6 +1446,56 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a2240f6f58c44f654549b0989119321f0" name="a2240f6f58c44f654549b0989119321f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2240f6f58c44f654549b0989119321f0">&#9670;&#160;</a></span>is_penalty_applied_to_final_grade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">grade_grade::is_penalty_applied_to_final_grade </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether the penalty is applied to this final grade. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>whether penalty is applied </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abd39ca5918bc842634aad30a90037072" name="abd39ca5918bc842634aad30a90037072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd39ca5918bc842634aad30a90037072">&#9670;&#160;</a></span>is_penalty_applied_to_overridden_mark()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">grade_grade::is_penalty_applied_to_overridden_mark </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether the penalty is applied to this overridden mark. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>whether penalty is applied </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a9146b2553e28877040e677958be636bb" name="a9146b2553e28877040e677958be636bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9146b2553e28877040e677958be636bb">&#9670;&#160;</a></span>load_grade_item()</h2>
 
@@ -2277,7 +2369,7 @@ Static Protected Member Functions</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">= array(<span class="stringliteral">&#39;id&#39;</span>, <span class="stringliteral">&#39;itemid&#39;</span>, <span class="stringliteral">&#39;userid&#39;</span>, <span class="stringliteral">&#39;rawgrade&#39;</span>, <span class="stringliteral">&#39;rawgrademax&#39;</span>, <span class="stringliteral">&#39;rawgrademin&#39;</span>,</div>
 <div class="line">                                 <span class="stringliteral">&#39;rawscaleid&#39;</span>, <span class="stringliteral">&#39;usermodified&#39;</span>, <span class="stringliteral">&#39;finalgrade&#39;</span>, <span class="stringliteral">&#39;hidden&#39;</span>, <span class="stringliteral">&#39;locked&#39;</span>,</div>
 <div class="line">                                 <span class="stringliteral">&#39;locktime&#39;</span>, <span class="stringliteral">&#39;exported&#39;</span>, <span class="stringliteral">&#39;overridden&#39;</span>, <span class="stringliteral">&#39;excluded&#39;</span>, <span class="stringliteral">&#39;timecreated&#39;</span>,</div>
-<div class="line">                                 <span class="stringliteral">&#39;timemodified&#39;</span>, <span class="stringliteral">&#39;aggregationstatus&#39;</span>, <span class="stringliteral">&#39;aggregationweight&#39;</span>)</div>
+<div class="line">                                 <span class="stringliteral">&#39;timemodified&#39;</span>, <span class="stringliteral">&#39;aggregationstatus&#39;</span>, <span class="stringliteral">&#39;aggregationweight&#39;</span>, <span class="stringliteral">&#39;deductedmark&#39;</span>, <span class="stringliteral">&#39;overriddenmark&#39;</span>)</div>
 </div><!-- fragment -->
 <p>Array of required table fields, must start with 'id'. </p>
 <p>$required_fields </p>
@@ -2341,7 +2433,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 16 2025 03:12:17 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 23 2025 03:14:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

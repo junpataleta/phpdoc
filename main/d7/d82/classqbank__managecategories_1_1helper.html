@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
   </td>
  </tr>
  </tbody>
@@ -98,7 +98,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a1ba893f64244ed0542588c277d2ba55d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Combine id and context id for a question category.  <br /></td></tr>
 <tr class="separator:a1ba893f64244ed0542588c277d2ba55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38804dab2fe7a3429495252f3f70c4f3" id="r_a38804dab2fe7a3429495252f3f70c4f3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38804dab2fe7a3429495252f3f70c4f3">flatten_category_tree</a> (array &amp;$categories, $id, int $depth=0, int $nochildrenof=-1)</td></tr>
-<tr class="memdesc:a38804dab2fe7a3429495252f3f70c4f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only for the use of <a class="el" href="../../d0/de1/group__core.html#ga4912a1cc97071e3c46836454bdbd7809">add_indented_names()</a>.  <br /></td></tr>
+<tr class="memdesc:a38804dab2fe7a3429495252f3f70c4f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only for the use of add_indented_names().  <br /></td></tr>
 <tr class="separator:a38804dab2fe7a3429495252f3f70c4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b86240f304f6b52d4f83f7dc78ec921" id="r_a5b86240f304f6b52d4f83f7dc78ec921"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b86240f304f6b52d4f83f7dc78ec921">get_categories_for_contexts</a> (string $contexts, string $sortorder='parent, sortorder, name ASC', bool $top=false, int $showallversions=0,)</td></tr>
 <tr class="memdesc:a5b86240f304f6b52d4f83f7dc78ec921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the category objects, including a count of the number of questions in that category, for all the categories in the lists $contexts.  <br /></td></tr>
@@ -137,7 +137,7 @@ since&#160;</td><td class="memItemRight" valign="bottom">: 4.5</td></tr>
 since&#160;</td><td class="memItemRight" valign="bottom">: 4.5</td></tr>
 <tr class="separator:a568b733e5393c1cb297e661fc0995498"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acab12fc09e7554162d41fe35fa73e65d" id="r_acab12fc09e7554162d41fe35fa73e65d"><td class="memItemLeft" align="right" valign="top"><a id="acab12fc09e7554162d41fe35fa73e65d" name="acab12fc09e7554162d41fe35fa73e65d"></a>
-since&#160;</td><td class="memItemRight" valign="bottom"><b>mdl</b>: '&lt;a class=&quot;el&quot; href=&quot;https: )] public static function <a class="el" href="../../de/d37/group__core__question.html#ga2c5900fe86cac29032b922e3b11f0a4a">question_is_only_child_of_top_category_in_context</a>(int $categoryid): bool { <a class="el" href="../../dd/ddd/classcore_1_1deprecation.html#aa6a2a0314495a710cd681ca96146679d">core\deprecation::emit_deprecation_if_present</a>([__CLASS__</td></tr>
+since&#160;</td><td class="memItemRight" valign="bottom"><b>mdl</b>: '&lt;a class=&quot;el&quot; href=&quot;https: )] public static function question_is_only_child_of_top_category_in_context(int $categoryid): bool { <a class="el" href="../../dd/ddd/classcore_1_1deprecation.html#aa6a2a0314495a710cd681ca96146679d">core\deprecation::emit_deprecation_if_present</a>([__CLASS__</td></tr>
 <tr class="separator:acab12fc09e7554162d41fe35fa73e65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ea5b49fb40ff3e8ff7a7ef7bea7d828" id="r_a4ea5b49fb40ff3e8ff7a7ef7bea7d828"><td class="memItemLeft" align="right" valign="top"><a id="a4ea5b49fb40ff3e8ff7a7ef7bea7d828" name="a4ea5b49fb40ff3e8ff7a7ef7bea7d828"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>PLUGINNAME</b> = 'qbank_managecategories'</td></tr>
@@ -268,11 +268,11 @@ since&#160;</td><td class="memItemRight" valign="bottom"><b>reason</b>: 'Moved t
 </table>
 </div><div class="memdoc">
 
-<p>Only for the use of <a class="el" href="../../d0/de1/group__core.html#ga4912a1cc97071e3c46836454bdbd7809">add_indented_names()</a>. </p>
+<p>Only for the use of add_indented_names(). </p>
 <p>Recursively adds an indentedname field to each category, starting with the category with id $id, and dealing with that category and all its children, and return a new array, with those categories in the right order.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$categories</td><td>an array of categories which has had childids fields added by <a class="el" href="../../d0/de1/group__core.html#ga9f15bf6883885e76b6050ac3f2d072f4">flatten_category_tree()</a>. Passed by reference for performance only. It is not modfied. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$categories</td><td>an array of categories which has had childids fields added by flatten_category_tree(). Passed by reference for performance only. It is not modfied. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$id</td><td>the category to start the indenting process from. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$depth</td><td>the indent depth. Used in recursive calls. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$nochildrenof</td><td></td></tr>
@@ -648,7 +648,7 @@ since&#160;</td><td class="memItemRight" valign="bottom"><b>reason</b>: 'Moved t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 16 2025 03:15:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 23 2025 03:17:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

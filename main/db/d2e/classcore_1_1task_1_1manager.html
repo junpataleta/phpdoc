@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
   </td>
  </tr>
  </tbody>
@@ -156,6 +156,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>fail_running_task</
 <tr class="memitem:a683948e2257af3519083594c88832526" id="r_a683948e2257af3519083594c88832526"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a683948e2257af3519083594c88832526">get_next_scheduled_task</a> ($timestart)</td></tr>
 <tr class="memdesc:a683948e2257af3519083594c88832526"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will dispatch the next scheduled task in the queue.  <br /></td></tr>
 <tr class="separator:a683948e2257af3519083594c88832526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83542c20281644b1c75d418e1648f188" id="r_a83542c20281644b1c75d418e1648f188"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83542c20281644b1c75d418e1648f188">get_queued_adhoc_task_record</a> ($task)</td></tr>
+<tr class="memdesc:a83542c20281644b1c75d418e1648f188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the task with the same classname, component and customdata is already scheduled.  <br /></td></tr>
+<tr class="separator:a83542c20281644b1c75d418e1648f188"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89f79ec0e5542cadab7ac4ed95f080c1" id="r_a89f79ec0e5542cadab7ac4ed95f080c1"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89f79ec0e5542cadab7ac4ed95f080c1">get_running_tasks</a> ($sort='')</td></tr>
 <tr class="memdesc:a89f79ec0e5542cadab7ac4ed95f080c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a list of currently-running tasks.  <br /></td></tr>
 <tr class="separator:a89f79ec0e5542cadab7ac4ed95f080c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,9 +260,6 @@ Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:a9a3313591544e99f8e578bc6ef55237c" id="r_a9a3313591544e99f8e578bc6ef55237c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a3313591544e99f8e578bc6ef55237c">get_concurrent_task_lock</a> (<a class="el" href="../../d4/d91/classcore_1_1task_1_1adhoc__task.html">adhoc_task</a> $task)</td></tr>
 <tr class="memdesc:a9a3313591544e99f8e578bc6ef55237c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the concurrent lock required to run an adhoc task.  <br /></td></tr>
 <tr class="separator:a9a3313591544e99f8e578bc6ef55237c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83542c20281644b1c75d418e1648f188" id="r_a83542c20281644b1c75d418e1648f188"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83542c20281644b1c75d418e1648f188">get_queued_adhoc_task_record</a> ($task)</td></tr>
-<tr class="memdesc:a83542c20281644b1c75d418e1648f188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the task with the same classname, component and customdata is already scheduled.  <br /></td></tr>
-<tr class="separator:a83542c20281644b1c75d418e1648f188"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad454984e4b4624dd8cd10eada9c1a956" id="r_ad454984e4b4624dd8cd10eada9c1a956"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad454984e4b4624dd8cd10eada9c1a956">get_record_with_config_overrides</a> (\stdClass $record)</td></tr>
 <tr class="memdesc:ad454984e4b4624dd8cd10eada9c1a956"><td class="mdescLeft">&#160;</td><td class="mdescRight">For a given scheduled task record, this method will check to see if any overrides have been applied in config and return a copy of the record with any overridden values.  <br /></td></tr>
 <tr class="separator:ad454984e4b4624dd8cd10eada9c1a956"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -606,7 +606,7 @@ static int int&#160;</td><td class="memItemRight" valign="bottom"><b>$numtasks</
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000313">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-67648" class="el">MDL-67648</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000234">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-67648" class="el">MDL-67648</a> </dd></dl>
 
 </div>
 </div>
@@ -1152,7 +1152,7 @@ static int int&#160;</td><td class="memItemRight" valign="bottom"><b>$numtasks</
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel protected">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2112,7 +2112,7 @@ static int int&#160;</td><td class="memItemRight" valign="bottom"><b>$numtasks</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 16 2025 03:13:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 23 2025 03:15:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250315) (8f89677192a)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
   </td>
  </tr>
  </tbody>
@@ -294,12 +294,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a27eda4b51878cdca89e459bdba7b7741" id="r_a27eda4b51878cdca89e459bdba7b7741"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27eda4b51878cdca89e459bdba7b7741">update</a> ($source=null, $isbulkupdate=false)</td></tr>
 <tr class="memdesc:a27eda4b51878cdca89e459bdba7b7741"><td class="mdescLeft">&#160;</td><td class="mdescRight">In addition to update() as defined in <a class="el" href="../../de/d85/classgrade__object.html" title="An abstract object that holds methods and attributes common to all grade_* objects defined here.">grade_object</a>, handle the <a class="el" href="../../d1/d13/classgrade__outcome.html" title="Class representing a grade outcome.">grade_outcome</a> and <a class="el" href="../../d3/d73/classgrade__scale.html" title="Class representing a grade scale.">grade_scale</a> objects.  <br /></td></tr>
 <tr class="separator:a27eda4b51878cdca89e459bdba7b7741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a912a84cdac606406597228d325e1f5f4" id="r_a912a84cdac606406597228d325e1f5f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a912a84cdac606406597228d325e1f5f4">update_deducted_mark</a> (int $userid, float $deductedmark)</td></tr>
+<tr class="memdesc:a912a84cdac606406597228d325e1f5f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update penalty value for given user.  <br /></td></tr>
+<tr class="separator:a912a84cdac606406597228d325e1f5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c43f8790678eac8d1fcb1b9306a86b7" id="r_a9c43f8790678eac8d1fcb1b9306a86b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c43f8790678eac8d1fcb1b9306a86b7">update_final_grade</a> ($userid, $finalgrade=false, $source=null, $feedback=false, $feedbackformat=<a class="el" href="../../d0/de1/group__core.html#ga569aa47f4fc21339755148f0bd388b76">FORMAT_MOODLE</a>, $usermodified=null, $timemodified=null, $isbulkupdate=false)</td></tr>
 <tr class="memdesc:a9c43f8790678eac8d1fcb1b9306a86b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates final grade value for given user, this is a only way to update final grades from gradebook and import because it logs the change in history table and deals with overridden flag.  <br /></td></tr>
 <tr class="separator:a9c43f8790678eac8d1fcb1b9306a86b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4a21e00cc8e4ce892f94f16a5f7489b" id="r_ae4a21e00cc8e4ce892f94f16a5f7489b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/classgrade__object.html#ae4a21e00cc8e4ce892f94f16a5f7489b">update_from_db</a> ()</td></tr>
 <tr class="memdesc:ae4a21e00cc8e4ce892f94f16a5f7489b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Using this object's id field, fetches the matching record in the <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>, and looks at each variable in turn.  <br /></td></tr>
 <tr class="separator:ae4a21e00cc8e4ce892f94f16a5f7489b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabfd9cd23945fec0160a04f1f75d810e" id="r_aabfd9cd23945fec0160a04f1f75d810e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabfd9cd23945fec0160a04f1f75d810e">update_overridden_mark</a> (int $userid, float $overriddenmark)</td></tr>
+<tr class="memdesc:aabfd9cd23945fec0160a04f1f75d810e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update overridden mark for given user.  <br /></td></tr>
+<tr class="separator:aabfd9cd23945fec0160a04f1f75d810e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa90dc8bae3afe05f8829612a015e3a13" id="r_aa90dc8bae3afe05f8829612a015e3a13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa90dc8bae3afe05f8829612a015e3a13">update_raw_grade</a> ($userid, $rawgrade=false, $source=null, $feedback=false, $feedbackformat=<a class="el" href="../../d0/de1/group__core.html#ga569aa47f4fc21339755148f0bd388b76">FORMAT_MOODLE</a>, $usermodified=null, $dategraded=null, $datesubmitted=null, $grade=null, array $feedbackfiles=[], $isbulkupdate=false)</td></tr>
 <tr class="memdesc:aa90dc8bae3afe05f8829612a015e3a13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates raw grade value for given user, this is a only way to update raw grades from external source (modules, etc.), because it logs the change in history table and deals with final grade recalculation.  <br /></td></tr>
 <tr class="separator:aa90dc8bae3afe05f8829612a015e3a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2991,6 +2997,36 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a912a84cdac606406597228d325e1f5f4" name="a912a84cdac606406597228d325e1f5f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a912a84cdac606406597228d325e1f5f4">&#9670;&#160;</a></span>update_deducted_mark()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">grade_item::update_deducted_mark </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$userid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>$deductedmark</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update penalty value for given user. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>The graded user </td></tr>
+    <tr><td class="paramtype">float</td><td class="paramname">$deductedmark</td><td>The mark deducted from final grade </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a8f6d127ee3b0439e2bbb85c020899d12" name="a8f6d127ee3b0439e2bbb85c020899d12"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8f6d127ee3b0439e2bbb85c020899d12">&#9670;&#160;</a></span>update_feedback_files()</h2>
 
@@ -3127,6 +3163,36 @@ Static Protected Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td>True if successful </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aabfd9cd23945fec0160a04f1f75d810e" name="aabfd9cd23945fec0160a04f1f75d810e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabfd9cd23945fec0160a04f1f75d810e">&#9670;&#160;</a></span>update_overridden_mark()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">grade_item::update_overridden_mark </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$userid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>$overriddenmark</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update overridden mark for given user. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>The graded user </td></tr>
+    <tr><td class="paramtype">float</td><td class="paramname">$overriddenmark</td><td>The mark deducted from final grade </td></tr>
   </table>
   </dd>
 </dl>
@@ -3907,7 +3973,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 16 2025 03:12:17 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 23 2025 03:14:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>
