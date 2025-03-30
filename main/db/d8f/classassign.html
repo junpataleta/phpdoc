@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250328) (b00c328d2db)</div>
   </td>
  </tr>
  </tbody>
@@ -73,7 +73,6 @@ $(function(){ initResizable(false); });
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d9/df2/classassign-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">assign Class Reference<div class="ingroups"><a class="el" href="../../d3/d4f/group__mod__assign.html">mod_assign</a></div></div></div>
@@ -765,15 +764,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a0806ea8f456ce83933542c65b7263452" id="r_a0806ea8f456ce83933542c65b7263452"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0806ea8f456ce83933542c65b7263452">view_submission_page</a> ()</td></tr>
 <tr class="memdesc:a0806ea8f456ce83933542c65b7263452"><td class="mdescLeft">&#160;</td><td class="mdescRight">View submissions page (contains details of current submission).  <br /></td></tr>
 <tr class="separator:a0806ea8f456ce83933542c65b7263452"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
-Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a7b65b83973cd8e6fd9bc22c7cb35d24d" id="r_a7b65b83973cd8e6fd9bc22c7cb35d24d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b65b83973cd8e6fd9bc22c7cb35d24d">format_notification_message_html</a> ($messagetype, $info, $course, $context, $modulename, $coursemodule, $assignmentname)</td></tr>
-<tr class="memdesc:a7b65b83973cd8e6fd9bc22c7cb35d24d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a notification for HTML.  <br /></td></tr>
-<tr class="separator:a7b65b83973cd8e6fd9bc22c7cb35d24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedb6405e0d71b9513fd4de63a74473a4" id="r_aedb6405e0d71b9513fd4de63a74473a4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedb6405e0d71b9513fd4de63a74473a4">format_notification_message_text</a> ($messagetype, $info, $course, $context, $modulename, $assignmentname)</td></tr>
-<tr class="memdesc:aedb6405e0d71b9513fd4de63a74473a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a notification for plain text.  <br /></td></tr>
-<tr class="separator:aedb6405e0d71b9513fd4de63a74473a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -2309,136 +2299,6 @@ array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td>True if null all grades are now fixed. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a7b65b83973cd8e6fd9bc22c7cb35d24d" name="a7b65b83973cd8e6fd9bc22c7cb35d24d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b65b83973cd8e6fd9bc22c7cb35d24d">&#9670;&#160;</a></span>format_notification_message_html()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static assign::format_notification_message_html </td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$messagetype</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$info</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$course</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$context</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$modulename</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$coursemodule</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$assignmentname</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel protected">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Format a notification for HTML. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$messagetype</td><td></td></tr>
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$info</td><td></td></tr>
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td></td></tr>
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$context</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$modulename</td><td></td></tr>
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$coursemodule</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$assignmentname</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aedb6405e0d71b9513fd4de63a74473a4" name="aedb6405e0d71b9513fd4de63a74473a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedb6405e0d71b9513fd4de63a74473a4">&#9670;&#160;</a></span>format_notification_message_text()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static assign::format_notification_message_text </td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$messagetype</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$info</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$course</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$context</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$modulename</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$assignmentname</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel protected">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Format a notification for plain text. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$messagetype</td><td></td></tr>
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$info</td><td></td></tr>
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td></td></tr>
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$context</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$modulename</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$assignmentname</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -6792,9 +6652,9 @@ array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b
     <tr><td class="paramtype">string</td><td class="paramname">$eventtype</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$updatetime</td><td></td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$coursemodule</td><td></td></tr>
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$context</td><td></td></tr>
+    <tr><td class="paramtype">context</td><td class="paramname">$context</td><td></td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$modulename</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$modulename</td><td>- no longer used. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$assignmentname</td><td></td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$blindmarking</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$uniqueidforuser</td><td></td></tr>
@@ -8620,7 +8480,7 @@ array array&#160;</td><td class="memItemRight" valign="bottom"><b>$usersearch</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 23 2025 03:13:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 30 2025 03:17:17 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

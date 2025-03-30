@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250328) (b00c328d2db)</div>
   </td>
  </tr>
  </tbody>
@@ -92,10 +92,11 @@ Inheritance diagram for Psr\Http\Server\MiddlewareInterface:</div>
 <area href="../../d2/d30/class_slim_1_1_middleware_1_1_routing_middleware.html" alt="Slim\Middleware\RoutingMiddleware" shape="rect" coords="357,336,704,360"/>
 <area href="../../d2/d39/classcore_1_1router_1_1middleware_1_1cors__middleware.html" alt="core\router\middleware\cors_middleware" shape="rect" coords="357,392,704,416"/>
 <area href="../../d3/d6a/classcore_1_1router_1_1middleware_1_1error__handling__middleware.html" alt="core\router\middleware\error_handling_middleware" shape="rect" coords="357,448,704,472"/>
-<area href="../../da/d39/classcore_1_1router_1_1middleware_1_1moodle__bootstrap__middleware.html" alt="core\router\middleware\moodle_bootstrap_middleware" shape="rect" coords="357,504,704,528"/>
-<area href="../../d6/d3f/classcore_1_1router_1_1middleware_1_1moodle__route__attribute__middleware.html" alt="core\router\middleware\moodle_route_attribute_middleware" shape="rect" coords="357,560,704,584"/>
-<area href="../../de/d52/classcore_1_1router_1_1middleware_1_1uri__normalisation__middleware.html" alt="core\router\middleware\uri_normalisation_middleware" shape="rect" coords="357,616,704,640"/>
-<area href="../../d7/d1c/classcore_1_1router_1_1middleware_1_1validation__middleware.html" alt="core\router\middleware\validation_middleware" shape="rect" coords="357,672,704,696"/>
+<area href="../../d8/dd1/classcore_1_1router_1_1middleware_1_1moodle__authentication__middleware.html" alt="core\router\middleware\moodle_authentication_middleware" shape="rect" coords="357,504,704,528"/>
+<area href="../../da/d39/classcore_1_1router_1_1middleware_1_1moodle__bootstrap__middleware.html" alt="core\router\middleware\moodle_bootstrap_middleware" shape="rect" coords="357,560,704,584"/>
+<area href="../../d6/d3f/classcore_1_1router_1_1middleware_1_1moodle__route__attribute__middleware.html" alt="core\router\middleware\moodle_route_attribute_middleware" shape="rect" coords="357,616,704,640"/>
+<area href="../../de/d52/classcore_1_1router_1_1middleware_1_1uri__normalisation__middleware.html" alt="core\router\middleware\uri_normalisation_middleware" shape="rect" coords="357,672,704,696"/>
+<area href="../../d7/d1c/classcore_1_1router_1_1middleware_1_1validation__middleware.html" alt="core\router\middleware\validation_middleware" shape="rect" coords="357,728,704,752"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -128,7 +129,7 @@ Public Member Functions</h2></td></tr>
 <p>Process an incoming server request. </p>
 <p>Processes an incoming server request in order to produce a response. If unable to produce the response itself, it may delegate to the provided request handler to do so. </p>
 
-<p>Implemented in <a class="el" href="../../d2/d39/classcore_1_1router_1_1middleware_1_1cors__middleware.html#aa11d39eb8120b59f2d91ee821c32deba">core\router\middleware\cors_middleware</a>, <a class="el" href="../../d3/d6a/classcore_1_1router_1_1middleware_1_1error__handling__middleware.html#adf29f6d510a1a5f0f08f5c66f9b3fdb7">core\router\middleware\error_handling_middleware</a>, <a class="el" href="../../da/d39/classcore_1_1router_1_1middleware_1_1moodle__bootstrap__middleware.html#a141d6d8dc8ce702951c4fae59dca982d">core\router\middleware\moodle_bootstrap_middleware</a>, <a class="el" href="../../d6/d3f/classcore_1_1router_1_1middleware_1_1moodle__route__attribute__middleware.html#abc3774c39953f7fc1f536026eff43ffa">core\router\middleware\moodle_route_attribute_middleware</a>, <a class="el" href="../../de/d52/classcore_1_1router_1_1middleware_1_1uri__normalisation__middleware.html#a7b5b8649659a021c3e857255b39eaa7e">core\router\middleware\uri_normalisation_middleware</a>, <a class="el" href="../../d7/d1c/classcore_1_1router_1_1middleware_1_1validation__middleware.html#ad5a367d896d8665d4feabfd3cb8659b2">core\router\middleware\validation_middleware</a>, <a class="el" href="../../d8/da7/class_slim_1_1_middleware_1_1_body_parsing_middleware.html#a04ba5984fb93e28df656d1217b68bed3">Slim\Middleware\BodyParsingMiddleware</a>, <a class="el" href="../../d1/ddf/class_slim_1_1_middleware_1_1_content_length_middleware.html#a9283b248f117e466e61438cc53d0140c">Slim\Middleware\ContentLengthMiddleware</a>, <a class="el" href="../../d7/ded/class_slim_1_1_middleware_1_1_error_middleware.html#a6ab33fb16e5450013fa983721ce74f50">Slim\Middleware\ErrorMiddleware</a>, <a class="el" href="../../df/d46/class_slim_1_1_middleware_1_1_method_override_middleware.html#af48025b76c61701a4c5220706b516101">Slim\Middleware\MethodOverrideMiddleware</a>, <a class="el" href="../../de/dbb/class_slim_1_1_middleware_1_1_output_buffering_middleware.html#aaa5f3e160b6f062869d1f5ad4565bb6a">Slim\Middleware\OutputBufferingMiddleware</a>, and <a class="el" href="../../d2/d30/class_slim_1_1_middleware_1_1_routing_middleware.html#a447c352c3a9d4af1a4ec0ddc9b83c5e8">Slim\Middleware\RoutingMiddleware</a>.</p>
+<p>Implemented in <a class="el" href="../../d2/d39/classcore_1_1router_1_1middleware_1_1cors__middleware.html#aa11d39eb8120b59f2d91ee821c32deba">core\router\middleware\cors_middleware</a>, <a class="el" href="../../d3/d6a/classcore_1_1router_1_1middleware_1_1error__handling__middleware.html#adf29f6d510a1a5f0f08f5c66f9b3fdb7">core\router\middleware\error_handling_middleware</a>, <a class="el" href="../../d1/dbe/classcore_1_1router_1_1middleware_1_1moodle__api__authentication__middleware.html#a800d66f4728d0ac1ade05e6656effd28">core\router\middleware\moodle_api_authentication_middleware</a>, <a class="el" href="../../d8/dd1/classcore_1_1router_1_1middleware_1_1moodle__authentication__middleware.html#adfafc402359c4a8387a8f3ea3f2ea978">core\router\middleware\moodle_authentication_middleware</a>, <a class="el" href="../../da/d39/classcore_1_1router_1_1middleware_1_1moodle__bootstrap__middleware.html#a141d6d8dc8ce702951c4fae59dca982d">core\router\middleware\moodle_bootstrap_middleware</a>, <a class="el" href="../../d6/d3f/classcore_1_1router_1_1middleware_1_1moodle__route__attribute__middleware.html#abc3774c39953f7fc1f536026eff43ffa">core\router\middleware\moodle_route_attribute_middleware</a>, <a class="el" href="../../de/d52/classcore_1_1router_1_1middleware_1_1uri__normalisation__middleware.html#a7b5b8649659a021c3e857255b39eaa7e">core\router\middleware\uri_normalisation_middleware</a>, <a class="el" href="../../d7/d1c/classcore_1_1router_1_1middleware_1_1validation__middleware.html#ad5a367d896d8665d4feabfd3cb8659b2">core\router\middleware\validation_middleware</a>, <a class="el" href="../../d8/da7/class_slim_1_1_middleware_1_1_body_parsing_middleware.html#a04ba5984fb93e28df656d1217b68bed3">Slim\Middleware\BodyParsingMiddleware</a>, <a class="el" href="../../d1/ddf/class_slim_1_1_middleware_1_1_content_length_middleware.html#a9283b248f117e466e61438cc53d0140c">Slim\Middleware\ContentLengthMiddleware</a>, <a class="el" href="../../d7/ded/class_slim_1_1_middleware_1_1_error_middleware.html#a6ab33fb16e5450013fa983721ce74f50">Slim\Middleware\ErrorMiddleware</a>, <a class="el" href="../../df/d46/class_slim_1_1_middleware_1_1_method_override_middleware.html#af48025b76c61701a4c5220706b516101">Slim\Middleware\MethodOverrideMiddleware</a>, <a class="el" href="../../de/dbb/class_slim_1_1_middleware_1_1_output_buffering_middleware.html#aaa5f3e160b6f062869d1f5ad4565bb6a">Slim\Middleware\OutputBufferingMiddleware</a>, and <a class="el" href="../../d2/d30/class_slim_1_1_middleware_1_1_routing_middleware.html#a447c352c3a9d4af1a4ec0ddc9b83c5e8">Slim\Middleware\RoutingMiddleware</a>.</p>
 
 </div>
 </div>
@@ -138,7 +139,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 23 2025 03:17:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 30 2025 03:21:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250328) (b00c328d2db)</div>
   </td>
  </tr>
  </tbody>
@@ -590,7 +590,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$extrauserinfo</b> =
 
 <p>Authenticate the user based on the unique {iss, sub} tuple present in the OIDC <a class="el" href="../../d8/d39/class_j_w_t.html">JWT</a>. </p>
 <p>This method ensures a <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> user account has been found or is created, that the user is linked to the relevant LTI Advantage credentials (iss, sub) and that the user account is logged in.</p>
-<p>Launch code can therefore rely on this method to get a session before doing things like calling <a class="el" href="../../da/d16/group__core__access.html#gaea381c851e9920d9091f5955b0914ac8" title="This function checks that the current user is logged in and has the required privileges.">require_login()</a>.</p>
+<p>Launch code can therefore rely on this method to get a session before doing things like calling require_login().</p>
 <p>This method supports two workflows:</p><ol type="1">
 <li>Automatic account provisioning - where the <a class="el" href="#a07377a81db32dfaae4128e69ca215c88" title="Authenticate the user based on the unique {iss, sub} tuple present in the OIDC JWT.">complete_login()</a> call will ALWAYS create/find a user and return to calling code directly. No user interaction is required.</li>
 <li>Manual account provisioning - where the <a class="el" href="#a07377a81db32dfaae4128e69ca215c88" title="Authenticate the user based on the unique {iss, sub} tuple present in the OIDC JWT.">complete_login()</a> call will redirect ONLY ONCE to a login page, where the user can decide whether to use an automatically provisioned account, or bind an existing user account. When the decision has been made, the relevant account is bound and the user is redirected back to $returnurl. Once an account has been bound via this selection process, subsequent calls to <a class="el" href="#a07377a81db32dfaae4128e69ca215c88" title="Authenticate the user based on the unique {iss, sub} tuple present in the OIDC JWT.">complete_login()</a> will return to calling code directly. Any calling code must provide its $returnurl to support the return from the account selection process and must also take care to cache any <a class="el" href="../../d8/d39/class_j_w_t.html">JWT</a> data appropriately, since the return will not inlude that information.</li>
@@ -658,7 +658,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$extrauserinfo</b> =
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000175">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000182">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 
 </div>
 </div>
@@ -1195,7 +1195,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$extrauserinfo</b> =
 </div><div class="memdoc">
 
 <p>Return the properly translated human-friendly title of this auth plugin. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000113">Todo</a></b></dt><dd>Document this function </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000115">Todo</a></b></dt><dd>Document this function </dd></dl>
 
 </div>
 </div>
@@ -1933,7 +1933,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$extrauserinfo</b> =
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000177">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000184">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 
 </div>
 </div>
@@ -2555,7 +2555,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$extrauserinfo</b> =
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000176">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000183">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 
 </div>
 </div>
@@ -2617,7 +2617,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$extrauserinfo</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 23 2025 03:13:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 30 2025 03:17:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

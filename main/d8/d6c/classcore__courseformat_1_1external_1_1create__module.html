@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250328) (b00c328d2db)</div>
   </td>
  </tr>
  </tbody>
@@ -90,6 +90,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad298a3f9c086b25cdc65c2cc151c18ee" id="r_ad298a3f9c086b25cdc65c2cc151c18ee"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad298a3f9c086b25cdc65c2cc151c18ee">execute</a> (int $courseid, string $modname, int $targetsectionnum, ?int $targetcmid=null)</td></tr>
 <tr class="memdesc:ad298a3f9c086b25cdc65c2cc151c18ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">This webservice will execute the create_module action from the course editor.  <br /></td></tr>
 <tr class="separator:ad298a3f9c086b25cdc65c2cc151c18ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad793104e2ab42bbeb8673c5d6fb9ecf3" id="r_ad793104e2ab42bbeb8673c5d6fb9ecf3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad793104e2ab42bbeb8673c5d6fb9ecf3">execute_is_deprecated</a> ()</td></tr>
+<tr class="memdesc:ad793104e2ab42bbeb8673c5d6fb9ecf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the function as deprecated.  <br /></td></tr>
+<tr class="separator:ad793104e2ab42bbeb8673c5d6fb9ecf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5293db62474ac91b5de4410fbb9be96" id="r_aa5293db62474ac91b5de4410fbb9be96"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5293db62474ac91b5de4410fbb9be96">execute_parameters</a> ()</td></tr>
 <tr class="memdesc:aa5293db62474ac91b5de4410fbb9be96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Webservice parameters.  <br /></td></tr>
 <tr class="separator:aa5293db62474ac91b5de4410fbb9be96"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,6 +141,7 @@ Static Public Member Functions</h2></td></tr>
 <p>This webservice will execute the create_module action from the course editor. </p>
 <p>The action will register in a {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d5/df4/classcore__courseformat_1_1stateupdates.html">core_courseformat\stateupdates</a>} all the affected sections, cms and course attribute. This object (in JSON) will be sent back to the frontend editor to refresh the updated state elements.</dd></dl>
 <p>By default, {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d5/df4/classcore__courseformat_1_1stateupdates.html">core_courseformat\stateupdates</a>} will register only create, delete and update events on cms, sections and the general course data. However, if some plugin needs adhoc messages for its own mutation module, extend this class in format_XXX::course.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000078">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td>the course id </td></tr>
@@ -150,6 +154,39 @@ Static Public Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>Course state in JSON </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad793104e2ab42bbeb8673c5d6fb9ecf3" name="ad793104e2ab42bbeb8673c5d6fb9ecf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad793104e2ab42bbeb8673c5d6fb9ecf3">&#9670;&#160;</a></span>execute_is_deprecated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_courseformat\external\create_module::execute_is_deprecated </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mark the function as deprecated. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -180,6 +217,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Webservice parameters. </p>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000077">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0 </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">external_function_parameters</td><td></td></tr>
@@ -213,6 +251,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Webservice returns. </p>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000079">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0 </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">external_value</td><td></td></tr>
@@ -228,7 +267,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 23 2025 03:15:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 30 2025 03:19:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

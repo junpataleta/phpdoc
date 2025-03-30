@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250328) (b00c328d2db)</div>
   </td>
  </tr>
  </tbody>
@@ -87,7 +87,8 @@ Inheritance diagram for core_ai\provider:</div>
   <img src="../../d5/dec/classcore__ai_1_1provider.png" usemap="#core_5Fai_5Cprovider_map" alt=""/>
   <map id="core_5Fai_5Cprovider_map" name="core_5Fai_5Cprovider_map">
 <area href="../../d1/d7d/classaiprovider__azureai_1_1provider.html" alt="aiprovider_azureai\provider" shape="rect" coords="0,56,171,80"/>
-<area href="../../d1/d25/classaiprovider__openai_1_1provider.html" alt="aiprovider_openai\provider" shape="rect" coords="181,56,352,80"/>
+<area href="../../de/d40/classaiprovider__ollama_1_1provider.html" alt="aiprovider_ollama\provider" shape="rect" coords="181,56,352,80"/>
+<area href="../../d1/d25/classaiprovider__openai_1_1provider.html" alt="aiprovider_openai\provider" shape="rect" coords="362,56,533,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -96,6 +97,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ada8611922d401fe09ff9b12877c5dd6b" id="r_ada8611922d401fe09ff9b12877c5dd6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada8611922d401fe09ff9b12877c5dd6b">__construct</a> (public bool readonly bool $enabled, public string string $name, string $config, string $actionconfig='', public null|int readonly ?int $id=null,)</td></tr>
 <tr class="memdesc:ada8611922d401fe09ff9b12877c5dd6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new provider.  <br /></td></tr>
 <tr class="separator:ada8611922d401fe09ff9b12877c5dd6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0da2d0984c58dc48bafad39f1c468933" id="r_a0da2d0984c58dc48bafad39f1c468933"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0da2d0984c58dc48bafad39f1c468933">add_authentication_headers</a> (<a class="el" href="../../d8/db5/interface_psr_1_1_http_1_1_message_1_1_request_interface.html">RequestInterface</a> $request)</td></tr>
+<tr class="memdesc:a0da2d0984c58dc48bafad39f1c468933"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a request to add any headers required by the provider (if needed).  <br /></td></tr>
+<tr class="separator:a0da2d0984c58dc48bafad39f1c468933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a165711cbb5ec4ad0c5f9dae7df79b586" id="r_a165711cbb5ec4ad0c5f9dae7df79b586"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a165711cbb5ec4ad0c5f9dae7df79b586">generate_userid</a> (string $userid)</td></tr>
+<tr class="memdesc:a165711cbb5ec4ad0c5f9dae7df79b586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a user id.  <br /></td></tr>
+<tr class="separator:a165711cbb5ec4ad0c5f9dae7df79b586"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a117c980cb19513cab04f7f3291ed456c" id="r_a117c980cb19513cab04f7f3291ed456c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a117c980cb19513cab04f7f3291ed456c">get_name</a> ()</td></tr>
 <tr class="memdesc:a117c980cb19513cab04f7f3291ed456c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the provider.  <br /></td></tr>
 <tr class="separator:a117c980cb19513cab04f7f3291ed456c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,6 +207,72 @@ string readonly string&#160;</td><td class="memItemRight" valign="bottom"><b>$pr
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0da2d0984c58dc48bafad39f1c468933" name="a0da2d0984c58dc48bafad39f1c468933"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0da2d0984c58dc48bafad39f1c468933">&#9670;&#160;</a></span>add_authentication_headers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_ai\provider::add_authentication_headers </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/db5/interface_psr_1_1_http_1_1_message_1_1_request_interface.html">RequestInterface</a></td>          <td class="paramname"><span class="paramname"><em>$request</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update a request to add any headers required by the provider (if needed). </p>
+<p>AI providers will need to override this method to add their own headers.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">RequestInterface</td><td class="paramname">$request</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">RequestInterface</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d1/d7d/classaiprovider__azureai_1_1provider.html#a8730e2f5bd4a5e47124418a97df34a6f">aiprovider_azureai\provider</a>, <a class="el" href="../../de/d40/classaiprovider__ollama_1_1provider.html#a5d09930e69e6ac3667f34fd5ca9179ee">aiprovider_ollama\provider</a>, and <a class="el" href="../../d1/d25/classaiprovider__openai_1_1provider.html#a19a817c1fc5a507a3d935b14a9dfd14a">aiprovider_openai\provider</a>.</p>
+
+</div>
+</div>
+<a id="a165711cbb5ec4ad0c5f9dae7df79b586" name="a165711cbb5ec4ad0c5f9dae7df79b586"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a165711cbb5ec4ad0c5f9dae7df79b586">&#9670;&#160;</a></span>generate_userid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_ai\provider::generate_userid </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$userid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a user id. </p>
+<p>This is a hash of the site id and user id, this means we can determine who made the request but don't pass any personal data to the AI provider.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$userid</td><td>The user id. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>The generated user id. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a9c95bd1b59988e6e8accf9128b348ed1" name="a9c95bd1b59988e6e8accf9128b348ed1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9c95bd1b59988e6e8accf9128b348ed1">&#9670;&#160;</a></span>get_action_list()</h2>
 
@@ -232,7 +305,7 @@ string readonly string&#160;</td><td class="memItemRight" valign="bottom"><b>$pr
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d1/d7d/classaiprovider__azureai_1_1provider.html#a6d127c50ba02bd6eb8053dcc813a4ae7">aiprovider_azureai\provider</a>, and <a class="el" href="../../d1/d25/classaiprovider__openai_1_1provider.html#aac6e3d26d4d5eb8a10646e1b29857df2">aiprovider_openai\provider</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d1/d7d/classaiprovider__azureai_1_1provider.html#a6d127c50ba02bd6eb8053dcc813a4ae7">aiprovider_azureai\provider</a>, <a class="el" href="../../de/d40/classaiprovider__ollama_1_1provider.html#a840ef7099c8d1e2e00597139b0258d9f">aiprovider_ollama\provider</a>, and <a class="el" href="../../d1/d25/classaiprovider__openai_1_1provider.html#aac6e3d26d4d5eb8a10646e1b29857df2">aiprovider_openai\provider</a>.</p>
 
 </div>
 </div>
@@ -273,7 +346,7 @@ string readonly string&#160;</td><td class="memItemRight" valign="bottom"><b>$pr
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d1/d7d/classaiprovider__azureai_1_1provider.html#a2b06fc39b86069817091a454c7d46d4a">aiprovider_azureai\provider</a>, and <a class="el" href="../../d1/d25/classaiprovider__openai_1_1provider.html#a79f3826f1e50530326703aac09e60456">aiprovider_openai\provider</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d1/d7d/classaiprovider__azureai_1_1provider.html#a2b06fc39b86069817091a454c7d46d4a">aiprovider_azureai\provider</a>, <a class="el" href="../../de/d40/classaiprovider__ollama_1_1provider.html#adb041dbb40b10bfb38fad458355e4d8e">aiprovider_ollama\provider</a>, and <a class="el" href="../../d1/d25/classaiprovider__openai_1_1provider.html#a79f3826f1e50530326703aac09e60456">aiprovider_openai\provider</a>.</p>
 
 </div>
 </div>
@@ -319,7 +392,7 @@ string readonly string&#160;</td><td class="memItemRight" valign="bottom"><b>$pr
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d1/d7d/classaiprovider__azureai_1_1provider.html#a6eb23fc64512ced56f121c74b757660e">aiprovider_azureai\provider</a>, and <a class="el" href="../../d1/d25/classaiprovider__openai_1_1provider.html#a4ac758b89fa3ee88d23a583920aeb434">aiprovider_openai\provider</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d1/d7d/classaiprovider__azureai_1_1provider.html#a6eb23fc64512ced56f121c74b757660e">aiprovider_azureai\provider</a>, <a class="el" href="../../de/d40/classaiprovider__ollama_1_1provider.html#afd96397814a4bab4a490f7c00652080d">aiprovider_ollama\provider</a>, and <a class="el" href="../../d1/d25/classaiprovider__openai_1_1provider.html#a4ac758b89fa3ee88d23a583920aeb434">aiprovider_openai\provider</a>.</p>
 
 </div>
 </div>
@@ -435,7 +508,7 @@ string readonly string&#160;</td><td class="memItemRight" valign="bottom"><b>$pr
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d1/d7d/classaiprovider__azureai_1_1provider.html#a84c00d01717e34c0cad053203c7c83b6">aiprovider_azureai\provider</a>, and <a class="el" href="../../d1/d25/classaiprovider__openai_1_1provider.html#a7b1b04d112caa9c5160361fd8824da5a">aiprovider_openai\provider</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d1/d7d/classaiprovider__azureai_1_1provider.html#a84c00d01717e34c0cad053203c7c83b6">aiprovider_azureai\provider</a>, <a class="el" href="../../de/d40/classaiprovider__ollama_1_1provider.html#abe411594eda24560025a4c026ce2607a">aiprovider_ollama\provider</a>, and <a class="el" href="../../d1/d25/classaiprovider__openai_1_1provider.html#a7b1b04d112caa9c5160361fd8824da5a">aiprovider_openai\provider</a>.</p>
 
 </div>
 </div>
@@ -501,7 +574,7 @@ string readonly string&#160;</td><td class="memItemRight" valign="bottom"><b>$pr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 23 2025 03:15:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 30 2025 03:19:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

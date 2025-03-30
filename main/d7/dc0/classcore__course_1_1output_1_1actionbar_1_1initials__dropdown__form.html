@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250328) (b00c328d2db)</div>
   </td>
  </tr>
  </tbody>
@@ -85,6 +85,7 @@ Inheritance diagram for core_course\output\actionbar\initials_dropdown_form:</di
   <img src="../../d7/dc0/classcore__course_1_1output_1_1actionbar_1_1initials__dropdown__form.png" usemap="#core_5Fcourse_5Coutput_5Cactionbar_5Cinitials_5Fdropdown_5Fform_map" alt=""/>
   <map id="core_5Fcourse_5Coutput_5Cactionbar_5Cinitials_5Fdropdown_5Fform_map" name="core_5Fcourse_5Coutput_5Cactionbar_5Cinitials_5Fdropdown_5Fform_map">
 <area href="../../d7/d5a/interfacecore_1_1output_1_1renderable.html" alt="core\output\renderable" shape="rect" coords="0,0,313,24"/>
+<area href="../../d3/dc7/interfacecore_1_1output_1_1templatable.html" alt="core\output\templatable" shape="rect" coords="323,0,636,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -93,8 +94,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a66f9e928fb5d5f229bc22a6370802b58" id="r_a66f9e928fb5d5f229bc22a6370802b58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66f9e928fb5d5f229bc22a6370802b58">__construct</a> (protected stdClass $course, protected string $targeturl, protected string $firstinitial='', protected string $lastinitial='', protected string $firstinitialparam='sifirst', protected string $lastinitialparam='silast', protected array $additionalparams=[])</td></tr>
 <tr class="memdesc:a66f9e928fb5d5f229bc22a6370802b58"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class constructor.  <br /></td></tr>
 <tr class="separator:a66f9e928fb5d5f229bc22a6370802b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0e09c4b3742697f2e1a47bccd3800c4" id="r_ae0e09c4b3742697f2e1a47bccd3800c4"><td class="memItemLeft" align="right" valign="top"><a id="ae0e09c4b3742697f2e1a47bccd3800c4" name="ae0e09c4b3742697f2e1a47bccd3800c4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>export_for_template</b> (<a class="el" href="../../dd/d9d/classcore_1_1output_1_1renderer__base.html">renderer_base</a> $output)</td></tr>
+<tr class="memitem:ae0e09c4b3742697f2e1a47bccd3800c4" id="r_ae0e09c4b3742697f2e1a47bccd3800c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0e09c4b3742697f2e1a47bccd3800c4">export_for_template</a> (<a class="el" href="../../dd/d9d/classcore_1_1output_1_1renderer__base.html">renderer_base</a> $output)</td></tr>
+<tr class="memdesc:ae0e09c4b3742697f2e1a47bccd3800c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to export the renderer data in a format that is suitable for a mustache template.  <br /></td></tr>
 <tr class="separator:ae0e09c4b3742697f2e1a47bccd3800c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -158,13 +159,51 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae0e09c4b3742697f2e1a47bccd3800c4" name="ae0e09c4b3742697f2e1a47bccd3800c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0e09c4b3742697f2e1a47bccd3800c4">&#9670;&#160;</a></span>export_for_template()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_course\output\actionbar\initials_dropdown_form::export_for_template </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d9d/classcore_1_1output_1_1renderer__base.html">renderer_base</a></td>          <td class="paramname"><span class="paramname"><em>$output</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to export the renderer data in a format that is suitable for a mustache template. </p>
+<p>This means:</p><ol type="1">
+<li>No complex types - only stdClass, array, int, string, float, bool</li>
+<li>Any additional info that is required for the template is pre-calculated (e.g. capability checks).</li>
+</ol>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">renderer_base</td><td class="paramname">$output</td><td>Used to do a final render of any components that need to be rendered for export. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass|array</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../d3/dc7/interfacecore_1_1output_1_1templatable.html#a3cf6e8a9b1f2e80e8cace2e4c6c8df0c">core\output\templatable</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>course/classes/output/actionbar/<b>initials_dropdown_form.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 23 2025 03:15:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 30 2025 03:19:37 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

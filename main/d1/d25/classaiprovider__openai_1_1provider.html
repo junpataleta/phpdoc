@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250328) (b00c328d2db)</div>
   </td>
  </tr>
  </tbody>
@@ -93,11 +93,11 @@ Inheritance diagram for aiprovider_openai\provider:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a19a817c1fc5a507a3d935b14a9dfd14a" id="r_a19a817c1fc5a507a3d935b14a9dfd14a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19a817c1fc5a507a3d935b14a9dfd14a">add_authentication_headers</a> (<a class="el" href="../../d8/db5/interface_psr_1_1_http_1_1_message_1_1_request_interface.html">RequestInterface</a> $request)</td></tr>
-<tr class="memdesc:a19a817c1fc5a507a3d935b14a9dfd14a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a request to add any headers required by the provider.  <br /></td></tr>
+<tr class="memdesc:a19a817c1fc5a507a3d935b14a9dfd14a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a request to add any headers required by the provider (if needed).  <br /></td></tr>
 <tr class="separator:a19a817c1fc5a507a3d935b14a9dfd14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae89fa69db003fbb262e77da103c4d906" id="r_ae89fa69db003fbb262e77da103c4d906"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae89fa69db003fbb262e77da103c4d906">generate_userid</a> (string $userid)</td></tr>
-<tr class="memdesc:ae89fa69db003fbb262e77da103c4d906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a user id.  <br /></td></tr>
-<tr class="separator:ae89fa69db003fbb262e77da103c4d906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a165711cbb5ec4ad0c5f9dae7df79b586" id="r_a165711cbb5ec4ad0c5f9dae7df79b586"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dec/classcore__ai_1_1provider.html#a165711cbb5ec4ad0c5f9dae7df79b586">generate_userid</a> (string $userid)</td></tr>
+<tr class="memdesc:a165711cbb5ec4ad0c5f9dae7df79b586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a user id.  <br /></td></tr>
+<tr class="separator:a165711cbb5ec4ad0c5f9dae7df79b586"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a117c980cb19513cab04f7f3291ed456c" id="r_a117c980cb19513cab04f7f3291ed456c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dec/classcore__ai_1_1provider.html#a117c980cb19513cab04f7f3291ed456c">get_name</a> ()</td></tr>
 <tr class="memdesc:a117c980cb19513cab04f7f3291ed456c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the provider.  <br /></td></tr>
 <tr class="separator:a117c980cb19513cab04f7f3291ed456c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,7 +160,8 @@ string readonly string&#160;</td><td class="memItemRight" valign="bottom"><b>$pr
       </table>
 </div><div class="memdoc">
 
-<p>Update a request to add any headers required by the provider. </p>
+<p>Update a request to add any headers required by the provider (if needed). </p>
+<p>AI providers will need to override this method to add their own headers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">RequestInterface</td><td class="paramname">$request</td><td></td></tr>
@@ -174,25 +175,35 @@ string readonly string&#160;</td><td class="memItemRight" valign="bottom"><b>$pr
   </dd>
 </dl>
 
+<p>Reimplemented from <a class="el" href="../../d5/dec/classcore__ai_1_1provider.html#a0da2d0984c58dc48bafad39f1c468933">core_ai\provider</a>.</p>
+
 </div>
 </div>
-<a id="ae89fa69db003fbb262e77da103c4d906" name="ae89fa69db003fbb262e77da103c4d906"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae89fa69db003fbb262e77da103c4d906">&#9670;&#160;</a></span>generate_userid()</h2>
+<a id="a165711cbb5ec4ad0c5f9dae7df79b586" name="a165711cbb5ec4ad0c5f9dae7df79b586"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a165711cbb5ec4ad0c5f9dae7df79b586">&#9670;&#160;</a></span>generate_userid()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">aiprovider_openai\provider::generate_userid </td>
+          <td class="memname">core_ai\provider::generate_userid </td>
           <td>(</td>
           <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$userid</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Generate a user id. </p>
-<p>This is a hash of the site id and user id, this means we can determine who made the request but don't pass any personal data to OpenAI.</p>
+<p>This is a hash of the site id and user id, this means we can determine who made the request but don't pass any personal data to the AI provider.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$userid</td><td>The user id. </td></tr>
@@ -540,7 +551,7 @@ string readonly string&#160;</td><td class="memItemRight" valign="bottom"><b>$pr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 23 2025 03:14:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 30 2025 03:18:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250328) (b00c328d2db)</div>
   </td>
  </tr>
  </tbody>
@@ -181,7 +181,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ae2b7835471fecea9f99bb103074c4801" id="r_ae2b7835471fecea9f99bb103074c4801"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2b7835471fecea9f99bb103074c4801">merge_overrideparams</a> (?array $overrideparams=null)</td></tr>
-<tr class="memdesc:ae2b7835471fecea9f99bb103074c4801"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges parameters and validates them.  <br /></td></tr>
+<tr class="memdesc:ae2b7835471fecea9f99bb103074c4801"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges parameters.  <br /></td></tr>
 <tr class="separator:ae2b7835471fecea9f99bb103074c4801"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -469,7 +469,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$user</b> = ''</td>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">string</td><td>Value of parameter or null if not set </td></tr>
+    <tr><td class="paramname">array|string|null</td><td>Value of parameter or null if not set. </td></tr>
   </table>
   </dd>
 </dl>
@@ -959,7 +959,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$user</b> = ''</td>
 </table>
 </div><div class="memdoc">
 
-<p>Merges parameters and validates them. </p>
+<p>Merges parameters. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">null&#160;|&#160;array</td><td class="paramname">$overrideparams</td><td></td></tr>
@@ -969,12 +969,6 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$user</b> = ''</td>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>merged parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">coding_exception</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1124,7 +1118,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$user</b> = ''</td>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">mixed</td><td>string parameter value, null if parameter does not exist </td></tr>
+    <tr><td class="paramname">array|string|null</td><td>parameter value, null if parameter does not exist. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1150,7 +1144,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$user</b> = ''</td>
 <p>The added params override existing ones if they have the same name.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">null&#160;|&#160;array</td><td class="paramname">$params</td><td>Defaults to null. If null then returns all params. </td></tr>
+    <tr><td class="paramtype">null&#160;|&#160;array</td><td class="paramname">$params</td><td>Array of parameters to add. Note all values that are not arrays are cast to strings. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1406,7 +1400,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$user</b> = ''</td>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 23 2025 03:14:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 30 2025 03:18:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

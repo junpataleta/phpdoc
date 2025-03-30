@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250321) (89d76fdc25e)</div>
+   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250328) (b00c328d2db)</div>
   </td>
  </tr>
  </tbody>
@@ -109,6 +109,10 @@ string readonly string&#160;</td><td class="memItemRight" valign="bottom"><b>$ba
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a9a4a99488f19bc36e9199eb526a6381c" id="r_a9a4a99488f19bc36e9199eb526a6381c"><td class="memItemLeft" align="right" valign="top"><a id="a9a4a99488f19bc36e9199eb526a6381c" name="a9a4a99488f19bc36e9199eb526a6381c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>add_error_handler_middleware</b> ()</td></tr>
+<tr class="memdesc:a9a4a99488f19bc36e9199eb526a6381c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the Error Handling Middleware to the RouteGroup. <br /></td></tr>
+<tr class="separator:a9a4a99488f19bc36e9199eb526a6381c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f16a3022abbbd35293cb12d36fc34a0" id="r_a1f16a3022abbbd35293cb12d36fc34a0"><td class="memItemLeft" align="right" valign="top"><a id="a1f16a3022abbbd35293cb12d36fc34a0" name="a1f16a3022abbbd35293cb12d36fc34a0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>add_middleware</b> ()</td></tr>
 <tr class="memdesc:a1f16a3022abbbd35293cb12d36fc34a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add Middleware to the App. <br /></td></tr>
@@ -124,6 +128,12 @@ Protected Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>configure_routes</b> ()</td></tr>
 <tr class="memdesc:aeb356b8cd90cf13e45b736190965d724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the API routes. <br /></td></tr>
 <tr class="separator:aeb356b8cd90cf13e45b736190965d724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adffed7d90fe494e1ddf1969ebdb3ad59" id="r_adffed7d90fe494e1ddf1969ebdb3ad59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adffed7d90fe494e1ddf1969ebdb3ad59">configure_shim_route</a> (<a class="el" href="../../d5/d52/interface_slim_1_1_interfaces_1_1_route_group_interface.html">RouteGroupInterface</a> $group)</td></tr>
+<tr class="memdesc:adffed7d90fe494e1ddf1969ebdb3ad59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the Shim Route Middleware.  <br /></td></tr>
+<tr class="separator:adffed7d90fe494e1ddf1969ebdb3ad59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c3c7843cce57a9ce8265eaf6c176e50" id="r_a5c3c7843cce57a9ce8265eaf6c176e50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c3c7843cce57a9ce8265eaf6c176e50">configure_standard_route</a> (<a class="el" href="../../d5/d52/interface_slim_1_1_interfaces_1_1_route_group_interface.html">RouteGroupInterface</a> $group)</td></tr>
+<tr class="memdesc:a5c3c7843cce57a9ce8265eaf6c176e50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the Standard page Route Middleware.  <br /></td></tr>
+<tr class="separator:a5c3c7843cce57a9ce8265eaf6c176e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c0e5448c222d0ff97ed54e6a5005be0" id="r_a0c0e5448c222d0ff97ed54e6a5005be0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c0e5448c222d0ff97ed54e6a5005be0">create_app</a> (string $basepath='',)</td></tr>
 <tr class="memdesc:a0c0e5448c222d0ff97ed54e6a5005be0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the configured SlimPHP Application.  <br /></td></tr>
 <tr class="separator:a0c0e5448c222d0ff97ed54e6a5005be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,6 +228,72 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Configure the API Route Middleware. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">RouteGroupInterface</td><td class="paramname">$group</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adffed7d90fe494e1ddf1969ebdb3ad59" name="adffed7d90fe494e1ddf1969ebdb3ad59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adffed7d90fe494e1ddf1969ebdb3ad59">&#9670;&#160;</a></span>configure_shim_route()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core\router::configure_shim_route </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d52/interface_slim_1_1_interfaces_1_1_route_group_interface.html">RouteGroupInterface</a></td>          <td class="paramname"><span class="paramname"><em>$group</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Configure the Shim Route Middleware. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">RouteGroupInterface</td><td class="paramname">$group</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5c3c7843cce57a9ce8265eaf6c176e50" name="a5c3c7843cce57a9ce8265eaf6c176e50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c3c7843cce57a9ce8265eaf6c176e50">&#9670;&#160;</a></span>configure_standard_route()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core\router::configure_standard_route </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d52/interface_slim_1_1_interfaces_1_1_route_group_interface.html">RouteGroupInterface</a></td>          <td class="paramname"><span class="paramname"><em>$group</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Configure the Standard page Route Middleware. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">RouteGroupInterface</td><td class="paramname">$group</td><td></td></tr>
@@ -400,7 +476,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 23 2025 03:14:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Mar 30 2025 03:18:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>
