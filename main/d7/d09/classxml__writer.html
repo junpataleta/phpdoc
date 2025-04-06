@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250328) (b00c328d2db)</div>
+   <div id="projectbrief">Moodle 5.0rc1 (Build: 20250404) (1e89ba23357)</div>
   </td>
  </tr>
  </tbody>
@@ -138,7 +138,7 @@ as far as we are enclosing with ". <br /></td></tr>
 <tr class="memdesc:a048225049deac485232f85b168d2a051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean text content and encode needed chars (&amp;, &lt;, &gt;) <br /></td></tr>
 <tr class="separator:a048225049deac485232f85b168d2a051"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9306985c1445cacd5b2dfca923e93922" id="r_a9306985c1445cacd5b2dfca923e93922"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9306985c1445cacd5b2dfca923e93922">xml_safe_utf8</a> ($content)</td></tr>
-<tr class="memdesc:a9306985c1445cacd5b2dfca923e93922"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform some UTF-8 cleaning, stripping the control chars (::x0-::x1f) but tabs (::x9), newlines (\xa) and returns (\xd).  <br /></td></tr>
+<tr class="memdesc:a9306985c1445cacd5b2dfca923e93922"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform some UTF-8 cleaning, stripping the control chars (::x00-::x1f) but tabs (::x09), newlines (\xa) and returns (\xd).  <br /></td></tr>
 <tr class="separator:a9306985c1445cacd5b2dfca923e93922"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -203,7 +203,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Perform some UTF-8 cleaning, stripping the control chars (::x0-::x1f) but tabs (::x9), newlines (\xa) and returns (\xd). </p>
+<p>Perform some UTF-8 cleaning, stripping the control chars (::x00-::x1f) but tabs (::x09), newlines (\xa) and returns (\xd). </p>
 <p>The delete control char (::x7f) is also included. All them are forbiden in XML 1.0 specs. The expression below seems to be UTF-8 safe too because it simply ignores the rest of characters. Also normalize linefeeds and return chars. </p>
 
 </div>
@@ -214,7 +214,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 30 2025 03:18:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Apr 6 2025 03:15:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

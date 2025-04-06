@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250328) (b00c328d2db)</div>
+   <div id="projectbrief">Moodle 5.0rc1 (Build: 20250404) (1e89ba23357)</div>
   </td>
  </tr>
  </tbody>
@@ -513,15 +513,19 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= [</div>
+<div class="line">        <span class="stringliteral">&#39;statenotstarted&#39;</span> =&gt; <a class="code hl_variable" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#ae5a4e155d3a9cc81c30ef2cbe3ccd626">quiz_attempt::NOT_STARTED</a>,</div>
 <div class="line">        <span class="stringliteral">&#39;stateinprogress&#39;</span> =&gt; <a class="code hl_variable" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#a4da02aa08ef07602d57d0dda8808f98f">quiz_attempt::IN_PROGRESS</a>,</div>
 <div class="line">        <span class="stringliteral">&#39;stateoverdue&#39;</span>    =&gt; <a class="code hl_variable" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#ac7c3a004d79e25757afe349648c3ca4b">quiz_attempt::OVERDUE</a>,</div>
+<div class="line">        <span class="stringliteral">&#39;statesubmitted&#39;</span> =&gt; <a class="code hl_variable" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#ac1c4c039edd271ac8db7bea3c2db265e">quiz_attempt::SUBMITTED</a>,</div>
 <div class="line">        <span class="stringliteral">&#39;statefinished&#39;</span>   =&gt; <a class="code hl_variable" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#a6ba459450fbab85af8654d08b2e89832">quiz_attempt::FINISHED</a>,</div>
 <div class="line">        <span class="stringliteral">&#39;stateabandoned&#39;</span>  =&gt; <a class="code hl_variable" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#ace0efac5164ac202a316c904c42458f6">quiz_attempt::ABANDONED</a>,</div>
 <div class="line">    ]</div>
-<div class="ttc" id="aclassmod__quiz_1_1quiz__attempt_html_a4da02aa08ef07602d57d0dda8808f98f"><div class="ttname"><a href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#a4da02aa08ef07602d57d0dda8808f98f">mod_quiz\quiz_attempt\IN_PROGRESS</a></div><div class="ttdeci">string const IN_PROGRESS</div><div class="ttdoc">to identify the in progress state.</div><div class="ttdef"><b>Definition</b> quiz_attempt.php:57</div></div>
-<div class="ttc" id="aclassmod__quiz_1_1quiz__attempt_html_a6ba459450fbab85af8654d08b2e89832"><div class="ttname"><a href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#a6ba459450fbab85af8654d08b2e89832">mod_quiz\quiz_attempt\FINISHED</a></div><div class="ttdeci">string const FINISHED</div><div class="ttdoc">to identify the finished state.</div><div class="ttdef"><b>Definition</b> quiz_attempt.php:61</div></div>
-<div class="ttc" id="aclassmod__quiz_1_1quiz__attempt_html_ac7c3a004d79e25757afe349648c3ca4b"><div class="ttname"><a href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#ac7c3a004d79e25757afe349648c3ca4b">mod_quiz\quiz_attempt\OVERDUE</a></div><div class="ttdeci">string const OVERDUE</div><div class="ttdoc">to identify the overdue state.</div><div class="ttdef"><b>Definition</b> quiz_attempt.php:59</div></div>
-<div class="ttc" id="aclassmod__quiz_1_1quiz__attempt_html_ace0efac5164ac202a316c904c42458f6"><div class="ttname"><a href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#ace0efac5164ac202a316c904c42458f6">mod_quiz\quiz_attempt\ABANDONED</a></div><div class="ttdeci">string const ABANDONED</div><div class="ttdoc">to identify the abandoned state.</div><div class="ttdef"><b>Definition</b> quiz_attempt.php:63</div></div>
+<div class="ttc" id="aclassmod__quiz_1_1quiz__attempt_html_a4da02aa08ef07602d57d0dda8808f98f"><div class="ttname"><a href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#a4da02aa08ef07602d57d0dda8808f98f">mod_quiz\quiz_attempt\IN_PROGRESS</a></div><div class="ttdeci">string const IN_PROGRESS</div><div class="ttdoc">to identify the in progress state.</div><div class="ttdef"><b>Definition</b> quiz_attempt.php:59</div></div>
+<div class="ttc" id="aclassmod__quiz_1_1quiz__attempt_html_a6ba459450fbab85af8654d08b2e89832"><div class="ttname"><a href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#a6ba459450fbab85af8654d08b2e89832">mod_quiz\quiz_attempt\FINISHED</a></div><div class="ttdeci">string const FINISHED</div><div class="ttdoc">to identify the finished state.</div><div class="ttdef"><b>Definition</b> quiz_attempt.php:65</div></div>
+<div class="ttc" id="aclassmod__quiz_1_1quiz__attempt_html_ac1c4c039edd271ac8db7bea3c2db265e"><div class="ttname"><a href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#ac1c4c039edd271ac8db7bea3c2db265e">mod_quiz\quiz_attempt\SUBMITTED</a></div><div class="ttdeci">string const SUBMITTED</div><div class="ttdoc">to identify the submitted state, when an attempt is awaiting grading.</div><div class="ttdef"><b>Definition</b> quiz_attempt.php:63</div></div>
+<div class="ttc" id="aclassmod__quiz_1_1quiz__attempt_html_ac7c3a004d79e25757afe349648c3ca4b"><div class="ttname"><a href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#ac7c3a004d79e25757afe349648c3ca4b">mod_quiz\quiz_attempt\OVERDUE</a></div><div class="ttdeci">string const OVERDUE</div><div class="ttdoc">to identify the overdue state.</div><div class="ttdef"><b>Definition</b> quiz_attempt.php:61</div></div>
+<div class="ttc" id="aclassmod__quiz_1_1quiz__attempt_html_ace0efac5164ac202a316c904c42458f6"><div class="ttname"><a href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#ace0efac5164ac202a316c904c42458f6">mod_quiz\quiz_attempt\ABANDONED</a></div><div class="ttdeci">string const ABANDONED</div><div class="ttdoc">to identify the abandoned state.</div><div class="ttdef"><b>Definition</b> quiz_attempt.php:67</div></div>
+<div class="ttc" id="aclassmod__quiz_1_1quiz__attempt_html_ae5a4e155d3a9cc81c30ef2cbe3ccd626"><div class="ttname"><a href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#ae5a4e155d3a9cc81c30ef2cbe3ccd626">mod_quiz\quiz_attempt\NOT_STARTED</a></div><div class="ttdeci">string const NOT_STARTED</div><div class="ttdoc">to identify the &quot;not started&quot; state, when an attempt has been pre-generated.</div><div class="ttdef"><b>Definition</b> quiz_attempt.php:57</div></div>
 </div><!-- fragment -->
 <p>form field name =&gt; corresponding quiz_attempt:: state constant. </p>
 
@@ -546,8 +550,14 @@ Static Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= [<a class="code hl_variable" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#a4da02aa08ef07602d57d0dda8808f98f">quiz_attempt::IN_PROGRESS</a>, <a class="code hl_variable" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#ac7c3a004d79e25757afe349648c3ca4b">quiz_attempt::OVERDUE</a>,</div>
-<div class="line">            <a class="code hl_variable" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#a6ba459450fbab85af8654d08b2e89832">quiz_attempt::FINISHED</a>, <a class="code hl_variable" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#ace0efac5164ac202a316c904c42458f6">quiz_attempt::ABANDONED</a>]</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= [</div>
+<div class="line">        <a class="code hl_variable" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#ae5a4e155d3a9cc81c30ef2cbe3ccd626">quiz_attempt::NOT_STARTED</a>,</div>
+<div class="line">        <a class="code hl_variable" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#a4da02aa08ef07602d57d0dda8808f98f">quiz_attempt::IN_PROGRESS</a>,</div>
+<div class="line">        <a class="code hl_variable" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#ac7c3a004d79e25757afe349648c3ca4b">quiz_attempt::OVERDUE</a>,</div>
+<div class="line">        <a class="code hl_variable" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#ac1c4c039edd271ac8db7bea3c2db265e">quiz_attempt::SUBMITTED</a>,</div>
+<div class="line">        <a class="code hl_variable" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#a6ba459450fbab85af8654d08b2e89832">quiz_attempt::FINISHED</a>,</div>
+<div class="line">        <a class="code hl_variable" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#ace0efac5164ac202a316c904c42458f6">quiz_attempt::ABANDONED</a>,</div>
+<div class="line">    ]</div>
 </div><!-- fragment -->
 <p>of quiz_attempt::IN_PROGRESS, etc. </p>
 <p>constants. null means no restriction. </p>
@@ -560,7 +570,7 @@ Static Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 30 2025 03:18:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Apr 6 2025 03:15:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

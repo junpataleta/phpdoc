@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250328) (b00c328d2db)</div>
+   <div id="projectbrief">Moodle 5.0rc1 (Build: 20250404) (1e89ba23357)</div>
   </td>
  </tr>
  </tbody>
@@ -355,8 +355,8 @@ Functions</h2></td></tr>
 <tr class="memitem:gab034881178b12170a773637a8be43ff2" id="r_gab034881178b12170a773637a8be43ff2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab034881178b12170a773637a8be43ff2">grade_get_grade_items_for_activity</a> ($cm, $only_main_item=false)</td></tr>
 <tr class="memdesc:gab034881178b12170a773637a8be43ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all grade items (including outcomes) or main item for a given activity identified by $cm object.  <br /></td></tr>
 <tr class="separator:gab034881178b12170a773637a8be43ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae64e46f84ba3316c432655f71fffff1e" id="r_gae64e46f84ba3316c432655f71fffff1e"><td class="memItemLeft" align="right" valign="top"><a id="gae64e46f84ba3316c432655f71fffff1e" name="gae64e46f84ba3316c432655f71fffff1e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>grade_get_graded_users_select</b> ($report, $course, $userid, $groupid, $includeall)</td></tr>
+<tr class="memitem:gae64e46f84ba3316c432655f71fffff1e" id="r_gae64e46f84ba3316c432655f71fffff1e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae64e46f84ba3316c432655f71fffff1e">grade_get_graded_users_select</a> ($report, $course, $userid, $groupid, $includeall)</td></tr>
+<tr class="memdesc:gae64e46f84ba3316c432655f71fffff1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a selection popup form of the graded users in a course.  <br /></td></tr>
 <tr class="separator:gae64e46f84ba3316c432655f71fffff1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabded6b9e47535cdc73b04d4583812c8c" id="r_gabded6b9e47535cdc73b04d4583812c8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabded6b9e47535cdc73b04d4583812c8c">grade_get_grades</a> ($courseid, $itemtype, $itemmodule, $iteminstance, $userid_or_ids=null)</td></tr>
 <tr class="memdesc:gabded6b9e47535cdc73b04d4583812c8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns grading information for given activity, optionally with user grades.  <br /></td></tr>
@@ -1453,6 +1453,60 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>GRADE_UPDATE_OK</b> 
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">mixed</td><td>An array of grade item instances, one grade item if $only_main_item == true, false if error or not found </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gae64e46f84ba3316c432655f71fffff1e" name="gae64e46f84ba3316c432655f71fffff1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae64e46f84ba3316c432655f71fffff1e">&#9670;&#160;</a></span>grade_get_graded_users_select()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">grade_get_graded_users_select </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$report</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$course</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$userid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$groupid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$includeall</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return a selection popup form of the graded users in a course. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$report</td><td>name of the report </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$course</td><td>id of the course </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>id of the currently selected user (or 'all' if they are all selected) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$groupid</td><td>id of requested group, 0 means all </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$includeall</td><td>bool include all option </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../d9/d1a/classcore_1_1output_1_1single__select.html">single_select</a></td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2585,6 +2639,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>GRADE_UPDATE_OK</b> 
   </table>
   </dd>
 </dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000093">Todo</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0. See <a href="https://tracker.moodle.org/browse/MDL-84680" class="el">MDL-84680</a>. </dd></dl>
 
 </div>
 </div>
@@ -2785,7 +2840,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>GRADE_UPDATE_OK</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 30 2025 03:17:09 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Apr 6 2025 03:14:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

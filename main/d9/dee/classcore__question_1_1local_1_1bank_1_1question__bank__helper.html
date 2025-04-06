@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250328) (b00c328d2db)</div>
+   <div id="projectbrief">Moodle 5.0rc1 (Build: 20250404) (1e89ba23357)</div>
   </td>
  </tr>
  </tbody>
@@ -89,12 +89,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4101ec3058f33682416ac01c02c81ca4" id="r_a4101ec3058f33682416ac01c02c81ca4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4101ec3058f33682416ac01c02c81ca4">create_default_open_instance</a> (stdClass $<a class="el" href="../../de/d1c/classcore_1_1context_1_1course.html">course</a>, string $bankname, string $type=self::TYPE_STANDARD)</td></tr>
 <tr class="memdesc:a4101ec3058f33682416ac01c02c81ca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a bank on the course from default options.  <br /></td></tr>
 <tr class="separator:a4101ec3058f33682416ac01c02c81ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaee13e5ca2dd0b1d69959abfce6494a0" id="r_aaee13e5ca2dd0b1d69959abfce6494a0"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaee13e5ca2dd0b1d69959abfce6494a0">get_activity_instances_with_private_questions</a> (array $incourseids=[], array $notincourseids=[], array $havingcap=[], bool $getcategories=false, int $currentbankid=0,)</td></tr>
-<tr class="memdesc:aaee13e5ca2dd0b1d69959abfce6494a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get records for activity modules that don't publish questions, and optionally get their question categories too.  <br /></td></tr>
-<tr class="separator:aaee13e5ca2dd0b1d69959abfce6494a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20373fd5527ff3d982e1075f13c0e096" id="r_a20373fd5527ff3d982e1075f13c0e096"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20373fd5527ff3d982e1075f13c0e096">get_activity_instances_with_shareable_questions</a> (array $incourseids=[], array $notincourseids=[], array $havingcap=[], bool $getcategories=false, int $currentbankid=0,)</td></tr>
-<tr class="memdesc:a20373fd5527ff3d982e1075f13c0e096"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get records for activity modules that do publish questions, and optionally get their question categories too.  <br /></td></tr>
-<tr class="separator:a20373fd5527ff3d982e1075f13c0e096"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88b6b8d379e286703e68843d49998537" id="r_a88b6b8d379e286703e68843d49998537"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88b6b8d379e286703e68843d49998537">get_activity_instances_with_private_questions</a> (array $incourseids=[], array $notincourseids=[], array $havingcap=[], bool $getcategories=false, int $currentbankid=0, ?context $filtercontext=null,)</td></tr>
+<tr class="memdesc:a88b6b8d379e286703e68843d49998537"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get records for activity modules that don't publish questions, and optionally get their question categories too.  <br /></td></tr>
+<tr class="separator:a88b6b8d379e286703e68843d49998537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaef028b3c954763f15afad071641e61" id="r_aaaef028b3c954763f15afad071641e61"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaaef028b3c954763f15afad071641e61">get_activity_instances_with_shareable_questions</a> (array $incourseids=[], array $notincourseids=[], array $havingcap=[], bool $getcategories=false, int $currentbankid=0, ?context $filtercontext=null, string $search='', int $limit=0,)</td></tr>
+<tr class="memdesc:aaaef028b3c954763f15afad071641e61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get records for activity modules that do publish questions, and optionally get their question categories too.  <br /></td></tr>
+<tr class="separator:aaaef028b3c954763f15afad071641e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a35a8e806813bfbd479fa3c85f0e6b8" id="r_a7a35a8e806813bfbd479fa3c85f0e6b8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a35a8e806813bfbd479fa3c85f0e6b8">get_activity_types_with_private_questions</a> ()</td></tr>
 <tr class="memdesc:a7a35a8e806813bfbd479fa3c85f0e6b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get module types that do not share questions.  <br /></td></tr>
 <tr class="separator:a7a35a8e806813bfbd479fa3c85f0e6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,9 +113,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa8c586aa5adb3075dfa47c0898ef233b" id="r_aa8c586aa5adb3075dfa47c0898ef233b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8c586aa5adb3075dfa47c0898ef233b">get_preview_open_instance_type</a> (bool $createifnotexists=false)</td></tr>
 <tr class="memdesc:aa8c586aa5adb3075dfa47c0898ef233b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the bank that is used for preview purposes only, optionally create it if it does not yet exist.  <br /></td></tr>
 <tr class="separator:aa8c586aa5adb3075dfa47c0898ef233b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35693ab6d45be70347cc8ef5b73da5a1" id="r_a35693ab6d45be70347cc8ef5b73da5a1"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35693ab6d45be70347cc8ef5b73da5a1">get_recently_used_open_banks</a> (int $userid, int $notincourseid=0)</td></tr>
-<tr class="memdesc:a35693ab6d45be70347cc8ef5b73da5a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of recently viewed question banks that implement FEATURE_PUBLISHES_QUESTIONS.  <br /></td></tr>
-<tr class="separator:a35693ab6d45be70347cc8ef5b73da5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cf78bb69c0a6cae1214c3dbb2768179" id="r_a4cf78bb69c0a6cae1214c3dbb2768179"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cf78bb69c0a6cae1214c3dbb2768179">get_recently_used_open_banks</a> (int $userid, int $notincourseid=0, ?context $filtercontext=null,)</td></tr>
+<tr class="memdesc:a4cf78bb69c0a6cae1214c3dbb2768179"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of recently viewed question banks that implement FEATURE_PUBLISHES_QUESTIONS.  <br /></td></tr>
+<tr class="separator:a4cf78bb69c0a6cae1214c3dbb2768179"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcffbb3028eb11b83d8e09f20ad1758b" id="r_adcffbb3028eb11b83d8e09f20ad1758b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcffbb3028eb11b83d8e09f20ad1758b">get_url_for_qbank_list</a> (int $courseid, bool $createdefault=false)</td></tr>
 <tr class="memdesc:adcffbb3028eb11b83d8e09f20ad1758b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the url that shows the banks list of a course.  <br /></td></tr>
 <tr class="separator:adcffbb3028eb11b83d8e09f20ad1758b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,8 +243,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>RECENTLY_VIEWED</b> 
 
 </div>
 </div>
-<a id="aaee13e5ca2dd0b1d69959abfce6494a0" name="aaee13e5ca2dd0b1d69959abfce6494a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaee13e5ca2dd0b1d69959abfce6494a0">&#9670;&#160;</a></span>get_activity_instances_with_private_questions()</h2>
+<a id="a88b6b8d379e286703e68843d49998537" name="a88b6b8d379e286703e68843d49998537"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88b6b8d379e286703e68843d49998537">&#9670;&#160;</a></span>get_activity_instances_with_private_questions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -275,7 +275,12 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>RECENTLY_VIEWED</b> 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$currentbankid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$currentbankid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?context</td>          <td class="paramname"><span class="paramname"><em>$filtercontext</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -293,6 +298,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>RECENTLY_VIEWED</b> 
     <tr><td class="paramtype">array</td><td class="paramname">$havingcap</td><td>current user must have these capabilities on each bank context. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$getcategories</td><td>optionally return the categories belonging to these banks. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$currentbankid</td><td>optionally include the bank id you want included as the first result from the method return. it will only be included if the other parameters allow it. </td></tr>
+    <tr><td class="paramtype">?context</td><td class="paramname">$filtercontext</td><td>Optional context to use for all string filtering, useful for performance when calling with parameters that will get banks across multiple contexts. </td></tr>
   </table>
   </dd>
 </dl>
@@ -305,8 +311,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>RECENTLY_VIEWED</b> 
 
 </div>
 </div>
-<a id="a20373fd5527ff3d982e1075f13c0e096" name="a20373fd5527ff3d982e1075f13c0e096"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20373fd5527ff3d982e1075f13c0e096">&#9670;&#160;</a></span>get_activity_instances_with_shareable_questions()</h2>
+<a id="aaaef028b3c954763f15afad071641e61" name="aaaef028b3c954763f15afad071641e61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaef028b3c954763f15afad071641e61">&#9670;&#160;</a></span>get_activity_instances_with_shareable_questions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -337,7 +343,22 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>RECENTLY_VIEWED</b> 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$currentbankid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$currentbankid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?context</td>          <td class="paramname"><span class="paramname"><em>$filtercontext</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$search</em></span><span class="paramdefsep"> = </span><span class="paramdefval">''</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$limit</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -355,6 +376,9 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>RECENTLY_VIEWED</b> 
     <tr><td class="paramtype">array</td><td class="paramname">$havingcap</td><td>current user must have these capabilities on each bank context. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$getcategories</td><td>optionally return the categories belonging to these banks. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$currentbankid</td><td>optionally include the bank id you want included as the first result from the method return. it will only be included if the other parameters allow it. </td></tr>
+    <tr><td class="paramtype">?context</td><td class="paramname">$filtercontext</td><td>Optional context to use for all string filtering, useful for performance when calling with parameters that will get banks across multiple contexts. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$search</td><td>Optional term to search question bank instances by name </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$limit</td><td>The number of results to return (default 0 = no limit) </td></tr>
   </table>
   </dd>
 </dl>
@@ -603,8 +627,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>RECENTLY_VIEWED</b> 
 
 </div>
 </div>
-<a id="a35693ab6d45be70347cc8ef5b73da5a1" name="a35693ab6d45be70347cc8ef5b73da5a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35693ab6d45be70347cc8ef5b73da5a1">&#9670;&#160;</a></span>get_recently_used_open_banks()</h2>
+<a id="a4cf78bb69c0a6cae1214c3dbb2768179" name="a4cf78bb69c0a6cae1214c3dbb2768179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cf78bb69c0a6cae1214c3dbb2768179">&#9670;&#160;</a></span>get_recently_used_open_banks()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -620,7 +644,12 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>RECENTLY_VIEWED</b> 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$notincourseid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$notincourseid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?context</td>          <td class="paramname"><span class="paramname"><em>$filtercontext</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -636,6 +665,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>RECENTLY_VIEWED</b> 
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>of the user to get recently viewed banks for. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$notincourseid</td><td>if supplied don't return any in this course id </td></tr>
+    <tr><td class="paramtype">?context</td><td class="paramname">$filtercontext</td><td>Optional context to use for all string filtering, useful for performance when calling with parameters that will get banks across multiple contexts. </td></tr>
   </table>
   </dd>
 </dl>
@@ -767,7 +797,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>RECENTLY_VIEWED</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 30 2025 03:19:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Apr 6 2025 03:17:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

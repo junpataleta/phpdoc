@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0dev+ (Build: 20250328) (b00c328d2db)</div>
+   <div id="projectbrief">Moodle 5.0rc1 (Build: 20250404) (1e89ba23357)</div>
   </td>
  </tr>
  </tbody>
@@ -71,6 +71,7 @@ $(function(){ initResizable(false); });
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="../../d0/dcc/classquestion__attempt__step-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">question_attempt_step Class Reference<div class="ingroups"><a class="el" href="../../d6/d9f/group__moodlecore.html">moodlecore</a></div></div></div>
 </div><!--header-->
@@ -167,12 +168,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab1b3d708a2912c2493d24e2f376f83a2" id="r_ab1b3d708a2912c2493d24e2f376f83a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1b3d708a2912c2493d24e2f376f83a2">set_state</a> ($state)</td></tr>
 <tr class="memdesc:ab1b3d708a2912c2493d24e2f376f83a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the state.  <br /></td></tr>
 <tr class="separator:ab1b3d708a2912c2493d24e2f376f83a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca90169a40cd1ca247e9dc28651a582" id="r_a3ca90169a40cd1ca247e9dc28651a582"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ca90169a40cd1ca247e9dc28651a582">set_timecreated</a> (int $timecreated)</td></tr>
+<tr class="memdesc:a3ca90169a40cd1ca247e9dc28651a582"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter for $this-&gt;timecreated.  <br /></td></tr>
+<tr class="separator:a3ca90169a40cd1ca247e9dc28651a582"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a51b41f06e97ee49afce2f6396d8b3c38" id="r_a51b41f06e97ee49afce2f6396d8b3c38"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51b41f06e97ee49afce2f6396d8b3c38">load_from_records</a> ($records, $attemptstepid, $qtype=null)</td></tr>
 <tr class="memdesc:a51b41f06e97ee49afce2f6396d8b3c38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a {.">question_attempt_step</a> from records loaded from the database.  <br /></td></tr>
 <tr class="separator:a51b41f06e97ee49afce2f6396d8b3c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aa15ce7531af006c2665f95504b06c7da" id="r_aa15ce7531af006c2665f95504b06c7da"><td class="memItemLeft" align="right" valign="top"><a id="aa15ce7531af006c2665f95504b06c7da" name="aa15ce7531af006c2665f95504b06c7da"></a>
+int const&#160;</td><td class="memItemRight" valign="bottom"><b>TIMECREATED_ON_FIRST_RENDER</b> = -1</td></tr>
+<tr class="memdesc:aa15ce7531af006c2665f95504b06c7da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates that timecreated will be set the first time the attempt is rendered. <br /></td></tr>
+<tr class="separator:aa15ce7531af006c2665f95504b06c7da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Stores one step in a {. </p>
@@ -243,7 +254,13 @@ question_attempt::process_action()}. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>the submitted data that defines this step. </td></tr>
-    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$timecreated</td><td>the time to record for the action. (If not given, use now.) </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$timecreated</td><td>the time to record for the action. If null, use now. If {</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>self::TIMECREATED_ON_FIRST_RENDER}, the time will be set the first time the attempt is rendered. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$userid</td><td>the user to attribute the aciton to. (If not given, use the current user.) </td></tr>
     <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$existingstepid</td><td>if this step is going to replace an existing step (for example, during a regrade) this is the id of the previous step we are replacing. </td></tr>
   </table>
@@ -1127,13 +1144,44 @@ question_attempt::process_action()}. </dd></dl>
 
 </div>
 </div>
+<a id="a3ca90169a40cd1ca247e9dc28651a582" name="a3ca90169a40cd1ca247e9dc28651a582"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ca90169a40cd1ca247e9dc28651a582">&#9670;&#160;</a></span>set_timecreated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">question_attempt_step::set_timecreated </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$timecreated</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setter for $this-&gt;timecreated. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$timecreated</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>question/engine/<b>questionattemptstep.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 30 2025 03:18:25 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Apr 6 2025 03:15:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>
