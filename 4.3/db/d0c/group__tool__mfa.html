@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3.11+ (Build: 20250404) (835e2b76c31)</div>
+   <div id="projectbrief">Moodle 4.3.12 (Build: 20250414) (73fc31dabf4)</div>
   </td>
  </tr>
  </tbody>
@@ -167,9 +167,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga760653c628634cf86374c5ff7522ef63" id="r_ga760653c628634cf86374c5ff7522ef63"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga760653c628634cf86374c5ff7522ef63">tool_mfa_extend_navigation_user_settings</a> (<a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a> $navigation, stdClass $<a class="el" href="../../d0/dba/classcore_1_1context_1_1user.html">user</a>, $usercontext, stdClass $<a class="el" href="../../de/d1c/classcore_1_1context_1_1course.html">course</a>, $coursecontext)</td></tr>
 <tr class="memdesc:ga760653c628634cf86374c5ff7522ef63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extends navigation bar and injects MFA Preferences menu to user preferences.  <br /></td></tr>
 <tr class="separator:ga760653c628634cf86374c5ff7522ef63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6fcbe441877c8879f852f4545e3bd1e0" id="r_ga6fcbe441877c8879f852f4545e3bd1e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6fcbe441877c8879f852f4545e3bd1e0">tool_mfa_pluginfile</a> (stdClass $<a class="el" href="../../de/d1c/classcore_1_1context_1_1course.html">course</a>, stdClass $cm, context $context, string $filearea, array $args, bool $forcedownload, array $options=[])</td></tr>
-<tr class="memdesc:ga6fcbe441877c8879f852f4545e3bd1e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serves any files for the guidance page.  <br /></td></tr>
-<tr class="separator:ga6fcbe441877c8879f852f4545e3bd1e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a41effce124ca973614aa77e4ad61d9" id="r_ga2a41effce124ca973614aa77e4ad61d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2a41effce124ca973614aa77e4ad61d9">tool_mfa_pluginfile</a> (stdClass|null $<a class="el" href="../../de/d1c/classcore_1_1context_1_1course.html">course</a>, stdClass|null $cm, context $context, string $filearea, array $args, bool $forcedownload, array $options=[])</td></tr>
+<tr class="memdesc:ga2a41effce124ca973614aa77e4ad61d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serves any files for the guidance page.  <br /></td></tr>
+<tr class="separator:ga2a41effce124ca973614aa77e4ad61d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -368,8 +368,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 
 </div>
 </div>
-<a id="ga6fcbe441877c8879f852f4545e3bd1e0" name="ga6fcbe441877c8879f852f4545e3bd1e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6fcbe441877c8879f852f4545e3bd1e0">&#9670;&#160;</a></span>tool_mfa_pluginfile()</h2>
+<a id="ga2a41effce124ca973614aa77e4ad61d9" name="ga2a41effce124ca973614aa77e4ad61d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2a41effce124ca973614aa77e4ad61d9">&#9670;&#160;</a></span>tool_mfa_pluginfile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -377,12 +377,12 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
         <tr>
           <td class="memname">tool_mfa_pluginfile </td>
           <td>(</td>
-          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$course</em></span>, </td>
+          <td class="paramtype">stdClass|null</td>          <td class="paramname"><span class="paramname"><em>$course</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$cm</em></span>, </td>
+          <td class="paramtype">stdClass|null</td>          <td class="paramname"><span class="paramname"><em>$cm</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -415,8 +415,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 <p>Serves any files for the guidance page. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td></td></tr>
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$cm</td><td></td></tr>
+    <tr><td class="paramtype">stdClass&#160;|&#160;null</td><td class="paramname">$course</td><td></td></tr>
+    <tr><td class="paramtype">stdClass&#160;|&#160;null</td><td class="paramname">$cm</td><td></td></tr>
     <tr><td class="paramtype">context</td><td class="paramname">$context</td><td></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$filearea</td><td></td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$args</td><td></td></tr>
@@ -461,7 +461,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 6 2025 03:08:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Apr 13 2025 04:19:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -27,9 +27,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../Moodle-Logo-ReversedWhite_RGB.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
+   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.1</span>
    </div>
-   <div id="projectbrief">Moodle 5.0rc1 (Build: 20250404) (1e89ba23357)</div>
+   <div id="projectbrief">Moodle 5.1dev (Build: 20250414) (bf164840d92)</div>
   </td>
  </tr>
  </tbody>
@@ -303,9 +303,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae4a21e00cc8e4ce892f94f16a5f7489b" id="r_ae4a21e00cc8e4ce892f94f16a5f7489b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/classgrade__object.html#ae4a21e00cc8e4ce892f94f16a5f7489b">update_from_db</a> ()</td></tr>
 <tr class="memdesc:ae4a21e00cc8e4ce892f94f16a5f7489b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Using this object's id field, fetches the matching record in the <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>, and looks at each variable in turn.  <br /></td></tr>
 <tr class="separator:ae4a21e00cc8e4ce892f94f16a5f7489b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabfd9cd23945fec0160a04f1f75d810e" id="r_aabfd9cd23945fec0160a04f1f75d810e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabfd9cd23945fec0160a04f1f75d810e">update_overridden_mark</a> (int $userid, float $overriddenmark)</td></tr>
-<tr class="memdesc:aabfd9cd23945fec0160a04f1f75d810e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update overridden mark for given user.  <br /></td></tr>
-<tr class="separator:aabfd9cd23945fec0160a04f1f75d810e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa90dc8bae3afe05f8829612a015e3a13" id="r_aa90dc8bae3afe05f8829612a015e3a13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa90dc8bae3afe05f8829612a015e3a13">update_raw_grade</a> ($userid, $rawgrade=false, $source=null, $feedback=false, $feedbackformat=<a class="el" href="../../d0/de1/group__core.html#ga569aa47f4fc21339755148f0bd388b76">FORMAT_MOODLE</a>, $usermodified=null, $dategraded=null, $datesubmitted=null, $grade=null, array $feedbackfiles=[], $isbulkupdate=false)</td></tr>
 <tr class="memdesc:aa90dc8bae3afe05f8829612a015e3a13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates raw grade value for given user, this is a only way to update raw grades from external source (modules, etc.), because it logs the change in history table and deals with final grade recalculation.  <br /></td></tr>
 <tr class="separator:aa90dc8bae3afe05f8829612a015e3a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -327,9 +324,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a47bd0d9e389a8d01e6092ac4ccad9c7d" id="r_a47bd0d9e389a8d01e6092ac4ccad9c7d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47bd0d9e389a8d01e6092ac4ccad9c7d">fetch_all</a> ($params)</td></tr>
 <tr class="memdesc:a47bd0d9e389a8d01e6092ac4ccad9c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds and returns all grade_item instances based on params.  <br /></td></tr>
 <tr class="separator:a47bd0d9e389a8d01e6092ac4ccad9c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b55ff621d9fdb6e4866b0159695bbd5" id="r_a9b55ff621d9fdb6e4866b0159695bbd5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/classgrade__object.html#a9b55ff621d9fdb6e4866b0159695bbd5">fetch_all_helper</a> ($table, $classname, $params)</td></tr>
-<tr class="memdesc:a9b55ff621d9fdb6e4866b0159695bbd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory method which uses the parameters to retrieve all matching instances from the database.  <br /></td></tr>
-<tr class="separator:a9b55ff621d9fdb6e4866b0159695bbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acedde5b6bdd77a457408ea690bd4f25b" id="r_acedde5b6bdd77a457408ea690bd4f25b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/classgrade__object.html#acedde5b6bdd77a457408ea690bd4f25b">fetch_all_helper</a> ($table, $classname, $params, string $sortby='id ASC')</td></tr>
+<tr class="memdesc:acedde5b6bdd77a457408ea690bd4f25b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory method which uses the parameters to retrieve all matching instances from the database.  <br /></td></tr>
+<tr class="separator:acedde5b6bdd77a457408ea690bd4f25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a723218d3b388f83f081999c4e0182448" id="r_a723218d3b388f83f081999c4e0182448"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a723218d3b388f83f081999c4e0182448">fetch_course_item</a> ($courseid)</td></tr>
 <tr class="memdesc:a723218d3b388f83f081999c4e0182448"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the grade item associated with the course.  <br /></td></tr>
 <tr class="separator:a723218d3b388f83f081999c4e0182448"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1047,8 +1044,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9b55ff621d9fdb6e4866b0159695bbd5" name="a9b55ff621d9fdb6e4866b0159695bbd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b55ff621d9fdb6e4866b0159695bbd5">&#9670;&#160;</a></span>fetch_all_helper()</h2>
+<a id="acedde5b6bdd77a457408ea690bd4f25b" name="acedde5b6bdd77a457408ea690bd4f25b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acedde5b6bdd77a457408ea690bd4f25b">&#9670;&#160;</a></span>fetch_all_helper()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1069,7 +1066,12 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$params</em></span>&#160;)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$params</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$sortby</em></span><span class="paramdefsep"> = </span><span class="paramdefval">'id&#160;ASC'</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -1085,12 +1087,13 @@ Static Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$table</td><td>The table to retrieve from </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$classname</td><td>The name of the class to instantiate </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$params</td><td>An array of conditions like $fieldname =&gt; $fieldvalue </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$sortby</td><td>The SQL sort order. E.g. 'id ASC' </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array|bool</td><td>Array of object instances or false if not found </td></tr>
+    <tr><td class="paramname">array|bool</td><td>Array of object instances (sorted by $sortby) or false if not found </td></tr>
   </table>
   </dd>
 </dl>
@@ -3169,36 +3172,6 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aabfd9cd23945fec0160a04f1f75d810e" name="aabfd9cd23945fec0160a04f1f75d810e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabfd9cd23945fec0160a04f1f75d810e">&#9670;&#160;</a></span>update_overridden_mark()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">grade_item::update_overridden_mark </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$userid</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>$overriddenmark</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update overridden mark for given user. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>The graded user </td></tr>
-    <tr><td class="paramtype">float</td><td class="paramname">$overriddenmark</td><td>The mark deducted from final grade </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="aa90dc8bae3afe05f8829612a015e3a13" name="aa90dc8bae3afe05f8829612a015e3a13"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa90dc8bae3afe05f8829612a015e3a13">&#9670;&#160;</a></span>update_raw_grade()</h2>
 
@@ -3973,7 +3946,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 6 2025 03:15:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Apr 13 2025 04:26:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

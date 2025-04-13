@@ -27,9 +27,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../Moodle-Logo-ReversedWhite_RGB.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
+   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.1</span>
    </div>
-   <div id="projectbrief">Moodle 5.0rc1 (Build: 20250404) (1e89ba23357)</div>
+   <div id="projectbrief">Moodle 5.1dev (Build: 20250414) (bf164840d92)</div>
   </td>
  </tr>
  </tbody>
@@ -135,7 +135,7 @@ $(function(){ initResizable(false); });
   <tr class="even"><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html#a23163ca67612e1d7abd41a521d65adb2">duplicate</a>()</td><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html#a1f438ab19975ef62fbc67e6f9c583068">fetch</a>($params)</td><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html#a47bd0d9e389a8d01e6092ac4ccad9c7d">fetch_all</a>($params)</td><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../de/d85/classgrade__object.html#a9b55ff621d9fdb6e4866b0159695bbd5">fetch_all_helper</a>($table, $classname, $params)</td><td class="entry"><a class="el" href="../../de/d85/classgrade__object.html">grade_object</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../de/d85/classgrade__object.html#acedde5b6bdd77a457408ea690bd4f25b">fetch_all_helper</a>($table, $classname, $params, string $sortby='id ASC')</td><td class="entry"><a class="el" href="../../de/d85/classgrade__object.html">grade_object</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html#a723218d3b388f83f081999c4e0182448">fetch_course_item</a>($courseid)</td><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../de/d85/classgrade__object.html#a6d4faa120a30eab428d226a212eb33e7">fetch_helper</a>($table, $classname, $params)</td><td class="entry"><a class="el" href="../../de/d85/classgrade__object.html">grade_object</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html#a1a7e7592c2ae862c079279b2cea9bc59">fix_duplicate_sortorder</a>($courseid)</td><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
@@ -202,14 +202,13 @@ $(function(){ initResizable(false); });
   <tr class="odd"><td class="entry"><a class="el" href="../../de/d85/classgrade__object.html#a8f6d127ee3b0439e2bbb85c020899d12">update_feedback_files</a>(?int $historyid=null)</td><td class="entry"><a class="el" href="../../de/d85/classgrade__object.html">grade_object</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html#a9c43f8790678eac8d1fcb1b9306a86b7">update_final_grade</a>($userid, $finalgrade=false, $source=null, $feedback=false, $feedbackformat=FORMAT_MOODLE, $usermodified=null, $timemodified=null, $isbulkupdate=false)</td><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../de/d85/classgrade__object.html#ae4a21e00cc8e4ce892f94f16a5f7489b">update_from_db</a>()</td><td class="entry"><a class="el" href="../../de/d85/classgrade__object.html">grade_object</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html#aabfd9cd23945fec0160a04f1f75d810e">update_overridden_mark</a>(int $userid, float $overriddenmark)</td><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html#aa90dc8bae3afe05f8829612a015e3a13">update_raw_grade</a>($userid, $rawgrade=false, $source=null, $feedback=false, $feedbackformat=FORMAT_MOODLE, $usermodified=null, $dategraded=null, $datesubmitted=null, $grade=null, array $feedbackfiles=[], $isbulkupdate=false)</td><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html#a2b202c2b9be0bef49315479ad75f1e3c">use_formula</a>($userid, $params, $useditems, $oldgrade)</td><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html#aa2adbfed2535e7a7220ed80c8f94f8de">validate_formula</a>($formulastr)</td><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html#aa90dc8bae3afe05f8829612a015e3a13">update_raw_grade</a>($userid, $rawgrade=false, $source=null, $feedback=false, $feedbackformat=FORMAT_MOODLE, $usermodified=null, $dategraded=null, $datesubmitted=null, $grade=null, array $feedbackfiles=[], $isbulkupdate=false)</td><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html#a2b202c2b9be0bef49315479ad75f1e3c">use_formula</a>($userid, $params, $useditems, $oldgrade)</td><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html#aa2adbfed2535e7a7220ed80c8f94f8de">validate_formula</a>($formulastr)</td><td class="entry"><a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 6 2025 03:15:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Apr 13 2025 04:26:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

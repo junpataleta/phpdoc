@@ -27,9 +27,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../Moodle-Logo-ReversedWhite_RGB.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
+   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.1</span>
    </div>
-   <div id="projectbrief">Moodle 5.0rc1 (Build: 20250404) (1e89ba23357)</div>
+   <div id="projectbrief">Moodle 5.1dev (Build: 20250414) (bf164840d92)</div>
   </td>
  </tr>
  </tbody>
@@ -168,9 +168,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:afd45a13203b7360f646b2c99391b9e25" id="r_afd45a13203b7360f646b2c99391b9e25"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd45a13203b7360f646b2c99391b9e25">fetch_all_global</a> ()</td></tr>
 <tr class="memdesc:afd45a13203b7360f646b2c99391b9e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static function returning all global outcomes.  <br /></td></tr>
 <tr class="separator:afd45a13203b7360f646b2c99391b9e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b55ff621d9fdb6e4866b0159695bbd5" id="r_a9b55ff621d9fdb6e4866b0159695bbd5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/classgrade__object.html#a9b55ff621d9fdb6e4866b0159695bbd5">fetch_all_helper</a> ($table, $classname, $params)</td></tr>
-<tr class="memdesc:a9b55ff621d9fdb6e4866b0159695bbd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory method which uses the parameters to retrieve all matching instances from the database.  <br /></td></tr>
-<tr class="separator:a9b55ff621d9fdb6e4866b0159695bbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acedde5b6bdd77a457408ea690bd4f25b" id="r_acedde5b6bdd77a457408ea690bd4f25b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/classgrade__object.html#acedde5b6bdd77a457408ea690bd4f25b">fetch_all_helper</a> ($table, $classname, $params, string $sortby='id ASC')</td></tr>
+<tr class="memdesc:acedde5b6bdd77a457408ea690bd4f25b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory method which uses the parameters to retrieve all matching instances from the database.  <br /></td></tr>
+<tr class="separator:acedde5b6bdd77a457408ea690bd4f25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa18ccf8915782da64e6a90091440b190" id="r_aa18ccf8915782da64e6a90091440b190"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa18ccf8915782da64e6a90091440b190">fetch_all_local</a> ($courseid)</td></tr>
 <tr class="memdesc:aa18ccf8915782da64e6a90091440b190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static function returning all local course outcomes.  <br /></td></tr>
 <tr class="separator:aa18ccf8915782da64e6a90091440b190"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -566,8 +566,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9b55ff621d9fdb6e4866b0159695bbd5" name="a9b55ff621d9fdb6e4866b0159695bbd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b55ff621d9fdb6e4866b0159695bbd5">&#9670;&#160;</a></span>fetch_all_helper()</h2>
+<a id="acedde5b6bdd77a457408ea690bd4f25b" name="acedde5b6bdd77a457408ea690bd4f25b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acedde5b6bdd77a457408ea690bd4f25b">&#9670;&#160;</a></span>fetch_all_helper()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -588,7 +588,12 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$params</em></span>&#160;)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$params</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$sortby</em></span><span class="paramdefsep"> = </span><span class="paramdefval">'id&#160;ASC'</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -604,12 +609,13 @@ Static Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$table</td><td>The table to retrieve from </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$classname</td><td>The name of the class to instantiate </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$params</td><td>An array of conditions like $fieldname =&gt; $fieldvalue </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$sortby</td><td>The SQL sort order. E.g. 'id ASC' </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array|bool</td><td>Array of object instances or false if not found </td></tr>
+    <tr><td class="paramname">array|bool</td><td>Array of object instances (sorted by $sortby) or false if not found </td></tr>
   </table>
   </dd>
 </dl>
@@ -1627,7 +1633,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 6 2025 03:15:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Apr 13 2025 04:26:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>
