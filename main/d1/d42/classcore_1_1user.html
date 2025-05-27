@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.1</span>
    </div>
-   <div id="projectbrief">Moodle 5.1dev (Build: 20250414) (bf164840d92)</div>
+   <div id="projectbrief">Moodle 5.1dev (Build: 20250523) (d65e24a62c0)</div>
   </td>
  </tr>
  </tbody>
@@ -100,6 +100,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad2ce73d0fcdb56ddfecfc6fb308eace4" id="r_ad2ce73d0fcdb56ddfecfc6fb308eace4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2ce73d0fcdb56ddfecfc6fb308eace4">clean_preference</a> ($value, $preferencename)</td></tr>
 <tr class="memdesc:ad2ce73d0fcdb56ddfecfc6fb308eace4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean value of a user preference.  <br /></td></tr>
 <tr class="separator:ad2ce73d0fcdb56ddfecfc6fb308eace4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45f51171d5fa39d76d7b17f64d21c234" id="r_a45f51171d5fa39d76d7b17f64d21c234"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45f51171d5fa39d76d7b17f64d21c234">get_dummy_fullname</a> (?<a class="el" href="../../d1/d90/classcore_1_1context.html">context</a> $<a class="el" href="../../d1/d90/classcore_1_1context.html">context</a>=null, array $options=[])</td></tr>
+<tr class="memdesc:a45f51171d5fa39d76d7b17f64d21c234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return fullname of a dummy user comprised of configured name fields only.  <br /></td></tr>
+<tr class="separator:a45f51171d5fa39d76d7b17f64d21c234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81ce27a63e055935077db40321173d13" id="r_a81ce27a63e055935077db40321173d13"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81ce27a63e055935077db40321173d13">get_fullname</a> (stdClass $<a class="el" href="../../d0/dba/classcore_1_1context_1_1user.html">user</a>, ?<a class="el" href="../../d1/d90/classcore_1_1context.html">context</a> $<a class="el" href="../../d1/d90/classcore_1_1context.html">context</a>=null, array $options=[])</td></tr>
 <tr class="memdesc:a81ce27a63e055935077db40321173d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return full name depending on context.  <br /></td></tr>
 <tr class="separator:a81ce27a63e055935077db40321173d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -579,6 +582,50 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$propertiesca
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a45f51171d5fa39d76d7b17f64d21c234" name="a45f51171d5fa39d76d7b17f64d21c234"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45f51171d5fa39d76d7b17f64d21c234">&#9670;&#160;</a></span>get_dummy_fullname()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core\user::get_dummy_fullname </td>
+          <td>(</td>
+          <td class="paramtype">?<a class="el" href="../../d1/d90/classcore_1_1context.html">context</a></td>          <td class="paramname"><span class="paramname"><em>$context</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$options</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[]</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return fullname of a dummy user comprised of configured name fields only. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">context&#160;|&#160;null</td><td class="paramname">$context</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$options</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1922,7 +1969,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$propertiesca
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 13 2025 04:27:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Tue May 27 2025 04:12:27 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.1</span>
    </div>
-   <div id="projectbrief">Moodle 5.1dev (Build: 20250414) (bf164840d92)</div>
+   <div id="projectbrief">Moodle 5.1dev (Build: 20250523) (d65e24a62c0)</div>
   </td>
  </tr>
  </tbody>
@@ -96,9 +96,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa0c5eb10ab22f76e53fbeec8a67cd862" id="r_aa0c5eb10ab22f76e53fbeec8a67cd862"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0c5eb10ab22f76e53fbeec8a67cd862">render_download_buttons</a> (\moodle_url $url)</td></tr>
 <tr class="memdesc:aa0c5eb10ab22f76e53fbeec8a67cd862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render download buttons.  <br /></td></tr>
 <tr class="separator:aa0c5eb10ab22f76e53fbeec8a67cd862"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa636d1050f2e38de6c831ed18245174" id="r_aaa636d1050f2e38de6c831ed18245174"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa636d1050f2e38de6c831ed18245174">render_groups_select</a> (\moodle_url $url, stdClass $course)</td></tr>
-<tr class="memdesc:aaa636d1050f2e38de6c831ed18245174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render groups single select box.  <br /></td></tr>
-<tr class="separator:aaa636d1050f2e38de6c831ed18245174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38b708055870c9d7e68fc5b0f71da57b" id="r_a38b708055870c9d7e68fc5b0f71da57b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38b708055870c9d7e68fc5b0f71da57b">render_groups_select</a> (\moodle_url $url, stdClass $course, int $activegroup=0)</td></tr>
+<tr class="memdesc:a38b708055870c9d7e68fc5b0f71da57b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render groups single select box.  <br /></td></tr>
+<tr class="separator:a38b708055870c9d7e68fc5b0f71da57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbb0682014507906ffc312a7a6745917" id="r_afbb0682014507906ffc312a7a6745917"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbb0682014507906ffc312a7a6745917">render_include_activity_select</a> (\moodle_url $url, array $activitytypes, string $activityinclude)</td></tr>
 <tr class="memdesc:afbb0682014507906ffc312a7a6745917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render include activity single select box.  <br /></td></tr>
 <tr class="separator:afbb0682014507906ffc312a7a6745917"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,8 +231,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aaa636d1050f2e38de6c831ed18245174" name="aaa636d1050f2e38de6c831ed18245174"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa636d1050f2e38de6c831ed18245174">&#9670;&#160;</a></span>render_groups_select()</h2>
+<a id="a38b708055870c9d7e68fc5b0f71da57b" name="a38b708055870c9d7e68fc5b0f71da57b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38b708055870c9d7e68fc5b0f71da57b">&#9670;&#160;</a></span>render_groups_select()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,7 +245,12 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$course</em></span>&#160;)</td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$course</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$activegroup</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -255,6 +260,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramtype">moodle_url</td><td class="paramname">$url</td><td>The base url. </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>Current course. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$activegroup</td><td>Currently active group, defaults to 0. Has no effect if course is in separate groups mode. </td></tr>
   </table>
   </dd>
 </dl>
@@ -321,7 +327,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 13 2025 04:29:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Tue May 27 2025 04:14:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.1</span>
    </div>
-   <div id="projectbrief">Moodle 5.1dev (Build: 20250414) (bf164840d92)</div>
+   <div id="projectbrief">Moodle 5.1dev (Build: 20250523) (d65e24a62c0)</div>
   </td>
  </tr>
  </tbody>
@@ -110,10 +110,10 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a841851dd0fd638404e037e32524fa78f" id="r_a841851dd0fd638404e037e32524fa78f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a841851dd0fd638404e037e32524fa78f">$isbutton</a></td></tr>
 <tr class="memdesc:a841851dd0fd638404e037e32524fa78f"><td class="mdescLeft">&#160;</td><td class="mdescRight">$isbutton Whether to render this as a button.  <br /></td></tr>
 <tr class="separator:a841851dd0fd638404e037e32524fa78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d116dad5b7f519283aa7d231cbb671b" id="r_a6d116dad5b7f519283aa7d231cbb671b"><td class="memItemLeft" align="right" valign="top"><a id="a6d116dad5b7f519283aa7d231cbb671b" name="a6d116dad5b7f519283aa7d231cbb671b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>$ismaster</b></td></tr>
-<tr class="memdesc:a6d116dad5b7f519283aa7d231cbb671b"><td class="mdescLeft">&#160;</td><td class="mdescRight">$ismaster Whether we're rendering for a master checkbox or a slave checkbox. <br /></td></tr>
-<tr class="separator:a6d116dad5b7f519283aa7d231cbb671b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8630a21d90b4d3de966b1a4246f8bc34" id="r_a8630a21d90b4d3de966b1a4246f8bc34"><td class="memItemLeft" align="right" valign="top"><a id="a8630a21d90b4d3de966b1a4246f8bc34" name="a8630a21d90b4d3de966b1a4246f8bc34"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>$istoggler</b></td></tr>
+<tr class="memdesc:a8630a21d90b4d3de966b1a4246f8bc34"><td class="mdescLeft">&#160;</td><td class="mdescRight">$istoggler Whether we're rendering for a toggler checkbox or a target checkbox. <br /></td></tr>
+<tr class="separator:a8630a21d90b4d3de966b1a4246f8bc34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5109a3131dce02150a63fb31c625d19d" id="r_a5109a3131dce02150a63fb31c625d19d"><td class="memItemLeft" align="right" valign="top"><a id="a5109a3131dce02150a63fb31c625d19d" name="a5109a3131dce02150a63fb31c625d19d"></a>
 array&#160;</td><td class="memItemRight" valign="bottom"><b>$options</b></td></tr>
 <tr class="memdesc:a5109a3131dce02150a63fb31c625d19d"><td class="mdescLeft">&#160;</td><td class="mdescRight">$options The options for the checkbox. <br /></td></tr>
@@ -161,14 +161,14 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b></t
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$togglegroup</td><td>The name of the group of checkboxes to be toggled. </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$ismaster</td><td>Whether we're rendering for a master checkbox or a slave checkbox. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$ismaster</td><td>Whether we're rendering for a toggler checkbox or a target checkbox. </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$options</td><td>The options for the checkbox. Valid options are: <ul>
 <li>
 <b>id </b> string - The element ID. </li>
 <li>
 <b>name </b> string - The element name. </li>
 <li>
-<b>classes </b> string - CSS classes that you want to add for your checkbox or toggle controls. For button type master toggle controls, this could be any Bootstrap 4 btn classes that you might want to add. Defaults to "btn-secondary". </li>
+<b>classes </b> string - CSS classes that you want to add for your checkbox or toggle controls. For button type toggler toggle controls, this could be any Bootstrap 4 btn classes that you might want to add. Defaults to "btn-secondary". </li>
 <li>
 <b>value </b> string|int - The element's value. </li>
 <li>
@@ -178,12 +178,12 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b></t
 <li>
 <b>labelclasses</b> string - CSS classes that you want to add for your label. </li>
 <li>
-<b>selectall </b> string - Master only. The language string that will be used to indicate that clicking on the master will select all of the slave checkboxes. Defaults to "Select all". </li>
+<b>selectall </b> string - Toggler only. The language string that will be used to indicate that clicking on the toggler will select all the target checkboxes. Defaults to "Select all". </li>
 <li>
-<b>deselectall </b> string - Master only. The language string that will be used to indicate that clicking on the master will select all of the slave checkboxes. Defaults to "Deselect all". </li>
+<b>deselectall </b> string - Toggler only. The language string that will be used to indicate that clicking on the toggler will select all the target checkboxes. Defaults to "Deselect all". </li>
 </ul>
 </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$isbutton</td><td>Whether to render this as a button. Applies to master only. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$isbutton</td><td>Whether to render this as a button. Applies to toggler only. </td></tr>
   </table>
   </dd>
 </dl>
@@ -271,7 +271,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b></t
 </div><div class="memdoc">
 
 <p>$isbutton Whether to render this as a button. </p>
-<p>Applies to master checkboxes only. </p>
+<p>Applies to toggler checkboxes only. </p>
 
 </div>
 </div>
@@ -281,7 +281,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 13 2025 04:27:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Tue May 27 2025 04:12:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

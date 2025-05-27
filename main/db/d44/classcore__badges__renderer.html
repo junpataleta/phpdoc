@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.1</span>
    </div>
-   <div id="projectbrief">Moodle 5.1dev (Build: 20250414) (bf164840d92)</div>
+   <div id="projectbrief">Moodle 5.1dev (Build: 20250523) (d65e24a62c0)</div>
   </td>
  </tr>
  </tbody>
@@ -144,12 +144,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:ac19905c67aae2df134ab6e9bd850014a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a table with alignment.  <br /></td></tr>
 <tr class="separator:ac19905c67aae2df134ab6e9bd850014a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab288e2dccc1a342656c06cafdfc59712" id="r_ab288e2dccc1a342656c06cafdfc59712"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab288e2dccc1a342656c06cafdfc59712">render_badge_collection</a> (\<a class="el" href="../../db/d53/classcore__badges_1_1output_1_1badge__collection.html">core_badges\output\badge_collection</a> $badges)</td></tr>
-<tr class="memdesc:ab288e2dccc1a342656c06cafdfc59712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render a collection of badges.  <br /></td></tr>
 <tr class="separator:ab288e2dccc1a342656c06cafdfc59712"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae509142a16006c3bb95462d20f92de20" id="r_ae509142a16006c3bb95462d20f92de20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae509142a16006c3bb95462d20f92de20">render_badge_management</a> ()</td></tr>
 <tr class="separator:ae509142a16006c3bb95462d20f92de20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c1fdc2f90dfa85f41c7efa3059b5313" id="r_a6c1fdc2f90dfa85f41c7efa3059b5313"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c1fdc2f90dfa85f41c7efa3059b5313">render_badge_recipients</a> (\<a class="el" href="../../dd/d2c/classcore__badges_1_1output_1_1badge__recipients.html">core_badges\output\badge_recipients</a> $recipients)</td></tr>
-<tr class="memdesc:a6c1fdc2f90dfa85f41c7efa3059b5313"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a table with users who have earned the badge.  <br /></td></tr>
 <tr class="separator:a6c1fdc2f90dfa85f41c7efa3059b5313"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f7819047c945fb1e07457bd47f50dc9" id="r_a0f7819047c945fb1e07457bd47f50dc9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f7819047c945fb1e07457bd47f50dc9">render_badge_related</a> (\<a class="el" href="../../d8/dcb/classcore__badges_1_1output_1_1badge__related.html">core_badges\output\badge_related</a> $related)</td></tr>
 <tr class="memdesc:a0f7819047c945fb1e07457bd47f50dc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a table for related badges.  <br /></td></tr>
@@ -631,22 +629,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Render a collection of badges. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../db/d53/classcore__badges_1_1output_1_1badge__collection.html" title="Collection of all badges for view.php page.">core_badges\output\badge_collection</a></td><td class="paramname">$badges</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000034">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000022">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80455" class="el">MDL-80455</a> this will be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8 </dd></dl>
 
 </div>
 </div>
@@ -698,23 +681,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Renders a table with users who have earned the badge. </p>
-<p>Based on stamps collection plugin.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../dd/d2c/classcore__badges_1_1output_1_1badge__recipients.html" title="Badge recipients rendering class.">core_badges\output\badge_recipients</a></td><td class="paramname">$recipients</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000036">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000023">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80455" class="el">MDL-80455</a> this will be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8 </dd></dl>
 
 </div>
 </div>
@@ -1017,7 +984,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 13 2025 04:25:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Tue May 27 2025 04:11:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

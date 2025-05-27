@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.1</span>
    </div>
-   <div id="projectbrief">Moodle 5.1dev (Build: 20250414) (bf164840d92)</div>
+   <div id="projectbrief">Moodle 5.1dev (Build: 20250523) (d65e24a62c0)</div>
   </td>
  </tr>
  </tbody>
@@ -84,7 +84,7 @@ $(function(){ initResizable(false); });
   <tr class="odd"><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a9cba4df34f9d278ffd8f5267a60753b2">$registeredshutdownhandler</a></td><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html">core\task\manager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#ab926df9690f6317d825681eedc68ded3">$runningtask</a></td><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html">core\task\manager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a5a397d67dd1c16bb771f325d7436ed3a">adhoc_task_complete</a>(adhoc_task $task)</td><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html">core\task\manager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#abdc0839e2d0ce6488de9f6ae9a96ce5a">adhoc_task_failed</a>(adhoc_task $task)</td><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html">core\task\manager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a5d96db9996bcae931231949bff530017">adhoc_task_failed</a>(adhoc_task $task, bool $finaliselog=true)</td><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html">core\task\manager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#afd7b9e116cb7a2c2a17507b6dc6b20bc">ADHOC_TASK_FAILED_RETENTION</a></td><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html">core\task\manager</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#af1197927e94fd2272bb1416b90572740">adhoc_task_from_record</a>($record)</td><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html">core\task\manager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a16dbdd7f2008b99f7fc34b01289aaf47">ADHOC_TASK_QUEUE_MODE_DISTRIBUTING</a></td><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html">core\task\manager</a></td><td class="entry"></td></tr>
@@ -128,7 +128,7 @@ $(function(){ initResizable(false); });
   <tr class="odd"><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a450a2edbbafed7656ffd4b941fe054f2">run_all_adhoc_from_cli</a>(?bool $failedonly=false, ?string $classname=null)</td><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html">core\task\manager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#acc48f57ee8437222ff9099607444cb8e">run_from_cli</a>(scheduled_task $task)</td><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html">core\task\manager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a436cf98af7c451c177ad73969a1492d4">scheduled_task_complete</a>(scheduled_task $task)</td><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html">core\task\manager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#ad47dbe0a94d1a0519ec9a6a05d03c78a">scheduled_task_failed</a>(scheduled_task $task)</td><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html">core\task\manager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#aedc39df7121d8bce0b0ac6267929332e">scheduled_task_failed</a>(scheduled_task $task, bool $finaliselog=true)</td><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html">core\task\manager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a2b3b25a3f6e378295ef3801f43c5b73f">scheduled_task_from_record</a>($record, $expandr=true, $override=true)</td><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html">core\task\manager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#aa78726438d647a2f18de57869e1c9f8e">scheduled_task_get_override_key</a>(string $classname)</td><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html">core\task\manager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a98436ea3a34e8d030cfaf6f73f03de61">scheduled_task_has_override</a>(string $classname)</td><td class="entry"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html">core\task\manager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
@@ -138,7 +138,7 @@ $(function(){ initResizable(false); });
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 13 2025 04:28:00 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Tue May 27 2025 04:13:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

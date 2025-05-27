@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.1</span>
    </div>
-   <div id="projectbrief">Moodle 5.1dev (Build: 20250414) (bf164840d92)</div>
+   <div id="projectbrief">Moodle 5.1dev (Build: 20250523) (d65e24a62c0)</div>
   </td>
  </tr>
  </tbody>
@@ -93,7 +93,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae709d1400343a82603b5b6499fed0270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count number of filtered questions.  <br /></td></tr>
 <tr class="separator:ae709d1400343a82603b5b6499fed0270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab57ba5560f44ba73f34ec01b3d12d283" id="r_ab57ba5560f44ba73f34ec01b3d12d283"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab57ba5560f44ba73f34ec01b3d12d283">count_questions</a> ($categoryid, $includesubcategories, $tagids=[])</td></tr>
-<tr class="memdesc:ab57ba5560f44ba73f34ec01b3d12d283"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of available questions for the given criteria.  <br /></td></tr>
 <tr class="separator:ab57ba5560f44ba73f34ec01b3d12d283"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71a91510ddb69f82eb9fd204e71ead9b" id="r_a71a91510ddb69f82eb9fd204e71ead9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71a91510ddb69f82eb9fd204e71ead9b">get_filtered_questions</a> ($filters, $limit=100, $offset=0, $fields=[])</td></tr>
 <tr class="memdesc:a71a91510ddb69f82eb9fd204e71ead9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of available questions for the given criteria.  <br /></td></tr>
@@ -102,16 +101,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:afba3d0a206fe715ead704b1c285120ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pick a random question based on filter conditions.  <br /></td></tr>
 <tr class="separator:afba3d0a206fe715ead704b1c285120ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2529dbce426ee50d009d75ba0dd57ef9" id="r_a2529dbce426ee50d009d75ba0dd57ef9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2529dbce426ee50d009d75ba0dd57ef9">get_next_question_id</a> ($categoryid, $includesubcategories, $tagids=[])</td></tr>
-<tr class="memdesc:a2529dbce426ee50d009d75ba0dd57ef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pick a question at random from the given category, from among those with the fewest uses.  <br /></td></tr>
 <tr class="separator:a2529dbce426ee50d009d75ba0dd57ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42ba223690a7bef8586792599e4b0c3e" id="r_a42ba223690a7bef8586792599e4b0c3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42ba223690a7bef8586792599e4b0c3e">get_questions</a> ($categoryid, $includesubcategories, $tagids=[], $limit=100, $offset=0, $fields=[])</td></tr>
-<tr class="memdesc:a42ba223690a7bef8586792599e4b0c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of available questions for the given criteria.  <br /></td></tr>
 <tr class="separator:a42ba223690a7bef8586792599e4b0c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a026014d1551681f387c6cd35dd192063" id="r_a026014d1551681f387c6cd35dd192063"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a026014d1551681f387c6cd35dd192063">is_filtered_question_available</a> (array $filters, int $questionid)</td></tr>
 <tr class="memdesc:a026014d1551681f387c6cd35dd192063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a given question is available in a given category.  <br /></td></tr>
 <tr class="separator:a026014d1551681f387c6cd35dd192063"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a023df28ec9ea60d1946805b21aab6b94" id="r_a023df28ec9ea60d1946805b21aab6b94"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a023df28ec9ea60d1946805b21aab6b94">is_question_available</a> ($categoryid, $includesubcategories, $questionid, $tagids=[])</td></tr>
-<tr class="memdesc:a023df28ec9ea60d1946805b21aab6b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a given question is available in a given category.  <br /></td></tr>
 <tr class="separator:a023df28ec9ea60d1946805b21aab6b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -120,10 +116,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a7012ec5d543edcc7703282f2e6a860a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populate {.  <br /></td></tr>
 <tr class="separator:a7012ec5d543edcc7703282f2e6a860a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5e63d765b0f2adad4084bdee2d1e295" id="r_ab5e63d765b0f2adad4084bdee2d1e295"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5e63d765b0f2adad4084bdee2d1e295">ensure_questions_for_category_loaded</a> ($categoryid, $includesubcategories, $tagids=[])</td></tr>
-<tr class="memdesc:ab5e63d765b0f2adad4084bdee2d1e295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populate {.  <br /></td></tr>
 <tr class="separator:ab5e63d765b0f2adad4084bdee2d1e295"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4bf5d037010377b4ab1b195c45fc45e" id="r_aa4bf5d037010377b4ab1b195c45fc45e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4bf5d037010377b4ab1b195c45fc45e">get_category_key</a> ($categoryid, $includesubcategories, $tagids=[])</td></tr>
-<tr class="memdesc:aa4bf5d037010377b4ab1b195c45fc45e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the key into {.  <br /></td></tr>
 <tr class="separator:aa4bf5d037010377b4ab1b195c45fc45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78534fc0c55ad4434285fb0aa058269c" id="r_a78534fc0c55ad4434285fb0aa058269c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78534fc0c55ad4434285fb0aa058269c">get_filtered_question_ids</a> (array $filters)</td></tr>
 <tr class="memdesc:a78534fc0c55ad4434285fb0aa058269c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get filtered questions.  <br /></td></tr>
@@ -132,7 +126,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a09204836c20853e6c642702feccb9874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Key for filtered questions.  <br /></td></tr>
 <tr class="separator:a09204836c20853e6c642702feccb9874"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afad1c8e63bde937b6b392422bfe89a59" id="r_afad1c8e63bde937b6b392422bfe89a59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afad1c8e63bde937b6b392422bfe89a59">get_question_ids</a> ($categoryid, $includesubcategories, $tagids=[])</td></tr>
-<tr class="memdesc:afad1c8e63bde937b6b392422bfe89a59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of available question ids for the given criteria.  <br /></td></tr>
 <tr class="separator:afad1c8e63bde937b6b392422bfe89a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31a9bf225fbbfa3f6c79d4242af6d4ff" id="r_a31a9bf225fbbfa3f6c79d4242af6d4ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31a9bf225fbbfa3f6c79d4242af6d4ff">use_question</a> ($questionid)</td></tr>
 <tr class="memdesc:a31a9bf225fbbfa3f6c79d4242af6d4ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the internal data structures to indicate that a given question has been used one more time.  <br /></td></tr>
@@ -249,24 +242,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$includedqtypes</b> 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Count the number of available questions for the given criteria. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$categoryid</td><td>The id of a category in the question bank. </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$includesubcategories</td><td>Whether to pick a question from exactly that category, or that category and subcategories. </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$tagids</td><td>An array of tag ids. If an array is provided, then only the questions that are tagged with ALL the provided tagids will be loaded. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">int</td><td>The number of questions matching the criteria. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000733">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000382">Todo</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.7 <a href="https://tracker.moodle.org/browse/MDL-78091" class="el">MDL-78091</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000712">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
 
 </div>
 </div>
@@ -341,19 +317,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$includedqtypes</b> 
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Populate {. </p>
-<dl class="section see"><dt>See also</dt><dd>$availablequestionscache} for this combination of options.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$categoryid</td><td>The id of a category in the question bank. </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$includesubcategories</td><td>Whether to pick a question from exactly that category, or that category and subcategories. </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$tagids</td><td>An array of tag ids. If an array is provided, then only the questions that are tagged with ALL the provided tagids will be loaded. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000729">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000378">Todo</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.7 <a href="https://tracker.moodle.org/browse/MDL-78091" class="el">MDL-78091</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000708">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
 
 </div>
 </div>
@@ -388,25 +352,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$includedqtypes</b> 
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Get the key into {. </p>
-<dl class="section see"><dt>See also</dt><dd>$availablequestionscache} for this combination of options.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$categoryid</td><td>the id of a category in the question bank. </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$includesubcategories</td><td>wether to pick a question from exactly that category, or that category and subcategories. </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$tagids</td><td>an array of tag ids. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td>the cache key.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000728">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000377">Todo</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.7 <a href="https://tracker.moodle.org/browse/MDL-78091" class="el">MDL-78091</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000707">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
 
 </div>
 </div>
@@ -591,26 +537,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$includedqtypes</b> 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Pick a question at random from the given category, from among those with the fewest uses. </p>
-<p>If an array of tag ids are specified, then only the questions that are tagged with ALL those tags will be selected.</p>
-<p>It is up the the caller to verify that the cateogry exists. An unknown category behaves like an empty one.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$categoryid</td><td>the id of a category in the question bank. </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$includesubcategories</td><td>wether to pick a question from exactly that category, or that category and subcategories. </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$tagids</td><td>An array of tag ids. A question has to be tagged with all the provided tagids (if any) in order to be eligible for being picked. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">int|null</td><td>the id of the question picked, or null if there aren't any. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000727">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000376">Todo</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.7 <a href="https://tracker.moodle.org/browse/MDL-78091" class="el">MDL-78091</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000706">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
 
 </div>
 </div>
@@ -645,24 +572,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$includedqtypes</b> 
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Get the list of available question ids for the given criteria. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$categoryid</td><td>The id of a category in the question bank. </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$includesubcategories</td><td>Whether to pick a question from exactly that category, or that category and subcategories. </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$tagids</td><td>An array of tag ids. If an array is provided, then only the questions that are tagged with ALL the provided tagids will be loaded. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">int[]</td><td>The list of question ids </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000730">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000379">Todo</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.7 <a href="https://tracker.moodle.org/browse/MDL-78091" class="el">MDL-78091</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000709">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
 
 </div>
 </div>
@@ -704,27 +614,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$includedqtypes</b> 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Get the list of available questions for the given criteria. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$categoryid</td><td>The id of a category in the question bank. </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$includesubcategories</td><td>Whether to pick a question from exactly that category, or that category and subcategories. </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$tagids</td><td>An array of tag ids. If an array is provided, then only the questions that are tagged with ALL the provided tagids will be loaded. </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$limit</td><td>Maximum number of results to return. </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$offset</td><td>Number of items to skip from the begging of the result set. </td></tr>
-    <tr><td class="paramtype">string[]</td><td class="paramname">$fields</td><td>The fields to return for each question. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">stdClass[]</td><td>The list of question records </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000732">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000381">Todo</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.7 <a href="https://tracker.moodle.org/browse/MDL-78091" class="el">MDL-78091</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000711">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
 
 </div>
 </div>
@@ -793,26 +683,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$includedqtypes</b> 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Check whether a given question is available in a given category. </p>
-<p>If so, mark it used. If an optional list of tag ids are provided, then the question must be tagged with ALL of the provided tags to be considered as available.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$categoryid</td><td>the id of a category in the question bank. </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$includesubcategories</td><td>wether to pick a question from exactly that category, or that category and subcategories. </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$questionid</td><td>the question that is being used. </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$tagids</td><td>An array of tag ids. Only the questions that are tagged with all the provided tagids can be available. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td>whether the question is available in the requested category. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000731">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000380">Todo</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.7 <a href="https://tracker.moodle.org/browse/MDL-78091" class="el">MDL-78091</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000710">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
 
 </div>
 </div>
@@ -881,7 +752,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$includedqtypes</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 13 2025 04:28:32 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Tue May 27 2025 04:13:44 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>
