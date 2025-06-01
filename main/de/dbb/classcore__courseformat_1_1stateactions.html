@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.1</span>
    </div>
-   <div id="projectbrief">Moodle 5.1dev (Build: 20250523) (d65e24a62c0)</div>
+   <div id="projectbrief">Moodle 5.1dev (Build: 20250530) (c39b7370636)</div>
   </td>
  </tr>
  </tbody>
@@ -143,6 +143,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae55605bf2de861dab6a28b4d876a8dc8" id="r_ae55605bf2de861dab6a28b4d876a8dc8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae55605bf2de861dab6a28b4d876a8dc8">section_delete</a> (<a class="el" href="../../d5/df4/classcore__courseformat_1_1stateupdates.html">stateupdates</a> $updates, stdClass $course, array $ids=[], ?int $targetsectionid=null, ?int $targetcmid=null)</td></tr>
 <tr class="memdesc:ae55605bf2de861dab6a28b4d876a8dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete course sections.  <br /></td></tr>
 <tr class="separator:ae55605bf2de861dab6a28b4d876a8dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa200ed67584016086b4f470d3c20df1f" id="r_aa200ed67584016086b4f470d3c20df1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa200ed67584016086b4f470d3c20df1f">section_duplicate</a> (<a class="el" href="../../d5/df4/classcore__courseformat_1_1stateupdates.html">stateupdates</a> $updates, stdClass $course, array $ids=[], ?int $targetsectionid=null, ?int $targetcmid=null)</td></tr>
+<tr class="memdesc:aa200ed67584016086b4f470d3c20df1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duplicate course sections.  <br /></td></tr>
+<tr class="separator:aa200ed67584016086b4f470d3c20df1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07a9cede8fba76343c12b770e3c5f2e4" id="r_a07a9cede8fba76343c12b770e3c5f2e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07a9cede8fba76343c12b770e3c5f2e4">section_hide</a> (<a class="el" href="../../d5/df4/classcore__courseformat_1_1stateupdates.html">stateupdates</a> $updates, stdClass $course, array $ids=[], ?int $targetsectionid=null, ?int $targetcmid=null)</td></tr>
 <tr class="memdesc:a07a9cede8fba76343c12b770e3c5f2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hide course sections.  <br /></td></tr>
 <tr class="separator:a07a9cede8fba76343c12b770e3c5f2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -265,8 +268,8 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
     <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>section ids </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
   </table>
   </dd>
 </dl>
@@ -361,8 +364,8 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
     <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>cm ids </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
   </table>
   </dd>
 </dl>
@@ -409,8 +412,8 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
     <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>the list of affected course module ids </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetsectionid</td><td>optional target section id </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetcmid</td><td>optional target cm id </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetsectionid</td><td>optional target section id </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetcmid</td><td>optional target cm id </td></tr>
   </table>
   </dd>
 </dl>
@@ -464,8 +467,8 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
     <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>cm ids </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
   </table>
   </dd>
 </dl>
@@ -513,8 +516,8 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
     <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>cm ids </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
   </table>
   </dd>
 </dl>
@@ -561,8 +564,8 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
     <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>cm ids </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
   </table>
   </dd>
 </dl>
@@ -609,8 +612,8 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
     <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>cm ids </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
   </table>
   </dd>
 </dl>
@@ -657,8 +660,8 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
     <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>cm ids </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
   </table>
   </dd>
 </dl>
@@ -706,8 +709,8 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
     <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>the list of affected course module ids </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetsectionid</td><td>optional target section id </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetcmid</td><td>optional target cm id </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetsectionid</td><td>optional target section id </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetcmid</td><td>optional target cm id </td></tr>
   </table>
   </dd>
 </dl>
@@ -754,8 +757,8 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
     <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>cm ids </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
   </table>
   </dd>
 </dl>
@@ -802,8 +805,8 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
     <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>cm ids </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
   </table>
   </dd>
 </dl>
@@ -851,8 +854,8 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
     <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>the list of affected course module ids (not used) </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetsectionid</td><td>optional target section id (not used) </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetcmid</td><td>optional target cm id (not used) </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetsectionid</td><td>optional target section id (not used) </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetcmid</td><td>optional target cm id (not used) </td></tr>
   </table>
   </dd>
 </dl>
@@ -1027,8 +1030,8 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
     <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>not used </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetsectionid</td><td>optional target section id (if not passed section will be appended) </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetsectionid</td><td>optional target section id (if not passed section will be appended) </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
   </table>
   </dd>
 </dl>
@@ -1075,8 +1078,8 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
     <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>the collapsed section ids </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
   </table>
   </dd>
 </dl>
@@ -1172,8 +1175,56 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
     <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>section ids </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa200ed67584016086b4f470d3c20df1f" name="aa200ed67584016086b4f470d3c20df1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa200ed67584016086b4f470d3c20df1f">&#9670;&#160;</a></span>section_duplicate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\stateactions::section_duplicate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/df4/classcore__courseformat_1_1stateupdates.html">stateupdates</a></td>          <td class="paramname"><span class="paramname"><em>$updates</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$course</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$ids</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[]</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int</td>          <td class="paramname"><span class="paramname"><em>$targetsectionid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int</td>          <td class="paramname"><span class="paramname"><em>$targetcmid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Duplicate course sections. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
+    <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>section ids </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
   </table>
   </dd>
 </dl>
@@ -1220,8 +1271,8 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
     <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>section ids </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
   </table>
   </dd>
 </dl>
@@ -1268,8 +1319,8 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
     <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>the collapsed section ids </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
   </table>
   </dd>
 </dl>
@@ -1364,8 +1415,8 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
     <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>the list of affected course module ids </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetsectionid</td><td>optional target section id </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetcmid</td><td>optional target cm id </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetsectionid</td><td>optional target section id </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetcmid</td><td>optional target cm id </td></tr>
   </table>
   </dd>
 </dl>
@@ -1412,8 +1463,8 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
     <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>section ids </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
   </table>
   </dd>
 </dl>
@@ -1461,8 +1512,8 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
     <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>the list of affected course section ids </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetsectionid</td><td>optional target section id </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$targetcmid</td><td>optional target cm id </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetsectionid</td><td>optional target section id </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetcmid</td><td>optional target cm id </td></tr>
   </table>
   </dd>
 </dl>
@@ -1939,7 +1990,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 27 2025 04:13:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jun 1 2025 03:57:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>
